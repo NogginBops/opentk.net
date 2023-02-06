@@ -1077,7 +1077,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenTK.Compute.OpenCL.CL.html",
-          "hash": "3HJNAnM3Gj5lpxb4bG02+H2igcfvx1a9sqwedJM7+sU="
+          "hash": "FVCHahVzyMY6LxXLkQ0DDq7ERk79O8NETybpcWQvfvc="
         }
       },
       "is_incremental": false,
@@ -1197,7 +1197,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenTK.Compute.OpenCL.CLGL.html",
-          "hash": "i4jKRnqk7PPzjACD+AplNCzdJ2+pTnrNh4CHFM6LD6c="
+          "hash": "4/X2LKJcrSPzKJCDAsFfXQp2ZRqDJeBwn8Ccl7FlA4M="
         }
       },
       "is_incremental": false,
@@ -1425,7 +1425,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenTK.Compute.OpenCL.ImageDescription.html",
-          "hash": "oRIY/Tv/SoHQf7BWO6zuB+dadFvdTMuvv0CJBHw+/wA="
+          "hash": "fkAV1KUlEXDqzK1pcHwzPrUAvIQeBSsSj09nobbzU/4="
         }
       },
       "is_incremental": false,
@@ -5661,7 +5661,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenTK.Windowing.GraphicsLibraryFramework.GLFW.html",
-          "hash": "3kzFkEQT0BujT3RWU11ZJqmJtLdYMqRkbiE6ydyeD6I="
+          "hash": "qgjGa8AiI5NBF/k6WaUUPNpzmlE835XlhszfYz/TwuA="
         }
       },
       "is_incremental": false,
@@ -8140,11 +8140,11 @@
     {
       "status": {
         "can_incremental": false,
-        "details": "Cannot build incrementally because plugin changed.",
+        "details": "Cannot build incrementally because last build info is missing.",
         "incrementalPhase": "build",
         "total_file_count": 0,
         "skipped_file_count": 0,
-        "full_build_reason_code": "PluginChanged"
+        "full_build_reason_code": "NoAvailableBuildCache"
       },
       "processors": {
         "ConceptualDocumentProcessor": {
@@ -8177,8 +8177,8 @@
     },
     {
       "status": {
-        "can_incremental": true,
-        "details": "Can support incremental post processing.",
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: last post processor info is null.",
         "incrementalPhase": "postProcessing",
         "total_file_count": 0,
         "skipped_file_count": 0
