@@ -1,0 +1,282 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Enum XError
+  - OpenTK</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Enum XError
+ ">
+    <meta name="generator" content="docfx ">
+  
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+  
+  
+  
+
+    <meta name="author" content="The Open Toolkit Project">
+    <meta property="og:image" content="https://opentk.net/otkBig.png">
+    <meta property="og:image:width" content="142">
+    <meta property="og:image:height" content="50">
+    <meta property="og:site_name" content="OpenTK">
+    <meta property="og:title" content="Enum XError
+  - OpenTK">
+    <meta name="theme-color" content="#ffffff">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation" style="background: #0052cc;">
+          <div class="container">
+            <a class="navbar-brand" href="../index.html">
+          <img id="logo" src="../otkBig.png" alt="">
+        </a>
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="OpenTK.Platform.Native.X11.XError">
+
+
+  <h1 id="OpenTK_Platform_Native_X11_XError" data-uid="OpenTK.Platform.Native.X11.XError" class="text-break">Enum XError
+</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="OpenTK.html">OpenTK</a>.<span class="xref">Platform</span>.<a class="xref" href="OpenTK.Platform.Native.html">Native</a>.<a class="xref" href="OpenTK.Platform.Native.X11.html">X11</a></h6>
+  <h6><strong>Assembly</strong>: OpenTK.Platform.Native.dll</h6>
+  <h5 id="OpenTK_Platform_Native_X11_XError_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public enum XError : byte</code></pre>
+  </div>
+  <h3 id="fields">Fields
+</h3>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    <thead>
+    <tbody>
+      <tr>
+        <td id="OpenTK_Platform_Native_X11_XError_BadAccess">BadAccess</td>
+        <td><p>
+A client attempts to grab a key/button combination already grabbed by another client.
+</p>
+<p>
+A client attempts to free a colormap entry that it had not already allocated or to free
+an entry in a colormap that was created with all entries writable.
+</p>
+<p>
+A client attempts to store into a read-only or unallocated colormap entry.
+</p>
+<p>
+A client attempts to modify the access control list from other than the local (or otherwise authorized) host.
+</p>
+<p>
+A client attempts to select an event type that another client has already selected.
+</p>
+</td>
+      </tr>
+      <tr>
+        <td id="OpenTK_Platform_Native_X11_XError_BadAlloc">BadAlloc</td>
+        <td><p>The server fails to allocate the requested resource.
+Note that the explicit listing of BadAlloc errors in requests only covers allocation errors at
+a very coarse level and is not intended to (nor can it in practice hope to)
+cover all cases of a server running out of allocation space in the middle of service.
+The semantics when a server runs out of allocation space are left unspecified,
+but a server may generate a BadAlloc error on any request for this reason,
+and clients should be prepared to receive such errors and handle or discard them.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="OpenTK_Platform_Native_X11_XError_BadAtom">BadAtom</td>
+        <td><p>A value for an atom argument does not name a defined atom.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="OpenTK_Platform_Native_X11_XError_BadColor">BadColor</td>
+        <td><p>A value for a colormap argument does not name a defined colormap.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="OpenTK_Platform_Native_X11_XError_BadCursor">BadCursor</td>
+        <td><p>A value for a cursor argument does not name a defined cursor.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="OpenTK_Platform_Native_X11_XError_BadDrawable">BadDrawable</td>
+        <td><p>A value for a drawable argument does not name a defined window or pixmap.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="OpenTK_Platform_Native_X11_XError_BadFont">BadFont</td>
+        <td><p>A value for a font argument does not name a defined font (or, in some cases, GContext).</p>
+</td>
+      </tr>
+      <tr>
+        <td id="OpenTK_Platform_Native_X11_XError_BadGC">BadGC</td>
+        <td><p>A value for a GContext argument does not name a defined GContext.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="OpenTK_Platform_Native_X11_XError_BadIDChoice">BadIDChoice</td>
+        <td><p>The value chosen for a resource identifier either is not included
+in the range assigned to the client or is already in use.
+Under normal circumstances,
+this cannot occur and should be considered a server or Xlib error.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="OpenTK_Platform_Native_X11_XError_BadImplementation">BadImplementation</td>
+        <td><p>The server does not implement some aspect of the request.
+A server that generates this error for a core request is deficient.
+As such, this error is not listed for any of the requests,
+but clients should be prepared to receive such errors and handle or discard them.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="OpenTK_Platform_Native_X11_XError_BadLength">BadLength</td>
+        <td><p>
+The length of a request is shorter or longer than that required to contain the arguments.
+This is an internal Xlib or server error.
+</p>
+<p>
+The length of a request exceeds the maximum length accepted by the server.
+</p>
+</td>
+      </tr>
+      <tr>
+        <td id="OpenTK_Platform_Native_X11_XError_BadMatch">BadMatch</td>
+        <td><p>
+In a graphics request, the root and depth of the graphics context does not match that of the drawable.
+</p>
+<p>
+An InputOnly window is used as a drawable.
+</p>
+<p>
+Some argument or pair of arguments has the correct type and range, but it fails to match in some other way required by the request.
+</p>
+<p>
+An InputOnly window lacks this attribute.
+</p>
+</td>
+      </tr>
+      <tr>
+        <td id="OpenTK_Platform_Native_X11_XError_BadName">BadName</td>
+        <td><p>A font or color of the specified name does not exist.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="OpenTK_Platform_Native_X11_XError_BadPixmap">BadPixmap</td>
+        <td><p>A value for a pixmap argument does not name a defined pixmap.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="OpenTK_Platform_Native_X11_XError_BadRequest">BadRequest</td>
+        <td><p>The major or minor opcode does not specify a valid request.
+This usually is an Xlib or server error.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="OpenTK_Platform_Native_X11_XError_BadValue">BadValue</td>
+        <td><p>Some numeric value falls outside of the range of values accepted by the request.
+Unless a specific range is specified for an argument,
+the full range defined by the argument's type is accepted.
+Any argument defined as a set of alternatives typically can generate this error (due to the encoding).</p>
+</td>
+      </tr>
+      <tr>
+        <td id="OpenTK_Platform_Native_X11_XError_BadWindow">BadWindow</td>
+        <td><p>A value for a window argument does not name a defined window.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="OpenTK_Platform_Native_X11_XError_FirstExtensionError">FirstExtensionError</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td id="OpenTK_Platform_Native_X11_XError_LastExtensionError">LastExtensionError</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td id="OpenTK_Platform_Native_X11_XError_Success">Success</td>
+        <td><p>No error.</p>
+</td>
+      </tr>
+    </tbody>
+  </thead></thead></table>
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

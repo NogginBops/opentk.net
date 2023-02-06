@@ -1,0 +1,554 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ClipboardComponent
+  - OpenTK</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ClipboardComponent
+ ">
+    <meta name="generator" content="docfx ">
+  
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+  
+  
+  
+
+    <meta name="author" content="The Open Toolkit Project">
+    <meta property="og:image" content="https://opentk.net/otkBig.png">
+    <meta property="og:image:width" content="142">
+    <meta property="og:image:height" content="50">
+    <meta property="og:site_name" content="OpenTK">
+    <meta property="og:title" content="Class ClipboardComponent
+  - OpenTK">
+    <meta name="theme-color" content="#ffffff">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation" style="background: #0052cc;">
+          <div class="container">
+            <a class="navbar-brand" href="../index.html">
+          <img id="logo" src="../otkBig.png" alt="">
+        </a>
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="OpenTK.Platform.Native.Windows.ClipboardComponent">
+
+
+  <h1 id="OpenTK_Platform_Native_Windows_ClipboardComponent" data-uid="OpenTK.Platform.Native.Windows.ClipboardComponent" class="text-break">Class ClipboardComponent
+</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">object</span></div>
+    <div class="level1"><span class="xref">ClipboardComponent</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="OpenTK.Core.Platform.IClipboardComponent.html">IClipboardComponent</a></div>
+    <div><a class="xref" href="OpenTK.Core.Platform.IPalComponent.html">IPalComponent</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">object.Equals(object)</span>
+    </div>
+    <div>
+      <span class="xref">object.Equals(object, object)</span>
+    </div>
+    <div>
+      <span class="xref">object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">object.ReferenceEquals(object, object)</span>
+    </div>
+    <div>
+      <span class="xref">object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="OpenTK.html">OpenTK</a>.<span class="xref">Platform</span>.<a class="xref" href="OpenTK.Platform.Native.html">Native</a>.<a class="xref" href="OpenTK.Platform.Native.Windows.html">Windows</a></h6>
+  <h6><strong>Assembly</strong>: OpenTK.Platform.Native.dll</h6>
+  <h5 id="OpenTK_Platform_Native_Windows_ClipboardComponent_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ClipboardComponent : IClipboardComponent, IPalComponent</code></pre>
+  </div>
+  <h3 id="properties">Properties
+</h3>
+  <a id="OpenTK_Platform_Native_Windows_ClipboardComponent_CanIncludeInClipboardHistory_" data-uid="OpenTK.Platform.Native.Windows.ClipboardComponent.CanIncludeInClipboardHistory*"></a>
+  <h4 id="OpenTK_Platform_Native_Windows_ClipboardComponent_CanIncludeInClipboardHistory" data-uid="OpenTK.Platform.Native.Windows.ClipboardComponent.CanIncludeInClipboardHistory">CanIncludeInClipboardHistory</h4>
+  <div class="markdown level1 summary"><p>If this property is not null when setting the clipboard <code>CanIncludeInClipboardHistory</code> will be added to the clipboard format
+to either disable clipboard history or explicitly request the clipboard to be included in the histroy.</p>
+<p>See documentation: <a href="https://learn.microsoft.com/en-us/windows/win32/dataxchg/clipboard-formats#cloud-clipboard-and-clipboard-history-formats">https://learn.microsoft.com/en-us/windows/win32/dataxchg/clipboard-formats#cloud-clipboard-and-clipboard-history-formats</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool? CanIncludeInClipboardHistory { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span>?</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Platform_Native_Windows_ClipboardComponent_CanUploadToCloudClipboard_" data-uid="OpenTK.Platform.Native.Windows.ClipboardComponent.CanUploadToCloudClipboard*"></a>
+  <h4 id="OpenTK_Platform_Native_Windows_ClipboardComponent_CanUploadToCloudClipboard" data-uid="OpenTK.Platform.Native.Windows.ClipboardComponent.CanUploadToCloudClipboard">CanUploadToCloudClipboard</h4>
+  <div class="markdown level1 summary"><p>If this property is not null when setting the clipboard <code>CanUploadToCloudClipboard</code> will be added to the clipboard format
+to either disable the value set in the clipboard from syncing to the users devices, or request that it be syncronized with the users other devices.</p>
+<p>See documentation: <a href="https://learn.microsoft.com/en-us/windows/win32/dataxchg/clipboard-formats#cloud-clipboard-and-clipboard-history-formats">https://learn.microsoft.com/en-us/windows/win32/dataxchg/clipboard-formats#cloud-clipboard-and-clipboard-history-formats</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool? CanUploadToCloudClipboard { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span>?</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Platform_Native_Windows_ClipboardComponent_Logger_" data-uid="OpenTK.Platform.Native.Windows.ClipboardComponent.Logger*"></a>
+  <h4 id="OpenTK_Platform_Native_Windows_ClipboardComponent_Logger" data-uid="OpenTK.Platform.Native.Windows.ClipboardComponent.Logger">Logger</h4>
+  <div class="markdown level1 summary"><p>Provides a logger for this component.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ILogger? Logger { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Core.Utility.ILogger.html">ILogger</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Platform_Native_Windows_ClipboardComponent_Name_" data-uid="OpenTK.Platform.Native.Windows.ClipboardComponent.Name*"></a>
+  <h4 id="OpenTK_Platform_Native_Windows_ClipboardComponent_Name" data-uid="OpenTK.Platform.Native.Windows.ClipboardComponent.Name">Name</h4>
+  <div class="markdown level1 summary"><p>Name of the abstraction layer component.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Name { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Platform_Native_Windows_ClipboardComponent_Provides_" data-uid="OpenTK.Platform.Native.Windows.ClipboardComponent.Provides*"></a>
+  <h4 id="OpenTK_Platform_Native_Windows_ClipboardComponent_Provides" data-uid="OpenTK.Platform.Native.Windows.ClipboardComponent.Provides">Provides</h4>
+  <div class="markdown level1 summary"><p>Specifies which PAL components this object provides.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PalComponents Provides { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Core.Platform.PalComponents.html">PalComponents</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Platform_Native_Windows_ClipboardComponent_SupportedFormats_" data-uid="OpenTK.Platform.Native.Windows.ClipboardComponent.SupportedFormats*"></a>
+  <h4 id="OpenTK_Platform_Native_Windows_ClipboardComponent_SupportedFormats" data-uid="OpenTK.Platform.Native.Windows.ClipboardComponent.SupportedFormats">SupportedFormats</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyList&lt;ClipboardFormat&gt; SupportedFormats { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IReadOnlyList&lt;T&gt;</span>&lt;<a class="xref" href="OpenTK.Core.Platform.ClipboardFormat.html">ClipboardFormat</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+  <a id="OpenTK_Platform_Native_Windows_ClipboardComponent_GetClipboardAudio_" data-uid="OpenTK.Platform.Native.Windows.ClipboardComponent.GetClipboardAudio*"></a>
+  <h4 id="OpenTK_Platform_Native_Windows_ClipboardComponent_GetClipboardAudio" data-uid="OpenTK.Platform.Native.Windows.ClipboardComponent.GetClipboardAudio">GetClipboardAudio()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AudioData? GetClipboardAudio()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Core.Platform.AudioData.html">AudioData</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Platform_Native_Windows_ClipboardComponent_GetClipboardBitmap_" data-uid="OpenTK.Platform.Native.Windows.ClipboardComponent.GetClipboardBitmap*"></a>
+  <h4 id="OpenTK_Platform_Native_Windows_ClipboardComponent_GetClipboardBitmap" data-uid="OpenTK.Platform.Native.Windows.ClipboardComponent.GetClipboardBitmap">GetClipboardBitmap()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Bitmap? GetClipboardBitmap()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Core.Platform.Bitmap.html">Bitmap</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Platform_Native_Windows_ClipboardComponent_GetClipboardFiles_" data-uid="OpenTK.Platform.Native.Windows.ClipboardComponent.GetClipboardFiles*"></a>
+  <h4 id="OpenTK_Platform_Native_Windows_ClipboardComponent_GetClipboardFiles" data-uid="OpenTK.Platform.Native.Windows.ClipboardComponent.GetClipboardFiles">GetClipboardFiles()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;string&gt;? GetClipboardFiles()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List&lt;T&gt;</span>&lt;<span class="xref">string</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Platform_Native_Windows_ClipboardComponent_GetClipboardFormat_" data-uid="OpenTK.Platform.Native.Windows.ClipboardComponent.GetClipboardFormat*"></a>
+  <h4 id="OpenTK_Platform_Native_Windows_ClipboardComponent_GetClipboardFormat" data-uid="OpenTK.Platform.Native.Windows.ClipboardComponent.GetClipboardFormat">GetClipboardFormat()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ClipboardFormat GetClipboardFormat()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Core.Platform.ClipboardFormat.html">ClipboardFormat</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Platform_Native_Windows_ClipboardComponent_GetClipboardHTML_" data-uid="OpenTK.Platform.Native.Windows.ClipboardComponent.GetClipboardHTML*"></a>
+  <h4 id="OpenTK_Platform_Native_Windows_ClipboardComponent_GetClipboardHTML" data-uid="OpenTK.Platform.Native.Windows.ClipboardComponent.GetClipboardHTML">GetClipboardHTML()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? GetClipboardHTML()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Platform_Native_Windows_ClipboardComponent_GetClipboardText_" data-uid="OpenTK.Platform.Native.Windows.ClipboardComponent.GetClipboardText*"></a>
+  <h4 id="OpenTK_Platform_Native_Windows_ClipboardComponent_GetClipboardText" data-uid="OpenTK.Platform.Native.Windows.ClipboardComponent.GetClipboardText">GetClipboardText()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? GetClipboardText()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Platform_Native_Windows_ClipboardComponent_Initialize_" data-uid="OpenTK.Platform.Native.Windows.ClipboardComponent.Initialize*"></a>
+  <h4 id="OpenTK_Platform_Native_Windows_ClipboardComponent_Initialize_OpenTK_Core_Platform_PalComponents_" data-uid="OpenTK.Platform.Native.Windows.ClipboardComponent.Initialize(OpenTK.Core.Platform.PalComponents)">Initialize(PalComponents)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Initialize(PalComponents which)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Core.Platform.PalComponents.html">PalComponents</a></td>
+        <td><span class="parametername">which</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Platform_Native_Windows_ClipboardComponent_SetClipboardAudio_" data-uid="OpenTK.Platform.Native.Windows.ClipboardComponent.SetClipboardAudio*"></a>
+  <h4 id="OpenTK_Platform_Native_Windows_ClipboardComponent_SetClipboardAudio_OpenTK_Core_Platform_AudioData_" data-uid="OpenTK.Platform.Native.Windows.ClipboardComponent.SetClipboardAudio(OpenTK.Core.Platform.AudioData)">SetClipboardAudio(AudioData)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetClipboardAudio(AudioData data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Core.Platform.AudioData.html">AudioData</a></td>
+        <td><span class="parametername">data</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Platform_Native_Windows_ClipboardComponent_SetClipboardBitmap_" data-uid="OpenTK.Platform.Native.Windows.ClipboardComponent.SetClipboardBitmap*"></a>
+  <h4 id="OpenTK_Platform_Native_Windows_ClipboardComponent_SetClipboardBitmap_OpenTK_Core_Platform_Bitmap_" data-uid="OpenTK.Platform.Native.Windows.ClipboardComponent.SetClipboardBitmap(OpenTK.Core.Platform.Bitmap)">SetClipboardBitmap(Bitmap)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetClipboardBitmap(Bitmap bitmap)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Core.Platform.Bitmap.html">Bitmap</a></td>
+        <td><span class="parametername">bitmap</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Platform_Native_Windows_ClipboardComponent_SetClipboardText_" data-uid="OpenTK.Platform.Native.Windows.ClipboardComponent.SetClipboardText*"></a>
+  <h4 id="OpenTK_Platform_Native_Windows_ClipboardComponent_SetClipboardText_System_String_" data-uid="OpenTK.Platform.Native.Windows.ClipboardComponent.SetClipboardText(System.String)">SetClipboardText(string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetClipboardText(string text)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">text</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="OpenTK.Core.Platform.IClipboardComponent.html">IClipboardComponent</a>
+  </div>
+  <div>
+      <a class="xref" href="OpenTK.Core.Platform.IPalComponent.html">IPalComponent</a>
+  </div>
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

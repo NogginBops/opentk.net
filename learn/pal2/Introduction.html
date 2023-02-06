@@ -1,0 +1,278 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Platform Abstraction Layer 2  - OpenTK</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Platform Abstraction Layer 2 ">
+    <meta name="generator" content="docfx ">
+  
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+  
+  
+  
+
+    <meta name="author" content="The Open Toolkit Project">
+    <meta property="og:image" content="https://opentk.net/otkBig.png">
+    <meta property="og:image:width" content="142">
+    <meta property="og:image:height" content="50">
+    <meta property="og:site_name" content="OpenTK">
+    <meta property="og:title" content="Platform Abstraction Layer 2  - OpenTK">
+    <meta name="theme-color" content="#ffffff">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation" style="background: #0052cc;">
+          <div class="container">
+            <a class="navbar-brand" href="../../index.html">
+          <img id="logo" src="../../otkBig.png" alt="">
+        </a>
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="platform-abstraction-layer-2">Platform Abstraction Layer 2</h1>
+
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>PAL2 is under early development and many things might change in the future.
+Feedback is encouraged.</p>
+</div>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>Currently PAL2 is basically only usable on windows.
+This will change as it is developed more.</p>
+</div>
+<h2 id="setup">Setup</h2>
+<p>PAL2 exposes platform APIs through a number of interfaces used to abstract away the underlying operating system.</p>
+<p>The first of these interfaces we are going to see is <code>IWindowComponent</code> and <code>IOpenGLComponent</code> which allows the user to
+create and interact with windows as well as initialize an OpenGL context and draw graphics to the window.</p>
+<p>The following code initializes these interfaces with a platform dependent implementation (or throws <code>NotSupportedException</code> for not yet supported OSes).</p>
+<pre><code class="lang-cs">IWindowComponent windowComp = new OpenTK.Platform.Native.PlatformComponents.CreateWindowComponent();
+IOpenGLComponent openglComp = new OpenTK.Platform.Native.PlatformComponents.CreateOpenGLComponent();
+
+windowComp.Initialize(PalComponents.Window);
+openglComp.Initialize(PalComponents.OpenGL);
+</code></pre>
+<h2 id="creating-a-window">Creating a window</h2>
+<p>To create an OpenGL window using PAL2 all you need to do is the following:</p>
+<pre><code class="lang-cs">OpenGLGraphicsApiHints contextSettings = new OpenGLGraphicsApiHints()
+{
+    // Here different options of the opengl context can be set.
+    Version = new Version(4, 1),
+    Profile = OpenGLProfile.Core,
+    DebugFlag = true,
+    DepthBits = ContextDepthBits.Depth24,
+    StencilBits = ContextStencilBits.Stencil8,
+};
+
+WindowHandle window = windowComp.Create(contextSettings);
+
+OpenGLContextHandle glContext = openglComp.CreateFromWindow(window);
+</code></pre>
+<p>This returns a handle to the window and the opengl context which is the main method to interact with the window.</p>
+<p>When a window handle is created it is not visible by default, so we need to show the window. We also need to set the size we want the window to be shown with. This can be done by setting the window size and mode like so:</p>
+<pre><code class="lang-cs">windowComp.SetSize(window, 800, 600);
+windowComp.SetMode(window, WindowMode.Normal);
+</code></pre>
+<p>Before we can do any calls to OpenGL we need to do two things. 1. We need to set our created context as the &quot;current&quot; context and 2. Load all of the functions that OpenGL is going to use.
+This can quite easily be done like follows:</p>
+<pre><code class="lang-cs">// The the current opengl context and load the bindings.
+openglComp.SetCurrentContext(glContext);
+GLLoader.LoadBindings(openglComp.GetBindingsContext(glContext));
+</code></pre>
+<p><code>SetCurrentContext</code> sets the given OpenGL context as the &quot;current&quot; context.</p>
+<!--FIXME: Say something about what "current" context even means.-->
+<p>And <code>GLLoader.LoadBindings</code> loads all OpenGL functions.</p>
+<!--FIXME: Say something about lazy loading?-->
+<p>Now we want to set up our event loop so we can interact with our newly created window. Without any event processing most of the window functions will not happen and no window interaction will be possible.</p>
+<p>A simple event loop might look like the following:</p>
+<pre><code class="lang-cs">while (windowComp.IsWindowDestroyed(window) == false)
+{
+    // This will process events for all windows and
+    //  post those events to the event queue.
+    windowComp.ProcessEvents();
+
+    // Render something here
+}
+</code></pre>
+<p>To render something to the window we can do the following:</p>
+<pre><code class="lang-cs">GL.ClearColor(new Color4&lt;Rgba&gt;(64 / 255f, 0, 127 / 255f, 255));
+GL.Clear(ClearBufferMask.ColorBufferBit | ClearBufferMask.DepthBufferBit | ClearBufferMask.StencilBufferBit);
+
+windowComp.SwapBuffers(window);
+</code></pre>
+<p>The code shown so far will create a window and then process events while rendering to the window, but running the code there is one crucial flaw to the program. Closing the window doesn't work.</p>
+<p>This is becase closing the window is an event that needs to be responeded to and as we are not handling any events, no action is taken when the user wants to quit the application. So lets fix that!</p>
+<p>First step of handling events is to register a callback to the <code>EventQueue.EventRaised</code> event. Do this before creating the window like follows:</p>
+<pre><code class="lang-cs">EventQueue.EventRaised += EventRaised;
+</code></pre>
+<p>Now we need to define the <code>EventRaised</code> function.</p>
+<pre><code class="lang-cs">void EventRaised(PalHandle? handle, PlatformEventType type, EventArgs args) {
+
+}
+</code></pre>
+<p>This callback gets a few arguments, the two we are interested in right now are <code>type</code> and <code>args</code>.
+<code>type</code> tells us the type of the argument we received and <code>args</code> contains data specific to the type of event.</p>
+<p>To handle the quit message we will do the following:</p>
+<pre><code class="lang-cs">void EventRaised(PalHandle? handle, PlatformEventType type, EventArgs args) {
+
+    if (type == PlatformEventType.Close)
+    {
+        CloseEventArgs closeArgs = (CloseEventArgs)args;
+
+        // Destroy the window that the user wanted to close.
+        windowComp.Destroy(closeArgs.Window);
+    }
+
+}
+</code></pre>
+<p>First we check if <code>type</code> is <code>Close</code> and if it is we cast the event args to <code>CloseEventArgs</code>. <code>CloseEventArgs</code> contains a <code>window</code> property which tells us which window the user wanted to close.
+So to close the window we call <code>IWindowComponent.Destroy(WindowHandle)</code> to destroy the window.</p>
+<p>This way of handling events generalizes to other event types. First check for the type of event, then cast the <code>EventArgs</code> to the type specific for this type of event which gives appropriate information for handling the event.</p>
+<p>The final code we end up with could look like the following:</p>
+<pre><code class="lang-cs">using OpenTK.Core.Platform;
+using OpenTK.Graphics;
+using OpenTK.Graphics.OpenGL;
+using OpenTK.Mathematics;
+
+namespace Pal2Sample;
+
+class Sample
+{
+    static IWindowComponent windowComp = new OpenTK.Platform.Native.PlatformComponents.CreateWindowComponent();
+    static IOpenGLComponent openglComp = new OpenTK.Platform.Native.PlatformComponents.CreateOpenGLComponent();
+
+    static WindowHandle Window;
+    static OpenGLContextHandle GLContext;
+
+    public static void Main(string[] args)
+    {
+        windowComp.Initialize(PalComponents.Window);
+        openglComp.Initialize(PalComponents.OpenGL);
+
+        EventQueue.EventRaised += EventRaised;
+
+        OpenGLGraphicsApiHints contextSettings = new OpenGLGraphicsApiHints()
+        {
+            // Here different options of the opengl context can be set.
+            Version = new Version(4, 1),
+            Profile = OpenGLProfile.Core,
+            DebugFlag = true,
+            DepthBits = ContextDepthBits.Depth24,
+            StencilBits = ContextStencilBits.Stencil8,
+        };
+
+        Window = windowComp.Create(contextSettings);
+
+        GLContext = openglComp.CreateFromWindow(Window);
+
+        // Show window
+        windowComp.SetSize(Window, 800, 600);
+        windowComp.SetMode(Window, WindowMode.Normal);
+
+        // The the current opengl context and load the bindings.
+        openglComp.SetCurrentContext(GLContext);
+        GLLoader.LoadBindings(openglComp.GetBindingsContext(GLContext));
+
+        while (windowComp.IsWindowDestroyed(Window) == false)
+        {
+            // This will process events for all windows and
+            //  post those events to the event queue.
+            windowComp.ProcessEvents();
+
+            GL.ClearColor(new Color4&lt;Rgba&gt;(64 / 255f, 0, 127 / 255f, 255));
+            GL.Clear(ClearBufferMask.ColorBufferBit | ClearBufferMask.DepthBufferBit | ClearBufferMask.StencilBufferBit);
+
+            windowComp.SwapBuffers(Window);
+        }
+    }
+
+    static void EventRaised(PalHandle? handle, PlatformEventType type, EventArgs args)
+    {
+        if (type == PlatformEventType.Close)
+        {
+            CloseEventArgs closeArgs = (CloseEventArgs)args;
+
+            // Destroy the window that the user wanted to close.
+            windowComp.Destroy(closeArgs.Window);
+        }
+    }
+}
+</code></pre>
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

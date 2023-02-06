@@ -111,7 +111,151 @@ public struct Vector4h : ISerializable, IEquatable&lt;Vector4h&gt;</code></pre>
   <h3 id="constructors">Constructors
 </h3>
   <a id="OpenTK_Mathematics_Vector4h__ctor_" data-uid="OpenTK.Mathematics.Vector4h.#ctor*"></a>
-  <h4 id="OpenTK_Mathematics_Vector4h__ctor_OpenTK_Mathematics_Half_OpenTK_Mathematics_Half_OpenTK_Mathematics_Half_OpenTK_Mathematics_Half_" data-uid="OpenTK.Mathematics.Vector4h.#ctor(OpenTK.Mathematics.Half,OpenTK.Mathematics.Half,OpenTK.Mathematics.Half,OpenTK.Mathematics.Half)">Vector4h(Half, Half, Half, Half)</h4>
+  <h4 id="OpenTK_Mathematics_Vector4h__ctor_OpenTK_Mathematics_Vector2h_System_Half_System_Half_" data-uid="OpenTK.Mathematics.Vector4h.#ctor(OpenTK.Mathematics.Vector2h,System.Half,System.Half)">Vector4h(Vector2h, Half, Half)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="OpenTK.Mathematics.Vector4h.html">Vector4h</a> struct.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector4h(Vector2h xy, Half z = default, Half w = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector2h.html">Vector2h</a></td>
+        <td><span class="parametername">xy</span></td>
+        <td><p>The x and y components of the Vector4h.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Half</span></td>
+        <td><span class="parametername">z</span></td>
+        <td><p>The z component of the Vector4h.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Half</span></td>
+        <td><span class="parametername">w</span></td>
+        <td><p>The w component of the Vector4h.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Vector4h__ctor_" data-uid="OpenTK.Mathematics.Vector4h.#ctor*"></a>
+  <h4 id="OpenTK_Mathematics_Vector4h__ctor_OpenTK_Mathematics_Vector2h_System_Single_System_Single_" data-uid="OpenTK.Mathematics.Vector4h.#ctor(OpenTK.Mathematics.Vector2h,System.Single,System.Single)">Vector4h(Vector2h, float, float)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="OpenTK.Mathematics.Vector4h.html">Vector4h</a> struct.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector4h(Vector2h xy, float z = 0, float w = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector2h.html">Vector2h</a></td>
+        <td><span class="parametername">xy</span></td>
+        <td><p>The x and y components of the Vector4h.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td><span class="parametername">z</span></td>
+        <td><p>The z component of the Vector4h.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td><span class="parametername">w</span></td>
+        <td><p>The w component of the Vector4h.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Vector4h__ctor_" data-uid="OpenTK.Mathematics.Vector4h.#ctor*"></a>
+  <h4 id="OpenTK_Mathematics_Vector4h__ctor_OpenTK_Mathematics_Vector3h_System_Half_" data-uid="OpenTK.Mathematics.Vector4h.#ctor(OpenTK.Mathematics.Vector3h,System.Half)">Vector4h(Vector3h, Half)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="OpenTK.Mathematics.Vector4h.html">Vector4h</a> struct.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector4h(Vector3h xyz, Half w = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector3h.html">Vector3h</a></td>
+        <td><span class="parametername">xyz</span></td>
+        <td><p>The x, y and z components of the Vector4h.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Half</span></td>
+        <td><span class="parametername">w</span></td>
+        <td><p>The w component of the Vector4h.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Vector4h__ctor_" data-uid="OpenTK.Mathematics.Vector4h.#ctor*"></a>
+  <h4 id="OpenTK_Mathematics_Vector4h__ctor_OpenTK_Mathematics_Vector3h_System_Single_" data-uid="OpenTK.Mathematics.Vector4h.#ctor(OpenTK.Mathematics.Vector3h,System.Single)">Vector4h(Vector3h, float)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="OpenTK.Mathematics.Vector4h.html">Vector4h</a> struct.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector4h(Vector3h xyz, float w = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector3h.html">Vector3h</a></td>
+        <td><span class="parametername">xyz</span></td>
+        <td><p>The x, y and z components of the Vector4h.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td><span class="parametername">w</span></td>
+        <td><p>The w component of the Vector4h.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Vector4h__ctor_" data-uid="OpenTK.Mathematics.Vector4h.#ctor*"></a>
+  <h4 id="OpenTK_Mathematics_Vector4h__ctor_System_Half_System_Half_System_Half_System_Half_" data-uid="OpenTK.Mathematics.Vector4h.#ctor(System.Half,System.Half,System.Half,System.Half)">Vector4h(Half, Half, Half, Half)</h4>
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="OpenTK.Mathematics.Vector4h.html">Vector4h</a> struct.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -130,33 +274,33 @@ public struct Vector4h : ISerializable, IEquatable&lt;Vector4h&gt;</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Mathematics.Half.html">Half</a></td>
+        <td><span class="xref">System.Half</span></td>
         <td><span class="parametername">x</span></td>
-        <td><p>The X component of the vector.</p>
+        <td><p>The x component of the Vector4h.</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="OpenTK.Mathematics.Half.html">Half</a></td>
+        <td><span class="xref">System.Half</span></td>
         <td><span class="parametername">y</span></td>
-        <td><p>The Y component of the vector.</p>
+        <td><p>The y component of the Vector4h.</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="OpenTK.Mathematics.Half.html">Half</a></td>
+        <td><span class="xref">System.Half</span></td>
         <td><span class="parametername">z</span></td>
-        <td><p>The Z component of the vector.</p>
+        <td><p>The z component of the Vector4h.</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="OpenTK.Mathematics.Half.html">Half</a></td>
+        <td><span class="xref">System.Half</span></td>
         <td><span class="parametername">w</span></td>
-        <td><p>The W component of the vector.</p>
+        <td><p>The w component of the Vector4h.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="OpenTK_Mathematics_Vector4h__ctor_" data-uid="OpenTK.Mathematics.Vector4h.#ctor*"></a>
-  <h4 id="OpenTK_Mathematics_Vector4h__ctor_OpenTK_Mathematics_Half_" data-uid="OpenTK.Mathematics.Vector4h.#ctor(OpenTK.Mathematics.Half)">Vector4h(Half)</h4>
+  <h4 id="OpenTK_Mathematics_Vector4h__ctor_System_Half_" data-uid="OpenTK.Mathematics.Vector4h.#ctor(System.Half)">Vector4h(Half)</h4>
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="OpenTK.Mathematics.Vector4h.html">Vector4h</a> struct.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -175,249 +319,9 @@ public struct Vector4h : ISerializable, IEquatable&lt;Vector4h&gt;</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Mathematics.Half.html">Half</a></td>
+        <td><span class="xref">System.Half</span></td>
         <td><span class="parametername">value</span></td>
         <td><p>The value that will initialize this instance.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="OpenTK_Mathematics_Vector4h__ctor_" data-uid="OpenTK.Mathematics.Vector4h.#ctor*"></a>
-  <h4 id="OpenTK_Mathematics_Vector4h__ctor_OpenTK_Mathematics_Vector4_System_Boolean_" data-uid="OpenTK.Mathematics.Vector4h.#ctor(OpenTK.Mathematics.Vector4,System.Boolean)">Vector4h(Vector4, bool)</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="OpenTK.Mathematics.Vector4h.html">Vector4h</a> struct.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Vector4h(Vector4 v, bool throwOnError)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Mathematics.Vector4.html">Vector4</a></td>
-        <td><span class="parametername">v</span></td>
-        <td><p>The <a class="xref" href="OpenTK.Mathematics.Vector4.html">Vector4</a> to convert.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">bool</span></td>
-        <td><span class="parametername">throwOnError</span></td>
-        <td><p>Enable checks that will throw if the conversion result is not meaningful.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="OpenTK_Mathematics_Vector4h__ctor_" data-uid="OpenTK.Mathematics.Vector4h.#ctor*"></a>
-  <h4 id="OpenTK_Mathematics_Vector4h__ctor_OpenTK_Mathematics_Vector4_" data-uid="OpenTK.Mathematics.Vector4h.#ctor(OpenTK.Mathematics.Vector4)">Vector4h(Vector4)</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="OpenTK.Mathematics.Vector4h.html">Vector4h</a> struct.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Vector4h(Vector4 v)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Mathematics.Vector4.html">Vector4</a></td>
-        <td><span class="parametername">v</span></td>
-        <td><p>The <a class="xref" href="OpenTK.Mathematics.Vector4.html">Vector4</a> to convert.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="OpenTK_Mathematics_Vector4h__ctor_" data-uid="OpenTK.Mathematics.Vector4h.#ctor*"></a>
-  <h4 id="OpenTK_Mathematics_Vector4h__ctor_OpenTK_Mathematics_Vector4__System_Boolean_" data-uid="OpenTK.Mathematics.Vector4h.#ctor(OpenTK.Mathematics.Vector4@,System.Boolean)">Vector4h(in Vector4, bool)</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="OpenTK.Mathematics.Vector4h.html">Vector4h</a> struct.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Vector4h(in Vector4 v, bool throwOnError)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Mathematics.Vector4.html">Vector4</a></td>
-        <td><span class="parametername">v</span></td>
-        <td><p>The <a class="xref" href="OpenTK.Mathematics.Vector4.html">Vector4</a> to convert.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">bool</span></td>
-        <td><span class="parametername">throwOnError</span></td>
-        <td><p>Enable checks that will throw if the conversion result is not meaningful.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="OpenTK_Mathematics_Vector4h__ctor_" data-uid="OpenTK.Mathematics.Vector4h.#ctor*"></a>
-  <h4 id="OpenTK_Mathematics_Vector4h__ctor_OpenTK_Mathematics_Vector4__" data-uid="OpenTK.Mathematics.Vector4h.#ctor(OpenTK.Mathematics.Vector4@)">Vector4h(in Vector4)</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="OpenTK.Mathematics.Vector4h.html">Vector4h</a> struct.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Vector4h(in Vector4 v)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Mathematics.Vector4.html">Vector4</a></td>
-        <td><span class="parametername">v</span></td>
-        <td><p>The <a class="xref" href="OpenTK.Mathematics.Vector4.html">Vector4</a> to convert.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="OpenTK_Mathematics_Vector4h__ctor_" data-uid="OpenTK.Mathematics.Vector4h.#ctor*"></a>
-  <h4 id="OpenTK_Mathematics_Vector4h__ctor_OpenTK_Mathematics_Vector4d_System_Boolean_" data-uid="OpenTK.Mathematics.Vector4h.#ctor(OpenTK.Mathematics.Vector4d,System.Boolean)">Vector4h(Vector4d, bool)</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="OpenTK.Mathematics.Vector4h.html">Vector4h</a> struct.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Vector4h(Vector4d v, bool throwOnError)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Mathematics.Vector4d.html">Vector4d</a></td>
-        <td><span class="parametername">v</span></td>
-        <td><p>The <a class="xref" href="OpenTK.Mathematics.Vector4d.html">Vector4d</a> to convert.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">bool</span></td>
-        <td><span class="parametername">throwOnError</span></td>
-        <td><p>Enable checks that will throw if the conversion result is not meaningful.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="OpenTK_Mathematics_Vector4h__ctor_" data-uid="OpenTK.Mathematics.Vector4h.#ctor*"></a>
-  <h4 id="OpenTK_Mathematics_Vector4h__ctor_OpenTK_Mathematics_Vector4d_" data-uid="OpenTK.Mathematics.Vector4h.#ctor(OpenTK.Mathematics.Vector4d)">Vector4h(Vector4d)</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="OpenTK.Mathematics.Vector4h.html">Vector4h</a> struct.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Vector4h(Vector4d v)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Mathematics.Vector4d.html">Vector4d</a></td>
-        <td><span class="parametername">v</span></td>
-        <td><p>The <a class="xref" href="OpenTK.Mathematics.Vector4d.html">Vector4d</a> to convert.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="OpenTK_Mathematics_Vector4h__ctor_" data-uid="OpenTK.Mathematics.Vector4h.#ctor*"></a>
-  <h4 id="OpenTK_Mathematics_Vector4h__ctor_OpenTK_Mathematics_Vector4d__System_Boolean_" data-uid="OpenTK.Mathematics.Vector4h.#ctor(OpenTK.Mathematics.Vector4d@,System.Boolean)">Vector4h(in Vector4d, bool)</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="OpenTK.Mathematics.Vector4h.html">Vector4h</a> struct.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Vector4h(in Vector4d v, bool throwOnError)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Mathematics.Vector4d.html">Vector4d</a></td>
-        <td><span class="parametername">v</span></td>
-        <td><p>The <a class="xref" href="OpenTK.Mathematics.Vector4d.html">Vector4d</a> to convert.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">bool</span></td>
-        <td><span class="parametername">throwOnError</span></td>
-        <td><p>Enable checks that will throw if the conversion result is not meaningful.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="OpenTK_Mathematics_Vector4h__ctor_" data-uid="OpenTK.Mathematics.Vector4h.#ctor*"></a>
-  <h4 id="OpenTK_Mathematics_Vector4h__ctor_OpenTK_Mathematics_Vector4d__" data-uid="OpenTK.Mathematics.Vector4h.#ctor(OpenTK.Mathematics.Vector4d@)">Vector4h(in Vector4d)</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="OpenTK.Mathematics.Vector4h.html">Vector4h</a> struct.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Vector4h(in Vector4d v)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Mathematics.Vector4d.html">Vector4d</a></td>
-        <td><span class="parametername">v</span></td>
-        <td><p>The <a class="xref" href="OpenTK.Mathematics.Vector4d.html">Vector4d</a> to convert.</p>
 </td>
       </tr>
     </tbody>
@@ -456,57 +360,6 @@ public struct Vector4h : ISerializable, IEquatable&lt;Vector4h&gt;</code></pre>
     </tbody>
   </table>
   <a id="OpenTK_Mathematics_Vector4h__ctor_" data-uid="OpenTK.Mathematics.Vector4h.#ctor*"></a>
-  <h4 id="OpenTK_Mathematics_Vector4h__ctor_System_Single_System_Single_System_Single_System_Single_System_Boolean_" data-uid="OpenTK.Mathematics.Vector4h.#ctor(System.Single,System.Single,System.Single,System.Single,System.Boolean)">Vector4h(float, float, float, float, bool)</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="OpenTK.Mathematics.Vector4h.html">Vector4h</a> struct.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Vector4h(float x, float y, float z, float w, bool throwOnError)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">float</span></td>
-        <td><span class="parametername">x</span></td>
-        <td><p>The X component of the vector.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">float</span></td>
-        <td><span class="parametername">y</span></td>
-        <td><p>The Y component of the vector.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">float</span></td>
-        <td><span class="parametername">z</span></td>
-        <td><p>The Z component of the vector.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">float</span></td>
-        <td><span class="parametername">w</span></td>
-        <td><p>The W component of the vector.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">bool</span></td>
-        <td><span class="parametername">throwOnError</span></td>
-        <td><p>Enable checks that will throw if the conversion result is not meaningful.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="OpenTK_Mathematics_Vector4h__ctor_" data-uid="OpenTK.Mathematics.Vector4h.#ctor*"></a>
   <h4 id="OpenTK_Mathematics_Vector4h__ctor_System_Single_System_Single_System_Single_System_Single_" data-uid="OpenTK.Mathematics.Vector4h.#ctor(System.Single,System.Single,System.Single,System.Single)">Vector4h(float, float, float, float)</h4>
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="OpenTK.Mathematics.Vector4h.html">Vector4h</a> struct.</p>
 </div>
@@ -528,25 +381,25 @@ public struct Vector4h : ISerializable, IEquatable&lt;Vector4h&gt;</code></pre>
       <tr>
         <td><span class="xref">float</span></td>
         <td><span class="parametername">x</span></td>
-        <td><p>The X component of the vector.</p>
+        <td><p>The x component of the Vector4h.</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">float</span></td>
         <td><span class="parametername">y</span></td>
-        <td><p>The Y component of the vector.</p>
+        <td><p>The y component of the Vector4h.</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">float</span></td>
         <td><span class="parametername">z</span></td>
-        <td><p>The Z component of the vector.</p>
+        <td><p>The z component of the Vector4h.</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">float</span></td>
         <td><span class="parametername">w</span></td>
-        <td><p>The W component of the vector.</p>
+        <td><p>The w component of the Vector4h.</p>
 </td>
       </tr>
     </tbody>
@@ -621,7 +474,7 @@ public struct Vector4h : ISerializable, IEquatable&lt;Vector4h&gt;</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Mathematics.Half.html">Half</a></td>
+        <td><span class="xref">System.Half</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -644,7 +497,7 @@ public struct Vector4h : ISerializable, IEquatable&lt;Vector4h&gt;</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Mathematics.Half.html">Half</a></td>
+        <td><span class="xref">System.Half</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -667,7 +520,7 @@ public struct Vector4h : ISerializable, IEquatable&lt;Vector4h&gt;</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Mathematics.Half.html">Half</a></td>
+        <td><span class="xref">System.Half</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -690,7 +543,7 @@ public struct Vector4h : ISerializable, IEquatable&lt;Vector4h&gt;</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Mathematics.Half.html">Half</a></td>
+        <td><span class="xref">System.Half</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -2212,7 +2065,7 @@ public struct Vector4h : ISerializable, IEquatable&lt;Vector4h&gt;</code></pre>
   <h3 id="methods">Methods
 </h3>
   <a id="OpenTK_Mathematics_Vector4h_Deconstruct_" data-uid="OpenTK.Mathematics.Vector4h.Deconstruct*"></a>
-  <h4 id="OpenTK_Mathematics_Vector4h_Deconstruct_OpenTK_Mathematics_Half__OpenTK_Mathematics_Half__OpenTK_Mathematics_Half__OpenTK_Mathematics_Half__" data-uid="OpenTK.Mathematics.Vector4h.Deconstruct(OpenTK.Mathematics.Half@,OpenTK.Mathematics.Half@,OpenTK.Mathematics.Half@,OpenTK.Mathematics.Half@)">Deconstruct(out Half, out Half, out Half, out Half)</h4>
+  <h4 id="OpenTK_Mathematics_Vector4h_Deconstruct_System_Half__System_Half__System_Half__System_Half__" data-uid="OpenTK.Mathematics.Vector4h.Deconstruct(System.Half@,System.Half@,System.Half@,System.Half@)">Deconstruct(out Half, out Half, out Half, out Half)</h4>
   <div class="markdown level1 summary"><p>Deconstructs the vector into it's individual components.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -2232,25 +2085,25 @@ public void Deconstruct(out Half x, out Half y, out Half z, out Half w)</code></
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Mathematics.Half.html">Half</a></td>
+        <td><span class="xref">System.Half</span></td>
         <td><span class="parametername">x</span></td>
         <td><p>The X component of the vector.</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="OpenTK.Mathematics.Half.html">Half</a></td>
+        <td><span class="xref">System.Half</span></td>
         <td><span class="parametername">y</span></td>
         <td><p>The Y component of the vector.</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="OpenTK.Mathematics.Half.html">Half</a></td>
+        <td><span class="xref">System.Half</span></td>
         <td><span class="parametername">z</span></td>
         <td><p>The Z component of the vector.</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="OpenTK.Mathematics.Half.html">Half</a></td>
+        <td><span class="xref">System.Half</span></td>
         <td><span class="parametername">w</span></td>
         <td><p>The W component of the vector.</p>
 </td>
@@ -2339,127 +2192,6 @@ public void Deconstruct(out Half x, out Half y, out Half z, out Half w)</code></
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><span class="xref">System.ValueType.Equals(object)</span></div>
-  <a id="OpenTK_Mathematics_Vector4h_FromBinaryStream_" data-uid="OpenTK.Mathematics.Vector4h.FromBinaryStream*"></a>
-  <h4 id="OpenTK_Mathematics_Vector4h_FromBinaryStream_System_IO_BinaryReader_" data-uid="OpenTK.Mathematics.Vector4h.FromBinaryStream(System.IO.BinaryReader)">FromBinaryStream(BinaryReader)</h4>
-  <div class="markdown level1 summary"><p>Updates the X,Y,Z and W components of this instance by reading from a Stream.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void FromBinaryStream(BinaryReader bin)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.IO.BinaryReader</span></td>
-        <td><span class="parametername">bin</span></td>
-        <td><p>A BinaryReader instance associated with an open Stream.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="OpenTK_Mathematics_Vector4h_FromBytes_" data-uid="OpenTK.Mathematics.Vector4h.FromBytes*"></a>
-  <h4 id="OpenTK_Mathematics_Vector4h_FromBytes_System_Byte___System_Int32_" data-uid="OpenTK.Mathematics.Vector4h.FromBytes(System.Byte[],System.Int32)">FromBytes(byte[], int)</h4>
-  <div class="markdown level1 summary"><p>Converts an array of bytes into Half4.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Pure]
-public static Vector4h FromBytes(byte[] value, int startIndex)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">byte</span>[]</td>
-        <td><span class="parametername">value</span></td>
-        <td><p>A Half4 in it's byte[] representation.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">int</span></td>
-        <td><span class="parametername">startIndex</span></td>
-        <td><p>The starting position within value.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Mathematics.Vector4h.html">Vector4h</a></td>
-        <td><p>A new Half4 instance.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="OpenTK_Mathematics_Vector4h_GetBytes_" data-uid="OpenTK.Mathematics.Vector4h.GetBytes*"></a>
-  <h4 id="OpenTK_Mathematics_Vector4h_GetBytes_OpenTK_Mathematics_Vector4h_" data-uid="OpenTK.Mathematics.Vector4h.GetBytes(OpenTK.Mathematics.Vector4h)">GetBytes(Vector4h)</h4>
-  <div class="markdown level1 summary"><p>Returns the Half4 as an array of bytes.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Pure]
-public static byte[] GetBytes(Vector4h h)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Mathematics.Vector4h.html">Vector4h</a></td>
-        <td><span class="parametername">h</span></td>
-        <td><p>The Half4 to convert.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">byte</span>[]</td>
-        <td><p>The input as byte array.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
   <a id="OpenTK_Mathematics_Vector4h_GetHashCode_" data-uid="OpenTK.Mathematics.Vector4h.GetHashCode*"></a>
   <h4 id="OpenTK_Mathematics_Vector4h_GetHashCode" data-uid="OpenTK.Mathematics.Vector4h.GetHashCode">GetHashCode()</h4>
   <div class="markdown level1 summary"></div>
@@ -2512,33 +2244,6 @@ public static byte[] GetBytes(Vector4h h)</code></pre>
         <td><span class="xref">System.Runtime.Serialization.StreamingContext</span></td>
         <td><span class="parametername">context</span></td>
         <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="OpenTK_Mathematics_Vector4h_ToBinaryStream_" data-uid="OpenTK.Mathematics.Vector4h.ToBinaryStream*"></a>
-  <h4 id="OpenTK_Mathematics_Vector4h_ToBinaryStream_System_IO_BinaryWriter_" data-uid="OpenTK.Mathematics.Vector4h.ToBinaryStream(System.IO.BinaryWriter)">ToBinaryStream(BinaryWriter)</h4>
-  <div class="markdown level1 summary"><p>Writes the X,Y,Z and W components of this instance into a Stream.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void ToBinaryStream(BinaryWriter bin)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.IO.BinaryWriter</span></td>
-        <td><span class="parametername">bin</span></td>
-        <td><p>A BinaryWriter instance associated with an open Stream.</p>
-</td>
       </tr>
     </tbody>
   </table>
@@ -2664,94 +2369,6 @@ public static byte[] GetBytes(Vector4h h)</code></pre>
       <tr>
         <td><span class="xref">bool</span></td>
         <td><p>True, if left equals right; false otherwise.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="OpenTK_Mathematics_Vector4h_op_Explicit_" data-uid="OpenTK.Mathematics.Vector4h.op_Explicit*"></a>
-  <h4 id="OpenTK_Mathematics_Vector4h_op_Explicit_OpenTK_Mathematics_Vector4__OpenTK_Mathematics_Vector4h" data-uid="OpenTK.Mathematics.Vector4h.op_Explicit(OpenTK.Mathematics.Vector4)~OpenTK.Mathematics.Vector4h">explicit operator Vector4h(Vector4)</h4>
-  <div class="markdown level1 summary"><p>Converts OpenTK.Vector4 to OpenTK.Half4.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Pure]
-public static explicit operator Vector4h(Vector4 v4f)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Mathematics.Vector4.html">Vector4</a></td>
-        <td><span class="parametername">v4f</span></td>
-        <td><p>The Vector4 to convert.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Mathematics.Vector4h.html">Vector4h</a></td>
-        <td><p>The resulting Half vector.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="OpenTK_Mathematics_Vector4h_op_Explicit_" data-uid="OpenTK.Mathematics.Vector4h.op_Explicit*"></a>
-  <h4 id="OpenTK_Mathematics_Vector4h_op_Explicit_OpenTK_Mathematics_Vector4d__OpenTK_Mathematics_Vector4h" data-uid="OpenTK.Mathematics.Vector4h.op_Explicit(OpenTK.Mathematics.Vector4d)~OpenTK.Mathematics.Vector4h">explicit operator Vector4h(Vector4d)</h4>
-  <div class="markdown level1 summary"><p>Converts OpenTK.Vector4d to OpenTK.Half4.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Pure]
-public static explicit operator Vector4h(Vector4d v4d)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Mathematics.Vector4d.html">Vector4d</a></td>
-        <td><span class="parametername">v4d</span></td>
-        <td><p>The Vector4d to convert.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Mathematics.Vector4h.html">Vector4h</a></td>
-        <td><p>The resulting Half vector.</p>
 </td>
       </tr>
     </tbody>
@@ -2889,7 +2506,7 @@ public static implicit operator Vector4d(Vector4h vec)</code></pre>
     </tbody>
   </table>
   <a id="OpenTK_Mathematics_Vector4h_op_Implicit_" data-uid="OpenTK.Mathematics.Vector4h.op_Implicit*"></a>
-  <h4 id="OpenTK_Mathematics_Vector4h_op_Implicit_System_ValueTuple_OpenTK_Mathematics_Half_OpenTK_Mathematics_Half_OpenTK_Mathematics_Half_OpenTK_Mathematics_Half___OpenTK_Mathematics_Vector4h" data-uid="OpenTK.Mathematics.Vector4h.op_Implicit(System.ValueTuple{OpenTK.Mathematics.Half,OpenTK.Mathematics.Half,OpenTK.Mathematics.Half,OpenTK.Mathematics.Half})~OpenTK.Mathematics.Vector4h">implicit operator Vector4h((Half X, Half Y, Half Z, Half W))</h4>
+  <h4 id="OpenTK_Mathematics_Vector4h_op_Implicit_System_ValueTuple_System_Half_System_Half_System_Half_System_Half___OpenTK_Mathematics_Vector4h" data-uid="OpenTK.Mathematics.Vector4h.op_Implicit(System.ValueTuple{System.Half,System.Half,System.Half,System.Half})~OpenTK.Mathematics.Vector4h">implicit operator Vector4h((Half X, Half Y, Half Z, Half W))</h4>
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="OpenTK.Mathematics.Vector4h.html">Vector4h</a> struct using a tuple containing the component
 values.</p>
 </div>
@@ -2910,7 +2527,7 @@ public static implicit operator Vector4h((Half X, Half Y, Half Z, Half W) values
     </thead>
     <tbody>
       <tr>
-        <td>(<a class="xref" href="OpenTK.Mathematics.Half.html">Half</a> <span class="xref">X</span>, <a class="xref" href="OpenTK.Mathematics.Half.html">Half</a> <span class="xref">Y</span>, <a class="xref" href="OpenTK.Mathematics.Half.html">Half</a> <span class="xref">Z</span>, <a class="xref" href="OpenTK.Mathematics.Half.html">Half</a> <span class="xref">W</span>)</td>
+        <td>(<span class="xref">System.Half</span> <span class="xref">X</span>, <span class="xref">System.Half</span> <span class="xref">Y</span>, <span class="xref">System.Half</span> <span class="xref">Z</span>, <span class="xref">System.Half</span> <span class="xref">W</span>)</td>
         <td><span class="parametername">values</span></td>
         <td><p>A tuple containing the component values.</p>
 </td>

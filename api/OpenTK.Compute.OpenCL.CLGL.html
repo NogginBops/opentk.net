@@ -621,13 +621,13 @@ public static extern CLBuffer CreateFromGLTexture3D(CLContext context, MemoryFla
     </tbody>
   </table>
   <a id="OpenTK_Compute_OpenCL_CLGL_GetGLContextInfoKHR_" data-uid="OpenTK.Compute.OpenCL.CLGL.GetGLContextInfoKHR*"></a>
-  <h4 id="OpenTK_Compute_OpenCL_CLGL_GetGLContextInfoKHR_System_IntPtr___OpenTK_Compute_OpenCL_CLGL_ContextInfo_System_UIntPtr_System_Byte___System_UIntPtr__" data-uid="OpenTK.Compute.OpenCL.CLGL.GetGLContextInfoKHR(System.IntPtr[],OpenTK.Compute.OpenCL.CLGL.ContextInfo,System.UIntPtr,System.Byte[],System.UIntPtr@)">GetGLContextInfoKHR(IntPtr[], ContextInfo, UIntPtr, byte[], out UIntPtr)</h4>
+  <h4 id="OpenTK_Compute_OpenCL_CLGL_GetGLContextInfoKHR_System_IntPtr___OpenTK_Compute_OpenCL_CLGL_ContextInfo_System_UIntPtr_System_Byte___System_UIntPtr__" data-uid="OpenTK.Compute.OpenCL.CLGL.GetGLContextInfoKHR(System.IntPtr[],OpenTK.Compute.OpenCL.CLGL.ContextInfo,System.UIntPtr,System.Byte[],System.UIntPtr@)">GetGLContextInfoKHR(IntPtr[], ContextInfo, nuint, byte[], out nuint)</h4>
   <div class="markdown level1 summary"><p>Introduced in Opencl 1.0</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern CLResultCode GetGLContextInfoKHR(IntPtr[] properties, CLGL.ContextInfo paramName, UIntPtr paramValueSize, byte[] paramValue, out UIntPtr paramValueSizeReturned)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern CLResultCode GetGLContextInfoKHR(IntPtr[] properties, CLGL.ContextInfo paramName, nuint paramValueSize, byte[] paramValue, out nuint paramValueSizeReturned)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -650,7 +650,7 @@ public static extern CLBuffer CreateFromGLTexture3D(CLContext context, MemoryFla
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.UIntPtr</span></td>
+        <td><span class="xref">nuint</span></td>
         <td><span class="parametername">paramValueSize</span></td>
         <td></td>
       </tr>
@@ -660,7 +660,7 @@ public static extern CLBuffer CreateFromGLTexture3D(CLContext context, MemoryFla
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.UIntPtr</span></td>
+        <td><span class="xref">nuint</span></td>
         <td><span class="parametername">paramValueSizeReturned</span></td>
         <td></td>
       </tr>
@@ -733,13 +733,13 @@ public static extern CLBuffer CreateFromGLTexture3D(CLContext context, MemoryFla
     </tbody>
   </table>
   <a id="OpenTK_Compute_OpenCL_CLGL_GetGLTextureInfo_" data-uid="OpenTK.Compute.OpenCL.CLGL.GetGLTextureInfo*"></a>
-  <h4 id="OpenTK_Compute_OpenCL_CLGL_GetGLTextureInfo_OpenTK_Compute_OpenCL_CLBuffer_OpenTK_Compute_OpenCL_CLGL_TextureInfo_System_UIntPtr_System_Byte___System_UIntPtr__" data-uid="OpenTK.Compute.OpenCL.CLGL.GetGLTextureInfo(OpenTK.Compute.OpenCL.CLBuffer,OpenTK.Compute.OpenCL.CLGL.TextureInfo,System.UIntPtr,System.Byte[],System.UIntPtr@)">GetGLTextureInfo(CLBuffer, TextureInfo, UIntPtr, byte[], out UIntPtr)</h4>
+  <h4 id="OpenTK_Compute_OpenCL_CLGL_GetGLTextureInfo_OpenTK_Compute_OpenCL_CLBuffer_OpenTK_Compute_OpenCL_CLGL_TextureInfo_System_UIntPtr_System_Byte___System_UIntPtr__" data-uid="OpenTK.Compute.OpenCL.CLGL.GetGLTextureInfo(OpenTK.Compute.OpenCL.CLBuffer,OpenTK.Compute.OpenCL.CLGL.TextureInfo,System.UIntPtr,System.Byte[],System.UIntPtr@)">GetGLTextureInfo(CLBuffer, TextureInfo, nuint, byte[], out nuint)</h4>
   <div class="markdown level1 summary"><p>Introduced in Opencl 1.0</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern CLResultCode GetGLTextureInfo(CLBuffer memObject, CLGL.TextureInfo paramName, UIntPtr paramValueSize, byte[] paramValue, out UIntPtr paramValueSizeReturned)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern CLResultCode GetGLTextureInfo(CLBuffer memObject, CLGL.TextureInfo paramName, nuint paramValueSize, byte[] paramValue, out nuint paramValueSizeReturned)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -762,7 +762,7 @@ public static extern CLBuffer CreateFromGLTexture3D(CLContext context, MemoryFla
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.UIntPtr</span></td>
+        <td><span class="xref">nuint</span></td>
         <td><span class="parametername">paramValueSize</span></td>
         <td></td>
       </tr>
@@ -772,7 +772,7 @@ public static extern CLBuffer CreateFromGLTexture3D(CLContext context, MemoryFla
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.UIntPtr</span></td>
+        <td><span class="xref">nuint</span></td>
         <td><span class="parametername">paramValueSizeReturned</span></td>
         <td></td>
       </tr>

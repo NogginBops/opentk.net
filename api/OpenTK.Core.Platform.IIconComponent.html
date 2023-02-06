@@ -1,0 +1,1024 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IIconComponent
+  - OpenTK</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IIconComponent
+ ">
+    <meta name="generator" content="docfx ">
+  
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+  
+  
+  
+
+    <meta name="author" content="The Open Toolkit Project">
+    <meta property="og:image" content="https://opentk.net/otkBig.png">
+    <meta property="og:image:width" content="142">
+    <meta property="og:image:height" content="50">
+    <meta property="og:site_name" content="OpenTK">
+    <meta property="og:title" content="Interface IIconComponent
+  - OpenTK">
+    <meta name="theme-color" content="#ffffff">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation" style="background: #0052cc;">
+          <div class="container">
+            <a class="navbar-brand" href="../index.html">
+          <img id="logo" src="../otkBig.png" alt="">
+        </a>
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="OpenTK.Core.Platform.IIconComponent">
+
+
+  <h1 id="OpenTK_Core_Platform_IIconComponent" data-uid="OpenTK.Core.Platform.IIconComponent" class="text-break">Interface IIconComponent
+</h1>
+  <div class="markdown level0 summary"><p>Interface for PAL drivers which provide the icon component.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="OpenTK.Core.Platform.IPalComponent.html#OpenTK_Core_Platform_IPalComponent_Name">IPalComponent.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenTK.Core.Platform.IPalComponent.html#OpenTK_Core_Platform_IPalComponent_Provides">IPalComponent.Provides</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenTK.Core.Platform.IPalComponent.html#OpenTK_Core_Platform_IPalComponent_Logger">IPalComponent.Logger</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenTK.Core.Platform.IPalComponent.html#OpenTK_Core_Platform_IPalComponent_Initialize_OpenTK_Core_Platform_PalComponents_">IPalComponent.Initialize(PalComponents)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="OpenTK.html">OpenTK</a>.<a class="xref" href="OpenTK.Core.html">Core</a>.<a class="xref" href="OpenTK.Core.Platform.html">Platform</a></h6>
+  <h6><strong>Assembly</strong>: OpenTK.Core.dll</h6>
+  <h5 id="OpenTK_Core_Platform_IIconComponent_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IIconComponent : IPalComponent</code></pre>
+  </div>
+  <h3 id="properties">Properties
+</h3>
+  <a id="OpenTK_Core_Platform_IIconComponent_CanLoadFile_" data-uid="OpenTK.Core.Platform.IIconComponent.CanLoadFile*"></a>
+  <h4 id="OpenTK_Core_Platform_IIconComponent_CanLoadFile" data-uid="OpenTK.Core.Platform.IIconComponent.CanLoadFile">CanLoadFile</h4>
+  <div class="markdown level1 summary"><p>True if icon objects can be loaded from files.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool CanLoadFile { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Core_Platform_IIconComponent_CanLoadSystemIcon_" data-uid="OpenTK.Core.Platform.IIconComponent.CanLoadSystemIcon*"></a>
+  <h4 id="OpenTK_Core_Platform_IIconComponent_CanLoadSystemIcon" data-uid="OpenTK.Core.Platform.IIconComponent.CanLoadSystemIcon">CanLoadSystemIcon</h4>
+  <div class="markdown level1 summary"><p>True if icon objects can be populated from common system icons.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool CanLoadSystemIcon { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Core_Platform_IIconComponent_HasMipmaps_" data-uid="OpenTK.Core.Platform.IIconComponent.HasMipmaps*"></a>
+  <h4 id="OpenTK_Core_Platform_IIconComponent_HasMipmaps" data-uid="OpenTK.Core.Platform.IIconComponent.HasMipmaps">HasMipmaps</h4>
+  <div class="markdown level1 summary"><p>True if icon objects can have mip maps.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool HasMipmaps { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+  <a id="OpenTK_Core_Platform_IIconComponent_Create_" data-uid="OpenTK.Core.Platform.IIconComponent.Create*"></a>
+  <h4 id="OpenTK_Core_Platform_IIconComponent_Create" data-uid="OpenTK.Core.Platform.IIconComponent.Create">Create()</h4>
+  <div class="markdown level1 summary"><p>Create an icon object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IconHandle Create()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Core.Platform.IconHandle.html">IconHandle</a></td>
+        <td><p>Handle to an icon object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Core_Platform_IIconComponent_Destroy_" data-uid="OpenTK.Core.Platform.IIconComponent.Destroy*"></a>
+  <h4 id="OpenTK_Core_Platform_IIconComponent_Destroy_OpenTK_Core_Platform_IconHandle_" data-uid="OpenTK.Core.Platform.IIconComponent.Destroy(OpenTK.Core.Platform.IconHandle)">Destroy(IconHandle)</h4>
+  <div class="markdown level1 summary"><p>Destroy an icon object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Destroy(IconHandle handle)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Core.Platform.IconHandle.html">IconHandle</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>Handle to the icon object to destroy.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">handle</code> is null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Core_Platform_IIconComponent_GenerateMipmaps_" data-uid="OpenTK.Core.Platform.IIconComponent.GenerateMipmaps*"></a>
+  <h4 id="OpenTK_Core_Platform_IIconComponent_GenerateMipmaps_OpenTK_Core_Platform_IconHandle_" data-uid="OpenTK.Core.Platform.IIconComponent.GenerateMipmaps(OpenTK.Core.Platform.IconHandle)">GenerateMipmaps(IconHandle)</h4>
+  <div class="markdown level1 summary"><p>Create the mipmap levels of an icon object if not already done.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void GenerateMipmaps(IconHandle handle)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Core.Platform.IconHandle.html">IconHandle</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>Handle to an icon object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">handle</code> is null.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Core.Platform.PalNotImplementedException.html">PalNotImplementedException</a></td>
+        <td><p>Driver does not provide mipmaps. See <a class="xref" href="OpenTK.Core.Platform.IIconComponent.html#OpenTK_Core_Platform_IIconComponent_HasMipmaps">HasMipmaps</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Core_Platform_IIconComponent_GetBitmap_" data-uid="OpenTK.Core.Platform.IIconComponent.GetBitmap*"></a>
+  <h4 id="OpenTK_Core_Platform_IIconComponent_GetBitmap_OpenTK_Core_Platform_IconHandle_System_Int32_System_Span_System_Byte__" data-uid="OpenTK.Core.Platform.IIconComponent.GetBitmap(OpenTK.Core.Platform.IconHandle,System.Int32,System.Span{System.Byte})">GetBitmap(IconHandle, int, Span&lt;byte&gt;)</h4>
+  <div class="markdown level1 summary"><p>Get the bitmap visual of an icon object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void GetBitmap(IconHandle handle, int level, Span&lt;byte&gt; data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Core.Platform.IconHandle.html">IconHandle</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>Handle to an icon object.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">level</span></td>
+        <td><p>Mipmap level of the visual to copy.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Span&lt;T&gt;</span>&lt;<span class="xref">byte</span>&gt;</td>
+        <td><span class="parametername">data</span></td>
+        <td><p>A buffer to copy bitmap data into.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">handle</code> is null.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Core.Platform.PalNotImplementedException.html">PalNotImplementedException</a></td>
+        <td><p>Driver does not implement mipmap functionality.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Core_Platform_IIconComponent_GetBitmap_" data-uid="OpenTK.Core.Platform.IIconComponent.GetBitmap*"></a>
+  <h4 id="OpenTK_Core_Platform_IIconComponent_GetBitmap_OpenTK_Core_Platform_IconHandle_System_Span_System_Byte__" data-uid="OpenTK.Core.Platform.IIconComponent.GetBitmap(OpenTK.Core.Platform.IconHandle,System.Span{System.Byte})">GetBitmap(IconHandle, Span&lt;byte&gt;)</h4>
+  <div class="markdown level1 summary"><p>Get the bitmap visual of an icon object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void GetBitmap(IconHandle handle, Span&lt;byte&gt; data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Core.Platform.IconHandle.html">IconHandle</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>Handle to an icon object.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Span&lt;T&gt;</span>&lt;<span class="xref">byte</span>&gt;</td>
+        <td><span class="parametername">data</span></td>
+        <td><p>A buffer to copy bitmap data into.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">handle</code> is null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Core_Platform_IIconComponent_GetBitmapSize_" data-uid="OpenTK.Core.Platform.IIconComponent.GetBitmapSize*"></a>
+  <h4 id="OpenTK_Core_Platform_IIconComponent_GetBitmapSize_OpenTK_Core_Platform_IconHandle_System_Int32_" data-uid="OpenTK.Core.Platform.IIconComponent.GetBitmapSize(OpenTK.Core.Platform.IconHandle,System.Int32)">GetBitmapSize(IconHandle, int)</h4>
+  <div class="markdown level1 summary"><p>Get the size of the bitmap visual in bytes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int GetBitmapSize(IconHandle handle, int level)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Core.Platform.IconHandle.html">IconHandle</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>Handle to an icon object.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">level</span></td>
+        <td><p>Mipmap level of the visual to get the size of.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><p>The size of the bitmap visual in bytes.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">handle</code> is null.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Core.Platform.PalNotImplementedException.html">PalNotImplementedException</a></td>
+        <td><p>Driver does not implement mipmap functionality.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Core_Platform_IIconComponent_GetBitmapSize_" data-uid="OpenTK.Core.Platform.IIconComponent.GetBitmapSize*"></a>
+  <h4 id="OpenTK_Core_Platform_IIconComponent_GetBitmapSize_OpenTK_Core_Platform_IconHandle_" data-uid="OpenTK.Core.Platform.IIconComponent.GetBitmapSize(OpenTK.Core.Platform.IconHandle)">GetBitmapSize(IconHandle)</h4>
+  <div class="markdown level1 summary"><p>Get the size of the bitmap visual in bytes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int GetBitmapSize(IconHandle handle)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Core.Platform.IconHandle.html">IconHandle</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>Handle to an icon object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><p>The size of the bitmap visual in bytes.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">handle</code> is null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Core_Platform_IIconComponent_GetDimensions_" data-uid="OpenTK.Core.Platform.IIconComponent.GetDimensions*"></a>
+  <h4 id="OpenTK_Core_Platform_IIconComponent_GetDimensions_OpenTK_Core_Platform_IconHandle_System_Int32_System_Int32__System_Int32__" data-uid="OpenTK.Core.Platform.IIconComponent.GetDimensions(OpenTK.Core.Platform.IconHandle,System.Int32,System.Int32@,System.Int32@)">GetDimensions(IconHandle, int, out int, out int)</h4>
+  <div class="markdown level1 summary"><p>Get the dimensions of an icon object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void GetDimensions(IconHandle handle, int level, out int width, out int height)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Core.Platform.IconHandle.html">IconHandle</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>Handle to icon object.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">level</span></td>
+        <td><p>Mipmap level of the object.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">width</span></td>
+        <td><p>Width of the icon.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">height</span></td>
+        <td><p>Height of icon.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">handle</code> is null.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Core.Platform.PalNotImplementedException.html">PalNotImplementedException</a></td>
+        <td><p>Driver does not provide mipmaps. See <a class="xref" href="OpenTK.Core.Platform.IIconComponent.html#OpenTK_Core_Platform_IIconComponent_HasMipmaps">HasMipmaps</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.ArgumentOutOfRangeException</span></td>
+        <td><p>Icon does not have mipmap level specified by <code data-dev-comment-type="paramref" class="paramref">level</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Core_Platform_IIconComponent_GetDimensions_" data-uid="OpenTK.Core.Platform.IIconComponent.GetDimensions*"></a>
+  <h4 id="OpenTK_Core_Platform_IIconComponent_GetDimensions_OpenTK_Core_Platform_IconHandle_System_Int32__System_Int32__" data-uid="OpenTK.Core.Platform.IIconComponent.GetDimensions(OpenTK.Core.Platform.IconHandle,System.Int32@,System.Int32@)">GetDimensions(IconHandle, out int, out int)</h4>
+  <div class="markdown level1 summary"><p>Get the dimensions of a icon object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void GetDimensions(IconHandle handle, out int width, out int height)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Core.Platform.IconHandle.html">IconHandle</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>Handle to icon object.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">width</span></td>
+        <td><p>Width of the icon.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">height</span></td>
+        <td><p>Height of icon.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">handle</code> is null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Core_Platform_IIconComponent_Load_" data-uid="OpenTK.Core.Platform.IIconComponent.Load*"></a>
+  <h4 id="OpenTK_Core_Platform_IIconComponent_Load_OpenTK_Core_Platform_IconHandle_OpenTK_Core_Platform_SystemIconType_" data-uid="OpenTK.Core.Platform.IIconComponent.Load(OpenTK.Core.Platform.IconHandle,OpenTK.Core.Platform.SystemIconType)">Load(IconHandle, SystemIconType)</h4>
+  <div class="markdown level1 summary"><p>Load a common system icon.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Load(IconHandle handle, SystemIconType name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Core.Platform.IconHandle.html">IconHandle</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>Handle to an icon object.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Core.Platform.SystemIconType.html">SystemIconType</a></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>To be replaced by an enumeration.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">handle</code> is null.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Core.Platform.PlatformException.html">PlatformException</a></td>
+        <td><p>System does not provide an icon for the given value of <code data-dev-comment-type="paramref" class="paramref">name</code>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Core.Platform.PalNotImplementedException.html">PalNotImplementedException</a></td>
+        <td><p>Driver does not implement loading system icons. See <a class="xref" href="OpenTK.Core.Platform.IIconComponent.html#OpenTK_Core_Platform_IIconComponent_CanLoadSystemIcon">CanLoadSystemIcon</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Core_Platform_IIconComponent_Load_" data-uid="OpenTK.Core.Platform.IIconComponent.Load*"></a>
+  <h4 id="OpenTK_Core_Platform_IIconComponent_Load_OpenTK_Core_Platform_IconHandle_System_Int32_System_Int32_System_ReadOnlySpan_System_Byte__System_Int32_" data-uid="OpenTK.Core.Platform.IIconComponent.Load(OpenTK.Core.Platform.IconHandle,System.Int32,System.Int32,System.ReadOnlySpan{System.Byte},System.Int32)">Load(IconHandle, int, int, ReadOnlySpan&lt;byte&gt;, int)</h4>
+  <div class="markdown level1 summary"><p>Load an icon object with image data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Load(IconHandle handle, int width, int height, ReadOnlySpan&lt;byte&gt; data, int level)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Core.Platform.IconHandle.html">IconHandle</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>Handle to an icon object.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">width</span></td>
+        <td><p>Width of the mipmap.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">height</span></td>
+        <td><p>Height of the bitmap.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.ReadOnlySpan&lt;T&gt;</span>&lt;<span class="xref">byte</span>&gt;</td>
+        <td><span class="parametername">data</span></td>
+        <td><p>Image data to load into icon.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">level</span></td>
+        <td><p>Mip level to load data onto.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">handle</code> is null.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.ArgumentOutOfRangeException</span></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">width</code> or <code data-dev-comment-type="paramref" class="paramref">height</code> is larger than the previous MIP level.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Core.Platform.PalNotImplementedException.html">PalNotImplementedException</a></td>
+        <td><p>Driver does not provide mipmaps. See <a class="xref" href="OpenTK.Core.Platform.IIconComponent.html#OpenTK_Core_Platform_IIconComponent_HasMipmaps">HasMipmaps</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Core_Platform_IIconComponent_Load_" data-uid="OpenTK.Core.Platform.IIconComponent.Load*"></a>
+  <h4 id="OpenTK_Core_Platform_IIconComponent_Load_OpenTK_Core_Platform_IconHandle_System_Int32_System_Int32_System_ReadOnlySpan_System_Byte__" data-uid="OpenTK.Core.Platform.IIconComponent.Load(OpenTK.Core.Platform.IconHandle,System.Int32,System.Int32,System.ReadOnlySpan{System.Byte})">Load(IconHandle, int, int, ReadOnlySpan&lt;byte&gt;)</h4>
+  <div class="markdown level1 summary"><p>Load an icon object with image data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Load(IconHandle handle, int width, int height, ReadOnlySpan&lt;byte&gt; data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Core.Platform.IconHandle.html">IconHandle</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>Handle to an icon object.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">width</span></td>
+        <td><p>Width of the bitmap.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">height</span></td>
+        <td><p>Height of the bitmap.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.ReadOnlySpan&lt;T&gt;</span>&lt;<span class="xref">byte</span>&gt;</td>
+        <td><span class="parametername">data</span></td>
+        <td><p>Image data to load into icon.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">handle</code> is null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Core_Platform_IIconComponent_Load_" data-uid="OpenTK.Core.Platform.IIconComponent.Load*"></a>
+  <h4 id="OpenTK_Core_Platform_IIconComponent_Load_OpenTK_Core_Platform_IconHandle_System_IO_Stream_" data-uid="OpenTK.Core.Platform.IIconComponent.Load(OpenTK.Core.Platform.IconHandle,System.IO.Stream)">Load(IconHandle, Stream)</h4>
+  <div class="markdown level1 summary"><p>Load an icon object from a stream.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Load(IconHandle handle, Stream stream)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Core.Platform.IconHandle.html">IconHandle</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>Handle to icon object.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IO.Stream</span></td>
+        <td><span class="parametername">stream</span></td>
+        <td><p>Stream containing icon file.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenTK_Core_Platform_IIconComponent_Load_OpenTK_Core_Platform_IconHandle_System_IO_Stream__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If the icon cannot be loaded from an open file or stream handle, the driver should implement this function through a temporary file.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">handle</code> or <code data-dev-comment-type="paramref" class="paramref">stream</code> is null.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IO.FileNotFoundException</span></td>
+        <td><p>Icon file not found.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IO.IOException</span></td>
+        <td><p>Generic IO error.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Core.Platform.PalNotImplementedException.html">PalNotImplementedException</a></td>
+        <td><p>Driver does not implement loading from files. See <a class="xref" href="OpenTK.Core.Platform.IIconComponent.html#OpenTK_Core_Platform_IIconComponent_CanLoadFile">CanLoadFile</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Core_Platform_IIconComponent_Load_" data-uid="OpenTK.Core.Platform.IIconComponent.Load*"></a>
+  <h4 id="OpenTK_Core_Platform_IIconComponent_Load_OpenTK_Core_Platform_IconHandle_System_String_" data-uid="OpenTK.Core.Platform.IIconComponent.Load(OpenTK.Core.Platform.IconHandle,System.String)">Load(IconHandle, string)</h4>
+  <div class="markdown level1 summary"><p>Load an icon object from a file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Load(IconHandle handle, string file)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Core.Platform.IconHandle.html">IconHandle</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>Handle to an icon object.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">file</span></td>
+        <td><p>Path to the icon file.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">handle</code> or <code data-dev-comment-type="paramref" class="paramref">file</code> is null.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IO.FileNotFoundException</span></td>
+        <td><p>Icon file not found.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IO.IOException</span></td>
+        <td><p>Generic IO error.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Core.Platform.PalNotImplementedException.html">PalNotImplementedException</a></td>
+        <td><p>Driver does not implement loading from files. See <a class="xref" href="OpenTK.Core.Platform.IIconComponent.html#OpenTK_Core_Platform_IIconComponent_CanLoadFile">CanLoadFile</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

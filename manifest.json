@@ -12,7 +12,7 @@
           "hash": "NsxDfrSndtT3HQMdGmSmwxLrjtp+H3dUPalTtkHsvGc="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -57,7 +57,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenTK.Audio.OpenAL.ALC.html",
-          "hash": "T8m20a1HENa5GZAlQ0ige5lVJ7w3/nFWTl98ELYEUUY="
+          "hash": "Har0FoG+BszA2pkp8iVmFgTn64NHa3yjiOzMNmNlrPw="
         }
       },
       "is_incremental": false,
@@ -645,7 +645,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenTK.Audio.OpenAL.Extensions.Creative.EFX.ReverbProperties.html",
-          "hash": "VHfFodoBp2+ltK92SXO+OT9Lih7zN/YX0OwDTZcTlDo="
+          "hash": "JoYzdDoEbzzBkZS7QywnVl92PqhcV/vSgeFjpf6Q94U="
         }
       },
       "is_incremental": false,
@@ -669,7 +669,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenTK.Audio.OpenAL.Extensions.Creative.EnumerateAll.EnumerateAll.html",
-          "hash": "2bu2hIYMz5Oip0gQVG2OE7ru+nk4pye7sJtTfq9YVxY="
+          "hash": "OvLwt9cPu667PXDbwBSSXzpjccoEcmFPgGaUmS7nsiE="
         }
       },
       "is_incremental": false,
@@ -969,7 +969,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenTK.Audio.OpenAL.OpenALLibraryNameContainer.html",
-          "hash": "p00nYJCL4hQZGQayW/PNHulf4yBGQF8KRckwcXS6O2k="
+          "hash": "xQGDtJEOzaHR9d+72CJkyM+GjPaUPh+gniTkd0uB/Hg="
         }
       },
       "is_incremental": false,
@@ -982,6 +982,30 @@
         ".html": {
           "relative_path": "api/OpenTK.Audio.OpenAL.html",
           "hash": "UbEBfTMMuTYpgvF0X9uwYJvLCfH6/+bU6XDmXY1lOJc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Color3-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Color3-1.html",
+          "hash": "jOR9CuEZc/rR6hEB3Thkb1wPk/VXFZcLOW4jnyq8Ck8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Color3.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Color3.html",
+          "hash": "DKChZfeI4LiepKmD9iuPjL49qZKs+tKEgzVd2wp43fs="
         }
       },
       "is_incremental": false,
@@ -1053,7 +1077,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenTK.Compute.OpenCL.CL.html",
-          "hash": "GvJ/2hYw55wyvpJzdL+0hToUQmhBbPB8jRw/WAVTnWk="
+          "hash": "3HJNAnM3Gj5lpxb4bG02+H2igcfvx1a9sqwedJM7+sU="
         }
       },
       "is_incremental": false,
@@ -1173,7 +1197,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenTK.Compute.OpenCL.CLGL.html",
-          "hash": "VouPUPQmi36l8MqemPs8ZkrmFkZoZibZbuLCLDkCFU8="
+          "hash": "i4jKRnqk7PPzjACD+AplNCzdJ2+pTnrNh4CHFM6LD6c="
         }
       },
       "is_incremental": false,
@@ -1401,7 +1425,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenTK.Compute.OpenCL.ImageDescription.html",
-          "hash": "fkAV1KUlEXDqzK1pcHwzPrUAvIQeBSsSj09nobbzU/4="
+          "hash": "oRIY/Tv/SoHQf7BWO6zuB+dadFvdTMuvv0CJBHw+/wA="
         }
       },
       "is_incremental": false,
@@ -1557,7 +1581,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenTK.Compute.OpenCL.OpenCLLibraryNameContainer.html",
-          "hash": "5rC0sbOPO9YmMMzaAgYRxEtlRk7colYeoMHODZ5uY38="
+          "hash": "R98iW0Q0H+gshtf7syRjzfkznNDO7iwAJJpPIRPdPAI="
         }
       },
       "is_incremental": false,
@@ -1653,7 +1677,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenTK.Compute.OpenCL.html",
-          "hash": "XSz9UtLj6ovEON7VAIbJ41YBx1osoyrlOPQj8dgCH0Q="
+          "hash": "yG8QJpiDKBRDDwWFHKhGjnRzhFaw0Ln4WFfMoPnHPJ8="
         }
       },
       "is_incremental": false,
@@ -1757,6 +1781,678 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Core.Platform.AppTheme.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Core.Platform.AppTheme.html",
+          "hash": "Vj1tgoB5MxclypcOSbF+3jqkQvdMfa/9fSkJIR8gUOM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Core.Platform.AudioData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Core.Platform.AudioData.html",
+          "hash": "rDacTmuDhpJI1a81xOUeCvM1VRhLPcz5yFMRSVywHTI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Core.Platform.BatteryInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Core.Platform.BatteryInfo.html",
+          "hash": "PlbnZTq32kjpqblhB+X4MCRJPDUv50KD1SPFUTEj0i0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Core.Platform.BatteryStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Core.Platform.BatteryStatus.html",
+          "hash": "PMwDW8eM0AfMQGVIuvjPro8G5Acmd+dC7aZCql/0gTA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Core.Platform.Bitmap.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Core.Platform.Bitmap.html",
+          "hash": "7zSK3YKudHQeuUrzZbVGnBkUrV+bChBG0BPSIpE8s9g="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Core.Platform.ClipboardFormat.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Core.Platform.ClipboardFormat.html",
+          "hash": "PmgX36CjGsK0HftkID4SohY3tVyq2lDULC6kzhkCKCE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Core.Platform.CloseEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Core.Platform.CloseEventArgs.html",
+          "hash": "7N/dRTFXfrxxAF42DV3pqO4Cf+rAQnXGBJqvDX7LkpE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Core.Platform.ComponentSet.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Core.Platform.ComponentSet.html",
+          "hash": "yfsePCzuiKQUWa7xa0+CO4XD4y6EWJ4Y4rTf1MtmBs8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Core.Platform.ContextDepthBits.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Core.Platform.ContextDepthBits.html",
+          "hash": "5h8Iz8nbtAGsQqVGT9ydfQJMWOh+clgObMS4c2K1NGo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Core.Platform.ContextSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Core.Platform.ContextSettings.html",
+          "hash": "B4v61Oj2h3Ai+CgQfTPOYelFmJMLAJJc1/m2ER/muwQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Core.Platform.ContextStencilBits.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Core.Platform.ContextStencilBits.html",
+          "hash": "ypxCiGoT+80GkbP7XJr4lv+tma8+9d9tSBhyJaGdyEs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Core.Platform.ContextValues.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Core.Platform.ContextValues.html",
+          "hash": "wAuXrRLFvdFzqhkcr4ddXcSdNiyLDMb+BMDyid9OBPk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Core.Platform.CursorCaptureMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Core.Platform.CursorCaptureMode.html",
+          "hash": "hJeMfqfhN19TyoCfLLpWkUO7ku5VcPmhFvOdYzNACKA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Core.Platform.CursorHandle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Core.Platform.CursorHandle.html",
+          "hash": "DeNOj7XFrNn2ilSm11Z+AGgbBsF2IvneiIEqMTLIQbM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Core.Platform.DisplayConnectionChangedEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Core.Platform.DisplayConnectionChangedEventArgs.html",
+          "hash": "N/fzAtyboRJz8MQ8dbRFyy3HaSX0I01XSakBqimLNgE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Core.Platform.DisplayHandle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Core.Platform.DisplayHandle.html",
+          "hash": "W6IL2CEt6/wR1NwDc8Ft4Wg62Ja/OwyFuT4X+OH92T0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Core.Platform.DisplayResolution.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Core.Platform.DisplayResolution.html",
+          "hash": "1h2pnfCGbvETchtRA9LZYTm+Fx/3QqXoygtc/5EKyLU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Core.Platform.Enums.Key.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Core.Platform.Enums.Key.html",
+          "hash": "6eX4VmfA2Vq00UbLSSz5mIY9di1qD0bohS6152ixfXM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Core.Platform.Enums.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Core.Platform.Enums.html",
+          "hash": "2/G0dSMtPjlg7oRqCRIj5yJwPSJ0pwszdccbMrTLkG8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Core.Platform.EventQueue.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Core.Platform.EventQueue.html",
+          "hash": "6ZCNLfwYDumYFqXBeecfFCsUvZSqjS42IRgpRNLmrLg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Core.Platform.FileDropEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Core.Platform.FileDropEventArgs.html",
+          "hash": "GpeEqYlSPwCVRHFc8S3BbVViKze6MY0kpDtD70Nisow="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Core.Platform.FocusEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Core.Platform.FocusEventArgs.html",
+          "hash": "5Vkea91ujgB7PgVu280i635iorhg14nUWw0dSdC5pXw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Core.Platform.GraphicsApi.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Core.Platform.GraphicsApi.html",
+          "hash": "cXbCC75aQA98GlaqBqJttLfi5XZd+lU7Z3WvLlQTtsE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Core.Platform.GraphicsApiHints.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Core.Platform.GraphicsApiHints.html",
+          "hash": "I+Py18po5ZHb8qQrLWFgEjQzznsXX7MUxV6W68ayeeE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Core.Platform.HitTest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Core.Platform.HitTest.html",
+          "hash": "gCEoTigiCOSUNhpC+XqdhGX4EOnpfDEl0reTLLxZWdY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Core.Platform.HitType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Core.Platform.HitType.html",
+          "hash": "8dIyr21R2MHFWEpiKwtTZZ2JmQzTkg5EAC/97KSHKPs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Core.Platform.IClipboardComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Core.Platform.IClipboardComponent.html",
+          "hash": "EZf5U4Ob3IBie2qCwd7IhSZrhSxE6QDqmgYUBt3pE0w="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Core.Platform.ICursorComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Core.Platform.ICursorComponent.html",
+          "hash": "eItUnTDF6BzyGrueNsqot5gPjpGLyBjYvSfQV9zItpc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Core.Platform.IDisplayComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Core.Platform.IDisplayComponent.html",
+          "hash": "wCq2FIqENeyyRBcJODjXvIWhnwczC8JhRoCvHpTPaUg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Core.Platform.IIconComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Core.Platform.IIconComponent.html",
+          "hash": "teJ7dT6MCDUa+LgENgMzANbAILHZFZnInh7rScBEwSk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Core.Platform.IKeyboardComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Core.Platform.IKeyboardComponent.html",
+          "hash": "AbPYwY9FMiB7IPPihJIE4iZc9RarDbK/k130W0f4FNQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Core.Platform.IMouseComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Core.Platform.IMouseComponent.html",
+          "hash": "SKKFf6RmMryruXdiZxUygFaDLmQ0W/Z6kR0xTqTYo2M="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Core.Platform.IOpenGLComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Core.Platform.IOpenGLComponent.html",
+          "hash": "6Q9Xl/93Vp2Ox4aK1j3z5jThmJlaKPSsTnO4x9bO46c="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Core.Platform.IPalComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Core.Platform.IPalComponent.html",
+          "hash": "L+R4UeMXmkA2gKGDBbHSjEJodjIqpRzu3K8s5F9ehMI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Core.Platform.IShellComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Core.Platform.IShellComponent.html",
+          "hash": "GlNMT0UoMf1QZtr7Lw94LBaIv6b3yZwtei/SXz9luV4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Core.Platform.ISurfaceComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Core.Platform.ISurfaceComponent.html",
+          "hash": "YOPfxOh3vuWUcbnKetvEqVE3gRqM3YzPSKmr+y3dsvw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Core.Platform.IWindowComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Core.Platform.IWindowComponent.html",
+          "hash": "nHMu1N+u53W4NXg0cVO0Zd/aQ3h/muybDDv44QNtTtw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Core.Platform.IconHandle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Core.Platform.IconHandle.html",
+          "hash": "dqeK+rxQwQQ0FCNYzsanXIOHqAkIQqtnr3jP8moJSXI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Core.Platform.KeyDownEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Core.Platform.KeyDownEventArgs.html",
+          "hash": "yTh7rOji0kYpBFDPyRfyAg1C2+ji1zOG3cIAtLdfXOw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Core.Platform.KeyUpEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Core.Platform.KeyUpEventArgs.html",
+          "hash": "kY3+d8IaOnyJTvTmYSLHwpHBVCKaIETGskq/Y5p3cR0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Core.Platform.MouseButton.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Core.Platform.MouseButton.html",
+          "hash": "0m3LeqRu/u7sNNdOUbmzBqLKQbHYcX4QThLQHoH5X7k="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Core.Platform.MouseButtonDownEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Core.Platform.MouseButtonDownEventArgs.html",
+          "hash": "Tn1PeuW5dAeZwC6t7NpSrOXSpzxTaM6btcx3Yj1Rlzo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Core.Platform.MouseButtonUpEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Core.Platform.MouseButtonUpEventArgs.html",
+          "hash": "NawZWXyfy1teLi8AFEA+tE/mZXr0pVybMWqq59Z4/rA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Core.Platform.MouseEnterEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Core.Platform.MouseEnterEventArgs.html",
+          "hash": "nf81OOsVPp0luWf9ca2PzX/s7mlN3iSB4qNmGTxLPas="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Core.Platform.MouseHandle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Core.Platform.MouseHandle.html",
+          "hash": "6FzGmOW5xGxg8EGw906hhEKwitc2GLYLu/J2WbBzgQg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Core.Platform.MouseMoveEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Core.Platform.MouseMoveEventArgs.html",
+          "hash": "zpY8XehAN2RlbM3O6tcg+XDvCayEom/WI0uID/37eEs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Core.Platform.OpenGLContextHandle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Core.Platform.OpenGLContextHandle.html",
+          "hash": "A1jPYIIW/mCFblsmaWsdy8DXQiDr1A/+2UKZKhyzqsw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Core.Platform.OpenGLGraphicsApiHints.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Core.Platform.OpenGLGraphicsApiHints.html",
+          "hash": "y/GaPo73cfr0dmFXQmvGfxiLyuw4acCVGdtxvkoRoeU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Core.Platform.OpenGLProfile.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Core.Platform.OpenGLProfile.html",
+          "hash": "spQUPOWuU3GCu1CJZjcbVi690mrh+g2dQ8ceWStQOEs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Core.Platform.Pal2BindingsContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Core.Platform.Pal2BindingsContext.html",
+          "hash": "1VbSqeC5ndLVV22wGvNS0856S0DzVcJlwxFNxNfHFPU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Core.Platform.PalComponents.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Core.Platform.PalComponents.html",
+          "hash": "/CEg3R72OshHeccwXFS6PdxfrHTbBOAhQCSUdPFNlAs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Core.Platform.PalException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Core.Platform.PalException.html",
+          "hash": "eLFhGlP/kah5FWd+W0QbbmxYVBpqhE7ACwPcdA2zF1s="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Core.Platform.PalHandle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Core.Platform.PalHandle.html",
+          "hash": "3/Drs8/o2+QsVetqlgq/BXsgiHVxpjPZfogiLiV1euU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Core.Platform.PalNotImplementedException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Core.Platform.PalNotImplementedException.html",
+          "hash": "Tl1EGANRJdQ7jjhufl5pu6XIr65gTe2hV5x9SWdqz+w="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Core.Platform.PlatformEventHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Core.Platform.PlatformEventHandler.html",
+          "hash": "NfJWDa4syo1PqS7Zp/cI3VRldAn1Oct0hhmaEf6TlWo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Core.Platform.PlatformEventType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Core.Platform.PlatformEventType.html",
+          "hash": "NPBuwNZzoDDWdFZFSH5d+ja9PKPkD6GA4EtTP+jblYU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/OpenTK.Core.Platform.PlatformException.yml",
       "output": {
         ".html": {
@@ -1769,11 +2465,299 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Core.Platform.PowerStateChangeEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Core.Platform.PowerStateChangeEventArgs.html",
+          "hash": "mwrWrKwpbC/3XdeEBNUZIL9oUc4jx0oofjbdaj1eYFM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Core.Platform.ScrollEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Core.Platform.ScrollEventArgs.html",
+          "hash": "vSDFulzgHWdKC8G8Tj6542HjfBb5LC0AWfKcu7XzkBk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Core.Platform.SurfaceHandle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Core.Platform.SurfaceHandle.html",
+          "hash": "4pEPkLtAOKCG6V3gSq89l+Ut536rdkgyFaWkXqBuDis="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Core.Platform.SurfaceType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Core.Platform.SurfaceType.html",
+          "hash": "jiGlmJVl8oV2oh9XlpQawM/VsLPmzTzESS/ESnAVDhw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Core.Platform.SystemCursorType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Core.Platform.SystemCursorType.html",
+          "hash": "GGijQ0n816qbfq3t+J730uG3sinOHjEEPmDEcxJjxxQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Core.Platform.SystemIconType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Core.Platform.SystemIconType.html",
+          "hash": "lpZ4qFTnBfPXAZ0WOVaiuwKAsGRBL77hEKfbNzWs4Jg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Core.Platform.TextEditingEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Core.Platform.TextEditingEventArgs.html",
+          "hash": "aJdKDL8P/5w80ZlTH7QwPbf86vDu63p7LdsyEZNCa18="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Core.Platform.TextInputEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Core.Platform.TextInputEventArgs.html",
+          "hash": "diN6N2TmpVNE/QbvkW+z8WpM4xN2AHy3vsO6xSLgRK0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Core.Platform.ThemeChangeEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Core.Platform.ThemeChangeEventArgs.html",
+          "hash": "uQf5z+hY8wRmzwuaPdNOxsDIGzn6FCTi8eks9VR7DhA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Core.Platform.ThemeInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Core.Platform.ThemeInfo.html",
+          "hash": "E3y39MfwQSell3MsbcT83E7lnS/2jQXriNIQMsuXeOk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Core.Platform.VideoMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Core.Platform.VideoMode.html",
+          "hash": "J4yFDlx5UU4igfoFZhuZpkjZ2NTc7VgVnPzA9xe9Zmw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Core.Platform.WindowDpiChangeEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Core.Platform.WindowDpiChangeEventArgs.html",
+          "hash": "ozYyBXh3tFnosFXM0ch7HCkVhoxdF5ykYLdEB01Dj/Q="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Core.Platform.WindowEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Core.Platform.WindowEventArgs.html",
+          "hash": "kBXp8G6Ajdpx1tIy+mXgoIF0uilHDuWhY11c7CvcxTQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Core.Platform.WindowEventHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Core.Platform.WindowEventHandler.html",
+          "hash": "6QUmtXjSoU9+DQfuQhhhqs+q5RA1CijjpK/Hr6/Eop8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Core.Platform.WindowHandle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Core.Platform.WindowHandle.html",
+          "hash": "3G8asrTM+TFyqFehX/dZeNWiHsEddNSQdFUu9lbjWy0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Core.Platform.WindowMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Core.Platform.WindowMode.html",
+          "hash": "fUgnFSdezNZSqzhwToAkzF3FlJmls17OZqsiYMxBu68="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Core.Platform.WindowModeChangeEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Core.Platform.WindowModeChangeEventArgs.html",
+          "hash": "D3jaDof3Mr/IAhFFpnCycpZpV1uzsu3YYUVnmshaOiU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Core.Platform.WindowMoveEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Core.Platform.WindowMoveEventArgs.html",
+          "hash": "NXhPafkoY4T7goGNfnaxpSlms6oxBYnD8K0wOdiVIKs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Core.Platform.WindowResizeEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Core.Platform.WindowResizeEventArgs.html",
+          "hash": "tp6zShUAVDUe2kAhjb8e/zW/xlG+wfstN8gnAHvRwUA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Core.Platform.WindowStyle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Core.Platform.WindowStyle.html",
+          "hash": "xShHWRkWAiSC33eDn+bohuzcihnbSLp7zLBhedQRSqA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/OpenTK.Core.Platform.yml",
       "output": {
         ".html": {
           "relative_path": "api/OpenTK.Core.Platform.html",
-          "hash": "VTQJpDJtsk3MG/6xt2aUvCS4eNzBU7HCZzTK5J5JrqE="
+          "hash": "+SOp1pJ2UK+00WJ4Fy+1xZBb9F1cTPN9tw46Pki+mCc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Core.Utility.ConsoleLogger.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Core.Utility.ConsoleLogger.html",
+          "hash": "R920KV6MyAEtXZXGM4BU8JOI13MkoOWEt1hTDk8+MPE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Core.Utility.ILogger.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Core.Utility.ILogger.html",
+          "hash": "tL5NFx4ZNzV8TXVnNc5F2C1DNCIfeucDyU4sfs4654g="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Core.Utility.LogLevel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Core.Utility.LogLevel.html",
+          "hash": "tWnvPJdICBYZ2tHFRmvo0PKNWLVRz4mzGoQ6ijZ/HtI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Core.Utility.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Core.Utility.html",
+          "hash": "nhRe73+hdGivRPyyFC+iJWjCXNdxcRPg9WV1AKsxABI="
         }
       },
       "is_incremental": false,
@@ -1805,11 +2789,47 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Graphics.BindingsBase.yml",
+      "source_relative_path": "api/OpenTK.Graphics.BufferHandle.yml",
       "output": {
         ".html": {
-          "relative_path": "api/OpenTK.Graphics.BindingsBase.html",
-          "hash": "nlvmg54VwhLf5dXVhn+EUSYXQodLkFOWipis3tTqkqY="
+          "relative_path": "api/OpenTK.Graphics.BufferHandle.html",
+          "hash": "SDjKnMZESF4K0zXmbCLeRvbnMVP5jc3A9pg5T1lhQ1o="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Graphics.CLContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Graphics.CLContext.html",
+          "hash": "obk2u8tb3onVuqaCl0N5lk+sQtntTgZpYN/YwmmAZBE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Graphics.CLEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Graphics.CLEvent.html",
+          "hash": "fXpKGCBzQHI9w4b315K+kRlHVMG6+ZJ7Nb1ph9Mw7hM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Graphics.DisplayListHandle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Graphics.DisplayListHandle.html",
+          "hash": "s0VK0kwXNPpmiaLOPzfZYV6NvJrRi5TuE90iPa8WMM4="
         }
       },
       "is_incremental": false,
@@ -1901,11 +2921,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Graphics.Wgl.Wgl.Arb.yml",
+      "source_relative_path": "api/OpenTK.Graphics.FramebufferHandle.yml",
       "output": {
         ".html": {
-          "relative_path": "api/OpenTK.Graphics.Wgl.Wgl.Arb.html",
-          "hash": "NZd6W4Cn21b8AvDysa90u27Du7YdNluVOl8kQlgLdaA="
+          "relative_path": "api/OpenTK.Graphics.FramebufferHandle.html",
+          "hash": "1y6hcpzeyD/u56ORbw6+Mer7SGqqUtVLyJXdtdnYjnM="
         }
       },
       "is_incremental": false,
@@ -1913,11 +2933,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Graphics.Wgl.Wgl.Ext.yml",
+      "source_relative_path": "api/OpenTK.Graphics.ProgramHandle.yml",
       "output": {
         ".html": {
-          "relative_path": "api/OpenTK.Graphics.Wgl.Wgl.Ext.html",
-          "hash": "0RmSmeOYO2ObRl7hFAvhypg7otVYy1ufCvhRti30/fU="
+          "relative_path": "api/OpenTK.Graphics.ProgramHandle.html",
+          "hash": "C4qzGXTVzlMhVPv/IcYsFlW0xOwIAbmMYA2IRW+G37Y="
         }
       },
       "is_incremental": false,
@@ -1925,11 +2945,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Graphics.Wgl.Wgl.yml",
+      "source_relative_path": "api/OpenTK.Graphics.ProgramPipelineHandle.yml",
       "output": {
         ".html": {
-          "relative_path": "api/OpenTK.Graphics.Wgl.Wgl.html",
-          "hash": "6DQEcsP3rgSGPgzMb07yy6vK1F818zl5Xz+V3Enapvk="
+          "relative_path": "api/OpenTK.Graphics.ProgramPipelineHandle.html",
+          "hash": "YUxThvvISa3LKElRKC4H2UkW2Z2QJxnJ7U6tAZuMkF4="
         }
       },
       "is_incremental": false,
@@ -1937,11 +2957,95 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Graphics.Wgl.yml",
+      "source_relative_path": "api/OpenTK.Graphics.QueryHandle.yml",
       "output": {
         ".html": {
-          "relative_path": "api/OpenTK.Graphics.Wgl.html",
-          "hash": "8q1eUzScEIpPBGXXhEvLqzLsFCsJYUjkfPKDa10w7Ko="
+          "relative_path": "api/OpenTK.Graphics.QueryHandle.html",
+          "hash": "Lsy08lTWWllw8gesbayJPuh+50WIv5D3e4qwZlYS/Qk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Graphics.RenderbufferHandle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Graphics.RenderbufferHandle.html",
+          "hash": "s+kuNoyQaXo+liwqi2iPzrEvQF2g3bTmE1+fWMKeu8k="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Graphics.SamplerHandle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Graphics.SamplerHandle.html",
+          "hash": "w1XBtUcv8AlnKo4FseV3CQPCOTPM5n4zG019+2eyzyI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Graphics.ShaderHandle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Graphics.ShaderHandle.html",
+          "hash": "3iIYxPNI1kMt7r6685KHEUAzFo4R3uEav7TcYMc1u6Q="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Graphics.SpecialNumbers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Graphics.SpecialNumbers.html",
+          "hash": "ru3vT864UgGzwBKKxBcgTv7qTxzwd5ZWlc7Ln6Jsjkk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Graphics.TextureHandle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Graphics.TextureHandle.html",
+          "hash": "2haMaj4UYTmbteyyukkDSHdmNhfttg+Rsj1mckJqt6o="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Graphics.TransformFeedbackHandle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Graphics.TransformFeedbackHandle.html",
+          "hash": "VOMo3BrgeYBIxKsjFkpoLgBM79CwA+c7nmE9elQWU5o="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Graphics.VertexArrayHandle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Graphics.VertexArrayHandle.html",
+          "hash": "fCaosDw5a+QL5XkXQgtylk+y9xcTKmSWY91T9qRcz9c="
         }
       },
       "is_incremental": false,
@@ -1953,7 +3057,31 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenTK.Graphics.html",
-          "hash": "FW+plCygBQcCuBnQrfta91eKlCGlMKjemYIXonUj9FU="
+          "hash": "b3sJ22o6e2Tls5xmcNbmNdBiAt1WsGiJPwUMBNPiHDA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Hsl.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Hsl.html",
+          "hash": "Y65oncLHEMrOg/RK/cB81vJSmUhn4aZ4S/kli1IazZc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Hsv.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Hsv.html",
+          "hash": "z0j4ensfFssdq/Lqy9W4mcGO1+Lzh4q/m8OJxtPSYWc="
         }
       },
       "is_incremental": false,
@@ -1966,6 +3094,18 @@
         ".html": {
           "relative_path": "api/OpenTK.IBindingsContext.html",
           "hash": "+1jkUj6ExqxDuV+8Rk37ol12fLyP8DlgwNMgXLSVyY0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.IColorSpace3.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.IColorSpace3.html",
+          "hash": "Kted8O/db6Wz/VwDTP8RkJnGp4sSEx+Jql6vvvtOfco="
         }
       },
       "is_incremental": false,
@@ -2001,7 +3141,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenTK.Input.Hid.HidHelper.html",
-          "hash": "NMo8GdYnDrDy4HwkQXzSOkMJxYocK4bkBBFW7Cdfbh0="
+          "hash": "Ki1cBoNhr1Sm3VSJypjM63yVgK4gM5LSN9QNUnqvS/c="
         }
       },
       "is_incremental": false,
@@ -2038,6 +3178,18 @@
         ".html": {
           "relative_path": "api/OpenTK.Input.Hid.html",
           "hash": "WO/DyxvqjzqB5YhgyCdvf+OjgsAJ9OvVJK8vUF16dsM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Mathematics.Argb.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Mathematics.Argb.html",
+          "hash": "RMr+PR7e0yTWDiYaTYjjdnTH/Rs/EtBSr8IEREFwHcc="
         }
       },
       "is_incremental": false,
@@ -2085,7 +3237,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenTK.Mathematics.Box2.html",
-          "hash": "FU2C+i9W7M9JZ8fZ0kSCIcbdgIDblVq5wQl+PhsxDH8="
+          "hash": "DklN2uXpq+CzSsKYm6GVXqGHg6JcXhN+XBL1VUEH/Jc="
         }
       },
       "is_incremental": false,
@@ -2097,7 +3249,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenTK.Mathematics.Box2d.html",
-          "hash": "L/I+fom7RudSvcpID6Y1Hb8sXZuqttbOG7PreBia3u8="
+          "hash": "6fjgdkMU2Zyymm5nsgDV5UHEu9Ha2smUFH11TqD6WSI="
         }
       },
       "is_incremental": false,
@@ -2109,7 +3261,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenTK.Mathematics.Box2i.html",
-          "hash": "M4kTYtIK8p8rxi4hf2GjH4S4op0zpG2VXxWRe0AT/gc="
+          "hash": "WDpxE5vo//sgsRe/jwVQv8Dii2F5Ps8QLs0Zuwph5SY="
         }
       },
       "is_incremental": false,
@@ -2121,7 +3273,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenTK.Mathematics.Box3.html",
-          "hash": "0uHelIGzzJawPsmM1IWjnVfnsMpCQPPPRV6B3Qiau6Y="
+          "hash": "00rcAk1e2K0KS6HGccgVCzPz0K0dIEgopsa7DihqzpE="
         }
       },
       "is_incremental": false,
@@ -2133,7 +3285,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenTK.Mathematics.Box3d.html",
-          "hash": "Vfd5CmKzLnWDbQNZnhnjEyFrstDLHNsinmG/JIYKHJc="
+          "hash": "4d+j+WrBpgbuHW8TiGj92Qby4tPt5Z0QplK11T26utY="
         }
       },
       "is_incremental": false,
@@ -2145,7 +3297,19 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenTK.Mathematics.Box3i.html",
-          "hash": "p9Nf6iIPtus1HCJ61floL5Q9kMUQjz3pPBgSlBiZ86U="
+          "hash": "3NRTR7+ltRib+u2+oTkCxyLj4icdSTqWSnZfbd36LFY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Mathematics.Color4-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Mathematics.Color4-1.html",
+          "hash": "QtwPaTFwFImMoZQy8lPibIbtIbvydIKKa6/WFI6UOLA="
         }
       },
       "is_incremental": false,
@@ -2157,7 +3321,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenTK.Mathematics.Color4.html",
-          "hash": "ZLfiwVZff7ZGqv8ScdvalXD5HdgC7WHVQS/wqHJCv5Y="
+          "hash": "5UVpkkAQ1Jap7MuuSyrwrERU+loOk10aFngytWGBDdg="
         }
       },
       "is_incremental": false,
@@ -2165,11 +3329,35 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Mathematics.Half.yml",
+      "source_relative_path": "api/OpenTK.Mathematics.Hsla.yml",
       "output": {
         ".html": {
-          "relative_path": "api/OpenTK.Mathematics.Half.html",
-          "hash": "Uip7tuXkWFE5uQXqsv2PmQPom+W8WyUZClzBtuAredg="
+          "relative_path": "api/OpenTK.Mathematics.Hsla.html",
+          "hash": "/p3B3TnWMEPiUPnUxOpvwXfFR/VJlOWxBw/wZd3bOAc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Mathematics.Hsva.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Mathematics.Hsva.html",
+          "hash": "x0YgXFDZAG+RMl5yMwmiATNfjPPjELLobVeX8nmTJ5c="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Mathematics.IColorSpace4.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Mathematics.IColorSpace4.html",
+          "hash": "1G49DTmAdMEgSPu4uTzP9fORgdXYtaK8b9YYUtzJS+g="
         }
       },
       "is_incremental": false,
@@ -2429,11 +3617,23 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Mathematics.Rgba.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Mathematics.Rgba.html",
+          "hash": "gzp7HH4tO44s2OoH7ZGcfuCwSobsMGiqumZGyIloKBw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/OpenTK.Mathematics.Vector2.yml",
       "output": {
         ".html": {
           "relative_path": "api/OpenTK.Mathematics.Vector2.html",
-          "hash": "i0keh+Mm9mTCt7r+8OWeZWO5XDRYL3z0foA7bxV3O08="
+          "hash": "0bxiIAmRH1Bbi9wv3nqUZxDvYxL2VTznpV9A3+j70mY="
         }
       },
       "is_incremental": false,
@@ -2445,7 +3645,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenTK.Mathematics.Vector2d.html",
-          "hash": "UMHusZMU8UH7BH7Vs6G9a3mUH5G2ghopkglQc/hEg1A="
+          "hash": "+3ycchuuFE7bDBhDtp26cBqDtO8IqM5vDWrpWkDRRD0="
         }
       },
       "is_incremental": false,
@@ -2457,7 +3657,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenTK.Mathematics.Vector2h.html",
-          "hash": "g7kjjTm4SPRsUhTuFXjLRnVz58YN6P5NKQPSHpR/mzs="
+          "hash": "JBEVk8UTaPz0XdCBVHAxnTSHP0qAxtUH5BN0yMUl0mM="
         }
       },
       "is_incremental": false,
@@ -2469,7 +3669,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenTK.Mathematics.Vector2i.html",
-          "hash": "lLcl8Na6yn3sQsWD4X8/OQm5uqA4vRHPO+7VVSyEdU0="
+          "hash": "sdQD2XAYBH/KTNDdn/ljMPCATf3AVtXV7opUDrgY6gM="
         }
       },
       "is_incremental": false,
@@ -2481,7 +3681,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenTK.Mathematics.Vector3.html",
-          "hash": "y8yC+qrVMMLYUCn89gOP/xMD40IjQcgOT3Beki6S67E="
+          "hash": "D3q4xzPVAOWw5PM/LPWOL5A98oNJacenijvLumxZS6Y="
         }
       },
       "is_incremental": false,
@@ -2493,7 +3693,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenTK.Mathematics.Vector3d.html",
-          "hash": "lSOuWDnEA8rtsqCnMn3o0DgftD0IfpxPfTu4CfGegAA="
+          "hash": "MxqJw+dOCiN3wmhiowipv3pyVNK9vE2+VFmV6eAEClE="
         }
       },
       "is_incremental": false,
@@ -2505,7 +3705,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenTK.Mathematics.Vector3h.html",
-          "hash": "+6fTVXKlIhuRX9FSCeKcp3yuNXnTEqbYt/XBBpB9NxE="
+          "hash": "elGvUXW99VNYxYgLbcEjMqsKbck4Q5dw2iHVTV9q6FQ="
         }
       },
       "is_incremental": false,
@@ -2517,7 +3717,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenTK.Mathematics.Vector3i.html",
-          "hash": "QKUBncO8QBgy6FZTzjEmR20G8yrVcncVIxEvGS8uy8g="
+          "hash": "gh/S6WDa8Br+zE9cjlTvV5PWh7ahDGgQlXtK5moSfng="
         }
       },
       "is_incremental": false,
@@ -2529,7 +3729,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenTK.Mathematics.Vector4.html",
-          "hash": "WyQqpicY9ikPyWdGY44SQ7EIiQPNF5cy/I5uM0WMIMo="
+          "hash": "0A0Mu+w8ewxbbfO+3K+E/jXxusM8S4WwrfsiGaADmas="
         }
       },
       "is_incremental": false,
@@ -2541,7 +3741,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenTK.Mathematics.Vector4d.html",
-          "hash": "Dfvegp0z9zjy0JEP/NDwhk9R5+TpZ6o9SKFLHqAbKrE="
+          "hash": "9y53vgj5oTIYzcLg+NsHjMqd7+omTc3Wpw9e6xpRZmI="
         }
       },
       "is_incremental": false,
@@ -2553,7 +3753,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenTK.Mathematics.Vector4h.html",
-          "hash": "Q3ie0MZCsK6Wt8sjqDBWMJRS04rPIt94+gOpiF/GpTs="
+          "hash": "adL7FlKn9DUJRAI490iphDfnehFEWy225G7u8J0oaW0="
         }
       },
       "is_incremental": false,
@@ -2565,7 +3765,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenTK.Mathematics.Vector4i.html",
-          "hash": "io9WUVf0lPz09zHTatqti81auNN5Sf4tupaJjBRZ10I="
+          "hash": "KcV6Y6OJrAPTFkxXFfMfHs8/tAKXGMsgflvBCLlbaNY="
         }
       },
       "is_incremental": false,
@@ -2577,7 +3777,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenTK.Mathematics.html",
-          "hash": "JBtsvceT+kUP87nLRJPouQj1pmicGTEOZqpbN09Ydek="
+          "hash": "971bsmBnJYTRaAWuzF310yzbX53zG+43eKyWR5A+uGk="
         }
       },
       "is_incremental": false,
@@ -2585,11 +3785,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Platform.Windows.All.yml",
+      "source_relative_path": "api/OpenTK.Platform.Native.PlatformComponents.yml",
       "output": {
         ".html": {
-          "relative_path": "api/OpenTK.Platform.Windows.All.html",
-          "hash": "tptEkeID1XBgwjWObwlJiPWiH5L/YbrIdmPhM+IGL8Q="
+          "relative_path": "api/OpenTK.Platform.Native.PlatformComponents.html",
+          "hash": "t/R8xyHbeddeQ0nwJ90jV6P218xWV5WkHlyqbpBPeXs="
         }
       },
       "is_incremental": false,
@@ -2597,11 +3797,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Platform.Windows.ArbCreateContext.yml",
+      "source_relative_path": "api/OpenTK.Platform.Native.Windows.ClipboardComponent.yml",
       "output": {
         ".html": {
-          "relative_path": "api/OpenTK.Platform.Windows.ArbCreateContext.html",
-          "hash": "lMKZZQo4vQDWazX8J+rX92egCtbsY749br0NdttheKg="
+          "relative_path": "api/OpenTK.Platform.Native.Windows.ClipboardComponent.html",
+          "hash": "pPl0sspugJoU6DKDkhaPotjatTmmDTDXjsfiSZUDzkg="
         }
       },
       "is_incremental": false,
@@ -2609,11 +3809,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Platform.Windows.WGL_3DFX_multisample.yml",
+      "source_relative_path": "api/OpenTK.Platform.Native.Windows.CursorComponent.yml",
       "output": {
         ".html": {
-          "relative_path": "api/OpenTK.Platform.Windows.WGL_3DFX_multisample.html",
-          "hash": "hekfRFXAW0zkL6hLOCIY+mPVPQHUYueXQpZhkFPotEg="
+          "relative_path": "api/OpenTK.Platform.Native.Windows.CursorComponent.html",
+          "hash": "xFdzIJ5POYZ2c4mh745UkZdbrE6yuuROPUe9tSe6XOg="
         }
       },
       "is_incremental": false,
@@ -2621,11 +3821,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Platform.Windows.WGL_ARB_buffer_region.yml",
+      "source_relative_path": "api/OpenTK.Platform.Native.Windows.DisplayComponent.yml",
       "output": {
         ".html": {
-          "relative_path": "api/OpenTK.Platform.Windows.WGL_ARB_buffer_region.html",
-          "hash": "He/I1yKkTvSnZXBvrlSJsEv0INjm6YQEdAXyrJ195Bc="
+          "relative_path": "api/OpenTK.Platform.Native.Windows.DisplayComponent.html",
+          "hash": "cmo66zNMtI8YFVbuoSJDbSFuEu97oCNFWAsgi/64nts="
         }
       },
       "is_incremental": false,
@@ -2633,11 +3833,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Platform.Windows.WGL_ARB_extensions_string.yml",
+      "source_relative_path": "api/OpenTK.Platform.Native.Windows.IconComponent.yml",
       "output": {
         ".html": {
-          "relative_path": "api/OpenTK.Platform.Windows.WGL_ARB_extensions_string.html",
-          "hash": "QKb4L3cbtobq3VXc2hdZFA42QvZIdqcvlZhcMS8Ibx4="
+          "relative_path": "api/OpenTK.Platform.Native.Windows.IconComponent.html",
+          "hash": "JMhGO6xM58A9wnBWkUP8k3LHmMjgLjwU6s9WJfxPL5k="
         }
       },
       "is_incremental": false,
@@ -2645,11 +3845,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Platform.Windows.WGL_ARB_make_current_read.yml",
+      "source_relative_path": "api/OpenTK.Platform.Native.Windows.KeyboardComponent.yml",
       "output": {
         ".html": {
-          "relative_path": "api/OpenTK.Platform.Windows.WGL_ARB_make_current_read.html",
-          "hash": "/FjbHLHUPRd8n61DQC5dTYzW15nZaxbrkRfaQV6vo6U="
+          "relative_path": "api/OpenTK.Platform.Native.Windows.KeyboardComponent.html",
+          "hash": "aRVj2YZTsGMrMnC0TcDMLZojotJ3mqP9AESVOB3tEL4="
         }
       },
       "is_incremental": false,
@@ -2657,11 +3857,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Platform.Windows.WGL_ARB_multisample.yml",
+      "source_relative_path": "api/OpenTK.Platform.Native.Windows.MouseComponent.yml",
       "output": {
         ".html": {
-          "relative_path": "api/OpenTK.Platform.Windows.WGL_ARB_multisample.html",
-          "hash": "lel0YxMpCGfw5arsi1OR1j7TwYREa9CxIVLwRu9eaxs="
+          "relative_path": "api/OpenTK.Platform.Native.Windows.MouseComponent.html",
+          "hash": "5FVajAg5BkDYr71IEJEWtVicBweFt/wYqP3mJlTNEOo="
         }
       },
       "is_incremental": false,
@@ -2669,11 +3869,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Platform.Windows.WGL_ARB_pbuffer.yml",
+      "source_relative_path": "api/OpenTK.Platform.Native.Windows.OpenGLComponent.yml",
       "output": {
         ".html": {
-          "relative_path": "api/OpenTK.Platform.Windows.WGL_ARB_pbuffer.html",
-          "hash": "gg0cGWsaUhj7die3o/hZLfbPUbvyZ0etj/hFP9gUN+0="
+          "relative_path": "api/OpenTK.Platform.Native.Windows.OpenGLComponent.html",
+          "hash": "d2YH0EgutAxsL8okNnstJDMJk8WPJpqKJ8tA5msDPII="
         }
       },
       "is_incremental": false,
@@ -2681,11 +3881,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Platform.Windows.WGL_ARB_pixel_format.yml",
+      "source_relative_path": "api/OpenTK.Platform.Native.Windows.ShellComponent.yml",
       "output": {
         ".html": {
-          "relative_path": "api/OpenTK.Platform.Windows.WGL_ARB_pixel_format.html",
-          "hash": "ttiYyXGrsklRmbJFoEPlJGs9hvuVWwwkwM7k2hTjfN4="
+          "relative_path": "api/OpenTK.Platform.Native.Windows.ShellComponent.html",
+          "hash": "Wjnw/9C0rPh8Y1HyG4a5FMdnSnDZ667wjFK5/YGgYgY="
         }
       },
       "is_incremental": false,
@@ -2693,11 +3893,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Platform.Windows.WGL_ARB_pixel_format_float.yml",
+      "source_relative_path": "api/OpenTK.Platform.Native.Windows.WGLAcceleration.yml",
       "output": {
         ".html": {
-          "relative_path": "api/OpenTK.Platform.Windows.WGL_ARB_pixel_format_float.html",
-          "hash": "lpVQrykRSsY1f8QJs/w1C5sgPLmm4l6Cj6z1cW75Bgs="
+          "relative_path": "api/OpenTK.Platform.Native.Windows.WGLAcceleration.html",
+          "hash": "IWxMATbVMAnYILLNLVSts8bOJYsfkIJXPHHYTHhlBJ0="
         }
       },
       "is_incremental": false,
@@ -2705,11 +3905,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Platform.Windows.WGL_ARB_render_texture.yml",
+      "source_relative_path": "api/OpenTK.Platform.Native.Windows.WGLColorType.yml",
       "output": {
         ".html": {
-          "relative_path": "api/OpenTK.Platform.Windows.WGL_ARB_render_texture.html",
-          "hash": "/TijCPf9U0tbSfOhfY06/dXagqsnoyT0A6M5TgzDm3g="
+          "relative_path": "api/OpenTK.Platform.Native.Windows.WGLColorType.html",
+          "hash": "mHuBQkVtyTIVr+5TsjUy8r5Vs5cyuBcVuRovA3x1mrI="
         }
       },
       "is_incremental": false,
@@ -2717,11 +3917,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Platform.Windows.WGL_ATI_pixel_format_float.yml",
+      "source_relative_path": "api/OpenTK.Platform.Native.Windows.WGLContextAttribs.yml",
       "output": {
         ".html": {
-          "relative_path": "api/OpenTK.Platform.Windows.WGL_ATI_pixel_format_float.html",
-          "hash": "lbphi3NnUkB/ab4O24OiEdchZrLUYivuiNqXy7R9Bdk="
+          "relative_path": "api/OpenTK.Platform.Native.Windows.WGLContextAttribs.html",
+          "hash": "WVIWmpr2OzGKZMCC5tIGIqqQp9/98fvLL+faBWNKpZY="
         }
       },
       "is_incremental": false,
@@ -2729,11 +3929,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Platform.Windows.WGL_EXT_depth_float.yml",
+      "source_relative_path": "api/OpenTK.Platform.Native.Windows.WGLPixelFormatAttribute.yml",
       "output": {
         ".html": {
-          "relative_path": "api/OpenTK.Platform.Windows.WGL_EXT_depth_float.html",
-          "hash": "8TMzkuvq5ZY1nFX6lKvpSYIME9UufEaBz4aieYCTQg8="
+          "relative_path": "api/OpenTK.Platform.Native.Windows.WGLPixelFormatAttribute.html",
+          "hash": "vBfkrKy6kTSY+kAoIxpjnfAJ+CExz+Tx0cdkmEDSuwQ="
         }
       },
       "is_incremental": false,
@@ -2741,11 +3941,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Platform.Windows.WGL_EXT_make_current_read.yml",
+      "source_relative_path": "api/OpenTK.Platform.Native.Windows.WGLSwapMethod.yml",
       "output": {
         ".html": {
-          "relative_path": "api/OpenTK.Platform.Windows.WGL_EXT_make_current_read.html",
-          "hash": "ZWYBGjwrLtUnqcq7JOyDjcLEMNxxAq3IJtY/CNKlTP4="
+          "relative_path": "api/OpenTK.Platform.Native.Windows.WGLSwapMethod.html",
+          "hash": "9qrRhIt+bkAeiSUd4NULGECvSso+t0cVYGo8wGhTkN4="
         }
       },
       "is_incremental": false,
@@ -2753,11 +3953,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Platform.Windows.WGL_EXT_multisample.yml",
+      "source_relative_path": "api/OpenTK.Platform.Native.Windows.WM.yml",
       "output": {
         ".html": {
-          "relative_path": "api/OpenTK.Platform.Windows.WGL_EXT_multisample.html",
-          "hash": "9xqqVqpzfnvvbPyOmWEIlG39M4hwAtiQXqOqZ+MWtUI="
+          "relative_path": "api/OpenTK.Platform.Native.Windows.WM.html",
+          "hash": "GT8NHiE7fkl3AhhKFuTNRZt7AmS52qDO/9Wasaqwkfo="
         }
       },
       "is_incremental": false,
@@ -2765,11 +3965,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Platform.Windows.WGL_EXT_pbuffer.yml",
+      "source_relative_path": "api/OpenTK.Platform.Native.Windows.WindowComponent.yml",
       "output": {
         ".html": {
-          "relative_path": "api/OpenTK.Platform.Windows.WGL_EXT_pbuffer.html",
-          "hash": "mlhc62eg1FjPpE4nLpGc6VChiZEzgKXYMEccOX+QFLA="
+          "relative_path": "api/OpenTK.Platform.Native.Windows.WindowComponent.html",
+          "hash": "3/QvZ/4wpHcCRUCPqPzdLf3LaOSJ7yuCqK1H4RyV4Mw="
         }
       },
       "is_incremental": false,
@@ -2777,11 +3977,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Platform.Windows.WGL_EXT_pixel_format.yml",
+      "source_relative_path": "api/OpenTK.Platform.Native.Windows.yml",
       "output": {
         ".html": {
-          "relative_path": "api/OpenTK.Platform.Windows.WGL_EXT_pixel_format.html",
-          "hash": "6kcPpxedOSrgY1EKhcL9MiOc9KWiy727NwSTUCCz+kM="
+          "relative_path": "api/OpenTK.Platform.Native.Windows.html",
+          "hash": "6cpjPdBuF8BWQPSjDHKNGt6UMeiu3qELuf+kIJ8AzhM="
         }
       },
       "is_incremental": false,
@@ -2789,11 +3989,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Platform.Windows.WGL_I3D_digital_video_control.yml",
+      "source_relative_path": "api/OpenTK.Platform.Native.X11.FocusChangeDetail.yml",
       "output": {
         ".html": {
-          "relative_path": "api/OpenTK.Platform.Windows.WGL_I3D_digital_video_control.html",
-          "hash": "EzyoI9See9YbR2tCf+R+dpr8KHiKRT3F0p117smnez0="
+          "relative_path": "api/OpenTK.Platform.Native.X11.FocusChangeDetail.html",
+          "hash": "m10j9UqjtyqOpchoJqbVykEtBVG+Bc8gHynoe4YCbY4="
         }
       },
       "is_incremental": false,
@@ -2801,11 +4001,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Platform.Windows.WGL_I3D_gamma.yml",
+      "source_relative_path": "api/OpenTK.Platform.Native.X11.FocusChangeMode.yml",
       "output": {
         ".html": {
-          "relative_path": "api/OpenTK.Platform.Windows.WGL_I3D_gamma.html",
-          "hash": "aFVeZXCy5FjLeUX6UeU9KOE8g9/8/7hPPICzWDYJuHo="
+          "relative_path": "api/OpenTK.Platform.Native.X11.FocusChangeMode.html",
+          "hash": "CYWIzIpoVIJZBzQB3pVRLJBT2ehmZWBFIgb5Zi5UbeM="
         }
       },
       "is_incremental": false,
@@ -2813,11 +4013,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Platform.Windows.WGL_I3D_genlock.yml",
+      "source_relative_path": "api/OpenTK.Platform.Native.X11.GLX.glXCreateContextAttribARBProc.yml",
       "output": {
         ".html": {
-          "relative_path": "api/OpenTK.Platform.Windows.WGL_I3D_genlock.html",
-          "hash": "+chR3ib2mnZO5JBnaH91V9zVqpE9yfaTuVTbcnkL66A="
+          "relative_path": "api/OpenTK.Platform.Native.X11.GLX.glXCreateContextAttribARBProc.html",
+          "hash": "NNIj2odCyvIy+IZIx6efErougdF3FndahJ6SLDIjakE="
         }
       },
       "is_incremental": false,
@@ -2825,11 +4025,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Platform.Windows.WGL_I3D_image_buffer.yml",
+      "source_relative_path": "api/OpenTK.Platform.Native.X11.GLX.yml",
       "output": {
         ".html": {
-          "relative_path": "api/OpenTK.Platform.Windows.WGL_I3D_image_buffer.html",
-          "hash": "jw8YJENjan/3HamX4Sk3WB8a+HKv5pqG0ZOFM7IsnZM="
+          "relative_path": "api/OpenTK.Platform.Native.X11.GLX.html",
+          "hash": "ir4RjhBPeUUOxKeBBo+TEcwUbhzmNNq0NjRDcVijv7U="
         }
       },
       "is_incremental": false,
@@ -2837,11 +4037,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Platform.Windows.WGL_I3D_swap_frame_lock.yml",
+      "source_relative_path": "api/OpenTK.Platform.Native.X11.GLXContext.yml",
       "output": {
         ".html": {
-          "relative_path": "api/OpenTK.Platform.Windows.WGL_I3D_swap_frame_lock.html",
-          "hash": "4fT8jw04WICCyCPMTR4RxvUv0e2NHsSQ7MRte48cc9g="
+          "relative_path": "api/OpenTK.Platform.Native.X11.GLXContext.html",
+          "hash": "cz3Ial2acJFIdxIw1dFi75hd0B80h9s3qjkhYRbgUMk="
         }
       },
       "is_incremental": false,
@@ -2849,11 +4049,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Platform.Windows.WGL_NV_DX_interop.yml",
+      "source_relative_path": "api/OpenTK.Platform.Native.X11.GLXFBConfig.yml",
       "output": {
         ".html": {
-          "relative_path": "api/OpenTK.Platform.Windows.WGL_NV_DX_interop.html",
-          "hash": "3+Nv6748/R4yTkgFWCUaup70OfvM4PwMvAwfGibJQ10="
+          "relative_path": "api/OpenTK.Platform.Native.X11.GLXFBConfig.html",
+          "hash": "J2RMiOPqepQOdJnUHaP+enHSn4ag3olbVOLgqN34uZ4="
         }
       },
       "is_incremental": false,
@@ -2861,11 +4061,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Platform.Windows.WGL_NV_DX_interop_ResourceName.yml",
+      "source_relative_path": "api/OpenTK.Platform.Native.X11.GrabMode.yml",
       "output": {
         ".html": {
-          "relative_path": "api/OpenTK.Platform.Windows.WGL_NV_DX_interop_ResourceName.html",
-          "hash": "EM+6yN3MsKVfVUjQDaLqWofyKDhOfGVI1if12Re34+c="
+          "relative_path": "api/OpenTK.Platform.Native.X11.GrabMode.html",
+          "hash": "jizYW9xluizf97nPsUlbp+BMaM763BZRbc3uPSGzIW4="
         }
       },
       "is_incremental": false,
@@ -2873,11 +4073,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Platform.Windows.WGL_NV_float_buffer.yml",
+      "source_relative_path": "api/OpenTK.Platform.Native.X11.GrabResult.yml",
       "output": {
         ".html": {
-          "relative_path": "api/OpenTK.Platform.Windows.WGL_NV_float_buffer.html",
-          "hash": "p/UiwenUvSKI4eOzOR2qnM6Z6edHuPoF0X4Bwb9sLW4="
+          "relative_path": "api/OpenTK.Platform.Native.X11.GrabResult.html",
+          "hash": "GzInUuYIGrkiQHSyvaP00f3FnnT6L802JtkegzsrfVQ="
         }
       },
       "is_incremental": false,
@@ -2885,11 +4085,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Platform.Windows.WGL_NV_render_depth_texture.yml",
+      "source_relative_path": "api/OpenTK.Platform.Native.X11.KnownAtoms.yml",
       "output": {
         ".html": {
-          "relative_path": "api/OpenTK.Platform.Windows.WGL_NV_render_depth_texture.html",
-          "hash": "qLesVFKvV3e4DCisKLqWkXXvunFVX+vgr8nMzQh0jBs="
+          "relative_path": "api/OpenTK.Platform.Native.X11.KnownAtoms.html",
+          "hash": "mIhzfWFGxHTgESNybsyUeqdooTLYggzgXbt2o7wfA+Y="
         }
       },
       "is_incremental": false,
@@ -2897,11 +4097,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Platform.Windows.WGL_NV_render_texture_rectangle.yml",
+      "source_relative_path": "api/OpenTK.Platform.Native.X11.LibX11.XErrorHandler.yml",
       "output": {
         ".html": {
-          "relative_path": "api/OpenTK.Platform.Windows.WGL_NV_render_texture_rectangle.html",
-          "hash": "m0EsnG+2THVOznZf4CVE3Uu4cMC8ww/sTBBNCa4WvIs="
+          "relative_path": "api/OpenTK.Platform.Native.X11.LibX11.XErrorHandler.html",
+          "hash": "QOgVqgg1vmuZcmFaCNPDBnjgYz3mJbmLIJTnHull+IY="
         }
       },
       "is_incremental": false,
@@ -2909,11 +4109,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Platform.Windows.WGL_font_type.yml",
+      "source_relative_path": "api/OpenTK.Platform.Native.X11.LibX11.XPredicate.yml",
       "output": {
         ".html": {
-          "relative_path": "api/OpenTK.Platform.Windows.WGL_font_type.html",
-          "hash": "hiSAhc5TCTfXH/ic0E7C/GCKvx6X/7I3N/fPde27Ou8="
+          "relative_path": "api/OpenTK.Platform.Native.X11.LibX11.XPredicate.html",
+          "hash": "lw+nGzyY6IsfSOX/IG5xgburt+1Qd1Q4PDKCBcUFB28="
         }
       },
       "is_incremental": false,
@@ -2921,11 +4121,971 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Platform.Windows.yml",
+      "source_relative_path": "api/OpenTK.Platform.Native.X11.LibX11.yml",
       "output": {
         ".html": {
-          "relative_path": "api/OpenTK.Platform.Windows.html",
-          "hash": "nYm3KrB9cttJlcig29v9zIDQ+fdF1oblC+C4lMQT4Es="
+          "relative_path": "api/OpenTK.Platform.Native.X11.LibX11.html",
+          "hash": "hXe1gd1LVAhwSvcAkicWP18aBJA+udtmE557O973378="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.Native.X11.PropertyState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.Native.X11.PropertyState.html",
+          "hash": "5sydtejulepzWEGh6sQMgpzMxYq/LdQ5v3cJap/wWRc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.Native.X11.RRCrtc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.Native.X11.RRCrtc.html",
+          "hash": "vRcVlD85qivO6tUrn135IXJDGTHRxRQiS6rE1KKp96o="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.Native.X11.RREventMask.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.Native.X11.RREventMask.html",
+          "hash": "sTk1F4decvOR3yR3eFXpo5vdgCeFOdiTmbYoh4cWGv8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.Native.X11.RRMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.Native.X11.RRMode.html",
+          "hash": "ILJM/u8TcZCpjrhujtd00xW4ys9lHFFYS5VZInW8f84="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.Native.X11.RRNotifySubType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.Native.X11.RRNotifySubType.html",
+          "hash": "/wwrFoZMnnP3mCBFx3N3lpksFv62mXDk/8jb8s2o8pg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.Native.X11.RROutput.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.Native.X11.RROutput.html",
+          "hash": "8Eo/ksqG9h25v2FqkpepwYKg+tCbhlr5Qr7q98kSppI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.Native.X11.RRProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.Native.X11.RRProvider.html",
+          "hash": "cbYHMrv082uax7ia+CyTmb4ouhw+Fkl20EYgYUD/4a4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.Native.X11.RevertTo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.Native.X11.RevertTo.html",
+          "hash": "gJO0uqFpPmmLVtXEpCePTP8ISZWmSGbELWH7/Ut0uB0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.Native.X11.X11.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.Native.X11.X11.html",
+          "hash": "TjF33NxobvQ96oyl+8vRAi8C84t4tLhLq7T1BynUKm8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.Native.X11.X11CursorComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.Native.X11.X11CursorComponent.html",
+          "hash": "LtPDFEmpTOUfRhPrRWKt71kQZic7NC0DkLLsg5707fo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.Native.X11.X11DisplayComponent.DisplayExtensionType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.Native.X11.X11DisplayComponent.DisplayExtensionType.html",
+          "hash": "pkUV4v7OoNVQG2npOX08gLHB7kKGNh50t43GTtp8lRs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.Native.X11.X11DisplayComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.Native.X11.X11DisplayComponent.html",
+          "hash": "Iy1Xbyu/IVJsCFTBOhLSp4c/yc1MfGcpnFvJg6wdQnQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.Native.X11.X11MouseComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.Native.X11.X11MouseComponent.html",
+          "hash": "8uwhsT/ts2GCIv7+IGOc6/yoOsJAaD+955+Kbb2ifT8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.Native.X11.X11OpenGLComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.Native.X11.X11OpenGLComponent.html",
+          "hash": "d3L5V+4zZTyrvT7vwVxJQIqYSSkns4dkNEPMkx4sH44="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.Native.X11.X11ShellComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.Native.X11.X11ShellComponent.html",
+          "hash": "aPGLQk/mCrl2tN04OxVe9whHYSpabeFG0xvlF2iCSXo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.Native.X11.X11WindowComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.Native.X11.X11WindowComponent.html",
+          "hash": "i8WZaUzMgIcNo2CvxLYrPMLhNppTM24TJ5V/Vyy1avs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.Native.X11.XAnyEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.Native.X11.XAnyEvent.html",
+          "hash": "lCCOHHQdKGMc7WUjWZJLxe9uMdbcdc0Z6pBXYKWys0Y="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.Native.X11.XAtom.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.Native.X11.XAtom.html",
+          "hash": "NOjxx3Pa3r+R1+Cp/OD7/DMkPDmLZQmUyz/WY6FUL+M="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.Native.X11.XAtomDictionary.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.Native.X11.XAtomDictionary.html",
+          "hash": "FgEdHGQA5E28wPg6IV18aL6Wgow9tjtuO6VklqnEmNY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.Native.X11.XButtonEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.Native.X11.XButtonEvent.html",
+          "hash": "cBaGPm2q8CZ/Ta3WuPOS5gBpYR2JTH5vA2f45rbp7zw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.Native.X11.XClientMessageEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.Native.X11.XClientMessageEvent.html",
+          "hash": "uCVkYQZNMVybrOnBfWfKhmkrRyW9NhPw7x/ouCRCuFk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.Native.X11.XColor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.Native.X11.XColor.html",
+          "hash": "EU1Q7xRay+67dZg0w8aDH1lRsNMkxCaRF/JCEGVrRC8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.Native.X11.XColorFlags.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.Native.X11.XColorFlags.html",
+          "hash": "JU5tEehcwkIYjpvNvfmEOAVlGUH5Tm7CzAgnsqJ8Q2A="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.Native.X11.XColorMap.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.Native.X11.XColorMap.html",
+          "hash": "eu2BOaCpYOEbaB4wzdb1K0HIjV2IB+WgcZwsANcn0yc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.Native.X11.XColorPtr.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.Native.X11.XColorPtr.html",
+          "hash": "uL9mSbAII2G7+EW1RCPHgafFDyER58iyPzYdzS/VTzE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.Native.X11.XConfigureRequestEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.Native.X11.XConfigureRequestEvent.html",
+          "hash": "OrBhB46jT46n5vmZ+6pKk20y00KeYzXD8h7KaMIG9p0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.Native.X11.XCrossingEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.Native.X11.XCrossingEvent.html",
+          "hash": "3RD3Em6vG1jWj+LkMAVaojAxuOMCgwdaBcCntlnvMrU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.Native.X11.XCursor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.Native.X11.XCursor.html",
+          "hash": "YLhiAnecY5Ksoj1lmcRdDwYE5Dkonn6RG6XWyRSpBkw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.Native.X11.XCursorHandle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.Native.X11.XCursorHandle.html",
+          "hash": "MGzZ0YPyQVRNBLVZ++6G9FdpScGWTinjhTl+6o4qOpM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.Native.X11.XCursorShape.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.Native.X11.XCursorShape.html",
+          "hash": "vpGmfhL13kymIK0TtoQUafay5TTNmm+wMz+N+9IqkC0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.Native.X11.XDisplayPtr.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.Native.X11.XDisplayPtr.html",
+          "hash": "KWtflp9LSqBPp7h7n7aC87URHSxdaLsXYjJ1jjoaoZI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.Native.X11.XDrawable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.Native.X11.XDrawable.html",
+          "hash": "Mw/jJIsVAQqN51YSPSjdz7fiHkzAmHQoSbjVgD1hcAg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.Native.X11.XError.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.Native.X11.XError.html",
+          "hash": "Tay1sNrxpW5FZdteVJeXWzWaSqiypx9x/ZSsk/R4hGk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.Native.X11.XErrorEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.Native.X11.XErrorEvent.html",
+          "hash": "FsRf7R2SgFdC9ytQ7mCO+Xsp8Xijce5ugAe3IK4zKW4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.Native.X11.XEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.Native.X11.XEvent.html",
+          "hash": "rhYkRBnUC/sZ/6yEcSF7kvTFa88MluhNlYTgz48bYvM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.Native.X11.XEventMask.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.Native.X11.XEventMask.html",
+          "hash": "VJie/I5VuMJX8rS2Y5zFl11TgOLi1y/dHcx2w9rMjQY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.Native.X11.XEventType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.Native.X11.XEventType.html",
+          "hash": "/+juYcu2PUNUtMlis2EUt3WFLulnUOdh9/PXEeeuzP8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.Native.X11.XEventsQueuedMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.Native.X11.XEventsQueuedMode.html",
+          "hash": "yvjl4HO5p4UfAkoWHEyxwIK4EhvHDqGTlvA2Iy1fAKo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.Native.X11.XFocusChangeEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.Native.X11.XFocusChangeEvent.html",
+          "hash": "qLXlBLlx/HjLgb435fYTtG5+ALPyP8jRCFcElX+6vDE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.Native.X11.XGC.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.Native.X11.XGC.html",
+          "hash": "3e0mgFJ7VJU6m7/pKMBAoGlVXIjnoQYffi2gooMwznc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.Native.X11.XID.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.Native.X11.XID.html",
+          "hash": "/VZDRrcA2zfIrdbTCZZ0CtfM89VinJscTWznzZxmSjM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.Native.X11.XMotionEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.Native.X11.XMotionEvent.html",
+          "hash": "RoFatnllMp/tdXZj9MZ+MsdtvWI/KVMzrcyUBZH0/mQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.Native.X11.XOpenGLContextHandle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.Native.X11.XOpenGLContextHandle.html",
+          "hash": "Q00vIBHTGwlaot9lULeCE6IJ+Uat4tsttLPnQccf+Fk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.Native.X11.XPixmap.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.Native.X11.XPixmap.html",
+          "hash": "S4hovBEYDEtq65XyYJaLnEsEzycRjtkTQ/26C92dzPI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.Native.X11.XPropertyEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.Native.X11.XPropertyEvent.html",
+          "hash": "EfcrMPuE30zG9diwajbpIa6GXHJYrgDHPVPrJZDQt9s="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.Native.X11.XPropertyMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.Native.X11.XPropertyMode.html",
+          "hash": "0Wo6wNKncWSDjT0FxHTivfGjPgfAsCxk85UlrFeQEdI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.Native.X11.XRRCrtcChangedNotifyEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.Native.X11.XRRCrtcChangedNotifyEvent.html",
+          "hash": "aK5x/54Bz2fwNINoCcfCBDSYveMUYVDl62PsxS4/vto="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.Native.X11.XRRModeFlags.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.Native.X11.XRRModeFlags.html",
+          "hash": "qq7bvk9LMSlmq72Xv3mxVsU1yLOe3cI8rpE2UzbJt04="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.Native.X11.XRRModeInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.Native.X11.XRRModeInfo.html",
+          "hash": "346z6n+Uwoe+0in3r8htz3dojNoOPapw74Jfof2vOvk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.Native.X11.XRRNotifyEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.Native.X11.XRRNotifyEvent.html",
+          "hash": "gOUOMTQ6VmCdzYBE98jd5MdfTWLuA3VA4q0d1lT91no="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.Native.X11.XRROutputChangeNotifyEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.Native.X11.XRROutputChangeNotifyEvent.html",
+          "hash": "2D23PvatBCne/APXdgfdI+NMbpvaWtt6A+JF9suH8UE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.Native.X11.XRROutputPropertyNotifyEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.Native.X11.XRROutputPropertyNotifyEvent.html",
+          "hash": "PKhyQh+8EID7JPG1yFoereER9zS8Hz+k4iI6sWD0nyw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.Native.X11.XRRProviderChangeNotifyEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.Native.X11.XRRProviderChangeNotifyEvent.html",
+          "hash": "Hw8dTAUYL7pfxh3mZDVlEV5tJcetiqW4B+A3tOIN3gg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.Native.X11.XRRProviderPropertyNotifyEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.Native.X11.XRRProviderPropertyNotifyEvent.html",
+          "hash": "zYNeXbV5PfH4aEeAKMiZ07jhs8aXYrWgSn3FeASjvyY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.Native.X11.XRRResourceChangeNotifyEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.Native.X11.XRRResourceChangeNotifyEvent.html",
+          "hash": "Lw0Yd+lm5v0IwDRaPT3K/XtVaaQuz9MJd63iYL0A72k="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.Native.X11.XRRScreenChangeNotifyEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.Native.X11.XRRScreenChangeNotifyEvent.html",
+          "hash": "Vyu/qpTxuGuXSrokK/uUPRMYn93Sc78+BSV059O6UFM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.Native.X11.XRRScreenConfiguration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.Native.X11.XRRScreenConfiguration.html",
+          "hash": "+3m6l1pERdITB+aTHUG60g6D7+G7uoytHIolMQw4+Oc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.Native.X11.XRRScreenResources.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.Native.X11.XRRScreenResources.html",
+          "hash": "GhuLwsbQxZfdV1icz9nKvXffh/jEY2K0QTd1ICUU+JU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.Native.X11.XRRScreenSize.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.Native.X11.XRRScreenSize.html",
+          "hash": "Rjc4J+j22ON9aRBqucx2ilAfbjZF6kP0CtsltP7yq6M="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.Native.X11.XRandR.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.Native.X11.XRandR.html",
+          "hash": "TyWNmObMU8ysvfB/gf25IUQS1DjKhoFg38UOMAvSpKY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.Native.X11.XRandRDisplayHandle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.Native.X11.XRandRDisplayHandle.html",
+          "hash": "VmNbAdvYzEk+7s9WVx6shULton6KUF9B+r1REayOAvs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.Native.X11.XReparentEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.Native.X11.XReparentEvent.html",
+          "hash": "vrQVkmi/F5g5pYw0cQrUJssE0Vipfou3CANrAUMj1uA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.Native.X11.XRequestCode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.Native.X11.XRequestCode.html",
+          "hash": "ungvlwUFDGHzJc6rGNiGevAJ+ovKjJgQ6V4yV4K5sYs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.Native.X11.XSetWindowAttributes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.Native.X11.XSetWindowAttributes.html",
+          "hash": "w/c3c3Hv0ct5R0Jsf3yx1Inz95Au1W719ff2vdwDXEU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.Native.X11.XSizeHintFlags.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.Native.X11.XSizeHintFlags.html",
+          "hash": "VEzyFPvkcDPaRzPhhon1JeoGcHSqm4EtUjHQ22vYQXc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.Native.X11.XSizeHints.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.Native.X11.XSizeHints.html",
+          "hash": "zHq82jNGWjsdXJZL7oLlm2hnUY7SzwMj8B8ERnqvSKE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.Native.X11.XTime.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.Native.X11.XTime.html",
+          "hash": "xq698WLYIo27wUim2NgKu95tQfvKU8PXkRjdCKEWtz4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.Native.X11.XUnmapEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.Native.X11.XUnmapEvent.html",
+          "hash": "JI0f/lRyDto7O35QxdbxOLRTW0G7+rsEiOdf2yTYwqE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.Native.X11.XVisual.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.Native.X11.XVisual.html",
+          "hash": "VSRay3l1Nwc4Z8TcWxkun5Mz305gnvsBK5TcwQ660ag="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.Native.X11.XVisualId.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.Native.X11.XVisualId.html",
+          "hash": "g3NzF9v5BfWtt/nbLE8g8KCUFPL3ho0dkEv6kGDmTBc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.Native.X11.XVisualInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.Native.X11.XVisualInfo.html",
+          "hash": "AjbvzLnsOM9nOspX5xDKGJwPbDV4iHRy0xpPqX+zJI0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.Native.X11.XWindow.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.Native.X11.XWindow.html",
+          "hash": "iR+a+mEUzZHHlrMGGuChwl2ccvzdWOr6ODV78kWmcvk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.Native.X11.XWindowAttributeValueMask.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.Native.X11.XWindowAttributeValueMask.html",
+          "hash": "xvurQ1Xff94dHorHoDZN6DCiKlrJgw7ZB0vkxE/8YGA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.Native.X11.XWindowAttributes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.Native.X11.XWindowAttributes.html",
+          "hash": "IUKl1Nwdv7yKEM29PD+pRwyoXgUncrvU81q5CtwXzpg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.Native.X11.XWindowChanges.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.Native.X11.XWindowChanges.html",
+          "hash": "9klFi4V7kV7va4kzH/J1MKvGM+6YdhOyoClz9gk1pPM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.Native.X11.XWindowChangesMask.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.Native.X11.XWindowChangesMask.html",
+          "hash": "4nqz9380gMddDIvgy4r410KmlRJZrdw9yo+Z8PbISfc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.Native.X11.XWindowHandle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.Native.X11.XWindowHandle.html",
+          "hash": "SJmWezvCJZwQHkYvPgoRMOTODwGNbXkI1Np7vsk71P8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.Native.X11.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.Native.X11.html",
+          "hash": "85d9IEr5WP5rtp4wMQ5K2nsu89BoSOhNGYIqd/n1J4w="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.Native.html",
+          "hash": "6Npaoyq71J9YrHXgPZQHqwERflfg43xElz8SSQCAGzo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Rgb.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Rgb.html",
+          "hash": "EW+1SAxdw9qmPxramUh1M/0usQa7X6ami79OwbQWGJE="
         }
       },
       "is_incremental": false,
@@ -3105,7 +5265,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenTK.Windowing.Common.KeyboardKeyEventArgs.html",
-          "hash": "zGfYE0KmPDlVPuTSDEjoWf3Nt93FTgmGXgaUAbz/8vA="
+          "hash": "vnVBYmpUYAJKF95ZHuMmgyGO/yzgTVBViqA+K4noPKY="
         }
       },
       "is_incremental": false,
@@ -3153,7 +5313,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenTK.Windowing.Common.MonitorHandle.html",
-          "hash": "GM4yXAuAN61IHtxOZM6NMi0mUNpRb34oi+aRvEoYBKs="
+          "hash": "JWSiKo6bkWkPN5CoZHzv7K5wWpoaxsRu+zQ6jY3zcas="
         }
       },
       "is_incremental": false,
@@ -3285,7 +5445,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenTK.Windowing.Desktop.GLFWGraphicsContext.html",
-          "hash": "PCQKDrmR/MkOGJboaR4mPc4gRQMksPlk2bMFdUSPg2E="
+          "hash": "V0z9QjaUJglz+WKQTlUOS+pGp0C7qM3FFp6lKLwZsuk="
         }
       },
       "is_incremental": false,
@@ -3309,7 +5469,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenTK.Windowing.Desktop.GameWindow.html",
-          "hash": "Ly6p8JvF7rIddC9+5ncoTABwZJBmWIthuDwLBGXd+g4="
+          "hash": "bnPo9TjCZd4NAH/xP+Ua43mRSSB5oQyZ6SMJkIWwcjc="
         }
       },
       "is_incremental": false,
@@ -3501,7 +5661,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenTK.Windowing.GraphicsLibraryFramework.GLFW.html",
-          "hash": "qgjGa8AiI5NBF/k6WaUUPNpzmlE835XlhszfYz/TwuA="
+          "hash": "JpyWdlG8oEBTyobPw0V9s1I4KWBP93WhsgHSqmDmrtI="
         }
       },
       "is_incremental": false,
@@ -4281,7 +6441,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenTK.html",
-          "hash": "x3jUnxENX5isM+5LUDtOygSJbhlvKy6PznEeQp2YCD0="
+          "hash": "ooBA9AeDAfNCZkagb2WXs4GAd59BjN1OjHUk7UhCA6g="
         }
       },
       "is_incremental": false,
@@ -4296,7 +6456,7 @@
           "hash": "vnf7cI3POeVYP844HhxA8TwAy2pOUtZdApjILyS0Gvw="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -4305,7 +6465,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "rwU0TXjHcQU4krEDDa73TPV5NISk/uYrf3miHCpTRgs="
+          "hash": "r65o0nnvms/DgaF9TuKdu/jh89IC/L2VlccU7DO1w5M="
         }
       },
       "is_incremental": false,
@@ -4397,7 +6557,7 @@
           "hash": "D3/BcbpCWErBZPyRaT9VCs7TywONu+6kbykNuurpLR0="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -4423,7 +6583,7 @@
           "hash": "X4wsUuFa9oOwHWdUtcCISn6JjSqRrNoAtnWh0QfDN9M="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -5880,12 +8040,60 @@
       "version": ""
     },
     {
+      "type": "Conceptual",
+      "source_relative_path": "learn/pal2/EventHandling.md",
+      "output": {
+        ".html": {
+          "relative_path": "learn/pal2/EventHandling.html",
+          "hash": "bY387tEDZJrLwwAeMiBTyXT4BGiUDTgRih78FngUQiU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "learn/pal2/Introduction.md",
+      "output": {
+        ".html": {
+          "relative_path": "learn/pal2/Introduction.html",
+          "hash": "HxankkjK/pQhXvqZQCom3kA5QjJ+Iw0He668u5WMNj0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "learn/pal2/Platform-Specific-Settings.md",
+      "output": {
+        ".html": {
+          "relative_path": "learn/pal2/Platform-Specific-Settings.html",
+          "hash": "vTbRWttjUEiEBJhE2mEUK3WmMMmQ8CpVka/2yEr+u5c="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "learn/pal2/WindowComponent.md",
+      "output": {
+        ".html": {
+          "relative_path": "learn/pal2/WindowComponent.html",
+          "hash": "KnO0S4usptS9A/mI2A0Mvj+OzIb8hxoipsVn9xjIdxU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Toc",
       "source_relative_path": "learn/toc.yml",
       "output": {
         ".html": {
           "relative_path": "learn/toc.html",
-          "hash": "iapT8rxJEhB/BHwBehvI40+rUvMVLbzH4OLRQmB9coU="
+          "hash": "bVcHylP7SDTPN869WEGQkTZn/ChCrfQO1/76dbiR6VE="
         }
       },
       "is_incremental": false,
@@ -5900,7 +8108,7 @@
           "hash": "n9TER48am1GQpnYp2gptaVa8bsFEKVgjdqxRYrZcdOw="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -5912,7 +8120,7 @@
           "hash": "gn6fk3MmJU0Oyg9o9aYMTcdKxcBcIiiLro1mDv8bmaI="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -5931,25 +8139,23 @@
   "incremental_info": [
     {
       "status": {
-        "can_incremental": false,
-        "details": "Cannot build incrementally because plugin changed.",
+        "can_incremental": true,
         "incrementalPhase": "build",
         "total_file_count": 0,
-        "skipped_file_count": 0,
-        "full_build_reason_code": "PluginChanged"
+        "skipped_file_count": 0
       },
       "processors": {
         "ConceptualDocumentProcessor": {
-          "can_incremental": false,
+          "can_incremental": true,
           "incrementalPhase": "build",
-          "total_file_count": 26,
-          "skipped_file_count": 0
+          "total_file_count": 30,
+          "skipped_file_count": 26
         },
         "ManagedReferenceDocumentProcessor": {
-          "can_incremental": false,
+          "can_incremental": true,
           "incrementalPhase": "build",
-          "total_file_count": 357,
-          "skipped_file_count": 0
+          "total_file_count": 537,
+          "skipped_file_count": 21
         },
         "ResourceDocumentProcessor": {
           "can_incremental": false,

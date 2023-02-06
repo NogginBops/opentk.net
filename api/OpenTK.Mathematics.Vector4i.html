@@ -113,13 +113,13 @@ public struct Vector4i : IEquatable&lt;Vector4i&gt;</code></pre>
   <h3 id="constructors">Constructors
 </h3>
   <a id="OpenTK_Mathematics_Vector4i__ctor_" data-uid="OpenTK.Mathematics.Vector4i.#ctor*"></a>
-  <h4 id="OpenTK_Mathematics_Vector4i__ctor_OpenTK_Mathematics_Vector2i_OpenTK_Mathematics_Vector2i_" data-uid="OpenTK.Mathematics.Vector4i.#ctor(OpenTK.Mathematics.Vector2i,OpenTK.Mathematics.Vector2i)">Vector4i(Vector2i, Vector2i)</h4>
+  <h4 id="OpenTK_Mathematics_Vector4i__ctor_OpenTK_Mathematics_Vector2i_System_Int32_System_Int32_" data-uid="OpenTK.Mathematics.Vector4i.#ctor(OpenTK.Mathematics.Vector2i,System.Int32,System.Int32)">Vector4i(Vector2i, int, int)</h4>
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="OpenTK.Mathematics.Vector4i.html">Vector4i</a> struct.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Vector4i(Vector2i v1, Vector2i v2)</code></pre>
+    <pre><code class="lang-csharp hljs">public Vector4i(Vector2i xy, int z = 0, int w = 0)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -133,49 +133,25 @@ public struct Vector4i : IEquatable&lt;Vector4i&gt;</code></pre>
     <tbody>
       <tr>
         <td><a class="xref" href="OpenTK.Mathematics.Vector2i.html">Vector2i</a></td>
-        <td><span class="parametername">v1</span></td>
-        <td><p>The <a class="xref" href="OpenTK.Mathematics.Vector2i.html">Vector2i</a> to get the X and Y components for the Vector4.</p>
+        <td><span class="parametername">xy</span></td>
+        <td><p>The x and y components of the Vector4i.</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="OpenTK.Mathematics.Vector2i.html">Vector2i</a></td>
-        <td><span class="parametername">v2</span></td>
-        <td><p>The <a class="xref" href="OpenTK.Mathematics.Vector2i.html">Vector2i</a> to get the Z and W components for the Vector4.</p>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">z</span></td>
+        <td><p>The z component of the Vector4i.</p>
 </td>
       </tr>
-    </tbody>
-  </table>
-  <h5 id="OpenTK_Mathematics_Vector4i__ctor_OpenTK_Mathematics_Vector2i_OpenTK_Mathematics_Vector2i__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>The Vector4i structure is suitable for interoperation with unmanaged code requiring four consecutive integers.</p>
-</div>
-  <a id="OpenTK_Mathematics_Vector4i__ctor_" data-uid="OpenTK.Mathematics.Vector4i.#ctor*"></a>
-  <h4 id="OpenTK_Mathematics_Vector4i__ctor_OpenTK_Mathematics_Vector2i_" data-uid="OpenTK.Mathematics.Vector4i.#ctor(OpenTK.Mathematics.Vector2i)">Vector4i(Vector2i)</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="OpenTK.Mathematics.Vector4i.html">Vector4i</a> struct.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Vector4i(Vector2i v)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
       <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Mathematics.Vector2i.html">Vector2i</a></td>
-        <td><span class="parametername">v</span></td>
-        <td><p>The <a class="xref" href="OpenTK.Mathematics.Vector2i.html">Vector2i</a> to copy components from.</p>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">w</span></td>
+        <td><p>The w component of the Vector4i.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <h5 id="OpenTK_Mathematics_Vector4i__ctor_OpenTK_Mathematics_Vector2i__remarks">Remarks</h5>
+  <h5 id="OpenTK_Mathematics_Vector4i__ctor_OpenTK_Mathematics_Vector2i_System_Int32_System_Int32__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>The Vector4i structure is suitable for interoperation with unmanaged code requiring four consecutive integers.</p>
 </div>
   <a id="OpenTK_Mathematics_Vector4i__ctor_" data-uid="OpenTK.Mathematics.Vector4i.#ctor*"></a>
@@ -185,7 +161,7 @@ public struct Vector4i : IEquatable&lt;Vector4i&gt;</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Vector4i(Vector3i v, int w)</code></pre>
+    <pre><code class="lang-csharp hljs">public Vector4i(Vector3i xyz, int w = 0)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -199,49 +175,19 @@ public struct Vector4i : IEquatable&lt;Vector4i&gt;</code></pre>
     <tbody>
       <tr>
         <td><a class="xref" href="OpenTK.Mathematics.Vector3i.html">Vector3i</a></td>
-        <td><span class="parametername">v</span></td>
-        <td><p>The <a class="xref" href="OpenTK.Mathematics.Vector3i.html">Vector3i</a> to copy components from.</p>
+        <td><span class="parametername">xyz</span></td>
+        <td><p>The x, y and z components of the Vector4i.</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">int</span></td>
         <td><span class="parametername">w</span></td>
-        <td><p>The w component of the new Vector4.</p>
+        <td><p>The w component of the Vector4i.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <h5 id="OpenTK_Mathematics_Vector4i__ctor_OpenTK_Mathematics_Vector3i_System_Int32__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>The Vector4i structure is suitable for interoperation with unmanaged code requiring four consecutive integers.</p>
-</div>
-  <a id="OpenTK_Mathematics_Vector4i__ctor_" data-uid="OpenTK.Mathematics.Vector4i.#ctor*"></a>
-  <h4 id="OpenTK_Mathematics_Vector4i__ctor_OpenTK_Mathematics_Vector3i_" data-uid="OpenTK.Mathematics.Vector4i.#ctor(OpenTK.Mathematics.Vector3i)">Vector4i(Vector3i)</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="OpenTK.Mathematics.Vector4i.html">Vector4i</a> struct.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Vector4i(Vector3i v)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Mathematics.Vector3i.html">Vector3i</a></td>
-        <td><span class="parametername">v</span></td>
-        <td><p>The <a class="xref" href="OpenTK.Mathematics.Vector3i.html">Vector3i</a> to copy components from.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 id="OpenTK_Mathematics_Vector4i__ctor_OpenTK_Mathematics_Vector3i__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>The Vector4i structure is suitable for interoperation with unmanaged code requiring four consecutive integers.</p>
 </div>
   <a id="OpenTK_Mathematics_Vector4i__ctor_" data-uid="OpenTK.Mathematics.Vector4i.#ctor*"></a>
@@ -3812,100 +3758,6 @@ public static explicit operator Vector4h(Vector4i vec)</code></pre>
     </tbody>
   </table>
   <h5 id="OpenTK_Mathematics_Vector4i_op_Explicit_OpenTK_Mathematics_Vector4i__OpenTK_Mathematics_Vector4h_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>The Vector4i structure is suitable for interoperation with unmanaged code requiring four consecutive integers.</p>
-</div>
-  <a id="OpenTK_Mathematics_Vector4i_op_Explicit_" data-uid="OpenTK.Mathematics.Vector4i.op_Explicit*"></a>
-  <h4 id="OpenTK_Mathematics_Vector4i_op_Explicit_OpenTK_Mathematics_Vector4i__System_Int32_" data-uid="OpenTK.Mathematics.Vector4i.op_Explicit(OpenTK.Mathematics.Vector4i)~System.Int32*">explicit operator int*(Vector4i)</h4>
-  <div class="markdown level1 summary"><p>Returns a pointer to the first element of the specified instance.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Pure]
-public static explicit operator int*(Vector4i v)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Mathematics.Vector4i.html">Vector4i</a></td>
-        <td><span class="parametername">v</span></td>
-        <td><p>The instance.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">int</span>*</td>
-        <td><p>A pointer to the first element of v.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 id="OpenTK_Mathematics_Vector4i_op_Explicit_OpenTK_Mathematics_Vector4i__System_Int32__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>The Vector4i structure is suitable for interoperation with unmanaged code requiring four consecutive integers.</p>
-</div>
-  <a id="OpenTK_Mathematics_Vector4i_op_Explicit_" data-uid="OpenTK.Mathematics.Vector4i.op_Explicit*"></a>
-  <h4 id="OpenTK_Mathematics_Vector4i_op_Explicit_OpenTK_Mathematics_Vector4i__System_IntPtr" data-uid="OpenTK.Mathematics.Vector4i.op_Explicit(OpenTK.Mathematics.Vector4i)~System.IntPtr">explicit operator IntPtr(Vector4i)</h4>
-  <div class="markdown level1 summary"><p>Returns a pointer to the first element of the specified instance.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Pure]
-public static explicit operator IntPtr(Vector4i v)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Mathematics.Vector4i.html">Vector4i</a></td>
-        <td><span class="parametername">v</span></td>
-        <td><p>The instance.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.IntPtr</span></td>
-        <td><p>A pointer to the first element of v.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 id="OpenTK_Mathematics_Vector4i_op_Explicit_OpenTK_Mathematics_Vector4i__System_IntPtr_remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>The Vector4i structure is suitable for interoperation with unmanaged code requiring four consecutive integers.</p>
 </div>
   <a id="OpenTK_Mathematics_Vector4i_op_Implicit_" data-uid="OpenTK.Mathematics.Vector4i.op_Implicit*"></a>

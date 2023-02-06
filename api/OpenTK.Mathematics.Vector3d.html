@@ -110,13 +110,13 @@ public struct Vector3d : IEquatable&lt;Vector3d&gt;</code></pre>
   <h3 id="constructors">Constructors
 </h3>
   <a id="OpenTK_Mathematics_Vector3d__ctor_" data-uid="OpenTK.Mathematics.Vector3d.#ctor*"></a>
-  <h4 id="OpenTK_Mathematics_Vector3d__ctor_OpenTK_Mathematics_Vector2d_" data-uid="OpenTK.Mathematics.Vector3d.#ctor(OpenTK.Mathematics.Vector2d)">Vector3d(Vector2d)</h4>
+  <h4 id="OpenTK_Mathematics_Vector3d__ctor_OpenTK_Mathematics_Vector2d_System_Double_" data-uid="OpenTK.Mathematics.Vector3d.#ctor(OpenTK.Mathematics.Vector2d,System.Double)">Vector3d(Vector2d, double)</h4>
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="OpenTK.Mathematics.Vector3d.html">Vector3d</a> struct.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Vector3d(Vector2d v)</code></pre>
+    <pre><code class="lang-csharp hljs">public Vector3d(Vector2d xy, double z = 0)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -130,62 +130,14 @@ public struct Vector3d : IEquatable&lt;Vector3d&gt;</code></pre>
     <tbody>
       <tr>
         <td><a class="xref" href="OpenTK.Mathematics.Vector2d.html">Vector2d</a></td>
-        <td><span class="parametername">v</span></td>
-        <td><p>The Vector2d to copy components from.</p>
+        <td><span class="parametername">xy</span></td>
+        <td><p>The x and y components of the Vector3d.</p>
 </td>
       </tr>
-    </tbody>
-  </table>
-  <a id="OpenTK_Mathematics_Vector3d__ctor_" data-uid="OpenTK.Mathematics.Vector3d.#ctor*"></a>
-  <h4 id="OpenTK_Mathematics_Vector3d__ctor_OpenTK_Mathematics_Vector3d_" data-uid="OpenTK.Mathematics.Vector3d.#ctor(OpenTK.Mathematics.Vector3d)">Vector3d(Vector3d)</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="OpenTK.Mathematics.Vector3d.html">Vector3d</a> struct.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Vector3d(Vector3d v)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
       <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Mathematics.Vector3d.html">Vector3d</a></td>
-        <td><span class="parametername">v</span></td>
-        <td><p>The Vector3d to copy components from.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="OpenTK_Mathematics_Vector3d__ctor_" data-uid="OpenTK.Mathematics.Vector3d.#ctor*"></a>
-  <h4 id="OpenTK_Mathematics_Vector3d__ctor_OpenTK_Mathematics_Vector4d_" data-uid="OpenTK.Mathematics.Vector3d.#ctor(OpenTK.Mathematics.Vector4d)">Vector3d(Vector4d)</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="OpenTK.Mathematics.Vector3d.html">Vector3d</a> struct.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Vector3d(Vector4d v)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Mathematics.Vector4d.html">Vector4d</a></td>
-        <td><span class="parametername">v</span></td>
-        <td><p>The Vector4d to copy components from.</p>
+        <td><span class="xref">double</span></td>
+        <td><span class="parametername">z</span></td>
+        <td><p>The z component of the Vector3d.</p>
 </td>
       </tr>
     </tbody>
@@ -212,19 +164,19 @@ public struct Vector3d : IEquatable&lt;Vector3d&gt;</code></pre>
       <tr>
         <td><span class="xref">double</span></td>
         <td><span class="parametername">x</span></td>
-        <td><p>The x component of the Vector3.</p>
+        <td><p>The x component of the Vector3d.</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">double</span></td>
         <td><span class="parametername">y</span></td>
-        <td><p>The y component of the Vector3.</p>
+        <td><p>The y component of the Vector3d.</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">double</span></td>
         <td><span class="parametername">z</span></td>
-        <td><p>The z component of the Vector3.</p>
+        <td><p>The z component of the Vector3d.</p>
 </td>
       </tr>
     </tbody>
@@ -2201,8 +2153,64 @@ public static double Dot(Vector3d left, Vector3d right)</code></pre>
   <h5 class="overrides">Overrides</h5>
   <div><span class="xref">System.ValueType.GetHashCode()</span></div>
   <a id="OpenTK_Mathematics_Vector3d_Lerp_" data-uid="OpenTK.Mathematics.Vector3d.Lerp*"></a>
+  <h4 id="OpenTK_Mathematics_Vector3d_Lerp_OpenTK_Mathematics_Vector3d_OpenTK_Mathematics_Vector3d_OpenTK_Mathematics_Vector3d_" data-uid="OpenTK.Mathematics.Vector3d.Lerp(OpenTK.Mathematics.Vector3d,OpenTK.Mathematics.Vector3d,OpenTK.Mathematics.Vector3d)">Lerp(Vector3d, Vector3d, Vector3d)</h4>
+  <div class="markdown level1 summary"><p>Returns a new vector that is the component-wise linear blend of the 2 given vectors.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static Vector3d Lerp(Vector3d a, Vector3d b, Vector3d blend)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector3d.html">Vector3d</a></td>
+        <td><span class="parametername">a</span></td>
+        <td><p>First input vector.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector3d.html">Vector3d</a></td>
+        <td><span class="parametername">b</span></td>
+        <td><p>Second input vector.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector3d.html">Vector3d</a></td>
+        <td><span class="parametername">blend</span></td>
+        <td><p>The blend factor.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector3d.html">Vector3d</a></td>
+        <td><p>a when blend=0, b when blend=1, and a component-wise linear combination otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Vector3d_Lerp_" data-uid="OpenTK.Mathematics.Vector3d.Lerp*"></a>
   <h4 id="OpenTK_Mathematics_Vector3d_Lerp_OpenTK_Mathematics_Vector3d_OpenTK_Mathematics_Vector3d_System_Double_" data-uid="OpenTK.Mathematics.Vector3d.Lerp(OpenTK.Mathematics.Vector3d,OpenTK.Mathematics.Vector3d,System.Double)">Lerp(Vector3d, Vector3d, double)</h4>
-  <div class="markdown level1 summary"><p>Returns a new Vector that is the linear blend of the 2 given Vectors.</p>
+  <div class="markdown level1 summary"><p>Returns a new vector that is the linear blend of the 2 given vectors.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -2235,7 +2243,7 @@ public static Vector3d Lerp(Vector3d a, Vector3d b, double blend)</code></pre>
       <tr>
         <td><span class="xref">double</span></td>
         <td><span class="parametername">blend</span></td>
-        <td><p>The blend factor. a when blend=0, b when blend=1.</p>
+        <td><p>The blend factor.</p>
 </td>
       </tr>
     </tbody>
@@ -2257,8 +2265,53 @@ public static Vector3d Lerp(Vector3d a, Vector3d b, double blend)</code></pre>
     </tbody>
   </table>
   <a id="OpenTK_Mathematics_Vector3d_Lerp_" data-uid="OpenTK.Mathematics.Vector3d.Lerp*"></a>
+  <h4 id="OpenTK_Mathematics_Vector3d_Lerp_OpenTK_Mathematics_Vector3d__OpenTK_Mathematics_Vector3d__OpenTK_Mathematics_Vector3d_OpenTK_Mathematics_Vector3d__" data-uid="OpenTK.Mathematics.Vector3d.Lerp(OpenTK.Mathematics.Vector3d@,OpenTK.Mathematics.Vector3d@,OpenTK.Mathematics.Vector3d,OpenTK.Mathematics.Vector3d@)">Lerp(in Vector3d, in Vector3d, Vector3d, out Vector3d)</h4>
+  <div class="markdown level1 summary"><p>Returns a new vector that is the component-wise linear blend of the 2 given vectors.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Lerp(in Vector3d a, in Vector3d b, Vector3d blend, out Vector3d result)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector3d.html">Vector3d</a></td>
+        <td><span class="parametername">a</span></td>
+        <td><p>First input vector.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector3d.html">Vector3d</a></td>
+        <td><span class="parametername">b</span></td>
+        <td><p>Second input vector.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector3d.html">Vector3d</a></td>
+        <td><span class="parametername">blend</span></td>
+        <td><p>The blend factor.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector3d.html">Vector3d</a></td>
+        <td><span class="parametername">result</span></td>
+        <td><p>a when blend=0, b when blend=1, and a component-wise linear combination otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Vector3d_Lerp_" data-uid="OpenTK.Mathematics.Vector3d.Lerp*"></a>
   <h4 id="OpenTK_Mathematics_Vector3d_Lerp_OpenTK_Mathematics_Vector3d__OpenTK_Mathematics_Vector3d__System_Double_OpenTK_Mathematics_Vector3d__" data-uid="OpenTK.Mathematics.Vector3d.Lerp(OpenTK.Mathematics.Vector3d@,OpenTK.Mathematics.Vector3d@,System.Double,OpenTK.Mathematics.Vector3d@)">Lerp(in Vector3d, in Vector3d, double, out Vector3d)</h4>
-  <div class="markdown level1 summary"><p>Returns a new Vector that is the linear blend of the 2 given Vectors.</p>
+  <div class="markdown level1 summary"><p>Returns a new vector that is the linear blend of the 2 given vectors.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -2290,7 +2343,7 @@ public static Vector3d Lerp(Vector3d a, Vector3d b, double blend)</code></pre>
       <tr>
         <td><span class="xref">double</span></td>
         <td><span class="parametername">blend</span></td>
-        <td><p>The blend factor. a when blend=0, b when blend=1.</p>
+        <td><p>The blend factor.</p>
 </td>
       </tr>
       <tr>

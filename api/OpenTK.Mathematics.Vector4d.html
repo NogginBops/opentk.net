@@ -113,13 +113,13 @@ public struct Vector4d : IEquatable&lt;Vector4d&gt;</code></pre>
   <h3 id="constructors">Constructors
 </h3>
   <a id="OpenTK_Mathematics_Vector4d__ctor_" data-uid="OpenTK.Mathematics.Vector4d.#ctor*"></a>
-  <h4 id="OpenTK_Mathematics_Vector4d__ctor_OpenTK_Mathematics_Vector2d_" data-uid="OpenTK.Mathematics.Vector4d.#ctor(OpenTK.Mathematics.Vector2d)">Vector4d(Vector2d)</h4>
+  <h4 id="OpenTK_Mathematics_Vector4d__ctor_OpenTK_Mathematics_Vector2d_System_Double_System_Double_" data-uid="OpenTK.Mathematics.Vector4d.#ctor(OpenTK.Mathematics.Vector2d,System.Double,System.Double)">Vector4d(Vector2d, double, double)</h4>
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="OpenTK.Mathematics.Vector4d.html">Vector4d</a> struct.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Vector4d(Vector2d v)</code></pre>
+    <pre><code class="lang-csharp hljs">public Vector4d(Vector2d xy, double z = 0, double w = 0)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -133,13 +133,25 @@ public struct Vector4d : IEquatable&lt;Vector4d&gt;</code></pre>
     <tbody>
       <tr>
         <td><a class="xref" href="OpenTK.Mathematics.Vector2d.html">Vector2d</a></td>
-        <td><span class="parametername">v</span></td>
-        <td><p>The Vector2d to copy components from.</p>
+        <td><span class="parametername">xy</span></td>
+        <td><p>The x and y components of the Vector4d.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">double</span></td>
+        <td><span class="parametername">z</span></td>
+        <td><p>The z component of the Vector4d.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">double</span></td>
+        <td><span class="parametername">w</span></td>
+        <td><p>The w component of the Vector4d.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <h5 id="OpenTK_Mathematics_Vector4d__ctor_OpenTK_Mathematics_Vector2d__remarks">Remarks</h5>
+  <h5 id="OpenTK_Mathematics_Vector4d__ctor_OpenTK_Mathematics_Vector2d_System_Double_System_Double__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>The Vector4 structure is suitable for interoperation with unmanaged code requiring four consecutive doubles.</p>
 </div>
   <a id="OpenTK_Mathematics_Vector4d__ctor_" data-uid="OpenTK.Mathematics.Vector4d.#ctor*"></a>
@@ -149,7 +161,7 @@ public struct Vector4d : IEquatable&lt;Vector4d&gt;</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Vector4d(Vector3d v, double w)</code></pre>
+    <pre><code class="lang-csharp hljs">public Vector4d(Vector3d xyz, double w = 0)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -163,79 +175,19 @@ public struct Vector4d : IEquatable&lt;Vector4d&gt;</code></pre>
     <tbody>
       <tr>
         <td><a class="xref" href="OpenTK.Mathematics.Vector3d.html">Vector3d</a></td>
-        <td><span class="parametername">v</span></td>
-        <td><p>The Vector3d to copy components from.</p>
+        <td><span class="parametername">xyz</span></td>
+        <td><p>The x, y and z components of the Vector4d.</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">double</span></td>
         <td><span class="parametername">w</span></td>
-        <td><p>The w component of the new Vector4.</p>
+        <td><p>The w component of the Vector4d.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <h5 id="OpenTK_Mathematics_Vector4d__ctor_OpenTK_Mathematics_Vector3d_System_Double__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>The Vector4 structure is suitable for interoperation with unmanaged code requiring four consecutive doubles.</p>
-</div>
-  <a id="OpenTK_Mathematics_Vector4d__ctor_" data-uid="OpenTK.Mathematics.Vector4d.#ctor*"></a>
-  <h4 id="OpenTK_Mathematics_Vector4d__ctor_OpenTK_Mathematics_Vector3d_" data-uid="OpenTK.Mathematics.Vector4d.#ctor(OpenTK.Mathematics.Vector3d)">Vector4d(Vector3d)</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="OpenTK.Mathematics.Vector4d.html">Vector4d</a> struct.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Vector4d(Vector3d v)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Mathematics.Vector3d.html">Vector3d</a></td>
-        <td><span class="parametername">v</span></td>
-        <td><p>The Vector3d to copy components from.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 id="OpenTK_Mathematics_Vector4d__ctor_OpenTK_Mathematics_Vector3d__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p><a class="xref" href="OpenTK.Mathematics.Vector4d.html#OpenTK_Mathematics_Vector4d__ctor_OpenTK_Mathematics_Vector3d_System_Double_">Vector4d(Vector3d, double)</a>.</p>
-</div>
-  <a id="OpenTK_Mathematics_Vector4d__ctor_" data-uid="OpenTK.Mathematics.Vector4d.#ctor*"></a>
-  <h4 id="OpenTK_Mathematics_Vector4d__ctor_OpenTK_Mathematics_Vector4d_" data-uid="OpenTK.Mathematics.Vector4d.#ctor(OpenTK.Mathematics.Vector4d)">Vector4d(Vector4d)</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="OpenTK.Mathematics.Vector4d.html">Vector4d</a> struct.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Vector4d(Vector4d v)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Mathematics.Vector4d.html">Vector4d</a></td>
-        <td><span class="parametername">v</span></td>
-        <td><p>The Vector4d to copy components from.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 id="OpenTK_Mathematics_Vector4d__ctor_OpenTK_Mathematics_Vector4d__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>The Vector4 structure is suitable for interoperation with unmanaged code requiring four consecutive doubles.</p>
 </div>
   <a id="OpenTK_Mathematics_Vector4d__ctor_" data-uid="OpenTK.Mathematics.Vector4d.#ctor*"></a>
@@ -3488,8 +3440,67 @@ public static double Dot(Vector4d left, Vector4d right)</code></pre>
   <div class="markdown level1 remarks"><p>The Vector4 structure is suitable for interoperation with unmanaged code requiring four consecutive doubles.</p>
 </div>
   <a id="OpenTK_Mathematics_Vector4d_Lerp_" data-uid="OpenTK.Mathematics.Vector4d.Lerp*"></a>
+  <h4 id="OpenTK_Mathematics_Vector4d_Lerp_OpenTK_Mathematics_Vector4d_OpenTK_Mathematics_Vector4d_OpenTK_Mathematics_Vector4d_" data-uid="OpenTK.Mathematics.Vector4d.Lerp(OpenTK.Mathematics.Vector4d,OpenTK.Mathematics.Vector4d,OpenTK.Mathematics.Vector4d)">Lerp(Vector4d, Vector4d, Vector4d)</h4>
+  <div class="markdown level1 summary"><p>Returns a new vector that is the component-wise linear blend of the 2 given vectors.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static Vector4d Lerp(Vector4d a, Vector4d b, Vector4d blend)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector4d.html">Vector4d</a></td>
+        <td><span class="parametername">a</span></td>
+        <td><p>First input vector.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector4d.html">Vector4d</a></td>
+        <td><span class="parametername">b</span></td>
+        <td><p>Second input vector.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector4d.html">Vector4d</a></td>
+        <td><span class="parametername">blend</span></td>
+        <td><p>The blend factor.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector4d.html">Vector4d</a></td>
+        <td><p>a when blend=0, b when blend=1, and a component-wise linear combination otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenTK_Mathematics_Vector4d_Lerp_OpenTK_Mathematics_Vector4d_OpenTK_Mathematics_Vector4d_OpenTK_Mathematics_Vector4d__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The Vector4 structure is suitable for interoperation with unmanaged code requiring four consecutive doubles.</p>
+</div>
+  <a id="OpenTK_Mathematics_Vector4d_Lerp_" data-uid="OpenTK.Mathematics.Vector4d.Lerp*"></a>
   <h4 id="OpenTK_Mathematics_Vector4d_Lerp_OpenTK_Mathematics_Vector4d_OpenTK_Mathematics_Vector4d_System_Double_" data-uid="OpenTK.Mathematics.Vector4d.Lerp(OpenTK.Mathematics.Vector4d,OpenTK.Mathematics.Vector4d,System.Double)">Lerp(Vector4d, Vector4d, double)</h4>
-  <div class="markdown level1 summary"><p>Returns a new Vector that is the linear blend of the 2 given Vectors.</p>
+  <div class="markdown level1 summary"><p>Returns a new vector that is the linear blend of the 2 given vectors.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -3522,7 +3533,7 @@ public static Vector4d Lerp(Vector4d a, Vector4d b, double blend)</code></pre>
       <tr>
         <td><span class="xref">double</span></td>
         <td><span class="parametername">blend</span></td>
-        <td><p>The blend factor. a when blend=0, b when blend=1.</p>
+        <td><p>The blend factor.</p>
 </td>
       </tr>
     </tbody>
@@ -3547,8 +3558,56 @@ public static Vector4d Lerp(Vector4d a, Vector4d b, double blend)</code></pre>
   <div class="markdown level1 remarks"><p>The Vector4 structure is suitable for interoperation with unmanaged code requiring four consecutive doubles.</p>
 </div>
   <a id="OpenTK_Mathematics_Vector4d_Lerp_" data-uid="OpenTK.Mathematics.Vector4d.Lerp*"></a>
+  <h4 id="OpenTK_Mathematics_Vector4d_Lerp_OpenTK_Mathematics_Vector4d__OpenTK_Mathematics_Vector4d__OpenTK_Mathematics_Vector4d_OpenTK_Mathematics_Vector4d__" data-uid="OpenTK.Mathematics.Vector4d.Lerp(OpenTK.Mathematics.Vector4d@,OpenTK.Mathematics.Vector4d@,OpenTK.Mathematics.Vector4d,OpenTK.Mathematics.Vector4d@)">Lerp(in Vector4d, in Vector4d, Vector4d, out Vector4d)</h4>
+  <div class="markdown level1 summary"><p>Returns a new vector that is the component-wise linear blend of the 2 given vectors.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Lerp(in Vector4d a, in Vector4d b, Vector4d blend, out Vector4d result)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector4d.html">Vector4d</a></td>
+        <td><span class="parametername">a</span></td>
+        <td><p>First input vector.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector4d.html">Vector4d</a></td>
+        <td><span class="parametername">b</span></td>
+        <td><p>Second input vector.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector4d.html">Vector4d</a></td>
+        <td><span class="parametername">blend</span></td>
+        <td><p>The blend factor.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector4d.html">Vector4d</a></td>
+        <td><span class="parametername">result</span></td>
+        <td><p>a when blend=0, b when blend=1, and a component-wise linear combination otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenTK_Mathematics_Vector4d_Lerp_OpenTK_Mathematics_Vector4d__OpenTK_Mathematics_Vector4d__OpenTK_Mathematics_Vector4d_OpenTK_Mathematics_Vector4d___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The Vector4 structure is suitable for interoperation with unmanaged code requiring four consecutive doubles.</p>
+</div>
+  <a id="OpenTK_Mathematics_Vector4d_Lerp_" data-uid="OpenTK.Mathematics.Vector4d.Lerp*"></a>
   <h4 id="OpenTK_Mathematics_Vector4d_Lerp_OpenTK_Mathematics_Vector4d__OpenTK_Mathematics_Vector4d__System_Double_OpenTK_Mathematics_Vector4d__" data-uid="OpenTK.Mathematics.Vector4d.Lerp(OpenTK.Mathematics.Vector4d@,OpenTK.Mathematics.Vector4d@,System.Double,OpenTK.Mathematics.Vector4d@)">Lerp(in Vector4d, in Vector4d, double, out Vector4d)</h4>
-  <div class="markdown level1 summary"><p>Returns a new Vector that is the linear blend of the 2 given Vectors.</p>
+  <div class="markdown level1 summary"><p>Returns a new vector that is the linear blend of the 2 given vectors.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -3580,7 +3639,7 @@ public static Vector4d Lerp(Vector4d a, Vector4d b, double blend)</code></pre>
       <tr>
         <td><span class="xref">double</span></td>
         <td><span class="parametername">blend</span></td>
-        <td><p>The blend factor. a when blend=0, b when blend=1.</p>
+        <td><p>The blend factor.</p>
 </td>
       </tr>
       <tr>
@@ -4952,100 +5011,6 @@ public static explicit operator Vector4i(Vector4d vec)</code></pre>
     </tbody>
   </table>
   <h5 id="OpenTK_Mathematics_Vector4d_op_Explicit_OpenTK_Mathematics_Vector4d__OpenTK_Mathematics_Vector4i_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>The Vector4 structure is suitable for interoperation with unmanaged code requiring four consecutive doubles.</p>
-</div>
-  <a id="OpenTK_Mathematics_Vector4d_op_Explicit_" data-uid="OpenTK.Mathematics.Vector4d.op_Explicit*"></a>
-  <h4 id="OpenTK_Mathematics_Vector4d_op_Explicit_OpenTK_Mathematics_Vector4d__System_Double_" data-uid="OpenTK.Mathematics.Vector4d.op_Explicit(OpenTK.Mathematics.Vector4d)~System.Double*">explicit operator double*(Vector4d)</h4>
-  <div class="markdown level1 summary"><p>Returns a pointer to the first element of the specified instance.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Pure]
-public static explicit operator double*(Vector4d v)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Mathematics.Vector4d.html">Vector4d</a></td>
-        <td><span class="parametername">v</span></td>
-        <td><p>The instance.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">double</span>*</td>
-        <td><p>A pointer to the first element of v.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 id="OpenTK_Mathematics_Vector4d_op_Explicit_OpenTK_Mathematics_Vector4d__System_Double__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>The Vector4 structure is suitable for interoperation with unmanaged code requiring four consecutive doubles.</p>
-</div>
-  <a id="OpenTK_Mathematics_Vector4d_op_Explicit_" data-uid="OpenTK.Mathematics.Vector4d.op_Explicit*"></a>
-  <h4 id="OpenTK_Mathematics_Vector4d_op_Explicit_OpenTK_Mathematics_Vector4d__System_IntPtr" data-uid="OpenTK.Mathematics.Vector4d.op_Explicit(OpenTK.Mathematics.Vector4d)~System.IntPtr">explicit operator IntPtr(Vector4d)</h4>
-  <div class="markdown level1 summary"><p>Returns a pointer to the first element of the specified instance.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Pure]
-public static explicit operator IntPtr(Vector4d v)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Mathematics.Vector4d.html">Vector4d</a></td>
-        <td><span class="parametername">v</span></td>
-        <td><p>The instance.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.IntPtr</span></td>
-        <td><p>A pointer to the first element of v.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 id="OpenTK_Mathematics_Vector4d_op_Explicit_OpenTK_Mathematics_Vector4d__System_IntPtr_remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>The Vector4 structure is suitable for interoperation with unmanaged code requiring four consecutive doubles.</p>
 </div>
   <a id="OpenTK_Mathematics_Vector4d_op_Implicit_" data-uid="OpenTK.Mathematics.Vector4d.op_Implicit*"></a>
