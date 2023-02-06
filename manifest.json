@@ -12,7 +12,7 @@
           "hash": "NsxDfrSndtT3HQMdGmSmwxLrjtp+H3dUPalTtkHsvGc="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -57,7 +57,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenTK.Audio.OpenAL.ALC.html",
-          "hash": "Har0FoG+BszA2pkp8iVmFgTn64NHa3yjiOzMNmNlrPw="
+          "hash": "T8m20a1HENa5GZAlQ0ige5lVJ7w3/nFWTl98ELYEUUY="
         }
       },
       "is_incremental": false,
@@ -669,7 +669,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenTK.Audio.OpenAL.Extensions.Creative.EnumerateAll.EnumerateAll.html",
-          "hash": "OvLwt9cPu667PXDbwBSSXzpjccoEcmFPgGaUmS7nsiE="
+          "hash": "2bu2hIYMz5Oip0gQVG2OE7ru+nk4pye7sJtTfq9YVxY="
         }
       },
       "is_incremental": false,
@@ -1869,7 +1869,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenTK.Core.Platform.ComponentSet.html",
-          "hash": "yfsePCzuiKQUWa7xa0+CO4XD4y6EWJ4Y4rTf1MtmBs8="
+          "hash": "HD9irerdK9fFA3My6FKSA+bq6YByAIf4E/Voho6JMG0="
         }
       },
       "is_incremental": false,
@@ -2349,7 +2349,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenTK.Core.Platform.OpenGLGraphicsApiHints.html",
-          "hash": "y/GaPo73cfr0dmFXQmvGfxiLyuw4acCVGdtxvkoRoeU="
+          "hash": "qpW/NWCI4JcUkW1YNwwwLwR0qBUVcR6u7NsFR8Tnlc0="
         }
       },
       "is_incremental": false,
@@ -2721,7 +2721,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenTK.Core.Utility.ConsoleLogger.html",
-          "hash": "R920KV6MyAEtXZXGM4BU8JOI13MkoOWEt1hTDk8+MPE="
+          "hash": "nhK0mgYz3qpjvGVNh2A0GB0CrI/BIgdoTixVmm3JPAQ="
         }
       },
       "is_incremental": false,
@@ -3801,7 +3801,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenTK.Platform.Native.Windows.ClipboardComponent.html",
-          "hash": "pPl0sspugJoU6DKDkhaPotjatTmmDTDXjsfiSZUDzkg="
+          "hash": "opHDuwv7ydhOU+cqZems55GIJOpxnc3A98/6yP01hyk="
         }
       },
       "is_incremental": false,
@@ -3861,7 +3861,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenTK.Platform.Native.Windows.MouseComponent.html",
-          "hash": "5FVajAg5BkDYr71IEJEWtVicBweFt/wYqP3mJlTNEOo="
+          "hash": "WAu5WOuZKwwk97Y3qzIM4vgD64XnLrT4AIGKhBbT/H0="
         }
       },
       "is_incremental": false,
@@ -3885,7 +3885,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenTK.Platform.Native.Windows.ShellComponent.html",
-          "hash": "Wjnw/9C0rPh8Y1HyG4a5FMdnSnDZ667wjFK5/YGgYgY="
+          "hash": "4GqpXX2zwMPQBAZkbqKKt6ID2ptzHpZu57GJDlzKfBM="
         }
       },
       "is_incremental": false,
@@ -3969,7 +3969,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenTK.Platform.Native.Windows.WindowComponent.html",
-          "hash": "3/QvZ/4wpHcCRUCPqPzdLf3LaOSJ7yuCqK1H4RyV4Mw="
+          "hash": "SI/LdzdX0jwQ9p6FNai5WsgI4YuXahQ64cltWHw6P6Y="
         }
       },
       "is_incremental": false,
@@ -3981,7 +3981,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenTK.Platform.Native.Windows.html",
-          "hash": "6cpjPdBuF8BWQPSjDHKNGt6UMeiu3qELuf+kIJ8AzhM="
+          "hash": "dz69Rx/T7+AnmQ1zWIeSSTQBsPOchqHWbXv/AznFjgM="
         }
       },
       "is_incremental": false,
@@ -4305,7 +4305,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenTK.Platform.Native.X11.X11ShellComponent.html",
-          "hash": "aPGLQk/mCrl2tN04OxVe9whHYSpabeFG0xvlF2iCSXo="
+          "hash": "q70EAqHqWl0HdKJxqR7nZfmv3hyv6HWFDFed1dTIHPU="
         }
       },
       "is_incremental": false,
@@ -5445,7 +5445,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenTK.Windowing.Desktop.GLFWGraphicsContext.html",
-          "hash": "V0z9QjaUJglz+WKQTlUOS+pGp0C7qM3FFp6lKLwZsuk="
+          "hash": "PCQKDrmR/MkOGJboaR4mPc4gRQMksPlk2bMFdUSPg2E="
         }
       },
       "is_incremental": false,
@@ -5469,7 +5469,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenTK.Windowing.Desktop.GameWindow.html",
-          "hash": "bnPo9TjCZd4NAH/xP+Ua43mRSSB5oQyZ6SMJkIWwcjc="
+          "hash": "Ly6p8JvF7rIddC9+5ncoTABwZJBmWIthuDwLBGXd+g4="
         }
       },
       "is_incremental": false,
@@ -5661,7 +5661,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenTK.Windowing.GraphicsLibraryFramework.GLFW.html",
-          "hash": "JpyWdlG8oEBTyobPw0V9s1I4KWBP93WhsgHSqmDmrtI="
+          "hash": "3kzFkEQT0BujT3RWU11ZJqmJtLdYMqRkbiE6ydyeD6I="
         }
       },
       "is_incremental": false,
@@ -6456,7 +6456,7 @@
           "hash": "vnf7cI3POeVYP844HhxA8TwAy2pOUtZdApjILyS0Gvw="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -6557,7 +6557,7 @@
           "hash": "D3/BcbpCWErBZPyRaT9VCs7TywONu+6kbykNuurpLR0="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -6583,7 +6583,7 @@
           "hash": "X4wsUuFa9oOwHWdUtcCISn6JjSqRrNoAtnWh0QfDN9M="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -8041,23 +8041,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "learn/pal2/EventHandling.md",
-      "output": {
-        ".html": {
-          "relative_path": "learn/pal2/EventHandling.html",
-          "hash": "bY387tEDZJrLwwAeMiBTyXT4BGiUDTgRih78FngUQiU="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
       "source_relative_path": "learn/pal2/Introduction.md",
       "output": {
         ".html": {
           "relative_path": "learn/pal2/Introduction.html",
-          "hash": "HxankkjK/pQhXvqZQCom3kA5QjJ+Iw0He668u5WMNj0="
+          "hash": "yNhiMG2XBUlMMV8WIN9nk6fgic7YsCb1nB3xC6SrHm8="
         }
       },
       "is_incremental": false,
@@ -8077,11 +8065,23 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "learn/pal2/WindowComponent.md",
+      "source_relative_path": "learn/pal2/event-handling.md",
       "output": {
         ".html": {
-          "relative_path": "learn/pal2/WindowComponent.html",
-          "hash": "KnO0S4usptS9A/mI2A0Mvj+OzIb8hxoipsVn9xjIdxU="
+          "relative_path": "learn/pal2/event-handling.html",
+          "hash": "ncI8ae/fxkvVOdYcm8bI2GGwpRRhJs1jRx5wFUXh+7M="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "learn/pal2/window-component.md",
+      "output": {
+        ".html": {
+          "relative_path": "learn/pal2/window-component.html",
+          "hash": "yP8ekwXEbUBVbVBnV82WSTH91YRgnv4/qVBzMcG3bL8="
         }
       },
       "is_incremental": false,
@@ -8093,7 +8093,7 @@
       "output": {
         ".html": {
           "relative_path": "learn/toc.html",
-          "hash": "bVcHylP7SDTPN869WEGQkTZn/ChCrfQO1/76dbiR6VE="
+          "hash": "QGF6r0XSeTMDAF2hHAJifXlhXig8t17rJf/8d9OOaHU="
         }
       },
       "is_incremental": false,
@@ -8108,7 +8108,7 @@
           "hash": "n9TER48am1GQpnYp2gptaVa8bsFEKVgjdqxRYrZcdOw="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -8120,7 +8120,7 @@
           "hash": "gn6fk3MmJU0Oyg9o9aYMTcdKxcBcIiiLro1mDv8bmaI="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -8139,23 +8139,25 @@
   "incremental_info": [
     {
       "status": {
-        "can_incremental": true,
+        "can_incremental": false,
+        "details": "Cannot build incrementally because plugin changed.",
         "incrementalPhase": "build",
         "total_file_count": 0,
-        "skipped_file_count": 0
+        "skipped_file_count": 0,
+        "full_build_reason_code": "PluginChanged"
       },
       "processors": {
         "ConceptualDocumentProcessor": {
-          "can_incremental": true,
+          "can_incremental": false,
           "incrementalPhase": "build",
           "total_file_count": 30,
-          "skipped_file_count": 26
+          "skipped_file_count": 0
         },
         "ManagedReferenceDocumentProcessor": {
-          "can_incremental": true,
+          "can_incremental": false,
           "incrementalPhase": "build",
           "total_file_count": 537,
-          "skipped_file_count": 21
+          "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
           "can_incremental": false,

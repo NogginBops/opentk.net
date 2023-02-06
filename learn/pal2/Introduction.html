@@ -151,26 +151,28 @@ windowComp.SwapBuffers(window);
 <pre><code class="lang-cs">EventQueue.EventRaised += EventRaised;
 </code></pre>
 <p>Now we need to define the <code>EventRaised</code> function.</p>
-<pre><code class="lang-cs">void EventRaised(PalHandle? handle, PlatformEventType type, EventArgs args) {
+<pre><code class="lang-cs">void EventRaised(PalHandle? handle, PlatformEventType type, EventArgs args)
+{
 
 }
 </code></pre>
+<div class="WARNING">
+<h5>Warning</h5>
+<p>The arguments of the event callback are likely to change.</p>
+</div>
 <p>This callback gets a few arguments, the two we are interested in right now are <code>type</code> and <code>args</code>.
 <code>type</code> tells us the type of the argument we received and <code>args</code> contains data specific to the type of event.</p>
 <p>To handle the quit message we will do the following:</p>
-<pre><code class="lang-cs">void EventRaised(PalHandle? handle, PlatformEventType type, EventArgs args) {
-
-    if (type == PlatformEventType.Close)
+<pre><code class="lang-cs">void EventRaised(PalHandle? handle, PlatformEventType type, EventArgs args)
+{
+    if (args is CloseEventArgs closeArgs)
     {
-        CloseEventArgs closeArgs = (CloseEventArgs)args;
-
         // Destroy the window that the user wanted to close.
         windowComp.Destroy(closeArgs.Window);
     }
-
 }
 </code></pre>
-<p>First we check if <code>type</code> is <code>Close</code> and if it is we cast the event args to <code>CloseEventArgs</code>. <code>CloseEventArgs</code> contains a <code>window</code> property which tells us which window the user wanted to close.
+<p>We use pattern matching <code>is</code> on <code>args</code> to check if it is of type <code>CloseEventArgs</code>. <code>CloseEventArgs</code> contains a <code>window</code> property which tells us which window the user wanted to close.
 So to close the window we call <code>IWindowComponent.Destroy(WindowHandle)</code> to destroy the window.</p>
 <p>This way of handling events generalizes to other event types. First check for the type of event, then cast the <code>EventArgs</code> to the type specific for this type of event which gives appropriate information for handling the event.</p>
 <p>The final code we end up with could look like the following:</p>
@@ -233,10 +235,8 @@ class Sample
 
     static void EventRaised(PalHandle? handle, PlatformEventType type, EventArgs args)
     {
-        if (type == PlatformEventType.Close)
+        if (args is CloseEventArgs closeArgs)
         {
-            CloseEventArgs closeArgs = (CloseEventArgs)args;
-
             // Destroy the window that the user wanted to close.
             windowComp.Destroy(closeArgs.Window);
         }

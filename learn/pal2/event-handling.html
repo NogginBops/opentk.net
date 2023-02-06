@@ -1,0 +1,282 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Introduction  - OpenTK</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Introduction ">
+    <meta name="generator" content="docfx ">
+  
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+  
+  
+  
+
+    <meta name="author" content="The Open Toolkit Project">
+    <meta property="og:image" content="https://opentk.net/otkBig.png">
+    <meta property="og:image:width" content="142">
+    <meta property="og:image:height" content="50">
+    <meta property="og:site_name" content="OpenTK">
+    <meta property="og:title" content="Introduction  - OpenTK">
+    <meta name="theme-color" content="#ffffff">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation" style="background: #0052cc;">
+          <div class="container">
+            <a class="navbar-brand" href="../../index.html">
+          <img id="logo" src="../../otkBig.png" alt="">
+        </a>
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="introduction">Introduction</h1>
+
+<p>OpenTK provides a number of events that can be used to respond to user actions or system changes. These are exposed through a global event queue.</p>
+<p>To register for events all you have to do is register to the <code>EventQueue.EventRaised</code> event. The handler should look like this:</p>
+<pre><code class="lang-cs">void EventRaised(PalHandle? handle, PlatformEventType type, EventArgs args)
+{
+
+}
+</code></pre>
+<p>and is registered as follows:</p>
+<pre><code class="lang-cs">EventQueue.EventRaised += EventRaised;
+</code></pre>
+<p>With this we are ready to handle some events!</p>
+<p>The first event most applications are going to want to handle is the <code>Close</code> event. We use pattern matching to see if <code>args</code> is of the type <code>CloseEventArgs</code> which tells us this is a <code>Close</code> event.</p>
+<pre><code class="lang-cs">void EventRaised(PalHandle? handle, PlatformEventType type, EventArgs args)
+{
+    if (args is CloseEventArgs close)
+    {
+        // Destroy the window that the user wanted to close.
+        windowComp.Destroy(closeArgs.Window);
+    }
+}
+</code></pre>
+<h1 id="window-events">Window Events</h1>
+<p>Here follows a list of events that extend <a class="xref" href="../../api/OpenTK.Core.Platform.WindowEventArgs.html">WindowEventArgs</a> and what they mean.</p>
+<h2 id="close">Close</h2>
+<blockquote>
+<p>Enum: <code>PlatformEventType.Close</code></p>
+</blockquote>
+<blockquote>
+<p>Args: <a class="xref" href="../../api/OpenTK.Core.Platform.CloseEventArgs.html"><code>CloseEventArgs</code></a></p>
+</blockquote>
+<p>This event is triggered when the user presses the exit button of the window. <code>CloseEventArgs.Window</code> contains the handle to the window the user wanted to close.</p>
+<h2 id="focus">Focus</h2>
+<blockquote>
+<p>Enum: <code>PlatformEventType.Focus</code></p>
+</blockquote>
+<blockquote>
+<p>Args: <a class="xref" href="../../api/OpenTK.Core.Platform.FocusEventArgs.html"><code>FocusEventArgs</code></a></p>
+</blockquote>
+<p>This event is triggered when a window gains or loses input focus. <code>FocusEventArgs.GotFocus</code> tells if the window got or lost focus.</p>
+<h2 id="windowmove">WindowMove</h2>
+<blockquote>
+<p>Enum: <code>PlatformEventType.WindowMove</code></p>
+</blockquote>
+<blockquote>
+<p>Args: <a class="xref" href="../../api/OpenTK.Core.Platform.WindowMoveEventArgs.html"><code>WindowMoveEventArgs</code></a></p>
+</blockquote>
+<p>This event is triggered when a window has its position changed on screen.</p>
+<h2 id="windowresize">WindowResize</h2>
+<blockquote>
+<p>Enum: <code>PlatformEventType.WindowResize</code></p>
+</blockquote>
+<blockquote>
+<p>Args: <a class="xref" href="../../api/OpenTK.Core.Platform.WindowResizeEventArgs.html"><code>WindowResizeEventArgs</code></a></p>
+</blockquote>
+<p>This event is triggered when a window has its size changed on screen.</p>
+<h2 id="windowmodechange">WindowModeChange</h2>
+<blockquote>
+<p>Enum: <code>PlatformEventType.WindowModeChange</code></p>
+</blockquote>
+<blockquote>
+<p>Args: <a class="xref" href="../../api/OpenTK.Core.Platform.WindowModeChangeEventArgs.html"><code>WindowModeChangeEventArgs</code></a></p>
+</blockquote>
+<p>This event is triggered when the window mode of a window changes.</p>
+<h2 id="mouseenter">MouseEnter</h2>
+<blockquote>
+<p>Enum: <code>PlatformEventType.MouseEnter</code></p>
+</blockquote>
+<blockquote>
+<p>Args: <a class="xref" href="../../api/OpenTK.Core.Platform.MouseEnterEventArgs.html"><code>MouseEnterEventArgs</code></a></p>
+</blockquote>
+<p>This event is triggered when the mouse cursor enters or exits a window.</p>
+<h2 id="mousemove">MouseMove</h2>
+<blockquote>
+<p>Enum: <code>PlatformEventType.MouseMove</code></p>
+</blockquote>
+<blockquote>
+<p>Args: <a class="xref" href="../../api/OpenTK.Core.Platform.MouseMoveEventArgs.html"><code>MouseMoveEventArgs</code></a></p>
+</blockquote>
+<p>This event is triggered when the mouse moves.</p>
+<h2 id="mousedown">MouseDown</h2>
+<blockquote>
+<p>Enum: <code>PlatformEventType.MouseDown</code></p>
+</blockquote>
+<blockquote>
+<p>Args: <a class="xref" href="../../api/OpenTK.Core.Platform.MouseButtonDownEventArgs.html"><code>MouseButtonDownEventArgs</code></a></p>
+</blockquote>
+<p>This event is triggered when a mouse button is pressed.</p>
+<h2 id="mouseup">MouseUp</h2>
+<blockquote>
+<p>Enum: <code>PlatformEventType.MouseUp</code></p>
+</blockquote>
+<blockquote>
+<p>Args: <a class="xref" href="../../api/OpenTK.Core.Platform.MouseButtonUpEventArgs.html"><code>MouseButtonUpEventArgs</code></a></p>
+</blockquote>
+<p>This event is triggered when a mouse button is released.</p>
+<h2 id="scroll">Scroll</h2>
+<blockquote>
+<p>Enum: <code>PlatformEventType.Scroll</code></p>
+</blockquote>
+<blockquote>
+<p>Args: <a class="xref" href="../../api/OpenTK.Core.Platform.ScrollEventArgs.html"><code>ScrollEventArgs</code></a></p>
+</blockquote>
+<p>This event is triggered when the scrollwheel on a mouse is used.</p>
+<h2 id="keydown">KeyDown</h2>
+<blockquote>
+<p>Enum: <code>PlatformEventType.KeyDown</code></p>
+</blockquote>
+<blockquote>
+<p>Args: <a class="xref" href="../../api/OpenTK.Core.Platform.KeyDownEventArgs.html"><code>KeyDownEventArgs</code></a></p>
+</blockquote>
+<p>This event is triggered when a keyboard key is pressed.</p>
+<p>Do not use this event to handle typing, use the <a href="#textinput">TextInput event</a> instead.</p>
+<h2 id="keyup">KeyUp</h2>
+<blockquote>
+<p>Enum: <code>PlatformEventType.KeyUp</code></p>
+</blockquote>
+<blockquote>
+<p>Args: <a class="xref" href="../../api/OpenTK.Core.Platform.KeyUpEventArgs.html"><code>KeyUpEventArgs</code></a></p>
+</blockquote>
+<p>This event is triggered when a keyboard key is released.</p>
+<p>Do not use this event to handle typing, use the <a href="#textinput">TextInput event</a> instead.</p>
+<h2 id="textinput">TextInput</h2>
+<blockquote>
+<p>Enum: <code>PlatformEventType.TextInput</code></p>
+</blockquote>
+<blockquote>
+<p>Args: <a class="xref" href="../../api/OpenTK.Core.Platform.TextInputEventArgs.html"><code>TextInputEventArgs</code></a></p>
+</blockquote>
+<p>This event is triggered when the user has typed text.</p>
+<h2 id="textediting">TextEditing</h2>
+<blockquote>
+<p>Enum: <code>PlatformEventType.TextEditing</code></p>
+</blockquote>
+<blockquote>
+<p>Args: <a class="xref" href="../../api/OpenTK.Core.Platform.TextEditingEventArgs.html"><code>TextEditingEventArgs</code></a></p>
+</blockquote>
+<p>This event is triggered when the user is composing text using something like IME (e.g. Chinese, Japanese, or Korean).</p>
+<h2 id="filedrop">FileDrop</h2>
+<blockquote>
+<p>Enum: <code>PlatformEventType.FileDrop</code></p>
+</blockquote>
+<blockquote>
+<p>Args: <a class="xref" href="../../api/OpenTK.Core.Platform.FileDropEventArgs.html"><code>FileDropEventArgs</code></a></p>
+</blockquote>
+<p>This event is triggered when a user drags files into a window.</p>
+<h1 id="non-window-events">Non-window events</h1>
+<p>Here follows a list of non-window related events.</p>
+<h2 id="themechange">ThemeChange</h2>
+<blockquote>
+<p>Enum: <code>PlatformEventType.ThemeChange</code></p>
+</blockquote>
+<blockquote>
+<p>Args: <a class="xref" href="../../api/OpenTK.Core.Platform.ThemeChangeEventArgs.html"><code>ThemeChangeEventArgs</code></a></p>
+</blockquote>
+<p>This event is triggered when a user changes the preferred theme.</p>
+<h2 id="displayconnectionchanged">DisplayConnectionChanged</h2>
+<blockquote>
+<p>Enum: <code>PlatformEventType.DisplayConnectionChanged</code></p>
+</blockquote>
+<blockquote>
+<p>Args: <a class="xref" href="../../api/OpenTK.Core.Platform.DisplayConnectionChangedEventArgs.html"><code>DisplayConnectionChangedEventArgs</code></a></p>
+</blockquote>
+<p>This event is triggered when a display is connected or disconnected from the system.</p>
+<h2 id="powerstatechange">PowerStateChange</h2>
+<blockquote>
+<p>Enum: <code>PlatformEventType.PowerStateChange</code></p>
+</blockquote>
+<blockquote>
+<p>Args: <a class="xref" href="../../api/OpenTK.Core.Platform.PowerStateChangeEventArgs.html"><code>PowerStateChangeEventArgs</code></a></p>
+</blockquote>
+<p>This event is triggered when the power state of the system changes.</p>
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>
