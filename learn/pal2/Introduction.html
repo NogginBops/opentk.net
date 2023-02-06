@@ -91,8 +91,10 @@ This will change as it is developed more.</p>
 <p>The first of these interfaces we are going to see is <code>IWindowComponent</code> and <code>IOpenGLComponent</code> which allows the user to
 create and interact with windows as well as initialize an OpenGL context and draw graphics to the window.</p>
 <p>The following code initializes these interfaces with a platform dependent implementation (or throws <code>NotSupportedException</code> for not yet supported OSes).</p>
-<pre><code class="lang-cs">IWindowComponent windowComp = new OpenTK.Platform.Native.PlatformComponents.CreateWindowComponent();
-IOpenGLComponent openglComp = new OpenTK.Platform.Native.PlatformComponents.CreateOpenGLComponent();
+<pre><code class="lang-cs">using OpenTK.Platform.Native;
+
+IWindowComponent windowComp = new PlatformComponents.CreateWindowComponent();
+IOpenGLComponent openglComp = new PlatformComponents.CreateOpenGLComponent();
 
 windowComp.Initialize(PalComponents.Window);
 openglComp.Initialize(PalComponents.OpenGL);
@@ -180,13 +182,14 @@ So to close the window we call <code>IWindowComponent.Destroy(WindowHandle)</cod
 using OpenTK.Graphics;
 using OpenTK.Graphics.OpenGL;
 using OpenTK.Mathematics;
+using OpenTK.Platform.Native;
 
 namespace Pal2Sample;
 
 class Sample
 {
-    static IWindowComponent windowComp = new OpenTK.Platform.Native.PlatformComponents.CreateWindowComponent();
-    static IOpenGLComponent openglComp = new OpenTK.Platform.Native.PlatformComponents.CreateOpenGLComponent();
+    static IWindowComponent windowComp = new PlatformComponents.CreateWindowComponent();
+    static IOpenGLComponent openglComp = new PlatformComponents.CreateOpenGLComponent();
 
     static WindowHandle Window;
     static OpenGLContextHandle GLContext;
