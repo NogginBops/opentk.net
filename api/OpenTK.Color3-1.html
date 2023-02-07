@@ -81,7 +81,13 @@
 
   <h1 id="OpenTK_Color3_1" data-uid="OpenTK.Color3`1" class="text-break">Struct Color3&lt;T&gt;
 </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>To provide type-safety between different color spaces and allow extension by users to include additional and future color spaces, colors are marked with a special <em>phantom</em> type parameter that indicates their color space.
+Typically these are four-letter abbreviations that indicate the components of the colors, such as <a class="xref" href="OpenTK.Rgb.html">Rgb</a> or <a class="xref" href="OpenTK.Hsv.html">Hsv</a>.</p>
+<p>In any of these cases, letters in the color space correspond to the order of the components in the color vector. For example, color&lt;RGB&gt; maps as follows:<br>
+X -&gt; R<br>
+Y -&gt; G<br>
+Z -&gt; B.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="implements">
     <h5>Implements</h5>
@@ -116,7 +122,8 @@
     <tbody>
       <tr>
         <td><span class="parametername">T</span></td>
-        <td></td>
+        <td><p>The color space of the given color.</p>
+</td>
       </tr>
     </tbody>
   </table>

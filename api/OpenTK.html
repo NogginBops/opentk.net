@@ -100,7 +100,13 @@
     <h3 id="structs">Structs
 </h3>
       <h4><a class="xref" href="OpenTK.Color3-1.html">Color3&lt;T&gt;</a></h4>
-      <section></section>
+      <section><p>To provide type-safety between different color spaces and allow extension by users to include additional and future color spaces, colors are marked with a special <em>phantom</em> type parameter that indicates their color space.
+Typically these are four-letter abbreviations that indicate the components of the colors, such as <a class="xref" href="OpenTK.Rgb.html">Rgb</a> or <a class="xref" href="OpenTK.Hsv.html">Hsv</a>.</p>
+<p>In any of these cases, letters in the color space correspond to the order of the components in the color vector. For example, color&lt;RGB&gt; maps as follows:<br>
+X -&gt; R<br>
+Y -&gt; G<br>
+Z -&gt; B.</p>
+</section>
     <h3 id="interfaces">Interfaces
 </h3>
       <h4><a class="xref" href="OpenTK.IBindingsContext.html">IBindingsContext</a></h4>

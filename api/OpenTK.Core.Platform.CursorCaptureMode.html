@@ -81,7 +81,8 @@
 
   <h1 id="OpenTK_Core_Platform_CursorCaptureMode" data-uid="OpenTK.Core.Platform.CursorCaptureMode" class="text-break">Enum CursorCaptureMode
 </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Cursor capture modes.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <h6><strong>Namespace</strong>: <a class="xref" href="OpenTK.html">OpenTK</a>.<a class="xref" href="OpenTK.Core.html">Core</a>.<a class="xref" href="OpenTK.Core.Platform.html">Platform</a></h6>
   <h6><strong>Assembly</strong>: OpenTK.Core.dll</h6>
@@ -101,15 +102,24 @@
     <tbody>
       <tr>
         <td id="OpenTK_Core_Platform_CursorCaptureMode_Confined">Confined</td>
-        <td></td>
+        <td><p>The cursor is confined to the bounds of the window.</p>
+</td>
       </tr>
       <tr>
         <td id="OpenTK_Core_Platform_CursorCaptureMode_Locked">Locked</td>
-        <td></td>
+        <td><p>
+The cursor is locked to the center of the window. Useful for e.g. FPS games.
+</p>
+<p>
+In this mode the cursor has a virtual position that can go to arbitrary coordinates, this allows the mouse delta to always grow.
+Checking the mouse cursor position while capturing the cursor will not return a coordinate that corresponds to the screen.
+</p>
+</td>
       </tr>
       <tr>
         <td id="OpenTK_Core_Platform_CursorCaptureMode_Normal">Normal</td>
-        <td></td>
+        <td><p>The cursor is not captured.</p>
+</td>
       </tr>
     </tbody>
   </thead></thead></table>

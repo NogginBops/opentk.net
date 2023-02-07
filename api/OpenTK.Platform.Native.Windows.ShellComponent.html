@@ -127,7 +127,8 @@
 </h3>
   <a id="OpenTK_Platform_Native_Windows_ShellComponent_Logger_" data-uid="OpenTK.Platform.Native.Windows.ShellComponent.Logger*"></a>
   <h4 id="OpenTK_Platform_Native_Windows_ShellComponent_Logger" data-uid="OpenTK.Platform.Native.Windows.ShellComponent.Logger">Logger</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Provides a logger for this component.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -150,7 +151,8 @@
   </table>
   <a id="OpenTK_Platform_Native_Windows_ShellComponent_Name_" data-uid="OpenTK.Platform.Native.Windows.ShellComponent.Name*"></a>
   <h4 id="OpenTK_Platform_Native_Windows_ShellComponent_Name" data-uid="OpenTK.Platform.Native.Windows.ShellComponent.Name">Name</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Name of the abstraction layer component.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -173,7 +175,8 @@
   </table>
   <a id="OpenTK_Platform_Native_Windows_ShellComponent_Provides_" data-uid="OpenTK.Platform.Native.Windows.ShellComponent.Provides*"></a>
   <h4 id="OpenTK_Platform_Native_Windows_ShellComponent_Provides" data-uid="OpenTK.Platform.Native.Windows.ShellComponent.Provides">Provides</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Specifies which PAL components this object provides.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -198,7 +201,11 @@
 </h3>
   <a id="OpenTK_Platform_Native_Windows_ShellComponent_AllowScreenSaver_" data-uid="OpenTK.Platform.Native.Windows.ShellComponent.AllowScreenSaver*"></a>
   <h4 id="OpenTK_Platform_Native_Windows_ShellComponent_AllowScreenSaver_System_Boolean_" data-uid="OpenTK.Platform.Native.Windows.ShellComponent.AllowScreenSaver(System.Boolean)">AllowScreenSaver(bool)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Sets whether or not a screensaver is allowed to draw on top of the window.
+For games with long cutscenes it would be appropriate to set this to <code>false</code>,
+while tools that act like normal applications should set this to <code>true</code>.
+By default this setting is untouched.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -217,13 +224,15 @@
       <tr>
         <td><span class="xref">bool</span></td>
         <td><span class="parametername">allow</span></td>
-        <td></td>
+        <td><p>Whether to allow screensavers to appear while the application is running.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <a id="OpenTK_Platform_Native_Windows_ShellComponent_GetBatteryInfo_" data-uid="OpenTK.Platform.Native.Windows.ShellComponent.GetBatteryInfo*"></a>
   <h4 id="OpenTK_Platform_Native_Windows_ShellComponent_GetBatteryInfo_OpenTK_Core_Platform_BatteryInfo__" data-uid="OpenTK.Platform.Native.Windows.ShellComponent.GetBatteryInfo(OpenTK.Core.Platform.BatteryInfo@)">GetBatteryInfo(out BatteryInfo)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the battery status of the computer.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -257,13 +266,15 @@
     <tbody>
       <tr>
         <td><a class="xref" href="OpenTK.Core.Platform.BatteryStatus.html">BatteryStatus</a></td>
-        <td></td>
+        <td><p>Whether the computer has a battery or not, or if this function failed.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <a id="OpenTK_Platform_Native_Windows_ShellComponent_GetPreferredTheme_" data-uid="OpenTK.Platform.Native.Windows.ShellComponent.GetPreferredTheme*"></a>
   <h4 id="OpenTK_Platform_Native_Windows_ShellComponent_GetPreferredTheme" data-uid="OpenTK.Platform.Native.Windows.ShellComponent.GetPreferredTheme">GetPreferredTheme()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the user preference for application theme.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -280,13 +291,15 @@
     <tbody>
       <tr>
         <td><a class="xref" href="OpenTK.Core.Platform.ThemeInfo.html">ThemeInfo</a></td>
-        <td></td>
+        <td><p>The user set preferred theme.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <a id="OpenTK_Platform_Native_Windows_ShellComponent_Initialize_" data-uid="OpenTK.Platform.Native.Windows.ShellComponent.Initialize*"></a>
   <h4 id="OpenTK_Platform_Native_Windows_ShellComponent_Initialize_OpenTK_Core_Platform_PalComponents_" data-uid="OpenTK.Platform.Native.Windows.ShellComponent.Initialize(OpenTK.Core.Platform.PalComponents)">Initialize(PalComponents)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initialize the driver.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -305,7 +318,8 @@
       <tr>
         <td><a class="xref" href="OpenTK.Core.Platform.PalComponents.html">PalComponents</a></td>
         <td><span class="parametername">which</span></td>
-        <td></td>
+        <td><p>Bitfield of which components the driver need to be initialized.</p>
+</td>
       </tr>
     </tbody>
   </table>
