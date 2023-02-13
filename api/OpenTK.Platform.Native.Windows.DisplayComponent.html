@@ -127,7 +127,8 @@
 </h3>
   <a id="OpenTK_Platform_Native_Windows_DisplayComponent_CanGetVirtualPosition_" data-uid="OpenTK.Platform.Native.Windows.DisplayComponent.CanGetVirtualPosition*"></a>
   <h4 id="OpenTK_Platform_Native_Windows_DisplayComponent_CanGetVirtualPosition" data-uid="OpenTK.Platform.Native.Windows.DisplayComponent.CanGetVirtualPosition">CanGetVirtualPosition</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>True if the driver can get the virtual position of the display.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -150,7 +151,8 @@
   </table>
   <a id="OpenTK_Platform_Native_Windows_DisplayComponent_CanSetVideoMode_" data-uid="OpenTK.Platform.Native.Windows.DisplayComponent.CanSetVideoMode*"></a>
   <h4 id="OpenTK_Platform_Native_Windows_DisplayComponent_CanSetVideoMode" data-uid="OpenTK.Platform.Native.Windows.DisplayComponent.CanSetVideoMode">CanSetVideoMode</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>True if the driver can set the video mode.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -173,7 +175,8 @@
   </table>
   <a id="OpenTK_Platform_Native_Windows_DisplayComponent_Logger_" data-uid="OpenTK.Platform.Native.Windows.DisplayComponent.Logger*"></a>
   <h4 id="OpenTK_Platform_Native_Windows_DisplayComponent_Logger" data-uid="OpenTK.Platform.Native.Windows.DisplayComponent.Logger">Logger</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Provides a logger for this component.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -196,7 +199,8 @@
   </table>
   <a id="OpenTK_Platform_Native_Windows_DisplayComponent_Name_" data-uid="OpenTK.Platform.Native.Windows.DisplayComponent.Name*"></a>
   <h4 id="OpenTK_Platform_Native_Windows_DisplayComponent_Name" data-uid="OpenTK.Platform.Native.Windows.DisplayComponent.Name">Name</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Name of the abstraction layer component.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -219,7 +223,8 @@
   </table>
   <a id="OpenTK_Platform_Native_Windows_DisplayComponent_Provides_" data-uid="OpenTK.Platform.Native.Windows.DisplayComponent.Provides*"></a>
   <h4 id="OpenTK_Platform_Native_Windows_DisplayComponent_Provides" data-uid="OpenTK.Platform.Native.Windows.DisplayComponent.Provides">Provides</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Specifies which PAL components this object provides.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -244,7 +249,8 @@
 </h3>
   <a id="OpenTK_Platform_Native_Windows_DisplayComponent_Create_" data-uid="OpenTK.Platform.Native.Windows.DisplayComponent.Create*"></a>
   <h4 id="OpenTK_Platform_Native_Windows_DisplayComponent_Create_System_Int32_" data-uid="OpenTK.Platform.Native.Windows.DisplayComponent.Create(System.Int32)">Create(int)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Create a display handle to the indexed display.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -263,7 +269,8 @@
       <tr>
         <td><span class="xref">int</span></td>
         <td><span class="parametername">index</span></td>
-        <td></td>
+        <td><p>The display index to create a display handle to.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -278,13 +285,31 @@
     <tbody>
       <tr>
         <td><a class="xref" href="OpenTK.Core.Platform.DisplayHandle.html">DisplayHandle</a></td>
-        <td></td>
+        <td><p>Handle to the display.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentOutOfRangeException</span></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">index</code> is out of range.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <a id="OpenTK_Platform_Native_Windows_DisplayComponent_CreatePrimary_" data-uid="OpenTK.Platform.Native.Windows.DisplayComponent.CreatePrimary*"></a>
   <h4 id="OpenTK_Platform_Native_Windows_DisplayComponent_CreatePrimary" data-uid="OpenTK.Platform.Native.Windows.DisplayComponent.CreatePrimary">CreatePrimary()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Create a display handle to the primary display.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -301,13 +326,15 @@
     <tbody>
       <tr>
         <td><a class="xref" href="OpenTK.Core.Platform.DisplayHandle.html">DisplayHandle</a></td>
-        <td></td>
+        <td><p>Handle to the primary display.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <a id="OpenTK_Platform_Native_Windows_DisplayComponent_Destroy_" data-uid="OpenTK.Platform.Native.Windows.DisplayComponent.Destroy*"></a>
   <h4 id="OpenTK_Platform_Native_Windows_DisplayComponent_Destroy_OpenTK_Core_Platform_DisplayHandle_" data-uid="OpenTK.Platform.Native.Windows.DisplayComponent.Destroy(OpenTK.Core.Platform.DisplayHandle)">Destroy(DisplayHandle)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Destroy a display handle.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -326,13 +353,31 @@
       <tr>
         <td><a class="xref" href="OpenTK.Core.Platform.DisplayHandle.html">DisplayHandle</a></td>
         <td><span class="parametername">handle</span></td>
-        <td></td>
+        <td><p>Handle to a display.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">handle</code> is null.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <a id="OpenTK_Platform_Native_Windows_DisplayComponent_GetDisplayCount_" data-uid="OpenTK.Platform.Native.Windows.DisplayComponent.GetDisplayCount*"></a>
   <h4 id="OpenTK_Platform_Native_Windows_DisplayComponent_GetDisplayCount" data-uid="OpenTK.Platform.Native.Windows.DisplayComponent.GetDisplayCount">GetDisplayCount()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Get the number of available displays.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -349,13 +394,15 @@
     <tbody>
       <tr>
         <td><span class="xref">int</span></td>
-        <td></td>
+        <td><p>Number of displays available.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <a id="OpenTK_Platform_Native_Windows_DisplayComponent_GetDisplayScale_" data-uid="OpenTK.Platform.Native.Windows.DisplayComponent.GetDisplayScale*"></a>
   <h4 id="OpenTK_Platform_Native_Windows_DisplayComponent_GetDisplayScale_OpenTK_Core_Platform_DisplayHandle_System_Single__System_Single__" data-uid="OpenTK.Platform.Native.Windows.DisplayComponent.GetDisplayScale(OpenTK.Core.Platform.DisplayHandle,System.Single@,System.Single@)">GetDisplayScale(DisplayHandle, out float, out float)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Get the scale of the display.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -374,23 +421,27 @@
       <tr>
         <td><a class="xref" href="OpenTK.Core.Platform.DisplayHandle.html">DisplayHandle</a></td>
         <td><span class="parametername">handle</span></td>
-        <td></td>
+        <td><p>Handle to a display.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">float</span></td>
         <td><span class="parametername">scaleX</span></td>
-        <td></td>
+        <td><p>The X-axis scale of the monitor.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">float</span></td>
         <td><span class="parametername">scaleY</span></td>
-        <td></td>
+        <td><p>The Y-axis scale of the monitor.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <a id="OpenTK_Platform_Native_Windows_DisplayComponent_GetName_" data-uid="OpenTK.Platform.Native.Windows.DisplayComponent.GetName*"></a>
   <h4 id="OpenTK_Platform_Native_Windows_DisplayComponent_GetName_OpenTK_Core_Platform_DisplayHandle_" data-uid="OpenTK.Platform.Native.Windows.DisplayComponent.GetName(OpenTK.Core.Platform.DisplayHandle)">GetName(DisplayHandle)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Get the friendly name of a display.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -409,7 +460,8 @@
       <tr>
         <td><a class="xref" href="OpenTK.Core.Platform.DisplayHandle.html">DisplayHandle</a></td>
         <td><span class="parametername">handle</span></td>
-        <td></td>
+        <td><p>Handle to a display.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -424,13 +476,31 @@
     <tbody>
       <tr>
         <td><span class="xref">string</span></td>
-        <td></td>
+        <td><p>Display name.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">handle</code> is null.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <a id="OpenTK_Platform_Native_Windows_DisplayComponent_GetRefreshRate_" data-uid="OpenTK.Platform.Native.Windows.DisplayComponent.GetRefreshRate*"></a>
   <h4 id="OpenTK_Platform_Native_Windows_DisplayComponent_GetRefreshRate_OpenTK_Core_Platform_DisplayHandle_System_Single__" data-uid="OpenTK.Platform.Native.Windows.DisplayComponent.GetRefreshRate(OpenTK.Core.Platform.DisplayHandle,System.Single@)">GetRefreshRate(DisplayHandle, out float)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Get the refresh rate if the specified display.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -449,18 +519,21 @@
       <tr>
         <td><a class="xref" href="OpenTK.Core.Platform.DisplayHandle.html">DisplayHandle</a></td>
         <td><span class="parametername">handle</span></td>
-        <td></td>
+        <td><p>Handle to a display.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">float</span></td>
         <td><span class="parametername">refreshRate</span></td>
-        <td></td>
+        <td><p>The refresh rate of the display.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <a id="OpenTK_Platform_Native_Windows_DisplayComponent_GetResolution_" data-uid="OpenTK.Platform.Native.Windows.DisplayComponent.GetResolution*"></a>
   <h4 id="OpenTK_Platform_Native_Windows_DisplayComponent_GetResolution_OpenTK_Core_Platform_DisplayHandle_System_Int32__System_Int32__" data-uid="OpenTK.Platform.Native.Windows.DisplayComponent.GetResolution(OpenTK.Core.Platform.DisplayHandle,System.Int32@,System.Int32@)">GetResolution(DisplayHandle, out int, out int)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Get the resolution of the specified display.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -479,23 +552,43 @@
       <tr>
         <td><a class="xref" href="OpenTK.Core.Platform.DisplayHandle.html">DisplayHandle</a></td>
         <td><span class="parametername">handle</span></td>
-        <td></td>
+        <td><p>Handle to a display.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">int</span></td>
         <td><span class="parametername">width</span></td>
-        <td></td>
+        <td><p>The horizontal resolution of the display.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">int</span></td>
         <td><span class="parametername">height</span></td>
-        <td></td>
+        <td><p>The vertical resolution of the display.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">handle</code> is null.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <a id="OpenTK_Platform_Native_Windows_DisplayComponent_GetSupportedVideoModeCount_" data-uid="OpenTK.Platform.Native.Windows.DisplayComponent.GetSupportedVideoModeCount*"></a>
   <h4 id="OpenTK_Platform_Native_Windows_DisplayComponent_GetSupportedVideoModeCount_OpenTK_Core_Platform_DisplayHandle_" data-uid="OpenTK.Platform.Native.Windows.DisplayComponent.GetSupportedVideoModeCount(OpenTK.Core.Platform.DisplayHandle)">GetSupportedVideoModeCount(DisplayHandle)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Get the number of video modes the display supports.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -514,7 +607,8 @@
       <tr>
         <td><a class="xref" href="OpenTK.Core.Platform.DisplayHandle.html">DisplayHandle</a></td>
         <td><span class="parametername">handle</span></td>
-        <td></td>
+        <td><p>Handle to a display.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -529,13 +623,31 @@
     <tbody>
       <tr>
         <td><span class="xref">int</span></td>
-        <td></td>
+        <td><p>Number of supported display modes.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">handle</code> is null.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <a id="OpenTK_Platform_Native_Windows_DisplayComponent_GetSupportedVideoModes_" data-uid="OpenTK.Platform.Native.Windows.DisplayComponent.GetSupportedVideoModes*"></a>
   <h4 id="OpenTK_Platform_Native_Windows_DisplayComponent_GetSupportedVideoModes_OpenTK_Core_Platform_DisplayHandle_System_Span_OpenTK_Core_Platform_VideoMode__" data-uid="OpenTK.Platform.Native.Windows.DisplayComponent.GetSupportedVideoModes(OpenTK.Core.Platform.DisplayHandle,System.Span{OpenTK.Core.Platform.VideoMode})">GetSupportedVideoModes(DisplayHandle, Span&lt;VideoMode&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Get all supported video modes.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -554,18 +666,37 @@
       <tr>
         <td><a class="xref" href="OpenTK.Core.Platform.DisplayHandle.html">DisplayHandle</a></td>
         <td><span class="parametername">handle</span></td>
-        <td></td>
+        <td><p>Handle to a display.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Span&lt;T&gt;</span>&lt;<a class="xref" href="OpenTK.Core.Platform.VideoMode.html">VideoMode</a>&gt;</td>
         <td><span class="parametername">modes</span></td>
-        <td></td>
+        <td><p>Span where supported display modes will be written to.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">handle</code> is null.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <a id="OpenTK_Platform_Native_Windows_DisplayComponent_GetVideoMode_" data-uid="OpenTK.Platform.Native.Windows.DisplayComponent.GetVideoMode*"></a>
   <h4 id="OpenTK_Platform_Native_Windows_DisplayComponent_GetVideoMode_OpenTK_Core_Platform_DisplayHandle_OpenTK_Core_Platform_VideoMode__" data-uid="OpenTK.Platform.Native.Windows.DisplayComponent.GetVideoMode(OpenTK.Core.Platform.DisplayHandle,OpenTK.Core.Platform.VideoMode@)">GetVideoMode(DisplayHandle, out VideoMode)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Get the active video mode of a display.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -584,18 +715,37 @@
       <tr>
         <td><a class="xref" href="OpenTK.Core.Platform.DisplayHandle.html">DisplayHandle</a></td>
         <td><span class="parametername">handle</span></td>
-        <td></td>
+        <td><p>Handle to a display.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="OpenTK.Core.Platform.VideoMode.html">VideoMode</a></td>
         <td><span class="parametername">mode</span></td>
-        <td></td>
+        <td><p>Active video mode of display.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">handle</code> is null.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <a id="OpenTK_Platform_Native_Windows_DisplayComponent_GetVirtualPosition_" data-uid="OpenTK.Platform.Native.Windows.DisplayComponent.GetVirtualPosition*"></a>
   <h4 id="OpenTK_Platform_Native_Windows_DisplayComponent_GetVirtualPosition_OpenTK_Core_Platform_DisplayHandle_System_Int32__System_Int32__" data-uid="OpenTK.Platform.Native.Windows.DisplayComponent.GetVirtualPosition(OpenTK.Core.Platform.DisplayHandle,System.Int32@,System.Int32@)">GetVirtualPosition(DisplayHandle, out int, out int)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Get the position of the display in the virtual desktop.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -614,17 +764,41 @@
       <tr>
         <td><a class="xref" href="OpenTK.Core.Platform.DisplayHandle.html">DisplayHandle</a></td>
         <td><span class="parametername">handle</span></td>
-        <td></td>
+        <td><p>Handle to a display.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">int</span></td>
         <td><span class="parametername">x</span></td>
-        <td></td>
+        <td><p>Virtual X coordinate of the display.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">int</span></td>
         <td><span class="parametername">y</span></td>
-        <td></td>
+        <td><p>Virtual Y coordinate of the display.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">handle</code> is null.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Core.Platform.PalNotImplementedException.html">PalNotImplementedException</a></td>
+        <td><p>Driver cannot get display virtual position. See <a class="xref" href="OpenTK.Core.Platform.IDisplayComponent.html#OpenTK_Core_Platform_IDisplayComponent_CanGetVirtualPosition">CanGetVirtualPosition</a>.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -660,7 +834,8 @@
   </table>
   <a id="OpenTK_Platform_Native_Windows_DisplayComponent_Initialize_" data-uid="OpenTK.Platform.Native.Windows.DisplayComponent.Initialize*"></a>
   <h4 id="OpenTK_Platform_Native_Windows_DisplayComponent_Initialize_OpenTK_Core_Platform_PalComponents_" data-uid="OpenTK.Platform.Native.Windows.DisplayComponent.Initialize(OpenTK.Core.Platform.PalComponents)">Initialize(PalComponents)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initialize the driver.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -679,13 +854,15 @@
       <tr>
         <td><a class="xref" href="OpenTK.Core.Platform.PalComponents.html">PalComponents</a></td>
         <td><span class="parametername">which</span></td>
-        <td></td>
+        <td><p>Bitfield of which components the driver need to be initialized.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <a id="OpenTK_Platform_Native_Windows_DisplayComponent_IsPrimary_" data-uid="OpenTK.Platform.Native.Windows.DisplayComponent.IsPrimary*"></a>
   <h4 id="OpenTK_Platform_Native_Windows_DisplayComponent_IsPrimary_OpenTK_Core_Platform_DisplayHandle_" data-uid="OpenTK.Platform.Native.Windows.DisplayComponent.IsPrimary(OpenTK.Core.Platform.DisplayHandle)">IsPrimary(DisplayHandle)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Checks if a display is the primary display or not.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -704,7 +881,8 @@
       <tr>
         <td><a class="xref" href="OpenTK.Core.Platform.DisplayHandle.html">DisplayHandle</a></td>
         <td><span class="parametername">handle</span></td>
-        <td></td>
+        <td><p>The display to check whether or not is the primary display.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -719,13 +897,15 @@
     <tbody>
       <tr>
         <td><span class="xref">bool</span></td>
-        <td></td>
+        <td><p>If this display is the primary display.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <a id="OpenTK_Platform_Native_Windows_DisplayComponent_SetVideoMode_" data-uid="OpenTK.Platform.Native.Windows.DisplayComponent.SetVideoMode*"></a>
   <h4 id="OpenTK_Platform_Native_Windows_DisplayComponent_SetVideoMode_OpenTK_Core_Platform_DisplayHandle_OpenTK_Core_Platform_VideoMode__" data-uid="OpenTK.Platform.Native.Windows.DisplayComponent.SetVideoMode(OpenTK.Core.Platform.DisplayHandle,OpenTK.Core.Platform.VideoMode@)">SetVideoMode(DisplayHandle, in VideoMode)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Set the active video mode of a display.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -744,12 +924,40 @@
       <tr>
         <td><a class="xref" href="OpenTK.Core.Platform.DisplayHandle.html">DisplayHandle</a></td>
         <td><span class="parametername">handle</span></td>
-        <td></td>
+        <td><p>Handle to a display.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="OpenTK.Core.Platform.VideoMode.html">VideoMode</a></td>
         <td><span class="parametername">mode</span></td>
-        <td></td>
+        <td><p>Target video mode.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">handle</code> is null.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.ArgumentOutOfRangeException</span></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">mode</code> is unsupported by display.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Core.Platform.PalNotImplementedException.html">PalNotImplementedException</a></td>
+        <td><p>The driver does not support this action. See <a class="xref" href="OpenTK.Core.Platform.IDisplayComponent.html#OpenTK_Core_Platform_IDisplayComponent_CanSetVideoMode">CanSetVideoMode</a>.</p>
+</td>
       </tr>
     </tbody>
   </table>
