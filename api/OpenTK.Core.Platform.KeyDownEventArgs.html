@@ -133,12 +133,12 @@
   <h3 id="constructors">Constructors
 </h3>
   <a id="OpenTK_Core_Platform_KeyDownEventArgs__ctor_" data-uid="OpenTK.Core.Platform.KeyDownEventArgs.#ctor*"></a>
-  <h4 id="OpenTK_Core_Platform_KeyDownEventArgs__ctor_OpenTK_Core_Platform_WindowHandle_System_UInt64_System_Boolean_System_Boolean_" data-uid="OpenTK.Core.Platform.KeyDownEventArgs.#ctor(OpenTK.Core.Platform.WindowHandle,System.UInt64,System.Boolean,System.Boolean)">KeyDownEventArgs(WindowHandle, ulong, bool, bool)</h4>
+  <h4 id="OpenTK_Core_Platform_KeyDownEventArgs__ctor_OpenTK_Core_Platform_WindowHandle_OpenTK_Core_Platform_Key_OpenTK_Core_Platform_Scancode_System_Boolean_" data-uid="OpenTK.Core.Platform.KeyDownEventArgs.#ctor(OpenTK.Core.Platform.WindowHandle,OpenTK.Core.Platform.Key,OpenTK.Core.Platform.Scancode,System.Boolean)">KeyDownEventArgs(WindowHandle, Key, Scancode, bool)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public KeyDownEventArgs(WindowHandle window, ulong virtualKey, bool wasDown, bool extended)</code></pre>
+    <pre><code class="lang-csharp hljs">public KeyDownEventArgs(WindowHandle window, Key key, Scancode scancode, bool isRepeat)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -156,34 +156,35 @@
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">ulong</span></td>
-        <td><span class="parametername">virtualKey</span></td>
+        <td><a class="xref" href="OpenTK.Core.Platform.Key.html">Key</a></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Core.Platform.Scancode.html">Scancode</a></td>
+        <td><span class="parametername">scancode</span></td>
         <td></td>
       </tr>
       <tr>
         <td><span class="xref">bool</span></td>
-        <td><span class="parametername">wasDown</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">bool</span></td>
-        <td><span class="parametername">extended</span></td>
+        <td><span class="parametername">isRepeat</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <h5 id="OpenTK_Core_Platform_KeyDownEventArgs__ctor_OpenTK_Core_Platform_WindowHandle_System_UInt64_System_Boolean_System_Boolean__remarks">Remarks</h5>
+  <h5 id="OpenTK_Core_Platform_KeyDownEventArgs__ctor_OpenTK_Core_Platform_WindowHandle_OpenTK_Core_Platform_Key_OpenTK_Core_Platform_Scancode_System_Boolean__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>Do not use this event to handle typing, use <a class="xref" href="OpenTK.Core.Platform.TextInputEventArgs.html">TextInputEventArgs</a> instead.</p>
 </div>
   <h3 id="properties">Properties
 </h3>
-  <a id="OpenTK_Core_Platform_KeyDownEventArgs_Extended_" data-uid="OpenTK.Core.Platform.KeyDownEventArgs.Extended*"></a>
-  <h4 id="OpenTK_Core_Platform_KeyDownEventArgs_Extended" data-uid="OpenTK.Core.Platform.KeyDownEventArgs.Extended">Extended</h4>
-  <div class="markdown level1 summary"></div>
+  <a id="OpenTK_Core_Platform_KeyDownEventArgs_IsRepeat_" data-uid="OpenTK.Core.Platform.KeyDownEventArgs.IsRepeat*"></a>
+  <h4 id="OpenTK_Core_Platform_KeyDownEventArgs_IsRepeat" data-uid="OpenTK.Core.Platform.KeyDownEventArgs.IsRepeat">IsRepeat</h4>
+  <div class="markdown level1 summary"><p>Whether this event is caused by holding down this key or not.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool Extended { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public bool IsRepeat { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -200,16 +201,18 @@
       </tr>
     </tbody>
   </table>
-  <h5 id="OpenTK_Core_Platform_KeyDownEventArgs_Extended_remarks">Remarks</h5>
+  <h5 id="OpenTK_Core_Platform_KeyDownEventArgs_IsRepeat_remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>Do not use this event to handle typing, use <a class="xref" href="OpenTK.Core.Platform.TextInputEventArgs.html">TextInputEventArgs</a> instead.</p>
 </div>
-  <a id="OpenTK_Core_Platform_KeyDownEventArgs_VirtualKey_" data-uid="OpenTK.Core.Platform.KeyDownEventArgs.VirtualKey*"></a>
-  <h4 id="OpenTK_Core_Platform_KeyDownEventArgs_VirtualKey" data-uid="OpenTK.Core.Platform.KeyDownEventArgs.VirtualKey">VirtualKey</h4>
-  <div class="markdown level1 summary"></div>
+  <a id="OpenTK_Core_Platform_KeyDownEventArgs_Key_" data-uid="OpenTK.Core.Platform.KeyDownEventArgs.Key*"></a>
+  <h4 id="OpenTK_Core_Platform_KeyDownEventArgs_Key" data-uid="OpenTK.Core.Platform.KeyDownEventArgs.Key">Key</h4>
+  <div class="markdown level1 summary"><p>The virtual key that was pressed.
+FIXME: Document difference between Key and Scancode.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ulong VirtualKey { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public Key Key { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -221,21 +224,23 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">ulong</span></td>
+        <td><a class="xref" href="OpenTK.Core.Platform.Key.html">Key</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <h5 id="OpenTK_Core_Platform_KeyDownEventArgs_VirtualKey_remarks">Remarks</h5>
+  <h5 id="OpenTK_Core_Platform_KeyDownEventArgs_Key_remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>Do not use this event to handle typing, use <a class="xref" href="OpenTK.Core.Platform.TextInputEventArgs.html">TextInputEventArgs</a> instead.</p>
 </div>
-  <a id="OpenTK_Core_Platform_KeyDownEventArgs_WasDown_" data-uid="OpenTK.Core.Platform.KeyDownEventArgs.WasDown*"></a>
-  <h4 id="OpenTK_Core_Platform_KeyDownEventArgs_WasDown" data-uid="OpenTK.Core.Platform.KeyDownEventArgs.WasDown">WasDown</h4>
-  <div class="markdown level1 summary"></div>
+  <a id="OpenTK_Core_Platform_KeyDownEventArgs_Scancode_" data-uid="OpenTK.Core.Platform.KeyDownEventArgs.Scancode*"></a>
+  <h4 id="OpenTK_Core_Platform_KeyDownEventArgs_Scancode" data-uid="OpenTK.Core.Platform.KeyDownEventArgs.Scancode">Scancode</h4>
+  <div class="markdown level1 summary"><p>The scancode of the key pressed.
+FIXME: Document difference between Key and Scancode.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool WasDown { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public Scancode Scancode { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -247,12 +252,12 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="OpenTK.Core.Platform.Scancode.html">Scancode</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <h5 id="OpenTK_Core_Platform_KeyDownEventArgs_WasDown_remarks">Remarks</h5>
+  <h5 id="OpenTK_Core_Platform_KeyDownEventArgs_Scancode_remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>Do not use this event to handle typing, use <a class="xref" href="OpenTK.Core.Platform.TextInputEventArgs.html">TextInputEventArgs</a> instead.</p>
 </div>
 </article>
