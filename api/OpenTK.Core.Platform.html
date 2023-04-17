@@ -90,6 +90,9 @@
       <h4><a class="xref" href="OpenTK.Core.Platform.Bitmap.html">Bitmap</a></h4>
       <section><p>Represents a simple bitmap in a RGBA8 format.</p>
 </section>
+      <h4><a class="xref" href="OpenTK.Core.Platform.ClipboardUpdateEventArgs.html">ClipboardUpdateEventArgs</a></h4>
+      <section><p>This event is triggered when the contents of the clipboard is changed.</p>
+</section>
       <h4><a class="xref" href="OpenTK.Core.Platform.CloseEventArgs.html">CloseEventArgs</a></h4>
       <section><p>This event is triggered when the user presses the exit button of a window.</p>
 </section>
@@ -122,6 +125,17 @@
 </section>
       <h4><a class="xref" href="OpenTK.Core.Platform.IconHandle.html">IconHandle</a></h4>
       <section><p>Handle to an Icon object.</p>
+</section>
+      <h4><a class="xref" href="OpenTK.Core.Platform.InputLanguageChangedEventArgs.html">InputLanguageChangedEventArgs</a></h4>
+      <section><p>This event is triggered when the input language is changed.
+This can change the keyboard layout.
+When this event occurs the values from
+<a class="xref" href="OpenTK.Core.Platform.IKeyboardComponent.html#OpenTK_Core_Platform_IKeyboardComponent_GetKeyFromScancode_OpenTK_Core_Platform_Scancode_">GetKeyFromScancode(Scancode)</a> and
+<a class="xref" href="OpenTK.Core.Platform.IKeyboardComponent.html#OpenTK_Core_Platform_IKeyboardComponent_GetScancodeFromKey_OpenTK_Core_Platform_Key_">GetScancodeFromKey(Key)</a>
+are updated to reflect the new layout keyboard layout.</p>
+</section>
+      <h4><a class="xref" href="OpenTK.Core.Platform.JoystickHandle.html">JoystickHandle</a></h4>
+      <section><p>Handle to a joystick.</p>
 </section>
       <h4><a class="xref" href="OpenTK.Core.Platform.KeyDownEventArgs.html">KeyDownEventArgs</a></h4>
       <section><p>This event is triggered when a keyboard key is pressed.</p>
@@ -214,6 +228,12 @@ different DPI scaling settings or if the user changes DPI settings.</p>
       <h4><a class="xref" href="OpenTK.Core.Platform.DisplayResolution.html">DisplayResolution</a></h4>
       <section><p>Represents a display resolution.</p>
 </section>
+      <h4><a class="xref" href="OpenTK.Core.Platform.GamepadBatteryInfo.html">GamepadBatteryInfo</a></h4>
+      <section><p>Contains information about a gamepads battery.</p>
+</section>
+      <h4><a class="xref" href="OpenTK.Core.Platform.SystemMemoryInfo.html">SystemMemoryInfo</a></h4>
+      <section><p>Contains information about the current state of physical memory.</p>
+</section>
       <h4><a class="xref" href="OpenTK.Core.Platform.ThemeInfo.html">ThemeInfo</a></h4>
       <section><p>Represents theme info.</p>
 </section>
@@ -233,6 +253,9 @@ different DPI scaling settings or if the user changes DPI settings.</p>
 </section>
       <h4><a class="xref" href="OpenTK.Core.Platform.IIconComponent.html">IIconComponent</a></h4>
       <section><p>Interface for PAL drivers which provide the icon component.</p>
+</section>
+      <h4><a class="xref" href="OpenTK.Core.Platform.IJoystickComponent.html">IJoystickComponent</a></h4>
+      <section><p>Interface for interacting with joysticks.</p>
 </section>
       <h4><a class="xref" href="OpenTK.Core.Platform.IKeyboardComponent.html">IKeyboardComponent</a></h4>
       <section><p>PAL driver for global keyboard information.</p>
@@ -275,11 +298,20 @@ different DPI scaling settings or if the user changes DPI settings.</p>
       <h4><a class="xref" href="OpenTK.Core.Platform.CursorCaptureMode.html">CursorCaptureMode</a></h4>
       <section><p>Cursor capture modes.</p>
 </section>
+      <h4><a class="xref" href="OpenTK.Core.Platform.GamepadBatteryType.html">GamepadBatteryType</a></h4>
+      <section><p>Represents a type of battery in a gamepad.</p>
+</section>
       <h4><a class="xref" href="OpenTK.Core.Platform.GraphicsApi.html">GraphicsApi</a></h4>
       <section><p>Graphics API types.</p>
 </section>
       <h4><a class="xref" href="OpenTK.Core.Platform.HitType.html">HitType</a></h4>
       <section><p>Type of window hit.</p>
+</section>
+      <h4><a class="xref" href="OpenTK.Core.Platform.JoystickAxis.html">JoystickAxis</a></h4>
+      <section><p>Represents a joysick axis.</p>
+</section>
+      <h4><a class="xref" href="OpenTK.Core.Platform.JoystickButton.html">JoystickButton</a></h4>
+      <section><p>Represents a button on a joystick.</p>
 </section>
       <h4><a class="xref" href="OpenTK.Core.Platform.Key.html">Key</a></h4>
       <section></section>
@@ -326,6 +358,8 @@ It is recommended to keep this code efficient as it will be called often.</p>
       <h4><a class="xref" href="OpenTK.Core.Platform.WindowEventHandler.html">WindowEventHandler</a></h4>
       <section><p>Event handler delegate for processing window events.</p>
 </section>
+
+
 </article>
           </div>
 
@@ -354,7 +388,7 @@ It is recommended to keep this code efficient as it will be called often.</p>
       </footer>
     </div>
 
-    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
     <script type="text/javascript" src="../styles/docfx.js"></script>
     <script type="text/javascript" src="../styles/main.js"></script>
   </body>

@@ -79,6 +79,7 @@
             <article class="content wrap" id="_content" data-uid="OpenTK.Core.Platform.IMouseComponent">
 
 
+
   <h1 id="OpenTK_Core_Platform_IMouseComponent" data-uid="OpenTK.Core.Platform.IMouseComponent" class="text-break">Interface IMouseComponent
 </h1>
   <div class="markdown level0 summary"><p>Base interface for drivers which implement the mouse component.</p>
@@ -117,7 +118,7 @@
     <pre><code class="lang-csharp hljs">bool CanSetMousePosition { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -126,7 +127,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">bool</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -134,16 +135,16 @@
   <h3 id="methods">Methods
 </h3>
   <a id="OpenTK_Core_Platform_IMouseComponent_GetPosition_" data-uid="OpenTK.Core.Platform.IMouseComponent.GetPosition*"></a>
-  <h4 id="OpenTK_Core_Platform_IMouseComponent_GetPosition_OpenTK_Core_Platform_MouseHandle_System_Int32__System_Int32__" data-uid="OpenTK.Core.Platform.IMouseComponent.GetPosition(OpenTK.Core.Platform.MouseHandle,System.Int32@,System.Int32@)">GetPosition(MouseHandle, out int, out int)</h4>
+  <h4 id="OpenTK_Core_Platform_IMouseComponent_GetPosition_System_Int32__System_Int32__" data-uid="OpenTK.Core.Platform.IMouseComponent.GetPosition(System.Int32@,System.Int32@)">GetPosition(out int, out int)</h4>
   <div class="markdown level1 summary"><p>Get the mouse cursor position.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void GetPosition(MouseHandle handle, out int x, out int y)</code></pre>
+    <pre><code class="lang-csharp hljs">void GetPosition(out int x, out int y)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -153,19 +154,13 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Core.Platform.MouseHandle.html">MouseHandle</a></td>
-        <td><span class="parametername">handle</span></td>
-        <td><p>Handle to a mouse or null for default.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">int</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td><span class="parametername">x</span></td>
         <td><p>X coordinate of the mouse in desktop space.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">int</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td><span class="parametername">y</span></td>
         <td><p>Y coordinate of the mouse in desktop space.</p>
 </td>
@@ -173,16 +168,16 @@
     </tbody>
   </table>
   <a id="OpenTK_Core_Platform_IMouseComponent_SetPosition_" data-uid="OpenTK.Core.Platform.IMouseComponent.SetPosition*"></a>
-  <h4 id="OpenTK_Core_Platform_IMouseComponent_SetPosition_OpenTK_Core_Platform_MouseHandle_System_Int32_System_Int32_" data-uid="OpenTK.Core.Platform.IMouseComponent.SetPosition(OpenTK.Core.Platform.MouseHandle,System.Int32,System.Int32)">SetPosition(MouseHandle, int, int)</h4>
+  <h4 id="OpenTK_Core_Platform_IMouseComponent_SetPosition_System_Int32_System_Int32_" data-uid="OpenTK.Core.Platform.IMouseComponent.SetPosition(System.Int32,System.Int32)">SetPosition(int, int)</h4>
   <div class="markdown level1 summary"><p>Set the mouse cursor position.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void SetPosition(MouseHandle handle, int x, int y)</code></pre>
+    <pre><code class="lang-csharp hljs">void SetPosition(int x, int y)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
+  <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
@@ -192,25 +187,20 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Core.Platform.MouseHandle.html">MouseHandle</a></td>
-        <td><span class="parametername">handle</span></td>
-        <td><p>Handle to a mouse or null for default.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">int</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td><span class="parametername">x</span></td>
         <td><p>X coordinate of the mouse in desktop space.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">int</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td><span class="parametername">y</span></td>
         <td><p>Y coordinate of the mouse in desktop space.</p>
 </td>
       </tr>
     </tbody>
   </table>
+
 </article>
           </div>
 
@@ -239,7 +229,7 @@
       </footer>
     </div>
 
-    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
     <script type="text/javascript" src="../styles/docfx.js"></script>
     <script type="text/javascript" src="../styles/main.js"></script>
   </body>

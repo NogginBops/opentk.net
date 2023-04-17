@@ -97,17 +97,17 @@
 <div class="tabGroup" id="tabgroup_bHGHmlrG6S">
 <ul role="tablist">
 <li role="presentation">
-<a href="#tabpanel_bHGHmlrG6S_onload-opentk3" role="tab" aria-controls="tabpanel_bHGHmlrG6S_onload-opentk3" data-tab="onload-opentk3" tabindex="0" aria-selected="true">OpenTK 3</a>
+<a href="#tabpanel_bHGHmlrG6S_onload-opentk4" role="tab" aria-controls="tabpanel_bHGHmlrG6S_onload-opentk4" data-tab="onload-opentk4" tabindex="0" aria-selected="true">OpenTK 4</a>
 </li>
 <li role="presentation">
-<a href="#tabpanel_bHGHmlrG6S_onload-opentk4" role="tab" aria-controls="tabpanel_bHGHmlrG6S_onload-opentk4" data-tab="onload-opentk4" tabindex="-1">OpenTK 4</a>
+<a href="#tabpanel_bHGHmlrG6S_onload-opentk3" role="tab" aria-controls="tabpanel_bHGHmlrG6S_onload-opentk3" data-tab="onload-opentk3" tabindex="-1">OpenTK 3</a>
 </li>
 </ul>
-<section id="tabpanel_bHGHmlrG6S_onload-opentk3" role="tabpanel" data-tab="onload-opentk3">
+<section id="tabpanel_bHGHmlrG6S_onload-opentk4" role="tabpanel" data-tab="onload-opentk4">
 
-<pre><code class="lang-cs">protected override void OnLoad(EventArgs e)
+<pre><code class="lang-cs">protected override void OnLoad()
 {
-    base.OnLoad(e);
+    base.OnLoad();
 
     GL.ClearColor(0.2f, 0.3f, 0.3f, 1.0f);
 
@@ -115,11 +115,11 @@
 }
 </code></pre>
 </section>
-<section id="tabpanel_bHGHmlrG6S_onload-opentk4" role="tabpanel" data-tab="onload-opentk4" aria-hidden="true" hidden="hidden">
+<section id="tabpanel_bHGHmlrG6S_onload-opentk3" role="tabpanel" data-tab="onload-opentk3" aria-hidden="true" hidden="hidden">
 
-<pre><code class="lang-cs">protected override void OnLoad()
+<pre><code class="lang-cs">protected override void OnLoad(EventArgs e)
 {
-    base.OnLoad();
+    base.OnLoad(e);
 
     GL.ClearColor(0.2f, 0.3f, 0.3f, 1.0f);
 
@@ -135,27 +135,13 @@
 <div class="tabGroup" id="tabgroup_bHGHmlrG6S-1">
 <ul role="tablist">
 <li role="presentation">
-<a href="#tabpanel_bHGHmlrG6S-1_onrender-opentk3" role="tab" aria-controls="tabpanel_bHGHmlrG6S-1_onrender-opentk3" data-tab="onrender-opentk3" tabindex="0" aria-selected="true">OpenTK 3</a>
+<a href="#tabpanel_bHGHmlrG6S-1_onrender-opentk4" role="tab" aria-controls="tabpanel_bHGHmlrG6S-1_onrender-opentk4" data-tab="onrender-opentk4" tabindex="0" aria-selected="true">OpenTK 4</a>
 </li>
 <li role="presentation">
-<a href="#tabpanel_bHGHmlrG6S-1_onrender-opentk4" role="tab" aria-controls="tabpanel_bHGHmlrG6S-1_onrender-opentk4" data-tab="onrender-opentk4" tabindex="-1">OpenTK 4</a>
+<a href="#tabpanel_bHGHmlrG6S-1_onrender-opentk3" role="tab" aria-controls="tabpanel_bHGHmlrG6S-1_onrender-opentk3" data-tab="onrender-opentk3" tabindex="-1">OpenTK 3</a>
 </li>
 </ul>
-<section id="tabpanel_bHGHmlrG6S-1_onrender-opentk3" role="tabpanel" data-tab="onrender-opentk3">
-
-<pre><code class="lang-cs">protected override void OnRenderFrame(FrameEventArgs e)
-{
-    base.OnRenderFrame(e);
-
-    GL.Clear(ClearBufferMask.ColorBufferBit);
-
-    //Code goes here.
-
-    Context.SwapBuffers();
-}
-</code></pre>
-</section>
-<section id="tabpanel_bHGHmlrG6S-1_onrender-opentk4" role="tabpanel" data-tab="onrender-opentk4" aria-hidden="true" hidden="hidden">
+<section id="tabpanel_bHGHmlrG6S-1_onrender-opentk4" role="tabpanel" data-tab="onrender-opentk4">
 
 <pre><code class="lang-cs">protected override void OnRenderFrame(FrameEventArgs e)
 {
@@ -169,6 +155,20 @@
 }
 </code></pre>
 </section>
+<section id="tabpanel_bHGHmlrG6S-1_onrender-opentk3" role="tabpanel" data-tab="onrender-opentk3" aria-hidden="true" hidden="hidden">
+
+<pre><code class="lang-cs">protected override void OnRenderFrame(FrameEventArgs e)
+{
+    base.OnRenderFrame(e);
+
+    GL.Clear(ClearBufferMask.ColorBufferBit);
+
+    //Code goes here.
+
+    Context.SwapBuffers();
+}
+</code></pre>
+</section>
 </div>
 
 <p>We have two calls here. Firstly, <code>GL.Clear</code> clears the screen, using the color set in OnLoad. This should always be the first function called when rendering.</p>
@@ -177,29 +177,29 @@
 <div class="tabGroup" id="tabgroup_bHGHmlrG6S-2">
 <ul role="tablist">
 <li role="presentation">
-<a href="#tabpanel_bHGHmlrG6S-2_resize-opentk3" role="tab" aria-controls="tabpanel_bHGHmlrG6S-2_resize-opentk3" data-tab="resize-opentk3" tabindex="0" aria-selected="true">OpenTK 3</a>
+<a href="#tabpanel_bHGHmlrG6S-2_resize-opentk4" role="tab" aria-controls="tabpanel_bHGHmlrG6S-2_resize-opentk4" data-tab="resize-opentk4" tabindex="0" aria-selected="true">OpenTK 4</a>
 </li>
 <li role="presentation">
-<a href="#tabpanel_bHGHmlrG6S-2_resize-opentk4" role="tab" aria-controls="tabpanel_bHGHmlrG6S-2_resize-opentk4" data-tab="resize-opentk4" tabindex="-1">OpenTK 4</a>
+<a href="#tabpanel_bHGHmlrG6S-2_resize-opentk3" role="tab" aria-controls="tabpanel_bHGHmlrG6S-2_resize-opentk3" data-tab="resize-opentk3" tabindex="-1">OpenTK 3</a>
 </li>
 </ul>
-<section id="tabpanel_bHGHmlrG6S-2_resize-opentk3" role="tabpanel" data-tab="resize-opentk3">
-
-<pre><code class="lang-cs">protected override void OnResize(EventArgs e)
-{
-    base.OnResize(e);
-
-    GL.Viewport(0, 0, Width, Height);
-}
-</code></pre>
-</section>
-<section id="tabpanel_bHGHmlrG6S-2_resize-opentk4" role="tabpanel" data-tab="resize-opentk4" aria-hidden="true" hidden="hidden">
+<section id="tabpanel_bHGHmlrG6S-2_resize-opentk4" role="tabpanel" data-tab="resize-opentk4">
 
 <pre><code class="lang-cs">protected override void OnResize(ResizeEventArgs e)
 {
     base.OnResize(e);
 
     GL.Viewport(0, 0, e.Width, e.Height);
+}
+</code></pre>
+</section>
+<section id="tabpanel_bHGHmlrG6S-2_resize-opentk3" role="tabpanel" data-tab="resize-opentk3" aria-hidden="true" hidden="hidden">
+
+<pre><code class="lang-cs">protected override void OnResize(EventArgs e)
+{
+    base.OnResize(e);
+
+    GL.Viewport(0, 0, Width, Height);
 }
 </code></pre>
 </section>
@@ -223,7 +223,7 @@
 <p>Your NDC coordinates will then be transformed to screen-space coordinates via the viewport transform using the data you provided with <code>GL.Viewport</code>. The resulting screen-space coordinates are then transformed to fragments as inputs to your fragment shader.</p>
 <h2 id="buffers">Buffers</h2>
 <p>With the vertex data defined we'd like to send it as input to the first process of the graphics pipeline: the vertex shader. This is done by creating memory on the GPU where we store the vertex data, configure how OpenGL should interpret the memory and specify how to send the data to the graphics card. The vertex shader then processes as much vertices as we tell it to from its memory.</p>
-<p>We manage this memory via so called vertex buffer objects (VBO) that can store a large number of vertices in the GPU's memory. The advantage of using those buffer objects is that we can send large batches of data all at once to the graphics card without having to send data a vertex a time. Sending data to the graphics card from the CPU is relatively slow, so wherever we can, we try to send as much data as possible at once. Once the data is in the graphics card's memory the vertex shader has almost instant access to the vertices making it extremely fast.</p>
+<p>We manage this memory via so called vertex buffer objects (VBO) that can store a large number of vertices in the GPU's memory. The advantage of using those buffer objects is that we can send large batches of data all at once to the graphics card without having to send data one vertex at a time. Sending data to the graphics card from the CPU is relatively slow, so wherever we can, we try to send as much data as possible at once. Once the data is in the graphics card's memory the vertex shader has almost instant access to the vertices making it extremely fast.</p>
 <p>A vertex buffer object is our first occurrence of an OpenGL object as we've discussed in the OpenGL tutorial. Just like any object in OpenGL this buffer has a unique ID corresponding to that buffer, so we can generate one with a buffer ID using the <code>GL.GenBuffers</code> function.</p>
 <p>Add an int to your Game class to store the handle:</p>
 <pre><code class="lang-cs">int VertexBufferObject;
@@ -373,7 +373,10 @@ protected virtual void Dispose(bool disposing)
 
 ~Shader()
 {
-    GL.DeleteProgram(Handle);
+    if (disposedValue == false)
+    {
+        Console.WriteLine(&quot;GPU Resource leak! Did you forget to call Dispose()?&quot;);
+    }
 }
 
 
@@ -388,6 +391,12 @@ public void Dispose()
 <p>Try running; if nothing prints to console, your shaders have compiled correctly!</p>
 <h2 id="linking-vertex-attributes">Linking Vertex Attributes</h2>
 <p>The vertex shader allows us to specify any input we want in the form of vertex attributes. While this allows for great flexibility, it does mean we have to manually specify what part of our input data goes to which vertex attribute in the vertex shader. This means we have to specify how OpenGL should interpret the vertex data before rendering.</p>
+<p>This format information is stored in what is called a Vertex Array Object (VAO). The VAO contains information about the vertex format and what buffers to read from. We will discuss this more shortly, but to get started we create a VAO and bind it like follows:</p>
+<pre><code class="lang-cs">int VertexArrayObject = GL.GenVertexArray();
+GL.BindVertexArray(VertexArrayObject);
+</code></pre>
+<p>With the VAO created and bound, we can start specifying the vertex format and data buffers.
+To do this we first need to take a look at the format of our vertex buffer.</p>
 <p>Our vertex buffer data is formatted as follows:
 <img src="img/2-vertex_attribute_pointer.png" alt="Vertex attribute pointer setup of OpenGL VBO"></p>
 <ul>
@@ -464,7 +473,7 @@ GL.DrawArrays(PrimitiveType.Triangles, 0, 3);
 <p>The <code>GL.DrawArrays</code> function takes as its first argument the OpenGL primitive type we would like to draw. Since I said at the start we wanted to draw a triangle, and I don't like lying to you, we pass in <code>PrimitiveType.Triangles</code>. The second argument specifies the starting index of the vertex array we'd like to draw; since we want to draw all of our vertices, we just leave this at 0. The last argument specifies how many vertices we want to draw, which is 3 (we only render 1 triangle from our data, which is exactly 3 vertices long).</p>
 <p>Now try to compile the code and work your way backwards if any errors popped up. As soon as your application compiles, you should see the following result:</p>
 <p><img src="img/2-hellotriangle.png" alt="An image of a basic triangle rendered in modern OpenGL"></p>
-<p>The source code for the complete program can be found <a href="https://github.com/opentk/LearnOpenTK/tree/master/Chapter%201/2%20-%20Hello%20Triangle">here</a>.</p>
+<p>The source code for the complete program can be found <a href="https://github.com/opentk/LearnOpenTK/tree/master/Chapter1/2-HelloTriangle">here</a>.</p>
 <p>If your output does not look the same you probably did something wrong along the way so check the complete source code, see if you missed anything or ask in our official Discord server.</p>
 <h2 id="addendum-dynamically-retrieving-shader-layout">Addendum: Dynamically retrieving shader layout</h2>
 <p>For this example, when we call <code>GL.VertexAttribPointer</code>, we use a hardcoded layout of 0 for the position of our variable. This only works because our input variable in shader.vert explicitly sets the layout to 0. But what if you didn't want to do it that way? You can retrieve the position at runtime, if you so wish.</p>
@@ -504,7 +513,7 @@ GL.DrawArrays(PrimitiveType.Triangles, 0, 3);
       </footer>
     </div>
 
-    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.vendor.min.js"></script>
     <script type="text/javascript" src="../../styles/docfx.js"></script>
     <script type="text/javascript" src="../../styles/main.js"></script>
   </body>
