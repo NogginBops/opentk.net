@@ -397,7 +397,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IReadOnlyList&lt;WindowStyle&gt; SupportedStyles { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public IReadOnlyList&lt;WindowBorderStyle&gt; SupportedStyles { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -409,7 +409,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="OpenTK.Core.Platform.WindowStyle.html">WindowStyle</a>&gt;</td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="OpenTK.Core.Platform.WindowBorderStyle.html">WindowBorderStyle</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -615,7 +615,7 @@ On Ubuntu, this means a popup indicating that the application is ready.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public WindowStyle GetBorderStyle(WindowHandle handle)</code></pre>
+    <pre><code class="lang-csharp hljs">public WindowBorderStyle GetBorderStyle(WindowHandle handle)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -645,7 +645,7 @@ On Ubuntu, this means a popup indicating that the application is ready.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Core.Platform.WindowStyle.html">WindowStyle</a></td>
+        <td><a class="xref" href="OpenTK.Core.Platform.WindowBorderStyle.html">WindowBorderStyle</a></td>
         <td><p>The border style of the window.</p>
 </td>
       </tr>
@@ -880,6 +880,55 @@ On Ubuntu, this means a popup indicating that the application is ready.</p>
       <tr>
         <td><a class="xref" href="OpenTK.Core.Platform.PalNotImplementedException.html">PalNotImplementedException</a></td>
         <td><p>Driver does not support finding the window display. <a class="xref" href="OpenTK.Core.Platform.IWindowComponent.html#OpenTK_Core_Platform_IWindowComponent_CanGetDisplay">CanGetDisplay</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Platform_Native_X11_X11WindowComponent_GetFullscreenDisplay_" data-uid="OpenTK.Platform.Native.X11.X11WindowComponent.GetFullscreenDisplay*"></a>
+  <h4 id="OpenTK_Platform_Native_X11_X11WindowComponent_GetFullscreenDisplay_OpenTK_Core_Platform_WindowHandle_OpenTK_Core_Platform_DisplayHandle__" data-uid="OpenTK.Platform.Native.X11.X11WindowComponent.GetFullscreenDisplay(OpenTK.Core.Platform.WindowHandle,OpenTK.Core.Platform.DisplayHandle@)">GetFullscreenDisplay(WindowHandle, out DisplayHandle?)</h4>
+  <div class="markdown level1 summary"><p>Gets the display that the specified window is fullscreen on, if the window is fullscreen.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetFullscreenDisplay(WindowHandle window, out DisplayHandle? display)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Core.Platform.WindowHandle.html">WindowHandle</a></td>
+        <td><span class="parametername">window</span></td>
+        <td><p>The window handle.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Core.Platform.DisplayHandle.html">DisplayHandle</a></td>
+        <td><span class="parametername">display</span></td>
+        <td><p>The display where the window is fullscreen or null if the window is not fullscreen.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p><code>true</code> if the window was fullscreen, <code>false</code> otherwise.</p>
 </td>
       </tr>
     </tbody>
@@ -1506,13 +1555,13 @@ On Ubuntu, this means a popup indicating that the application is ready.</p>
     </tbody>
   </table>
   <a id="OpenTK_Platform_Native_X11_X11WindowComponent_SetBorderStyle_" data-uid="OpenTK.Platform.Native.X11.X11WindowComponent.SetBorderStyle*"></a>
-  <h4 id="OpenTK_Platform_Native_X11_X11WindowComponent_SetBorderStyle_OpenTK_Core_Platform_WindowHandle_OpenTK_Core_Platform_WindowStyle_" data-uid="OpenTK.Platform.Native.X11.X11WindowComponent.SetBorderStyle(OpenTK.Core.Platform.WindowHandle,OpenTK.Core.Platform.WindowStyle)">SetBorderStyle(WindowHandle, WindowStyle)</h4>
+  <h4 id="OpenTK_Platform_Native_X11_X11WindowComponent_SetBorderStyle_OpenTK_Core_Platform_WindowHandle_OpenTK_Core_Platform_WindowBorderStyle_" data-uid="OpenTK.Platform.Native.X11.X11WindowComponent.SetBorderStyle(OpenTK.Core.Platform.WindowHandle,OpenTK.Core.Platform.WindowBorderStyle)">SetBorderStyle(WindowHandle, WindowBorderStyle)</h4>
   <div class="markdown level1 summary"><p>Set the border style of a window.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void SetBorderStyle(WindowHandle handle, WindowStyle style)</code></pre>
+    <pre><code class="lang-csharp hljs">public void SetBorderStyle(WindowHandle handle, WindowBorderStyle style)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -1531,7 +1580,7 @@ On Ubuntu, this means a popup indicating that the application is ready.</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="OpenTK.Core.Platform.WindowStyle.html">WindowStyle</a></td>
+        <td><a class="xref" href="OpenTK.Core.Platform.WindowBorderStyle.html">WindowBorderStyle</a></td>
         <td><span class="parametername">style</span></td>
         <td><p>The new border style of the window.</p>
 </td>
@@ -1762,6 +1811,87 @@ A cursor can be confined to the bounds of the window, or locked to the center of
       </tr>
     </tbody>
   </table>
+  <a id="OpenTK_Platform_Native_X11_X11WindowComponent_SetFullscreenDisplay_" data-uid="OpenTK.Platform.Native.X11.X11WindowComponent.SetFullscreenDisplay*"></a>
+  <h4 id="OpenTK_Platform_Native_X11_X11WindowComponent_SetFullscreenDisplay_OpenTK_Core_Platform_WindowHandle_OpenTK_Core_Platform_DisplayHandle_OpenTK_Core_Platform_VideoMode_" data-uid="OpenTK.Platform.Native.X11.X11WindowComponent.SetFullscreenDisplay(OpenTK.Core.Platform.WindowHandle,OpenTK.Core.Platform.DisplayHandle,OpenTK.Core.Platform.VideoMode)">SetFullscreenDisplay(WindowHandle, DisplayHandle, VideoMode)</h4>
+  <div class="markdown level1 summary"><p>Put a window into 'exclusive fullscreen' on a specified display and change the video mode to the specified video mode.
+Only video modes accuired using <a class="xref" href="OpenTK.Core.Platform.IDisplayComponent.html#OpenTK_Core_Platform_IDisplayComponent_GetSupportedVideoModes_OpenTK_Core_Platform_DisplayHandle_System_Span_OpenTK_Core_Platform_VideoMode__">GetSupportedVideoModes(DisplayHandle, Span&lt;VideoMode&gt;)</a>
+are expected to work.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetFullscreenDisplay(WindowHandle window, DisplayHandle display, VideoMode videoMode)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Core.Platform.WindowHandle.html">WindowHandle</a></td>
+        <td><span class="parametername">window</span></td>
+        <td><p>The window to make fullscreen.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Core.Platform.DisplayHandle.html">DisplayHandle</a></td>
+        <td><span class="parametername">display</span></td>
+        <td><p>The display to make the window fullscreen on.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Core.Platform.VideoMode.html">VideoMode</a></td>
+        <td><span class="parametername">videoMode</span></td>
+        <td><p>The video mode to use when making the window fullscreen.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenTK_Platform_Native_X11_X11WindowComponent_SetFullscreenDisplay_OpenTK_Core_Platform_WindowHandle_OpenTK_Core_Platform_DisplayHandle_OpenTK_Core_Platform_VideoMode__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>To make an 'windowed fullscreen' window see <a class="xref" href="OpenTK.Core.Platform.IWindowComponent.html#OpenTK_Core_Platform_IWindowComponent_SetFullscreenDisplay_OpenTK_Core_Platform_WindowHandle_OpenTK_Core_Platform_DisplayHandle_">SetFullscreenDisplay(WindowHandle, DisplayHandle?)</a>.</p>
+</div>
+  <a id="OpenTK_Platform_Native_X11_X11WindowComponent_SetFullscreenDisplay_" data-uid="OpenTK.Platform.Native.X11.X11WindowComponent.SetFullscreenDisplay*"></a>
+  <h4 id="OpenTK_Platform_Native_X11_X11WindowComponent_SetFullscreenDisplay_OpenTK_Core_Platform_WindowHandle_OpenTK_Core_Platform_DisplayHandle_" data-uid="OpenTK.Platform.Native.X11.X11WindowComponent.SetFullscreenDisplay(OpenTK.Core.Platform.WindowHandle,OpenTK.Core.Platform.DisplayHandle)">SetFullscreenDisplay(WindowHandle, DisplayHandle?)</h4>
+  <div class="markdown level1 summary"><p>Put a window into 'windowed fullscreen' on a specified display or the display the window is displayed on.
+If <code class="paramref">display</code> is <code>null</code> then the window will be made fullscreen on the 'nearest' display.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetFullscreenDisplay(WindowHandle window, DisplayHandle? display)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Core.Platform.WindowHandle.html">WindowHandle</a></td>
+        <td><span class="parametername">window</span></td>
+        <td><p>The window to make fullscreen.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Core.Platform.DisplayHandle.html">DisplayHandle</a></td>
+        <td><span class="parametername">display</span></td>
+        <td><p>The display to make the window fullscreen on.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenTK_Platform_Native_X11_X11WindowComponent_SetFullscreenDisplay_OpenTK_Core_Platform_WindowHandle_OpenTK_Core_Platform_DisplayHandle__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>To make an 'exclusive fullscreen' window see <a class="xref" href="OpenTK.Core.Platform.IWindowComponent.html#OpenTK_Core_Platform_IWindowComponent_SetFullscreenDisplay_OpenTK_Core_Platform_WindowHandle_OpenTK_Core_Platform_DisplayHandle_OpenTK_Core_Platform_VideoMode_">SetFullscreenDisplay(WindowHandle, DisplayHandle, VideoMode)</a>.</p>
+</div>
   <a id="OpenTK_Platform_Native_X11_X11WindowComponent_SetHitTestCallback_" data-uid="OpenTK.Platform.Native.X11.X11WindowComponent.SetHitTestCallback*"></a>
   <h4 id="OpenTK_Platform_Native_X11_X11WindowComponent_SetHitTestCallback_OpenTK_Core_Platform_WindowHandle_OpenTK_Core_Platform_HitTest_" data-uid="OpenTK.Platform.Native.X11.X11WindowComponent.SetHitTestCallback(OpenTK.Core.Platform.WindowHandle,OpenTK.Core.Platform.HitTest)">SetHitTestCallback(WindowHandle, HitTest?)</h4>
   <div class="markdown level1 summary"><p>Sets a delegate that is used for hit testing.
@@ -1964,6 +2094,12 @@ It is recommended to keep this code efficient as it will be called often.</p>
       </tr>
     </tbody>
   </table>
+  <h5 id="OpenTK_Platform_Native_X11_X11WindowComponent_SetMode_OpenTK_Core_Platform_WindowHandle_OpenTK_Core_Platform_WindowMode__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Setting <a class="xref" href="OpenTK.Core.Platform.WindowMode.html#OpenTK_Core_Platform_WindowMode_WindowedFullscreen">WindowedFullscreen</a> or <a class="xref" href="OpenTK.Core.Platform.WindowMode.html#OpenTK_Core_Platform_WindowMode_ExclusiveFullscreen">ExclusiveFullscreen</a>
+will make the window fullscreen in the nearest monitor to the window location.
+Use <a class="xref" href="OpenTK.Core.Platform.IWindowComponent.html#OpenTK_Core_Platform_IWindowComponent_SetFullscreenDisplay_OpenTK_Core_Platform_WindowHandle_OpenTK_Core_Platform_DisplayHandle_">SetFullscreenDisplay(WindowHandle, DisplayHandle?)</a> or
+<a class="xref" href="OpenTK.Core.Platform.IWindowComponent.html#OpenTK_Core_Platform_IWindowComponent_SetFullscreenDisplay_OpenTK_Core_Platform_WindowHandle_OpenTK_Core_Platform_DisplayHandle_OpenTK_Core_Platform_VideoMode_">SetFullscreenDisplay(WindowHandle, DisplayHandle, VideoMode)</a> to explicitly set the monitor.</p>
+</div>
   <h5 class="exceptions">Exceptions</h5>
   <table class="table table-bordered table-condensed">
     <thead>

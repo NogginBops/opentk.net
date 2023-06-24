@@ -2255,6 +2255,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Core.Platform.WindowBorderStyle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Core.Platform.WindowBorderStyle.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/OpenTK.Core.Platform.WindowDpiChangeEventArgs.yml",
       "output": {
         ".html": {

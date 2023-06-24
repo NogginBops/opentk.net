@@ -82,7 +82,7 @@
 
   <h1 id="OpenTK_Core_Platform_VideoMode" data-uid="OpenTK.Core.Platform.VideoMode" class="text-break">Struct VideoMode
 </h1>
-  <div class="markdown level0 summary"><p>This immutable structure represents display video modes.</p>
+  <div class="markdown level0 summary"><p>This structure represents a display video mode.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritedMembers">
@@ -112,13 +112,13 @@
   <h3 id="constructors">Constructors
 </h3>
   <a id="OpenTK_Core_Platform_VideoMode__ctor_" data-uid="OpenTK.Core.Platform.VideoMode.#ctor*"></a>
-  <h4 id="OpenTK_Core_Platform_VideoMode__ctor_System_Int32_System_Int32_System_Single_System_Single_System_Single_" data-uid="OpenTK.Core.Platform.VideoMode.#ctor(System.Int32,System.Int32,System.Single,System.Single,System.Single)">VideoMode(int, int, float, float, float)</h4>
+  <h4 id="OpenTK_Core_Platform_VideoMode__ctor_System_Int32_System_Int32_System_Single_System_Int32_" data-uid="OpenTK.Core.Platform.VideoMode.#ctor(System.Int32,System.Int32,System.Single,System.Int32)">VideoMode(int, int, float, int)</h4>
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="OpenTK.Core.Platform.VideoMode.html">VideoMode</a> struct.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public VideoMode(int horizontalResolution, int verticalResolution, float refreshRate, float scale, float dpi)</code></pre>
+    <pre><code class="lang-csharp hljs">public VideoMode(int width, int height, float refreshRate, int bitsPerPixel)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -132,72 +132,41 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
-        <td><span class="parametername">horizontalResolution</span></td>
-        <td><p>Horizontal resolution in pixels.</p>
+        <td><span class="parametername">width</span></td>
+        <td><p>The width of the video mode.</p>
 </td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
-        <td><span class="parametername">verticalResolution</span></td>
-        <td><p>Vertical resolution pixels.</p>
+        <td><span class="parametername">height</span></td>
+        <td><p>The height of the video mode.</p>
 </td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
         <td><span class="parametername">refreshRate</span></td>
-        <td><p>Refresh Rate in Hz.</p>
+        <td><p>The refresh rate of the video mode.</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
-        <td><span class="parametername">scale</span></td>
-        <td><p>Display scale.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
-        <td><span class="parametername">dpi</span></td>
-        <td><p>Display pixel density in DPI.</p>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">bitsPerPixel</span></td>
+        <td><p>The color depth of the video mode.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <h3 id="properties">Properties
+  <h3 id="fields">Fields
 </h3>
-  <a id="OpenTK_Core_Platform_VideoMode_Dpi_" data-uid="OpenTK.Core.Platform.VideoMode.Dpi*"></a>
-  <h4 id="OpenTK_Core_Platform_VideoMode_Dpi" data-uid="OpenTK.Core.Platform.VideoMode.Dpi">Dpi</h4>
-  <div class="markdown level1 summary"><p>Display pixel density in this video mode.</p>
+  <h4 id="OpenTK_Core_Platform_VideoMode_BitsPerPixel" data-uid="OpenTK.Core.Platform.VideoMode.BitsPerPixel">BitsPerPixel</h4>
+  <div class="markdown level1 summary"><p>Number of bits used to represent each color in  the video mode.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public readonly float Dpi { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public int BitsPerPixel</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="OpenTK_Core_Platform_VideoMode_HorizontalResolution_" data-uid="OpenTK.Core.Platform.VideoMode.HorizontalResolution*"></a>
-  <h4 id="OpenTK_Core_Platform_VideoMode_HorizontalResolution" data-uid="OpenTK.Core.Platform.VideoMode.HorizontalResolution">HorizontalResolution</h4>
-  <div class="markdown level1 summary"><p>Horizontal resolution of this display mode.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public readonly int HorizontalResolution { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
+  <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-condensed">
     <thead>
       <tr>
@@ -212,16 +181,38 @@
       </tr>
     </tbody>
   </table>
-  <a id="OpenTK_Core_Platform_VideoMode_RefreshRate_" data-uid="OpenTK.Core.Platform.VideoMode.RefreshRate*"></a>
+  <h4 id="OpenTK_Core_Platform_VideoMode_Height" data-uid="OpenTK.Core.Platform.VideoMode.Height">Height</h4>
+  <div class="markdown level1 summary"><p>Height in pixels of the video mode.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Height</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h4 id="OpenTK_Core_Platform_VideoMode_RefreshRate" data-uid="OpenTK.Core.Platform.VideoMode.RefreshRate">RefreshRate</h4>
-  <div class="markdown level1 summary"><p>Display refresh rate of this video mode.</p>
+  <div class="markdown level1 summary"><p>Refresh rate in Hz of the video mode.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public readonly float RefreshRate { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public float RefreshRate</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
+  <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-condensed">
     <thead>
       <tr>
@@ -236,40 +227,15 @@
       </tr>
     </tbody>
   </table>
-  <a id="OpenTK_Core_Platform_VideoMode_Scale_" data-uid="OpenTK.Core.Platform.VideoMode.Scale*"></a>
-  <h4 id="OpenTK_Core_Platform_VideoMode_Scale" data-uid="OpenTK.Core.Platform.VideoMode.Scale">Scale</h4>
-  <div class="markdown level1 summary"><p>Display scale in this video mode.</p>
+  <h4 id="OpenTK_Core_Platform_VideoMode_Width" data-uid="OpenTK.Core.Platform.VideoMode.Width">Width</h4>
+  <div class="markdown level1 summary"><p>Width in pixels of the video mode.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public readonly float Scale { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public int Width</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="OpenTK_Core_Platform_VideoMode_VerticalResolution_" data-uid="OpenTK.Core.Platform.VideoMode.VerticalResolution*"></a>
-  <h4 id="OpenTK_Core_Platform_VideoMode_VerticalResolution" data-uid="OpenTK.Core.Platform.VideoMode.VerticalResolution">VerticalResolution</h4>
-  <div class="markdown level1 summary"><p>Vertical resolution of this display mode.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public readonly int VerticalResolution { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
+  <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-condensed">
     <thead>
       <tr>
@@ -288,7 +254,8 @@
 </h3>
   <a id="OpenTK_Core_Platform_VideoMode_ToString_" data-uid="OpenTK.Core.Platform.VideoMode.ToString*"></a>
   <h4 id="OpenTK_Core_Platform_VideoMode_ToString" data-uid="OpenTK.Core.Platform.VideoMode.ToString">ToString()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Returns the video mode as a string with the format &quot;{Width}x{Height}@{RefreshRate} ({RedBits}:{GreenBits}:{BlueBits})&quot;.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -305,7 +272,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
-        <td></td>
+        <td><p>The string representation of the video mode.</p>
+</td>
       </tr>
     </tbody>
   </table>
