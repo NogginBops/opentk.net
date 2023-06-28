@@ -128,7 +128,8 @@
 </h3>
   <a id="OpenTK_Platform_Native_Windows_IconComponent_CanLoadSystemIcon_" data-uid="OpenTK.Platform.Native.Windows.IconComponent.CanLoadSystemIcon*"></a>
   <h4 id="OpenTK_Platform_Native_Windows_IconComponent_CanLoadSystemIcon" data-uid="OpenTK.Platform.Native.Windows.IconComponent.CanLoadSystemIcon">CanLoadSystemIcon</h4>
-  <div class="markdown level1 summary"><p>True if icon objects can be populated from common system icons.</p>
+  <div class="markdown level1 summary"><p>True if icon objects can be populated from common system icons.
+If this is true, then <a class="xref" href="OpenTK.Core.Platform.IIconComponent.html#OpenTK_Core_Platform_IIconComponent_Create_OpenTK_Core_Platform_SystemIconType_">Create(SystemIconType)</a> will work, otherwise an exception will be thrown.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -225,14 +226,33 @@
   <h3 id="methods">Methods
 </h3>
   <a id="OpenTK_Platform_Native_Windows_IconComponent_Create_" data-uid="OpenTK.Platform.Native.Windows.IconComponent.Create*"></a>
-  <h4 id="OpenTK_Platform_Native_Windows_IconComponent_Create" data-uid="OpenTK.Platform.Native.Windows.IconComponent.Create">Create()</h4>
-  <div class="markdown level1 summary"><p>Create an icon object.</p>
+  <h4 id="OpenTK_Platform_Native_Windows_IconComponent_Create_OpenTK_Core_Platform_SystemIconType_" data-uid="OpenTK.Platform.Native.Windows.IconComponent.Create(OpenTK.Core.Platform.SystemIconType)">Create(SystemIconType)</h4>
+  <div class="markdown level1 summary"><p>Load a system icon.
+Only works if <a class="xref" href="OpenTK.Core.Platform.IIconComponent.html#OpenTK_Core_Platform_IIconComponent_CanLoadSystemIcon">CanLoadSystemIcon</a> is true.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IconHandle Create()</code></pre>
+    <pre><code class="lang-csharp hljs">public IconHandle Create(SystemIconType systemIcon)</code></pre>
   </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Core.Platform.SystemIconType.html">SystemIconType</a></td>
+        <td><span class="parametername">systemIcon</span></td>
+        <td><p>The system icon to create.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-condensed">
     <thead>
@@ -244,7 +264,66 @@
     <tbody>
       <tr>
         <td><a class="xref" href="OpenTK.Core.Platform.IconHandle.html">IconHandle</a></td>
-        <td><p>Handle to an icon object.</p>
+        <td><p>A handle to the created system icon.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenTK_Platform_Native_Windows_IconComponent_Create_OpenTK_Core_Platform_SystemIconType__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="OpenTK.Core.Platform.IIconComponent.html#OpenTK_Core_Platform_IIconComponent_CanLoadSystemIcon">CanLoadSystemIcon</a></div>
+  </div>
+  <a id="OpenTK_Platform_Native_Windows_IconComponent_Create_" data-uid="OpenTK.Platform.Native.Windows.IconComponent.Create*"></a>
+  <h4 id="OpenTK_Platform_Native_Windows_IconComponent_Create_System_Int32_System_Int32_System_ReadOnlySpan_System_Byte__" data-uid="OpenTK.Platform.Native.Windows.IconComponent.Create(System.Int32,System.Int32,System.ReadOnlySpan{System.Byte})">Create(int, int, ReadOnlySpan&lt;byte&gt;)</h4>
+  <div class="markdown level1 summary"><p>Load an icon object with image data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IconHandle Create(int width, int height, ReadOnlySpan&lt;byte&gt; data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">width</span></td>
+        <td><p>Width of the bitmap.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">height</span></td>
+        <td><p>Height of the bitmap.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</td>
+        <td><span class="parametername">data</span></td>
+        <td><p>Image data to load into icon.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Core.Platform.IconHandle.html">IconHandle</a></td>
+        <td><p>A handle to the created icon.</p>
 </td>
       </tr>
     </tbody>
@@ -294,8 +373,7 @@
   </table>
   <a id="OpenTK_Platform_Native_Windows_IconComponent_GetBitmapByteSize_" data-uid="OpenTK.Platform.Native.Windows.IconComponent.GetBitmapByteSize*"></a>
   <h4 id="OpenTK_Platform_Native_Windows_IconComponent_GetBitmapByteSize_OpenTK_Core_Platform_IconHandle_" data-uid="OpenTK.Platform.Native.Windows.IconComponent.GetBitmapByteSize(OpenTK.Core.Platform.IconHandle)">GetBitmapByteSize(IconHandle)</h4>
-  <div class="markdown level1 summary"><p>Get the size of the bitmap visual in bytes.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -314,8 +392,7 @@
       <tr>
         <td><a class="xref" href="OpenTK.Core.Platform.IconHandle.html">IconHandle</a></td>
         <td><span class="parametername">handle</span></td>
-        <td><p>Handle to an icon object.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -330,31 +407,13 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
-        <td><p>The size of the bitmap visual in bytes.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
-        <td><p><code class="paramref">handle</code> is null.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
   <a id="OpenTK_Platform_Native_Windows_IconComponent_GetBitmapData_" data-uid="OpenTK.Platform.Native.Windows.IconComponent.GetBitmapData*"></a>
   <h4 id="OpenTK_Platform_Native_Windows_IconComponent_GetBitmapData_OpenTK_Core_Platform_IconHandle_System_Span_System_Byte__" data-uid="OpenTK.Platform.Native.Windows.IconComponent.GetBitmapData(OpenTK.Core.Platform.IconHandle,System.Span{System.Byte})">GetBitmapData(IconHandle, Span&lt;byte&gt;)</h4>
-  <div class="markdown level1 summary"><p>Get the bitmap visual of an icon object.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -373,41 +432,23 @@
       <tr>
         <td><a class="xref" href="OpenTK.Core.Platform.IconHandle.html">IconHandle</a></td>
         <td><span class="parametername">handle</span></td>
-        <td><p>Handle to an icon object.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.span-1">Span</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</td>
         <td><span class="parametername">data</span></td>
-        <td><p>A buffer to copy bitmap data into.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
-        <td><p><code class="paramref">handle</code> is null.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="OpenTK_Platform_Native_Windows_IconComponent_GetDimensions_" data-uid="OpenTK.Platform.Native.Windows.IconComponent.GetDimensions*"></a>
-  <h4 id="OpenTK_Platform_Native_Windows_IconComponent_GetDimensions_OpenTK_Core_Platform_IconHandle_System_Int32__System_Int32__" data-uid="OpenTK.Platform.Native.Windows.IconComponent.GetDimensions(OpenTK.Core.Platform.IconHandle,System.Int32@,System.Int32@)">GetDimensions(IconHandle, out int, out int)</h4>
+  <a id="OpenTK_Platform_Native_Windows_IconComponent_GetSize_" data-uid="OpenTK.Platform.Native.Windows.IconComponent.GetSize*"></a>
+  <h4 id="OpenTK_Platform_Native_Windows_IconComponent_GetSize_OpenTK_Core_Platform_IconHandle_System_Int32__System_Int32__" data-uid="OpenTK.Platform.Native.Windows.IconComponent.GetSize(OpenTK.Core.Platform.IconHandle,System.Int32@,System.Int32@)">GetSize(IconHandle, out int, out int)</h4>
   <div class="markdown level1 summary"><p>Get the dimensions of a icon object.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void GetDimensions(IconHandle handle, out int width, out int height)</code></pre>
+    <pre><code class="lang-csharp hljs">public void GetSize(IconHandle handle, out int width, out int height)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -482,133 +523,14 @@
       </tr>
     </tbody>
   </table>
-  <a id="OpenTK_Platform_Native_Windows_IconComponent_Load_" data-uid="OpenTK.Platform.Native.Windows.IconComponent.Load*"></a>
-  <h4 id="OpenTK_Platform_Native_Windows_IconComponent_Load_OpenTK_Core_Platform_IconHandle_OpenTK_Core_Platform_SystemIconType_" data-uid="OpenTK.Platform.Native.Windows.IconComponent.Load(OpenTK.Core.Platform.IconHandle,OpenTK.Core.Platform.SystemIconType)">Load(IconHandle, SystemIconType)</h4>
-  <div class="markdown level1 summary"><p>Load a common system icon.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Load(IconHandle handle, SystemIconType systemIcon)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Core.Platform.IconHandle.html">IconHandle</a></td>
-        <td><span class="parametername">handle</span></td>
-        <td><p>Handle to an icon object.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="OpenTK.Core.Platform.SystemIconType.html">SystemIconType</a></td>
-        <td><span class="parametername">systemIcon</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
-        <td><p><code class="paramref">handle</code> is null.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="OpenTK.Core.Platform.PlatformException.html">PlatformException</a></td>
-        <td><p>System does not provide an icon for the given value of <code class="paramref">name</code>.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="OpenTK.Core.Platform.PalNotImplementedException.html">PalNotImplementedException</a></td>
-        <td><p>Driver does not implement loading system icons. See <a class="xref" href="OpenTK.Core.Platform.IIconComponent.html#OpenTK_Core_Platform_IIconComponent_CanLoadSystemIcon">CanLoadSystemIcon</a>.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="OpenTK_Platform_Native_Windows_IconComponent_Load_" data-uid="OpenTK.Platform.Native.Windows.IconComponent.Load*"></a>
-  <h4 id="OpenTK_Platform_Native_Windows_IconComponent_Load_OpenTK_Core_Platform_IconHandle_System_Int32_System_Int32_System_ReadOnlySpan_System_Byte__" data-uid="OpenTK.Platform.Native.Windows.IconComponent.Load(OpenTK.Core.Platform.IconHandle,System.Int32,System.Int32,System.ReadOnlySpan{System.Byte})">Load(IconHandle, int, int, ReadOnlySpan&lt;byte&gt;)</h4>
-  <div class="markdown level1 summary"><p>Load an icon object with image data.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Load(IconHandle handle, int width, int height, ReadOnlySpan&lt;byte&gt; data)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Core.Platform.IconHandle.html">IconHandle</a></td>
-        <td><span class="parametername">handle</span></td>
-        <td><p>Handle to an icon object.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
-        <td><span class="parametername">width</span></td>
-        <td><p>Width of the bitmap.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
-        <td><span class="parametername">height</span></td>
-        <td><p>Height of the bitmap.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</td>
-        <td><span class="parametername">data</span></td>
-        <td><p>Image data to load into icon.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
-        <td><p><code class="paramref">handle</code> is null.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
   <a id="OpenTK_Platform_Native_Windows_IconComponent_LoadIcoFile_" data-uid="OpenTK.Platform.Native.Windows.IconComponent.LoadIcoFile*"></a>
-  <h4 id="OpenTK_Platform_Native_Windows_IconComponent_LoadIcoFile_OpenTK_Core_Platform_IconHandle_System_String_" data-uid="OpenTK.Platform.Native.Windows.IconComponent.LoadIcoFile(OpenTK.Core.Platform.IconHandle,System.String)">LoadIcoFile(IconHandle, string)</h4>
+  <h4 id="OpenTK_Platform_Native_Windows_IconComponent_LoadIcoFile_System_String_" data-uid="OpenTK.Platform.Native.Windows.IconComponent.LoadIcoFile(System.String)">LoadIcoFile(string)</h4>
   <div class="markdown level1 summary"><p>Loads a windows .ico file.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void LoadIcoFile(IconHandle handle, string file)</code></pre>
+    <pre><code class="lang-csharp hljs">public IconHandle LoadIcoFile(string file)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -621,16 +543,25 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Core.Platform.IconHandle.html">IconHandle</a></td>
-        <td><span class="parametername">handle</span></td>
-        <td><p>Handle to an icon object.</p>
-</td>
-      </tr>
-      <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
         <td><span class="parametername">file</span></td>
         <td><p>The icon file to load.</p>
 </td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Core.Platform.IconHandle.html">IconHandle</a></td>
+        <td></td>
       </tr>
     </tbody>
   </table>

@@ -3345,6 +3345,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.Native.SDL.SDLCursorComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.Native.SDL.SDLCursorComponent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/OpenTK.Platform.Native.SDL.SDLDisplayComponent.yml",
       "output": {
         ".html": {
@@ -3359,6 +3369,16 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenTK.Platform.Native.SDL.SDLIconComponent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.Native.SDL.SDLJoystickComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.Native.SDL.SDLJoystickComponent.html"
         }
       },
       "version": ""
