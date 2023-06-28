@@ -849,6 +849,51 @@ public bool Contains(Box3i other)</code></pre>
     </tbody>
   </table>
   <a id="OpenTK_Mathematics_Box3i_Contains_" data-uid="OpenTK.Mathematics.Box3i.Contains*"></a>
+  <h4 id="OpenTK_Mathematics_Box3i_Contains_OpenTK_Mathematics_Vector3i_" data-uid="OpenTK.Mathematics.Box3i.Contains(OpenTK.Mathematics.Vector3i)">Contains(Vector3i)</h4>
+  <div class="markdown level1 summary"><p>Returns whether the box contains the specified point (borders inclusive).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+[Obsolete(&quot;This function excludes borders even though it&#39;s documentation says otherwise. Use ContainsInclusive and ContainsExclusive for the desired behaviour.&quot;)]
+public bool Contains(Vector3i point)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector3i.html">Vector3i</a></td>
+        <td><span class="parametername">point</span></td>
+        <td><p>The point to query.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p>Whether this box contains the point.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Box3i_Contains_" data-uid="OpenTK.Mathematics.Box3i.Contains*"></a>
   <h4 id="OpenTK_Mathematics_Box3i_Contains_OpenTK_Mathematics_Vector3i_System_Boolean_" data-uid="OpenTK.Mathematics.Box3i.Contains(OpenTK.Mathematics.Vector3i,System.Boolean)">Contains(Vector3i, bool)</h4>
   <div class="markdown level1 summary"><p>Returns whether the box contains the specified point.</p>
 </div>
@@ -878,51 +923,6 @@ public bool Contains(Vector3i point, bool boundaryInclusive)</code></pre>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><span class="parametername">boundaryInclusive</span></td>
         <td><p>Whether points on the box boundary should be recognised as contained as well.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
-        <td><p>Whether this box contains the point.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="OpenTK_Mathematics_Box3i_Contains_" data-uid="OpenTK.Mathematics.Box3i.Contains*"></a>
-  <h4 id="OpenTK_Mathematics_Box3i_Contains_OpenTK_Mathematics_Vector3i_" data-uid="OpenTK.Mathematics.Box3i.Contains(OpenTK.Mathematics.Vector3i)">Contains(Vector3i)</h4>
-  <div class="markdown level1 summary"><p>Returns whether the box contains the specified point (borders inclusive).</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Pure]
-[Obsolete(&quot;This function excludes borders even though it&#39;s documentation says otherwise. Use ContainsInclusive and ContainsExclusive for the desired behaviour.&quot;)]
-public bool Contains(Vector3i point)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Mathematics.Vector3i.html">Vector3i</a></td>
-        <td><span class="parametername">point</span></td>
-        <td><p>The point to query.</p>
 </td>
       </tr>
     </tbody>
@@ -1077,7 +1077,8 @@ public float DistanceToNearestEdge(Vector3i point)</code></pre>
   </table>
   <a id="OpenTK_Mathematics_Box3i_Equals_" data-uid="OpenTK.Mathematics.Box3i.Equals*"></a>
   <h4 id="OpenTK_Mathematics_Box3i_Equals_OpenTK_Mathematics_Box3i_" data-uid="OpenTK.Mathematics.Box3i.Equals(OpenTK.Mathematics.Box3i)">Equals(Box3i)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Indicates whether the current object is equal to another object of the same type.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -1096,7 +1097,8 @@ public float DistanceToNearestEdge(Vector3i point)</code></pre>
       <tr>
         <td><a class="xref" href="OpenTK.Mathematics.Box3i.html">Box3i</a></td>
         <td><span class="parametername">other</span></td>
-        <td></td>
+        <td><p>An object to compare with this object.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1111,13 +1113,15 @@ public float DistanceToNearestEdge(Vector3i point)</code></pre>
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
-        <td></td>
+        <td><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <a id="OpenTK_Mathematics_Box3i_Equals_" data-uid="OpenTK.Mathematics.Box3i.Equals*"></a>
   <h4 id="OpenTK_Mathematics_Box3i_Equals_System_Object_" data-uid="OpenTK.Mathematics.Box3i.Equals(System.Object)">Equals(object)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Indicates whether this instance and a specified object are equal.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -1136,7 +1140,8 @@ public float DistanceToNearestEdge(Vector3i point)</code></pre>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></td>
         <td><span class="parametername">obj</span></td>
-        <td></td>
+        <td><p>The object to compare with the current instance.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1151,7 +1156,8 @@ public float DistanceToNearestEdge(Vector3i point)</code></pre>
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
-        <td></td>
+        <td><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if <code class="paramref">obj</code> and this instance are the same type and represent the same value; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1330,7 +1336,8 @@ public float DistanceToNearestEdge(Vector3i point)</code></pre>
   </table>
   <a id="OpenTK_Mathematics_Box3i_GetHashCode_" data-uid="OpenTK.Mathematics.Box3i.GetHashCode*"></a>
   <h4 id="OpenTK_Mathematics_Box3i_GetHashCode" data-uid="OpenTK.Mathematics.Box3i.GetHashCode">GetHashCode()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Returns the hash code for this instance.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -1347,7 +1354,8 @@ public float DistanceToNearestEdge(Vector3i point)</code></pre>
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
-        <td></td>
+        <td><p>A 32-bit signed integer that is the hash code for this instance.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1425,6 +1433,33 @@ public Box3i Inflated(Vector3i point)</code></pre>
     </tbody>
   </table>
   <a id="OpenTK_Mathematics_Box3i_Intersect_" data-uid="OpenTK.Mathematics.Box3i.Intersect*"></a>
+  <h4 id="OpenTK_Mathematics_Box3i_Intersect_OpenTK_Mathematics_Box3i_" data-uid="OpenTK.Mathematics.Box3i.Intersect(OpenTK.Mathematics.Box3i)">Intersect(Box3i)</h4>
+  <div class="markdown level1 summary"><p>Replaces this Box with the intersection of itself and the specified Box.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Intersect(Box3i other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Box3i.html">Box3i</a></td>
+        <td><span class="parametername">other</span></td>
+        <td><p>The Box with which to intersect.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Box3i_Intersect_" data-uid="OpenTK.Mathematics.Box3i.Intersect*"></a>
   <h4 id="OpenTK_Mathematics_Box3i_Intersect_OpenTK_Mathematics_Box3i_OpenTK_Mathematics_Box3i_" data-uid="OpenTK.Mathematics.Box3i.Intersect(OpenTK.Mathematics.Box3i,OpenTK.Mathematics.Box3i)">Intersect(Box3i, Box3i)</h4>
   <div class="markdown level1 summary"><p>Returns the intersection of two Boxes.</p>
 </div>
@@ -1469,33 +1504,6 @@ public Box3i Inflated(Vector3i point)</code></pre>
       <tr>
         <td><a class="xref" href="OpenTK.Mathematics.Box3i.html">Box3i</a></td>
         <td><p>The intersection of two Boxes.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="OpenTK_Mathematics_Box3i_Intersect_" data-uid="OpenTK.Mathematics.Box3i.Intersect*"></a>
-  <h4 id="OpenTK_Mathematics_Box3i_Intersect_OpenTK_Mathematics_Box3i_" data-uid="OpenTK.Mathematics.Box3i.Intersect(OpenTK.Mathematics.Box3i)">Intersect(Box3i)</h4>
-  <div class="markdown level1 summary"><p>Replaces this Box with the intersection of itself and the specified Box.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Intersect(Box3i other)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Mathematics.Box3i.html">Box3i</a></td>
-        <td><span class="parametername">other</span></td>
-        <td><p>The Box with which to intersect.</p>
 </td>
       </tr>
     </tbody>
@@ -1671,7 +1679,8 @@ public Box3i Scaled(Vector3i scale, Vector3i anchor)</code></pre>
   </table>
   <a id="OpenTK_Mathematics_Box3i_ToString_" data-uid="OpenTK.Mathematics.Box3i.ToString*"></a>
   <h4 id="OpenTK_Mathematics_Box3i_ToString" data-uid="OpenTK.Mathematics.Box3i.ToString">ToString()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Returns the fully qualified type name of this instance.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -1688,7 +1697,8 @@ public Box3i Scaled(Vector3i scale, Vector3i anchor)</code></pre>
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
-        <td></td>
+        <td><p>The fully qualified type name.</p>
+</td>
       </tr>
     </tbody>
   </table>

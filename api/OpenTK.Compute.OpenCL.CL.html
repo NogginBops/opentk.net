@@ -436,13 +436,13 @@
     </tbody>
   </table>
   <a id="OpenTK_Compute_OpenCL_CL_CreateBuffer_" data-uid="OpenTK.Compute.OpenCL.CL.CreateBuffer*"></a>
-  <h4 id="OpenTK_Compute_OpenCL_CL_CreateBuffer__1_OpenTK_Compute_OpenCL_CLContext_OpenTK_Compute_OpenCL_MemoryFlags___0___OpenTK_Compute_OpenCL_CLResultCode__" data-uid="OpenTK.Compute.OpenCL.CL.CreateBuffer``1(OpenTK.Compute.OpenCL.CLContext,OpenTK.Compute.OpenCL.MemoryFlags,``0[],OpenTK.Compute.OpenCL.CLResultCode@)">CreateBuffer&lt;T&gt;(CLContext, MemoryFlags, T[], out CLResultCode)</h4>
+  <h4 id="OpenTK_Compute_OpenCL_CL_CreateBuffer__1_OpenTK_Compute_OpenCL_CLContext_OpenTK_Compute_OpenCL_MemoryFlags_System_Span___0__OpenTK_Compute_OpenCL_CLResultCode__" data-uid="OpenTK.Compute.OpenCL.CL.CreateBuffer``1(OpenTK.Compute.OpenCL.CLContext,OpenTK.Compute.OpenCL.MemoryFlags,System.Span{``0},OpenTK.Compute.OpenCL.CLResultCode@)">CreateBuffer&lt;T&gt;(CLContext, MemoryFlags, Span&lt;T&gt;, out CLResultCode)</h4>
   <div class="markdown level1 summary"><p>Introduced in OpenCL 1.0</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static CLBuffer CreateBuffer&lt;T&gt;(CLContext context, MemoryFlags flags, T[] array, out CLResultCode resultCode) where T : unmanaged</code></pre>
+    <pre><code class="lang-csharp hljs">public static CLBuffer CreateBuffer&lt;T&gt;(CLContext context, MemoryFlags flags, Span&lt;T&gt; span, out CLResultCode resultCode) where T : unmanaged</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -465,8 +465,8 @@
         <td></td>
       </tr>
       <tr>
-        <td>T[]</td>
-        <td><span class="parametername">array</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.span-1">Span</a>&lt;T&gt;</td>
+        <td><span class="parametername">span</span></td>
         <td></td>
       </tr>
       <tr>
@@ -507,13 +507,13 @@
     </tbody>
   </table>
   <a id="OpenTK_Compute_OpenCL_CL_CreateBuffer_" data-uid="OpenTK.Compute.OpenCL.CL.CreateBuffer*"></a>
-  <h4 id="OpenTK_Compute_OpenCL_CL_CreateBuffer__1_OpenTK_Compute_OpenCL_CLContext_OpenTK_Compute_OpenCL_MemoryFlags_System_Span___0__OpenTK_Compute_OpenCL_CLResultCode__" data-uid="OpenTK.Compute.OpenCL.CL.CreateBuffer``1(OpenTK.Compute.OpenCL.CLContext,OpenTK.Compute.OpenCL.MemoryFlags,System.Span{``0},OpenTK.Compute.OpenCL.CLResultCode@)">CreateBuffer&lt;T&gt;(CLContext, MemoryFlags, Span&lt;T&gt;, out CLResultCode)</h4>
+  <h4 id="OpenTK_Compute_OpenCL_CL_CreateBuffer__1_OpenTK_Compute_OpenCL_CLContext_OpenTK_Compute_OpenCL_MemoryFlags___0___OpenTK_Compute_OpenCL_CLResultCode__" data-uid="OpenTK.Compute.OpenCL.CL.CreateBuffer``1(OpenTK.Compute.OpenCL.CLContext,OpenTK.Compute.OpenCL.MemoryFlags,``0[],OpenTK.Compute.OpenCL.CLResultCode@)">CreateBuffer&lt;T&gt;(CLContext, MemoryFlags, T[], out CLResultCode)</h4>
   <div class="markdown level1 summary"><p>Introduced in OpenCL 1.0</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static CLBuffer CreateBuffer&lt;T&gt;(CLContext context, MemoryFlags flags, Span&lt;T&gt; span, out CLResultCode resultCode) where T : unmanaged</code></pre>
+    <pre><code class="lang-csharp hljs">public static CLBuffer CreateBuffer&lt;T&gt;(CLContext context, MemoryFlags flags, T[] array, out CLResultCode resultCode) where T : unmanaged</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -536,8 +536,8 @@
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.span-1">Span</a>&lt;T&gt;</td>
-        <td><span class="parametername">span</span></td>
+        <td>T[]</td>
+        <td><span class="parametername">array</span></td>
         <td></td>
       </tr>
       <tr>
@@ -3248,6 +3248,87 @@ public static extern CLResultCode EnqueueMarker(CLCommandQueue commandQueue, CLE
       </tr>
     </tbody>
   </table>
+  <a id="OpenTK_Compute_OpenCL_CL_EnqueueNDRangeKernel_" data-uid="OpenTK.Compute.OpenCL.CL.EnqueueNDRangeKernel*"></a>
+  <h4 id="OpenTK_Compute_OpenCL_CL_EnqueueNDRangeKernel_OpenTK_Compute_OpenCL_CLCommandQueue_OpenTK_Compute_OpenCL_CLKernel_System_UInt32_System_UIntPtr___System_UIntPtr___System_UIntPtr___System_UInt32_OpenTK_Compute_OpenCL_CLEvent___OpenTK_Compute_OpenCL_CLEvent__" data-uid="OpenTK.Compute.OpenCL.CL.EnqueueNDRangeKernel(OpenTK.Compute.OpenCL.CLCommandQueue,OpenTK.Compute.OpenCL.CLKernel,System.UInt32,System.UIntPtr[],System.UIntPtr[],System.UIntPtr[],System.UInt32,OpenTK.Compute.OpenCL.CLEvent[],OpenTK.Compute.OpenCL.CLEvent@)">EnqueueNDRangeKernel(CLCommandQueue, CLKernel, uint, nuint[], nuint[], nuint[], uint, CLEvent[], out CLEvent)</h4>
+  <div class="markdown level1 summary"><p>Introduced in OpenCL 1.0</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern CLResultCode EnqueueNDRangeKernel(CLCommandQueue commandQueue, CLKernel kernel, uint workDimension, nuint[] globalWorkOffset, nuint[] globalWorkSize, nuint[] localWorkSize, uint numberOfEventsInWaitList, CLEvent[] eventWaitList, out CLEvent @event)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Compute.OpenCL.CLCommandQueue.html">CLCommandQueue</a></td>
+        <td><span class="parametername">commandQueue</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Compute.OpenCL.CLKernel.html">CLKernel</a></td>
+        <td><span class="parametername">kernel</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
+        <td><span class="parametername">workDimension</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a>[]</td>
+        <td><span class="parametername">globalWorkOffset</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a>[]</td>
+        <td><span class="parametername">globalWorkSize</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a>[]</td>
+        <td><span class="parametername">localWorkSize</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
+        <td><span class="parametername">numberOfEventsInWaitList</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Compute.OpenCL.CLEvent.html">CLEvent</a>[]</td>
+        <td><span class="parametername">eventWaitList</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Compute.OpenCL.CLEvent.html">CLEvent</a></td>
+        <td><span class="parametername">event</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Compute.OpenCL.CLResultCode.html">CLResultCode</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <a id="OpenTK_Compute_OpenCL_CL_EnqueueNativeKernel_" data-uid="OpenTK.Compute.OpenCL.CL.EnqueueNativeKernel*"></a>
   <h4 id="OpenTK_Compute_OpenCL_CL_EnqueueNativeKernel_OpenTK_Compute_OpenCL_CLCommandQueue_System_IntPtr_System_IntPtr___System_UIntPtr_System_UInt32_System_IntPtr___System_IntPtr_System_UInt32_OpenTK_Compute_OpenCL_CLEvent___OpenTK_Compute_OpenCL_CLEvent__" data-uid="OpenTK.Compute.OpenCL.CL.EnqueueNativeKernel(OpenTK.Compute.OpenCL.CLCommandQueue,System.IntPtr,System.IntPtr[],System.UIntPtr,System.UInt32,System.IntPtr[],System.IntPtr,System.UInt32,OpenTK.Compute.OpenCL.CLEvent[],OpenTK.Compute.OpenCL.CLEvent@)">EnqueueNativeKernel(CLCommandQueue, IntPtr, IntPtr[], nuint, uint, IntPtr[], IntPtr, uint, CLEvent[], out CLEvent)</h4>
   <div class="markdown level1 summary"><p>Introduced in OpenCL 1.0</p>
@@ -3300,87 +3381,6 @@ public static extern CLResultCode EnqueueMarker(CLCommandQueue commandQueue, CLE
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
         <td><span class="parametername">argumentsMemoryLocation</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
-        <td><span class="parametername">numberOfEventsInWaitList</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="OpenTK.Compute.OpenCL.CLEvent.html">CLEvent</a>[]</td>
-        <td><span class="parametername">eventWaitList</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="OpenTK.Compute.OpenCL.CLEvent.html">CLEvent</a></td>
-        <td><span class="parametername">event</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Compute.OpenCL.CLResultCode.html">CLResultCode</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="OpenTK_Compute_OpenCL_CL_EnqueueNDRangeKernel_" data-uid="OpenTK.Compute.OpenCL.CL.EnqueueNDRangeKernel*"></a>
-  <h4 id="OpenTK_Compute_OpenCL_CL_EnqueueNDRangeKernel_OpenTK_Compute_OpenCL_CLCommandQueue_OpenTK_Compute_OpenCL_CLKernel_System_UInt32_System_UIntPtr___System_UIntPtr___System_UIntPtr___System_UInt32_OpenTK_Compute_OpenCL_CLEvent___OpenTK_Compute_OpenCL_CLEvent__" data-uid="OpenTK.Compute.OpenCL.CL.EnqueueNDRangeKernel(OpenTK.Compute.OpenCL.CLCommandQueue,OpenTK.Compute.OpenCL.CLKernel,System.UInt32,System.UIntPtr[],System.UIntPtr[],System.UIntPtr[],System.UInt32,OpenTK.Compute.OpenCL.CLEvent[],OpenTK.Compute.OpenCL.CLEvent@)">EnqueueNDRangeKernel(CLCommandQueue, CLKernel, uint, nuint[], nuint[], nuint[], uint, CLEvent[], out CLEvent)</h4>
-  <div class="markdown level1 summary"><p>Introduced in OpenCL 1.0</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern CLResultCode EnqueueNDRangeKernel(CLCommandQueue commandQueue, CLKernel kernel, uint workDimension, nuint[] globalWorkOffset, nuint[] globalWorkSize, nuint[] localWorkSize, uint numberOfEventsInWaitList, CLEvent[] eventWaitList, out CLEvent @event)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Compute.OpenCL.CLCommandQueue.html">CLCommandQueue</a></td>
-        <td><span class="parametername">commandQueue</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="OpenTK.Compute.OpenCL.CLKernel.html">CLKernel</a></td>
-        <td><span class="parametername">kernel</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
-        <td><span class="parametername">workDimension</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a>[]</td>
-        <td><span class="parametername">globalWorkOffset</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a>[]</td>
-        <td><span class="parametername">globalWorkSize</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a>[]</td>
-        <td><span class="parametername">localWorkSize</span></td>
         <td></td>
       </tr>
       <tr>
@@ -3496,178 +3496,6 @@ public static extern CLResultCode EnqueueMarker(CLCommandQueue commandQueue, CLE
       </tr>
     </tbody>
   </table>
-  <a id="OpenTK_Compute_OpenCL_CL_EnqueueReadBuffer_" data-uid="OpenTK.Compute.OpenCL.CL.EnqueueReadBuffer*"></a>
-  <h4 id="OpenTK_Compute_OpenCL_CL_EnqueueReadBuffer__1_OpenTK_Compute_OpenCL_CLCommandQueue_OpenTK_Compute_OpenCL_CLBuffer_System_Boolean_System_UIntPtr___0___OpenTK_Compute_OpenCL_CLEvent___OpenTK_Compute_OpenCL_CLEvent__" data-uid="OpenTK.Compute.OpenCL.CL.EnqueueReadBuffer``1(OpenTK.Compute.OpenCL.CLCommandQueue,OpenTK.Compute.OpenCL.CLBuffer,System.Boolean,System.UIntPtr,``0[],OpenTK.Compute.OpenCL.CLEvent[],OpenTK.Compute.OpenCL.CLEvent@)">EnqueueReadBuffer&lt;T&gt;(CLCommandQueue, CLBuffer, bool, nuint, T[], CLEvent[], out CLEvent)</h4>
-  <div class="markdown level1 summary"><p>Introduced in OpenCL1.0</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static CLResultCode EnqueueReadBuffer&lt;T&gt;(CLCommandQueue commandQueue, CLBuffer buffer, bool blockingRead, nuint offset, T[] array, CLEvent[] eventWaitList, out CLEvent eventHandle) where T : unmanaged</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Compute.OpenCL.CLCommandQueue.html">CLCommandQueue</a></td>
-        <td><span class="parametername">commandQueue</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="OpenTK.Compute.OpenCL.CLBuffer.html">CLBuffer</a></td>
-        <td><span class="parametername">buffer</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
-        <td><span class="parametername">blockingRead</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
-        <td><span class="parametername">offset</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>T[]</td>
-        <td><span class="parametername">array</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="OpenTK.Compute.OpenCL.CLEvent.html">CLEvent</a>[]</td>
-        <td><span class="parametername">eventWaitList</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="OpenTK.Compute.OpenCL.CLEvent.html">CLEvent</a></td>
-        <td><span class="parametername">eventHandle</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Compute.OpenCL.CLResultCode.html">CLResultCode</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="typeParameters">Type Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="parametername">T</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="OpenTK_Compute_OpenCL_CL_EnqueueReadBuffer_" data-uid="OpenTK.Compute.OpenCL.CL.EnqueueReadBuffer*"></a>
-  <h4 id="OpenTK_Compute_OpenCL_CL_EnqueueReadBuffer__1_OpenTK_Compute_OpenCL_CLCommandQueue_OpenTK_Compute_OpenCL_CLBuffer_System_Boolean_System_UIntPtr_System_Span___0__OpenTK_Compute_OpenCL_CLEvent___OpenTK_Compute_OpenCL_CLEvent__" data-uid="OpenTK.Compute.OpenCL.CL.EnqueueReadBuffer``1(OpenTK.Compute.OpenCL.CLCommandQueue,OpenTK.Compute.OpenCL.CLBuffer,System.Boolean,System.UIntPtr,System.Span{``0},OpenTK.Compute.OpenCL.CLEvent[],OpenTK.Compute.OpenCL.CLEvent@)">EnqueueReadBuffer&lt;T&gt;(CLCommandQueue, CLBuffer, bool, nuint, Span&lt;T&gt;, CLEvent[], out CLEvent)</h4>
-  <div class="markdown level1 summary"><p>Introduced in OpenCL 1.0</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static CLResultCode EnqueueReadBuffer&lt;T&gt;(CLCommandQueue commandQueue, CLBuffer buffer, bool blockingRead, nuint offset, Span&lt;T&gt; span, CLEvent[] eventWaitList, out CLEvent eventHandle) where T : unmanaged</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Compute.OpenCL.CLCommandQueue.html">CLCommandQueue</a></td>
-        <td><span class="parametername">commandQueue</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="OpenTK.Compute.OpenCL.CLBuffer.html">CLBuffer</a></td>
-        <td><span class="parametername">buffer</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
-        <td><span class="parametername">blockingRead</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
-        <td><span class="parametername">offset</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.span-1">Span</a>&lt;T&gt;</td>
-        <td><span class="parametername">span</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="OpenTK.Compute.OpenCL.CLEvent.html">CLEvent</a>[]</td>
-        <td><span class="parametername">eventWaitList</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="OpenTK.Compute.OpenCL.CLEvent.html">CLEvent</a></td>
-        <td><span class="parametername">eventHandle</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Compute.OpenCL.CLResultCode.html">CLResultCode</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="typeParameters">Type Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="parametername">T</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   <a id="OpenTK_Compute_OpenCL_CL_EnqueueReadBufferRect_" data-uid="OpenTK.Compute.OpenCL.CL.EnqueueReadBufferRect*"></a>
   <h4 id="OpenTK_Compute_OpenCL_CL_EnqueueReadBufferRect_OpenTK_Compute_OpenCL_CLCommandQueue_OpenTK_Compute_OpenCL_CLBuffer_System_Boolean_System_UIntPtr___System_UIntPtr___System_UIntPtr___System_UIntPtr_System_UIntPtr_System_UIntPtr_System_UIntPtr_System_IntPtr_System_UInt32_OpenTK_Compute_OpenCL_CLEvent___OpenTK_Compute_OpenCL_CLEvent__" data-uid="OpenTK.Compute.OpenCL.CL.EnqueueReadBufferRect(OpenTK.Compute.OpenCL.CLCommandQueue,OpenTK.Compute.OpenCL.CLBuffer,System.Boolean,System.UIntPtr[],System.UIntPtr[],System.UIntPtr[],System.UIntPtr,System.UIntPtr,System.UIntPtr,System.UIntPtr,System.IntPtr,System.UInt32,OpenTK.Compute.OpenCL.CLEvent[],OpenTK.Compute.OpenCL.CLEvent@)">EnqueueReadBufferRect(CLCommandQueue, CLBuffer, bool, nuint[], nuint[], nuint[], nuint, nuint, nuint, nuint, IntPtr, uint, CLEvent[], out CLEvent)</h4>
   <div class="markdown level1 summary"><p>Introduced in OpenCL 1.1</p>
@@ -3770,6 +3598,122 @@ public static extern CLResultCode EnqueueMarker(CLCommandQueue commandQueue, CLE
     <tbody>
       <tr>
         <td><a class="xref" href="OpenTK.Compute.OpenCL.CLResultCode.html">CLResultCode</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Compute_OpenCL_CL_EnqueueReadBufferRect_" data-uid="OpenTK.Compute.OpenCL.CL.EnqueueReadBufferRect*"></a>
+  <h4 id="OpenTK_Compute_OpenCL_CL_EnqueueReadBufferRect__1_OpenTK_Compute_OpenCL_CLCommandQueue_OpenTK_Compute_OpenCL_CLBuffer_System_Boolean_System_UIntPtr___System_UIntPtr___System_UIntPtr___System_UIntPtr_System_UIntPtr_System_UIntPtr_System_UIntPtr_System_Span___0__OpenTK_Compute_OpenCL_CLEvent___OpenTK_Compute_OpenCL_CLEvent__" data-uid="OpenTK.Compute.OpenCL.CL.EnqueueReadBufferRect``1(OpenTK.Compute.OpenCL.CLCommandQueue,OpenTK.Compute.OpenCL.CLBuffer,System.Boolean,System.UIntPtr[],System.UIntPtr[],System.UIntPtr[],System.UIntPtr,System.UIntPtr,System.UIntPtr,System.UIntPtr,System.Span{``0},OpenTK.Compute.OpenCL.CLEvent[],OpenTK.Compute.OpenCL.CLEvent@)">EnqueueReadBufferRect&lt;T&gt;(CLCommandQueue, CLBuffer, bool, nuint[], nuint[], nuint[], nuint, nuint, nuint, nuint, Span&lt;T&gt;, CLEvent[], out CLEvent)</h4>
+  <div class="markdown level1 summary"><p>Introduced in OpenCL 1.1</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CLResultCode EnqueueReadBufferRect&lt;T&gt;(CLCommandQueue commandQueue, CLBuffer buffer, bool blockingRead, nuint[] bufferOffset, nuint[] hostOffset, nuint[] region, nuint bufferRowPitch, nuint bufferSlicePitch, nuint hostRowPitch, nuint hostSlicePitch, Span&lt;T&gt; span, CLEvent[] eventWaitList, out CLEvent @event) where T : unmanaged</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Compute.OpenCL.CLCommandQueue.html">CLCommandQueue</a></td>
+        <td><span class="parametername">commandQueue</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Compute.OpenCL.CLBuffer.html">CLBuffer</a></td>
+        <td><span class="parametername">buffer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">blockingRead</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a>[]</td>
+        <td><span class="parametername">bufferOffset</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a>[]</td>
+        <td><span class="parametername">hostOffset</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a>[]</td>
+        <td><span class="parametername">region</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
+        <td><span class="parametername">bufferRowPitch</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
+        <td><span class="parametername">bufferSlicePitch</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
+        <td><span class="parametername">hostRowPitch</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
+        <td><span class="parametername">hostSlicePitch</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.span-1">Span</a>&lt;T&gt;</td>
+        <td><span class="parametername">span</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Compute.OpenCL.CLEvent.html">CLEvent</a>[]</td>
+        <td><span class="parametername">eventWaitList</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Compute.OpenCL.CLEvent.html">CLEvent</a></td>
+        <td><span class="parametername">event</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Compute.OpenCL.CLResultCode.html">CLResultCode</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -3890,14 +3834,14 @@ public static extern CLResultCode EnqueueMarker(CLCommandQueue commandQueue, CLE
       </tr>
     </tbody>
   </table>
-  <a id="OpenTK_Compute_OpenCL_CL_EnqueueReadBufferRect_" data-uid="OpenTK.Compute.OpenCL.CL.EnqueueReadBufferRect*"></a>
-  <h4 id="OpenTK_Compute_OpenCL_CL_EnqueueReadBufferRect__1_OpenTK_Compute_OpenCL_CLCommandQueue_OpenTK_Compute_OpenCL_CLBuffer_System_Boolean_System_UIntPtr___System_UIntPtr___System_UIntPtr___System_UIntPtr_System_UIntPtr_System_UIntPtr_System_UIntPtr_System_Span___0__OpenTK_Compute_OpenCL_CLEvent___OpenTK_Compute_OpenCL_CLEvent__" data-uid="OpenTK.Compute.OpenCL.CL.EnqueueReadBufferRect``1(OpenTK.Compute.OpenCL.CLCommandQueue,OpenTK.Compute.OpenCL.CLBuffer,System.Boolean,System.UIntPtr[],System.UIntPtr[],System.UIntPtr[],System.UIntPtr,System.UIntPtr,System.UIntPtr,System.UIntPtr,System.Span{``0},OpenTK.Compute.OpenCL.CLEvent[],OpenTK.Compute.OpenCL.CLEvent@)">EnqueueReadBufferRect&lt;T&gt;(CLCommandQueue, CLBuffer, bool, nuint[], nuint[], nuint[], nuint, nuint, nuint, nuint, Span&lt;T&gt;, CLEvent[], out CLEvent)</h4>
-  <div class="markdown level1 summary"><p>Introduced in OpenCL 1.1</p>
+  <a id="OpenTK_Compute_OpenCL_CL_EnqueueReadBuffer_" data-uid="OpenTK.Compute.OpenCL.CL.EnqueueReadBuffer*"></a>
+  <h4 id="OpenTK_Compute_OpenCL_CL_EnqueueReadBuffer__1_OpenTK_Compute_OpenCL_CLCommandQueue_OpenTK_Compute_OpenCL_CLBuffer_System_Boolean_System_UIntPtr_System_Span___0__OpenTK_Compute_OpenCL_CLEvent___OpenTK_Compute_OpenCL_CLEvent__" data-uid="OpenTK.Compute.OpenCL.CL.EnqueueReadBuffer``1(OpenTK.Compute.OpenCL.CLCommandQueue,OpenTK.Compute.OpenCL.CLBuffer,System.Boolean,System.UIntPtr,System.Span{``0},OpenTK.Compute.OpenCL.CLEvent[],OpenTK.Compute.OpenCL.CLEvent@)">EnqueueReadBuffer&lt;T&gt;(CLCommandQueue, CLBuffer, bool, nuint, Span&lt;T&gt;, CLEvent[], out CLEvent)</h4>
+  <div class="markdown level1 summary"><p>Introduced in OpenCL 1.0</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static CLResultCode EnqueueReadBufferRect&lt;T&gt;(CLCommandQueue commandQueue, CLBuffer buffer, bool blockingRead, nuint[] bufferOffset, nuint[] hostOffset, nuint[] region, nuint bufferRowPitch, nuint bufferSlicePitch, nuint hostRowPitch, nuint hostSlicePitch, Span&lt;T&gt; span, CLEvent[] eventWaitList, out CLEvent @event) where T : unmanaged</code></pre>
+    <pre><code class="lang-csharp hljs">public static CLResultCode EnqueueReadBuffer&lt;T&gt;(CLCommandQueue commandQueue, CLBuffer buffer, bool blockingRead, nuint offset, Span&lt;T&gt; span, CLEvent[] eventWaitList, out CLEvent eventHandle) where T : unmanaged</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -3925,38 +3869,8 @@ public static extern CLResultCode EnqueueMarker(CLCommandQueue commandQueue, CLE
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a>[]</td>
-        <td><span class="parametername">bufferOffset</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a>[]</td>
-        <td><span class="parametername">hostOffset</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a>[]</td>
-        <td><span class="parametername">region</span></td>
-        <td></td>
-      </tr>
-      <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
-        <td><span class="parametername">bufferRowPitch</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
-        <td><span class="parametername">bufferSlicePitch</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
-        <td><span class="parametername">hostRowPitch</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
-        <td><span class="parametername">hostSlicePitch</span></td>
+        <td><span class="parametername">offset</span></td>
         <td></td>
       </tr>
       <tr>
@@ -3971,7 +3885,93 @@ public static extern CLResultCode EnqueueMarker(CLCommandQueue commandQueue, CLE
       </tr>
       <tr>
         <td><a class="xref" href="OpenTK.Compute.OpenCL.CLEvent.html">CLEvent</a></td>
-        <td><span class="parametername">event</span></td>
+        <td><span class="parametername">eventHandle</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Compute.OpenCL.CLResultCode.html">CLResultCode</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Compute_OpenCL_CL_EnqueueReadBuffer_" data-uid="OpenTK.Compute.OpenCL.CL.EnqueueReadBuffer*"></a>
+  <h4 id="OpenTK_Compute_OpenCL_CL_EnqueueReadBuffer__1_OpenTK_Compute_OpenCL_CLCommandQueue_OpenTK_Compute_OpenCL_CLBuffer_System_Boolean_System_UIntPtr___0___OpenTK_Compute_OpenCL_CLEvent___OpenTK_Compute_OpenCL_CLEvent__" data-uid="OpenTK.Compute.OpenCL.CL.EnqueueReadBuffer``1(OpenTK.Compute.OpenCL.CLCommandQueue,OpenTK.Compute.OpenCL.CLBuffer,System.Boolean,System.UIntPtr,``0[],OpenTK.Compute.OpenCL.CLEvent[],OpenTK.Compute.OpenCL.CLEvent@)">EnqueueReadBuffer&lt;T&gt;(CLCommandQueue, CLBuffer, bool, nuint, T[], CLEvent[], out CLEvent)</h4>
+  <div class="markdown level1 summary"><p>Introduced in OpenCL1.0</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CLResultCode EnqueueReadBuffer&lt;T&gt;(CLCommandQueue commandQueue, CLBuffer buffer, bool blockingRead, nuint offset, T[] array, CLEvent[] eventWaitList, out CLEvent eventHandle) where T : unmanaged</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Compute.OpenCL.CLCommandQueue.html">CLCommandQueue</a></td>
+        <td><span class="parametername">commandQueue</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Compute.OpenCL.CLBuffer.html">CLBuffer</a></td>
+        <td><span class="parametername">buffer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">blockingRead</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
+        <td><span class="parametername">offset</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>T[]</td>
+        <td><span class="parametername">array</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Compute.OpenCL.CLEvent.html">CLEvent</a>[]</td>
+        <td><span class="parametername">eventWaitList</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Compute.OpenCL.CLEvent.html">CLEvent</a></td>
+        <td><span class="parametername">eventHandle</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -4139,6 +4139,67 @@ public static extern CLResultCode EnqueueMarker(CLCommandQueue commandQueue, CLE
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
         <td><span class="parametername">userData</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
+        <td><span class="parametername">numberOfEventsInWaitList</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Compute.OpenCL.CLEvent.html">CLEvent</a>[]</td>
+        <td><span class="parametername">eventWaitList</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Compute.OpenCL.CLEvent.html">CLEvent</a></td>
+        <td><span class="parametername">event</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Compute.OpenCL.CLResultCode.html">CLResultCode</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Compute_OpenCL_CL_EnqueueSVMUnmap_" data-uid="OpenTK.Compute.OpenCL.CL.EnqueueSVMUnmap*"></a>
+  <h4 id="OpenTK_Compute_OpenCL_CL_EnqueueSVMUnmap_OpenTK_Compute_OpenCL_CLCommandQueue_System_IntPtr_System_UInt32_OpenTK_Compute_OpenCL_CLEvent___OpenTK_Compute_OpenCL_CLEvent__" data-uid="OpenTK.Compute.OpenCL.CL.EnqueueSVMUnmap(OpenTK.Compute.OpenCL.CLCommandQueue,System.IntPtr,System.UInt32,OpenTK.Compute.OpenCL.CLEvent[],OpenTK.Compute.OpenCL.CLEvent@)">EnqueueSVMUnmap(CLCommandQueue, IntPtr, uint, CLEvent[], out CLEvent)</h4>
+  <div class="markdown level1 summary"><p>Introduced in OpenCL 2.0</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern CLResultCode EnqueueSVMUnmap(CLCommandQueue commandQueue, IntPtr svmPointer, uint numberOfEventsInWaitList, CLEvent[] eventWaitList, out CLEvent @event)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Compute.OpenCL.CLCommandQueue.html">CLCommandQueue</a></td>
+        <td><span class="parametername">commandQueue</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><span class="parametername">svmPointer</span></td>
         <td></td>
       </tr>
       <tr>
@@ -4443,67 +4504,6 @@ public static extern CLResultCode EnqueueMarker(CLCommandQueue commandQueue, CLE
       <tr>
         <td><a class="xref" href="OpenTK.Compute.OpenCL.MemoryMigrationFlags.html">MemoryMigrationFlags</a></td>
         <td><span class="parametername">memoryMigrationFlags</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
-        <td><span class="parametername">numberOfEventsInWaitList</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="OpenTK.Compute.OpenCL.CLEvent.html">CLEvent</a>[]</td>
-        <td><span class="parametername">eventWaitList</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="OpenTK.Compute.OpenCL.CLEvent.html">CLEvent</a></td>
-        <td><span class="parametername">event</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Compute.OpenCL.CLResultCode.html">CLResultCode</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="OpenTK_Compute_OpenCL_CL_EnqueueSVMUnmap_" data-uid="OpenTK.Compute.OpenCL.CL.EnqueueSVMUnmap*"></a>
-  <h4 id="OpenTK_Compute_OpenCL_CL_EnqueueSVMUnmap_OpenTK_Compute_OpenCL_CLCommandQueue_System_IntPtr_System_UInt32_OpenTK_Compute_OpenCL_CLEvent___OpenTK_Compute_OpenCL_CLEvent__" data-uid="OpenTK.Compute.OpenCL.CL.EnqueueSVMUnmap(OpenTK.Compute.OpenCL.CLCommandQueue,System.IntPtr,System.UInt32,OpenTK.Compute.OpenCL.CLEvent[],OpenTK.Compute.OpenCL.CLEvent@)">EnqueueSVMUnmap(CLCommandQueue, IntPtr, uint, CLEvent[], out CLEvent)</h4>
-  <div class="markdown level1 summary"><p>Introduced in OpenCL 2.0</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern CLResultCode EnqueueSVMUnmap(CLCommandQueue commandQueue, IntPtr svmPointer, uint numberOfEventsInWaitList, CLEvent[] eventWaitList, out CLEvent @event)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Compute.OpenCL.CLCommandQueue.html">CLCommandQueue</a></td>
-        <td><span class="parametername">commandQueue</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
-        <td><span class="parametername">svmPointer</span></td>
         <td></td>
       </tr>
       <tr>
@@ -4931,14 +4931,14 @@ public static extern CLResultCode EnqueueWaitForEvents(CLCommandQueue commandQue
       </tr>
     </tbody>
   </table>
-  <a id="OpenTK_Compute_OpenCL_CL_EnqueueWriteBuffer_" data-uid="OpenTK.Compute.OpenCL.CL.EnqueueWriteBuffer*"></a>
-  <h4 id="OpenTK_Compute_OpenCL_CL_EnqueueWriteBuffer__1_OpenTK_Compute_OpenCL_CLCommandQueue_OpenTK_Compute_OpenCL_CLBuffer_System_Boolean_System_UIntPtr___0___OpenTK_Compute_OpenCL_CLEvent___OpenTK_Compute_OpenCL_CLEvent__" data-uid="OpenTK.Compute.OpenCL.CL.EnqueueWriteBuffer``1(OpenTK.Compute.OpenCL.CLCommandQueue,OpenTK.Compute.OpenCL.CLBuffer,System.Boolean,System.UIntPtr,``0[],OpenTK.Compute.OpenCL.CLEvent[],OpenTK.Compute.OpenCL.CLEvent@)">EnqueueWriteBuffer&lt;T&gt;(CLCommandQueue, CLBuffer, bool, nuint, T[], CLEvent[], out CLEvent)</h4>
-  <div class="markdown level1 summary"><p>Introduced in OpenCL 1.0</p>
+  <a id="OpenTK_Compute_OpenCL_CL_EnqueueWriteBufferRect_" data-uid="OpenTK.Compute.OpenCL.CL.EnqueueWriteBufferRect*"></a>
+  <h4 id="OpenTK_Compute_OpenCL_CL_EnqueueWriteBufferRect_OpenTK_Compute_OpenCL_CLCommandQueue_OpenTK_Compute_OpenCL_CLBuffer_System_Boolean_System_UIntPtr___System_UIntPtr___System_UIntPtr___System_UIntPtr_System_UIntPtr_System_UIntPtr_System_UIntPtr_System_IntPtr_System_UInt32_OpenTK_Compute_OpenCL_CLEvent___OpenTK_Compute_OpenCL_CLEvent__" data-uid="OpenTK.Compute.OpenCL.CL.EnqueueWriteBufferRect(OpenTK.Compute.OpenCL.CLCommandQueue,OpenTK.Compute.OpenCL.CLBuffer,System.Boolean,System.UIntPtr[],System.UIntPtr[],System.UIntPtr[],System.UIntPtr,System.UIntPtr,System.UIntPtr,System.UIntPtr,System.IntPtr,System.UInt32,OpenTK.Compute.OpenCL.CLEvent[],OpenTK.Compute.OpenCL.CLEvent@)">EnqueueWriteBufferRect(CLCommandQueue, CLBuffer, bool, nuint[], nuint[], nuint[], nuint, nuint, nuint, nuint, IntPtr, uint, CLEvent[], out CLEvent)</h4>
+  <div class="markdown level1 summary"><p>Introduced in OpenCL 1.1</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static CLResultCode EnqueueWriteBuffer&lt;T&gt;(CLCommandQueue commandQueue, CLBuffer buffer, bool blockingWrite, nuint offset, T[] array, CLEvent[] eventWaitList, out CLEvent @event) where T : unmanaged</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern CLResultCode EnqueueWriteBufferRect(CLCommandQueue commandQueue, CLBuffer buffer, bool blockingWrite, nuint[] bufferOffset, nuint[] hostOffset, nuint[] region, nuint bufferRowPitch, nuint bufferSlicePitch, nuint hostRowPitch, nuint hostSlicePitch, IntPtr pointer, uint numberOfEventsInWaitList, CLEvent[] eventWaitList, out CLEvent @event)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -4966,8 +4966,260 @@ public static extern CLResultCode EnqueueWaitForEvents(CLCommandQueue commandQue
         <td></td>
       </tr>
       <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a>[]</td>
+        <td><span class="parametername">bufferOffset</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a>[]</td>
+        <td><span class="parametername">hostOffset</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a>[]</td>
+        <td><span class="parametername">region</span></td>
+        <td></td>
+      </tr>
+      <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
-        <td><span class="parametername">offset</span></td>
+        <td><span class="parametername">bufferRowPitch</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
+        <td><span class="parametername">bufferSlicePitch</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
+        <td><span class="parametername">hostRowPitch</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
+        <td><span class="parametername">hostSlicePitch</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><span class="parametername">pointer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
+        <td><span class="parametername">numberOfEventsInWaitList</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Compute.OpenCL.CLEvent.html">CLEvent</a>[]</td>
+        <td><span class="parametername">eventWaitList</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Compute.OpenCL.CLEvent.html">CLEvent</a></td>
+        <td><span class="parametername">event</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Compute.OpenCL.CLResultCode.html">CLResultCode</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Compute_OpenCL_CL_EnqueueWriteBufferRect_" data-uid="OpenTK.Compute.OpenCL.CL.EnqueueWriteBufferRect*"></a>
+  <h4 id="OpenTK_Compute_OpenCL_CL_EnqueueWriteBufferRect__1_OpenTK_Compute_OpenCL_CLCommandQueue_OpenTK_Compute_OpenCL_CLBuffer_System_Boolean_System_UIntPtr___System_UIntPtr___System_UIntPtr___System_UIntPtr_System_UIntPtr_System_UIntPtr_System_UIntPtr_System_Span___0__OpenTK_Compute_OpenCL_CLEvent___OpenTK_Compute_OpenCL_CLEvent__" data-uid="OpenTK.Compute.OpenCL.CL.EnqueueWriteBufferRect``1(OpenTK.Compute.OpenCL.CLCommandQueue,OpenTK.Compute.OpenCL.CLBuffer,System.Boolean,System.UIntPtr[],System.UIntPtr[],System.UIntPtr[],System.UIntPtr,System.UIntPtr,System.UIntPtr,System.UIntPtr,System.Span{``0},OpenTK.Compute.OpenCL.CLEvent[],OpenTK.Compute.OpenCL.CLEvent@)">EnqueueWriteBufferRect&lt;T&gt;(CLCommandQueue, CLBuffer, bool, nuint[], nuint[], nuint[], nuint, nuint, nuint, nuint, Span&lt;T&gt;, CLEvent[], out CLEvent)</h4>
+  <div class="markdown level1 summary"><p>Introduced in OpenCL 1.1</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CLResultCode EnqueueWriteBufferRect&lt;T&gt;(CLCommandQueue commandQueue, CLBuffer buffer, bool blockingWrite, nuint[] bufferOffset, nuint[] hostOffset, nuint[] region, nuint bufferRowPitch, nuint bufferSlicePitch, nuint hostRowPitch, nuint hostSlicePitch, Span&lt;T&gt; span, CLEvent[] eventWaitList, out CLEvent @event) where T : unmanaged</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Compute.OpenCL.CLCommandQueue.html">CLCommandQueue</a></td>
+        <td><span class="parametername">commandQueue</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Compute.OpenCL.CLBuffer.html">CLBuffer</a></td>
+        <td><span class="parametername">buffer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">blockingWrite</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a>[]</td>
+        <td><span class="parametername">bufferOffset</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a>[]</td>
+        <td><span class="parametername">hostOffset</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a>[]</td>
+        <td><span class="parametername">region</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
+        <td><span class="parametername">bufferRowPitch</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
+        <td><span class="parametername">bufferSlicePitch</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
+        <td><span class="parametername">hostRowPitch</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
+        <td><span class="parametername">hostSlicePitch</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.span-1">Span</a>&lt;T&gt;</td>
+        <td><span class="parametername">span</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Compute.OpenCL.CLEvent.html">CLEvent</a>[]</td>
+        <td><span class="parametername">eventWaitList</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Compute.OpenCL.CLEvent.html">CLEvent</a></td>
+        <td><span class="parametername">event</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Compute.OpenCL.CLResultCode.html">CLResultCode</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Compute_OpenCL_CL_EnqueueWriteBufferRect_" data-uid="OpenTK.Compute.OpenCL.CL.EnqueueWriteBufferRect*"></a>
+  <h4 id="OpenTK_Compute_OpenCL_CL_EnqueueWriteBufferRect__1_OpenTK_Compute_OpenCL_CLCommandQueue_OpenTK_Compute_OpenCL_CLBuffer_System_Boolean_System_UIntPtr___System_UIntPtr___System_UIntPtr___System_UIntPtr_System_UIntPtr_System_UIntPtr_System_UIntPtr___0___OpenTK_Compute_OpenCL_CLEvent___OpenTK_Compute_OpenCL_CLEvent__" data-uid="OpenTK.Compute.OpenCL.CL.EnqueueWriteBufferRect``1(OpenTK.Compute.OpenCL.CLCommandQueue,OpenTK.Compute.OpenCL.CLBuffer,System.Boolean,System.UIntPtr[],System.UIntPtr[],System.UIntPtr[],System.UIntPtr,System.UIntPtr,System.UIntPtr,System.UIntPtr,``0[],OpenTK.Compute.OpenCL.CLEvent[],OpenTK.Compute.OpenCL.CLEvent@)">EnqueueWriteBufferRect&lt;T&gt;(CLCommandQueue, CLBuffer, bool, nuint[], nuint[], nuint[], nuint, nuint, nuint, nuint, T[], CLEvent[], out CLEvent)</h4>
+  <div class="markdown level1 summary"><p>Introduced in OpenCL 1.1</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CLResultCode EnqueueWriteBufferRect&lt;T&gt;(CLCommandQueue commandQueue, CLBuffer buffer, bool blockingWrite, nuint[] bufferOffset, nuint[] hostOffset, nuint[] region, nuint bufferRowPitch, nuint bufferSlicePitch, nuint hostRowPitch, nuint hostSlicePitch, T[] array, CLEvent[] eventWaitList, out CLEvent @event) where T : unmanaged</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Compute.OpenCL.CLCommandQueue.html">CLCommandQueue</a></td>
+        <td><span class="parametername">commandQueue</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Compute.OpenCL.CLBuffer.html">CLBuffer</a></td>
+        <td><span class="parametername">buffer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">blockingWrite</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a>[]</td>
+        <td><span class="parametername">bufferOffset</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a>[]</td>
+        <td><span class="parametername">hostOffset</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a>[]</td>
+        <td><span class="parametername">region</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
+        <td><span class="parametername">bufferRowPitch</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
+        <td><span class="parametername">bufferSlicePitch</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
+        <td><span class="parametername">hostRowPitch</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
+        <td><span class="parametername">hostSlicePitch</span></td>
         <td></td>
       </tr>
       <tr>
@@ -5103,14 +5355,14 @@ public static extern CLResultCode EnqueueWaitForEvents(CLCommandQueue commandQue
       </tr>
     </tbody>
   </table>
-  <a id="OpenTK_Compute_OpenCL_CL_EnqueueWriteBufferRect_" data-uid="OpenTK.Compute.OpenCL.CL.EnqueueWriteBufferRect*"></a>
-  <h4 id="OpenTK_Compute_OpenCL_CL_EnqueueWriteBufferRect_OpenTK_Compute_OpenCL_CLCommandQueue_OpenTK_Compute_OpenCL_CLBuffer_System_Boolean_System_UIntPtr___System_UIntPtr___System_UIntPtr___System_UIntPtr_System_UIntPtr_System_UIntPtr_System_UIntPtr_System_IntPtr_System_UInt32_OpenTK_Compute_OpenCL_CLEvent___OpenTK_Compute_OpenCL_CLEvent__" data-uid="OpenTK.Compute.OpenCL.CL.EnqueueWriteBufferRect(OpenTK.Compute.OpenCL.CLCommandQueue,OpenTK.Compute.OpenCL.CLBuffer,System.Boolean,System.UIntPtr[],System.UIntPtr[],System.UIntPtr[],System.UIntPtr,System.UIntPtr,System.UIntPtr,System.UIntPtr,System.IntPtr,System.UInt32,OpenTK.Compute.OpenCL.CLEvent[],OpenTK.Compute.OpenCL.CLEvent@)">EnqueueWriteBufferRect(CLCommandQueue, CLBuffer, bool, nuint[], nuint[], nuint[], nuint, nuint, nuint, nuint, IntPtr, uint, CLEvent[], out CLEvent)</h4>
-  <div class="markdown level1 summary"><p>Introduced in OpenCL 1.1</p>
+  <a id="OpenTK_Compute_OpenCL_CL_EnqueueWriteBuffer_" data-uid="OpenTK.Compute.OpenCL.CL.EnqueueWriteBuffer*"></a>
+  <h4 id="OpenTK_Compute_OpenCL_CL_EnqueueWriteBuffer__1_OpenTK_Compute_OpenCL_CLCommandQueue_OpenTK_Compute_OpenCL_CLBuffer_System_Boolean_System_UIntPtr___0___OpenTK_Compute_OpenCL_CLEvent___OpenTK_Compute_OpenCL_CLEvent__" data-uid="OpenTK.Compute.OpenCL.CL.EnqueueWriteBuffer``1(OpenTK.Compute.OpenCL.CLCommandQueue,OpenTK.Compute.OpenCL.CLBuffer,System.Boolean,System.UIntPtr,``0[],OpenTK.Compute.OpenCL.CLEvent[],OpenTK.Compute.OpenCL.CLEvent@)">EnqueueWriteBuffer&lt;T&gt;(CLCommandQueue, CLBuffer, bool, nuint, T[], CLEvent[], out CLEvent)</h4>
+  <div class="markdown level1 summary"><p>Introduced in OpenCL 1.0</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern CLResultCode EnqueueWriteBufferRect(CLCommandQueue commandQueue, CLBuffer buffer, bool blockingWrite, nuint[] bufferOffset, nuint[] hostOffset, nuint[] region, nuint bufferRowPitch, nuint bufferSlicePitch, nuint hostRowPitch, nuint hostSlicePitch, IntPtr pointer, uint numberOfEventsInWaitList, CLEvent[] eventWaitList, out CLEvent @event)</code></pre>
+    <pre><code class="lang-csharp hljs">public static CLResultCode EnqueueWriteBuffer&lt;T&gt;(CLCommandQueue commandQueue, CLBuffer buffer, bool blockingWrite, nuint offset, T[] array, CLEvent[] eventWaitList, out CLEvent @event) where T : unmanaged</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -5138,265 +5390,13 @@ public static extern CLResultCode EnqueueWaitForEvents(CLCommandQueue commandQue
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a>[]</td>
-        <td><span class="parametername">bufferOffset</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a>[]</td>
-        <td><span class="parametername">hostOffset</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a>[]</td>
-        <td><span class="parametername">region</span></td>
-        <td></td>
-      </tr>
-      <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
-        <td><span class="parametername">bufferRowPitch</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
-        <td><span class="parametername">bufferSlicePitch</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
-        <td><span class="parametername">hostRowPitch</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
-        <td><span class="parametername">hostSlicePitch</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
-        <td><span class="parametername">pointer</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
-        <td><span class="parametername">numberOfEventsInWaitList</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="OpenTK.Compute.OpenCL.CLEvent.html">CLEvent</a>[]</td>
-        <td><span class="parametername">eventWaitList</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="OpenTK.Compute.OpenCL.CLEvent.html">CLEvent</a></td>
-        <td><span class="parametername">event</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Compute.OpenCL.CLResultCode.html">CLResultCode</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="OpenTK_Compute_OpenCL_CL_EnqueueWriteBufferRect_" data-uid="OpenTK.Compute.OpenCL.CL.EnqueueWriteBufferRect*"></a>
-  <h4 id="OpenTK_Compute_OpenCL_CL_EnqueueWriteBufferRect__1_OpenTK_Compute_OpenCL_CLCommandQueue_OpenTK_Compute_OpenCL_CLBuffer_System_Boolean_System_UIntPtr___System_UIntPtr___System_UIntPtr___System_UIntPtr_System_UIntPtr_System_UIntPtr_System_UIntPtr___0___OpenTK_Compute_OpenCL_CLEvent___OpenTK_Compute_OpenCL_CLEvent__" data-uid="OpenTK.Compute.OpenCL.CL.EnqueueWriteBufferRect``1(OpenTK.Compute.OpenCL.CLCommandQueue,OpenTK.Compute.OpenCL.CLBuffer,System.Boolean,System.UIntPtr[],System.UIntPtr[],System.UIntPtr[],System.UIntPtr,System.UIntPtr,System.UIntPtr,System.UIntPtr,``0[],OpenTK.Compute.OpenCL.CLEvent[],OpenTK.Compute.OpenCL.CLEvent@)">EnqueueWriteBufferRect&lt;T&gt;(CLCommandQueue, CLBuffer, bool, nuint[], nuint[], nuint[], nuint, nuint, nuint, nuint, T[], CLEvent[], out CLEvent)</h4>
-  <div class="markdown level1 summary"><p>Introduced in OpenCL 1.1</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static CLResultCode EnqueueWriteBufferRect&lt;T&gt;(CLCommandQueue commandQueue, CLBuffer buffer, bool blockingWrite, nuint[] bufferOffset, nuint[] hostOffset, nuint[] region, nuint bufferRowPitch, nuint bufferSlicePitch, nuint hostRowPitch, nuint hostSlicePitch, T[] array, CLEvent[] eventWaitList, out CLEvent @event) where T : unmanaged</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Compute.OpenCL.CLCommandQueue.html">CLCommandQueue</a></td>
-        <td><span class="parametername">commandQueue</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="OpenTK.Compute.OpenCL.CLBuffer.html">CLBuffer</a></td>
-        <td><span class="parametername">buffer</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
-        <td><span class="parametername">blockingWrite</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a>[]</td>
-        <td><span class="parametername">bufferOffset</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a>[]</td>
-        <td><span class="parametername">hostOffset</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a>[]</td>
-        <td><span class="parametername">region</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
-        <td><span class="parametername">bufferRowPitch</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
-        <td><span class="parametername">bufferSlicePitch</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
-        <td><span class="parametername">hostRowPitch</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
-        <td><span class="parametername">hostSlicePitch</span></td>
+        <td><span class="parametername">offset</span></td>
         <td></td>
       </tr>
       <tr>
         <td>T[]</td>
         <td><span class="parametername">array</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="OpenTK.Compute.OpenCL.CLEvent.html">CLEvent</a>[]</td>
-        <td><span class="parametername">eventWaitList</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="OpenTK.Compute.OpenCL.CLEvent.html">CLEvent</a></td>
-        <td><span class="parametername">event</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Compute.OpenCL.CLResultCode.html">CLResultCode</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="typeParameters">Type Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="parametername">T</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="OpenTK_Compute_OpenCL_CL_EnqueueWriteBufferRect_" data-uid="OpenTK.Compute.OpenCL.CL.EnqueueWriteBufferRect*"></a>
-  <h4 id="OpenTK_Compute_OpenCL_CL_EnqueueWriteBufferRect__1_OpenTK_Compute_OpenCL_CLCommandQueue_OpenTK_Compute_OpenCL_CLBuffer_System_Boolean_System_UIntPtr___System_UIntPtr___System_UIntPtr___System_UIntPtr_System_UIntPtr_System_UIntPtr_System_UIntPtr_System_Span___0__OpenTK_Compute_OpenCL_CLEvent___OpenTK_Compute_OpenCL_CLEvent__" data-uid="OpenTK.Compute.OpenCL.CL.EnqueueWriteBufferRect``1(OpenTK.Compute.OpenCL.CLCommandQueue,OpenTK.Compute.OpenCL.CLBuffer,System.Boolean,System.UIntPtr[],System.UIntPtr[],System.UIntPtr[],System.UIntPtr,System.UIntPtr,System.UIntPtr,System.UIntPtr,System.Span{``0},OpenTK.Compute.OpenCL.CLEvent[],OpenTK.Compute.OpenCL.CLEvent@)">EnqueueWriteBufferRect&lt;T&gt;(CLCommandQueue, CLBuffer, bool, nuint[], nuint[], nuint[], nuint, nuint, nuint, nuint, Span&lt;T&gt;, CLEvent[], out CLEvent)</h4>
-  <div class="markdown level1 summary"><p>Introduced in OpenCL 1.1</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static CLResultCode EnqueueWriteBufferRect&lt;T&gt;(CLCommandQueue commandQueue, CLBuffer buffer, bool blockingWrite, nuint[] bufferOffset, nuint[] hostOffset, nuint[] region, nuint bufferRowPitch, nuint bufferSlicePitch, nuint hostRowPitch, nuint hostSlicePitch, Span&lt;T&gt; span, CLEvent[] eventWaitList, out CLEvent @event) where T : unmanaged</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Compute.OpenCL.CLCommandQueue.html">CLCommandQueue</a></td>
-        <td><span class="parametername">commandQueue</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="OpenTK.Compute.OpenCL.CLBuffer.html">CLBuffer</a></td>
-        <td><span class="parametername">buffer</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
-        <td><span class="parametername">blockingWrite</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a>[]</td>
-        <td><span class="parametername">bufferOffset</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a>[]</td>
-        <td><span class="parametername">hostOffset</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a>[]</td>
-        <td><span class="parametername">region</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
-        <td><span class="parametername">bufferRowPitch</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
-        <td><span class="parametername">bufferSlicePitch</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
-        <td><span class="parametername">hostRowPitch</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
-        <td><span class="parametername">hostSlicePitch</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.span-1">Span</a>&lt;T&gt;</td>
-        <td><span class="parametername">span</span></td>
         <td></td>
       </tr>
       <tr>
@@ -9241,6 +9241,108 @@ See more: <a href="https://www.khronos.org/registry/OpenCL/sdk/2.2/docs/man/html
       </tr>
     </tbody>
   </table>
+  <a id="OpenTK_Compute_OpenCL_CL_SVMAlloc_" data-uid="OpenTK.Compute.OpenCL.CL.SVMAlloc*"></a>
+  <h4 id="OpenTK_Compute_OpenCL_CL_SVMAlloc_OpenTK_Compute_OpenCL_CLContext_OpenTK_Compute_OpenCL_SvmMemoryFlags_System_UIntPtr_System_UInt32_" data-uid="OpenTK.Compute.OpenCL.CL.SVMAlloc(OpenTK.Compute.OpenCL.CLContext,OpenTK.Compute.OpenCL.SvmMemoryFlags,System.UIntPtr,System.UInt32)">SVMAlloc(CLContext, SvmMemoryFlags, nuint, uint)</h4>
+  <div class="markdown level1 summary"><p>Introduced in OpenCL 2.0</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern IntPtr SVMAlloc(CLContext context, SvmMemoryFlags flags, nuint size, uint alignment)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Compute.OpenCL.CLContext.html">CLContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Compute.OpenCL.SvmMemoryFlags.html">SvmMemoryFlags</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
+        <td><span class="parametername">size</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
+        <td><span class="parametername">alignment</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Compute_OpenCL_CL_SVMFree_" data-uid="OpenTK.Compute.OpenCL.CL.SVMFree*"></a>
+  <h4 id="OpenTK_Compute_OpenCL_CL_SVMFree_OpenTK_Compute_OpenCL_CLContext_System_IntPtr_" data-uid="OpenTK.Compute.OpenCL.CL.SVMFree(OpenTK.Compute.OpenCL.CLContext,System.IntPtr)">SVMFree(CLContext, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Introduced in OpenCL 2.0</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern IntPtr SVMFree(CLContext context, IntPtr svmPointer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Compute.OpenCL.CLContext.html">CLContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><span class="parametername">svmPointer</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <a id="OpenTK_Compute_OpenCL_CL_SetDefaultDeviceCommandQueue_" data-uid="OpenTK.Compute.OpenCL.CL.SetDefaultDeviceCommandQueue*"></a>
   <h4 id="OpenTK_Compute_OpenCL_CL_SetDefaultDeviceCommandQueue_OpenTK_Compute_OpenCL_CLContext_OpenTK_Compute_OpenCL_CLDevice_OpenTK_Compute_OpenCL_CLCommandQueue_" data-uid="OpenTK.Compute.OpenCL.CL.SetDefaultDeviceCommandQueue(OpenTK.Compute.OpenCL.CLContext,OpenTK.Compute.OpenCL.CLDevice,OpenTK.Compute.OpenCL.CLCommandQueue)">SetDefaultDeviceCommandQueue(CLContext, CLDevice, CLCommandQueue)</h4>
   <div class="markdown level1 summary"><p>Introduced in OpenCL 2.1</p>
@@ -9455,6 +9557,57 @@ See more: <a href="https://www.khronos.org/registry/OpenCL/sdk/2.2/docs/man/html
       </tr>
     </tbody>
   </table>
+  <a id="OpenTK_Compute_OpenCL_CL_SetKernelArgSVMPointer_" data-uid="OpenTK.Compute.OpenCL.CL.SetKernelArgSVMPointer*"></a>
+  <h4 id="OpenTK_Compute_OpenCL_CL_SetKernelArgSVMPointer_OpenTK_Compute_OpenCL_CLKernel_System_UInt32_System_IntPtr_" data-uid="OpenTK.Compute.OpenCL.CL.SetKernelArgSVMPointer(OpenTK.Compute.OpenCL.CLKernel,System.UInt32,System.IntPtr)">SetKernelArgSVMPointer(CLKernel, uint, IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Introduced in OpenCL 2.0</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern CLResultCode SetKernelArgSVMPointer(CLKernel kernel, uint argumentIndex, IntPtr argumentValuePointer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Compute.OpenCL.CLKernel.html">CLKernel</a></td>
+        <td><span class="parametername">kernel</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
+        <td><span class="parametername">argumentIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><span class="parametername">argumentValuePointer</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Compute.OpenCL.CLResultCode.html">CLResultCode</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <a id="OpenTK_Compute_OpenCL_CL_SetKernelArg_" data-uid="OpenTK.Compute.OpenCL.CL.SetKernelArg*"></a>
   <h4 id="OpenTK_Compute_OpenCL_CL_SetKernelArg__1_OpenTK_Compute_OpenCL_CLKernel_System_UInt32___0__" data-uid="OpenTK.Compute.OpenCL.CL.SetKernelArg``1(OpenTK.Compute.OpenCL.CLKernel,System.UInt32,``0@)">SetKernelArg&lt;T&gt;(CLKernel, uint, in T)</h4>
   <div class="markdown level1 summary"><p>Introduced in OpenCL 1.0</p>
@@ -9517,57 +9670,6 @@ See more: <a href="https://www.khronos.org/registry/OpenCL/sdk/2.2/docs/man/html
     <tbody>
       <tr>
         <td><span class="parametername">T</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="OpenTK_Compute_OpenCL_CL_SetKernelArgSVMPointer_" data-uid="OpenTK.Compute.OpenCL.CL.SetKernelArgSVMPointer*"></a>
-  <h4 id="OpenTK_Compute_OpenCL_CL_SetKernelArgSVMPointer_OpenTK_Compute_OpenCL_CLKernel_System_UInt32_System_IntPtr_" data-uid="OpenTK.Compute.OpenCL.CL.SetKernelArgSVMPointer(OpenTK.Compute.OpenCL.CLKernel,System.UInt32,System.IntPtr)">SetKernelArgSVMPointer(CLKernel, uint, IntPtr)</h4>
-  <div class="markdown level1 summary"><p>Introduced in OpenCL 2.0</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern CLResultCode SetKernelArgSVMPointer(CLKernel kernel, uint argumentIndex, IntPtr argumentValuePointer)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Compute.OpenCL.CLKernel.html">CLKernel</a></td>
-        <td><span class="parametername">kernel</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
-        <td><span class="parametername">argumentIndex</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
-        <td><span class="parametername">argumentValuePointer</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Compute.OpenCL.CLResultCode.html">CLResultCode</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -9981,108 +10083,6 @@ See more: <a href="https://www.khronos.org/registry/OpenCL/sdk/2.2/docs/man/html
     <tbody>
       <tr>
         <td><a class="xref" href="OpenTK.Compute.OpenCL.CLResultCode.html">CLResultCode</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="OpenTK_Compute_OpenCL_CL_SVMAlloc_" data-uid="OpenTK.Compute.OpenCL.CL.SVMAlloc*"></a>
-  <h4 id="OpenTK_Compute_OpenCL_CL_SVMAlloc_OpenTK_Compute_OpenCL_CLContext_OpenTK_Compute_OpenCL_SvmMemoryFlags_System_UIntPtr_System_UInt32_" data-uid="OpenTK.Compute.OpenCL.CL.SVMAlloc(OpenTK.Compute.OpenCL.CLContext,OpenTK.Compute.OpenCL.SvmMemoryFlags,System.UIntPtr,System.UInt32)">SVMAlloc(CLContext, SvmMemoryFlags, nuint, uint)</h4>
-  <div class="markdown level1 summary"><p>Introduced in OpenCL 2.0</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern IntPtr SVMAlloc(CLContext context, SvmMemoryFlags flags, nuint size, uint alignment)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Compute.OpenCL.CLContext.html">CLContext</a></td>
-        <td><span class="parametername">context</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="OpenTK.Compute.OpenCL.SvmMemoryFlags.html">SvmMemoryFlags</a></td>
-        <td><span class="parametername">flags</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
-        <td><span class="parametername">size</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
-        <td><span class="parametername">alignment</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="OpenTK_Compute_OpenCL_CL_SVMFree_" data-uid="OpenTK.Compute.OpenCL.CL.SVMFree*"></a>
-  <h4 id="OpenTK_Compute_OpenCL_CL_SVMFree_OpenTK_Compute_OpenCL_CLContext_System_IntPtr_" data-uid="OpenTK.Compute.OpenCL.CL.SVMFree(OpenTK.Compute.OpenCL.CLContext,System.IntPtr)">SVMFree(CLContext, IntPtr)</h4>
-  <div class="markdown level1 summary"><p>Introduced in OpenCL 2.0</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern IntPtr SVMFree(CLContext context, IntPtr svmPointer)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Compute.OpenCL.CLContext.html">CLContext</a></td>
-        <td><span class="parametername">context</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
-        <td><span class="parametername">svmPointer</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
         <td></td>
       </tr>
     </tbody>

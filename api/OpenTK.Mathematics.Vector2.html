@@ -114,6 +114,33 @@ public struct Vector2 : IEquatable&lt;Vector2&gt;</code></pre>
   <h3 id="constructors">Constructors
 </h3>
   <a id="OpenTK_Mathematics_Vector2__ctor_" data-uid="OpenTK.Mathematics.Vector2.#ctor*"></a>
+  <h4 id="OpenTK_Mathematics_Vector2__ctor_System_Single_" data-uid="OpenTK.Mathematics.Vector2.#ctor(System.Single)">Vector2(float)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="OpenTK.Mathematics.Vector2.html">Vector2</a> struct.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2(float value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value that will initialize this instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Vector2__ctor_" data-uid="OpenTK.Mathematics.Vector2.#ctor*"></a>
   <h4 id="OpenTK_Mathematics_Vector2__ctor_System_Single_System_Single_" data-uid="OpenTK.Mathematics.Vector2.#ctor(System.Single,System.Single)">Vector2(float, float)</h4>
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="OpenTK.Mathematics.Vector2.html">Vector2</a> struct.</p>
 </div>
@@ -142,33 +169,6 @@ public struct Vector2 : IEquatable&lt;Vector2&gt;</code></pre>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
         <td><span class="parametername">y</span></td>
         <td><p>The y component of the Vector2.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="OpenTK_Mathematics_Vector2__ctor_" data-uid="OpenTK.Mathematics.Vector2.#ctor*"></a>
-  <h4 id="OpenTK_Mathematics_Vector2__ctor_System_Single_" data-uid="OpenTK.Mathematics.Vector2.#ctor(System.Single)">Vector2(float)</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="OpenTK.Mathematics.Vector2.html">Vector2</a> struct.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Vector2(float value)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
-        <td><span class="parametername">value</span></td>
-        <td><p>The value that will initialize this instance.</p>
 </td>
       </tr>
     </tbody>
@@ -1583,7 +1583,8 @@ public static float Dot(Vector2 left, Vector2 right)</code></pre>
   </table>
   <a id="OpenTK_Mathematics_Vector2_Equals_" data-uid="OpenTK.Mathematics.Vector2.Equals*"></a>
   <h4 id="OpenTK_Mathematics_Vector2_Equals_OpenTK_Mathematics_Vector2_" data-uid="OpenTK.Mathematics.Vector2.Equals(OpenTK.Mathematics.Vector2)">Equals(Vector2)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Indicates whether the current object is equal to another object of the same type.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -1602,7 +1603,8 @@ public static float Dot(Vector2 left, Vector2 right)</code></pre>
       <tr>
         <td><a class="xref" href="OpenTK.Mathematics.Vector2.html">Vector2</a></td>
         <td><span class="parametername">other</span></td>
-        <td></td>
+        <td><p>An object to compare with this object.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1617,13 +1619,15 @@ public static float Dot(Vector2 left, Vector2 right)</code></pre>
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
-        <td></td>
+        <td><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <a id="OpenTK_Mathematics_Vector2_Equals_" data-uid="OpenTK.Mathematics.Vector2.Equals*"></a>
   <h4 id="OpenTK_Mathematics_Vector2_Equals_System_Object_" data-uid="OpenTK.Mathematics.Vector2.Equals(System.Object)">Equals(object)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Indicates whether this instance and a specified object are equal.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -1642,7 +1646,8 @@ public static float Dot(Vector2 left, Vector2 right)</code></pre>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></td>
         <td><span class="parametername">obj</span></td>
-        <td></td>
+        <td><p>The object to compare with the current instance.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1657,7 +1662,8 @@ public static float Dot(Vector2 left, Vector2 right)</code></pre>
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
-        <td></td>
+        <td><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if <code class="paramref">obj</code> and this instance are the same type and represent the same value; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1665,7 +1671,8 @@ public static float Dot(Vector2 left, Vector2 right)</code></pre>
   <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetype.equals">ValueType.Equals(object)</a></div>
   <a id="OpenTK_Mathematics_Vector2_GetHashCode_" data-uid="OpenTK.Mathematics.Vector2.GetHashCode*"></a>
   <h4 id="OpenTK_Mathematics_Vector2_GetHashCode" data-uid="OpenTK.Mathematics.Vector2.GetHashCode">GetHashCode()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Returns the hash code for this instance.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -1682,7 +1689,8 @@ public static float Dot(Vector2 left, Vector2 right)</code></pre>
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
-        <td></td>
+        <td><p>A 32-bit signed integer that is the hash code for this instance.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -2336,31 +2344,6 @@ public static Vector2 Normalize(Vector2 vec)</code></pre>
       </tr>
     </tbody>
   </table>
-  <a id="OpenTK_Mathematics_Vector2_Normalized_" data-uid="OpenTK.Mathematics.Vector2.Normalized*"></a>
-  <h4 id="OpenTK_Mathematics_Vector2_Normalized" data-uid="OpenTK.Mathematics.Vector2.Normalized">Normalized()</h4>
-  <div class="markdown level1 summary"><p>Returns a copy of the Vector2 scaled to unit length.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Vector2 Normalized()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Mathematics.Vector2.html">Vector2</a></td>
-        <td><p>The normalized copy.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
   <a id="OpenTK_Mathematics_Vector2_NormalizeFast_" data-uid="OpenTK.Mathematics.Vector2.NormalizeFast*"></a>
   <h4 id="OpenTK_Mathematics_Vector2_NormalizeFast" data-uid="OpenTK.Mathematics.Vector2.NormalizeFast">NormalizeFast()</h4>
   <div class="markdown level1 summary"><p>Scales the Vector2 to approximately unit length.</p>
@@ -2443,6 +2426,31 @@ public static Vector2 NormalizeFast(Vector2 vec)</code></pre>
         <td><a class="xref" href="OpenTK.Mathematics.Vector2.html">Vector2</a></td>
         <td><span class="parametername">result</span></td>
         <td><p>The normalized vector.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Vector2_Normalized_" data-uid="OpenTK.Mathematics.Vector2.Normalized*"></a>
+  <h4 id="OpenTK_Mathematics_Vector2_Normalized" data-uid="OpenTK.Mathematics.Vector2.Normalized">Normalized()</h4>
+  <div class="markdown level1 summary"><p>Returns a copy of the Vector2 scaled to unit length.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 Normalized()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector2.html">Vector2</a></td>
+        <td><p>The normalized copy.</p>
 </td>
       </tr>
     </tbody>
@@ -2627,7 +2635,8 @@ public static Vector2 Subtract(Vector2 a, Vector2 b)</code></pre>
   </table>
   <a id="OpenTK_Mathematics_Vector2_ToString_" data-uid="OpenTK.Mathematics.Vector2.ToString*"></a>
   <h4 id="OpenTK_Mathematics_Vector2_ToString" data-uid="OpenTK.Mathematics.Vector2.ToString">ToString()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Returns the fully qualified type name of this instance.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -2644,7 +2653,8 @@ public static Vector2 Subtract(Vector2 a, Vector2 b)</code></pre>
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
-        <td></td>
+        <td><p>The fully qualified type name.</p>
+</td>
       </tr>
     </tbody>
   </table>

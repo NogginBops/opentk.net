@@ -762,39 +762,6 @@ public static Matrix2x4d Add(Matrix2x4d left, Matrix2x4d right)</code></pre>
     </tbody>
   </table>
   <a id="OpenTK_Mathematics_Matrix2x4d_CreateRotation_" data-uid="OpenTK.Mathematics.Matrix2x4d.CreateRotation*"></a>
-  <h4 id="OpenTK_Mathematics_Matrix2x4d_CreateRotation_System_Double_OpenTK_Mathematics_Matrix2x4d__" data-uid="OpenTK.Mathematics.Matrix2x4d.CreateRotation(System.Double,OpenTK.Mathematics.Matrix2x4d@)">CreateRotation(double, out Matrix2x4d)</h4>
-  <div class="markdown level1 summary"><p>Builds a rotation matrix.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void CreateRotation(double angle, out Matrix2x4d result)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
-        <td><span class="parametername">angle</span></td>
-        <td><p>The counter-clockwise angle in radians.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="OpenTK.Mathematics.Matrix2x4d.html">Matrix2x4d</a></td>
-        <td><span class="parametername">result</span></td>
-        <td><p>The resulting Matrix2x4d instance.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="OpenTK_Mathematics_Matrix2x4d_CreateRotation_" data-uid="OpenTK.Mathematics.Matrix2x4d.CreateRotation*"></a>
   <h4 id="OpenTK_Mathematics_Matrix2x4d_CreateRotation_System_Double_" data-uid="OpenTK.Mathematics.Matrix2x4d.CreateRotation(System.Double)">CreateRotation(double)</h4>
   <div class="markdown level1 summary"><p>Builds a rotation matrix.</p>
 </div>
@@ -838,14 +805,14 @@ public static Matrix2x4d CreateRotation(double angle)</code></pre>
       </tr>
     </tbody>
   </table>
-  <a id="OpenTK_Mathematics_Matrix2x4d_CreateScale_" data-uid="OpenTK.Mathematics.Matrix2x4d.CreateScale*"></a>
-  <h4 id="OpenTK_Mathematics_Matrix2x4d_CreateScale_OpenTK_Mathematics_Vector2d_OpenTK_Mathematics_Matrix2x4d__" data-uid="OpenTK.Mathematics.Matrix2x4d.CreateScale(OpenTK.Mathematics.Vector2d,OpenTK.Mathematics.Matrix2x4d@)">CreateScale(Vector2d, out Matrix2x4d)</h4>
-  <div class="markdown level1 summary"><p>Creates a scale matrix.</p>
+  <a id="OpenTK_Mathematics_Matrix2x4d_CreateRotation_" data-uid="OpenTK.Mathematics.Matrix2x4d.CreateRotation*"></a>
+  <h4 id="OpenTK_Mathematics_Matrix2x4d_CreateRotation_System_Double_OpenTK_Mathematics_Matrix2x4d__" data-uid="OpenTK.Mathematics.Matrix2x4d.CreateRotation(System.Double,OpenTK.Mathematics.Matrix2x4d@)">CreateRotation(double, out Matrix2x4d)</h4>
+  <div class="markdown level1 summary"><p>Builds a rotation matrix.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void CreateScale(Vector2d scale, out Matrix2x4d result)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void CreateRotation(double angle, out Matrix2x4d result)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -858,15 +825,15 @@ public static Matrix2x4d CreateRotation(double angle)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Mathematics.Vector2d.html">Vector2d</a></td>
-        <td><span class="parametername">scale</span></td>
-        <td><p>Scale factors for the x and y axes.</p>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">angle</span></td>
+        <td><p>The counter-clockwise angle in radians.</p>
 </td>
       </tr>
       <tr>
         <td><a class="xref" href="OpenTK.Mathematics.Matrix2x4d.html">Matrix2x4d</a></td>
         <td><span class="parametername">result</span></td>
-        <td><p>A scale matrix.</p>
+        <td><p>The resulting Matrix2x4d instance.</p>
 </td>
       </tr>
     </tbody>
@@ -916,6 +883,83 @@ public static Matrix2x4d CreateScale(Vector2d scale)</code></pre>
     </tbody>
   </table>
   <a id="OpenTK_Mathematics_Matrix2x4d_CreateScale_" data-uid="OpenTK.Mathematics.Matrix2x4d.CreateScale*"></a>
+  <h4 id="OpenTK_Mathematics_Matrix2x4d_CreateScale_OpenTK_Mathematics_Vector2d_OpenTK_Mathematics_Matrix2x4d__" data-uid="OpenTK.Mathematics.Matrix2x4d.CreateScale(OpenTK.Mathematics.Vector2d,OpenTK.Mathematics.Matrix2x4d@)">CreateScale(Vector2d, out Matrix2x4d)</h4>
+  <div class="markdown level1 summary"><p>Creates a scale matrix.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void CreateScale(Vector2d scale, out Matrix2x4d result)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector2d.html">Vector2d</a></td>
+        <td><span class="parametername">scale</span></td>
+        <td><p>Scale factors for the x and y axes.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Matrix2x4d.html">Matrix2x4d</a></td>
+        <td><span class="parametername">result</span></td>
+        <td><p>A scale matrix.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Matrix2x4d_CreateScale_" data-uid="OpenTK.Mathematics.Matrix2x4d.CreateScale*"></a>
+  <h4 id="OpenTK_Mathematics_Matrix2x4d_CreateScale_System_Double_" data-uid="OpenTK.Mathematics.Matrix2x4d.CreateScale(System.Double)">CreateScale(double)</h4>
+  <div class="markdown level1 summary"><p>Creates a scale matrix.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static Matrix2x4d CreateScale(double scale)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">scale</span></td>
+        <td><p>Single scale factor for the x and y axes.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Matrix2x4d.html">Matrix2x4d</a></td>
+        <td><p>A scale matrix.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Matrix2x4d_CreateScale_" data-uid="OpenTK.Mathematics.Matrix2x4d.CreateScale*"></a>
   <h4 id="OpenTK_Mathematics_Matrix2x4d_CreateScale_System_Double_OpenTK_Mathematics_Matrix2x4d__" data-uid="OpenTK.Mathematics.Matrix2x4d.CreateScale(System.Double,OpenTK.Mathematics.Matrix2x4d@)">CreateScale(double, out Matrix2x4d)</h4>
   <div class="markdown level1 summary"><p>Creates a scale matrix.</p>
 </div>
@@ -938,45 +982,6 @@ public static Matrix2x4d CreateScale(Vector2d scale)</code></pre>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
         <td><span class="parametername">scale</span></td>
         <td><p>Single scale factor for the x, y, and z axes.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="OpenTK.Mathematics.Matrix2x4d.html">Matrix2x4d</a></td>
-        <td><span class="parametername">result</span></td>
-        <td><p>A scale matrix.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="OpenTK_Mathematics_Matrix2x4d_CreateScale_" data-uid="OpenTK.Mathematics.Matrix2x4d.CreateScale*"></a>
-  <h4 id="OpenTK_Mathematics_Matrix2x4d_CreateScale_System_Double_System_Double_OpenTK_Mathematics_Matrix2x4d__" data-uid="OpenTK.Mathematics.Matrix2x4d.CreateScale(System.Double,System.Double,OpenTK.Mathematics.Matrix2x4d@)">CreateScale(double, double, out Matrix2x4d)</h4>
-  <div class="markdown level1 summary"><p>Creates a scale matrix.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void CreateScale(double x, double y, out Matrix2x4d result)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
-        <td><span class="parametername">x</span></td>
-        <td><p>Scale factor for the x axis.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
-        <td><span class="parametername">y</span></td>
-        <td><p>Scale factor for the y axis.</p>
 </td>
       </tr>
       <tr>
@@ -1038,14 +1043,13 @@ public static Matrix2x4d CreateScale(double x, double y)</code></pre>
     </tbody>
   </table>
   <a id="OpenTK_Mathematics_Matrix2x4d_CreateScale_" data-uid="OpenTK.Mathematics.Matrix2x4d.CreateScale*"></a>
-  <h4 id="OpenTK_Mathematics_Matrix2x4d_CreateScale_System_Double_" data-uid="OpenTK.Mathematics.Matrix2x4d.CreateScale(System.Double)">CreateScale(double)</h4>
+  <h4 id="OpenTK_Mathematics_Matrix2x4d_CreateScale_System_Double_System_Double_OpenTK_Mathematics_Matrix2x4d__" data-uid="OpenTK.Mathematics.Matrix2x4d.CreateScale(System.Double,System.Double,OpenTK.Mathematics.Matrix2x4d@)">CreateScale(double, double, out Matrix2x4d)</h4>
   <div class="markdown level1 summary"><p>Creates a scale matrix.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Pure]
-public static Matrix2x4d CreateScale(double scale)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void CreateScale(double x, double y, out Matrix2x4d result)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -1059,23 +1063,19 @@ public static Matrix2x4d CreateScale(double scale)</code></pre>
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
-        <td><span class="parametername">scale</span></td>
-        <td><p>Single scale factor for the x and y axes.</p>
+        <td><span class="parametername">x</span></td>
+        <td><p>Scale factor for the x axis.</p>
 </td>
       </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
       <tr>
-        <th>Type</th>
-        <th>Description</th>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">y</span></td>
+        <td><p>Scale factor for the y axis.</p>
+</td>
       </tr>
-    </thead>
-    <tbody>
       <tr>
         <td><a class="xref" href="OpenTK.Mathematics.Matrix2x4d.html">Matrix2x4d</a></td>
+        <td><span class="parametername">result</span></td>
         <td><p>A scale matrix.</p>
 </td>
       </tr>

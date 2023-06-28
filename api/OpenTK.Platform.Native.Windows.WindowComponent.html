@@ -1809,6 +1809,43 @@ A cursor can be confined to the bounds of the window, or locked to the center of
     </tbody>
   </table>
   <a id="OpenTK_Platform_Native_Windows_WindowComponent_SetFullscreenDisplay_" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.SetFullscreenDisplay*"></a>
+  <h4 id="OpenTK_Platform_Native_Windows_WindowComponent_SetFullscreenDisplay_OpenTK_Core_Platform_WindowHandle_OpenTK_Core_Platform_DisplayHandle_" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.SetFullscreenDisplay(OpenTK.Core.Platform.WindowHandle,OpenTK.Core.Platform.DisplayHandle)">SetFullscreenDisplay(WindowHandle, DisplayHandle?)</h4>
+  <div class="markdown level1 summary"><p>Put a window into 'windowed fullscreen' on a specified display or the display the window is displayed on.
+If <code class="paramref">display</code> is <code>null</code> then the window will be made fullscreen on the 'nearest' display.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetFullscreenDisplay(WindowHandle window, DisplayHandle? display)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Core.Platform.WindowHandle.html">WindowHandle</a></td>
+        <td><span class="parametername">window</span></td>
+        <td><p>The window to make fullscreen.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Core.Platform.DisplayHandle.html">DisplayHandle</a></td>
+        <td><span class="parametername">display</span></td>
+        <td><p>The display to make the window fullscreen on.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenTK_Platform_Native_Windows_WindowComponent_SetFullscreenDisplay_OpenTK_Core_Platform_WindowHandle_OpenTK_Core_Platform_DisplayHandle__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>To make an 'exclusive fullscreen' window see <a class="xref" href="OpenTK.Core.Platform.IWindowComponent.html#OpenTK_Core_Platform_IWindowComponent_SetFullscreenDisplay_OpenTK_Core_Platform_WindowHandle_OpenTK_Core_Platform_DisplayHandle_OpenTK_Core_Platform_VideoMode_">SetFullscreenDisplay(WindowHandle, DisplayHandle, VideoMode)</a>.</p>
+</div>
+  <a id="OpenTK_Platform_Native_Windows_WindowComponent_SetFullscreenDisplay_" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.SetFullscreenDisplay*"></a>
   <h4 id="OpenTK_Platform_Native_Windows_WindowComponent_SetFullscreenDisplay_OpenTK_Core_Platform_WindowHandle_OpenTK_Core_Platform_DisplayHandle_OpenTK_Core_Platform_VideoMode_" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.SetFullscreenDisplay(OpenTK.Core.Platform.WindowHandle,OpenTK.Core.Platform.DisplayHandle,OpenTK.Core.Platform.VideoMode)">SetFullscreenDisplay(WindowHandle, DisplayHandle, VideoMode)</h4>
   <div class="markdown level1 summary"><p>Put a window into 'exclusive fullscreen' on a specified display and change the video mode to the specified video mode.
 Only video modes accuired using <a class="xref" href="OpenTK.Core.Platform.IDisplayComponent.html#OpenTK_Core_Platform_IDisplayComponent_GetSupportedVideoModes_OpenTK_Core_Platform_DisplayHandle_System_Span_OpenTK_Core_Platform_VideoMode__">GetSupportedVideoModes(DisplayHandle, Span&lt;VideoMode&gt;)</a>
@@ -1851,43 +1888,6 @@ are expected to work.</p>
   </table>
   <h5 id="OpenTK_Platform_Native_Windows_WindowComponent_SetFullscreenDisplay_OpenTK_Core_Platform_WindowHandle_OpenTK_Core_Platform_DisplayHandle_OpenTK_Core_Platform_VideoMode__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>To make an 'windowed fullscreen' window see <a class="xref" href="OpenTK.Core.Platform.IWindowComponent.html#OpenTK_Core_Platform_IWindowComponent_SetFullscreenDisplay_OpenTK_Core_Platform_WindowHandle_OpenTK_Core_Platform_DisplayHandle_">SetFullscreenDisplay(WindowHandle, DisplayHandle?)</a>.</p>
-</div>
-  <a id="OpenTK_Platform_Native_Windows_WindowComponent_SetFullscreenDisplay_" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.SetFullscreenDisplay*"></a>
-  <h4 id="OpenTK_Platform_Native_Windows_WindowComponent_SetFullscreenDisplay_OpenTK_Core_Platform_WindowHandle_OpenTK_Core_Platform_DisplayHandle_" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.SetFullscreenDisplay(OpenTK.Core.Platform.WindowHandle,OpenTK.Core.Platform.DisplayHandle)">SetFullscreenDisplay(WindowHandle, DisplayHandle?)</h4>
-  <div class="markdown level1 summary"><p>Put a window into 'windowed fullscreen' on a specified display or the display the window is displayed on.
-If <code class="paramref">display</code> is <code>null</code> then the window will be made fullscreen on the 'nearest' display.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void SetFullscreenDisplay(WindowHandle window, DisplayHandle? display)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Core.Platform.WindowHandle.html">WindowHandle</a></td>
-        <td><span class="parametername">window</span></td>
-        <td><p>The window to make fullscreen.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="OpenTK.Core.Platform.DisplayHandle.html">DisplayHandle</a></td>
-        <td><span class="parametername">display</span></td>
-        <td><p>The display to make the window fullscreen on.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 id="OpenTK_Platform_Native_Windows_WindowComponent_SetFullscreenDisplay_OpenTK_Core_Platform_WindowHandle_OpenTK_Core_Platform_DisplayHandle__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>To make an 'exclusive fullscreen' window see <a class="xref" href="OpenTK.Core.Platform.IWindowComponent.html#OpenTK_Core_Platform_IWindowComponent_SetFullscreenDisplay_OpenTK_Core_Platform_WindowHandle_OpenTK_Core_Platform_DisplayHandle_OpenTK_Core_Platform_VideoMode_">SetFullscreenDisplay(WindowHandle, DisplayHandle, VideoMode)</a>.</p>
 </div>
   <a id="OpenTK_Platform_Native_Windows_WindowComponent_SetHitTestCallback_" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.SetHitTestCallback*"></a>
   <h4 id="OpenTK_Platform_Native_Windows_WindowComponent_SetHitTestCallback_OpenTK_Core_Platform_WindowHandle_OpenTK_Core_Platform_HitTest_" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.SetHitTestCallback(OpenTK.Core.Platform.WindowHandle,OpenTK.Core.Platform.HitTest)">SetHitTestCallback(WindowHandle, HitTest?)</h4>

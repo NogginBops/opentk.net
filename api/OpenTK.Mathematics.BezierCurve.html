@@ -298,6 +298,57 @@ of 5.0f to the orignal curve at any point.</p>
   <h3 id="methods">Methods
 </h3>
   <a id="OpenTK_Mathematics_BezierCurve_CalculateLength_" data-uid="OpenTK.Mathematics.BezierCurve.CalculateLength*"></a>
+  <h4 id="OpenTK_Mathematics_BezierCurve_CalculateLength_System_Collections_Generic_IList_OpenTK_Mathematics_Vector2__System_Single_" data-uid="OpenTK.Mathematics.BezierCurve.CalculateLength(System.Collections.Generic.IList{OpenTK.Mathematics.Vector2},System.Single)">CalculateLength(IList&lt;Vector2&gt;, float)</h4>
+  <div class="markdown level1 summary"><p>Calculates the length of the specified bezier curve.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static float CalculateLength(IList&lt;Vector2&gt; points, float precision)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="OpenTK.Mathematics.Vector2.html">Vector2</a>&gt;</td>
+        <td><span class="parametername">points</span></td>
+        <td><p>The points.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">precision</span></td>
+        <td><p>The precision value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><p>The precision gets better as the <code class="paramref">precision</code>
+value gets smaller.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_BezierCurve_CalculateLength_" data-uid="OpenTK.Mathematics.BezierCurve.CalculateLength*"></a>
   <h4 id="OpenTK_Mathematics_BezierCurve_CalculateLength_System_Collections_Generic_IList_OpenTK_Mathematics_Vector2__System_Single_System_Single_" data-uid="OpenTK.Mathematics.BezierCurve.CalculateLength(System.Collections.Generic.IList{OpenTK.Mathematics.Vector2},System.Single,System.Single)">CalculateLength(IList&lt;Vector2&gt;, float, float)</h4>
   <div class="markdown level1 summary"><p>Calculates the length of the specified bezier curve.</p>
 </div>
@@ -366,57 +417,6 @@ of 5.0f to the orignal curve.
  </p>
 </div>
   <a id="OpenTK_Mathematics_BezierCurve_CalculateLength_" data-uid="OpenTK.Mathematics.BezierCurve.CalculateLength*"></a>
-  <h4 id="OpenTK_Mathematics_BezierCurve_CalculateLength_System_Collections_Generic_IList_OpenTK_Mathematics_Vector2__System_Single_" data-uid="OpenTK.Mathematics.BezierCurve.CalculateLength(System.Collections.Generic.IList{OpenTK.Mathematics.Vector2},System.Single)">CalculateLength(IList&lt;Vector2&gt;, float)</h4>
-  <div class="markdown level1 summary"><p>Calculates the length of the specified bezier curve.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Pure]
-public static float CalculateLength(IList&lt;Vector2&gt; points, float precision)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="OpenTK.Mathematics.Vector2.html">Vector2</a>&gt;</td>
-        <td><span class="parametername">points</span></td>
-        <td><p>The points.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
-        <td><span class="parametername">precision</span></td>
-        <td><p>The precision value.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
-        <td><p>The precision gets better as the <code class="paramref">precision</code>
-value gets smaller.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="OpenTK_Mathematics_BezierCurve_CalculateLength_" data-uid="OpenTK.Mathematics.BezierCurve.CalculateLength*"></a>
   <h4 id="OpenTK_Mathematics_BezierCurve_CalculateLength_System_Single_" data-uid="OpenTK.Mathematics.BezierCurve.CalculateLength(System.Single)">CalculateLength(float)</h4>
   <div class="markdown level1 summary"><p>Calculates the length of this bezier curve.</p>
 </div>
@@ -464,6 +464,56 @@ public float CalculateLength(float precision)</code></pre>
   <div class="markdown level1 remarks"><p>The precision gets better as the <code class="paramref">precision</code>
 value gets smaller.</p>
 </div>
+  <a id="OpenTK_Mathematics_BezierCurve_CalculatePoint_" data-uid="OpenTK.Mathematics.BezierCurve.CalculatePoint*"></a>
+  <h4 id="OpenTK_Mathematics_BezierCurve_CalculatePoint_System_Collections_Generic_IList_OpenTK_Mathematics_Vector2__System_Single_" data-uid="OpenTK.Mathematics.BezierCurve.CalculatePoint(System.Collections.Generic.IList{OpenTK.Mathematics.Vector2},System.Single)">CalculatePoint(IList&lt;Vector2&gt;, float)</h4>
+  <div class="markdown level1 summary"><p>Calculates the point on the given bezier curve with the specified t parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static Vector2 CalculatePoint(IList&lt;Vector2&gt; points, float t)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="OpenTK.Mathematics.Vector2.html">Vector2</a>&gt;</td>
+        <td><span class="parametername">points</span></td>
+        <td><p>The points.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">t</span></td>
+        <td><p>The t parameter, a value between 0.0f and 1.0f.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector2.html">Vector2</a></td>
+        <td><p>Resulting point.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="OpenTK_Mathematics_BezierCurve_CalculatePoint_" data-uid="OpenTK.Mathematics.BezierCurve.CalculatePoint*"></a>
   <h4 id="OpenTK_Mathematics_BezierCurve_CalculatePoint_System_Collections_Generic_IList_OpenTK_Mathematics_Vector2__System_Single_System_Single_" data-uid="OpenTK.Mathematics.BezierCurve.CalculatePoint(System.Collections.Generic.IList{OpenTK.Mathematics.Vector2},System.Single,System.Single)">CalculatePoint(IList&lt;Vector2&gt;, float, float)</h4>
   <div class="markdown level1 summary"><p>Calculates the point on the given bezier curve with the specified t parameter.</p>
@@ -526,56 +576,6 @@ parallel curve to the original bezier curve. A value of 0.0f represents
 the original curve, 5.0f represents a curve that has always a distance
 of 5.0f to the orignal curve.</p>
 </div>
-  <a id="OpenTK_Mathematics_BezierCurve_CalculatePoint_" data-uid="OpenTK.Mathematics.BezierCurve.CalculatePoint*"></a>
-  <h4 id="OpenTK_Mathematics_BezierCurve_CalculatePoint_System_Collections_Generic_IList_OpenTK_Mathematics_Vector2__System_Single_" data-uid="OpenTK.Mathematics.BezierCurve.CalculatePoint(System.Collections.Generic.IList{OpenTK.Mathematics.Vector2},System.Single)">CalculatePoint(IList&lt;Vector2&gt;, float)</h4>
-  <div class="markdown level1 summary"><p>Calculates the point on the given bezier curve with the specified t parameter.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Pure]
-public static Vector2 CalculatePoint(IList&lt;Vector2&gt; points, float t)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="OpenTK.Mathematics.Vector2.html">Vector2</a>&gt;</td>
-        <td><span class="parametername">points</span></td>
-        <td><p>The points.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
-        <td><span class="parametername">t</span></td>
-        <td><p>The t parameter, a value between 0.0f and 1.0f.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Mathematics.Vector2.html">Vector2</a></td>
-        <td><p>Resulting point.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
   <a id="OpenTK_Mathematics_BezierCurve_CalculatePoint_" data-uid="OpenTK.Mathematics.BezierCurve.CalculatePoint*"></a>
   <h4 id="OpenTK_Mathematics_BezierCurve_CalculatePoint_System_Single_" data-uid="OpenTK.Mathematics.BezierCurve.CalculatePoint(System.Single)">CalculatePoint(float)</h4>
   <div class="markdown level1 summary"><p>Calculates the point with the specified t.</p>

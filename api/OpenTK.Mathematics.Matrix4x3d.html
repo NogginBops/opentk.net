@@ -916,45 +916,6 @@ public static Matrix4x3d Add(Matrix4x3d left, Matrix4x3d right)</code></pre>
     </tbody>
   </table>
   <a id="OpenTK_Mathematics_Matrix4x3d_CreateFromAxisAngle_" data-uid="OpenTK.Mathematics.Matrix4x3d.CreateFromAxisAngle*"></a>
-  <h4 id="OpenTK_Mathematics_Matrix4x3d_CreateFromAxisAngle_OpenTK_Mathematics_Vector3d_System_Double_OpenTK_Mathematics_Matrix4x3d__" data-uid="OpenTK.Mathematics.Matrix4x3d.CreateFromAxisAngle(OpenTK.Mathematics.Vector3d,System.Double,OpenTK.Mathematics.Matrix4x3d@)">CreateFromAxisAngle(Vector3d, double, out Matrix4x3d)</h4>
-  <div class="markdown level1 summary"><p>Build a rotation matrix from the specified axis/angle rotation.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void CreateFromAxisAngle(Vector3d axis, double angle, out Matrix4x3d result)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Mathematics.Vector3d.html">Vector3d</a></td>
-        <td><span class="parametername">axis</span></td>
-        <td><p>The axis to rotate about.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
-        <td><span class="parametername">angle</span></td>
-        <td><p>Angle in radians to rotate counter-clockwise (looking in the direction of the given axis).</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="OpenTK.Mathematics.Matrix4x3d.html">Matrix4x3d</a></td>
-        <td><span class="parametername">result</span></td>
-        <td><p>A matrix instance.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="OpenTK_Mathematics_Matrix4x3d_CreateFromAxisAngle_" data-uid="OpenTK.Mathematics.Matrix4x3d.CreateFromAxisAngle*"></a>
   <h4 id="OpenTK_Mathematics_Matrix4x3d_CreateFromAxisAngle_OpenTK_Mathematics_Vector3d_System_Double_" data-uid="OpenTK.Mathematics.Matrix4x3d.CreateFromAxisAngle(OpenTK.Mathematics.Vector3d,System.Double)">CreateFromAxisAngle(Vector3d, double)</h4>
   <div class="markdown level1 summary"><p>Build a rotation matrix from the specified axis/angle rotation.</p>
 </div>
@@ -999,6 +960,45 @@ public static Matrix4x3d CreateFromAxisAngle(Vector3d axis, double angle)</code>
     <tbody>
       <tr>
         <td><a class="xref" href="OpenTK.Mathematics.Matrix4x3d.html">Matrix4x3d</a></td>
+        <td><p>A matrix instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Matrix4x3d_CreateFromAxisAngle_" data-uid="OpenTK.Mathematics.Matrix4x3d.CreateFromAxisAngle*"></a>
+  <h4 id="OpenTK_Mathematics_Matrix4x3d_CreateFromAxisAngle_OpenTK_Mathematics_Vector3d_System_Double_OpenTK_Mathematics_Matrix4x3d__" data-uid="OpenTK.Mathematics.Matrix4x3d.CreateFromAxisAngle(OpenTK.Mathematics.Vector3d,System.Double,OpenTK.Mathematics.Matrix4x3d@)">CreateFromAxisAngle(Vector3d, double, out Matrix4x3d)</h4>
+  <div class="markdown level1 summary"><p>Build a rotation matrix from the specified axis/angle rotation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void CreateFromAxisAngle(Vector3d axis, double angle, out Matrix4x3d result)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector3d.html">Vector3d</a></td>
+        <td><span class="parametername">axis</span></td>
+        <td><p>The axis to rotate about.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">angle</span></td>
+        <td><p>Angle in radians to rotate counter-clockwise (looking in the direction of the given axis).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Matrix4x3d.html">Matrix4x3d</a></td>
+        <td><span class="parametername">result</span></td>
         <td><p>A matrix instance.</p>
 </td>
       </tr>
@@ -1082,39 +1082,6 @@ public static Matrix4x3d CreateFromQuaternion(Quaternion q)</code></pre>
     </tbody>
   </table>
   <a id="OpenTK_Mathematics_Matrix4x3d_CreateRotationX_" data-uid="OpenTK.Mathematics.Matrix4x3d.CreateRotationX*"></a>
-  <h4 id="OpenTK_Mathematics_Matrix4x3d_CreateRotationX_System_Double_OpenTK_Mathematics_Matrix4x3d__" data-uid="OpenTK.Mathematics.Matrix4x3d.CreateRotationX(System.Double,OpenTK.Mathematics.Matrix4x3d@)">CreateRotationX(double, out Matrix4x3d)</h4>
-  <div class="markdown level1 summary"><p>Builds a rotation matrix for a rotation around the x-axis.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void CreateRotationX(double angle, out Matrix4x3d result)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
-        <td><span class="parametername">angle</span></td>
-        <td><p>The counter-clockwise angle in radians.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="OpenTK.Mathematics.Matrix4x3d.html">Matrix4x3d</a></td>
-        <td><span class="parametername">result</span></td>
-        <td><p>The resulting Matrix4dinstance.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="OpenTK_Mathematics_Matrix4x3d_CreateRotationX_" data-uid="OpenTK.Mathematics.Matrix4x3d.CreateRotationX*"></a>
   <h4 id="OpenTK_Mathematics_Matrix4x3d_CreateRotationX_System_Double_" data-uid="OpenTK.Mathematics.Matrix4x3d.CreateRotationX(System.Double)">CreateRotationX(double)</h4>
   <div class="markdown level1 summary"><p>Builds a rotation matrix for a rotation around the x-axis.</p>
 </div>
@@ -1158,14 +1125,14 @@ public static Matrix4x3d CreateRotationX(double angle)</code></pre>
       </tr>
     </tbody>
   </table>
-  <a id="OpenTK_Mathematics_Matrix4x3d_CreateRotationY_" data-uid="OpenTK.Mathematics.Matrix4x3d.CreateRotationY*"></a>
-  <h4 id="OpenTK_Mathematics_Matrix4x3d_CreateRotationY_System_Double_OpenTK_Mathematics_Matrix4x3d__" data-uid="OpenTK.Mathematics.Matrix4x3d.CreateRotationY(System.Double,OpenTK.Mathematics.Matrix4x3d@)">CreateRotationY(double, out Matrix4x3d)</h4>
-  <div class="markdown level1 summary"><p>Builds a rotation matrix for a rotation around the y-axis.</p>
+  <a id="OpenTK_Mathematics_Matrix4x3d_CreateRotationX_" data-uid="OpenTK.Mathematics.Matrix4x3d.CreateRotationX*"></a>
+  <h4 id="OpenTK_Mathematics_Matrix4x3d_CreateRotationX_System_Double_OpenTK_Mathematics_Matrix4x3d__" data-uid="OpenTK.Mathematics.Matrix4x3d.CreateRotationX(System.Double,OpenTK.Mathematics.Matrix4x3d@)">CreateRotationX(double, out Matrix4x3d)</h4>
+  <div class="markdown level1 summary"><p>Builds a rotation matrix for a rotation around the x-axis.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void CreateRotationY(double angle, out Matrix4x3d result)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void CreateRotationX(double angle, out Matrix4x3d result)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -1235,14 +1202,14 @@ public static Matrix4x3d CreateRotationY(double angle)</code></pre>
       </tr>
     </tbody>
   </table>
-  <a id="OpenTK_Mathematics_Matrix4x3d_CreateRotationZ_" data-uid="OpenTK.Mathematics.Matrix4x3d.CreateRotationZ*"></a>
-  <h4 id="OpenTK_Mathematics_Matrix4x3d_CreateRotationZ_System_Double_OpenTK_Mathematics_Matrix4x3d__" data-uid="OpenTK.Mathematics.Matrix4x3d.CreateRotationZ(System.Double,OpenTK.Mathematics.Matrix4x3d@)">CreateRotationZ(double, out Matrix4x3d)</h4>
-  <div class="markdown level1 summary"><p>Builds a rotation matrix for a rotation around the z-axis.</p>
+  <a id="OpenTK_Mathematics_Matrix4x3d_CreateRotationY_" data-uid="OpenTK.Mathematics.Matrix4x3d.CreateRotationY*"></a>
+  <h4 id="OpenTK_Mathematics_Matrix4x3d_CreateRotationY_System_Double_OpenTK_Mathematics_Matrix4x3d__" data-uid="OpenTK.Mathematics.Matrix4x3d.CreateRotationY(System.Double,OpenTK.Mathematics.Matrix4x3d@)">CreateRotationY(double, out Matrix4x3d)</h4>
+  <div class="markdown level1 summary"><p>Builds a rotation matrix for a rotation around the y-axis.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void CreateRotationZ(double angle, out Matrix4x3d result)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void CreateRotationY(double angle, out Matrix4x3d result)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -1312,6 +1279,39 @@ public static Matrix4x3d CreateRotationZ(double angle)</code></pre>
       </tr>
     </tbody>
   </table>
+  <a id="OpenTK_Mathematics_Matrix4x3d_CreateRotationZ_" data-uid="OpenTK.Mathematics.Matrix4x3d.CreateRotationZ*"></a>
+  <h4 id="OpenTK_Mathematics_Matrix4x3d_CreateRotationZ_System_Double_OpenTK_Mathematics_Matrix4x3d__" data-uid="OpenTK.Mathematics.Matrix4x3d.CreateRotationZ(System.Double,OpenTK.Mathematics.Matrix4x3d@)">CreateRotationZ(double, out Matrix4x3d)</h4>
+  <div class="markdown level1 summary"><p>Builds a rotation matrix for a rotation around the z-axis.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void CreateRotationZ(double angle, out Matrix4x3d result)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">angle</span></td>
+        <td><p>The counter-clockwise angle in radians.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Matrix4x3d.html">Matrix4x3d</a></td>
+        <td><span class="parametername">result</span></td>
+        <td><p>The resulting Matrix4dinstance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="OpenTK_Mathematics_Matrix4x3d_CreateScale_" data-uid="OpenTK.Mathematics.Matrix4x3d.CreateScale*"></a>
   <h4 id="OpenTK_Mathematics_Matrix4x3d_CreateScale_OpenTK_Mathematics_Vector3d_" data-uid="OpenTK.Mathematics.Matrix4x3d.CreateScale(OpenTK.Mathematics.Vector3d)">CreateScale(Vector3d)</h4>
   <div class="markdown level1 summary"><p>Build a scaling matrix.</p>
@@ -1336,6 +1336,50 @@ public static Matrix4x3d CreateScale(Vector3d scale)</code></pre>
         <td><a class="xref" href="OpenTK.Mathematics.Vector3d.html">Vector3d</a></td>
         <td><span class="parametername">scale</span></td>
         <td><p>Scale factors for x,y and z axes.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Matrix4x3d.html">Matrix4x3d</a></td>
+        <td><p>A scaling matrix.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Matrix4x3d_CreateScale_" data-uid="OpenTK.Mathematics.Matrix4x3d.CreateScale*"></a>
+  <h4 id="OpenTK_Mathematics_Matrix4x3d_CreateScale_System_Double_" data-uid="OpenTK.Mathematics.Matrix4x3d.CreateScale(System.Double)">CreateScale(double)</h4>
+  <div class="markdown level1 summary"><p>Build a scaling matrix.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static Matrix4x3d CreateScale(double scale)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">scale</span></td>
+        <td><p>Single scale factor for x,y and z axes.</p>
 </td>
       </tr>
     </tbody>
@@ -1392,50 +1436,6 @@ public static Matrix4x3d CreateScale(double x, double y, double z)</code></pre>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
         <td><span class="parametername">z</span></td>
         <td><p>Scale factor for z-axis.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Mathematics.Matrix4x3d.html">Matrix4x3d</a></td>
-        <td><p>A scaling matrix.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="OpenTK_Mathematics_Matrix4x3d_CreateScale_" data-uid="OpenTK.Mathematics.Matrix4x3d.CreateScale*"></a>
-  <h4 id="OpenTK_Mathematics_Matrix4x3d_CreateScale_System_Double_" data-uid="OpenTK.Mathematics.Matrix4x3d.CreateScale(System.Double)">CreateScale(double)</h4>
-  <div class="markdown level1 summary"><p>Build a scaling matrix.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Pure]
-public static Matrix4x3d CreateScale(double scale)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
-        <td><span class="parametername">scale</span></td>
-        <td><p>Single scale factor for x,y and z axes.</p>
 </td>
       </tr>
     </tbody>
@@ -1534,51 +1534,6 @@ public static Matrix4x3d CreateTranslation(Vector3d vector)</code></pre>
     </tbody>
   </table>
   <a id="OpenTK_Mathematics_Matrix4x3d_CreateTranslation_" data-uid="OpenTK.Mathematics.Matrix4x3d.CreateTranslation*"></a>
-  <h4 id="OpenTK_Mathematics_Matrix4x3d_CreateTranslation_System_Double_System_Double_System_Double_OpenTK_Mathematics_Matrix4x3d__" data-uid="OpenTK.Mathematics.Matrix4x3d.CreateTranslation(System.Double,System.Double,System.Double,OpenTK.Mathematics.Matrix4x3d@)">CreateTranslation(double, double, double, out Matrix4x3d)</h4>
-  <div class="markdown level1 summary"><p>Creates a translation matrix.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void CreateTranslation(double x, double y, double z, out Matrix4x3d result)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
-        <td><span class="parametername">x</span></td>
-        <td><p>X translation.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
-        <td><span class="parametername">y</span></td>
-        <td><p>Y translation.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
-        <td><span class="parametername">z</span></td>
-        <td><p>Z translation.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="OpenTK.Mathematics.Matrix4x3d.html">Matrix4x3d</a></td>
-        <td><span class="parametername">result</span></td>
-        <td><p>The resulting Matrix4dinstance.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="OpenTK_Mathematics_Matrix4x3d_CreateTranslation_" data-uid="OpenTK.Mathematics.Matrix4x3d.CreateTranslation*"></a>
   <h4 id="OpenTK_Mathematics_Matrix4x3d_CreateTranslation_System_Double_System_Double_System_Double_" data-uid="OpenTK.Mathematics.Matrix4x3d.CreateTranslation(System.Double,System.Double,System.Double)">CreateTranslation(double, double, double)</h4>
   <div class="markdown level1 summary"><p>Creates a translation matrix.</p>
 </div>
@@ -1629,6 +1584,51 @@ public static Matrix4x3d CreateTranslation(double x, double y, double z)</code><
     <tbody>
       <tr>
         <td><a class="xref" href="OpenTK.Mathematics.Matrix4x3d.html">Matrix4x3d</a></td>
+        <td><p>The resulting Matrix4dinstance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Matrix4x3d_CreateTranslation_" data-uid="OpenTK.Mathematics.Matrix4x3d.CreateTranslation*"></a>
+  <h4 id="OpenTK_Mathematics_Matrix4x3d_CreateTranslation_System_Double_System_Double_System_Double_OpenTK_Mathematics_Matrix4x3d__" data-uid="OpenTK.Mathematics.Matrix4x3d.CreateTranslation(System.Double,System.Double,System.Double,OpenTK.Mathematics.Matrix4x3d@)">CreateTranslation(double, double, double, out Matrix4x3d)</h4>
+  <div class="markdown level1 summary"><p>Creates a translation matrix.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void CreateTranslation(double x, double y, double z, out Matrix4x3d result)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">x</span></td>
+        <td><p>X translation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">y</span></td>
+        <td><p>Y translation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">z</span></td>
+        <td><p>Z translation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Matrix4x3d.html">Matrix4x3d</a></td>
+        <td><span class="parametername">result</span></td>
         <td><p>The resulting Matrix4dinstance.</p>
 </td>
       </tr>

@@ -451,61 +451,6 @@
     </tbody>
   </table>
   <a id="OpenTK_Audio_OpenAL_ALC_CaptureSamples_" data-uid="OpenTK.Audio.OpenAL.ALC.CaptureSamples*"></a>
-  <h4 id="OpenTK_Audio_OpenAL_ALC_CaptureSamples__1_OpenTK_Audio_OpenAL_ALCaptureDevice___0___System_Int32_" data-uid="OpenTK.Audio.OpenAL.ALC.CaptureSamples``1(OpenTK.Audio.OpenAL.ALCaptureDevice,``0[],System.Int32)">CaptureSamples&lt;T&gt;(ALCaptureDevice, T[], int)</h4>
-  <div class="markdown level1 summary"><p>This function completes a capture operation, and does not block.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void CaptureSamples&lt;T&gt;(ALCaptureDevice device, T[] buffer, int samples) where T : unmanaged</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Audio.OpenAL.ALCaptureDevice.html">ALCaptureDevice</a></td>
-        <td><span class="parametername">device</span></td>
-        <td><p>A pointer to a capture device.</p>
-</td>
-      </tr>
-      <tr>
-        <td>T[]</td>
-        <td><span class="parametername">buffer</span></td>
-        <td><p>A buffer, which must be large enough to accommodate the number of samples.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
-        <td><span class="parametername">samples</span></td>
-        <td><p>The number of samples to be retrieved.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="typeParameters">Type Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="parametername">T</span></td>
-        <td><p>The buffer datatype.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="OpenTK_Audio_OpenAL_ALC_CaptureSamples_" data-uid="OpenTK.Audio.OpenAL.ALC.CaptureSamples*"></a>
   <h4 id="OpenTK_Audio_OpenAL_ALC_CaptureSamples__1_OpenTK_Audio_OpenAL_ALCaptureDevice___0__System_Int32_" data-uid="OpenTK.Audio.OpenAL.ALC.CaptureSamples``1(OpenTK.Audio.OpenAL.ALCaptureDevice,``0@,System.Int32)">CaptureSamples&lt;T&gt;(ALCaptureDevice, ref T, int)</h4>
   <div class="markdown level1 summary"><p>This function completes a capture operation, and does not block.</p>
 </div>
@@ -534,6 +479,61 @@
         <td><span class="xref">T</span></td>
         <td><span class="parametername">buffer</span></td>
         <td><p>A reference to a buffer, which must be large enough to accommodate the number of samples.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">samples</span></td>
+        <td><p>The number of samples to be retrieved.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The buffer datatype.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Audio_OpenAL_ALC_CaptureSamples_" data-uid="OpenTK.Audio.OpenAL.ALC.CaptureSamples*"></a>
+  <h4 id="OpenTK_Audio_OpenAL_ALC_CaptureSamples__1_OpenTK_Audio_OpenAL_ALCaptureDevice___0___System_Int32_" data-uid="OpenTK.Audio.OpenAL.ALC.CaptureSamples``1(OpenTK.Audio.OpenAL.ALCaptureDevice,``0[],System.Int32)">CaptureSamples&lt;T&gt;(ALCaptureDevice, T[], int)</h4>
+  <div class="markdown level1 summary"><p>This function completes a capture operation, and does not block.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void CaptureSamples&lt;T&gt;(ALCaptureDevice device, T[] buffer, int samples) where T : unmanaged</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Audio.OpenAL.ALCaptureDevice.html">ALCaptureDevice</a></td>
+        <td><span class="parametername">device</span></td>
+        <td><p>A pointer to a capture device.</p>
+</td>
+      </tr>
+      <tr>
+        <td>T[]</td>
+        <td><span class="parametername">buffer</span></td>
+        <td><p>A buffer, which must be large enough to accommodate the number of samples.</p>
 </td>
       </tr>
       <tr>
@@ -713,13 +713,13 @@
   <div class="markdown level1 remarks"><p>The attribute list can be NULL, or a zero terminated list of integer pairs composed of valid ALC attribute tokens and requested values.</p>
 </div>
   <a id="OpenTK_Audio_OpenAL_ALC_CreateContext_" data-uid="OpenTK.Audio.OpenAL.ALC.CreateContext*"></a>
-  <h4 id="OpenTK_Audio_OpenAL_ALC_CreateContext_OpenTK_Audio_OpenAL_ALDevice_System_Int32___" data-uid="OpenTK.Audio.OpenAL.ALC.CreateContext(OpenTK.Audio.OpenAL.ALDevice,System.Int32[])">CreateContext(ALDevice, int[])</h4>
+  <h4 id="OpenTK_Audio_OpenAL_ALC_CreateContext_OpenTK_Audio_OpenAL_ALDevice_System_Int32__" data-uid="OpenTK.Audio.OpenAL.ALC.CreateContext(OpenTK.Audio.OpenAL.ALDevice,System.Int32*)">CreateContext(ALDevice, int*)</h4>
   <div class="markdown level1 summary"><p>This function creates a context using a specified device.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern ALContext CreateContext(ALDevice device, int[] attributeList)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern ALContext CreateContext(ALDevice device, int* attributeList)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -738,7 +738,7 @@
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>*</td>
         <td><span class="parametername">attributeList</span></td>
         <td><p>A zero terminated array of a set of attributes: ALC_FREQUENCY, ALC_MONO_SOURCES, ALC_REFRESH, ALC_STEREO_SOURCES, ALC_SYNC.</p>
 </td>
@@ -761,7 +761,7 @@
       </tr>
     </tbody>
   </table>
-  <h5 id="OpenTK_Audio_OpenAL_ALC_CreateContext_OpenTK_Audio_OpenAL_ALDevice_System_Int32____remarks">Remarks</h5>
+  <h5 id="OpenTK_Audio_OpenAL_ALC_CreateContext_OpenTK_Audio_OpenAL_ALDevice_System_Int32___remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>The attribute list can be NULL, or a zero terminated list of integer pairs composed of valid ALC attribute tokens and requested values.</p>
 </div>
   <a id="OpenTK_Audio_OpenAL_ALC_CreateContext_" data-uid="OpenTK.Audio.OpenAL.ALC.CreateContext*"></a>
@@ -817,13 +817,13 @@
   <div class="markdown level1 remarks"><p>The attribute list can be NULL, or a zero terminated list of integer pairs composed of valid ALC attribute tokens and requested values.</p>
 </div>
   <a id="OpenTK_Audio_OpenAL_ALC_CreateContext_" data-uid="OpenTK.Audio.OpenAL.ALC.CreateContext*"></a>
-  <h4 id="OpenTK_Audio_OpenAL_ALC_CreateContext_OpenTK_Audio_OpenAL_ALDevice_System_Int32__" data-uid="OpenTK.Audio.OpenAL.ALC.CreateContext(OpenTK.Audio.OpenAL.ALDevice,System.Int32*)">CreateContext(ALDevice, int*)</h4>
+  <h4 id="OpenTK_Audio_OpenAL_ALC_CreateContext_OpenTK_Audio_OpenAL_ALDevice_System_Int32___" data-uid="OpenTK.Audio.OpenAL.ALC.CreateContext(OpenTK.Audio.OpenAL.ALDevice,System.Int32[])">CreateContext(ALDevice, int[])</h4>
   <div class="markdown level1 summary"><p>This function creates a context using a specified device.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern ALContext CreateContext(ALDevice device, int* attributeList)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern ALContext CreateContext(ALDevice device, int[] attributeList)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -842,7 +842,7 @@
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>*</td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</td>
         <td><span class="parametername">attributeList</span></td>
         <td><p>A zero terminated array of a set of attributes: ALC_FREQUENCY, ALC_MONO_SOURCES, ALC_REFRESH, ALC_STEREO_SOURCES, ALC_SYNC.</p>
 </td>
@@ -865,7 +865,7 @@
       </tr>
     </tbody>
   </table>
-  <h5 id="OpenTK_Audio_OpenAL_ALC_CreateContext_OpenTK_Audio_OpenAL_ALDevice_System_Int32___remarks">Remarks</h5>
+  <h5 id="OpenTK_Audio_OpenAL_ALC_CreateContext_OpenTK_Audio_OpenAL_ALDevice_System_Int32____remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>The attribute list can be NULL, or a zero terminated list of integer pairs composed of valid ALC attribute tokens and requested values.</p>
 </div>
   <a id="OpenTK_Audio_OpenAL_ALC_CreateContext_" data-uid="OpenTK.Audio.OpenAL.ALC.CreateContext*"></a>
@@ -1237,13 +1237,13 @@
     </tbody>
   </table>
   <a id="OpenTK_Audio_OpenAL_ALC_GetInteger_" data-uid="OpenTK.Audio.OpenAL.ALC.GetInteger*"></a>
-  <h4 id="OpenTK_Audio_OpenAL_ALC_GetInteger_OpenTK_Audio_OpenAL_ALCaptureDevice_OpenTK_Audio_OpenAL_AlcGetInteger_System_Int32_System_Int32___" data-uid="OpenTK.Audio.OpenAL.ALC.GetInteger(OpenTK.Audio.OpenAL.ALCaptureDevice,OpenTK.Audio.OpenAL.AlcGetInteger,System.Int32,System.Int32[])">GetInteger(ALCaptureDevice, AlcGetInteger, int, int[])</h4>
+  <h4 id="OpenTK_Audio_OpenAL_ALC_GetInteger_OpenTK_Audio_OpenAL_ALCaptureDevice_OpenTK_Audio_OpenAL_AlcGetInteger_System_Int32_System_Int32__" data-uid="OpenTK.Audio.OpenAL.ALC.GetInteger(OpenTK.Audio.OpenAL.ALCaptureDevice,OpenTK.Audio.OpenAL.AlcGetInteger,System.Int32,System.Int32*)">GetInteger(ALCaptureDevice, AlcGetInteger, int, int*)</h4>
   <div class="markdown level1 summary"><p>This function returns integers related to the context.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern void GetInteger(ALCaptureDevice device, AlcGetInteger param, int size, int[] data)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern void GetInteger(ALCaptureDevice device, AlcGetInteger param, int size, int* data)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -1274,7 +1274,7 @@
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>*</td>
         <td><span class="parametername">data</span></td>
         <td><p>A pointer to the buffer to be returned.</p>
 </td>
@@ -1327,13 +1327,13 @@
     </tbody>
   </table>
   <a id="OpenTK_Audio_OpenAL_ALC_GetInteger_" data-uid="OpenTK.Audio.OpenAL.ALC.GetInteger*"></a>
-  <h4 id="OpenTK_Audio_OpenAL_ALC_GetInteger_OpenTK_Audio_OpenAL_ALCaptureDevice_OpenTK_Audio_OpenAL_AlcGetInteger_System_Int32_System_Int32__" data-uid="OpenTK.Audio.OpenAL.ALC.GetInteger(OpenTK.Audio.OpenAL.ALCaptureDevice,OpenTK.Audio.OpenAL.AlcGetInteger,System.Int32,System.Int32*)">GetInteger(ALCaptureDevice, AlcGetInteger, int, int*)</h4>
+  <h4 id="OpenTK_Audio_OpenAL_ALC_GetInteger_OpenTK_Audio_OpenAL_ALCaptureDevice_OpenTK_Audio_OpenAL_AlcGetInteger_System_Int32_System_Int32___" data-uid="OpenTK.Audio.OpenAL.ALC.GetInteger(OpenTK.Audio.OpenAL.ALCaptureDevice,OpenTK.Audio.OpenAL.AlcGetInteger,System.Int32,System.Int32[])">GetInteger(ALCaptureDevice, AlcGetInteger, int, int[])</h4>
   <div class="markdown level1 summary"><p>This function returns integers related to the context.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern void GetInteger(ALCaptureDevice device, AlcGetInteger param, int size, int* data)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern void GetInteger(ALCaptureDevice device, AlcGetInteger param, int size, int[] data)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -1364,181 +1364,7 @@
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>*</td>
-        <td><span class="parametername">data</span></td>
-        <td><p>A pointer to the buffer to be returned.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="OpenTK_Audio_OpenAL_ALC_GetInteger_" data-uid="OpenTK.Audio.OpenAL.ALC.GetInteger*"></a>
-  <h4 id="OpenTK_Audio_OpenAL_ALC_GetInteger_OpenTK_Audio_OpenAL_ALDevice_OpenTK_Audio_OpenAL_AlcGetInteger_System_Int32_System_Int32___" data-uid="OpenTK.Audio.OpenAL.ALC.GetInteger(OpenTK.Audio.OpenAL.ALDevice,OpenTK.Audio.OpenAL.AlcGetInteger,System.Int32,System.Int32[])">GetInteger(ALDevice, AlcGetInteger, int, int[])</h4>
-  <div class="markdown level1 summary"><p>This function returns integers related to the context.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern void GetInteger(ALDevice device, AlcGetInteger param, int size, int[] data)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Audio.OpenAL.ALDevice.html">ALDevice</a></td>
-        <td><span class="parametername">device</span></td>
-        <td><p>a pointer to the device to be queried.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="OpenTK.Audio.OpenAL.AlcGetInteger.html">AlcGetInteger</a></td>
-        <td><span class="parametername">param</span></td>
-        <td><p>an attribute to be retrieved: ALC_MAJOR_VERSION, ALC_MINOR_VERSION, ALC_ATTRIBUTES_SIZE, ALC_ALL_ATTRIBUTES.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
-        <td><span class="parametername">size</span></td>
-        <td><p>the size of the destination buffer provided, in number of integers.</p>
-</td>
-      </tr>
-      <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</td>
-        <td><span class="parametername">data</span></td>
-        <td><p>a pointer to the buffer to be returned.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="OpenTK_Audio_OpenAL_ALC_GetInteger_" data-uid="OpenTK.Audio.OpenAL.ALC.GetInteger*"></a>
-  <h4 id="OpenTK_Audio_OpenAL_ALC_GetInteger_OpenTK_Audio_OpenAL_ALDevice_OpenTK_Audio_OpenAL_AlcGetInteger_System_Int32_System_Int32__" data-uid="OpenTK.Audio.OpenAL.ALC.GetInteger(OpenTK.Audio.OpenAL.ALDevice,OpenTK.Audio.OpenAL.AlcGetInteger,System.Int32,System.Int32@)">GetInteger(ALDevice, AlcGetInteger, int, out int)</h4>
-  <div class="markdown level1 summary"><p>This function returns integers related to the context.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern void GetInteger(ALDevice device, AlcGetInteger param, int size, out int data)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Audio.OpenAL.ALDevice.html">ALDevice</a></td>
-        <td><span class="parametername">device</span></td>
-        <td><p>A pointer to the device to be queried.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="OpenTK.Audio.OpenAL.AlcGetInteger.html">AlcGetInteger</a></td>
-        <td><span class="parametername">param</span></td>
-        <td><p>An attribute to be retrieved: ALC_MAJOR_VERSION, ALC_MINOR_VERSION, ALC_ATTRIBUTES_SIZE, ALC_ALL_ATTRIBUTES.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
-        <td><span class="parametername">size</span></td>
-        <td><p>The size of the destination buffer provided, in number of integers.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
-        <td><span class="parametername">data</span></td>
-        <td><p>A pointer to the buffer to be returned.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="OpenTK_Audio_OpenAL_ALC_GetInteger_" data-uid="OpenTK.Audio.OpenAL.ALC.GetInteger*"></a>
-  <h4 id="OpenTK_Audio_OpenAL_ALC_GetInteger_OpenTK_Audio_OpenAL_ALDevice_OpenTK_Audio_OpenAL_AlcGetInteger_System_Int32_System_Int32__" data-uid="OpenTK.Audio.OpenAL.ALC.GetInteger(OpenTK.Audio.OpenAL.ALDevice,OpenTK.Audio.OpenAL.AlcGetInteger,System.Int32,System.Int32*)">GetInteger(ALDevice, AlcGetInteger, int, int*)</h4>
-  <div class="markdown level1 summary"><p>This function returns integers related to the context.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern void GetInteger(ALDevice device, AlcGetInteger param, int size, int* data)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Audio.OpenAL.ALDevice.html">ALDevice</a></td>
-        <td><span class="parametername">device</span></td>
-        <td><p>a pointer to the device to be queried.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="OpenTK.Audio.OpenAL.AlcGetInteger.html">AlcGetInteger</a></td>
-        <td><span class="parametername">param</span></td>
-        <td><p>an attribute to be retrieved: ALC_MAJOR_VERSION, ALC_MINOR_VERSION, ALC_ATTRIBUTES_SIZE, ALC_ALL_ATTRIBUTES.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
-        <td><span class="parametername">size</span></td>
-        <td><p>the size of the destination buffer provided, in number of integers.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>*</td>
-        <td><span class="parametername">data</span></td>
-        <td><p>a pointer to the buffer to be returned.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="OpenTK_Audio_OpenAL_ALC_GetInteger_" data-uid="OpenTK.Audio.OpenAL.ALC.GetInteger*"></a>
-  <h4 id="OpenTK_Audio_OpenAL_ALC_GetInteger_OpenTK_Audio_OpenAL_ALDevice_OpenTK_Audio_OpenAL_AlcGetInteger_System_Int32__" data-uid="OpenTK.Audio.OpenAL.ALC.GetInteger(OpenTK.Audio.OpenAL.ALDevice,OpenTK.Audio.OpenAL.AlcGetInteger,System.Int32@)">GetInteger(ALDevice, AlcGetInteger, out int)</h4>
-  <div class="markdown level1 summary"><p>This function returns integers related to the context.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void GetInteger(ALDevice device, AlcGetInteger param, out int data)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Audio.OpenAL.ALDevice.html">ALDevice</a></td>
-        <td><span class="parametername">device</span></td>
-        <td><p>A pointer to the device to be queried.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="OpenTK.Audio.OpenAL.AlcGetInteger.html">AlcGetInteger</a></td>
-        <td><span class="parametername">param</span></td>
-        <td><p>An attribute to be retrieved: ALC_MAJOR_VERSION, ALC_MINOR_VERSION, ALC_ATTRIBUTES_SIZE, ALC_ALL_ATTRIBUTES.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td><span class="parametername">data</span></td>
         <td><p>A pointer to the buffer to be returned.</p>
 </td>
@@ -1594,6 +1420,180 @@
       </tr>
     </tbody>
   </table>
+  <a id="OpenTK_Audio_OpenAL_ALC_GetInteger_" data-uid="OpenTK.Audio.OpenAL.ALC.GetInteger*"></a>
+  <h4 id="OpenTK_Audio_OpenAL_ALC_GetInteger_OpenTK_Audio_OpenAL_ALDevice_OpenTK_Audio_OpenAL_AlcGetInteger_System_Int32_System_Int32__" data-uid="OpenTK.Audio.OpenAL.ALC.GetInteger(OpenTK.Audio.OpenAL.ALDevice,OpenTK.Audio.OpenAL.AlcGetInteger,System.Int32,System.Int32*)">GetInteger(ALDevice, AlcGetInteger, int, int*)</h4>
+  <div class="markdown level1 summary"><p>This function returns integers related to the context.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern void GetInteger(ALDevice device, AlcGetInteger param, int size, int* data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Audio.OpenAL.ALDevice.html">ALDevice</a></td>
+        <td><span class="parametername">device</span></td>
+        <td><p>a pointer to the device to be queried.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Audio.OpenAL.AlcGetInteger.html">AlcGetInteger</a></td>
+        <td><span class="parametername">param</span></td>
+        <td><p>an attribute to be retrieved: ALC_MAJOR_VERSION, ALC_MINOR_VERSION, ALC_ATTRIBUTES_SIZE, ALC_ALL_ATTRIBUTES.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">size</span></td>
+        <td><p>the size of the destination buffer provided, in number of integers.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>*</td>
+        <td><span class="parametername">data</span></td>
+        <td><p>a pointer to the buffer to be returned.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Audio_OpenAL_ALC_GetInteger_" data-uid="OpenTK.Audio.OpenAL.ALC.GetInteger*"></a>
+  <h4 id="OpenTK_Audio_OpenAL_ALC_GetInteger_OpenTK_Audio_OpenAL_ALDevice_OpenTK_Audio_OpenAL_AlcGetInteger_System_Int32_System_Int32__" data-uid="OpenTK.Audio.OpenAL.ALC.GetInteger(OpenTK.Audio.OpenAL.ALDevice,OpenTK.Audio.OpenAL.AlcGetInteger,System.Int32,System.Int32@)">GetInteger(ALDevice, AlcGetInteger, int, out int)</h4>
+  <div class="markdown level1 summary"><p>This function returns integers related to the context.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern void GetInteger(ALDevice device, AlcGetInteger param, int size, out int data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Audio.OpenAL.ALDevice.html">ALDevice</a></td>
+        <td><span class="parametername">device</span></td>
+        <td><p>A pointer to the device to be queried.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Audio.OpenAL.AlcGetInteger.html">AlcGetInteger</a></td>
+        <td><span class="parametername">param</span></td>
+        <td><p>An attribute to be retrieved: ALC_MAJOR_VERSION, ALC_MINOR_VERSION, ALC_ATTRIBUTES_SIZE, ALC_ALL_ATTRIBUTES.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">size</span></td>
+        <td><p>The size of the destination buffer provided, in number of integers.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">data</span></td>
+        <td><p>A pointer to the buffer to be returned.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Audio_OpenAL_ALC_GetInteger_" data-uid="OpenTK.Audio.OpenAL.ALC.GetInteger*"></a>
+  <h4 id="OpenTK_Audio_OpenAL_ALC_GetInteger_OpenTK_Audio_OpenAL_ALDevice_OpenTK_Audio_OpenAL_AlcGetInteger_System_Int32_System_Int32___" data-uid="OpenTK.Audio.OpenAL.ALC.GetInteger(OpenTK.Audio.OpenAL.ALDevice,OpenTK.Audio.OpenAL.AlcGetInteger,System.Int32,System.Int32[])">GetInteger(ALDevice, AlcGetInteger, int, int[])</h4>
+  <div class="markdown level1 summary"><p>This function returns integers related to the context.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern void GetInteger(ALDevice device, AlcGetInteger param, int size, int[] data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Audio.OpenAL.ALDevice.html">ALDevice</a></td>
+        <td><span class="parametername">device</span></td>
+        <td><p>a pointer to the device to be queried.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Audio.OpenAL.AlcGetInteger.html">AlcGetInteger</a></td>
+        <td><span class="parametername">param</span></td>
+        <td><p>an attribute to be retrieved: ALC_MAJOR_VERSION, ALC_MINOR_VERSION, ALC_ATTRIBUTES_SIZE, ALC_ALL_ATTRIBUTES.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">size</span></td>
+        <td><p>the size of the destination buffer provided, in number of integers.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</td>
+        <td><span class="parametername">data</span></td>
+        <td><p>a pointer to the buffer to be returned.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Audio_OpenAL_ALC_GetInteger_" data-uid="OpenTK.Audio.OpenAL.ALC.GetInteger*"></a>
+  <h4 id="OpenTK_Audio_OpenAL_ALC_GetInteger_OpenTK_Audio_OpenAL_ALDevice_OpenTK_Audio_OpenAL_AlcGetInteger_System_Int32__" data-uid="OpenTK.Audio.OpenAL.ALC.GetInteger(OpenTK.Audio.OpenAL.ALDevice,OpenTK.Audio.OpenAL.AlcGetInteger,System.Int32@)">GetInteger(ALDevice, AlcGetInteger, out int)</h4>
+  <div class="markdown level1 summary"><p>This function returns integers related to the context.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void GetInteger(ALDevice device, AlcGetInteger param, out int data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Audio.OpenAL.ALDevice.html">ALDevice</a></td>
+        <td><span class="parametername">device</span></td>
+        <td><p>A pointer to the device to be queried.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Audio.OpenAL.AlcGetInteger.html">AlcGetInteger</a></td>
+        <td><span class="parametername">param</span></td>
+        <td><p>An attribute to be retrieved: ALC_MAJOR_VERSION, ALC_MINOR_VERSION, ALC_ATTRIBUTES_SIZE, ALC_ALL_ATTRIBUTES.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">data</span></td>
+        <td><p>A pointer to the buffer to be returned.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="OpenTK_Audio_OpenAL_ALC_GetProcAddress_" data-uid="OpenTK.Audio.OpenAL.ALC.GetProcAddress*"></a>
   <h4 id="OpenTK_Audio_OpenAL_ALC_GetProcAddress_OpenTK_Audio_OpenAL_ALDevice_System_String_" data-uid="OpenTK.Audio.OpenAL.ALC.GetProcAddress(OpenTK.Audio.OpenAL.ALDevice,System.String)">GetProcAddress(ALDevice, string)</h4>
   <div class="markdown level1 summary"><p>This function retrieves the address of a specified context extension function.</p>
@@ -1643,54 +1643,6 @@
       </tr>
     </tbody>
   </table>
-  <a id="OpenTK_Audio_OpenAL_ALC_GetString_" data-uid="OpenTK.Audio.OpenAL.ALC.GetString*"></a>
-  <h4 id="OpenTK_Audio_OpenAL_ALC_GetString_OpenTK_Audio_OpenAL_AlcGetStringList_" data-uid="OpenTK.Audio.OpenAL.ALC.GetString(OpenTK.Audio.OpenAL.AlcGetStringList)">GetString(AlcGetStringList)</h4>
-  <div class="markdown level1 summary"><p>This function returns a List of strings related to the context.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static List&lt;string&gt; GetString(AlcGetStringList param)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Audio.OpenAL.AlcGetStringList.html">AlcGetStringList</a></td>
-        <td><span class="parametername">param</span></td>
-        <td><p>An attribute to be retrieved: ALC_DEVICE_SPECIFIER, ALC_CAPTURE_DEVICE_SPECIFIER, ALC_ALL_DEVICES_SPECIFIER.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</td>
-        <td><p>A List of strings containing the names of the Devices.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 id="OpenTK_Audio_OpenAL_ALC_GetString_OpenTK_Audio_OpenAL_AlcGetStringList__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>ALC_DEVICE_SPECIFIER will return the name of the specified output device if a pointer is supplied, or will return a list of all available devices if a NULL device pointer is supplied. A list is a pointer to a series of strings separated by NULL characters, with the list terminated by two NULL characters. See Enumeration Extension for more details.
-ALC_CAPTURE_DEVICE_SPECIFIER will return the name of the specified capture device if a pointer is supplied, or will return a list of all available devices if a NULL device pointer is supplied.
-ALC_EXTENSIONS returns a list of available context extensions, with each extension separated by a space and the list terminated by a NULL character.</p>
-</div>
   <a id="OpenTK_Audio_OpenAL_ALC_GetString_" data-uid="OpenTK.Audio.OpenAL.ALC.GetString*"></a>
   <h4 id="OpenTK_Audio_OpenAL_ALC_GetString_OpenTK_Audio_OpenAL_ALDevice_OpenTK_Audio_OpenAL_AlcGetString_" data-uid="OpenTK.Audio.OpenAL.ALC.GetString(OpenTK.Audio.OpenAL.ALDevice,OpenTK.Audio.OpenAL.AlcGetString)">GetString(ALDevice, AlcGetString)</h4>
   <div class="markdown level1 summary"><p>This strings related to the context.</p>
@@ -1850,6 +1802,54 @@ ALC_EXTENSIONS returns a list of available context extensions, with each extensi
       </tr>
     </tbody>
   </table>
+  <a id="OpenTK_Audio_OpenAL_ALC_GetString_" data-uid="OpenTK.Audio.OpenAL.ALC.GetString*"></a>
+  <h4 id="OpenTK_Audio_OpenAL_ALC_GetString_OpenTK_Audio_OpenAL_AlcGetStringList_" data-uid="OpenTK.Audio.OpenAL.ALC.GetString(OpenTK.Audio.OpenAL.AlcGetStringList)">GetString(AlcGetStringList)</h4>
+  <div class="markdown level1 summary"><p>This function returns a List of strings related to the context.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;string&gt; GetString(AlcGetStringList param)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Audio.OpenAL.AlcGetStringList.html">AlcGetStringList</a></td>
+        <td><span class="parametername">param</span></td>
+        <td><p>An attribute to be retrieved: ALC_DEVICE_SPECIFIER, ALC_CAPTURE_DEVICE_SPECIFIER, ALC_ALL_DEVICES_SPECIFIER.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</td>
+        <td><p>A List of strings containing the names of the Devices.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenTK_Audio_OpenAL_ALC_GetString_OpenTK_Audio_OpenAL_AlcGetStringList__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>ALC_DEVICE_SPECIFIER will return the name of the specified output device if a pointer is supplied, or will return a list of all available devices if a NULL device pointer is supplied. A list is a pointer to a series of strings separated by NULL characters, with the list terminated by two NULL characters. See Enumeration Extension for more details.
+ALC_CAPTURE_DEVICE_SPECIFIER will return the name of the specified capture device if a pointer is supplied, or will return a list of all available devices if a NULL device pointer is supplied.
+ALC_EXTENSIONS returns a list of available context extensions, with each extension separated by a space and the list terminated by a NULL character.</p>
+</div>
   <a id="OpenTK_Audio_OpenAL_ALC_GetStringList_" data-uid="OpenTK.Audio.OpenAL.ALC.GetStringList*"></a>
   <h4 id="OpenTK_Audio_OpenAL_ALC_GetStringList_OpenTK_Audio_OpenAL_GetEnumerationStringList_" data-uid="OpenTK.Audio.OpenAL.ALC.GetStringList(OpenTK.Audio.OpenAL.GetEnumerationStringList)">GetStringList(GetEnumerationStringList)</h4>
   <div class="markdown level1 summary"><p>Gets a named property on the context.</p>

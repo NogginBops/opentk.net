@@ -1819,6 +1819,92 @@ This function must only be called from the main thread.
 Possible errors include <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.ErrorCode.html#OpenTK_Windowing_GraphicsLibraryFramework_ErrorCode_NotInitialized">NotInitialized</a> and <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.ErrorCode.html#OpenTK_Windowing_GraphicsLibraryFramework_ErrorCode_PlatformError">PlatformError</a>.
 </p>
 </div>
+  <a id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetGLXContext_" data-uid="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.GetGLXContext*"></a>
+  <h4 id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetGLXContext_OpenTK_Windowing_GraphicsLibraryFramework_Window__" data-uid="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.GetGLXContext(OpenTK.Windowing.GraphicsLibraryFramework.Window*)">GetGLXContext(Window*)</h4>
+  <div class="markdown level1 summary"><p>Returns the <code>GLXContext</code> of the specified window.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static uint GetGLXContext(Window* window)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.Window.html">Window</a>*</td>
+        <td><span class="parametername">window</span></td>
+        <td><p>The window to get the context from.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
+        <td><p>The <code>GLXContext</code> of the specified window, or <code>NULL</code> if an error occurred.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetGLXWindow_" data-uid="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.GetGLXWindow*"></a>
+  <h4 id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetGLXWindow_OpenTK_Windowing_GraphicsLibraryFramework_Window__" data-uid="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.GetGLXWindow(OpenTK.Windowing.GraphicsLibraryFramework.Window*)">GetGLXWindow(Window*)</h4>
+  <div class="markdown level1 summary"><p>Returns the <code>GLXWindow</code> of the specified window.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static uint GetGLXWindow(Window* window)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.Window.html">Window</a>*</td>
+        <td><span class="parametername">window</span></td>
+        <td><p>The window to query.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
+        <td><p>The <code>GLXWindow</code> of the specified window, or <code>None</code> if an error occurred.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetGamepadName_" data-uid="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.GetGamepadName*"></a>
   <h4 id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetGamepadName_System_Int32_" data-uid="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.GetGamepadName(System.Int32)">GetGamepadName(int)</h4>
   <div class="markdown level1 summary"><p>
@@ -2149,92 +2235,6 @@ This function must only be called from the main thread.
 Possible errors include <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.ErrorCode.html#OpenTK_Windowing_GraphicsLibraryFramework_ErrorCode_NotInitialized">NotInitialized</a> and <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.ErrorCode.html#OpenTK_Windowing_GraphicsLibraryFramework_ErrorCode_PlatformError">PlatformError</a>.
 </p>
 </div>
-  <a id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetGLXContext_" data-uid="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.GetGLXContext*"></a>
-  <h4 id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetGLXContext_OpenTK_Windowing_GraphicsLibraryFramework_Window__" data-uid="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.GetGLXContext(OpenTK.Windowing.GraphicsLibraryFramework.Window*)">GetGLXContext(Window*)</h4>
-  <div class="markdown level1 summary"><p>Returns the <code>GLXContext</code> of the specified window.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static uint GetGLXContext(Window* window)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.Window.html">Window</a>*</td>
-        <td><span class="parametername">window</span></td>
-        <td><p>The window to get the context from.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
-        <td><p>The <code>GLXContext</code> of the specified window, or <code>NULL</code> if an error occurred.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetGLXWindow_" data-uid="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.GetGLXWindow*"></a>
-  <h4 id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetGLXWindow_OpenTK_Windowing_GraphicsLibraryFramework_Window__" data-uid="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.GetGLXWindow(OpenTK.Windowing.GraphicsLibraryFramework.Window*)">GetGLXWindow(Window*)</h4>
-  <div class="markdown level1 summary"><p>Returns the <code>GLXWindow</code> of the specified window.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static uint GetGLXWindow(Window* window)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.Window.html">Window</a>*</td>
-        <td><span class="parametername">window</span></td>
-        <td><p>The window to query.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
-        <td><p>The <code>GLXWindow</code> of the specified window, or <code>None</code> if an error occurred.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
   <a id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetInputMode_" data-uid="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.GetInputMode*"></a>
   <h4 id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetInputMode_OpenTK_Windowing_GraphicsLibraryFramework_Window__OpenTK_Windowing_GraphicsLibraryFramework_CursorStateAttribute_" data-uid="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.GetInputMode(OpenTK.Windowing.GraphicsLibraryFramework.Window*,OpenTK.Windowing.GraphicsLibraryFramework.CursorStateAttribute)">GetInputMode(Window*, CursorStateAttribute)</h4>
   <div class="markdown level1 summary"><p>
@@ -2700,7 +2700,7 @@ Possible errors include <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFr
 </p>
 </div>
   <a id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetJoystickAxesRaw_" data-uid="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.GetJoystickAxesRaw*"></a>
-  <h4 id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetJoystickAxesRaw_System_Int32_System_Int32__" data-uid="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.GetJoystickAxesRaw(System.Int32,System.Int32@)">GetJoystickAxesRaw(int, out int)</h4>
+  <h4 id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetJoystickAxesRaw_System_Int32_System_Int32__" data-uid="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.GetJoystickAxesRaw(System.Int32,System.Int32*)">GetJoystickAxesRaw(int, int*)</h4>
   <div class="markdown level1 summary"><p>
 This function returns the values of all axes of the specified joystick.
 Each element in the array is a value between -1.0 and 1.0.
@@ -2714,7 +2714,7 @@ This can be used instead of first calling <a class="xref" href="OpenTK.Windowing
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static float* GetJoystickAxesRaw(int jid, out int count)</code></pre>
+    <pre><code class="lang-csharp hljs">public static float* GetJoystickAxesRaw(int jid, int* count)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -2733,7 +2733,7 @@ This can be used instead of first calling <a class="xref" href="OpenTK.Windowing
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>*</td>
         <td><span class="parametername">count</span></td>
         <td><p>Where to store the number of axis values in the returned array.
 This is set to zero if the joystick is not present or an error occurred.</p>
@@ -2771,7 +2771,7 @@ Possible errors include <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFr
 </p>
 </div>
   <a id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetJoystickAxesRaw_" data-uid="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.GetJoystickAxesRaw*"></a>
-  <h4 id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetJoystickAxesRaw_System_Int32_System_Int32__" data-uid="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.GetJoystickAxesRaw(System.Int32,System.Int32*)">GetJoystickAxesRaw(int, int*)</h4>
+  <h4 id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetJoystickAxesRaw_System_Int32_System_Int32__" data-uid="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.GetJoystickAxesRaw(System.Int32,System.Int32@)">GetJoystickAxesRaw(int, out int)</h4>
   <div class="markdown level1 summary"><p>
 This function returns the values of all axes of the specified joystick.
 Each element in the array is a value between -1.0 and 1.0.
@@ -2785,7 +2785,7 @@ This can be used instead of first calling <a class="xref" href="OpenTK.Windowing
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static float* GetJoystickAxesRaw(int jid, int* count)</code></pre>
+    <pre><code class="lang-csharp hljs">public static float* GetJoystickAxesRaw(int jid, out int count)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -2804,7 +2804,7 @@ This can be used instead of first calling <a class="xref" href="OpenTK.Windowing
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>*</td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td><span class="parametername">count</span></td>
         <td><p>Where to store the number of axis values in the returned array.
 This is set to zero if the joystick is not present or an error occurred.</p>
@@ -2916,87 +2916,6 @@ Possible errors include <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFr
 </p>
 </div>
   <a id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetJoystickButtonsRaw_" data-uid="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.GetJoystickButtonsRaw*"></a>
-  <h4 id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetJoystickButtonsRaw_System_Int32_System_Int32__" data-uid="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.GetJoystickButtonsRaw(System.Int32,System.Int32@)">GetJoystickButtonsRaw(int, out int)</h4>
-  <div class="markdown level1 summary"><p>
-This function returns the state of all buttons of the specified joystick.
-Each element in the array is either <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.InputAction.html#OpenTK_Windowing_GraphicsLibraryFramework_InputAction_Press">Press</a> or <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.InputAction.html#OpenTK_Windowing_GraphicsLibraryFramework_InputAction_Release">Release</a>.
-</p>
-<p>
-For backward compatibility with earlier versions that did not have <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.html#OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetJoystickHats_System_Int32_">GetJoystickHats(int)</a>,
-the button array also includes all hats, each represented as four buttons.
-</p>
-<p>
-The hats are in the same order as returned by <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.html#OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetJoystickHats_System_Int32_">GetJoystickHats(int)</a> and are in the order
-up, right, down and left.
-</p>
-<p>
-To disable these extra buttons, set the <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.InitHintBool.html#OpenTK_Windowing_GraphicsLibraryFramework_InitHintBool_JoystickHatButtons">JoystickHatButtons</a>
-init hint before initialization.
-</p>
-<p>
-If the specified joystick is not present this function will return <code>null</code> but will not generate an error.
-This can be used instead of first calling <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.html#OpenTK_Windowing_GraphicsLibraryFramework_GLFW_JoystickPresent_System_Int32_">JoystickPresent(int)</a>.
-</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static JoystickInputAction* GetJoystickButtonsRaw(int jid, out int count)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
-        <td><span class="parametername">jid</span></td>
-        <td><p>The joystick to query.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
-        <td><span class="parametername">count</span></td>
-        <td><p>Where to store the number of button states in the returned array.
-This is set to zero if the joystick is not present or an error occurred.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.JoystickInputAction.html">JoystickInputAction</a>*</td>
-        <td><p>An array of button states, or <code>null</code> if the joystick is not present or an error occurred.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetJoystickButtonsRaw_System_Int32_System_Int32___remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>
-The returned array is allocated and freed by GLFW. You should not free it yourself.
-It is valid until the specified joystick is disconnected or the library is terminated.
-</p>
-<p>
-This function must only be called from the main thread.
-</p>
-<p>
-Possible errors include <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.ErrorCode.html#OpenTK_Windowing_GraphicsLibraryFramework_ErrorCode_NotInitialized">NotInitialized</a>, <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.ErrorCode.html#OpenTK_Windowing_GraphicsLibraryFramework_ErrorCode_InvalidEnum">InvalidEnum</a> and <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.ErrorCode.html#OpenTK_Windowing_GraphicsLibraryFramework_ErrorCode_PlatformError">PlatformError</a>.
-</p>
-</div>
-  <a id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetJoystickButtonsRaw_" data-uid="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.GetJoystickButtonsRaw*"></a>
   <h4 id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetJoystickButtonsRaw_System_Int32_System_Int32__" data-uid="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.GetJoystickButtonsRaw(System.Int32,System.Int32*)">GetJoystickButtonsRaw(int, int*)</h4>
   <div class="markdown level1 summary"><p>
 This function returns the state of all buttons of the specified joystick.
@@ -3042,6 +2961,87 @@ This can be used instead of first calling <a class="xref" href="OpenTK.Windowing
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>*</td>
+        <td><span class="parametername">count</span></td>
+        <td><p>Where to store the number of button states in the returned array.
+This is set to zero if the joystick is not present or an error occurred.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.JoystickInputAction.html">JoystickInputAction</a>*</td>
+        <td><p>An array of button states, or <code>null</code> if the joystick is not present or an error occurred.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetJoystickButtonsRaw_System_Int32_System_Int32___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>
+The returned array is allocated and freed by GLFW. You should not free it yourself.
+It is valid until the specified joystick is disconnected or the library is terminated.
+</p>
+<p>
+This function must only be called from the main thread.
+</p>
+<p>
+Possible errors include <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.ErrorCode.html#OpenTK_Windowing_GraphicsLibraryFramework_ErrorCode_NotInitialized">NotInitialized</a>, <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.ErrorCode.html#OpenTK_Windowing_GraphicsLibraryFramework_ErrorCode_InvalidEnum">InvalidEnum</a> and <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.ErrorCode.html#OpenTK_Windowing_GraphicsLibraryFramework_ErrorCode_PlatformError">PlatformError</a>.
+</p>
+</div>
+  <a id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetJoystickButtonsRaw_" data-uid="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.GetJoystickButtonsRaw*"></a>
+  <h4 id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetJoystickButtonsRaw_System_Int32_System_Int32__" data-uid="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.GetJoystickButtonsRaw(System.Int32,System.Int32@)">GetJoystickButtonsRaw(int, out int)</h4>
+  <div class="markdown level1 summary"><p>
+This function returns the state of all buttons of the specified joystick.
+Each element in the array is either <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.InputAction.html#OpenTK_Windowing_GraphicsLibraryFramework_InputAction_Press">Press</a> or <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.InputAction.html#OpenTK_Windowing_GraphicsLibraryFramework_InputAction_Release">Release</a>.
+</p>
+<p>
+For backward compatibility with earlier versions that did not have <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.html#OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetJoystickHats_System_Int32_">GetJoystickHats(int)</a>,
+the button array also includes all hats, each represented as four buttons.
+</p>
+<p>
+The hats are in the same order as returned by <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.html#OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetJoystickHats_System_Int32_">GetJoystickHats(int)</a> and are in the order
+up, right, down and left.
+</p>
+<p>
+To disable these extra buttons, set the <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.InitHintBool.html#OpenTK_Windowing_GraphicsLibraryFramework_InitHintBool_JoystickHatButtons">JoystickHatButtons</a>
+init hint before initialization.
+</p>
+<p>
+If the specified joystick is not present this function will return <code>null</code> but will not generate an error.
+This can be used instead of first calling <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.html#OpenTK_Windowing_GraphicsLibraryFramework_GLFW_JoystickPresent_System_Int32_">JoystickPresent(int)</a>.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static JoystickInputAction* GetJoystickButtonsRaw(int jid, out int count)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">jid</span></td>
+        <td><p>The joystick to query.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td><span class="parametername">count</span></td>
         <td><p>Where to store the number of button states in the returned array.
 This is set to zero if the joystick is not present or an error occurred.</p>
@@ -3297,84 +3297,6 @@ Possible errors include <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFr
 </p>
 </div>
   <a id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetJoystickHatsRaw_" data-uid="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.GetJoystickHatsRaw*"></a>
-  <h4 id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetJoystickHatsRaw_System_Int32_System_Int32__" data-uid="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.GetJoystickHatsRaw(System.Int32,System.Int32@)">GetJoystickHatsRaw(int, out int)</h4>
-  <div class="markdown level1 summary"><p>
-This function returns the state of all hats of the specified joystick.
-Each element in the array is one of the <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.JoystickHats.html">JoystickHats</a>.
-</p>
-<p>
-The diagonal directions are bitwise combinations of the primary (up, right, down and left) directions
-and you can test for these individually by ANDing it with the corresponding direction.
-<pre><code class="lang-csharp">if (hats[2].HasFlag(JoystickHats.Right))
-{
-   // State of hat 2 could be right-up, right or right-down
-}</code></pre>
-
-<p>
-If the specified joystick is not present, this function will return NULL but will not generate an error.
-This can be used instead of first calling <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.html#OpenTK_Windowing_GraphicsLibraryFramework_GLFW_JoystickPresent_System_Int32_">JoystickPresent(int)</a>.
-</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static JoystickHats* GetJoystickHatsRaw(int jid, out int count)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
-        <td><span class="parametername">jid</span></td>
-        <td><p>The joystick to query.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
-        <td><span class="parametername">count</span></td>
-        <td><p>Where to store the number of hat states in the returned array.
-This is set to zero if the joystick is not present or an error occurred.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.JoystickHats.html">JoystickHats</a>*</td>
-        <td><p>An array of hat states, or <code>null</code> if the joystick is not present or an error occurred.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetJoystickHatsRaw_System_Int32_System_Int32___remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>
-The returned array is allocated and freed by GLFW. You should not free it yourself
-It is valid until the specified joystick is disconnected,
-this function is called again for that joystick or the library is terminated.
-</p>
-<p>
-This function must only be called from the main thread.
-</p>
-<p>
-Possible errors include <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.ErrorCode.html#OpenTK_Windowing_GraphicsLibraryFramework_ErrorCode_NotInitialized">NotInitialized</a>, <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.ErrorCode.html#OpenTK_Windowing_GraphicsLibraryFramework_ErrorCode_InvalidEnum">InvalidEnum</a> and <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.ErrorCode.html#OpenTK_Windowing_GraphicsLibraryFramework_ErrorCode_PlatformError">PlatformError</a>.
-</p>
-</div>
-  <a id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetJoystickHatsRaw_" data-uid="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.GetJoystickHatsRaw*"></a>
   <h4 id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetJoystickHatsRaw_System_Int32_System_Int32__" data-uid="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.GetJoystickHatsRaw(System.Int32,System.Int32*)">GetJoystickHatsRaw(int, int*)</h4>
   <div class="markdown level1 summary"><p>
 This function returns the state of all hats of the specified joystick.
@@ -3416,6 +3338,84 @@ This can be used instead of first calling <a class="xref" href="OpenTK.Windowing
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>*</td>
+        <td><span class="parametername">count</span></td>
+        <td><p>Where to store the number of hat states in the returned array.
+This is set to zero if the joystick is not present or an error occurred.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.JoystickHats.html">JoystickHats</a>*</td>
+        <td><p>An array of hat states, or <code>null</code> if the joystick is not present or an error occurred.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetJoystickHatsRaw_System_Int32_System_Int32___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>
+The returned array is allocated and freed by GLFW. You should not free it yourself
+It is valid until the specified joystick is disconnected,
+this function is called again for that joystick or the library is terminated.
+</p>
+<p>
+This function must only be called from the main thread.
+</p>
+<p>
+Possible errors include <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.ErrorCode.html#OpenTK_Windowing_GraphicsLibraryFramework_ErrorCode_NotInitialized">NotInitialized</a>, <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.ErrorCode.html#OpenTK_Windowing_GraphicsLibraryFramework_ErrorCode_InvalidEnum">InvalidEnum</a> and <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.ErrorCode.html#OpenTK_Windowing_GraphicsLibraryFramework_ErrorCode_PlatformError">PlatformError</a>.
+</p>
+</div>
+  <a id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetJoystickHatsRaw_" data-uid="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.GetJoystickHatsRaw*"></a>
+  <h4 id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetJoystickHatsRaw_System_Int32_System_Int32__" data-uid="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.GetJoystickHatsRaw(System.Int32,System.Int32@)">GetJoystickHatsRaw(int, out int)</h4>
+  <div class="markdown level1 summary"><p>
+This function returns the state of all hats of the specified joystick.
+Each element in the array is one of the <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.JoystickHats.html">JoystickHats</a>.
+</p>
+<p>
+The diagonal directions are bitwise combinations of the primary (up, right, down and left) directions
+and you can test for these individually by ANDing it with the corresponding direction.
+<pre><code class="lang-csharp">if (hats[2].HasFlag(JoystickHats.Right))
+{
+   // State of hat 2 could be right-up, right or right-down
+}</code></pre>
+
+<p>
+If the specified joystick is not present, this function will return NULL but will not generate an error.
+This can be used instead of first calling <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.html#OpenTK_Windowing_GraphicsLibraryFramework_GLFW_JoystickPresent_System_Int32_">JoystickPresent(int)</a>.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static JoystickHats* GetJoystickHatsRaw(int jid, out int count)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">jid</span></td>
+        <td><p>The joystick to query.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td><span class="parametername">count</span></td>
         <td><p>Where to store the number of hat states in the returned array.
 This is set to zero if the joystick is not present or an error occurred.</p>
@@ -4225,55 +4225,6 @@ Possible errors include <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFr
 </p>
 </div>
   <a id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetMonitorPos_" data-uid="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.GetMonitorPos*"></a>
-  <h4 id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetMonitorPos_OpenTK_Windowing_GraphicsLibraryFramework_Monitor__System_Int32__System_Int32__" data-uid="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.GetMonitorPos(OpenTK.Windowing.GraphicsLibraryFramework.Monitor*,System.Int32@,System.Int32@)">GetMonitorPos(Monitor*, out int, out int)</h4>
-  <div class="markdown level1 summary"><p>
-This function returns the position, in screen coordinates, of the upper-left corner of the specified monitor.
-</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void GetMonitorPos(Monitor* monitor, out int x, out int y)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.Monitor.html">Monitor</a>*</td>
-        <td><span class="parametername">monitor</span></td>
-        <td><p>The monitor to query.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
-        <td><span class="parametername">x</span></td>
-        <td><p>Where to store the monitor x-coordinate, or <code>out _</code>.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
-        <td><span class="parametername">y</span></td>
-        <td><p>Where to store the monitor y-coordinate, or <code>out _</code>.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetMonitorPos_OpenTK_Windowing_GraphicsLibraryFramework_Monitor__System_Int32__System_Int32___remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>
-This function must only be called from the main thread.
-</p>
-<p>
-Possible errors include <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.ErrorCode.html#OpenTK_Windowing_GraphicsLibraryFramework_ErrorCode_NotInitialized">NotInitialized</a> and <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.ErrorCode.html#OpenTK_Windowing_GraphicsLibraryFramework_ErrorCode_PlatformError">PlatformError</a>.
-</p>
-</div>
-  <a id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetMonitorPos_" data-uid="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.GetMonitorPos*"></a>
   <h4 id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetMonitorPos_OpenTK_Windowing_GraphicsLibraryFramework_Monitor__System_Int32__System_Int32__" data-uid="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.GetMonitorPos(OpenTK.Windowing.GraphicsLibraryFramework.Monitor*,System.Int32*,System.Int32*)">GetMonitorPos(Monitor*, int*, int*)</h4>
   <div class="markdown level1 summary"><p>
 This function returns the position, in screen coordinates, of the upper-left corner of the specified monitor.
@@ -4322,67 +4273,16 @@ This function must only be called from the main thread.
 Possible errors include <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.ErrorCode.html#OpenTK_Windowing_GraphicsLibraryFramework_ErrorCode_NotInitialized">NotInitialized</a> and <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.ErrorCode.html#OpenTK_Windowing_GraphicsLibraryFramework_ErrorCode_PlatformError">PlatformError</a>.
 </p>
 </div>
-  <a id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetMonitors_" data-uid="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.GetMonitors*"></a>
-  <h4 id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetMonitors" data-uid="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.GetMonitors">GetMonitors()</h4>
+  <a id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetMonitorPos_" data-uid="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.GetMonitorPos*"></a>
+  <h4 id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetMonitorPos_OpenTK_Windowing_GraphicsLibraryFramework_Monitor__System_Int32__System_Int32__" data-uid="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.GetMonitorPos(OpenTK.Windowing.GraphicsLibraryFramework.Monitor*,System.Int32@,System.Int32@)">GetMonitorPos(Monitor*, out int, out int)</h4>
   <div class="markdown level1 summary"><p>
-This function returns an array of handles for all currently connected monitors.
-The primary monitor is always first in the returned array.
-</p>
-<p>
-If no monitors were found, this function returns <code>null</code>.
+This function returns the position, in screen coordinates, of the upper-left corner of the specified monitor.
 </p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Monitor*[] GetMonitors()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.Monitor.html">Monitor</a>*[]</td>
-        <td><p>An array of monitor handles, or <code>null</code> if no monitors were found or if an error occurred.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetMonitors_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>
-The returned array is allocated and freed by GLFW. You should not free it yourself.
-It is only guaranteed to be valid until the monitor configuration changes or the library is terminated.
-</p>
-<p>
-This function must only be called from the main thread.
-</p>
-<p>
-Possible errors include <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.ErrorCode.html#OpenTK_Windowing_GraphicsLibraryFramework_ErrorCode_NotInitialized">NotInitialized</a>.
-</p>
-</div>
-  <h5 id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetMonitors_seealso">See Also</h5>
-  <div class="seealso">
-      <div><a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.html#OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetPrimaryMonitor">GetPrimaryMonitor()</a></div>
-  </div>
-  <a id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetMonitorsRaw_" data-uid="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.GetMonitorsRaw*"></a>
-  <h4 id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetMonitorsRaw_System_Int32__" data-uid="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.GetMonitorsRaw(System.Int32@)">GetMonitorsRaw(out int)</h4>
-  <div class="markdown level1 summary"><p>
-This function returns an array of handles for all currently connected monitors.
-The primary monitor is always first in the returned array.
-</p>
-<p>
-If no monitors were found, this function returns <code>null</code>.
-</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Monitor** GetMonitorsRaw(out int count)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void GetMonitorPos(Monitor* monitor, out int x, out int y)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -4394,111 +4294,34 @@ If no monitors were found, this function returns <code>null</code>.
       </tr>
     </thead>
     <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.Monitor.html">Monitor</a>*</td>
+        <td><span class="parametername">monitor</span></td>
+        <td><p>The monitor to query.</p>
+</td>
+      </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
-        <td><span class="parametername">count</span></td>
-        <td><p>Where to store the number of monitors in the returned array. This is set to zero if an error occurred.</p>
+        <td><span class="parametername">x</span></td>
+        <td><p>Where to store the monitor x-coordinate, or <code>out _</code>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">y</span></td>
+        <td><p>Where to store the monitor y-coordinate, or <code>out _</code>.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.Monitor.html">Monitor</a>**</td>
-        <td><p>An array of monitor handles, or <code>null</code> if no monitors were found or if an error occurred.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetMonitorsRaw_System_Int32___remarks">Remarks</h5>
+  <h5 id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetMonitorPos_OpenTK_Windowing_GraphicsLibraryFramework_Monitor__System_Int32__System_Int32___remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>
-The returned array is allocated and freed by GLFW. You should not free it yourself.
-It is only guaranteed to be valid until the monitor configuration changes or the library is terminated.
-</p>
-<p>
 This function must only be called from the main thread.
 </p>
 <p>
-Possible errors include <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.ErrorCode.html#OpenTK_Windowing_GraphicsLibraryFramework_ErrorCode_NotInitialized">NotInitialized</a>.
+Possible errors include <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.ErrorCode.html#OpenTK_Windowing_GraphicsLibraryFramework_ErrorCode_NotInitialized">NotInitialized</a> and <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.ErrorCode.html#OpenTK_Windowing_GraphicsLibraryFramework_ErrorCode_PlatformError">PlatformError</a>.
 </p>
 </div>
-  <h5 id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetMonitorsRaw_System_Int32___seealso">See Also</h5>
-  <div class="seealso">
-      <div><a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.html#OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetPrimaryMonitor">GetPrimaryMonitor()</a></div>
-  </div>
-  <a id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetMonitorsRaw_" data-uid="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.GetMonitorsRaw*"></a>
-  <h4 id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetMonitorsRaw_System_Int32__" data-uid="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.GetMonitorsRaw(System.Int32*)">GetMonitorsRaw(int*)</h4>
-  <div class="markdown level1 summary"><p>
-This function returns an array of handles for all currently connected monitors.
-The primary monitor is always first in the returned array.
-</p>
-<p>
-If no monitors were found, this function returns <code>null</code>.
-</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Monitor** GetMonitorsRaw(int* count)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>*</td>
-        <td><span class="parametername">count</span></td>
-        <td><p>Where to store the number of monitors in the returned array. This is set to zero if an error occurred.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.Monitor.html">Monitor</a>**</td>
-        <td><p>An array of monitor handles, or <code>null</code> if no monitors were found or if an error occurred.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetMonitorsRaw_System_Int32___remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>
-The returned array is allocated and freed by GLFW. You should not free it yourself.
-It is only guaranteed to be valid until the monitor configuration changes or the library is terminated.
-</p>
-<p>
-This function must only be called from the main thread.
-</p>
-<p>
-Possible errors include <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.ErrorCode.html#OpenTK_Windowing_GraphicsLibraryFramework_ErrorCode_NotInitialized">NotInitialized</a>.
-</p>
-</div>
-  <h5 id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetMonitorsRaw_System_Int32___seealso">See Also</h5>
-  <div class="seealso">
-      <div><a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.html#OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetPrimaryMonitor">GetPrimaryMonitor()</a></div>
-  </div>
   <a id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetMonitorUserPointer_" data-uid="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.GetMonitorUserPointer*"></a>
   <h4 id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetMonitorUserPointer_OpenTK_Windowing_GraphicsLibraryFramework_Monitor__" data-uid="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.GetMonitorUserPointer(OpenTK.Windowing.GraphicsLibraryFramework.Monitor*)">GetMonitorUserPointer(Monitor*)</h4>
   <div class="markdown level1 summary"><p>
@@ -4554,75 +4377,6 @@ This function may be called from any thread. Access is not synchronized.
 </p>
 <p>
 Possible errors include <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.ErrorCode.html#OpenTK_Windowing_GraphicsLibraryFramework_ErrorCode_NotInitialized">NotInitialized</a>.
-</p>
-</div>
-  <a id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetMonitorWorkarea_" data-uid="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.GetMonitorWorkarea*"></a>
-  <h4 id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetMonitorWorkarea_OpenTK_Windowing_GraphicsLibraryFramework_Monitor__System_Int32__System_Int32__System_Int32__System_Int32__" data-uid="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.GetMonitorWorkarea(OpenTK.Windowing.GraphicsLibraryFramework.Monitor*,System.Int32@,System.Int32@,System.Int32@,System.Int32@)">GetMonitorWorkarea(Monitor*, out int, out int, out int, out int)</h4>
-  <div class="markdown level1 summary"><p>
-This function returns the position, in screen coordinates, of the upper-left corner of the work area of the specified monitor along with the work area size in screen coordinates.
-The work area is defined as the area of the monitor not occluded by the operating system task bar where present.
-If no task bar exists then the work area is the monitor resolution in screen coordinates.
-</p>
-<p>
-Any or all of the position and size arguments may be NULL.If an error occurs, all non-NULL position and size arguments will be set to zero.
-</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void GetMonitorWorkarea(Monitor* monitor, out int x, out int y, out int width, out int height)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.Monitor.html">Monitor</a>*</td>
-        <td><span class="parametername">monitor</span></td>
-        <td><p>The monitor to query.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
-        <td><span class="parametername">x</span></td>
-        <td><p>Where to store the monitor x-coordinate.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
-        <td><span class="parametername">y</span></td>
-        <td><p>Where to store the monitor y-coordinate.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
-        <td><span class="parametername">width</span></td>
-        <td><p>Where to store the monitor width.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
-        <td><span class="parametername">height</span></td>
-        <td><p>Where to store the monitor height.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetMonitorWorkarea_OpenTK_Windowing_GraphicsLibraryFramework_Monitor__System_Int32__System_Int32__System_Int32__System_Int32___remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>
-This function must only be called from the main thread.
-</p>
-<p>
-Possible errors include GLFW_NOT_INITIALIZED and GLFW_PLATFORM_ERROR.
-</p>
-<p>
-Added in version GLFW 3.3.
 </p>
 </div>
   <a id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetMonitorWorkarea_" data-uid="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.GetMonitorWorkarea*"></a>
@@ -4694,6 +4448,252 @@ Possible errors include GLFW_NOT_INITIALIZED and GLFW_PLATFORM_ERROR.
 Added in version GLFW 3.3.
 </p>
 </div>
+  <a id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetMonitorWorkarea_" data-uid="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.GetMonitorWorkarea*"></a>
+  <h4 id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetMonitorWorkarea_OpenTK_Windowing_GraphicsLibraryFramework_Monitor__System_Int32__System_Int32__System_Int32__System_Int32__" data-uid="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.GetMonitorWorkarea(OpenTK.Windowing.GraphicsLibraryFramework.Monitor*,System.Int32@,System.Int32@,System.Int32@,System.Int32@)">GetMonitorWorkarea(Monitor*, out int, out int, out int, out int)</h4>
+  <div class="markdown level1 summary"><p>
+This function returns the position, in screen coordinates, of the upper-left corner of the work area of the specified monitor along with the work area size in screen coordinates.
+The work area is defined as the area of the monitor not occluded by the operating system task bar where present.
+If no task bar exists then the work area is the monitor resolution in screen coordinates.
+</p>
+<p>
+Any or all of the position and size arguments may be NULL.If an error occurs, all non-NULL position and size arguments will be set to zero.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void GetMonitorWorkarea(Monitor* monitor, out int x, out int y, out int width, out int height)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.Monitor.html">Monitor</a>*</td>
+        <td><span class="parametername">monitor</span></td>
+        <td><p>The monitor to query.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">x</span></td>
+        <td><p>Where to store the monitor x-coordinate.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">y</span></td>
+        <td><p>Where to store the monitor y-coordinate.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">width</span></td>
+        <td><p>Where to store the monitor width.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">height</span></td>
+        <td><p>Where to store the monitor height.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetMonitorWorkarea_OpenTK_Windowing_GraphicsLibraryFramework_Monitor__System_Int32__System_Int32__System_Int32__System_Int32___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>
+This function must only be called from the main thread.
+</p>
+<p>
+Possible errors include GLFW_NOT_INITIALIZED and GLFW_PLATFORM_ERROR.
+</p>
+<p>
+Added in version GLFW 3.3.
+</p>
+</div>
+  <a id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetMonitors_" data-uid="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.GetMonitors*"></a>
+  <h4 id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetMonitors" data-uid="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.GetMonitors">GetMonitors()</h4>
+  <div class="markdown level1 summary"><p>
+This function returns an array of handles for all currently connected monitors.
+The primary monitor is always first in the returned array.
+</p>
+<p>
+If no monitors were found, this function returns <code>null</code>.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Monitor*[] GetMonitors()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.Monitor.html">Monitor</a>*[]</td>
+        <td><p>An array of monitor handles, or <code>null</code> if no monitors were found or if an error occurred.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetMonitors_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>
+The returned array is allocated and freed by GLFW. You should not free it yourself.
+It is only guaranteed to be valid until the monitor configuration changes or the library is terminated.
+</p>
+<p>
+This function must only be called from the main thread.
+</p>
+<p>
+Possible errors include <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.ErrorCode.html#OpenTK_Windowing_GraphicsLibraryFramework_ErrorCode_NotInitialized">NotInitialized</a>.
+</p>
+</div>
+  <h5 id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetMonitors_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.html#OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetPrimaryMonitor">GetPrimaryMonitor()</a></div>
+  </div>
+  <a id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetMonitorsRaw_" data-uid="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.GetMonitorsRaw*"></a>
+  <h4 id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetMonitorsRaw_System_Int32__" data-uid="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.GetMonitorsRaw(System.Int32*)">GetMonitorsRaw(int*)</h4>
+  <div class="markdown level1 summary"><p>
+This function returns an array of handles for all currently connected monitors.
+The primary monitor is always first in the returned array.
+</p>
+<p>
+If no monitors were found, this function returns <code>null</code>.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Monitor** GetMonitorsRaw(int* count)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>*</td>
+        <td><span class="parametername">count</span></td>
+        <td><p>Where to store the number of monitors in the returned array. This is set to zero if an error occurred.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.Monitor.html">Monitor</a>**</td>
+        <td><p>An array of monitor handles, or <code>null</code> if no monitors were found or if an error occurred.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetMonitorsRaw_System_Int32___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>
+The returned array is allocated and freed by GLFW. You should not free it yourself.
+It is only guaranteed to be valid until the monitor configuration changes or the library is terminated.
+</p>
+<p>
+This function must only be called from the main thread.
+</p>
+<p>
+Possible errors include <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.ErrorCode.html#OpenTK_Windowing_GraphicsLibraryFramework_ErrorCode_NotInitialized">NotInitialized</a>.
+</p>
+</div>
+  <h5 id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetMonitorsRaw_System_Int32___seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.html#OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetPrimaryMonitor">GetPrimaryMonitor()</a></div>
+  </div>
+  <a id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetMonitorsRaw_" data-uid="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.GetMonitorsRaw*"></a>
+  <h4 id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetMonitorsRaw_System_Int32__" data-uid="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.GetMonitorsRaw(System.Int32@)">GetMonitorsRaw(out int)</h4>
+  <div class="markdown level1 summary"><p>
+This function returns an array of handles for all currently connected monitors.
+The primary monitor is always first in the returned array.
+</p>
+<p>
+If no monitors were found, this function returns <code>null</code>.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Monitor** GetMonitorsRaw(out int count)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">count</span></td>
+        <td><p>Where to store the number of monitors in the returned array. This is set to zero if an error occurred.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.Monitor.html">Monitor</a>**</td>
+        <td><p>An array of monitor handles, or <code>null</code> if no monitors were found or if an error occurred.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetMonitorsRaw_System_Int32___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>
+The returned array is allocated and freed by GLFW. You should not free it yourself.
+It is only guaranteed to be valid until the monitor configuration changes or the library is terminated.
+</p>
+<p>
+This function must only be called from the main thread.
+</p>
+<p>
+Possible errors include <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.ErrorCode.html#OpenTK_Windowing_GraphicsLibraryFramework_ErrorCode_NotInitialized">NotInitialized</a>.
+</p>
+</div>
+  <h5 id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetMonitorsRaw_System_Int32___seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.html#OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetPrimaryMonitor">GetPrimaryMonitor()</a></div>
+  </div>
   <a id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetMouseButton_" data-uid="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.GetMouseButton*"></a>
   <h4 id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetMouseButton_OpenTK_Windowing_GraphicsLibraryFramework_Window__OpenTK_Windowing_GraphicsLibraryFramework_MouseButton_" data-uid="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.GetMouseButton(OpenTK.Windowing.GraphicsLibraryFramework.Window*,OpenTK.Windowing.GraphicsLibraryFramework.MouseButton)">GetMouseButton(Window*, MouseButton)</h4>
   <div class="markdown level1 summary"><p>
@@ -5292,13 +5292,13 @@ This function may be called from any thread.
 </p>
 </div>
   <a id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetRequiredInstanceExtensionsRaw_" data-uid="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.GetRequiredInstanceExtensionsRaw*"></a>
-  <h4 id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetRequiredInstanceExtensionsRaw_System_UInt32__" data-uid="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.GetRequiredInstanceExtensionsRaw(System.UInt32@)">GetRequiredInstanceExtensionsRaw(out uint)</h4>
+  <h4 id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetRequiredInstanceExtensionsRaw_System_UInt32__" data-uid="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.GetRequiredInstanceExtensionsRaw(System.UInt32*)">GetRequiredInstanceExtensionsRaw(uint*)</h4>
   <div class="markdown level1 summary"><p>Returns the Vulkan instance extensions required by GLFW.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static byte** GetRequiredInstanceExtensionsRaw(out uint count)</code></pre>
+    <pre><code class="lang-csharp hljs">public static byte** GetRequiredInstanceExtensionsRaw(uint* count)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -5311,7 +5311,7 @@ This function may be called from any thread.
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>*</td>
         <td><span class="parametername">count</span></td>
         <td><p>Where to store the number of extensions in the returned array.
 This is set to zero if an error occurred.</p>
@@ -5371,13 +5371,13 @@ This function may be called from any thread.
 </p>
 </div>
   <a id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetRequiredInstanceExtensionsRaw_" data-uid="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.GetRequiredInstanceExtensionsRaw*"></a>
-  <h4 id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetRequiredInstanceExtensionsRaw_System_UInt32__" data-uid="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.GetRequiredInstanceExtensionsRaw(System.UInt32*)">GetRequiredInstanceExtensionsRaw(uint*)</h4>
+  <h4 id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetRequiredInstanceExtensionsRaw_System_UInt32__" data-uid="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.GetRequiredInstanceExtensionsRaw(System.UInt32@)">GetRequiredInstanceExtensionsRaw(out uint)</h4>
   <div class="markdown level1 summary"><p>Returns the Vulkan instance extensions required by GLFW.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static byte** GetRequiredInstanceExtensionsRaw(uint* count)</code></pre>
+    <pre><code class="lang-csharp hljs">public static byte** GetRequiredInstanceExtensionsRaw(out uint count)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -5390,7 +5390,7 @@ This function may be called from any thread.
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>*</td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
         <td><span class="parametername">count</span></td>
         <td><p>Where to store the number of extensions in the returned array.
 This is set to zero if an error occurred.</p>
@@ -5848,77 +5848,6 @@ Possible errors include <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFr
       <div><a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.html#OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetVideoMode_OpenTK_Windowing_GraphicsLibraryFramework_Monitor__">GetVideoMode(Monitor*)</a></div>
   </div>
   <a id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetVideoModesRaw_" data-uid="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.GetVideoModesRaw*"></a>
-  <h4 id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetVideoModesRaw_OpenTK_Windowing_GraphicsLibraryFramework_Monitor__System_Int32__" data-uid="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.GetVideoModesRaw(OpenTK.Windowing.GraphicsLibraryFramework.Monitor*,System.Int32@)">GetVideoModesRaw(Monitor*, out int)</h4>
-  <div class="markdown level1 summary"><p>
-This function returns an array of all video modes supported by the specified monitor.
-The returned array is sorted in ascending order, first by color bit depth (the sum of all channel depths)
-and then by resolution area (the product of width and height).
-</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static VideoMode* GetVideoModesRaw(Monitor* monitor, out int count)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.Monitor.html">Monitor</a>*</td>
-        <td><span class="parametername">monitor</span></td>
-        <td><p>The monitor to query.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
-        <td><span class="parametername">count</span></td>
-        <td><p>Where to store the number of video modes in the returned array.
-This is set to zero if an error occurred.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.VideoMode.html">VideoMode</a>*</td>
-        <td><p>An array of video modes, or <code>null</code> if an error occurred.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetVideoModesRaw_OpenTK_Windowing_GraphicsLibraryFramework_Monitor__System_Int32___remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>
-The returned array is allocated and freed by GLFW. You should not free it yourself.
-It is valid until the specified monitor is disconnected,
-this function is called again for that monitor, or the library is terminated.
-</p>
-<p>
-This function must only be called from the main thread.
-</p>
-<p>
-Possible errors include <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.ErrorCode.html#OpenTK_Windowing_GraphicsLibraryFramework_ErrorCode_NotInitialized">NotInitialized</a> and <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.ErrorCode.html#OpenTK_Windowing_GraphicsLibraryFramework_ErrorCode_PlatformError">PlatformError</a>.
-</p>
-</div>
-  <h5 id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetVideoModesRaw_OpenTK_Windowing_GraphicsLibraryFramework_Monitor__System_Int32___seealso">See Also</h5>
-  <div class="seealso">
-      <div><a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.html#OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetVideoMode_OpenTK_Windowing_GraphicsLibraryFramework_Monitor__">GetVideoMode(Monitor*)</a></div>
-  </div>
-  <a id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetVideoModesRaw_" data-uid="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.GetVideoModesRaw*"></a>
   <h4 id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetVideoModesRaw_OpenTK_Windowing_GraphicsLibraryFramework_Monitor__System_Int32__" data-uid="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.GetVideoModesRaw(OpenTK.Windowing.GraphicsLibraryFramework.Monitor*,System.Int32*)">GetVideoModesRaw(Monitor*, int*)</h4>
   <div class="markdown level1 summary"><p>
 This function returns an array of all video modes supported by the specified monitor.
@@ -5989,6 +5918,120 @@ Possible errors include <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFr
   <div class="seealso">
       <div><a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.html#OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetVideoMode_OpenTK_Windowing_GraphicsLibraryFramework_Monitor__">GetVideoMode(Monitor*)</a></div>
   </div>
+  <a id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetVideoModesRaw_" data-uid="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.GetVideoModesRaw*"></a>
+  <h4 id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetVideoModesRaw_OpenTK_Windowing_GraphicsLibraryFramework_Monitor__System_Int32__" data-uid="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.GetVideoModesRaw(OpenTK.Windowing.GraphicsLibraryFramework.Monitor*,System.Int32@)">GetVideoModesRaw(Monitor*, out int)</h4>
+  <div class="markdown level1 summary"><p>
+This function returns an array of all video modes supported by the specified monitor.
+The returned array is sorted in ascending order, first by color bit depth (the sum of all channel depths)
+and then by resolution area (the product of width and height).
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static VideoMode* GetVideoModesRaw(Monitor* monitor, out int count)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.Monitor.html">Monitor</a>*</td>
+        <td><span class="parametername">monitor</span></td>
+        <td><p>The monitor to query.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">count</span></td>
+        <td><p>Where to store the number of video modes in the returned array.
+This is set to zero if an error occurred.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.VideoMode.html">VideoMode</a>*</td>
+        <td><p>An array of video modes, or <code>null</code> if an error occurred.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetVideoModesRaw_OpenTK_Windowing_GraphicsLibraryFramework_Monitor__System_Int32___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>
+The returned array is allocated and freed by GLFW. You should not free it yourself.
+It is valid until the specified monitor is disconnected,
+this function is called again for that monitor, or the library is terminated.
+</p>
+<p>
+This function must only be called from the main thread.
+</p>
+<p>
+Possible errors include <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.ErrorCode.html#OpenTK_Windowing_GraphicsLibraryFramework_ErrorCode_NotInitialized">NotInitialized</a> and <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.ErrorCode.html#OpenTK_Windowing_GraphicsLibraryFramework_ErrorCode_PlatformError">PlatformError</a>.
+</p>
+</div>
+  <h5 id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetVideoModesRaw_OpenTK_Windowing_GraphicsLibraryFramework_Monitor__System_Int32___seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.html#OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetVideoMode_OpenTK_Windowing_GraphicsLibraryFramework_Monitor__">GetVideoMode(Monitor*)</a></div>
+  </div>
+  <a id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetWGLContext_" data-uid="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.GetWGLContext*"></a>
+  <h4 id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetWGLContext_OpenTK_Windowing_GraphicsLibraryFramework_Window__" data-uid="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.GetWGLContext(OpenTK.Windowing.GraphicsLibraryFramework.Window*)">GetWGLContext(Window*)</h4>
+  <div class="markdown level1 summary"><p>Returns the <code>HGLRC</code> of the specified window.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr GetWGLContext(Window* window)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.Window.html">Window</a>*</td>
+        <td><span class="parametername">window</span></td>
+        <td><p>The window to query.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><p>The <code>HGLRC</code> of the specified window, or <code>NULL</code> if an error occurred.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetWaylandDisplay_" data-uid="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.GetWaylandDisplay*"></a>
   <h4 id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetWaylandDisplay" data-uid="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.GetWaylandDisplay">GetWaylandDisplay()</h4>
   <div class="markdown level1 summary"><p>Returns the <code>struct wl_display*</code> used by GLFW.</p>
@@ -6096,49 +6139,6 @@ Possible errors include <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFr
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
         <td><p>The main <code>xstruct wl_surface*</code> of the specified window, or <code>NULL</code> if an error occurred.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetWGLContext_" data-uid="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.GetWGLContext*"></a>
-  <h4 id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetWGLContext_OpenTK_Windowing_GraphicsLibraryFramework_Window__" data-uid="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.GetWGLContext(OpenTK.Windowing.GraphicsLibraryFramework.Window*)">GetWGLContext(Window*)</h4>
-  <div class="markdown level1 summary"><p>Returns the <code>HGLRC</code> of the specified window.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IntPtr GetWGLContext(Window* window)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.Window.html">Window</a>*</td>
-        <td><span class="parametername">window</span></td>
-        <td><p>The window to query.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
-        <td><p>The <code>HGLRC</code> of the specified window, or <code>NULL</code> if an error occurred.</p>
 </td>
       </tr>
     </tbody>
@@ -9984,66 +9984,6 @@ The dock icon will be the same as the application bundle's icon. For more inform
 see the Bundle Programming Guide in the Mac Developer Library.
 </p>
 </div>
-  <a id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_SetWindowIconifyCallback_" data-uid="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.SetWindowIconifyCallback*"></a>
-  <h4 id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_SetWindowIconifyCallback_OpenTK_Windowing_GraphicsLibraryFramework_Window__OpenTK_Windowing_GraphicsLibraryFramework_GLFWCallbacks_WindowIconifyCallback_" data-uid="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.SetWindowIconifyCallback(OpenTK.Windowing.GraphicsLibraryFramework.Window*,OpenTK.Windowing.GraphicsLibraryFramework.GLFWCallbacks.WindowIconifyCallback)">SetWindowIconifyCallback(Window*, WindowIconifyCallback)</h4>
-  <div class="markdown level1 summary"><p>
-This function sets the iconification callback of the specified window,
-which is called when the window is iconified or restored.
-</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IntPtr SetWindowIconifyCallback(Window* window, GLFWCallbacks.WindowIconifyCallback callback)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.Window.html">Window</a>*</td>
-        <td><span class="parametername">window</span></td>
-        <td><p>The window whose callback to set.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.GLFWCallbacks.html">GLFWCallbacks</a>.<a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.GLFWCallbacks.WindowIconifyCallback.html">WindowIconifyCallback</a></td>
-        <td><span class="parametername">callback</span></td>
-        <td><p>The new callback, or <code>null</code> to remove the currently set callback.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
-        <td><p>The previously set callback, or <code>null</code> if no callback was set or the library had not been initialized.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_SetWindowIconifyCallback_OpenTK_Windowing_GraphicsLibraryFramework_Window__OpenTK_Windowing_GraphicsLibraryFramework_GLFWCallbacks_WindowIconifyCallback__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>
-This function must only be called from the main thread.
-</p>
-<p>
-Possible errors include <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.ErrorCode.html#OpenTK_Windowing_GraphicsLibraryFramework_ErrorCode_NotInitialized">NotInitialized</a>.
-</p>
-</div>
   <a id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_SetWindowIconRaw_" data-uid="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.SetWindowIconRaw*"></a>
   <h4 id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_SetWindowIconRaw_OpenTK_Windowing_GraphicsLibraryFramework_Window__System_Int32_OpenTK_Windowing_GraphicsLibraryFramework_Image__" data-uid="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.SetWindowIconRaw(OpenTK.Windowing.GraphicsLibraryFramework.Window*,System.Int32,OpenTK.Windowing.GraphicsLibraryFramework.Image*)">SetWindowIconRaw(Window*, int, Image*)</h4>
   <div class="markdown level1 summary"><p>
@@ -10106,6 +10046,66 @@ The specified image data is copied before this function returns.
 OS X: The GLFW window has no icon, as it is not a document window, so this function does nothing.
 The dock icon will be the same as the application bundle's icon. For more information on bundles,
 see the Bundle Programming Guide in the Mac Developer Library.
+</p>
+</div>
+  <a id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_SetWindowIconifyCallback_" data-uid="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.SetWindowIconifyCallback*"></a>
+  <h4 id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_SetWindowIconifyCallback_OpenTK_Windowing_GraphicsLibraryFramework_Window__OpenTK_Windowing_GraphicsLibraryFramework_GLFWCallbacks_WindowIconifyCallback_" data-uid="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.SetWindowIconifyCallback(OpenTK.Windowing.GraphicsLibraryFramework.Window*,OpenTK.Windowing.GraphicsLibraryFramework.GLFWCallbacks.WindowIconifyCallback)">SetWindowIconifyCallback(Window*, WindowIconifyCallback)</h4>
+  <div class="markdown level1 summary"><p>
+This function sets the iconification callback of the specified window,
+which is called when the window is iconified or restored.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr SetWindowIconifyCallback(Window* window, GLFWCallbacks.WindowIconifyCallback callback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.Window.html">Window</a>*</td>
+        <td><span class="parametername">window</span></td>
+        <td><p>The window whose callback to set.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.GLFWCallbacks.html">GLFWCallbacks</a>.<a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.GLFWCallbacks.WindowIconifyCallback.html">WindowIconifyCallback</a></td>
+        <td><span class="parametername">callback</span></td>
+        <td><p>The new callback, or <code>null</code> to remove the currently set callback.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><p>The previously set callback, or <code>null</code> if no callback was set or the library had not been initialized.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_SetWindowIconifyCallback_OpenTK_Windowing_GraphicsLibraryFramework_Window__OpenTK_Windowing_GraphicsLibraryFramework_GLFWCallbacks_WindowIconifyCallback__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>
+This function must only be called from the main thread.
+</p>
+<p>
+Possible errors include <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.ErrorCode.html#OpenTK_Windowing_GraphicsLibraryFramework_ErrorCode_NotInitialized">NotInitialized</a>.
 </p>
 </div>
   <a id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_SetWindowMaximizeCallback_" data-uid="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.SetWindowMaximizeCallback*"></a>

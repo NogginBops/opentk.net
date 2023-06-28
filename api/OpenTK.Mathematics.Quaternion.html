@@ -111,6 +111,37 @@ public struct Quaternion : IEquatable&lt;Quaternion&gt;</code></pre>
   <h3 id="constructors">Constructors
 </h3>
   <a id="OpenTK_Mathematics_Quaternion__ctor_" data-uid="OpenTK.Mathematics.Quaternion.#ctor*"></a>
+  <h4 id="OpenTK_Mathematics_Quaternion__ctor_OpenTK_Mathematics_Vector3_" data-uid="OpenTK.Mathematics.Quaternion.#ctor(OpenTK.Mathematics.Vector3)">Quaternion(Vector3)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="OpenTK.Mathematics.Quaternion.html">Quaternion</a> struct from given Euler angles in radians.
+The rotations will get applied in following order:</p>
+<ol>
+<li>Around X, 2. Around Y, 3. Around Z.</li>
+</ol>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Quaternion(Vector3 eulerAngles)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector3.html">Vector3</a></td>
+        <td><span class="parametername">eulerAngles</span></td>
+        <td><p>The counterclockwise euler angles as a Vector3.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Quaternion__ctor_" data-uid="OpenTK.Mathematics.Quaternion.#ctor*"></a>
   <h4 id="OpenTK_Mathematics_Quaternion__ctor_OpenTK_Mathematics_Vector3_System_Single_" data-uid="OpenTK.Mathematics.Quaternion.#ctor(OpenTK.Mathematics.Vector3,System.Single)">Quaternion(Vector3, float)</h4>
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="OpenTK.Mathematics.Quaternion.html">Quaternion</a> struct.</p>
 </div>
@@ -144,17 +175,17 @@ public struct Quaternion : IEquatable&lt;Quaternion&gt;</code></pre>
     </tbody>
   </table>
   <a id="OpenTK_Mathematics_Quaternion__ctor_" data-uid="OpenTK.Mathematics.Quaternion.#ctor*"></a>
-  <h4 id="OpenTK_Mathematics_Quaternion__ctor_OpenTK_Mathematics_Vector3_" data-uid="OpenTK.Mathematics.Quaternion.#ctor(OpenTK.Mathematics.Vector3)">Quaternion(Vector3)</h4>
+  <h4 id="OpenTK_Mathematics_Quaternion__ctor_System_Single_System_Single_System_Single_" data-uid="OpenTK.Mathematics.Quaternion.#ctor(System.Single,System.Single,System.Single)">Quaternion(float, float, float)</h4>
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="OpenTK.Mathematics.Quaternion.html">Quaternion</a> struct from given Euler angles in radians.
 The rotations will get applied in following order:</p>
 <ol>
-<li>Around X, 2. Around Y, 3. Around Z.</li>
+<li>around X axis, 2. around Y axis, 3. around Z axis.</li>
 </ol>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Quaternion(Vector3 eulerAngles)</code></pre>
+    <pre><code class="lang-csharp hljs">public Quaternion(float rotationX, float rotationY, float rotationZ)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -167,9 +198,21 @@ The rotations will get applied in following order:</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Mathematics.Vector3.html">Vector3</a></td>
-        <td><span class="parametername">eulerAngles</span></td>
-        <td><p>The counterclockwise euler angles as a Vector3.</p>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">rotationX</span></td>
+        <td><p>Counterclockwise rotation around X axis in radian.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">rotationY</span></td>
+        <td><p>Counterclockwise rotation around Y axis in radian.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">rotationZ</span></td>
+        <td><p>Counterclockwise rotation around Z axis in radian.</p>
 </td>
       </tr>
     </tbody>
@@ -215,49 +258,6 @@ The rotations will get applied in following order:</p>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
         <td><span class="parametername">w</span></td>
         <td><p>The w component.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="OpenTK_Mathematics_Quaternion__ctor_" data-uid="OpenTK.Mathematics.Quaternion.#ctor*"></a>
-  <h4 id="OpenTK_Mathematics_Quaternion__ctor_System_Single_System_Single_System_Single_" data-uid="OpenTK.Mathematics.Quaternion.#ctor(System.Single,System.Single,System.Single)">Quaternion(float, float, float)</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="OpenTK.Mathematics.Quaternion.html">Quaternion</a> struct from given Euler angles in radians.
-The rotations will get applied in following order:</p>
-<ol>
-<li>around X axis, 2. around Y axis, 3. around Z axis.</li>
-</ol>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Quaternion(float rotationX, float rotationY, float rotationZ)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
-        <td><span class="parametername">rotationX</span></td>
-        <td><p>Counterclockwise rotation around X axis in radian.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
-        <td><span class="parametername">rotationY</span></td>
-        <td><p>Counterclockwise rotation around Y axis in radian.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
-        <td><span class="parametername">rotationZ</span></td>
-        <td><p>Counterclockwise rotation around Z axis in radian.</p>
 </td>
       </tr>
     </tbody>
@@ -638,7 +638,8 @@ public static Quaternion Conjugate(Quaternion q)</code></pre>
   </table>
   <a id="OpenTK_Mathematics_Quaternion_Equals_" data-uid="OpenTK.Mathematics.Quaternion.Equals*"></a>
   <h4 id="OpenTK_Mathematics_Quaternion_Equals_OpenTK_Mathematics_Quaternion_" data-uid="OpenTK.Mathematics.Quaternion.Equals(OpenTK.Mathematics.Quaternion)">Equals(Quaternion)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Indicates whether the current object is equal to another object of the same type.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -657,7 +658,8 @@ public static Quaternion Conjugate(Quaternion q)</code></pre>
       <tr>
         <td><a class="xref" href="OpenTK.Mathematics.Quaternion.html">Quaternion</a></td>
         <td><span class="parametername">other</span></td>
-        <td></td>
+        <td><p>An object to compare with this object.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -672,13 +674,15 @@ public static Quaternion Conjugate(Quaternion q)</code></pre>
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
-        <td></td>
+        <td><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <a id="OpenTK_Mathematics_Quaternion_Equals_" data-uid="OpenTK.Mathematics.Quaternion.Equals*"></a>
   <h4 id="OpenTK_Mathematics_Quaternion_Equals_System_Object_" data-uid="OpenTK.Mathematics.Quaternion.Equals(System.Object)">Equals(object)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Indicates whether this instance and a specified object are equal.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -697,7 +701,8 @@ public static Quaternion Conjugate(Quaternion q)</code></pre>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></td>
         <td><span class="parametername">obj</span></td>
-        <td></td>
+        <td><p>The object to compare with the current instance.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -712,7 +717,8 @@ public static Quaternion Conjugate(Quaternion q)</code></pre>
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
-        <td></td>
+        <td><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if <code class="paramref">obj</code> and this instance are the same type and represent the same value; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -992,7 +998,8 @@ public static Quaternion FromMatrix(Matrix3 matrix)</code></pre>
   </table>
   <a id="OpenTK_Mathematics_Quaternion_GetHashCode_" data-uid="OpenTK.Mathematics.Quaternion.GetHashCode*"></a>
   <h4 id="OpenTK_Mathematics_Quaternion_GetHashCode" data-uid="OpenTK.Mathematics.Quaternion.GetHashCode">GetHashCode()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Returns the hash code for this instance.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -1009,7 +1016,8 @@ public static Quaternion FromMatrix(Matrix3 matrix)</code></pre>
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
-        <td></td>
+        <td><p>A 32-bit signed integer that is the hash code for this instance.</p>
+</td>
       </tr>
     </tbody>
   </table>
