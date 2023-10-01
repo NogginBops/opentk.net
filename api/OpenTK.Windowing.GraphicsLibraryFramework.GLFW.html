@@ -1273,7 +1273,7 @@ Possible errors include <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFr
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IntPtr GetCocoaWindow(Window* window)</code></pre>
+    <pre><code class="lang-csharp hljs">public static nint GetCocoaWindow(Window* window)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -1303,7 +1303,7 @@ Possible errors include <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFr
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><p>The <code>NSWindow</code> of the specified window, or <code>nil</code> if an error occurred.</p>
 </td>
       </tr>
@@ -1475,7 +1475,7 @@ Possible errors include <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFr
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IntPtr GetEGLContext(Window* window)</code></pre>
+    <pre><code class="lang-csharp hljs">public static nint GetEGLContext(Window* window)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -1505,7 +1505,7 @@ Possible errors include <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFr
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><p>The <code>EGLContext</code> of the specified window, or <code>EGL_NO_CONTEXT</code> if an error occurred.</p>
 </td>
       </tr>
@@ -1518,7 +1518,7 @@ Possible errors include <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFr
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IntPtr GetEGLDisplay()</code></pre>
+    <pre><code class="lang-csharp hljs">public static nint GetEGLDisplay()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-condensed">
@@ -1530,7 +1530,7 @@ Possible errors include <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFr
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><p>The <code>EGLDisplay</code> used by GLFW, or <code>EGL_NO_DISPLAY</code> if an error occurred.</p>
 </td>
       </tr>
@@ -1543,7 +1543,7 @@ Possible errors include <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFr
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IntPtr GetEGLSurface(Window* window)</code></pre>
+    <pre><code class="lang-csharp hljs">public static nint GetEGLSurface(Window* window)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -1573,7 +1573,7 @@ Possible errors include <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFr
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><p>The <code>EGLSurface</code> of the specified window, or <code>EGL_NO_SURFACE</code> if an error occurred.</p>
 </td>
       </tr>
@@ -2498,7 +2498,7 @@ Possible errors include <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFr
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IntPtr GetInstanceProcAddress(VkHandle instance, string procName)</code></pre>
+    <pre><code class="lang-csharp hljs">public static nint GetInstanceProcAddress(VkHandle instance, string procName)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -2534,7 +2534,7 @@ Possible errors include <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFr
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><p>The address of the function, or <code>null</code> if an error occurred.</p>
 </td>
       </tr>
@@ -2570,7 +2570,7 @@ The returned function pointer is valid until the library is terminated.
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IntPtr GetInstanceProcAddressRaw(VkHandle instance, byte* procName)</code></pre>
+    <pre><code class="lang-csharp hljs">public static nint GetInstanceProcAddressRaw(VkHandle instance, byte* procName)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -2606,7 +2606,7 @@ The returned function pointer is valid until the library is terminated.
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><p>The address of the function, or <code>null</code> if an error occurred.</p>
 </td>
       </tr>
@@ -4766,7 +4766,7 @@ Possible errors include <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFr
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IntPtr GetNSGLContext(Window* window)</code></pre>
+    <pre><code class="lang-csharp hljs">public static nint GetNSGLContext(Window* window)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -4796,20 +4796,20 @@ Possible errors include <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFr
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><p>The <code>NSOpenGLContext</code> of the specified window, or <code>nil</code> if an error occurred.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetOSMesaColorBuffer_" data-uid="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.GetOSMesaColorBuffer*"></a>
-  <h4 id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetOSMesaColorBuffer_OpenTK_Windowing_GraphicsLibraryFramework_Window__System_Int32__System_Int32__System_Int32__System_IntPtr__" data-uid="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.GetOSMesaColorBuffer(OpenTK.Windowing.GraphicsLibraryFramework.Window*,System.Int32@,System.Int32@,System.Int32@,System.IntPtr@)">GetOSMesaColorBuffer(Window*, out int, out int, out int, out IntPtr)</h4>
+  <h4 id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetOSMesaColorBuffer_OpenTK_Windowing_GraphicsLibraryFramework_Window__System_Int32__System_Int32__System_Int32__System_IntPtr__" data-uid="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.GetOSMesaColorBuffer(OpenTK.Windowing.GraphicsLibraryFramework.Window*,System.Int32@,System.Int32@,System.Int32@,System.IntPtr@)">GetOSMesaColorBuffer(Window*, out int, out int, out int, out nint)</h4>
   <div class="markdown level1 summary"><p>Retrieves the color buffer associated with the specified window.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool GetOSMesaColorBuffer(Window* window, out int width, out int height, out int format, out IntPtr buffer)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool GetOSMesaColorBuffer(Window* window, out int width, out int height, out int format, out nint buffer)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -4846,7 +4846,7 @@ Possible errors include <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFr
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">buffer</span></td>
         <td><p>The addess of the color buffer.</p>
 </td>
@@ -4876,7 +4876,7 @@ Possible errors include <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFr
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IntPtr GetOSMesaContext(Window* window)</code></pre>
+    <pre><code class="lang-csharp hljs">public static nint GetOSMesaContext(Window* window)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -4906,20 +4906,20 @@ Possible errors include <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFr
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><p>The OSMesaContext of the specified window, or NULL if an error occurred.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetOSMesaDepthBuffer_" data-uid="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.GetOSMesaDepthBuffer*"></a>
-  <h4 id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetOSMesaDepthBuffer_OpenTK_Windowing_GraphicsLibraryFramework_Window__System_Int32__System_Int32__System_Int32__System_IntPtr__" data-uid="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.GetOSMesaDepthBuffer(OpenTK.Windowing.GraphicsLibraryFramework.Window*,System.Int32@,System.Int32@,System.Int32@,System.IntPtr@)">GetOSMesaDepthBuffer(Window*, out int, out int, out int, out IntPtr)</h4>
+  <h4 id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetOSMesaDepthBuffer_OpenTK_Windowing_GraphicsLibraryFramework_Window__System_Int32__System_Int32__System_Int32__System_IntPtr__" data-uid="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.GetOSMesaDepthBuffer(OpenTK.Windowing.GraphicsLibraryFramework.Window*,System.Int32@,System.Int32@,System.Int32@,System.IntPtr@)">GetOSMesaDepthBuffer(Window*, out int, out int, out int, out nint)</h4>
   <div class="markdown level1 summary"><p>Retrieves the depth buffer associated with the specified window.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool GetOSMesaDepthBuffer(Window* window, out int width, out int height, out int bytesPerValue, out IntPtr buffer)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool GetOSMesaDepthBuffer(Window* window, out int width, out int height, out int bytesPerValue, out nint buffer)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -4956,7 +4956,7 @@ Possible errors include <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFr
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">buffer</span></td>
         <td><p>The address of the depth buffer.</p>
 </td>
@@ -5107,7 +5107,7 @@ A context must be current on the calling thread. Calling this function without a
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IntPtr GetProcAddress(string procName)</code></pre>
+    <pre><code class="lang-csharp hljs">public static nint GetProcAddress(string procName)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -5137,7 +5137,7 @@ A context must be current on the calling thread. Calling this function without a
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><p>The address of the function, or <code>null</code> if an error occurred.</p>
 </td>
       </tr>
@@ -5173,7 +5173,7 @@ A context must be current on the calling thread. Calling this function without a
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IntPtr GetProcAddressRaw(byte* procName)</code></pre>
+    <pre><code class="lang-csharp hljs">public static nint GetProcAddressRaw(byte* procName)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -5203,7 +5203,7 @@ A context must be current on the calling thread. Calling this function without a
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><p>The address of the function, or <code>null</code> if an error occurred.</p>
 </td>
       </tr>
@@ -5996,7 +5996,7 @@ Possible errors include <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFr
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IntPtr GetWGLContext(Window* window)</code></pre>
+    <pre><code class="lang-csharp hljs">public static nint GetWGLContext(Window* window)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -6026,7 +6026,7 @@ Possible errors include <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFr
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><p>The <code>HGLRC</code> of the specified window, or <code>NULL</code> if an error occurred.</p>
 </td>
       </tr>
@@ -6039,7 +6039,7 @@ Possible errors include <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFr
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IntPtr GetWaylandDisplay()</code></pre>
+    <pre><code class="lang-csharp hljs">public static nint GetWaylandDisplay()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-condensed">
@@ -6051,7 +6051,7 @@ Possible errors include <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFr
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><p>The <code>struct wl_display*</code> used by GLFW, or <code>NULL</code> if an error occurred.</p>
 </td>
       </tr>
@@ -6064,7 +6064,7 @@ Possible errors include <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFr
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IntPtr GetWaylandMonitor(Monitor* monitor)</code></pre>
+    <pre><code class="lang-csharp hljs">public static nint GetWaylandMonitor(Monitor* monitor)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -6094,7 +6094,7 @@ Possible errors include <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFr
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><p>The <code>struct wl_output*</code> of the specified monitor, or <code>NULL</code> if an error occurred.</p>
 </td>
       </tr>
@@ -6107,7 +6107,7 @@ Possible errors include <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFr
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IntPtr GetWaylandWindow(Window* window)</code></pre>
+    <pre><code class="lang-csharp hljs">public static nint GetWaylandWindow(Window* window)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -6137,7 +6137,7 @@ Possible errors include <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFr
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><p>The main <code>xstruct wl_surface*</code> of the specified window, or <code>NULL</code> if an error occurred.</p>
 </td>
       </tr>
@@ -6236,7 +6236,7 @@ Possible errors include <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFr
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IntPtr GetWin32Window(Window* window)</code></pre>
+    <pre><code class="lang-csharp hljs">public static nint GetWin32Window(Window* window)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -6266,7 +6266,7 @@ Possible errors include <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFr
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><p>The <code>HWND</code> of the specified window, or <code>NULL</code> if an error occurred.</p>
 </td>
       </tr>
@@ -7286,7 +7286,7 @@ Possible errors include <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFr
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static UIntPtr GetX11Adapter(Monitor* monitor)</code></pre>
+    <pre><code class="lang-csharp hljs">public static nuint GetX11Adapter(Monitor* monitor)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -7329,7 +7329,7 @@ Possible errors include <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFr
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IntPtr GetX11Display()</code></pre>
+    <pre><code class="lang-csharp hljs">public static nint GetX11Display()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-condensed">
@@ -7341,7 +7341,7 @@ Possible errors include <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFr
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><p>The <code>Display</code> used by GLFW, or <code>NULL</code> if an error occurred.</p>
 </td>
       </tr>
@@ -7354,7 +7354,7 @@ Possible errors include <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFr
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static UIntPtr GetX11Monitor(Monitor* monitor)</code></pre>
+    <pre><code class="lang-csharp hljs">public static nuint GetX11Monitor(Monitor* monitor)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -7422,7 +7422,7 @@ Possible errors include <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFr
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static UIntPtr GetX11Window(Window* window)</code></pre>
+    <pre><code class="lang-csharp hljs">public static nuint GetX11Window(Window* window)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -8138,7 +8138,7 @@ There is a character with modifiers callback(<a class="xref" href="OpenTK.Window
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IntPtr SetCharCallback(Window* window, GLFWCallbacks.CharCallback callback)</code></pre>
+    <pre><code class="lang-csharp hljs">public static nint SetCharCallback(Window* window, GLFWCallbacks.CharCallback callback)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -8174,7 +8174,7 @@ There is a character with modifiers callback(<a class="xref" href="OpenTK.Window
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><p>The previously set callback, or <code>null</code> if no callback was set or the library had not been initialized.</p>
 </td>
       </tr>
@@ -8211,7 +8211,7 @@ see the key callback(<a class="xref" href="OpenTK.Windowing.GraphicsLibraryFrame
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IntPtr SetCharModsCallback(Window* window, GLFWCallbacks.CharModsCallback callback)</code></pre>
+    <pre><code class="lang-csharp hljs">public static nint SetCharModsCallback(Window* window, GLFWCallbacks.CharModsCallback callback)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -8247,7 +8247,7 @@ see the key callback(<a class="xref" href="OpenTK.Windowing.GraphicsLibraryFrame
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><p>The previously set callback, or <code>null</code> if no callback was set or an error occurred.</p>
 </td>
       </tr>
@@ -8422,7 +8422,7 @@ which is called when the cursor enters or leaves the client area of the window.
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IntPtr SetCursorEnterCallback(Window* window, GLFWCallbacks.CursorEnterCallback callback)</code></pre>
+    <pre><code class="lang-csharp hljs">public static nint SetCursorEnterCallback(Window* window, GLFWCallbacks.CursorEnterCallback callback)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -8458,7 +8458,7 @@ which is called when the cursor enters or leaves the client area of the window.
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><p>The previously set callback, or <code>null</code> if no callback was set or the library had not been initialized.</p>
 </td>
       </tr>
@@ -8554,7 +8554,7 @@ relative to the upper-left corner of the client area of the window.
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IntPtr SetCursorPosCallback(Window* window, GLFWCallbacks.CursorPosCallback callback)</code></pre>
+    <pre><code class="lang-csharp hljs">public static nint SetCursorPosCallback(Window* window, GLFWCallbacks.CursorPosCallback callback)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -8590,7 +8590,7 @@ relative to the upper-left corner of the client area of the window.
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><p>The previously set callback, or <code>null</code> if no callback was set or the library had not been initialized.</p>
 </td>
       </tr>
@@ -8619,7 +8619,7 @@ If you wish to use them after the callback returns, you need to make a deep copy
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IntPtr SetDropCallback(Window* window, GLFWCallbacks.DropCallback callback)</code></pre>
+    <pre><code class="lang-csharp hljs">public static nint SetDropCallback(Window* window, GLFWCallbacks.DropCallback callback)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -8655,7 +8655,7 @@ If you wish to use them after the callback returns, you need to make a deep copy
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><p>The previously set callback, or <code>null</code> if no callback was set or the library had not been initialized.</p>
 </td>
       </tr>
@@ -8691,7 +8691,7 @@ Once set, the error callback remains set even after the library has been termina
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IntPtr SetErrorCallback(GLFWCallbacks.ErrorCallback callback)</code></pre>
+    <pre><code class="lang-csharp hljs">public static nint SetErrorCallback(GLFWCallbacks.ErrorCallback callback)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -8721,7 +8721,7 @@ Once set, the error callback remains set even after the library has been termina
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><p>The previously set callback, or <code>null</code> if no callback was set.</p>
 </td>
       </tr>
@@ -8745,7 +8745,7 @@ which is called when the framebuffer of the specified window is resized.
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IntPtr SetFramebufferSizeCallback(Window* window, GLFWCallbacks.FramebufferSizeCallback callback)</code></pre>
+    <pre><code class="lang-csharp hljs">public static nint SetFramebufferSizeCallback(Window* window, GLFWCallbacks.FramebufferSizeCallback callback)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -8781,7 +8781,7 @@ which is called when the framebuffer of the specified window is resized.
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><p>The previously set callback, or <code>null</code> if no callback was set or the library had not been initialized.</p>
 </td>
       </tr>
@@ -9144,7 +9144,7 @@ This is called when a joystick is connected to or disconnected from the system.
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IntPtr SetJoystickCallback(GLFWCallbacks.JoystickCallback callback)</code></pre>
+    <pre><code class="lang-csharp hljs">public static nint SetJoystickCallback(GLFWCallbacks.JoystickCallback callback)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -9174,7 +9174,7 @@ This is called when a joystick is connected to or disconnected from the system.
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><p>The previously set callback, or <code>null</code> if no callback was set or the library had not been initialized.</p>
 </td>
       </tr>
@@ -9265,7 +9265,7 @@ Sometimes GLFW needs to generate synthetic key events, in which case the scancod
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IntPtr SetKeyCallback(Window* window, GLFWCallbacks.KeyCallback callback)</code></pre>
+    <pre><code class="lang-csharp hljs">public static nint SetKeyCallback(Window* window, GLFWCallbacks.KeyCallback callback)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -9301,7 +9301,7 @@ Sometimes GLFW needs to generate synthetic key events, in which case the scancod
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><p>The previously set callback, or <code>null</code> if no callback was set or the library had not been initialized.</p>
 </td>
       </tr>
@@ -9325,7 +9325,7 @@ This is called when a monitor is connected to or disconnected from the system.
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IntPtr SetMonitorCallback(GLFWCallbacks.MonitorCallback callback)</code></pre>
+    <pre><code class="lang-csharp hljs">public static nint SetMonitorCallback(GLFWCallbacks.MonitorCallback callback)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -9355,7 +9355,7 @@ This is called when a monitor is connected to or disconnected from the system.
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><p>The previously set callback, or <code>null</code> if no callback was set or the library had not been initialized.</p>
 </td>
       </tr>
@@ -9434,7 +9434,7 @@ i.e. after the window focus callback(<a class="xref" href="OpenTK.Windowing.Grap
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IntPtr SetMouseButtonCallback(Window* window, GLFWCallbacks.MouseButtonCallback callback)</code></pre>
+    <pre><code class="lang-csharp hljs">public static nint SetMouseButtonCallback(Window* window, GLFWCallbacks.MouseButtonCallback callback)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -9470,7 +9470,7 @@ i.e. after the window focus callback(<a class="xref" href="OpenTK.Windowing.Grap
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><p>The previously set callback, or <code>null</code> if no callback was set or the library had not been initialized.</p>
 </td>
       </tr>
@@ -9497,7 +9497,7 @@ The scroll callback receives all scrolling input, like that from a mouse wheel o
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IntPtr SetScrollCallback(Window* window, GLFWCallbacks.ScrollCallback callback)</code></pre>
+    <pre><code class="lang-csharp hljs">public static nint SetScrollCallback(Window* window, GLFWCallbacks.ScrollCallback callback)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -9533,7 +9533,7 @@ The scroll callback receives all scrolling input, like that from a mouse wheel o
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><p>The previously set callback, or <code>null</code> if no callback was set or the library had not been initialized.</p>
 </td>
       </tr>
@@ -9744,7 +9744,7 @@ The close callback is not triggered by <a class="xref" href="OpenTK.Windowing.Gr
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IntPtr SetWindowCloseCallback(Window* window, GLFWCallbacks.WindowCloseCallback callback)</code></pre>
+    <pre><code class="lang-csharp hljs">public static nint SetWindowCloseCallback(Window* window, GLFWCallbacks.WindowCloseCallback callback)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -9780,7 +9780,7 @@ The close callback is not triggered by <a class="xref" href="OpenTK.Windowing.Gr
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><p>The previously set callback, or <code>null</code> if no callback was set or the library had not been initialized.</p>
 </td>
       </tr>
@@ -9807,7 +9807,7 @@ which is called when the content scale of the specified window changes.
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IntPtr SetWindowContentScaleCallback(Window* window, GLFWCallbacks.WindowContentScaleCallback callback)</code></pre>
+    <pre><code class="lang-csharp hljs">public static nint SetWindowContentScaleCallback(Window* window, GLFWCallbacks.WindowContentScaleCallback callback)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -9843,7 +9843,7 @@ which is called when the content scale of the specified window changes.
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><p>The previously set callback, or <code>null</code> if no callback was set or the library had not been initialized.</p>
 </td>
       </tr>
@@ -9876,7 +9876,7 @@ For more information, see <a class="xref" href="OpenTK.Windowing.GraphicsLibrary
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IntPtr SetWindowFocusCallback(Window* window, GLFWCallbacks.WindowFocusCallback callback)</code></pre>
+    <pre><code class="lang-csharp hljs">public static nint SetWindowFocusCallback(Window* window, GLFWCallbacks.WindowFocusCallback callback)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -9912,7 +9912,7 @@ For more information, see <a class="xref" href="OpenTK.Windowing.GraphicsLibrary
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><p>The previously set callback, or <code>null</code> if no callback was set or the library had not been initialized.</p>
 </td>
       </tr>
@@ -10058,7 +10058,7 @@ which is called when the window is iconified or restored.
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IntPtr SetWindowIconifyCallback(Window* window, GLFWCallbacks.WindowIconifyCallback callback)</code></pre>
+    <pre><code class="lang-csharp hljs">public static nint SetWindowIconifyCallback(Window* window, GLFWCallbacks.WindowIconifyCallback callback)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -10094,7 +10094,7 @@ which is called when the window is iconified or restored.
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><p>The previously set callback, or <code>null</code> if no callback was set or the library had not been initialized.</p>
 </td>
       </tr>
@@ -10118,7 +10118,7 @@ which is called when the window is maximized or restored.
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IntPtr SetWindowMaximizeCallback(Window* window, GLFWCallbacks.WindowMaximizeCallback callback)</code></pre>
+    <pre><code class="lang-csharp hljs">public static nint SetWindowMaximizeCallback(Window* window, GLFWCallbacks.WindowMaximizeCallback callback)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -10154,7 +10154,7 @@ which is called when the window is maximized or restored.
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><p>The previously set callback, or <code>null</code> if no callback was set or the library had not been initialized.</p>
 </td>
       </tr>
@@ -10406,7 +10406,7 @@ The callback is provided with the screen position of the upper-left corner of th
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IntPtr SetWindowPosCallback(Window* window, GLFWCallbacks.WindowPosCallback callback)</code></pre>
+    <pre><code class="lang-csharp hljs">public static nint SetWindowPosCallback(Window* window, GLFWCallbacks.WindowPosCallback callback)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -10442,7 +10442,7 @@ The callback is provided with the screen position of the upper-left corner of th
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><p>The previously set callback, or <code>null</code> if no callback was set or the library had not been initialized.</p>
 </td>
       </tr>
@@ -10475,7 +10475,7 @@ very infrequently or never at all.
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IntPtr SetWindowRefreshCallback(Window* window, GLFWCallbacks.WindowRefreshCallback callback)</code></pre>
+    <pre><code class="lang-csharp hljs">public static nint SetWindowRefreshCallback(Window* window, GLFWCallbacks.WindowRefreshCallback callback)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -10511,7 +10511,7 @@ very infrequently or never at all.
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><p>The previously set callback, or <code>null</code> if no callback was set or the library had not been initialized.</p>
 </td>
       </tr>
@@ -10652,7 +10652,7 @@ The callback is provided with the size, in screen coordinates, of the client are
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IntPtr SetWindowSizeCallback(Window* window, GLFWCallbacks.WindowSizeCallback callback)</code></pre>
+    <pre><code class="lang-csharp hljs">public static nint SetWindowSizeCallback(Window* window, GLFWCallbacks.WindowSizeCallback callback)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -10688,7 +10688,7 @@ The callback is provided with the size, in screen coordinates, of the client are
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><p>The previously set callback, or <code>null</code> if no callback was set or the library had not been initialized.</p>
 </td>
       </tr>

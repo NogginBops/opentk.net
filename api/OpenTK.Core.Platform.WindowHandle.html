@@ -90,6 +90,7 @@
     <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
     <div class="level1"><a class="xref" href="OpenTK.Core.Platform.PalHandle.html">PalHandle</a></div>
     <div class="level2"><span class="xref">WindowHandle</span></div>
+      <div class="level3"><a class="xref" href="OpenTK.Platform.Native.macOS.NSWindowHandle.html">NSWindowHandle</a></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -127,6 +128,33 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public abstract class WindowHandle : PalHandle</code></pre>
   </div>
+  <h3 id="constructors">Constructors
+</h3>
+  <a id="OpenTK_Core_Platform_WindowHandle__ctor_" data-uid="OpenTK.Core.Platform.WindowHandle.#ctor*"></a>
+  <h4 id="OpenTK_Core_Platform_WindowHandle__ctor_OpenTK_Core_Platform_GraphicsApiHints_" data-uid="OpenTK.Core.Platform.WindowHandle.#ctor(OpenTK.Core.Platform.GraphicsApiHints)">WindowHandle(GraphicsApiHints)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public WindowHandle(GraphicsApiHints graphicsApiHints)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Core.Platform.GraphicsApiHints.html">GraphicsApiHints</a></td>
+        <td><span class="parametername">graphicsApiHints</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="properties">Properties
 </h3>
   <a id="OpenTK_Core_Platform_WindowHandle_GraphicsApiHints_" data-uid="OpenTK.Core.Platform.WindowHandle.GraphicsApiHints*"></a>
@@ -135,7 +163,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public GraphicsApiHints? GraphicsApiHints { get; protected set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public GraphicsApiHints GraphicsApiHints { get; protected set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">

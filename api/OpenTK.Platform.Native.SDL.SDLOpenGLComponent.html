@@ -458,7 +458,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IntPtr GetProcedureAddress(OpenGLContextHandle handle, string procedureName)</code></pre>
+    <pre><code class="lang-csharp hljs">public nint GetProcedureAddress(OpenGLContextHandle handle, string procedureName)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -494,7 +494,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><p>The procedure address to the OpenGL command.</p>
 </td>
       </tr>
@@ -677,6 +677,33 @@
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td><span class="parametername">interval</span></td>
         <td><p>The new swap interval.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Platform_Native_SDL_SDLOpenGLComponent_SwapBuffers_" data-uid="OpenTK.Platform.Native.SDL.SDLOpenGLComponent.SwapBuffers*"></a>
+  <h4 id="OpenTK_Platform_Native_SDL_SDLOpenGLComponent_SwapBuffers_OpenTK_Core_Platform_OpenGLContextHandle_" data-uid="OpenTK.Platform.Native.SDL.SDLOpenGLComponent.SwapBuffers(OpenTK.Core.Platform.OpenGLContextHandle)">SwapBuffers(OpenGLContextHandle)</h4>
+  <div class="markdown level1 summary"><p>Swaps the buffer of the specified context.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SwapBuffers(OpenGLContextHandle handle)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Core.Platform.OpenGLContextHandle.html">OpenGLContextHandle</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>Handle to the context.</p>
 </td>
       </tr>
     </tbody>

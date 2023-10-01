@@ -156,7 +156,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static readonly IntPtr HInstance</code></pre>
+    <pre><code class="lang-csharp hljs">public static readonly nint HInstance</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-condensed">
@@ -168,7 +168,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -278,7 +278,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IntPtr HelperHWnd { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static nint HelperHWnd { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -290,7 +290,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -1848,7 +1848,7 @@ If <code class="paramref">display</code> is <code>null</code> then the window wi
   <a id="OpenTK_Platform_Native_Windows_WindowComponent_SetFullscreenDisplay_" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.SetFullscreenDisplay*"></a>
   <h4 id="OpenTK_Platform_Native_Windows_WindowComponent_SetFullscreenDisplay_OpenTK_Core_Platform_WindowHandle_OpenTK_Core_Platform_DisplayHandle_OpenTK_Core_Platform_VideoMode_" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.SetFullscreenDisplay(OpenTK.Core.Platform.WindowHandle,OpenTK.Core.Platform.DisplayHandle,OpenTK.Core.Platform.VideoMode)">SetFullscreenDisplay(WindowHandle, DisplayHandle, VideoMode)</h4>
   <div class="markdown level1 summary"><p>Put a window into 'exclusive fullscreen' on a specified display and change the video mode to the specified video mode.
-Only video modes accuired using <a class="xref" href="OpenTK.Core.Platform.IDisplayComponent.html#OpenTK_Core_Platform_IDisplayComponent_GetSupportedVideoModes_OpenTK_Core_Platform_DisplayHandle_System_Span_OpenTK_Core_Platform_VideoMode__">GetSupportedVideoModes(DisplayHandle, Span&lt;VideoMode&gt;)</a>
+Only video modes accuired using <see cref="!:IDisplayComponent.GetSupportedVideoModes(DisplayHandle, Span&lt;VideoMode&gt;)"></see>
 are expected to work.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -2278,33 +2278,6 @@ Use <a class="xref" href="OpenTK.Core.Platform.IWindowComponent.html#OpenTK_Core
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
         <td><p><code class="paramref">handle</code> or <code class="paramref">title</code> is null.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="OpenTK_Platform_Native_Windows_WindowComponent_SwapBuffers_" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.SwapBuffers*"></a>
-  <h4 id="OpenTK_Platform_Native_Windows_WindowComponent_SwapBuffers_OpenTK_Core_Platform_WindowHandle_" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.SwapBuffers(OpenTK.Core.Platform.WindowHandle)">SwapBuffers(WindowHandle)</h4>
-  <div class="markdown level1 summary"><p>Swaps the buffer of the specified window.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void SwapBuffers(WindowHandle handle)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Core.Platform.WindowHandle.html">WindowHandle</a></td>
-        <td><span class="parametername">handle</span></td>
-        <td><p>Handle to the window.</p>
 </td>
       </tr>
     </tbody>

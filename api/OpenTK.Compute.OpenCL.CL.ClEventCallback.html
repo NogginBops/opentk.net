@@ -88,7 +88,7 @@
   <h6><strong>Assembly</strong>: OpenTK.Compute.dll</h6>
   <h5 id="OpenTK_Compute_OpenCL_CL_ClEventCallback_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public delegate void CL.ClEventCallback(IntPtr waitEvent, IntPtr userData)</code></pre>
+    <pre><code class="lang-csharp hljs">public delegate void CL.ClEventCallback(nint waitEvent, nint userData)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -101,12 +101,12 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">waitEvent</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">userData</span></td>
         <td></td>
       </tr>

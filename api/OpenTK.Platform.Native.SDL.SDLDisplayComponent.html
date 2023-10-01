@@ -152,8 +152,7 @@
   </table>
   <a id="OpenTK_Platform_Native_SDL_SDLDisplayComponent_CanSetVideoMode_" data-uid="OpenTK.Platform.Native.SDL.SDLDisplayComponent.CanSetVideoMode*"></a>
   <h4 id="OpenTK_Platform_Native_SDL_SDLDisplayComponent_CanSetVideoMode" data-uid="OpenTK.Platform.Native.SDL.SDLDisplayComponent.CanSetVideoMode">CanSetVideoMode</h4>
-  <div class="markdown level1 summary"><p>True if the driver can set the video mode.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -502,14 +501,14 @@
       </tr>
     </tbody>
   </table>
-  <a id="OpenTK_Platform_Native_SDL_SDLDisplayComponent_GetSupportedVideoModeCount_" data-uid="OpenTK.Platform.Native.SDL.SDLDisplayComponent.GetSupportedVideoModeCount*"></a>
-  <h4 id="OpenTK_Platform_Native_SDL_SDLDisplayComponent_GetSupportedVideoModeCount_OpenTK_Core_Platform_DisplayHandle_" data-uid="OpenTK.Platform.Native.SDL.SDLDisplayComponent.GetSupportedVideoModeCount(OpenTK.Core.Platform.DisplayHandle)">GetSupportedVideoModeCount(DisplayHandle)</h4>
-  <div class="markdown level1 summary"><p>Get the number of video modes the display supports.</p>
+  <a id="OpenTK_Platform_Native_SDL_SDLDisplayComponent_GetSupportedVideoModes_" data-uid="OpenTK.Platform.Native.SDL.SDLDisplayComponent.GetSupportedVideoModes*"></a>
+  <h4 id="OpenTK_Platform_Native_SDL_SDLDisplayComponent_GetSupportedVideoModes_OpenTK_Core_Platform_DisplayHandle_" data-uid="OpenTK.Platform.Native.SDL.SDLDisplayComponent.GetSupportedVideoModes(OpenTK.Core.Platform.DisplayHandle)">GetSupportedVideoModes(DisplayHandle)</h4>
+  <div class="markdown level1 summary"><p>Get all supported video modes for a specific display.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int GetSupportedVideoModeCount(DisplayHandle handle)</code></pre>
+    <pre><code class="lang-csharp hljs">public VideoMode[] GetSupportedVideoModes(DisplayHandle handle)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -539,57 +538,8 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
-        <td><p>Number of supported display modes.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
-        <td><p><code class="paramref">handle</code> is null.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="OpenTK_Platform_Native_SDL_SDLDisplayComponent_GetSupportedVideoModes_" data-uid="OpenTK.Platform.Native.SDL.SDLDisplayComponent.GetSupportedVideoModes*"></a>
-  <h4 id="OpenTK_Platform_Native_SDL_SDLDisplayComponent_GetSupportedVideoModes_OpenTK_Core_Platform_DisplayHandle_System_Span_OpenTK_Core_Platform_VideoMode__" data-uid="OpenTK.Platform.Native.SDL.SDLDisplayComponent.GetSupportedVideoModes(OpenTK.Core.Platform.DisplayHandle,System.Span{OpenTK.Core.Platform.VideoMode})">GetSupportedVideoModes(DisplayHandle, Span&lt;VideoMode&gt;)</h4>
-  <div class="markdown level1 summary"><p>Get all supported video modes.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void GetSupportedVideoModes(DisplayHandle handle, Span&lt;VideoMode&gt; modes)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Core.Platform.DisplayHandle.html">DisplayHandle</a></td>
-        <td><span class="parametername">handle</span></td>
-        <td><p>Handle to a display.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.span-1">Span</a>&lt;<a class="xref" href="OpenTK.Core.Platform.VideoMode.html">VideoMode</a>&gt;</td>
-        <td><span class="parametername">modes</span></td>
-        <td><p>Span where supported display modes will be written to.</p>
+        <td><a class="xref" href="OpenTK.Core.Platform.VideoMode.html">VideoMode</a>[]</td>
+        <td><p>An array of all supported video modes.</p>
 </td>
       </tr>
     </tbody>

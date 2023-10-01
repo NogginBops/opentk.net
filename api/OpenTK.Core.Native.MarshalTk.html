@@ -123,13 +123,13 @@
   <h3 id="methods">Methods
 </h3>
   <a id="OpenTK_Core_Native_MarshalTk_FreeStringArrayPtr_" data-uid="OpenTK.Core.Native.MarshalTk.FreeStringArrayPtr*"></a>
-  <h4 id="OpenTK_Core_Native_MarshalTk_FreeStringArrayPtr_System_IntPtr_System_Int32_" data-uid="OpenTK.Core.Native.MarshalTk.FreeStringArrayPtr(System.IntPtr,System.Int32)">FreeStringArrayPtr(IntPtr, int)</h4>
+  <h4 id="OpenTK_Core_Native_MarshalTk_FreeStringArrayPtr_System_IntPtr_System_Int32_" data-uid="OpenTK.Core.Native.MarshalTk.FreeStringArrayPtr(System.IntPtr,System.Int32)">FreeStringArrayPtr(nint, int)</h4>
   <div class="markdown level1 summary"><p>Frees a marshaled string that allocated by <code>MarshalStringArrayToPtr</code>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void FreeStringArrayPtr(IntPtr ptr, int length)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void FreeStringArrayPtr(nint ptr, int length)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -142,7 +142,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">ptr</span></td>
         <td><p>An unmanaged pointer allocated with <code>MarshalStringArrayToPtr</code>.</p>
 </td>
@@ -156,13 +156,13 @@
     </tbody>
   </table>
   <a id="OpenTK_Core_Native_MarshalTk_FreeStringPtr_" data-uid="OpenTK.Core.Native.MarshalTk.FreeStringPtr*"></a>
-  <h4 id="OpenTK_Core_Native_MarshalTk_FreeStringPtr_System_IntPtr_" data-uid="OpenTK.Core.Native.MarshalTk.FreeStringPtr(System.IntPtr)">FreeStringPtr(IntPtr)</h4>
+  <h4 id="OpenTK_Core_Native_MarshalTk_FreeStringPtr_System_IntPtr_" data-uid="OpenTK.Core.Native.MarshalTk.FreeStringPtr(System.IntPtr)">FreeStringPtr(nint)</h4>
   <div class="markdown level1 summary"><p>Frees a marshaled string that allocated by <code>MarshalStringToPtr</code>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void FreeStringPtr(IntPtr ptr)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void FreeStringPtr(nint ptr)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -175,7 +175,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">ptr</span></td>
         <td><p>An unmanaged pointer allocated with <code>MarshalStringToPtr</code>.</p>
 </td>
@@ -183,14 +183,14 @@
     </tbody>
   </table>
   <a id="OpenTK_Core_Native_MarshalTk_MarshalPtrToString_" data-uid="OpenTK.Core.Native.MarshalTk.MarshalPtrToString*"></a>
-  <h4 id="OpenTK_Core_Native_MarshalTk_MarshalPtrToString_System_IntPtr_" data-uid="OpenTK.Core.Native.MarshalTk.MarshalPtrToString(System.IntPtr)">MarshalPtrToString(IntPtr)</h4>
+  <h4 id="OpenTK_Core_Native_MarshalTk_MarshalPtrToString_System_IntPtr_" data-uid="OpenTK.Core.Native.MarshalTk.MarshalPtrToString(System.IntPtr)">MarshalPtrToString(nint)</h4>
   <div class="markdown level1 summary"><p>Marshals a pointer to a null-terminated byte array to a new <code>System.String</code>.
 This method supports OpenTK and is not intended to be called by user code.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string MarshalPtrToString(IntPtr ptr)</code></pre>
+    <pre><code class="lang-csharp hljs">public static string MarshalPtrToString(nint ptr)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -203,7 +203,7 @@ This method supports OpenTK and is not intended to be called by user code.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">ptr</span></td>
         <td><p>A pointer to a null-terminated byte array.</p>
 </td>
@@ -234,7 +234,7 @@ Marshal.AllocHGlobal for each element.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IntPtr MarshalStringArrayToPtr(string[] strArray)</code></pre>
+    <pre><code class="lang-csharp hljs">public static nint MarshalStringArrayToPtr(string[] strArray)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -264,7 +264,7 @@ Marshal.AllocHGlobal for each element.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><p>An unmanaged pointer to an array of null-terminated strings.</p>
 </td>
       </tr>
@@ -279,7 +279,7 @@ with <code>FreeStringPtr</code>.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IntPtr MarshalStringToPtr(string str)</code></pre>
+    <pre><code class="lang-csharp hljs">public static nint MarshalStringToPtr(string str)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -309,7 +309,7 @@ with <code>FreeStringPtr</code>.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><p>An unmanaged pointer containing the marshaled string.
 This pointer must be freed with <code>FreeStringPtr</code>.</p>
 </td>

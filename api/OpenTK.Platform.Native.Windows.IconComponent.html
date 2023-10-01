@@ -126,15 +126,15 @@
   </div>
   <h3 id="properties">Properties
 </h3>
-  <a id="OpenTK_Platform_Native_Windows_IconComponent_CanLoadSystemIcon_" data-uid="OpenTK.Platform.Native.Windows.IconComponent.CanLoadSystemIcon*"></a>
-  <h4 id="OpenTK_Platform_Native_Windows_IconComponent_CanLoadSystemIcon" data-uid="OpenTK.Platform.Native.Windows.IconComponent.CanLoadSystemIcon">CanLoadSystemIcon</h4>
+  <a id="OpenTK_Platform_Native_Windows_IconComponent_CanLoadSystemIcons_" data-uid="OpenTK.Platform.Native.Windows.IconComponent.CanLoadSystemIcons*"></a>
+  <h4 id="OpenTK_Platform_Native_Windows_IconComponent_CanLoadSystemIcons" data-uid="OpenTK.Platform.Native.Windows.IconComponent.CanLoadSystemIcons">CanLoadSystemIcons</h4>
   <div class="markdown level1 summary"><p>True if icon objects can be populated from common system icons.
 If this is true, then <a class="xref" href="OpenTK.Core.Platform.IIconComponent.html#OpenTK_Core_Platform_IIconComponent_Create_OpenTK_Core_Platform_SystemIconType_">Create(SystemIconType)</a> will work, otherwise an exception will be thrown.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool CanLoadSystemIcon { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public bool CanLoadSystemIcons { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -228,7 +228,7 @@ If this is true, then <a class="xref" href="OpenTK.Core.Platform.IIconComponent.
   <a id="OpenTK_Platform_Native_Windows_IconComponent_Create_" data-uid="OpenTK.Platform.Native.Windows.IconComponent.Create*"></a>
   <h4 id="OpenTK_Platform_Native_Windows_IconComponent_Create_OpenTK_Core_Platform_SystemIconType_" data-uid="OpenTK.Platform.Native.Windows.IconComponent.Create(OpenTK.Core.Platform.SystemIconType)">Create(SystemIconType)</h4>
   <div class="markdown level1 summary"><p>Load a system icon.
-Only works if <a class="xref" href="OpenTK.Core.Platform.IIconComponent.html#OpenTK_Core_Platform_IIconComponent_CanLoadSystemIcon">CanLoadSystemIcon</a> is true.</p>
+Only works if <a class="xref" href="OpenTK.Core.Platform.IIconComponent.html#OpenTK_Core_Platform_IIconComponent_CanLoadSystemIcons">CanLoadSystemIcons</a> is true.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -271,7 +271,7 @@ Only works if <a class="xref" href="OpenTK.Core.Platform.IIconComponent.html#Ope
   </table>
   <h5 id="OpenTK_Platform_Native_Windows_IconComponent_Create_OpenTK_Core_Platform_SystemIconType__seealso">See Also</h5>
   <div class="seealso">
-      <div><a class="xref" href="OpenTK.Core.Platform.IIconComponent.html#OpenTK_Core_Platform_IIconComponent_CanLoadSystemIcon">CanLoadSystemIcon</a></div>
+      <div><a class="xref" href="OpenTK.Core.Platform.IIconComponent.html#OpenTK_Core_Platform_IIconComponent_CanLoadSystemIcons">CanLoadSystemIcons</a></div>
   </div>
   <a id="OpenTK_Platform_Native_Windows_IconComponent_Create_" data-uid="OpenTK.Platform.Native.Windows.IconComponent.Create*"></a>
   <h4 id="OpenTK_Platform_Native_Windows_IconComponent_Create_System_Int32_System_Int32_System_ReadOnlySpan_System_Byte__" data-uid="OpenTK.Platform.Native.Windows.IconComponent.Create(System.Int32,System.Int32,System.ReadOnlySpan{System.Byte})">Create(int, int, ReadOnlySpan&lt;byte&gt;)</h4>
@@ -328,6 +328,147 @@ Only works if <a class="xref" href="OpenTK.Core.Platform.IIconComponent.html#Ope
       </tr>
     </tbody>
   </table>
+  <a id="OpenTK_Platform_Native_Windows_IconComponent_CreateFromIcoFile_" data-uid="OpenTK.Platform.Native.Windows.IconComponent.CreateFromIcoFile*"></a>
+  <h4 id="OpenTK_Platform_Native_Windows_IconComponent_CreateFromIcoFile_System_String_" data-uid="OpenTK.Platform.Native.Windows.IconComponent.CreateFromIcoFile(System.String)">CreateFromIcoFile(string)</h4>
+  <div class="markdown level1 summary"><p>Creates an icon from a windows .ico file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IconHandle CreateFromIcoFile(string file)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">file</span></td>
+        <td><p>The icon file to load.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Core.Platform.IconHandle.html">IconHandle</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenTK_Platform_Native_Windows_IconComponent_CreateFromIcoFile_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This icon will have a dynamic resolution.</p>
+</div>
+  <a id="OpenTK_Platform_Native_Windows_IconComponent_CreateFromIcoResource_" data-uid="OpenTK.Platform.Native.Windows.IconComponent.CreateFromIcoResource*"></a>
+  <h4 id="OpenTK_Platform_Native_Windows_IconComponent_CreateFromIcoResource_System_Byte___" data-uid="OpenTK.Platform.Native.Windows.IconComponent.CreateFromIcoResource(System.Byte[])">CreateFromIcoResource(byte[])</h4>
+  <div class="markdown level1 summary"><p>Creates an icon from resx ico resource data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IconHandle CreateFromIcoResource(byte[] resource)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</td>
+        <td><span class="parametername">resource</span></td>
+        <td><p>The ico resource data to load.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Core.Platform.IconHandle.html">IconHandle</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenTK_Platform_Native_Windows_IconComponent_CreateFromIcoResource_System_Byte____remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This icon will not have a dynamic resoltion. The icon will only have one resolution.
+To get an icon with a dynamic resoltion, use <a class="xref" href="OpenTK.Platform.Native.Windows.IconComponent.html#OpenTK_Platform_Native_Windows_IconComponent_CreateFromIcoFile_System_String_">CreateFromIcoFile(string)</a> or <a class="xref" href="OpenTK.Platform.Native.Windows.IconComponent.html#OpenTK_Platform_Native_Windows_IconComponent_CreateFromIcoResource_System_String_">CreateFromIcoResource(string)</a>.</p>
+</div>
+  <a id="OpenTK_Platform_Native_Windows_IconComponent_CreateFromIcoResource_" data-uid="OpenTK.Platform.Native.Windows.IconComponent.CreateFromIcoResource*"></a>
+  <h4 id="OpenTK_Platform_Native_Windows_IconComponent_CreateFromIcoResource_System_String_" data-uid="OpenTK.Platform.Native.Windows.IconComponent.CreateFromIcoResource(System.String)">CreateFromIcoResource(string)</h4>
+  <div class="markdown level1 summary"><p>Creates an icon from a resource name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IconHandle CreateFromIcoResource(string resourceName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">resourceName</span></td>
+        <td><p>The name of the icon resource to load.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Core.Platform.IconHandle.html">IconHandle</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenTK_Platform_Native_Windows_IconComponent_CreateFromIcoResource_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This icon will have a dynamic resolution.</p>
+<p>To use this function you need to create and include a resource file in your exe.
+To do this, first create a .rc resource definition file and include your icon.
+Then you need to compile that file into a .res file using rc.exe, the resource compiler.
+Lastly you need to include that .res file in your csproj using the &lt;Win32Resource&gt; property.
+FIXME: Write a guide on how to compile .rc files and include a .res file using &lt;Win32Resource&gt;.</p>
+</div>
   <a id="OpenTK_Platform_Native_Windows_IconComponent_Destroy_" data-uid="OpenTK.Platform.Native.Windows.IconComponent.Destroy*"></a>
   <h4 id="OpenTK_Platform_Native_Windows_IconComponent_Destroy_OpenTK_Core_Platform_IconHandle_" data-uid="OpenTK.Platform.Native.Windows.IconComponent.Destroy(OpenTK.Core.Platform.IconHandle)">Destroy(IconHandle)</h4>
   <div class="markdown level1 summary"><p>Destroy an icon object.</p>
@@ -520,48 +661,6 @@ Only works if <a class="xref" href="OpenTK.Core.Platform.IIconComponent.html#Ope
         <td><span class="parametername">which</span></td>
         <td><p>Bitfield of which components the driver need to be initialized.</p>
 </td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="OpenTK_Platform_Native_Windows_IconComponent_LoadIcoFile_" data-uid="OpenTK.Platform.Native.Windows.IconComponent.LoadIcoFile*"></a>
-  <h4 id="OpenTK_Platform_Native_Windows_IconComponent_LoadIcoFile_System_String_" data-uid="OpenTK.Platform.Native.Windows.IconComponent.LoadIcoFile(System.String)">LoadIcoFile(string)</h4>
-  <div class="markdown level1 summary"><p>Loads a windows .ico file.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IconHandle LoadIcoFile(string file)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
-        <td><span class="parametername">file</span></td>
-        <td><p>The icon file to load.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Core.Platform.IconHandle.html">IconHandle</a></td>
-        <td></td>
       </tr>
     </tbody>
   </table>

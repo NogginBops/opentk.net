@@ -126,13 +126,13 @@
   <h3 id="methods">Methods
 </h3>
   <a id="OpenTK_Compute_OpenCL_CLGL_CreateEventFromGLsyncKHR_" data-uid="OpenTK.Compute.OpenCL.CLGL.CreateEventFromGLsyncKHR*"></a>
-  <h4 id="OpenTK_Compute_OpenCL_CLGL_CreateEventFromGLsyncKHR_OpenTK_Compute_OpenCL_CLContext_System_IntPtr_OpenTK_Compute_OpenCL_CLResultCode__" data-uid="OpenTK.Compute.OpenCL.CLGL.CreateEventFromGLsyncKHR(OpenTK.Compute.OpenCL.CLContext,System.IntPtr,OpenTK.Compute.OpenCL.CLResultCode@)">CreateEventFromGLsyncKHR(CLContext, IntPtr, out CLResultCode)</h4>
+  <h4 id="OpenTK_Compute_OpenCL_CLGL_CreateEventFromGLsyncKHR_OpenTK_Compute_OpenCL_CLContext_System_IntPtr_OpenTK_Compute_OpenCL_CLResultCode__" data-uid="OpenTK.Compute.OpenCL.CLGL.CreateEventFromGLsyncKHR(OpenTK.Compute.OpenCL.CLContext,System.IntPtr,OpenTK.Compute.OpenCL.CLResultCode@)">CreateEventFromGLsyncKHR(CLContext, nint, out CLResultCode)</h4>
   <div class="markdown level1 summary"><p>Introduced in Opencl 1.1</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern CLEvent CreateEventFromGLsyncKHR(CLContext context, IntPtr sync, out CLResultCode error)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern CLEvent CreateEventFromGLsyncKHR(CLContext context, nint sync, out CLResultCode error)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -150,7 +150,7 @@
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
         <td><span class="parametername">sync</span></td>
         <td></td>
       </tr>
@@ -622,13 +622,13 @@ public static extern CLBuffer CreateFromGLTexture3D(CLContext context, MemoryFla
     </tbody>
   </table>
   <a id="OpenTK_Compute_OpenCL_CLGL_GetGLContextInfoKHR_" data-uid="OpenTK.Compute.OpenCL.CLGL.GetGLContextInfoKHR*"></a>
-  <h4 id="OpenTK_Compute_OpenCL_CLGL_GetGLContextInfoKHR_System_IntPtr___OpenTK_Compute_OpenCL_CLGL_ContextInfo_System_UIntPtr_System_Byte___System_UIntPtr__" data-uid="OpenTK.Compute.OpenCL.CLGL.GetGLContextInfoKHR(System.IntPtr[],OpenTK.Compute.OpenCL.CLGL.ContextInfo,System.UIntPtr,System.Byte[],System.UIntPtr@)">GetGLContextInfoKHR(IntPtr[], ContextInfo, nuint, byte[], out nuint)</h4>
+  <h4 id="OpenTK_Compute_OpenCL_CLGL_GetGLContextInfoKHR_System_IntPtr___OpenTK_Compute_OpenCL_CLGL_ContextInfo_System_UIntPtr_System_Byte___System_UIntPtr__" data-uid="OpenTK.Compute.OpenCL.CLGL.GetGLContextInfoKHR(System.IntPtr[],OpenTK.Compute.OpenCL.CLGL.ContextInfo,System.UIntPtr,System.Byte[],System.UIntPtr@)">GetGLContextInfoKHR(nint[], ContextInfo, nuint, byte[], out nuint)</h4>
   <div class="markdown level1 summary"><p>Introduced in Opencl 1.0</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static extern CLResultCode GetGLContextInfoKHR(IntPtr[] properties, CLGL.ContextInfo paramName, nuint paramValueSize, byte[] paramValue, out nuint paramValueSizeReturned)</code></pre>
+    <pre><code class="lang-csharp hljs">public static extern CLResultCode GetGLContextInfoKHR(nint[] properties, CLGL.ContextInfo paramName, nuint paramValueSize, byte[] paramValue, out nuint paramValueSizeReturned)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -641,7 +641,7 @@ public static extern CLBuffer CreateFromGLTexture3D(CLContext context, MemoryFla
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a>[]</td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a>[]</td>
         <td><span class="parametername">properties</span></td>
         <td></td>
       </tr>
