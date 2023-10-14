@@ -94,16 +94,16 @@
 <p>That may seem like a lot, but it's quite intuitive once setup is complete and we get into the pipeline.</p>
 <h2 id="some-new-functions">Some new functions</h2>
 <p>We'll need to override a couple of extra functions to get started. Firstly, we override OnLoad.</p>
-<div class="tabGroup" id="tabgroup_bHGHmlrG6S">
+<div class="tabGroup" id="tabgroup_1">
 <ul role="tablist">
 <li role="presentation">
-<a href="#tabpanel_bHGHmlrG6S_onload-opentk4" role="tab" aria-controls="tabpanel_bHGHmlrG6S_onload-opentk4" data-tab="onload-opentk4" tabindex="0" aria-selected="true">OpenTK 4</a>
+<a href="#tabpanel_1_onload-opentk4" role="tab" aria-controls="tabpanel_1_onload-opentk4" data-tab="onload-opentk4" tabindex="0" aria-selected="true">OpenTK 4</a>
 </li>
 <li role="presentation">
-<a href="#tabpanel_bHGHmlrG6S_onload-opentk3" role="tab" aria-controls="tabpanel_bHGHmlrG6S_onload-opentk3" data-tab="onload-opentk3" tabindex="-1">OpenTK 3</a>
+<a href="#tabpanel_1_onload-opentk3" role="tab" aria-controls="tabpanel_1_onload-opentk3" data-tab="onload-opentk3" tabindex="-1">OpenTK 3</a>
 </li>
 </ul>
-<section id="tabpanel_bHGHmlrG6S_onload-opentk4" role="tabpanel" data-tab="onload-opentk4">
+<section id="tabpanel_1_onload-opentk4" role="tabpanel" data-tab="onload-opentk4">
 
 <pre><code class="lang-cs">protected override void OnLoad()
 {
@@ -115,7 +115,7 @@
 }
 </code></pre>
 </section>
-<section id="tabpanel_bHGHmlrG6S_onload-opentk3" role="tabpanel" data-tab="onload-opentk3" aria-hidden="true" hidden="hidden">
+<section id="tabpanel_1_onload-opentk3" role="tabpanel" data-tab="onload-opentk3" aria-hidden="true" hidden="hidden">
 
 <pre><code class="lang-cs">protected override void OnLoad(EventArgs e)
 {
@@ -132,16 +132,16 @@
 <p>This function runs one time, when the window first opens. Any initialization-related code should go here.</p>
 <p>It's also here that we get our first OpenGL function call: <code>GL.ClearColor</code>. This takes four floats, ranging between 0.0f and 1.0f. This decides the color of the window after it gets cleared between frames.</p>
 <p>Next, we have OnRenderFrame.</p>
-<div class="tabGroup" id="tabgroup_bHGHmlrG6S-1">
+<div class="tabGroup" id="tabgroup_2">
 <ul role="tablist">
 <li role="presentation">
-<a href="#tabpanel_bHGHmlrG6S-1_onrender-opentk4" role="tab" aria-controls="tabpanel_bHGHmlrG6S-1_onrender-opentk4" data-tab="onrender-opentk4" tabindex="0" aria-selected="true">OpenTK 4</a>
+<a href="#tabpanel_2_onrender-opentk4" role="tab" aria-controls="tabpanel_2_onrender-opentk4" data-tab="onrender-opentk4" tabindex="0" aria-selected="true">OpenTK 4</a>
 </li>
 <li role="presentation">
-<a href="#tabpanel_bHGHmlrG6S-1_onrender-opentk3" role="tab" aria-controls="tabpanel_bHGHmlrG6S-1_onrender-opentk3" data-tab="onrender-opentk3" tabindex="-1">OpenTK 3</a>
+<a href="#tabpanel_2_onrender-opentk3" role="tab" aria-controls="tabpanel_2_onrender-opentk3" data-tab="onrender-opentk3" tabindex="-1">OpenTK 3</a>
 </li>
 </ul>
-<section id="tabpanel_bHGHmlrG6S-1_onrender-opentk4" role="tabpanel" data-tab="onrender-opentk4">
+<section id="tabpanel_2_onrender-opentk4" role="tabpanel" data-tab="onrender-opentk4">
 
 <pre><code class="lang-cs">protected override void OnRenderFrame(FrameEventArgs e)
 {
@@ -155,7 +155,7 @@
 }
 </code></pre>
 </section>
-<section id="tabpanel_bHGHmlrG6S-1_onrender-opentk3" role="tabpanel" data-tab="onrender-opentk3" aria-hidden="true" hidden="hidden">
+<section id="tabpanel_2_onrender-opentk3" role="tabpanel" data-tab="onrender-opentk3" aria-hidden="true" hidden="hidden">
 
 <pre><code class="lang-cs">protected override void OnRenderFrame(FrameEventArgs e)
 {
@@ -174,16 +174,16 @@
 <p>We have two calls here. Firstly, <code>GL.Clear</code> clears the screen, using the color set in OnLoad. This should always be the first function called when rendering.</p>
 <p>Then, we have <code>Context.SwapBuffers</code>. Almost any modern OpenGL context is what's known as &quot;double-buffered&quot;. Double-buffering means that there are two areas that OpenGL draws to. In essence: One area is displayed, while the other is being rendered to. Then, when you call SwapBuffers, the two are reversed. A single-buffered context could have issues such as screen tearing.</p>
 <p>Next, we have OnResize.</p>
-<div class="tabGroup" id="tabgroup_bHGHmlrG6S-2">
+<div class="tabGroup" id="tabgroup_3">
 <ul role="tablist">
 <li role="presentation">
-<a href="#tabpanel_bHGHmlrG6S-2_resize-opentk4" role="tab" aria-controls="tabpanel_bHGHmlrG6S-2_resize-opentk4" data-tab="resize-opentk4" tabindex="0" aria-selected="true">OpenTK 4</a>
+<a href="#tabpanel_3_resize-opentk4" role="tab" aria-controls="tabpanel_3_resize-opentk4" data-tab="resize-opentk4" tabindex="0" aria-selected="true">OpenTK 4</a>
 </li>
 <li role="presentation">
-<a href="#tabpanel_bHGHmlrG6S-2_resize-opentk3" role="tab" aria-controls="tabpanel_bHGHmlrG6S-2_resize-opentk3" data-tab="resize-opentk3" tabindex="-1">OpenTK 3</a>
+<a href="#tabpanel_3_resize-opentk3" role="tab" aria-controls="tabpanel_3_resize-opentk3" data-tab="resize-opentk3" tabindex="-1">OpenTK 3</a>
 </li>
 </ul>
-<section id="tabpanel_bHGHmlrG6S-2_resize-opentk4" role="tabpanel" data-tab="resize-opentk4">
+<section id="tabpanel_3_resize-opentk4" role="tabpanel" data-tab="resize-opentk4">
 
 <pre><code class="lang-cs">protected override void OnResize(ResizeEventArgs e)
 {
@@ -193,7 +193,7 @@
 }
 </code></pre>
 </section>
-<section id="tabpanel_bHGHmlrG6S-2_resize-opentk3" role="tabpanel" data-tab="resize-opentk3" aria-hidden="true" hidden="hidden">
+<section id="tabpanel_3_resize-opentk3" role="tabpanel" data-tab="resize-opentk3" aria-hidden="true" hidden="hidden">
 
 <pre><code class="lang-cs">protected override void OnResize(EventArgs e)
 {
@@ -491,7 +491,7 @@ GL.DrawArrays(PrimitiveType.Triangles, 0, 3);
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-                <h5>In This Article</h5>
+                <h5>In this article</h5>
                 <div></div>
               </nav>
             </div>

@@ -1,5 +1,4 @@
 {
-  "homepages": [],
   "source_base_path": "C:/Users/juliu/Documents/GitHub/opentk.net/website",
   "xrefmap": "xrefmap.yml",
   "files": [
@@ -9,46 +8,6 @@
       "output": {
         ".html": {
           "relative_path": "README.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Audio.OpenAL.AL.EXTDouble.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Audio.OpenAL.AL.EXTDouble.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Audio.OpenAL.AL.EXTFloat32.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Audio.OpenAL.AL.EXTFloat32.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Audio.OpenAL.AL.LoopPoints.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Audio.OpenAL.AL.LoopPoints.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Audio.OpenAL.AL.SourceLatency.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Audio.OpenAL.AL.SourceLatency.html"
         }
       },
       "version": ""
@@ -79,36 +38,6 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenTK.Audio.OpenAL.ALBufferState.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Audio.OpenAL.ALC.DeviceClock.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Audio.OpenAL.ALC.DeviceClock.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Audio.OpenAL.ALC.EFX.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Audio.OpenAL.ALC.EFX.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Audio.OpenAL.ALC.EnumerateAll.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Audio.OpenAL.ALC.EnumerateAll.html"
         }
       },
       "version": ""
@@ -399,156 +328,6 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenTK.Audio.OpenAL.AlcGetStringList.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Audio.OpenAL.BufferLoopPoint.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Audio.OpenAL.BufferLoopPoint.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Audio.OpenAL.DoubleBufferFormat.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Audio.OpenAL.DoubleBufferFormat.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Audio.OpenAL.EFXContextAttributes.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Audio.OpenAL.EFXContextAttributes.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Audio.OpenAL.EFXContextInteger.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Audio.OpenAL.EFXContextInteger.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Audio.OpenAL.EFXListenerFloat.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Audio.OpenAL.EFXListenerFloat.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Audio.OpenAL.EFXSourceBoolean.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Audio.OpenAL.EFXSourceBoolean.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Audio.OpenAL.EFXSourceFloat.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Audio.OpenAL.EFXSourceFloat.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Audio.OpenAL.EFXSourceInteger.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Audio.OpenAL.EFXSourceInteger.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Audio.OpenAL.EFXSourceInteger3.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Audio.OpenAL.EFXSourceInteger3.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Audio.OpenAL.EffectFloat.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Audio.OpenAL.EffectFloat.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Audio.OpenAL.EffectInteger.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Audio.OpenAL.EffectInteger.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Audio.OpenAL.EffectSlotFloat.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Audio.OpenAL.EffectSlotFloat.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Audio.OpenAL.EffectSlotInteger.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Audio.OpenAL.EffectSlotInteger.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Audio.OpenAL.EffectType.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Audio.OpenAL.EffectType.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Audio.OpenAL.EffectVector3.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Audio.OpenAL.EffectVector3.html"
         }
       },
       "version": ""
@@ -1005,76 +784,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Audio.OpenAL.FilterFloat.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Audio.OpenAL.FilterFloat.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Audio.OpenAL.FilterInteger.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Audio.OpenAL.FilterInteger.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Audio.OpenAL.FilterType.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Audio.OpenAL.FilterType.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Audio.OpenAL.FloatBufferFormat.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Audio.OpenAL.FloatBufferFormat.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Audio.OpenAL.FormantFilterSettings.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Audio.OpenAL.FormantFilterSettings.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Audio.OpenAL.GetEnumerateAllContextString.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Audio.OpenAL.GetEnumerateAllContextString.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Audio.OpenAL.GetEnumerateAllContextStringList.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Audio.OpenAL.GetEnumerateAllContextStringList.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/OpenTK.Audio.OpenAL.GetEnumerationString.yml",
       "output": {
         ".html": {
@@ -1095,90 +804,10 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Audio.OpenAL.GetInteger64.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Audio.OpenAL.GetInteger64.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Audio.OpenAL.MaxAuxiliarySends.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Audio.OpenAL.MaxAuxiliarySends.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/OpenTK.Audio.OpenAL.OpenALLibraryNameContainer.yml",
       "output": {
         ".html": {
           "relative_path": "api/OpenTK.Audio.OpenAL.OpenALLibraryNameContainer.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Audio.OpenAL.ReverbPresets.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Audio.OpenAL.ReverbPresets.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Audio.OpenAL.ReverbProperties.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Audio.OpenAL.ReverbProperties.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Audio.OpenAL.SourceDouble.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Audio.OpenAL.SourceDouble.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Audio.OpenAL.SourceInteger64.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Audio.OpenAL.SourceInteger64.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Audio.OpenAL.SourceLatencyVector2d.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Audio.OpenAL.SourceLatencyVector2d.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Audio.OpenAL.SourceLatencyVector2i.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Audio.OpenAL.SourceLatencyVector2i.html"
         }
       },
       "version": ""
@@ -2795,16 +2424,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Graphics.BindingsBase.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Graphics.BindingsBase.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/OpenTK.Graphics.BufferHandle.yml",
       "output": {
         ".html": {
@@ -2925,6 +2544,46 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Graphics.GLHandleARB.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Graphics.GLHandleARB.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Graphics.GLLoader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Graphics.GLLoader.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Graphics.GLPointers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Graphics.GLPointers.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Graphics.GLSync.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Graphics.GLSync.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/OpenTK.Graphics.ProgramHandle.yml",
       "output": {
         ".html": {
@@ -3019,46 +2678,6 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenTK.Graphics.VertexArrayHandle.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Graphics.Wgl.Wgl.Arb.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Graphics.Wgl.Wgl.Arb.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Graphics.Wgl.Wgl.Ext.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Graphics.Wgl.Wgl.Ext.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Graphics.Wgl.Wgl.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Graphics.Wgl.Wgl.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Graphics.Wgl.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Graphics.Wgl.html"
         }
       },
       "version": ""
@@ -3289,16 +2908,6 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenTK.Mathematics.Color4.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Mathematics.Half.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Mathematics.Half.html"
         }
       },
       "version": ""
@@ -4145,6 +3754,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.Native.macOS.CG.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.Native.macOS.CG.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/OpenTK.Platform.Native.macOS.CGL.yml",
       "output": {
         ".html": {
@@ -4169,6 +3788,16 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenTK.Platform.Native.macOS.CGRect.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.Native.macOS.MacOSDisplayComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.Native.macOS.MacOSDisplayComponent.html"
         }
       },
       "version": ""
@@ -4255,6 +3884,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.Native.macOS.NSScreenHandle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.Native.macOS.NSScreenHandle.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/OpenTK.Platform.Native.macOS.NSStringEncoding.yml",
       "output": {
         ".html": {
@@ -4269,6 +3908,16 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenTK.Platform.Native.macOS.NSWindowHandle.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.Native.macOS.NSWindowLevel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.Native.macOS.NSWindowLevel.html"
         }
       },
       "version": ""
@@ -4329,296 +3978,6 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenTK.Platform.Native.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Platform.Windows.All.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Platform.Windows.All.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Platform.Windows.ArbCreateContext.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Platform.Windows.ArbCreateContext.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Platform.Windows.WGL_3DFX_multisample.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Platform.Windows.WGL_3DFX_multisample.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Platform.Windows.WGL_ARB_buffer_region.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Platform.Windows.WGL_ARB_buffer_region.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Platform.Windows.WGL_ARB_extensions_string.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Platform.Windows.WGL_ARB_extensions_string.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Platform.Windows.WGL_ARB_make_current_read.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Platform.Windows.WGL_ARB_make_current_read.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Platform.Windows.WGL_ARB_multisample.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Platform.Windows.WGL_ARB_multisample.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Platform.Windows.WGL_ARB_pbuffer.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Platform.Windows.WGL_ARB_pbuffer.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Platform.Windows.WGL_ARB_pixel_format.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Platform.Windows.WGL_ARB_pixel_format.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Platform.Windows.WGL_ARB_pixel_format_float.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Platform.Windows.WGL_ARB_pixel_format_float.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Platform.Windows.WGL_ARB_render_texture.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Platform.Windows.WGL_ARB_render_texture.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Platform.Windows.WGL_ATI_pixel_format_float.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Platform.Windows.WGL_ATI_pixel_format_float.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Platform.Windows.WGL_EXT_depth_float.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Platform.Windows.WGL_EXT_depth_float.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Platform.Windows.WGL_EXT_make_current_read.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Platform.Windows.WGL_EXT_make_current_read.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Platform.Windows.WGL_EXT_multisample.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Platform.Windows.WGL_EXT_multisample.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Platform.Windows.WGL_EXT_pbuffer.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Platform.Windows.WGL_EXT_pbuffer.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Platform.Windows.WGL_EXT_pixel_format.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Platform.Windows.WGL_EXT_pixel_format.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Platform.Windows.WGL_I3D_digital_video_control.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Platform.Windows.WGL_I3D_digital_video_control.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Platform.Windows.WGL_I3D_gamma.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Platform.Windows.WGL_I3D_gamma.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Platform.Windows.WGL_I3D_genlock.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Platform.Windows.WGL_I3D_genlock.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Platform.Windows.WGL_I3D_image_buffer.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Platform.Windows.WGL_I3D_image_buffer.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Platform.Windows.WGL_I3D_swap_frame_lock.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Platform.Windows.WGL_I3D_swap_frame_lock.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Platform.Windows.WGL_NV_DX_interop.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Platform.Windows.WGL_NV_DX_interop.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Platform.Windows.WGL_NV_DX_interop_ResourceName.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Platform.Windows.WGL_NV_DX_interop_ResourceName.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Platform.Windows.WGL_NV_float_buffer.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Platform.Windows.WGL_NV_float_buffer.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Platform.Windows.WGL_NV_render_depth_texture.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Platform.Windows.WGL_NV_render_depth_texture.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Platform.Windows.WGL_NV_render_texture_rectangle.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Platform.Windows.WGL_NV_render_texture_rectangle.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Platform.Windows.WGL_font_type.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Platform.Windows.WGL_font_type.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Platform.Windows.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Platform.Windows.html"
         }
       },
       "version": ""
@@ -4729,16 +4088,6 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenTK.Windowing.Common.Input.Image.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Windowing.Common.Input.MouseCursor.StandardShape.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Windowing.Common.Input.MouseCursor.StandardShape.html"
         }
       },
       "version": ""
@@ -7195,6 +6544,36 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "learn/pal2/ANGLE.md",
+      "output": {
+        ".html": {
+          "relative_path": "learn/pal2/ANGLE.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "learn/pal2/Components.md",
+      "output": {
+        ".html": {
+          "relative_path": "learn/pal2/Components.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "learn/pal2/Event-Handling.md",
+      "output": {
+        ".html": {
+          "relative_path": "learn/pal2/Event-Handling.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "learn/pal2/Introduction.md",
       "output": {
         ".html": {
@@ -7209,26 +6588,6 @@
       "output": {
         ".html": {
           "relative_path": "learn/pal2/Platform-Specific-Settings.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "learn/pal2/event-handling.md",
-      "output": {
-        ".html": {
-          "relative_path": "learn/pal2/event-handling.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "learn/pal2/window-component.md",
-      "output": {
-        ".html": {
-          "relative_path": "learn/pal2/window-component.html"
         }
       },
       "version": ""
@@ -7284,7 +6643,6 @@
       "version": ""
     }
   ],
-  "version_info": {},
   "groups": [
     {
       "xrefmap": "xrefmap.yml"

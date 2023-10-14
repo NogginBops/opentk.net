@@ -1,0 +1,164 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Components  - OpenTK</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Components ">
+    <meta name="generator" content="docfx ">
+  
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+  
+  
+  
+
+    <meta name="author" content="The Open Toolkit Project">
+    <meta property="og:image" content="https://opentk.net/otkBig.png">
+    <meta property="og:image:width" content="142">
+    <meta property="og:image:height" content="50">
+    <meta property="og:site_name" content="OpenTK">
+    <meta property="og:title" content="Components  - OpenTK">
+    <meta name="theme-color" content="#ffffff">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation" style="background: #0052cc;">
+          <div class="container">
+            <a class="navbar-brand" href="../../index.html">
+          <img id="logo" src="../../otkBig.png" alt="">
+        </a>
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="components">Components</h1>
+
+<p>PAL2 is build on top of a set of components that are responsible for their own part of the platform API. The idea is to allow partial implementations of platforms to easily be created and allow support for new platforms to be added in steps. It also groups related APIs into a specific namespace.</p>
+<p>There are currently 10 components in PAL2.</p>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a class="xref" href="../../api/OpenTK.Core.Platform.IWindowComponent.html"><code>IWindowComponent</code></a></td>
+<td>This component is responsible for creating, destroying and managing windows. It is also responsible for processing events.</td>
+</tr>
+<tr>
+<td><a class="xref" href="../../api/OpenTK.Core.Platform.IOpenGLComponent.html"><code>IOpenGLComponent</code></a></td>
+<td>This components is responsible for creating and managing OpenGL contexts. <code>SwapBuffers()</code> lives here.</td>
+</tr>
+<tr>
+<td><a class="xref" href="../../api/OpenTK.Core.Platform.IDisplayComponent.html"><code>IDisplayComponent</code></a></td>
+<td>This component contains functions for retrieving information about displays (aka, monitors or screens) connected to the system. Allows for enumeration of video modes etc.</td>
+</tr>
+<tr>
+<td><a class="xref" href="../../api/OpenTK.Core.Platform.ICursorComponent.html"><code>ICursorComponent</code></a></td>
+<td>This component is responsible for loading and managing cursor images that can be set as the mouse cursor.</td>
+</tr>
+<tr>
+<td><a class="xref" href="../../api/OpenTK.Core.Platform.IIconComponent.html"><code>IIconComponent</code></a></td>
+<td>This component is responsible for loading and managing icon images that can be used as window icons.</td>
+</tr>
+<tr>
+<td><a class="xref" href="../../api/OpenTK.Core.Platform.IMouseComponent.html"><code>IMouseComponent</code></a></td>
+<td>This component allows for getting and setting of the mouse cursor position.</td>
+</tr>
+<tr>
+<td><a class="xref" href="../../api/OpenTK.Core.Platform.IKeyboardComponent.html"><code>IKeyboardComponent</code></a></td>
+<td>This component is responsible for translating platform dependent keycodes and scancodes to a cross platform representation. This component also exposes information about keyboard layout and has functions for IME input.</td>
+</tr>
+<tr>
+<td><a class="xref" href="../../api/OpenTK.Core.Platform.IJoystickComponent.html"><code>IJoystickComponent</code></a></td>
+<td>This component is responsible for exposing joystick input and interfacing with joystick controllers.</td>
+</tr>
+<tr>
+<td><a class="xref" href="../../api/OpenTK.Core.Platform.IClipboardComponent.html"><code>IClipboardComponent</code></a></td>
+<td>This component is used to read and write to the clipboard.</td>
+</tr>
+<tr>
+<td><a class="xref" href="../../api/OpenTK.Core.Platform.IShellComponent.html"><code>IShellComponent</code></a></td>
+<td>This component exposes functions for interacting with the system more generally. Things like battery status and user prefered theme is exposed here.</td>
+</tr>
+</tbody>
+</table>
+<p>Some platform implementation of these interfaces contains platform specific functions that can be called. A complete description of these function can be found in <a href="Platform-Specific-Settings.html">Platform Spcific Settings</a>.</p>
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

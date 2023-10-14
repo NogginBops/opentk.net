@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Almost Native Graphics Layer Engine (ANGLE)  - OpenTK</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Almost Native Graphics Layer Engine (ANGLE) ">
+    <meta name="generator" content="docfx ">
+  
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+  
+  
+  
+
+    <meta name="author" content="The Open Toolkit Project">
+    <meta property="og:image" content="https://opentk.net/otkBig.png">
+    <meta property="og:image:width" content="142">
+    <meta property="og:image:height" content="50">
+    <meta property="og:site_name" content="OpenTK">
+    <meta property="og:title" content="Almost Native Graphics Layer Engine (ANGLE)  - OpenTK">
+    <meta name="theme-color" content="#ffffff">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation" style="background: #0052cc;">
+          <div class="container">
+            <a class="navbar-brand" href="../../index.html">
+          <img id="logo" src="../../otkBig.png" alt="">
+        </a>
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="almost-native-graphics-layer-engine-angle">Almost Native Graphics Layer Engine (<a href="https://chromium.googlesource.com/angle/angle/+/main/README.md">ANGLE</a>)</h1>
+
+<p>ANGLE allows for the creation of compliant OpenGL ES contexts running on underlying platform APIs. Most often used by browsers to provide WebGL, but also useful for writing code that is portable between desktop applications and mobile phones. PAL2 has built-in support for ANGLE using <a class="xref" href="../../api/OpenTK.Platform.Native.ANGLE.ANGLEOpenGLComponent.html"><code>ANGLEOpenGLComponent</code></a>. <a href=""><code>PlatformComponents.PreferANGLE</code></a> can be used to prefer loading <code>ANGLEOpenGLComponent</code> over the native <code>IOpenGLComponent</code>. Contexts created by <code>ANGLEOpenGLComponent</code> will be OpenGL ES (<strong>not</strong> Desktop OpenGL contexts) contexts of thee requested version.</p>
+<p>To be able to run <code>ANGLEOpenGLComponent</code> the ANGLE native dependencies need to be available to load. On windows those are: <code>libEGL.dll</code>, <code>libGLESv1_CM.dll</code>, <code>libGLESv2.dll</code>, and <code>d3dcompiler_47.dll</code> (as of 2023-10-14).</p>
+<p>For other platforms such as linux and macOS other dependencies are needed. These will be documented in time, and ideally a nuget package with the native ANGLE dependencies will be created.</p>
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

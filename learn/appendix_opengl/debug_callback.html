@@ -93,16 +93,16 @@ so much more than what was introduced in the original extension.</p>
 <p>First and foremost, you should create your OpenGL context with the Debug flag
 set. Without the debug flag OpenGL will not generate debugging messages nor
 send them to your callback function.</p>
-<div class="tabGroup" id="tabgroup_bHGHmlrG6S">
+<div class="tabGroup" id="tabgroup_1">
 <ul role="tablist">
 <li role="presentation">
-<a href="#tabpanel_bHGHmlrG6S_debug-context-3" role="tab" aria-controls="tabpanel_bHGHmlrG6S_debug-context-3" data-tab="debug-context-3" tabindex="0" aria-selected="true">OpenTK 3.0</a>
+<a href="#tabpanel_1_debug-context-3" role="tab" aria-controls="tabpanel_1_debug-context-3" data-tab="debug-context-3" tabindex="0" aria-selected="true">OpenTK 3.0</a>
 </li>
 <li role="presentation">
-<a href="#tabpanel_bHGHmlrG6S_debug-context-4" role="tab" aria-controls="tabpanel_bHGHmlrG6S_debug-context-4" data-tab="debug-context-4" tabindex="-1">OpenTK 4.0</a>
+<a href="#tabpanel_1_debug-context-4" role="tab" aria-controls="tabpanel_1_debug-context-4" data-tab="debug-context-4" tabindex="-1">OpenTK 4.0</a>
 </li>
 </ul>
-<section id="tabpanel_bHGHmlrG6S_debug-context-3" role="tabpanel" data-tab="debug-context-3">
+<section id="tabpanel_1_debug-context-3" role="tabpanel" data-tab="debug-context-3">
 
 <pre><code class="lang-cs">using OpenTK;
 using OpenTK.Graphics;
@@ -119,7 +119,7 @@ GameWindow window = new GameWindow(
     GraphicsContextFlags.Debug);    // OpenGL context flags.
 </code></pre>
 </section>
-<section id="tabpanel_bHGHmlrG6S_debug-context-4" role="tabpanel" data-tab="debug-context-4" aria-hidden="true" hidden="hidden">
+<section id="tabpanel_1_debug-context-4" role="tabpanel" data-tab="debug-context-4" aria-hidden="true" hidden="hidden">
 
 <pre><code class="lang-cs">using OpenTK;
 using OpenTK.Windowing.Desktop;
@@ -183,29 +183,29 @@ the callback.</p>
 </div>
 <p>Then you should create a delegate which encapsulates the function you just
 implmented.</p>
-<div class="tabGroup" id="tabgroup_bHGHmlrG6S-1">
+<div class="tabGroup" id="tabgroup_2">
 <ul role="tablist">
 <li role="presentation">
-<a href="#tabpanel_bHGHmlrG6S-1_delegate-gl" role="tab" aria-controls="tabpanel_bHGHmlrG6S-1_delegate-gl" data-tab="delegate-gl" tabindex="0" aria-selected="true">Base</a>
+<a href="#tabpanel_2_delegate-gl" role="tab" aria-controls="tabpanel_2_delegate-gl" data-tab="delegate-gl" tabindex="0" aria-selected="true">Base</a>
 </li>
 <li role="presentation">
-<a href="#tabpanel_bHGHmlrG6S-1_delegate-khr" role="tab" aria-controls="tabpanel_bHGHmlrG6S-1_delegate-khr" data-tab="delegate-khr" tabindex="-1">KHR_debug</a>
+<a href="#tabpanel_2_delegate-khr" role="tab" aria-controls="tabpanel_2_delegate-khr" data-tab="delegate-khr" tabindex="-1">KHR_debug</a>
 </li>
 <li role="presentation">
-<a href="#tabpanel_bHGHmlrG6S-1_delegate-arb" role="tab" aria-controls="tabpanel_bHGHmlrG6S-1_delegate-arb" data-tab="delegate-arb" tabindex="-1">ARB_debug_output</a>
+<a href="#tabpanel_2_delegate-arb" role="tab" aria-controls="tabpanel_2_delegate-arb" data-tab="delegate-arb" tabindex="-1">ARB_debug_output</a>
 </li>
 </ul>
-<section id="tabpanel_bHGHmlrG6S-1_delegate-gl" role="tabpanel" data-tab="delegate-gl">
+<section id="tabpanel_2_delegate-gl" role="tabpanel" data-tab="delegate-gl">
 
 <pre><code class="lang-cs">private static GLDebugProc DebugMessageDelegate = OnDebugMessage;
 </code></pre>
 </section>
-<section id="tabpanel_bHGHmlrG6S-1_delegate-khr" role="tabpanel" data-tab="delegate-khr" aria-hidden="true" hidden="hidden">
+<section id="tabpanel_2_delegate-khr" role="tabpanel" data-tab="delegate-khr" aria-hidden="true" hidden="hidden">
 
 <pre><code class="lang-cs">private static GLDebugProcKHR DebugMessageDelegate = OnDebugMessage;
 </code></pre>
 </section>
-<section id="tabpanel_bHGHmlrG6S-1_delegate-arb" role="tabpanel" data-tab="delegate-arb" aria-hidden="true" hidden="hidden">
+<section id="tabpanel_2_delegate-arb" role="tabpanel" data-tab="delegate-arb" aria-hidden="true" hidden="hidden">
 
 <pre><code class="lang-cs">private static GLDebugProcARB DebugMessageDelegate = OnDebugMessage;
 </code></pre>
@@ -225,19 +225,19 @@ suits your code.</p>
 </div>
 <p>Finally you can provide OpenGL your delegate as your debug callback. You can now
 enable debug output, and optionally enable synchronous output.</p>
-<div class="tabGroup" id="tabgroup_bHGHmlrG6S-2">
+<div class="tabGroup" id="tabgroup_3">
 <ul role="tablist">
 <li role="presentation">
-<a href="#tabpanel_bHGHmlrG6S-2_enable-gl" role="tab" aria-controls="tabpanel_bHGHmlrG6S-2_enable-gl" data-tab="enable-gl" tabindex="0" aria-selected="true">Base</a>
+<a href="#tabpanel_3_enable-gl" role="tab" aria-controls="tabpanel_3_enable-gl" data-tab="enable-gl" tabindex="0" aria-selected="true">Base</a>
 </li>
 <li role="presentation">
-<a href="#tabpanel_bHGHmlrG6S-2_enable-khr" role="tab" aria-controls="tabpanel_bHGHmlrG6S-2_enable-khr" data-tab="enable-khr" tabindex="-1">KHR_debug</a>
+<a href="#tabpanel_3_enable-khr" role="tab" aria-controls="tabpanel_3_enable-khr" data-tab="enable-khr" tabindex="-1">KHR_debug</a>
 </li>
 <li role="presentation">
-<a href="#tabpanel_bHGHmlrG6S-2_enable-arb" role="tab" aria-controls="tabpanel_bHGHmlrG6S-2_enable-arb" data-tab="enable-arb" tabindex="-1">ARB_debug_output</a>
+<a href="#tabpanel_3_enable-arb" role="tab" aria-controls="tabpanel_3_enable-arb" data-tab="enable-arb" tabindex="-1">ARB_debug_output</a>
 </li>
 </ul>
-<section id="tabpanel_bHGHmlrG6S-2_enable-gl" role="tabpanel" data-tab="enable-gl">
+<section id="tabpanel_3_enable-gl" role="tabpanel" data-tab="enable-gl">
 
 <pre><code class="lang-cs">GL.DebugMessageCallback(DebugMessageDelegate, IntPtr.Zero);
 GL.Enable(EnableCap.DebugOutput);
@@ -246,7 +246,7 @@ GL.Enable(EnableCap.DebugOutput);
 GL.Enable(EnableCap.DebugOutputSynchronous)
 </code></pre>
 </section>
-<section id="tabpanel_bHGHmlrG6S-2_enable-khr" role="tabpanel" data-tab="enable-khr" aria-hidden="true" hidden="hidden">
+<section id="tabpanel_3_enable-khr" role="tabpanel" data-tab="enable-khr" aria-hidden="true" hidden="hidden">
 
 <pre><code class="lang-cs">GL.Khr.DebugMessageCallback(DebugMessageDelegate, IntPtr.Zero);
 GL.Enable(EnableCap.DebugOutput);
@@ -255,7 +255,7 @@ GL.Enable(EnableCap.DebugOutput);
 GL.Enable(EnableCap.DebugOutputSynchronous)
 </code></pre>
 </section>
-<section id="tabpanel_bHGHmlrG6S-2_enable-arb" role="tabpanel" data-tab="enable-arb" aria-hidden="true" hidden="hidden">
+<section id="tabpanel_3_enable-arb" role="tabpanel" data-tab="enable-arb" aria-hidden="true" hidden="hidden">
 
 <pre><code class="lang-cs">GL.Arb.DebugMessageCallback(DebugMessageDelegate, IntPtr.Zero);
 GL.Enable(EnableCap.DebugOutput);
@@ -301,7 +301,7 @@ Common pointer gotchas apply.</p>
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-                <h5>In This Article</h5>
+                <h5>In this article</h5>
                 <div></div>
               </nav>
             </div>

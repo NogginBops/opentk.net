@@ -86,13 +86,143 @@
 (clipboardComp as Native.Windows.WindowComponent)?.CanIncludeInClipboardHistory = true;
 
 </code></pre>
+<h1 id="windows">Windows</h1>
+<p>The following is a list of windows specific settings and functions.</p>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>ShellComponent</code></td>
+<td></td>
+</tr>
+<tr>
+<td><a class="xref" href="../../api/OpenTK.Platform.Native.Windows.ShellComponent.html#OpenTK_Platform_Native_Windows_ShellComponent_SetImmersiveDarkMode_OpenTK_Core_Platform_WindowHandle_System_Boolean_"><code>ShellComponent.SetImmersiveDarkMode</code></a></td>
+<td>Sets the <code>DWMWA_USE_IMMERSIVE_DARK_MODE</code> flag on the window causing the titlebar be rendered in dark mode colors. This is only officially supported from Window 11 Build 220000, but can sometimes work on Windows 10.</td>
+</tr>
+<tr>
+<td><a class="xref" href="../../api/OpenTK.Platform.Native.Windows.ShellComponent.html#OpenTK_Platform_Native_Windows_ShellComponent_SetCaptionTextColor_OpenTK_Core_Platform_WindowHandle_OpenTK_Color3_OpenTK_Rgb__"><code>ShellComponent.SetCaptionTextColor</code></a></td>
+<td>Used to set the text color in the windows titlebar. This is only officially supported from Window 11 Build 220000, but can sometimes work on Windows 10.</td>
+</tr>
+<tr>
+<td><a class="xref" href="../../api/OpenTK.Platform.Native.Windows.ShellComponent.html#OpenTK_Platform_Native_Windows_ShellComponent_SetCaptionColor_OpenTK_Core_Platform_WindowHandle_OpenTK_Color3_OpenTK_Rgb__"><code>ShellComponent.SetCaptionColor</code></a></td>
+<td>Used to set the color of the window titlebar. This is only officially supported from Window 11 Build 220000, but can sometimes work on Windows 10.</td>
+</tr>
+<tr>
+<td><code>IconComponent</code></td>
+<td></td>
+</tr>
+<tr>
+<td><a class="xref" href="../../api/OpenTK.Platform.Native.Windows.IconComponent.html#OpenTK_Platform_Native_Windows_IconComponent_CreateFromIcoFile_System_String_"><code>IconComponent.CreateFromIcoFile</code></a></td>
+<td>Used to create an <code>IconHandle</code> from a <code>.ico</code> file. An icon created using this function will be able to dynamically pick resolution if the file contains multiple resolutions.</td>
+</tr>
+<tr>
+<td><a class="xref" href="../../api/OpenTK.Platform.Native.Windows.IconComponent.html#OpenTK_Platform_Native_Windows_IconComponent_CreateFromIcoResource_System_Byte___"><code>IconComponent.CreateFromIcoResource(byte[])</code></a></td>
+<td>Used to create an <code>IconHandle</code> from a <code>.ico</code> file embedded as a <code>.resx</code> resource. An Icon created using this function will <strong>not</strong> be able to dynamically pick resolution.</td>
+</tr>
+<tr>
+<td><a class="xref" href="../../api/OpenTK.Platform.Native.Windows.IconComponent.html#OpenTK_Platform_Native_Windows_IconComponent_CreateFromIcoResource_System_String_"><code>IconComponent.CreateFromIcoResource(String)</code></a></td>
+<td>Used to create an <code>IconHandle</code> from a win32 embedded resource created using an <code>.rc</code> file and <code>&lt;Win32Resource&gt;</code>.</td>
+</tr>
+<tr>
+<td><a class="xref" href="../../api/OpenTK.Platform.Native.Windows.IconComponent.html#OpenTK_Platform_Native_Windows_IconComponent_GetBitmapData_OpenTK_Core_Platform_IconHandle_System_Span_System_Byte__"><code>IconComponent.GetBitmapData</code></a></td>
+<td>Allows for extracting icon data. Works with system icons.</td>
+</tr>
+<tr>
+<td><a class="xref" href="../../api/OpenTK.Platform.Native.Windows.IconComponent.html#OpenTK_Platform_Native_Windows_IconComponent_GetBitmapByteSize_OpenTK_Core_Platform_IconHandle_"><code>IconComponent.GetBitmapByteSize</code></a></td>
+<td>Returns the size in bytes of the bitmap data. For use with <a class="xref" href="../../api/OpenTK.Platform.Native.Windows.IconComponent.html#OpenTK_Platform_Native_Windows_IconComponent_GetBitmapData_OpenTK_Core_Platform_IconHandle_System_Span_System_Byte__"><code>IconComponent.GetBitmapData</code></a>.</td>
+</tr>
+<tr>
+<td><code>CursorComponent</code></td>
+<td></td>
+</tr>
+<tr>
+<td><a class="xref" href="../../api/OpenTK.Platform.Native.Windows.CursorComponent.html#OpenTK_Platform_Native_Windows_CursorComponent_CreateFromCurFile_System_String_"><code>CursorComponent.CreateFromCurFile</code></a></td>
+<td>Used to create a <code>CursorHandle</code> from a <code>.cur</code> file.</td>
+</tr>
+<tr>
+<td><a class="xref" href="../../api/OpenTK.Platform.Native.Windows.CursorComponent.html#OpenTK_Platform_Native_Windows_CursorComponent_CreateFromCurResorce_System_Byte___"><code>CursorComponent.CreateFromCurResorce(byte[])</code></a></td>
+<td>Used to create a <code>CursorHandle</code> from a <code>.cur</code> file embedded in a <code>.resx</code> file. Does not support <code>.ani</code> files.</td>
+</tr>
+<tr>
+<td><a class="xref" href="../../api/OpenTK.Platform.Native.Windows.CursorComponent.html#OpenTK_Platform_Native_Windows_CursorComponent_CreateFromCurResorce_System_String_"><code>CursorComponent.CreateFromCurResorce(String)</code></a></td>
+<td>Used to create a <code>CursorHandle</code> from a <code>.cur</code> file embedded in a <code>.rc</code> file and using <code>&lt;Win32Resource&gt;</code>.</td>
+</tr>
+<tr>
+<td><a class="xref" href="../../api/OpenTK.Platform.Native.Windows.CursorComponent.html#OpenTK_Platform_Native_Windows_CursorComponent_GetImage_OpenTK_Core_Platform_CursorHandle_System_Span_System_Byte__"><code>CursorComponent.GetImage</code></a></td>
+<td>Allows for extracting cursor data. Works with system cursors.</td>
+</tr>
+<tr>
+<td><code>ClipboardComponent</code></td>
+<td></td>
+</tr>
+<tr>
+<td><a class="xref" href="../../api/OpenTK.Platform.Native.Windows.ClipboardComponent.html#OpenTK_Platform_Native_Windows_ClipboardComponent_CanIncludeInClipboardHistory"><code>ClipboardComponent.CanIncludeInClipboardHistory</code></a></td>
+<td>Toggles whether clipboard data set using <a class="xref" href="../../api/OpenTK.Platform.Native.Windows.ClipboardComponent.html#OpenTK_Platform_Native_Windows_ClipboardComponent_SetClipboardText_System_String_"><code>SetClipboardText</code></a> is allowed to be stored in the clipboard history.</td>
+</tr>
+<tr>
+<td><a class="xref" href="../../api/OpenTK.Platform.Native.Windows.ClipboardComponent.html#OpenTK_Platform_Native_Windows_ClipboardComponent_CanUploadToCloudClipboard"><code>ClipboardComponent.CanUploadToCloudClipboard</code></a></td>
+<td>Toggles whether clipboard data set using <a class="xref" href="../../api/OpenTK.Platform.Native.Windows.ClipboardComponent.html#OpenTK_Platform_Native_Windows_ClipboardComponent_SetClipboardText_System_String_"><code>SetClipboardText</code></a> can be by synced between the users devices.</td>
+</tr>
+<tr>
+<td><a class="xref" href="../../api/OpenTK.Platform.Native.Windows.ClipboardComponent.html#OpenTK_Platform_Native_Windows_ClipboardComponent_SetClipboardAudio_OpenTK_Core_Platform_AudioData_"><code>ClipboardComponent.SetClipboardAudio</code></a></td>
+<td>Allows uploading audio data to the clipboard. Audio clipboard support is generally poorly supported by audio applications.</td>
+</tr>
+<tr>
+<td><a class="xref" href="../../api/OpenTK.Platform.Native.Windows.ClipboardComponent.html#OpenTK_Platform_Native_Windows_ClipboardComponent_SetClipboardBitmap_OpenTK_Core_Platform_Bitmap_"><code>ClipboardComponent.SetClipboardBitmap</code></a></td>
+<td>Allows uploading image data to the clipboard.</td>
+</tr>
+</tbody>
+</table>
+<h1 id="linux-x11">Linux X11</h1>
+<p>The following is a list of linux x11 specific settings and functions.</p>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>WindowComponent</code></td>
+<td></td>
+</tr>
+<tr>
+<td><a class="xref" href="../../api/OpenTK.Platform.Native.X11.X11WindowComponent.html#OpenTK_Platform_Native_X11_X11WindowComponent_DemandAttention_OpenTK_Core_Platform_WindowHandle_"><code>X11WindowComponent.DemandAttention</code></a></td>
+<td>Shows a popup to the user that the window is ready.</td>
+</tr>
+<tr>
+<td><code>X11OpenGLComponent</code></td>
+<td></td>
+</tr>
+<tr>
+<td><a class="xref" href="../../api/OpenTK.Platform.Native.X11.X11OpenGLComponent.html#OpenTK_Platform_Native_X11_X11OpenGLComponent_EXT_swap_control_GetMaxSwapInterval"><code>X11OpenGLComponent.EXT_swap_control_GetMaxSwapInterval</code></a></td>
+<td>Queries <code>EXT_swap_control</code> for the maximum supported swap interval.</td>
+</tr>
+<tr>
+<td><code>X11IconComponent</code></td>
+<td></td>
+</tr>
+<tr>
+<td><a class="xref" href="../../api/OpenTK.Platform.Native.X11.X11IconComponent.html#OpenTK_Platform_Native_X11_X11IconComponent_Create_System_Int32_System_Int32_OpenTK_Platform_Native_X11_X11IconComponent_IconImage___"><code>X11IconComponent.Create(int, int, IconImage[])</code></a></td>
+<td>Used to create multi-resolution icons.</td>
+</tr>
+</tbody>
+</table>
+<h1 id="macos">macOS</h1>
+<p>Currently there are no macOS specific apis.</p>
 </article>
           </div>
 
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-                <h5>In This Article</h5>
+                <h5>In this article</h5>
                 <div></div>
               </nav>
             </div>
