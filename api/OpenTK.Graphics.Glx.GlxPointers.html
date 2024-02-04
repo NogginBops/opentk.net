@@ -1,0 +1,3171 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class GlxPointers
+  - OpenTK</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class GlxPointers
+ ">
+    <meta name="generator" content="docfx ">
+  
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+  
+  
+  
+
+    <meta name="author" content="The Open Toolkit Project">
+    <meta property="og:image" content="https://opentk.net/otkBig.png">
+    <meta property="og:image:width" content="142">
+    <meta property="og:image:height" content="50">
+    <meta property="og:site_name" content="OpenTK">
+    <meta property="og:title" content="Class GlxPointers
+  - OpenTK">
+    <meta name="theme-color" content="#ffffff">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation" style="background: #0052cc;">
+          <div class="container">
+            <a class="navbar-brand" href="../index.html">
+          <img id="logo" src="../otkBig.png" alt="">
+        </a>
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="OpenTK.Graphics.Glx.GlxPointers">
+
+
+
+  <h1 id="OpenTK_Graphics_Glx_GlxPointers" data-uid="OpenTK.Graphics.Glx.GlxPointers" class="text-break">Class GlxPointers
+</h1>
+  <div class="markdown level0 summary"><p>A collection of all function pointers to all OpenGL entry points.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">GlxPointers</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="OpenTK.html">OpenTK</a>.<a class="xref" href="OpenTK.Graphics.html">Graphics</a>.<a class="xref" href="OpenTK.Graphics.Glx.html">Glx</a></h6>
+  <h6><strong>Assembly</strong>: OpenTK.Graphics.dll</h6>
+  <h5 id="OpenTK_Graphics_Glx_GlxPointers_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class GlxPointers</code></pre>
+  </div>
+  <h3 id="fields">Fields
+</h3>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXBindChannelToWindowSGIX_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXBindChannelToWindowSGIX_fnptr">_glXBindChannelToWindowSGIX_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXBindChannelToWindowSGIX</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;Display*, int, int, nuint, int&gt; _glXBindChannelToWindowSGIX_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXBindHyperpipeSGIX_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXBindHyperpipeSGIX_fnptr">_glXBindHyperpipeSGIX_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXBindHyperpipeSGIX</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;Display*, int, int&gt; _glXBindHyperpipeSGIX_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXBindSwapBarrierNV_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXBindSwapBarrierNV_fnptr">_glXBindSwapBarrierNV_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXBindSwapBarrierNV</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;Display*, uint, uint, byte&gt; _glXBindSwapBarrierNV_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXBindSwapBarrierSGIX_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXBindSwapBarrierSGIX_fnptr">_glXBindSwapBarrierSGIX_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXBindSwapBarrierSGIX</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;Display*, nuint, int, void&gt; _glXBindSwapBarrierSGIX_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.void">void</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXBindTexImageEXT_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXBindTexImageEXT_fnptr">_glXBindTexImageEXT_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXBindTexImageEXT</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;Display*, nuint, int, int*, void&gt; _glXBindTexImageEXT_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.void">void</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXBindVideoCaptureDeviceNV_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXBindVideoCaptureDeviceNV_fnptr">_glXBindVideoCaptureDeviceNV_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXBindVideoCaptureDeviceNV</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;Display*, uint, nuint, int&gt; _glXBindVideoCaptureDeviceNV_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXBindVideoDeviceNV_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXBindVideoDeviceNV_fnptr">_glXBindVideoDeviceNV_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXBindVideoDeviceNV</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;Display*, uint, uint, int*, int&gt; _glXBindVideoDeviceNV_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXBindVideoImageNV_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXBindVideoImageNV_fnptr">_glXBindVideoImageNV_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXBindVideoImageNV</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;Display*, uint, nuint, int, int&gt; _glXBindVideoImageNV_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXBlitContextFramebufferAMD_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXBlitContextFramebufferAMD_fnptr">_glXBlitContextFramebufferAMD_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXBlitContextFramebufferAMD</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;nint, int, int, int, int, int, int, int, int, uint, uint, void&gt; _glXBlitContextFramebufferAMD_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.void">void</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXChannelRectSGIX_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXChannelRectSGIX_fnptr">_glXChannelRectSGIX_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXChannelRectSGIX</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;Display*, int, int, int, int, int, int, int&gt; _glXChannelRectSGIX_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXChannelRectSyncSGIX_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXChannelRectSyncSGIX_fnptr">_glXChannelRectSyncSGIX_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXChannelRectSyncSGIX</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;Display*, int, int, uint, int&gt; _glXChannelRectSyncSGIX_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXChooseFBConfigSGIX_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXChooseFBConfigSGIX_fnptr">_glXChooseFBConfigSGIX_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXChooseFBConfigSGIX</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;Display*, int, int*, int*, nint*&gt; _glXChooseFBConfigSGIX_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a>*&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXChooseFBConfig_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXChooseFBConfig_fnptr">_glXChooseFBConfig_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXChooseFBConfig</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;Display*, int, int*, int*, nint*&gt; _glXChooseFBConfig_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a>*&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXChooseVisual_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXChooseVisual_fnptr">_glXChooseVisual_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXChooseVisual</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;Display*, int, int*, XVisualInfo*&gt; _glXChooseVisual_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>*, <a class="xref" href="OpenTK.Graphics.Glx.XVisualInfo.html">XVisualInfo</a>*&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXCopyBufferSubDataNV_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXCopyBufferSubDataNV_fnptr">_glXCopyBufferSubDataNV_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXCopyBufferSubDataNV</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;Display*, nint, nint, uint, uint, nint, nint, nint, void&gt; _glXCopyBufferSubDataNV_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.void">void</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXCopyContext_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXCopyContext_fnptr">_glXCopyContext_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXCopyContext</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;Display*, nint, nint, ulong, void&gt; _glXCopyContext_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.void">void</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXCopyImageSubDataNV_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXCopyImageSubDataNV_fnptr">_glXCopyImageSubDataNV_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXCopyImageSubDataNV</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;Display*, nint, uint, uint, int, int, int, int, nint, uint, uint, int, int, int, int, int, int, int, void&gt; _glXCopyImageSubDataNV_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.void">void</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXCopySubBufferMESA_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXCopySubBufferMESA_fnptr">_glXCopySubBufferMESA_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXCopySubBufferMESA</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;Display*, nuint, int, int, int, int, void&gt; _glXCopySubBufferMESA_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.void">void</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXCreateAssociatedContextAMD_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXCreateAssociatedContextAMD_fnptr">_glXCreateAssociatedContextAMD_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXCreateAssociatedContextAMD</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;uint, nint, nint&gt; _glXCreateAssociatedContextAMD_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXCreateAssociatedContextAttribsAMD_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXCreateAssociatedContextAttribsAMD_fnptr">_glXCreateAssociatedContextAttribsAMD_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXCreateAssociatedContextAttribsAMD</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;uint, nint, int*, nint&gt; _glXCreateAssociatedContextAttribsAMD_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXCreateContextAttribsARB_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXCreateContextAttribsARB_fnptr">_glXCreateContextAttribsARB_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXCreateContextAttribsARB</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;Display*, nint, nint, byte, int*, nint&gt; _glXCreateContextAttribsARB_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXCreateContextWithConfigSGIX_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXCreateContextWithConfigSGIX_fnptr">_glXCreateContextWithConfigSGIX_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXCreateContextWithConfigSGIX</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;Display*, nint, int, nint, byte, nint&gt; _glXCreateContextWithConfigSGIX_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXCreateContext_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXCreateContext_fnptr">_glXCreateContext_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXCreateContext</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;Display*, XVisualInfo*, nint, byte, nint&gt; _glXCreateContext_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*, <a class="xref" href="OpenTK.Graphics.Glx.XVisualInfo.html">XVisualInfo</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXCreateGLXPbufferSGIX_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXCreateGLXPbufferSGIX_fnptr">_glXCreateGLXPbufferSGIX_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXCreateGLXPbufferSGIX</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;Display*, nint, uint, uint, int*, nuint&gt; _glXCreateGLXPbufferSGIX_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXCreateGLXPixmapMESA_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXCreateGLXPixmapMESA_fnptr">_glXCreateGLXPixmapMESA_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXCreateGLXPixmapMESA</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;Display*, XVisualInfo*, nuint, nuint, nuint&gt; _glXCreateGLXPixmapMESA_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*, <a class="xref" href="OpenTK.Graphics.Glx.XVisualInfo.html">XVisualInfo</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXCreateGLXPixmapWithConfigSGIX_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXCreateGLXPixmapWithConfigSGIX_fnptr">_glXCreateGLXPixmapWithConfigSGIX_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXCreateGLXPixmapWithConfigSGIX</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;Display*, nint, nuint, nuint&gt; _glXCreateGLXPixmapWithConfigSGIX_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXCreateGLXPixmap_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXCreateGLXPixmap_fnptr">_glXCreateGLXPixmap_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXCreateGLXPixmap</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;Display*, XVisualInfo*, nuint, nuint&gt; _glXCreateGLXPixmap_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*, <a class="xref" href="OpenTK.Graphics.Glx.XVisualInfo.html">XVisualInfo</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXCreateNewContext_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXCreateNewContext_fnptr">_glXCreateNewContext_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXCreateNewContext</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;Display*, nint, int, nint, byte, nint&gt; _glXCreateNewContext_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXCreatePbuffer_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXCreatePbuffer_fnptr">_glXCreatePbuffer_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXCreatePbuffer</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;Display*, nint, int*, nuint&gt; _glXCreatePbuffer_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXCreatePixmap_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXCreatePixmap_fnptr">_glXCreatePixmap_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXCreatePixmap</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;Display*, nint, nuint, int*, nuint&gt; _glXCreatePixmap_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXCreateWindow_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXCreateWindow_fnptr">_glXCreateWindow_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXCreateWindow</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;Display*, nint, nuint, int*, nuint&gt; _glXCreateWindow_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXCushionSGI_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXCushionSGI_fnptr">_glXCushionSGI_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXCushionSGI</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;Display*, nuint, float, void&gt; _glXCushionSGI_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.void">void</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXDelayBeforeSwapNV_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXDelayBeforeSwapNV_fnptr">_glXDelayBeforeSwapNV_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXDelayBeforeSwapNV</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;Display*, nuint, float, byte&gt; _glXDelayBeforeSwapNV_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXDeleteAssociatedContextAMD_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXDeleteAssociatedContextAMD_fnptr">_glXDeleteAssociatedContextAMD_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXDeleteAssociatedContextAMD</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;nint, byte&gt; _glXDeleteAssociatedContextAMD_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXDestroyContext_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXDestroyContext_fnptr">_glXDestroyContext_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXDestroyContext</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;Display*, nint, void&gt; _glXDestroyContext_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.void">void</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXDestroyGLXPbufferSGIX_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXDestroyGLXPbufferSGIX_fnptr">_glXDestroyGLXPbufferSGIX_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXDestroyGLXPbufferSGIX</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;Display*, nuint, void&gt; _glXDestroyGLXPbufferSGIX_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.void">void</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXDestroyGLXPixmap_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXDestroyGLXPixmap_fnptr">_glXDestroyGLXPixmap_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXDestroyGLXPixmap</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;Display*, nuint, void&gt; _glXDestroyGLXPixmap_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.void">void</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXDestroyHyperpipeConfigSGIX_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXDestroyHyperpipeConfigSGIX_fnptr">_glXDestroyHyperpipeConfigSGIX_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXDestroyHyperpipeConfigSGIX</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;Display*, int, int&gt; _glXDestroyHyperpipeConfigSGIX_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXDestroyPbuffer_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXDestroyPbuffer_fnptr">_glXDestroyPbuffer_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXDestroyPbuffer</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;Display*, nuint, void&gt; _glXDestroyPbuffer_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.void">void</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXDestroyPixmap_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXDestroyPixmap_fnptr">_glXDestroyPixmap_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXDestroyPixmap</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;Display*, nuint, void&gt; _glXDestroyPixmap_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.void">void</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXDestroyWindow_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXDestroyWindow_fnptr">_glXDestroyWindow_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXDestroyWindow</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;Display*, nuint, void&gt; _glXDestroyWindow_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.void">void</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXEnumerateVideoCaptureDevicesNV_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXEnumerateVideoCaptureDevicesNV_fnptr">_glXEnumerateVideoCaptureDevicesNV_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXEnumerateVideoCaptureDevicesNV</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;Display*, int, int*, nuint*&gt; _glXEnumerateVideoCaptureDevicesNV_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a>*&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXEnumerateVideoDevicesNV_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXEnumerateVideoDevicesNV_fnptr">_glXEnumerateVideoDevicesNV_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXEnumerateVideoDevicesNV</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;Display*, int, int*, uint*&gt; _glXEnumerateVideoDevicesNV_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>*&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXFreeContextEXT_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXFreeContextEXT_fnptr">_glXFreeContextEXT_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXFreeContextEXT</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;Display*, nint, void&gt; _glXFreeContextEXT_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.void">void</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXGetAGPOffsetMESA_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXGetAGPOffsetMESA_fnptr">_glXGetAGPOffsetMESA_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXGetAGPOffsetMESA</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;void*, uint&gt; _glXGetAGPOffsetMESA_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.void">void</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXGetClientString_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXGetClientString_fnptr">_glXGetClientString_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXGetClientString</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;Display*, int, byte*&gt; _glXGetClientString_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>*&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXGetConfig_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXGetConfig_fnptr">_glXGetConfig_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXGetConfig</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;Display*, XVisualInfo*, int, int*, int&gt; _glXGetConfig_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*, <a class="xref" href="OpenTK.Graphics.Glx.XVisualInfo.html">XVisualInfo</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXGetContextGPUIDAMD_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXGetContextGPUIDAMD_fnptr">_glXGetContextGPUIDAMD_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXGetContextGPUIDAMD</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;nint, uint&gt; _glXGetContextGPUIDAMD_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXGetContextIDEXT_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXGetContextIDEXT_fnptr">_glXGetContextIDEXT_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXGetContextIDEXT</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;nint, nuint&gt; _glXGetContextIDEXT_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXGetCurrentAssociatedContextAMD_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXGetCurrentAssociatedContextAMD_fnptr">_glXGetCurrentAssociatedContextAMD_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXGetCurrentAssociatedContextAMD</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;nint&gt; _glXGetCurrentAssociatedContextAMD_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXGetCurrentContext_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXGetCurrentContext_fnptr">_glXGetCurrentContext_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXGetCurrentContext</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;nint&gt; _glXGetCurrentContext_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXGetCurrentDisplayEXT_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXGetCurrentDisplayEXT_fnptr">_glXGetCurrentDisplayEXT_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXGetCurrentDisplayEXT</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;Display*&gt; _glXGetCurrentDisplayEXT_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXGetCurrentDisplay_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXGetCurrentDisplay_fnptr">_glXGetCurrentDisplay_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXGetCurrentDisplay</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;Display*&gt; _glXGetCurrentDisplay_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXGetCurrentDrawable_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXGetCurrentDrawable_fnptr">_glXGetCurrentDrawable_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXGetCurrentDrawable</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;nuint&gt; _glXGetCurrentDrawable_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXGetCurrentReadDrawableSGI_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXGetCurrentReadDrawableSGI_fnptr">_glXGetCurrentReadDrawableSGI_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXGetCurrentReadDrawableSGI</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;nuint&gt; _glXGetCurrentReadDrawableSGI_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXGetCurrentReadDrawable_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXGetCurrentReadDrawable_fnptr">_glXGetCurrentReadDrawable_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXGetCurrentReadDrawable</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;nuint&gt; _glXGetCurrentReadDrawable_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXGetFBConfigAttribSGIX_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXGetFBConfigAttribSGIX_fnptr">_glXGetFBConfigAttribSGIX_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXGetFBConfigAttribSGIX</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;Display*, nint, int, int*, int&gt; _glXGetFBConfigAttribSGIX_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXGetFBConfigAttrib_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXGetFBConfigAttrib_fnptr">_glXGetFBConfigAttrib_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXGetFBConfigAttrib</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;Display*, nint, int, int*, int&gt; _glXGetFBConfigAttrib_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXGetFBConfigFromVisualSGIX_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXGetFBConfigFromVisualSGIX_fnptr">_glXGetFBConfigFromVisualSGIX_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXGetFBConfigFromVisualSGIX</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;Display*, XVisualInfo*, nint&gt; _glXGetFBConfigFromVisualSGIX_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*, <a class="xref" href="OpenTK.Graphics.Glx.XVisualInfo.html">XVisualInfo</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXGetFBConfigs_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXGetFBConfigs_fnptr">_glXGetFBConfigs_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXGetFBConfigs</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;Display*, int, int*, nint*&gt; _glXGetFBConfigs_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a>*&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXGetGPUIDsAMD_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXGetGPUIDsAMD_fnptr">_glXGetGPUIDsAMD_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXGetGPUIDsAMD</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;uint, uint*, uint&gt; _glXGetGPUIDsAMD_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXGetGPUInfoAMD_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXGetGPUInfoAMD_fnptr">_glXGetGPUInfoAMD_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXGetGPUInfoAMD</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;uint, int, uint, uint, void*, int&gt; _glXGetGPUInfoAMD_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.void">void</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXGetMscRateOML_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXGetMscRateOML_fnptr">_glXGetMscRateOML_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXGetMscRateOML</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;Display*, nuint, int*, int*, byte&gt; _glXGetMscRateOML_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXGetProcAddressARB_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXGetProcAddressARB_fnptr">_glXGetProcAddressARB_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXGetProcAddressARB</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;byte*, nint&gt; _glXGetProcAddressARB_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXGetProcAddress_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXGetProcAddress_fnptr">_glXGetProcAddress_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXGetProcAddress</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;byte*, nint&gt; _glXGetProcAddress_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXGetSelectedEventSGIX_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXGetSelectedEventSGIX_fnptr">_glXGetSelectedEventSGIX_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXGetSelectedEventSGIX</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;Display*, nuint, ulong*, void&gt; _glXGetSelectedEventSGIX_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.void">void</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXGetSelectedEvent_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXGetSelectedEvent_fnptr">_glXGetSelectedEvent_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXGetSelectedEvent</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;Display*, nuint, ulong*, void&gt; _glXGetSelectedEvent_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.void">void</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXGetSwapIntervalMESA_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXGetSwapIntervalMESA_fnptr">_glXGetSwapIntervalMESA_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXGetSwapIntervalMESA</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;int&gt; _glXGetSwapIntervalMESA_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXGetSyncValuesOML_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXGetSyncValuesOML_fnptr">_glXGetSyncValuesOML_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXGetSyncValuesOML</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;Display*, nuint, long*, long*, long*, byte&gt; _glXGetSyncValuesOML_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXGetTransparentIndexSUN_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXGetTransparentIndexSUN_fnptr">_glXGetTransparentIndexSUN_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXGetTransparentIndexSUN</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;Display*, nuint, nuint, ulong*, int&gt; _glXGetTransparentIndexSUN_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXGetVideoDeviceNV_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXGetVideoDeviceNV_fnptr">_glXGetVideoDeviceNV_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXGetVideoDeviceNV</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;Display*, int, int, uint*, int&gt; _glXGetVideoDeviceNV_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXGetVideoInfoNV_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXGetVideoInfoNV_fnptr">_glXGetVideoInfoNV_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXGetVideoInfoNV</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;Display*, int, uint, ulong*, ulong*, int&gt; _glXGetVideoInfoNV_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXGetVideoSyncSGI_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXGetVideoSyncSGI_fnptr">_glXGetVideoSyncSGI_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXGetVideoSyncSGI</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;uint*, int&gt; _glXGetVideoSyncSGI_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXGetVisualFromFBConfigSGIX_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXGetVisualFromFBConfigSGIX_fnptr">_glXGetVisualFromFBConfigSGIX_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXGetVisualFromFBConfigSGIX</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;Display*, nint, XVisualInfo*&gt; _glXGetVisualFromFBConfigSGIX_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a>, <a class="xref" href="OpenTK.Graphics.Glx.XVisualInfo.html">XVisualInfo</a>*&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXGetVisualFromFBConfig_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXGetVisualFromFBConfig_fnptr">_glXGetVisualFromFBConfig_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXGetVisualFromFBConfig</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;Display*, nint, XVisualInfo*&gt; _glXGetVisualFromFBConfig_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a>, <a class="xref" href="OpenTK.Graphics.Glx.XVisualInfo.html">XVisualInfo</a>*&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXHyperpipeAttribSGIX_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXHyperpipeAttribSGIX_fnptr">_glXHyperpipeAttribSGIX_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXHyperpipeAttribSGIX</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;Display*, int, int, int, void*, int&gt; _glXHyperpipeAttribSGIX_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.void">void</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXHyperpipeConfigSGIX_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXHyperpipeConfigSGIX_fnptr">_glXHyperpipeConfigSGIX_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXHyperpipeConfigSGIX</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;Display*, int, int, GLXHyperpipeConfigSGIX*, int*, int&gt; _glXHyperpipeConfigSGIX_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="OpenTK.Graphics.Glx.GLXHyperpipeConfigSGIX.html">GLXHyperpipeConfigSGIX</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXImportContextEXT_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXImportContextEXT_fnptr">_glXImportContextEXT_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXImportContextEXT</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;Display*, nuint, nint&gt; _glXImportContextEXT_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXIsDirect_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXIsDirect_fnptr">_glXIsDirect_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXIsDirect</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;Display*, nint, byte&gt; _glXIsDirect_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXJoinSwapGroupNV_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXJoinSwapGroupNV_fnptr">_glXJoinSwapGroupNV_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXJoinSwapGroupNV</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;Display*, nuint, uint, byte&gt; _glXJoinSwapGroupNV_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXJoinSwapGroupSGIX_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXJoinSwapGroupSGIX_fnptr">_glXJoinSwapGroupSGIX_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXJoinSwapGroupSGIX</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;Display*, nuint, nuint, void&gt; _glXJoinSwapGroupSGIX_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.void">void</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXLockVideoCaptureDeviceNV_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXLockVideoCaptureDeviceNV_fnptr">_glXLockVideoCaptureDeviceNV_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXLockVideoCaptureDeviceNV</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;Display*, nuint, void&gt; _glXLockVideoCaptureDeviceNV_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.void">void</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXMakeAssociatedContextCurrentAMD_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXMakeAssociatedContextCurrentAMD_fnptr">_glXMakeAssociatedContextCurrentAMD_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXMakeAssociatedContextCurrentAMD</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;nint, byte&gt; _glXMakeAssociatedContextCurrentAMD_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXMakeContextCurrent_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXMakeContextCurrent_fnptr">_glXMakeContextCurrent_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXMakeContextCurrent</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;Display*, nuint, nuint, nint, byte&gt; _glXMakeContextCurrent_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXMakeCurrentReadSGI_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXMakeCurrentReadSGI_fnptr">_glXMakeCurrentReadSGI_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXMakeCurrentReadSGI</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;Display*, nuint, nuint, nint, byte&gt; _glXMakeCurrentReadSGI_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXMakeCurrent_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXMakeCurrent_fnptr">_glXMakeCurrent_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXMakeCurrent</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;Display*, nuint, nint, byte&gt; _glXMakeCurrent_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXNamedCopyBufferSubDataNV_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXNamedCopyBufferSubDataNV_fnptr">_glXNamedCopyBufferSubDataNV_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXNamedCopyBufferSubDataNV</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;Display*, nint, nint, uint, uint, nint, nint, nint, void&gt; _glXNamedCopyBufferSubDataNV_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.void">void</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXQueryChannelDeltasSGIX_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXQueryChannelDeltasSGIX_fnptr">_glXQueryChannelDeltasSGIX_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXQueryChannelDeltasSGIX</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;Display*, int, int, int*, int*, int*, int*, int&gt; _glXQueryChannelDeltasSGIX_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXQueryChannelRectSGIX_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXQueryChannelRectSGIX_fnptr">_glXQueryChannelRectSGIX_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXQueryChannelRectSGIX</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;Display*, int, int, int*, int*, int*, int*, int&gt; _glXQueryChannelRectSGIX_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXQueryContextInfoEXT_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXQueryContextInfoEXT_fnptr">_glXQueryContextInfoEXT_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXQueryContextInfoEXT</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;Display*, nint, int, int*, int&gt; _glXQueryContextInfoEXT_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXQueryContext_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXQueryContext_fnptr">_glXQueryContext_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXQueryContext</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;Display*, nint, int, int*, int&gt; _glXQueryContext_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXQueryCurrentRendererIntegerMESA_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXQueryCurrentRendererIntegerMESA_fnptr">_glXQueryCurrentRendererIntegerMESA_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXQueryCurrentRendererIntegerMESA</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;int, uint*, byte&gt; _glXQueryCurrentRendererIntegerMESA_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXQueryCurrentRendererStringMESA_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXQueryCurrentRendererStringMESA_fnptr">_glXQueryCurrentRendererStringMESA_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXQueryCurrentRendererStringMESA</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;int, byte*&gt; _glXQueryCurrentRendererStringMESA_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>*&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXQueryDrawable_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXQueryDrawable_fnptr">_glXQueryDrawable_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXQueryDrawable</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;Display*, nuint, int, uint*, void&gt; _glXQueryDrawable_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.void">void</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXQueryExtension_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXQueryExtension_fnptr">_glXQueryExtension_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXQueryExtension</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;Display*, int*, int*, byte&gt; _glXQueryExtension_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXQueryExtensionsString_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXQueryExtensionsString_fnptr">_glXQueryExtensionsString_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXQueryExtensionsString</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;Display*, int, byte*&gt; _glXQueryExtensionsString_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>*&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXQueryFrameCountNV_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXQueryFrameCountNV_fnptr">_glXQueryFrameCountNV_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXQueryFrameCountNV</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;Display*, int, uint*, byte&gt; _glXQueryFrameCountNV_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXQueryGLXPbufferSGIX_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXQueryGLXPbufferSGIX_fnptr">_glXQueryGLXPbufferSGIX_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXQueryGLXPbufferSGIX</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;Display*, nuint, int, uint*, void&gt; _glXQueryGLXPbufferSGIX_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.void">void</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXQueryHyperpipeAttribSGIX_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXQueryHyperpipeAttribSGIX_fnptr">_glXQueryHyperpipeAttribSGIX_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXQueryHyperpipeAttribSGIX</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;Display*, int, int, int, void*, int&gt; _glXQueryHyperpipeAttribSGIX_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.void">void</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXQueryHyperpipeBestAttribSGIX_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXQueryHyperpipeBestAttribSGIX_fnptr">_glXQueryHyperpipeBestAttribSGIX_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXQueryHyperpipeBestAttribSGIX</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;Display*, int, int, int, void*, void*, int&gt; _glXQueryHyperpipeBestAttribSGIX_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.void">void</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.void">void</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXQueryHyperpipeConfigSGIX_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXQueryHyperpipeConfigSGIX_fnptr">_glXQueryHyperpipeConfigSGIX_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXQueryHyperpipeConfigSGIX</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;Display*, int, int*, GLXHyperpipeConfigSGIX*&gt; _glXQueryHyperpipeConfigSGIX_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>*, <a class="xref" href="OpenTK.Graphics.Glx.GLXHyperpipeConfigSGIX.html">GLXHyperpipeConfigSGIX</a>*&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXQueryHyperpipeNetworkSGIX_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXQueryHyperpipeNetworkSGIX_fnptr">_glXQueryHyperpipeNetworkSGIX_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXQueryHyperpipeNetworkSGIX</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;Display*, int*, GLXHyperpipeNetworkSGIX*&gt; _glXQueryHyperpipeNetworkSGIX_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>*, <a class="xref" href="OpenTK.Graphics.Glx.GLXHyperpipeNetworkSGIX.html">GLXHyperpipeNetworkSGIX</a>*&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXQueryMaxSwapBarriersSGIX_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXQueryMaxSwapBarriersSGIX_fnptr">_glXQueryMaxSwapBarriersSGIX_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXQueryMaxSwapBarriersSGIX</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;Display*, int, int*, byte&gt; _glXQueryMaxSwapBarriersSGIX_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXQueryMaxSwapGroupsNV_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXQueryMaxSwapGroupsNV_fnptr">_glXQueryMaxSwapGroupsNV_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXQueryMaxSwapGroupsNV</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;Display*, int, uint*, uint*, byte&gt; _glXQueryMaxSwapGroupsNV_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXQueryRendererIntegerMESA_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXQueryRendererIntegerMESA_fnptr">_glXQueryRendererIntegerMESA_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXQueryRendererIntegerMESA</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;Display*, int, int, int, uint*, byte&gt; _glXQueryRendererIntegerMESA_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXQueryRendererStringMESA_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXQueryRendererStringMESA_fnptr">_glXQueryRendererStringMESA_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXQueryRendererStringMESA</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;Display*, int, int, int, byte*&gt; _glXQueryRendererStringMESA_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>*&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXQueryServerString_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXQueryServerString_fnptr">_glXQueryServerString_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXQueryServerString</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;Display*, int, int, byte*&gt; _glXQueryServerString_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>*&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXQuerySwapGroupNV_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXQuerySwapGroupNV_fnptr">_glXQuerySwapGroupNV_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXQuerySwapGroupNV</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;Display*, nuint, uint*, uint*, byte&gt; _glXQuerySwapGroupNV_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXQueryVersion_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXQueryVersion_fnptr">_glXQueryVersion_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXQueryVersion</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;Display*, int*, int*, byte&gt; _glXQueryVersion_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXQueryVideoCaptureDeviceNV_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXQueryVideoCaptureDeviceNV_fnptr">_glXQueryVideoCaptureDeviceNV_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXQueryVideoCaptureDeviceNV</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;Display*, nuint, int, int*, int&gt; _glXQueryVideoCaptureDeviceNV_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXReleaseBuffersMESA_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXReleaseBuffersMESA_fnptr">_glXReleaseBuffersMESA_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXReleaseBuffersMESA</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;Display*, nuint, byte&gt; _glXReleaseBuffersMESA_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXReleaseTexImageEXT_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXReleaseTexImageEXT_fnptr">_glXReleaseTexImageEXT_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXReleaseTexImageEXT</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;Display*, nuint, int, void&gt; _glXReleaseTexImageEXT_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.void">void</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXReleaseVideoCaptureDeviceNV_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXReleaseVideoCaptureDeviceNV_fnptr">_glXReleaseVideoCaptureDeviceNV_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXReleaseVideoCaptureDeviceNV</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;Display*, nuint, void&gt; _glXReleaseVideoCaptureDeviceNV_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.void">void</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXReleaseVideoDeviceNV_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXReleaseVideoDeviceNV_fnptr">_glXReleaseVideoDeviceNV_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXReleaseVideoDeviceNV</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;Display*, int, uint, int&gt; _glXReleaseVideoDeviceNV_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXReleaseVideoImageNV_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXReleaseVideoImageNV_fnptr">_glXReleaseVideoImageNV_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXReleaseVideoImageNV</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;Display*, nuint, int&gt; _glXReleaseVideoImageNV_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXResetFrameCountNV_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXResetFrameCountNV_fnptr">_glXResetFrameCountNV_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXResetFrameCountNV</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;Display*, int, byte&gt; _glXResetFrameCountNV_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXSelectEventSGIX_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXSelectEventSGIX_fnptr">_glXSelectEventSGIX_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXSelectEventSGIX</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;Display*, nuint, ulong, void&gt; _glXSelectEventSGIX_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.void">void</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXSelectEvent_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXSelectEvent_fnptr">_glXSelectEvent_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXSelectEvent</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;Display*, nuint, ulong, void&gt; _glXSelectEvent_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.void">void</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXSendPbufferToVideoNV_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXSendPbufferToVideoNV_fnptr">_glXSendPbufferToVideoNV_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXSendPbufferToVideoNV</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;Display*, nuint, int, ulong*, byte, int&gt; _glXSendPbufferToVideoNV_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXSet3DfxModeMESA_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXSet3DfxModeMESA_fnptr">_glXSet3DfxModeMESA_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXSet3DfxModeMESA</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;int, byte&gt; _glXSet3DfxModeMESA_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXSwapBuffersMscOML_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXSwapBuffersMscOML_fnptr">_glXSwapBuffersMscOML_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXSwapBuffersMscOML</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;Display*, nuint, long, long, long, long&gt; _glXSwapBuffersMscOML_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXSwapBuffers_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXSwapBuffers_fnptr">_glXSwapBuffers_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXSwapBuffers</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;Display*, nuint, void&gt; _glXSwapBuffers_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.void">void</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXSwapIntervalEXT_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXSwapIntervalEXT_fnptr">_glXSwapIntervalEXT_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXSwapIntervalEXT</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;Display*, nuint, int, void&gt; _glXSwapIntervalEXT_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.void">void</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXSwapIntervalMESA_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXSwapIntervalMESA_fnptr">_glXSwapIntervalMESA_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXSwapIntervalMESA</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;uint, int&gt; _glXSwapIntervalMESA_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXSwapIntervalSGI_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXSwapIntervalSGI_fnptr">_glXSwapIntervalSGI_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXSwapIntervalSGI</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;int, int&gt; _glXSwapIntervalSGI_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXUseXFont_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXUseXFont_fnptr">_glXUseXFont_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXUseXFont</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;nuint, int, int, int, void&gt; _glXUseXFont_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.void">void</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXWaitForMscOML_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXWaitForMscOML_fnptr">_glXWaitForMscOML_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXWaitForMscOML</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;Display*, nuint, long, long, long, long*, long*, long*, byte&gt; _glXWaitForMscOML_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXWaitForSbcOML_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXWaitForSbcOML_fnptr">_glXWaitForSbcOML_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXWaitForSbcOML</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;Display*, nuint, long, long*, long*, long*, byte&gt; _glXWaitForSbcOML_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXWaitGL_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXWaitGL_fnptr">_glXWaitGL_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXWaitGL</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;void&gt; _glXWaitGL_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.void">void</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXWaitVideoSyncSGI_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXWaitVideoSyncSGI_fnptr">_glXWaitVideoSyncSGI_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXWaitVideoSyncSGI</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;int, int, uint*, int&gt; _glXWaitVideoSyncSGI_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>*, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Graphics_Glx_GlxPointers__glXWaitX_fnptr" data-uid="OpenTK.Graphics.Glx.GlxPointers._glXWaitX_fnptr">_glXWaitX_fnptr</h4>
+  <div class="markdown level1 summary"><p><b>[entry point: <code>glXWaitX</code>]</b></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static delegate* unmanaged&lt;void&gt; _glXWaitX_fnptr</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>delegate* unmanaged&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.void">void</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

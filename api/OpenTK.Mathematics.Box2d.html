@@ -88,6 +88,7 @@
   <div class="implements">
     <h5>Implements</h5>
     <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="OpenTK.Mathematics.Box2d.html">Box2d</a>&gt;</div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iformattable">IFormattable</a></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -106,7 +107,7 @@
   <h5 id="OpenTK_Mathematics_Box2d_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Serializable]
-public struct Box2d : IEquatable&lt;Box2d&gt;</code></pre>
+public struct Box2d : IEquatable&lt;Box2d&gt;, IFormattable</code></pre>
   </div>
   <h3 id="constructors">Constructors
 </h3>
@@ -1074,6 +1075,77 @@ public double DistanceToNearestEdge(Vector2d point)</code></pre>
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetype.equals">ValueType.Equals(object)</a></div>
+  <a id="OpenTK_Mathematics_Box2d_Extend_" data-uid="OpenTK.Mathematics.Box2d.Extend*"></a>
+  <h4 id="OpenTK_Mathematics_Box2d_Extend_OpenTK_Mathematics_Vector2d_" data-uid="OpenTK.Mathematics.Box2d.Extend(OpenTK.Mathematics.Vector2d)">Extend(Vector2d)</h4>
+  <div class="markdown level1 summary"><p>Extend this Box2d to encapsulate a given point.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Extend(Vector2d point)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector2d.html">Vector2d</a></td>
+        <td><span class="parametername">point</span></td>
+        <td><p>The point to contain.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Box2d_Extended_" data-uid="OpenTK.Mathematics.Box2d.Extended*"></a>
+  <h4 id="OpenTK_Mathematics_Box2d_Extended_OpenTK_Mathematics_Vector2d_" data-uid="OpenTK.Mathematics.Box2d.Extended(OpenTK.Mathematics.Vector2d)">Extended(Vector2d)</h4>
+  <div class="markdown level1 summary"><p>Extend this Box2d to encapsulate a given point.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public Box2d Extended(Vector2d point)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector2d.html">Vector2d</a></td>
+        <td><span class="parametername">point</span></td>
+        <td><p>The point to contain.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Box2d.html">Box2d</a></td>
+        <td><p>The inflated box.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="OpenTK_Mathematics_Box2d_Floor_" data-uid="OpenTK.Mathematics.Box2d.Floor*"></a>
   <h4 id="OpenTK_Mathematics_Box2d_Floor_OpenTK_Mathematics_Box2d_" data-uid="OpenTK.Mathematics.Box2d.Floor(OpenTK.Mathematics.Box2d)">Floor(Box2d)</h4>
   <div class="markdown level1 summary"><p>Gets a Box structure that contains rounded down integers.</p>
@@ -1310,7 +1382,8 @@ public double DistanceToNearestEdge(Vector2d point)</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Inflate(Vector2d point)</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use Extend instead. This function will have it&#39;s implementation changed in the future.&quot;)]
+public void Inflate(Vector2d point)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -1338,6 +1411,7 @@ public double DistanceToNearestEdge(Vector2d point)</code></pre>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Pure]
+[Obsolete(&quot;Use Extended instead. This function will have it&#39;s implementation changed in the future.&quot;)]
 public Box2d Inflated(Vector2d point)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -1689,6 +1763,149 @@ public Box2d Scaled(Vector2d scale, Vector2d anchor)</code></pre>
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetype.tostring">ValueType.ToString()</a></div>
+  <a id="OpenTK_Mathematics_Box2d_ToString_" data-uid="OpenTK.Mathematics.Box2d.ToString*"></a>
+  <h4 id="OpenTK_Mathematics_Box2d_ToString_System_IFormatProvider_" data-uid="OpenTK.Mathematics.Box2d.ToString(System.IFormatProvider)">ToString(IFormatProvider)</h4>
+  <div class="markdown level1 summary"><p>Formats the value of the current instance using the specified format.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ToString(IFormatProvider formatProvider)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iformatprovider">IFormatProvider</a></td>
+        <td><span class="parametername">formatProvider</span></td>
+        <td><p>The provider to use to format the value.</p>
+<p>-or-</p>
+<p>A null reference (<code>Nothing</code> in Visual Basic) to obtain the numeric format information from the current locale setting of the operating system.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>The value of the current instance in the specified format.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Box2d_ToString_" data-uid="OpenTK.Mathematics.Box2d.ToString*"></a>
+  <h4 id="OpenTK_Mathematics_Box2d_ToString_System_String_" data-uid="OpenTK.Mathematics.Box2d.ToString(System.String)">ToString(string)</h4>
+  <div class="markdown level1 summary"><p>Formats the value of the current instance using the specified format.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ToString(string format)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">format</span></td>
+        <td><p>The format to use.</p>
+<p>-or-</p>
+<p>A null reference (<code>Nothing</code> in Visual Basic) to use the default format defined for the type of the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iformattable">IFormattable</a> implementation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>The value of the current instance in the specified format.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Box2d_ToString_" data-uid="OpenTK.Mathematics.Box2d.ToString*"></a>
+  <h4 id="OpenTK_Mathematics_Box2d_ToString_System_String_System_IFormatProvider_" data-uid="OpenTK.Mathematics.Box2d.ToString(System.String,System.IFormatProvider)">ToString(string, IFormatProvider)</h4>
+  <div class="markdown level1 summary"><p>Formats the value of the current instance using the specified format.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ToString(string format, IFormatProvider formatProvider)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">format</span></td>
+        <td><p>The format to use.</p>
+<p>-or-</p>
+<p>A null reference (<code>Nothing</code> in Visual Basic) to use the default format defined for the type of the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iformattable">IFormattable</a> implementation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iformatprovider">IFormatProvider</a></td>
+        <td><span class="parametername">formatProvider</span></td>
+        <td><p>The provider to use to format the value.</p>
+<p>-or-</p>
+<p>A null reference (<code>Nothing</code> in Visual Basic) to obtain the numeric format information from the current locale setting of the operating system.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>The value of the current instance in the specified format.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="OpenTK_Mathematics_Box2d_TouchWith_" data-uid="OpenTK.Mathematics.Box2d.TouchWith*"></a>
   <h4 id="OpenTK_Mathematics_Box2d_TouchWith_OpenTK_Mathematics_Box2d_" data-uid="OpenTK.Mathematics.Box2d.TouchWith(OpenTK.Mathematics.Box2d)">TouchWith(Box2d)</h4>
   <div class="markdown level1 summary"><p>Determines if this Box intersects or touches with another Box.</p>
@@ -1953,6 +2170,9 @@ public Box2d Translated(Vector2d distance)</code></pre>
   <h3 id="implements">Implements</h3>
   <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable&lt;T&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iformattable">IFormattable</a>
   </div>
 
 </article>

@@ -386,6 +386,9 @@
       </tr>
     </tbody>
   </table>
+  <h5 id="OpenTK_Platform_Native_Windows_KeyboardComponent_GetAvailableKeyboardLayouts_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This function is expensive and should be cached if possible.</p>
+</div>
   <a id="OpenTK_Platform_Native_Windows_KeyboardComponent_GetKeyFromScancode_" data-uid="OpenTK.Platform.Native.Windows.KeyboardComponent.GetKeyFromScancode*"></a>
   <h4 id="OpenTK_Platform_Native_Windows_KeyboardComponent_GetKeyFromScancode_OpenTK_Core_Platform_Scancode_" data-uid="OpenTK.Platform.Native.Windows.KeyboardComponent.GetKeyFromScancode(OpenTK.Core.Platform.Scancode)">GetKeyFromScancode(Scancode)</h4>
   <div class="markdown level1 summary"><p>Gets the <a class="xref" href="OpenTK.Core.Platform.Key.html">Key</a> associated with the specidied <a class="xref" href="OpenTK.Core.Platform.Scancode.html">Scancode</a>.
@@ -427,6 +430,60 @@ This function uses the current keyboard layout to determine the mapping.</p>
         <td><a class="xref" href="OpenTK.Core.Platform.Key.html">Key</a></td>
         <td><p>The <a class="xref" href="OpenTK.Core.Platform.Key.html">Key</a> associated with the <a class="xref" href="OpenTK.Core.Platform.Scancode.html">Scancode</a>
 or <a class="xref" href="OpenTK.Core.Platform.Key.html#OpenTK_Core_Platform_Key_Unknown">Unknown</a> if the scancode can't be mapped to a key.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Platform_Native_Windows_KeyboardComponent_GetKeyboardModifiers_" data-uid="OpenTK.Platform.Native.Windows.KeyboardComponent.GetKeyboardModifiers*"></a>
+  <h4 id="OpenTK_Platform_Native_Windows_KeyboardComponent_GetKeyboardModifiers" data-uid="OpenTK.Platform.Native.Windows.KeyboardComponent.GetKeyboardModifiers">GetKeyboardModifiers()</h4>
+  <div class="markdown level1 summary"><p>Gets the current keyboard modifiers.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public KeyModifier GetKeyboardModifiers()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Core.Platform.KeyModifier.html">KeyModifier</a></td>
+        <td><p>The current keyboard modifiers.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Platform_Native_Windows_KeyboardComponent_GetKeyboardState_" data-uid="OpenTK.Platform.Native.Windows.KeyboardComponent.GetKeyboardState*"></a>
+  <h4 id="OpenTK_Platform_Native_Windows_KeyboardComponent_GetKeyboardState_System_Boolean___" data-uid="OpenTK.Platform.Native.Windows.KeyboardComponent.GetKeyboardState(System.Boolean[])">GetKeyboardState(bool[])</h4>
+  <div class="markdown level1 summary"><p>Copies the current state of the keyboard into the specified array.
+This array should be indexed using <a class="xref" href="OpenTK.Core.Platform.Scancode.html">Scancode</a> values.
+The length of this array should be an array able to hold all possible <a class="xref" href="OpenTK.Core.Platform.Scancode.html">Scancode</a> values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetKeyboardState(bool[] keyboardState)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>[]</td>
+        <td><span class="parametername">keyboardState</span></td>
+        <td><p>An array to be filled with the keyboard state.</p>
 </td>
       </tr>
     </tbody>
@@ -502,36 +559,6 @@ or <a class="xref" href="OpenTK.Core.Platform.Scancode.html#OpenTK_Core_Platform
         <td><span class="parametername">which</span></td>
         <td><p>Bitfield of which components the driver need to be initialized.</p>
 </td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="OpenTK_Platform_Native_Windows_KeyboardComponent_KeyboardLayoutChange_" data-uid="OpenTK.Platform.Native.Windows.KeyboardComponent.KeyboardLayoutChange*"></a>
-  <h4 id="OpenTK_Platform_Native_Windows_KeyboardComponent_KeyboardLayoutChange_OpenTK_Core_Platform_WindowHandle_System_IntPtr_" data-uid="OpenTK.Platform.Native.Windows.KeyboardComponent.KeyboardLayoutChange(OpenTK.Core.Platform.WindowHandle,System.IntPtr)">KeyboardLayoutChange(WindowHandle, nint)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void KeyboardLayoutChange(WindowHandle handle, nint hKL)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Core.Platform.WindowHandle.html">WindowHandle</a></td>
-        <td><span class="parametername">handle</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
-        <td><span class="parametername">hKL</span></td>
-        <td></td>
       </tr>
     </tbody>
   </table>

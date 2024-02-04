@@ -134,12 +134,13 @@
   <h3 id="constructors">Constructors
 </h3>
   <a id="OpenTK_Core_Platform_KeyDownEventArgs__ctor_" data-uid="OpenTK.Core.Platform.KeyDownEventArgs.#ctor*"></a>
-  <h4 id="OpenTK_Core_Platform_KeyDownEventArgs__ctor_OpenTK_Core_Platform_WindowHandle_OpenTK_Core_Platform_Key_OpenTK_Core_Platform_Scancode_System_Boolean_" data-uid="OpenTK.Core.Platform.KeyDownEventArgs.#ctor(OpenTK.Core.Platform.WindowHandle,OpenTK.Core.Platform.Key,OpenTK.Core.Platform.Scancode,System.Boolean)">KeyDownEventArgs(WindowHandle, Key, Scancode, bool)</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="OpenTK_Core_Platform_KeyDownEventArgs__ctor_OpenTK_Core_Platform_WindowHandle_OpenTK_Core_Platform_Key_OpenTK_Core_Platform_Scancode_System_Boolean_OpenTK_Core_Platform_KeyModifier_" data-uid="OpenTK.Core.Platform.KeyDownEventArgs.#ctor(OpenTK.Core.Platform.WindowHandle,OpenTK.Core.Platform.Key,OpenTK.Core.Platform.Scancode,System.Boolean,OpenTK.Core.Platform.KeyModifier)">KeyDownEventArgs(WindowHandle, Key, Scancode, bool, KeyModifier)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="OpenTK.Core.Platform.KeyDownEventArgs.html">KeyDownEventArgs</a> class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public KeyDownEventArgs(WindowHandle window, Key key, Scancode scancode, bool isRepeat)</code></pre>
+    <pre><code class="lang-csharp hljs">public KeyDownEventArgs(WindowHandle window, Key key, Scancode scancode, bool isRepeat, KeyModifier modifiers)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -154,22 +155,32 @@
       <tr>
         <td><a class="xref" href="OpenTK.Core.Platform.WindowHandle.html">WindowHandle</a></td>
         <td><span class="parametername">window</span></td>
-        <td></td>
+        <td><p>The window which received this keypress.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="OpenTK.Core.Platform.Key.html">Key</a></td>
         <td><span class="parametername">key</span></td>
-        <td></td>
+        <td><p>The key that was pressed.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="OpenTK.Core.Platform.Scancode.html">Scancode</a></td>
         <td><span class="parametername">scancode</span></td>
-        <td></td>
+        <td><p>The scancode representing the key.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><span class="parametername">isRepeat</span></td>
-        <td></td>
+        <td><p>True if this event is triggered by holding down the key, false otherwise.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Core.Platform.KeyModifier.html">KeyModifier</a></td>
+        <td><span class="parametername">modifiers</span></td>
+        <td><p>The keyboard modifiers that where down while this key was pressed.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -220,6 +231,30 @@ FIXME: Document difference between Key and Scancode.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="OpenTK.Core.Platform.Key.html">Key</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Core_Platform_KeyDownEventArgs_Modifiers_" data-uid="OpenTK.Core.Platform.KeyDownEventArgs.Modifiers*"></a>
+  <h4 id="OpenTK_Core_Platform_KeyDownEventArgs_Modifiers" data-uid="OpenTK.Core.Platform.KeyDownEventArgs.Modifiers">Modifiers</h4>
+  <div class="markdown level1 summary"><p>The keyboard modifiers that where down while this key was pressed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public KeyModifier Modifiers { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Core.Platform.KeyModifier.html">KeyModifier</a></td>
         <td></td>
       </tr>
     </tbody>

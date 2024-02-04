@@ -105,11 +105,11 @@
 <td>Sets the <code>DWMWA_USE_IMMERSIVE_DARK_MODE</code> flag on the window causing the titlebar be rendered in dark mode colors. This is only officially supported from Window 11 Build 220000, but can sometimes work on Windows 10.</td>
 </tr>
 <tr>
-<td><a class="xref" href="../../api/OpenTK.Platform.Native.Windows.ShellComponent.html#OpenTK_Platform_Native_Windows_ShellComponent_SetCaptionTextColor_OpenTK_Core_Platform_WindowHandle_OpenTK_Color3_OpenTK_Rgb__"><code>ShellComponent.SetCaptionTextColor</code></a></td>
+<td><a class="xref" href="../../api/OpenTK.Platform.Native.Windows.ShellComponent.html#OpenTK_Platform_Native_Windows_ShellComponent_SetCaptionTextColor_OpenTK_Core_Platform_WindowHandle_OpenTK_Mathematics_Color3_OpenTK_Mathematics_Rgb__"><code>ShellComponent.SetCaptionTextColor</code></a></td>
 <td>Used to set the text color in the windows titlebar. This is only officially supported from Window 11 Build 220000, but can sometimes work on Windows 10.</td>
 </tr>
 <tr>
-<td><a class="xref" href="../../api/OpenTK.Platform.Native.Windows.ShellComponent.html#OpenTK_Platform_Native_Windows_ShellComponent_SetCaptionColor_OpenTK_Core_Platform_WindowHandle_OpenTK_Color3_OpenTK_Rgb__"><code>ShellComponent.SetCaptionColor</code></a></td>
+<td><a class="xref" href="../../api/OpenTK.Platform.Native.Windows.ShellComponent.html#OpenTK_Platform_Native_Windows_ShellComponent_SetCaptionColor_OpenTK_Core_Platform_WindowHandle_OpenTK_Mathematics_Color3_OpenTK_Mathematics_Rgb__"><code>ShellComponent.SetCaptionColor</code></a></td>
 <td>Used to set the color of the window titlebar. This is only officially supported from Window 11 Build 220000, but can sometimes work on Windows 10.</td>
 </tr>
 <tr>
@@ -215,7 +215,65 @@
 </tbody>
 </table>
 <h1 id="macos">macOS</h1>
-<p>Currently there are no macOS specific apis.</p>
+<p>The following is a list of macOS specific settings and functions.</p>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>MacOSWindowComponent</code></td>
+<td></td>
+</tr>
+<tr>
+<td><a class="xref" href="../../api/OpenTK.Platform.Native.macOS.MacOSWindowComponent.html#OpenTK_Platform_Native_macOS_MacOSWindowComponent_SetDockIcon_OpenTK_Core_Platform_WindowHandle_OpenTK_Core_Platform_IconHandle_"><code>MacOSWindowComponent.SetDockIcon</code></a></td>
+<td>Sets the dock icon of the application</td>
+</tr>
+<tr>
+<td><code>MacOSIconComponent</code></td>
+<td></td>
+</tr>
+<tr>
+<td><a class="xref" href="../../api/OpenTK.Platform.Native.macOS.MacOSIconComponent.html#OpenTK_Platform_Native_macOS_MacOSIconComponent_CreateSFSymbol_System_String_System_String_"><code>MacOSIconComponent.CreateSFSymbol</code></a></td>
+<td>Creates a IconHandle from a SF symbol name.</td>
+</tr>
+<tr>
+<td><code>MacOSDisplayComponent</code></td>
+<td></td>
+</tr>
+<tr>
+<td><a class="xref" href="../../api/OpenTK.Platform.Native.macOS.MacOSDisplayComponent.html#OpenTK_Platform_Native_macOS_MacOSDisplayComponent_GetSafeArea_OpenTK_Core_Platform_DisplayHandle_OpenTK_Mathematics_Box2i__"><code>MacOSDisplayComponent.GetSafeArea</code></a></td>
+<td>Gets the area of the screen that is not covered by things like camera housings.</td>
+</tr>
+<tr>
+<td><a class="xref" href="../../api/OpenTK.Platform.Native.macOS.MacOSDisplayComponent.html#OpenTK_Platform_Native_macOS_MacOSDisplayComponent_GetSafeLeftAuxArea_OpenTK_Core_Platform_DisplayHandle_OpenTK_Mathematics_Box2i__"><code>MacOSDisplayComponent.GetSafeLeftAuxArea</code></a></td>
+<td>Gets the visible area of the screen to the left of the camera housing or an empty area if there is no camera housing.</td>
+</tr>
+<tr>
+<td><a class="xref" href="../../api/OpenTK.Platform.Native.macOS.MacOSDisplayComponent.html#OpenTK_Platform_Native_macOS_MacOSDisplayComponent_GetSafeRightAuxArea_OpenTK_Core_Platform_DisplayHandle_OpenTK_Mathematics_Box2i__"><code>MacOSDisplayComponent.GetSafeRightAuxArea</code></a></td>
+<td>Gets the visible area of the screen to the right of the camera housing or an empty area of there is no camera housing.</td>
+</tr>
+<tr>
+<td><code>MacOSCursorComponent</code></td>
+<td></td>
+</tr>
+<tr>
+<td><a class="xref" href="../../api/OpenTK.Platform.Native.macOS.MacOSCursorComponent.html#OpenTK_Platform_Native_macOS_MacOSCursorComponent_Create_OpenTK_Platform_Native_macOS_MacOSCursorComponent_Frame___System_Single_"><code>MacOSCursorComponent.Create(Frame[] frames, float delay)</code></a></td>
+<td>Used to create an animated cursor.</td>
+</tr>
+<tr>
+<td><a class="xref" href="../../api/OpenTK.Platform.Native.macOS.MacOSCursorComponent.html#OpenTK_Platform_Native_macOS_MacOSCursorComponent_IsAnimatedCursor_OpenTK_Core_Platform_CursorHandle_"><code>MacOSCursorComponent.IsAnimatedCursor</code></a></td>
+<td>Used to check if a given cursor is animated.</td>
+</tr>
+<tr>
+<td><a class="xref" href="../../api/OpenTK.Platform.Native.macOS.MacOSCursorComponent.html#OpenTK_Platform_Native_macOS_MacOSCursorComponent_UpdateAnimation_OpenTK_Core_Platform_CursorHandle_System_Double_"><code>MacOSCursorComponent.UpdateAnimation</code></a></td>
+<td>Used to update the animation of a given cursor.</td>
+</tr>
+</tbody>
+</table>
 </article>
           </div>
 

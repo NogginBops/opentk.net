@@ -89,17 +89,29 @@ Classes
       <h4><a class="xref" href="OpenTK.Mathematics.Argb.html">Argb</a></h4>
       <section><p>Alpha, red, green, blue colorspace.</p>
 </section>
+      <h4><a class="xref" href="OpenTK.Mathematics.Color3.html">Color3</a></h4>
+      <section><p>Companion type for conversion between color types.</p>
+</section>
       <h4><a class="xref" href="OpenTK.Mathematics.Color4.html">Color4</a></h4>
       <section><p>Companion type for conversion between color types.</p>
 </section>
+      <h4><a class="xref" href="OpenTK.Mathematics.Hsl.html">Hsl</a></h4>
+      <section><p>Hue, saturation, light colorspace.</p>
+</section>
       <h4><a class="xref" href="OpenTK.Mathematics.Hsla.html">Hsla</a></h4>
       <section><p>Hue, saturation, light, alpha colorspace.</p>
+</section>
+      <h4><a class="xref" href="OpenTK.Mathematics.Hsv.html">Hsv</a></h4>
+      <section><p>Hue, saturation, value colorspace.</p>
 </section>
       <h4><a class="xref" href="OpenTK.Mathematics.Hsva.html">Hsva</a></h4>
       <section><p>Hue, saturation, value, alpha colorspace.</p>
 </section>
       <h4><a class="xref" href="OpenTK.Mathematics.MathHelper.html">MathHelper</a></h4>
       <section><p>Contains common mathematical functions and constants.</p>
+</section>
+      <h4><a class="xref" href="OpenTK.Mathematics.Rgb.html">Rgb</a></h4>
+      <section><p>Red, green, blue colorspace.</p>
 </section>
       <h4><a class="xref" href="OpenTK.Mathematics.Rgba.html">Rgba</a></h4>
       <section><p>Red, green, blue, alpha colorspace.</p>
@@ -133,6 +145,14 @@ Structs
 </section>
       <h4><a class="xref" href="OpenTK.Mathematics.Box3i.html">Box3i</a></h4>
       <section><p>Defines an axis-aligned 3d box (rectangular prism).</p>
+</section>
+      <h4><a class="xref" href="OpenTK.Mathematics.Color3-1.html">Color3&lt;T&gt;</a></h4>
+      <section><p>To provide type-safety between different color spaces and allow extension by users to include additional and future color spaces, colors are marked with a special <em>phantom</em> type parameter that indicates their color space.
+Typically these are four-letter abbreviations that indicate the components of the colors, such as <a class="xref" href="OpenTK.Mathematics.Rgb.html">Rgb</a> or <a class="xref" href="OpenTK.Mathematics.Hsv.html">Hsv</a>.</p>
+<p>In any of these cases, letters in the color space correspond to the order of the components in the color vector. For example, color&lt;RGB&gt; maps as follows:<br>
+X -&gt; R<br>
+Y -&gt; G<br>
+Z -&gt; B.</p>
 </section>
       <h4><a class="xref" href="OpenTK.Mathematics.Color4-1.html">Color4&lt;T&gt;</a></h4>
       <section><p>To provide type-safety between different color spaces and allow extension by users to include additional and future color spaces, colors are marked with a special <em>phantom</em> type parameter that indicates their color space.<br>
@@ -242,6 +262,9 @@ W -&gt; A.</p>
     <h3 id="interfaces">
 Interfaces
 </h3>
+      <h4><a class="xref" href="OpenTK.Mathematics.IColorSpace3.html">IColorSpace3</a></h4>
+      <section><p>Interface for ColorSpace phantom types with 3 elements.</p>
+</section>
       <h4><a class="xref" href="OpenTK.Mathematics.IColorSpace4.html">IColorSpace4</a></h4>
       <section><p>Interface for ColorSpace phantom types with 4 elements.</p>
 </section>

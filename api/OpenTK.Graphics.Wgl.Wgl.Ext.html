@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class Wgl.Ext
+    <title>Class Wgl.EXT
   - OpenTK</title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class Wgl.Ext
+    <meta name="title" content="Class Wgl.EXT
  ">
     <meta name="generator" content="docfx ">
   
@@ -27,7 +27,7 @@
     <meta property="og:image:width" content="142">
     <meta property="og:image:height" content="50">
     <meta property="og:site_name" content="OpenTK">
-    <meta property="og:title" content="Class Wgl.Ext
+    <meta property="og:title" content="Class Wgl.EXT
   - OpenTK">
     <meta name="theme-color" content="#ffffff">
   </head>
@@ -76,18 +76,19 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="OpenTK.Graphics.Wgl.Wgl.Ext">
+            <article class="content wrap" id="_content" data-uid="OpenTK.Graphics.Wgl.Wgl.EXT">
 
 
 
-  <h1 id="OpenTK_Graphics_Wgl_Wgl_Ext" data-uid="OpenTK.Graphics.Wgl.Wgl.Ext" class="text-break">Class Wgl.Ext
+  <h1 id="OpenTK_Graphics_Wgl_Wgl_EXT" data-uid="OpenTK.Graphics.Wgl.Wgl.EXT" class="text-break">Class Wgl.EXT
 </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>EXT extensions.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-    <div class="level1"><span class="xref">Wgl.Ext</span></div>
+    <div class="level1"><span class="xref">Wgl.EXT</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -115,19 +116,616 @@
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="OpenTK.html">OpenTK</a>.<a class="xref" href="OpenTK.Graphics.html">Graphics</a>.<a class="xref" href="OpenTK.Graphics.Wgl.html">Wgl</a></h6>
   <h6><strong>Assembly</strong>: OpenTK.Graphics.dll</h6>
-  <h5 id="OpenTK_Graphics_Wgl_Wgl_Ext_syntax">Syntax</h5>
+  <h5 id="OpenTK_Graphics_Wgl_Wgl_EXT_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class Wgl.Ext</code></pre>
+    <pre><code class="lang-csharp hljs">public static class Wgl.EXT</code></pre>
   </div>
   <h3 id="methods">Methods
 </h3>
-  <a id="OpenTK_Graphics_Wgl_Wgl_Ext_GetExtensionsString_" data-uid="OpenTK.Graphics.Wgl.Wgl.Ext.GetExtensionsString*"></a>
-  <h4 id="OpenTK_Graphics_Wgl_Wgl_Ext_GetExtensionsString" data-uid="OpenTK.Graphics.Wgl.Wgl.Ext.GetExtensionsString">GetExtensionsString()</h4>
+  <a id="OpenTK_Graphics_Wgl_Wgl_EXT_BindDisplayColorTableEXT_" data-uid="OpenTK.Graphics.Wgl.Wgl.EXT.BindDisplayColorTableEXT*"></a>
+  <h4 id="OpenTK_Graphics_Wgl_Wgl_EXT_BindDisplayColorTableEXT_System_UInt16_" data-uid="OpenTK.Graphics.Wgl.Wgl.EXT.BindDisplayColorTableEXT(System.UInt16)">BindDisplayColorTableEXT(ushort)</h4>
+  <div class="markdown level1 summary"><p><b>[requires: WGL_EXT_display_color_table]</b> <b>[entry point: <code>wglBindDisplayColorTableEXT</code>]</b><br></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool BindDisplayColorTableEXT(ushort id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint16">ushort</a></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Graphics_Wgl_Wgl_EXT_ChoosePixelFormatEXT_" data-uid="OpenTK.Graphics.Wgl.Wgl.EXT.ChoosePixelFormatEXT*"></a>
+  <h4 id="OpenTK_Graphics_Wgl_Wgl_EXT_ChoosePixelFormatEXT_System_IntPtr_System_Int32__System_Single__System_UInt32_System_Int32__System_UInt32__" data-uid="OpenTK.Graphics.Wgl.Wgl.EXT.ChoosePixelFormatEXT(System.IntPtr,System.Int32*,System.Single*,System.UInt32,System.Int32*,System.UInt32*)">ChoosePixelFormatEXT(nint, int*, float*, uint, int*, uint*)</h4>
+  <div class="markdown level1 summary"><p><b>[requires: WGL_EXT_pixel_format]</b> <b>[entry point: <code>wglChoosePixelFormatEXT</code>]</b><br></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ChoosePixelFormatEXT(nint hdc, int* piAttribIList, float* pfAttribFList, uint nMaxFormats, int* piFormats, uint* nNumFormats)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
+        <td><span class="parametername">hdc</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>*</td>
+        <td><span class="parametername">piAttribIList</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>*</td>
+        <td><span class="parametername">pfAttribFList</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
+        <td><span class="parametername">nMaxFormats</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>*</td>
+        <td><span class="parametername">piFormats</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>*</td>
+        <td><span class="parametername">nNumFormats</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Graphics_Wgl_Wgl_EXT_ChoosePixelFormatEXT_" data-uid="OpenTK.Graphics.Wgl.Wgl.EXT.ChoosePixelFormatEXT*"></a>
+  <h4 id="OpenTK_Graphics_Wgl_Wgl_EXT_ChoosePixelFormatEXT_System_IntPtr_System_Int32__System_Single__System_Int32___System_UInt32___" data-uid="OpenTK.Graphics.Wgl.Wgl.EXT.ChoosePixelFormatEXT(System.IntPtr,System.Int32@,System.Single@,System.Int32[],System.UInt32[])">ChoosePixelFormatEXT(nint, in int, in float, int[], uint[])</h4>
+  <div class="markdown level1 summary"><p><b>[requires: WGL_EXT_pixel_format]</b>
+<b>[entry point: <code>wglChoosePixelFormatEXT</code>]</b>
+<br></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool ChoosePixelFormatEXT(nint hdc, in int piAttribIList, in float pfAttribFList, int[] piFormats, uint[] nNumFormats)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
+        <td><span class="parametername">hdc</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">piAttribIList</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">pfAttribFList</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</td>
+        <td><span class="parametername">piFormats</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>[]</td>
+        <td><span class="parametername">nNumFormats</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Graphics_Wgl_Wgl_EXT_ChoosePixelFormatEXT_" data-uid="OpenTK.Graphics.Wgl.Wgl.EXT.ChoosePixelFormatEXT*"></a>
+  <h4 id="OpenTK_Graphics_Wgl_Wgl_EXT_ChoosePixelFormatEXT_System_IntPtr_System_Int32__System_Single__System_Span_System_Int32__System_Span_System_UInt32__" data-uid="OpenTK.Graphics.Wgl.Wgl.EXT.ChoosePixelFormatEXT(System.IntPtr,System.Int32@,System.Single@,System.Span{System.Int32},System.Span{System.UInt32})">ChoosePixelFormatEXT(nint, in int, in float, Span&lt;int&gt;, Span&lt;uint&gt;)</h4>
+  <div class="markdown level1 summary"><p><b>[requires: WGL_EXT_pixel_format]</b>
+<b>[entry point: <code>wglChoosePixelFormatEXT</code>]</b>
+<br></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool ChoosePixelFormatEXT(nint hdc, in int piAttribIList, in float pfAttribFList, Span&lt;int&gt; piFormats, Span&lt;uint&gt; nNumFormats)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
+        <td><span class="parametername">hdc</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">piAttribIList</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">pfAttribFList</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.span-1">Span</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</td>
+        <td><span class="parametername">piFormats</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.span-1">Span</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>&gt;</td>
+        <td><span class="parametername">nNumFormats</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Graphics_Wgl_Wgl_EXT_ChoosePixelFormatEXT_" data-uid="OpenTK.Graphics.Wgl.Wgl.EXT.ChoosePixelFormatEXT*"></a>
+  <h4 id="OpenTK_Graphics_Wgl_Wgl_EXT_ChoosePixelFormatEXT_System_IntPtr_System_Int32__System_Single__System_UInt32_System_Int32__System_UInt32__" data-uid="OpenTK.Graphics.Wgl.Wgl.EXT.ChoosePixelFormatEXT(System.IntPtr,System.Int32@,System.Single@,System.UInt32,System.Int32@,System.UInt32@)">ChoosePixelFormatEXT(nint, in int, in float, uint, ref int, ref uint)</h4>
+  <div class="markdown level1 summary"><p><b>[requires: WGL_EXT_pixel_format]</b>
+<b>[entry point: <code>wglChoosePixelFormatEXT</code>]</b>
+<br></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool ChoosePixelFormatEXT(nint hdc, in int piAttribIList, in float pfAttribFList, uint nMaxFormats, ref int piFormats, ref uint nNumFormats)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
+        <td><span class="parametername">hdc</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">piAttribIList</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">pfAttribFList</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
+        <td><span class="parametername">nMaxFormats</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">piFormats</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
+        <td><span class="parametername">nNumFormats</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Graphics_Wgl_Wgl_EXT_CreateDisplayColorTableEXT_" data-uid="OpenTK.Graphics.Wgl.Wgl.EXT.CreateDisplayColorTableEXT*"></a>
+  <h4 id="OpenTK_Graphics_Wgl_Wgl_EXT_CreateDisplayColorTableEXT_System_UInt16_" data-uid="OpenTK.Graphics.Wgl.Wgl.EXT.CreateDisplayColorTableEXT(System.UInt16)">CreateDisplayColorTableEXT(ushort)</h4>
+  <div class="markdown level1 summary"><p><b>[requires: WGL_EXT_display_color_table]</b> <b>[entry point: <code>wglCreateDisplayColorTableEXT</code>]</b><br></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool CreateDisplayColorTableEXT(ushort id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint16">ushort</a></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Graphics_Wgl_Wgl_EXT_CreatePbufferEXT_" data-uid="OpenTK.Graphics.Wgl.Wgl.EXT.CreatePbufferEXT*"></a>
+  <h4 id="OpenTK_Graphics_Wgl_Wgl_EXT_CreatePbufferEXT_System_IntPtr_System_Int32_System_Int32_System_Int32_System_Int32__" data-uid="OpenTK.Graphics.Wgl.Wgl.EXT.CreatePbufferEXT(System.IntPtr,System.Int32,System.Int32,System.Int32,System.Int32*)">CreatePbufferEXT(nint, int, int, int, int*)</h4>
+  <div class="markdown level1 summary"><p><b>[requires: WGL_EXT_pbuffer]</b> <b>[entry point: <code>wglCreatePbufferEXT</code>]</b><br></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static nint CreatePbufferEXT(nint hDC, int iPixelFormat, int iWidth, int iHeight, int* piAttribList)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
+        <td><span class="parametername">hDC</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">iPixelFormat</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">iWidth</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">iHeight</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>*</td>
+        <td><span class="parametername">piAttribList</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Graphics_Wgl_Wgl_EXT_CreatePbufferEXT_" data-uid="OpenTK.Graphics.Wgl.Wgl.EXT.CreatePbufferEXT*"></a>
+  <h4 id="OpenTK_Graphics_Wgl_Wgl_EXT_CreatePbufferEXT_System_IntPtr_System_Int32_System_Int32_System_Int32_System_Int32__" data-uid="OpenTK.Graphics.Wgl.Wgl.EXT.CreatePbufferEXT(System.IntPtr,System.Int32,System.Int32,System.Int32,System.Int32@)">CreatePbufferEXT(nint, int, int, int, in int)</h4>
+  <div class="markdown level1 summary"><p><b>[requires: WGL_EXT_pbuffer]</b>
+<b>[entry point: <code>wglCreatePbufferEXT</code>]</b>
+<br></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static nint CreatePbufferEXT(nint hDC, int iPixelFormat, int iWidth, int iHeight, in int piAttribList)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
+        <td><span class="parametername">hDC</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">iPixelFormat</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">iWidth</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">iHeight</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">piAttribList</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Graphics_Wgl_Wgl_EXT_DestroyDisplayColorTableEXT_" data-uid="OpenTK.Graphics.Wgl.Wgl.EXT.DestroyDisplayColorTableEXT*"></a>
+  <h4 id="OpenTK_Graphics_Wgl_Wgl_EXT_DestroyDisplayColorTableEXT_System_UInt16_" data-uid="OpenTK.Graphics.Wgl.Wgl.EXT.DestroyDisplayColorTableEXT(System.UInt16)">DestroyDisplayColorTableEXT(ushort)</h4>
+  <div class="markdown level1 summary"><p><b>[requires: WGL_EXT_display_color_table]</b> <b>[entry point: <code>wglDestroyDisplayColorTableEXT</code>]</b><br></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DestroyDisplayColorTableEXT(ushort id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint16">ushort</a></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Graphics_Wgl_Wgl_EXT_DestroyPbufferEXT_" data-uid="OpenTK.Graphics.Wgl.Wgl.EXT.DestroyPbufferEXT*"></a>
+  <h4 id="OpenTK_Graphics_Wgl_Wgl_EXT_DestroyPbufferEXT_System_IntPtr_" data-uid="OpenTK.Graphics.Wgl.Wgl.EXT.DestroyPbufferEXT(System.IntPtr)">DestroyPbufferEXT(nint)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string GetExtensionsString()</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool DestroyPbufferEXT(nint hPbuffer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
+        <td><span class="parametername">hPbuffer</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Graphics_Wgl_Wgl_EXT_DestroyPbufferEXT__" data-uid="OpenTK.Graphics.Wgl.Wgl.EXT.DestroyPbufferEXT_*"></a>
+  <h4 id="OpenTK_Graphics_Wgl_Wgl_EXT_DestroyPbufferEXT__System_IntPtr_" data-uid="OpenTK.Graphics.Wgl.Wgl.EXT.DestroyPbufferEXT_(System.IntPtr)">DestroyPbufferEXT_(nint)</h4>
+  <div class="markdown level1 summary"><p><b>[requires: WGL_EXT_pbuffer]</b> <b>[entry point: <code>wglDestroyPbufferEXT</code>]</b><br></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int DestroyPbufferEXT_(nint hPbuffer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
+        <td><span class="parametername">hPbuffer</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Graphics_Wgl_Wgl_EXT_GetCurrentReadDCEXT_" data-uid="OpenTK.Graphics.Wgl.Wgl.EXT.GetCurrentReadDCEXT*"></a>
+  <h4 id="OpenTK_Graphics_Wgl_Wgl_EXT_GetCurrentReadDCEXT" data-uid="OpenTK.Graphics.Wgl.Wgl.EXT.GetCurrentReadDCEXT">GetCurrentReadDCEXT()</h4>
+  <div class="markdown level1 summary"><p><b>[requires: WGL_EXT_make_current_read]</b> <b>[entry point: <code>wglGetCurrentReadDCEXT</code>]</b><br></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static nint GetCurrentReadDCEXT()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Graphics_Wgl_Wgl_EXT_GetExtensionsStringEXT_" data-uid="OpenTK.Graphics.Wgl.Wgl.EXT.GetExtensionsStringEXT*"></a>
+  <h4 id="OpenTK_Graphics_Wgl_Wgl_EXT_GetExtensionsStringEXT" data-uid="OpenTK.Graphics.Wgl.Wgl.EXT.GetExtensionsStringEXT">GetExtensionsStringEXT()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string? GetExtensionsStringEXT()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-condensed">
@@ -144,13 +742,619 @@
       </tr>
     </tbody>
   </table>
-  <a id="OpenTK_Graphics_Wgl_Wgl_Ext_GetSwapInterval_" data-uid="OpenTK.Graphics.Wgl.Wgl.Ext.GetSwapInterval*"></a>
-  <h4 id="OpenTK_Graphics_Wgl_Wgl_Ext_GetSwapInterval" data-uid="OpenTK.Graphics.Wgl.Wgl.Ext.GetSwapInterval">GetSwapInterval()</h4>
-  <div class="markdown level1 summary"></div>
+  <a id="OpenTK_Graphics_Wgl_Wgl_EXT_GetExtensionsStringEXT__" data-uid="OpenTK.Graphics.Wgl.Wgl.EXT.GetExtensionsStringEXT_*"></a>
+  <h4 id="OpenTK_Graphics_Wgl_Wgl_EXT_GetExtensionsStringEXT_" data-uid="OpenTK.Graphics.Wgl.Wgl.EXT.GetExtensionsStringEXT_">GetExtensionsStringEXT_()</h4>
+  <div class="markdown level1 summary"><p><b>[requires: WGL_EXT_extensions_string]</b> <b>[entry point: <code>wglGetExtensionsStringEXT</code>]</b><br></p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int GetSwapInterval()</code></pre>
+    <pre><code class="lang-csharp hljs">public static byte* GetExtensionsStringEXT_()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>*</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Graphics_Wgl_Wgl_EXT_GetPbufferDCEXT_" data-uid="OpenTK.Graphics.Wgl.Wgl.EXT.GetPbufferDCEXT*"></a>
+  <h4 id="OpenTK_Graphics_Wgl_Wgl_EXT_GetPbufferDCEXT_System_IntPtr_" data-uid="OpenTK.Graphics.Wgl.Wgl.EXT.GetPbufferDCEXT(System.IntPtr)">GetPbufferDCEXT(nint)</h4>
+  <div class="markdown level1 summary"><p><b>[requires: WGL_EXT_pbuffer]</b> <b>[entry point: <code>wglGetPbufferDCEXT</code>]</b><br></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static nint GetPbufferDCEXT(nint hPbuffer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
+        <td><span class="parametername">hPbuffer</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Graphics_Wgl_Wgl_EXT_GetPixelFormatAttribfvEXT_" data-uid="OpenTK.Graphics.Wgl.Wgl.EXT.GetPixelFormatAttribfvEXT*"></a>
+  <h4 id="OpenTK_Graphics_Wgl_Wgl_EXT_GetPixelFormatAttribfvEXT_System_IntPtr_System_Int32_System_Int32_System_UInt32_OpenTK_Graphics_Wgl_PixelFormatAttribute__System_Single__" data-uid="OpenTK.Graphics.Wgl.Wgl.EXT.GetPixelFormatAttribfvEXT(System.IntPtr,System.Int32,System.Int32,System.UInt32,OpenTK.Graphics.Wgl.PixelFormatAttribute*,System.Single*)">GetPixelFormatAttribfvEXT(nint, int, int, uint, PixelFormatAttribute*, float*)</h4>
+  <div class="markdown level1 summary"><p><b>[requires: WGL_EXT_pixel_format]</b> <b>[entry point: <code>wglGetPixelFormatAttribfvEXT</code>]</b><br></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GetPixelFormatAttribfvEXT(nint hdc, int iPixelFormat, int iLayerPlane, uint nAttributes, PixelFormatAttribute* piAttributes, float* pfValues)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
+        <td><span class="parametername">hdc</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">iPixelFormat</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">iLayerPlane</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
+        <td><span class="parametername">nAttributes</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Graphics.Wgl.PixelFormatAttribute.html">PixelFormatAttribute</a>*</td>
+        <td><span class="parametername">piAttributes</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>*</td>
+        <td><span class="parametername">pfValues</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Graphics_Wgl_Wgl_EXT_GetPixelFormatAttribfvEXT_" data-uid="OpenTK.Graphics.Wgl.Wgl.EXT.GetPixelFormatAttribfvEXT*"></a>
+  <h4 id="OpenTK_Graphics_Wgl_Wgl_EXT_GetPixelFormatAttribfvEXT_System_IntPtr_System_Int32_System_Int32_System_UInt32_OpenTK_Graphics_Wgl_PixelFormatAttribute__System_Single__" data-uid="OpenTK.Graphics.Wgl.Wgl.EXT.GetPixelFormatAttribfvEXT(System.IntPtr,System.Int32,System.Int32,System.UInt32,OpenTK.Graphics.Wgl.PixelFormatAttribute@,System.Single@)">GetPixelFormatAttribfvEXT(nint, int, int, uint, ref PixelFormatAttribute, ref float)</h4>
+  <div class="markdown level1 summary"><p><b>[requires: WGL_EXT_pixel_format]</b>
+<b>[entry point: <code>wglGetPixelFormatAttribfvEXT</code>]</b>
+<br></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool GetPixelFormatAttribfvEXT(nint hdc, int iPixelFormat, int iLayerPlane, uint nAttributes, ref PixelFormatAttribute piAttributes, ref float pfValues)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
+        <td><span class="parametername">hdc</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">iPixelFormat</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">iLayerPlane</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
+        <td><span class="parametername">nAttributes</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Graphics.Wgl.PixelFormatAttribute.html">PixelFormatAttribute</a></td>
+        <td><span class="parametername">piAttributes</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">pfValues</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Graphics_Wgl_Wgl_EXT_GetPixelFormatAttribfvEXT_" data-uid="OpenTK.Graphics.Wgl.Wgl.EXT.GetPixelFormatAttribfvEXT*"></a>
+  <h4 id="OpenTK_Graphics_Wgl_Wgl_EXT_GetPixelFormatAttribfvEXT_System_IntPtr_System_Int32_System_Int32_System_UInt32_OpenTK_Graphics_Wgl_PixelFormatAttribute___System_Single___" data-uid="OpenTK.Graphics.Wgl.Wgl.EXT.GetPixelFormatAttribfvEXT(System.IntPtr,System.Int32,System.Int32,System.UInt32,OpenTK.Graphics.Wgl.PixelFormatAttribute[],System.Single[])">GetPixelFormatAttribfvEXT(nint, int, int, uint, PixelFormatAttribute[], float[])</h4>
+  <div class="markdown level1 summary"><p><b>[requires: WGL_EXT_pixel_format]</b>
+<b>[entry point: <code>wglGetPixelFormatAttribfvEXT</code>]</b>
+<br></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool GetPixelFormatAttribfvEXT(nint hdc, int iPixelFormat, int iLayerPlane, uint nAttributes, PixelFormatAttribute[] piAttributes, float[] pfValues)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
+        <td><span class="parametername">hdc</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">iPixelFormat</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">iLayerPlane</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
+        <td><span class="parametername">nAttributes</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Graphics.Wgl.PixelFormatAttribute.html">PixelFormatAttribute</a>[]</td>
+        <td><span class="parametername">piAttributes</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[]</td>
+        <td><span class="parametername">pfValues</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Graphics_Wgl_Wgl_EXT_GetPixelFormatAttribfvEXT_" data-uid="OpenTK.Graphics.Wgl.Wgl.EXT.GetPixelFormatAttribfvEXT*"></a>
+  <h4 id="OpenTK_Graphics_Wgl_Wgl_EXT_GetPixelFormatAttribfvEXT_System_IntPtr_System_Int32_System_Int32_System_UInt32_System_Span_OpenTK_Graphics_Wgl_PixelFormatAttribute__System_Span_System_Single__" data-uid="OpenTK.Graphics.Wgl.Wgl.EXT.GetPixelFormatAttribfvEXT(System.IntPtr,System.Int32,System.Int32,System.UInt32,System.Span{OpenTK.Graphics.Wgl.PixelFormatAttribute},System.Span{System.Single})">GetPixelFormatAttribfvEXT(nint, int, int, uint, Span&lt;PixelFormatAttribute&gt;, Span&lt;float&gt;)</h4>
+  <div class="markdown level1 summary"><p><b>[requires: WGL_EXT_pixel_format]</b>
+<b>[entry point: <code>wglGetPixelFormatAttribfvEXT</code>]</b>
+<br></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool GetPixelFormatAttribfvEXT(nint hdc, int iPixelFormat, int iLayerPlane, uint nAttributes, Span&lt;PixelFormatAttribute&gt; piAttributes, Span&lt;float&gt; pfValues)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
+        <td><span class="parametername">hdc</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">iPixelFormat</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">iLayerPlane</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
+        <td><span class="parametername">nAttributes</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.span-1">Span</a>&lt;<a class="xref" href="OpenTK.Graphics.Wgl.PixelFormatAttribute.html">PixelFormatAttribute</a>&gt;</td>
+        <td><span class="parametername">piAttributes</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.span-1">Span</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>&gt;</td>
+        <td><span class="parametername">pfValues</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Graphics_Wgl_Wgl_EXT_GetPixelFormatAttribivEXT_" data-uid="OpenTK.Graphics.Wgl.Wgl.EXT.GetPixelFormatAttribivEXT*"></a>
+  <h4 id="OpenTK_Graphics_Wgl_Wgl_EXT_GetPixelFormatAttribivEXT_System_IntPtr_System_Int32_System_Int32_System_UInt32_OpenTK_Graphics_Wgl_PixelFormatAttribute__System_Int32__" data-uid="OpenTK.Graphics.Wgl.Wgl.EXT.GetPixelFormatAttribivEXT(System.IntPtr,System.Int32,System.Int32,System.UInt32,OpenTK.Graphics.Wgl.PixelFormatAttribute*,System.Int32*)">GetPixelFormatAttribivEXT(nint, int, int, uint, PixelFormatAttribute*, int*)</h4>
+  <div class="markdown level1 summary"><p><b>[requires: WGL_EXT_pixel_format]</b> <b>[entry point: <code>wglGetPixelFormatAttribivEXT</code>]</b><br></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GetPixelFormatAttribivEXT(nint hdc, int iPixelFormat, int iLayerPlane, uint nAttributes, PixelFormatAttribute* piAttributes, int* piValues)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
+        <td><span class="parametername">hdc</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">iPixelFormat</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">iLayerPlane</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
+        <td><span class="parametername">nAttributes</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Graphics.Wgl.PixelFormatAttribute.html">PixelFormatAttribute</a>*</td>
+        <td><span class="parametername">piAttributes</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>*</td>
+        <td><span class="parametername">piValues</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Graphics_Wgl_Wgl_EXT_GetPixelFormatAttribivEXT_" data-uid="OpenTK.Graphics.Wgl.Wgl.EXT.GetPixelFormatAttribivEXT*"></a>
+  <h4 id="OpenTK_Graphics_Wgl_Wgl_EXT_GetPixelFormatAttribivEXT_System_IntPtr_System_Int32_System_Int32_System_UInt32_OpenTK_Graphics_Wgl_PixelFormatAttribute__System_Int32__" data-uid="OpenTK.Graphics.Wgl.Wgl.EXT.GetPixelFormatAttribivEXT(System.IntPtr,System.Int32,System.Int32,System.UInt32,OpenTK.Graphics.Wgl.PixelFormatAttribute@,System.Int32@)">GetPixelFormatAttribivEXT(nint, int, int, uint, ref PixelFormatAttribute, ref int)</h4>
+  <div class="markdown level1 summary"><p><b>[requires: WGL_EXT_pixel_format]</b>
+<b>[entry point: <code>wglGetPixelFormatAttribivEXT</code>]</b>
+<br></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool GetPixelFormatAttribivEXT(nint hdc, int iPixelFormat, int iLayerPlane, uint nAttributes, ref PixelFormatAttribute piAttributes, ref int piValues)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
+        <td><span class="parametername">hdc</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">iPixelFormat</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">iLayerPlane</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
+        <td><span class="parametername">nAttributes</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Graphics.Wgl.PixelFormatAttribute.html">PixelFormatAttribute</a></td>
+        <td><span class="parametername">piAttributes</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">piValues</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Graphics_Wgl_Wgl_EXT_GetPixelFormatAttribivEXT_" data-uid="OpenTK.Graphics.Wgl.Wgl.EXT.GetPixelFormatAttribivEXT*"></a>
+  <h4 id="OpenTK_Graphics_Wgl_Wgl_EXT_GetPixelFormatAttribivEXT_System_IntPtr_System_Int32_System_Int32_System_UInt32_OpenTK_Graphics_Wgl_PixelFormatAttribute___System_Int32___" data-uid="OpenTK.Graphics.Wgl.Wgl.EXT.GetPixelFormatAttribivEXT(System.IntPtr,System.Int32,System.Int32,System.UInt32,OpenTK.Graphics.Wgl.PixelFormatAttribute[],System.Int32[])">GetPixelFormatAttribivEXT(nint, int, int, uint, PixelFormatAttribute[], int[])</h4>
+  <div class="markdown level1 summary"><p><b>[requires: WGL_EXT_pixel_format]</b>
+<b>[entry point: <code>wglGetPixelFormatAttribivEXT</code>]</b>
+<br></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool GetPixelFormatAttribivEXT(nint hdc, int iPixelFormat, int iLayerPlane, uint nAttributes, PixelFormatAttribute[] piAttributes, int[] piValues)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
+        <td><span class="parametername">hdc</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">iPixelFormat</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">iLayerPlane</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
+        <td><span class="parametername">nAttributes</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Graphics.Wgl.PixelFormatAttribute.html">PixelFormatAttribute</a>[]</td>
+        <td><span class="parametername">piAttributes</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</td>
+        <td><span class="parametername">piValues</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Graphics_Wgl_Wgl_EXT_GetPixelFormatAttribivEXT_" data-uid="OpenTK.Graphics.Wgl.Wgl.EXT.GetPixelFormatAttribivEXT*"></a>
+  <h4 id="OpenTK_Graphics_Wgl_Wgl_EXT_GetPixelFormatAttribivEXT_System_IntPtr_System_Int32_System_Int32_System_UInt32_System_Span_OpenTK_Graphics_Wgl_PixelFormatAttribute__System_Span_System_Int32__" data-uid="OpenTK.Graphics.Wgl.Wgl.EXT.GetPixelFormatAttribivEXT(System.IntPtr,System.Int32,System.Int32,System.UInt32,System.Span{OpenTK.Graphics.Wgl.PixelFormatAttribute},System.Span{System.Int32})">GetPixelFormatAttribivEXT(nint, int, int, uint, Span&lt;PixelFormatAttribute&gt;, Span&lt;int&gt;)</h4>
+  <div class="markdown level1 summary"><p><b>[requires: WGL_EXT_pixel_format]</b>
+<b>[entry point: <code>wglGetPixelFormatAttribivEXT</code>]</b>
+<br></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool GetPixelFormatAttribivEXT(nint hdc, int iPixelFormat, int iLayerPlane, uint nAttributes, Span&lt;PixelFormatAttribute&gt; piAttributes, Span&lt;int&gt; piValues)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
+        <td><span class="parametername">hdc</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">iPixelFormat</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">iLayerPlane</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
+        <td><span class="parametername">nAttributes</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.span-1">Span</a>&lt;<a class="xref" href="OpenTK.Graphics.Wgl.PixelFormatAttribute.html">PixelFormatAttribute</a>&gt;</td>
+        <td><span class="parametername">piAttributes</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.span-1">Span</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</td>
+        <td><span class="parametername">piValues</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Graphics_Wgl_Wgl_EXT_GetSwapIntervalEXT_" data-uid="OpenTK.Graphics.Wgl.Wgl.EXT.GetSwapIntervalEXT*"></a>
+  <h4 id="OpenTK_Graphics_Wgl_Wgl_EXT_GetSwapIntervalEXT" data-uid="OpenTK.Graphics.Wgl.Wgl.EXT.GetSwapIntervalEXT">GetSwapIntervalEXT()</h4>
+  <div class="markdown level1 summary"><p><b>[requires: WGL_EXT_swap_control]</b> <b>[entry point: <code>wglGetSwapIntervalEXT</code>]</b><br></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GetSwapIntervalEXT()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-condensed">
@@ -167,13 +1371,550 @@
       </tr>
     </tbody>
   </table>
-  <a id="OpenTK_Graphics_Wgl_Wgl_Ext_SwapInterval_" data-uid="OpenTK.Graphics.Wgl.Wgl.Ext.SwapInterval*"></a>
-  <h4 id="OpenTK_Graphics_Wgl_Wgl_Ext_SwapInterval_System_Int32_" data-uid="OpenTK.Graphics.Wgl.Wgl.Ext.SwapInterval(System.Int32)">SwapInterval(int)</h4>
+  <a id="OpenTK_Graphics_Wgl_Wgl_EXT_LoadDisplayColorTableEXT_" data-uid="OpenTK.Graphics.Wgl.Wgl.EXT.LoadDisplayColorTableEXT*"></a>
+  <h4 id="OpenTK_Graphics_Wgl_Wgl_EXT_LoadDisplayColorTableEXT_System_ReadOnlySpan_System_UInt16__" data-uid="OpenTK.Graphics.Wgl.Wgl.EXT.LoadDisplayColorTableEXT(System.ReadOnlySpan{System.UInt16})">LoadDisplayColorTableEXT(ReadOnlySpan&lt;ushort&gt;)</h4>
+  <div class="markdown level1 summary"><p><b>[requires: WGL_EXT_display_color_table]</b>
+<b>[entry point: <code>wglLoadDisplayColorTableEXT</code>]</b>
+<br></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool LoadDisplayColorTableEXT(ReadOnlySpan&lt;ushort&gt; table)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint16">ushort</a>&gt;</td>
+        <td><span class="parametername">table</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Graphics_Wgl_Wgl_EXT_LoadDisplayColorTableEXT_" data-uid="OpenTK.Graphics.Wgl.Wgl.EXT.LoadDisplayColorTableEXT*"></a>
+  <h4 id="OpenTK_Graphics_Wgl_Wgl_EXT_LoadDisplayColorTableEXT_System_UInt16__System_UInt32_" data-uid="OpenTK.Graphics.Wgl.Wgl.EXT.LoadDisplayColorTableEXT(System.UInt16*,System.UInt32)">LoadDisplayColorTableEXT(ushort*, uint)</h4>
+  <div class="markdown level1 summary"><p><b>[requires: WGL_EXT_display_color_table]</b> <b>[entry point: <code>wglLoadDisplayColorTableEXT</code>]</b><br></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool LoadDisplayColorTableEXT(ushort* table, uint length)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint16">ushort</a>*</td>
+        <td><span class="parametername">table</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
+        <td><span class="parametername">length</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Graphics_Wgl_Wgl_EXT_LoadDisplayColorTableEXT_" data-uid="OpenTK.Graphics.Wgl.Wgl.EXT.LoadDisplayColorTableEXT*"></a>
+  <h4 id="OpenTK_Graphics_Wgl_Wgl_EXT_LoadDisplayColorTableEXT_System_UInt16__System_UInt32_" data-uid="OpenTK.Graphics.Wgl.Wgl.EXT.LoadDisplayColorTableEXT(System.UInt16@,System.UInt32)">LoadDisplayColorTableEXT(in ushort, uint)</h4>
+  <div class="markdown level1 summary"><p><b>[requires: WGL_EXT_display_color_table]</b>
+<b>[entry point: <code>wglLoadDisplayColorTableEXT</code>]</b>
+<br></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool LoadDisplayColorTableEXT(in ushort table, uint length)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint16">ushort</a></td>
+        <td><span class="parametername">table</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
+        <td><span class="parametername">length</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Graphics_Wgl_Wgl_EXT_LoadDisplayColorTableEXT_" data-uid="OpenTK.Graphics.Wgl.Wgl.EXT.LoadDisplayColorTableEXT*"></a>
+  <h4 id="OpenTK_Graphics_Wgl_Wgl_EXT_LoadDisplayColorTableEXT_System_UInt16___" data-uid="OpenTK.Graphics.Wgl.Wgl.EXT.LoadDisplayColorTableEXT(System.UInt16[])">LoadDisplayColorTableEXT(ushort[])</h4>
+  <div class="markdown level1 summary"><p><b>[requires: WGL_EXT_display_color_table]</b>
+<b>[entry point: <code>wglLoadDisplayColorTableEXT</code>]</b>
+<br></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool LoadDisplayColorTableEXT(ushort[] table)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint16">ushort</a>[]</td>
+        <td><span class="parametername">table</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Graphics_Wgl_Wgl_EXT_MakeContextCurrentEXT_" data-uid="OpenTK.Graphics.Wgl.Wgl.EXT.MakeContextCurrentEXT*"></a>
+  <h4 id="OpenTK_Graphics_Wgl_Wgl_EXT_MakeContextCurrentEXT_System_IntPtr_System_IntPtr_System_IntPtr_" data-uid="OpenTK.Graphics.Wgl.Wgl.EXT.MakeContextCurrentEXT(System.IntPtr,System.IntPtr,System.IntPtr)">MakeContextCurrentEXT(nint, nint, nint)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool SwapInterval(int interval)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool MakeContextCurrentEXT(nint hDrawDC, nint hReadDC, nint hglrc)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
+        <td><span class="parametername">hDrawDC</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
+        <td><span class="parametername">hReadDC</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
+        <td><span class="parametername">hglrc</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Graphics_Wgl_Wgl_EXT_MakeContextCurrentEXT__" data-uid="OpenTK.Graphics.Wgl.Wgl.EXT.MakeContextCurrentEXT_*"></a>
+  <h4 id="OpenTK_Graphics_Wgl_Wgl_EXT_MakeContextCurrentEXT__System_IntPtr_System_IntPtr_System_IntPtr_" data-uid="OpenTK.Graphics.Wgl.Wgl.EXT.MakeContextCurrentEXT_(System.IntPtr,System.IntPtr,System.IntPtr)">MakeContextCurrentEXT_(nint, nint, nint)</h4>
+  <div class="markdown level1 summary"><p><b>[requires: WGL_EXT_make_current_read]</b> <b>[entry point: <code>wglMakeContextCurrentEXT</code>]</b><br></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int MakeContextCurrentEXT_(nint hDrawDC, nint hReadDC, nint hglrc)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
+        <td><span class="parametername">hDrawDC</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
+        <td><span class="parametername">hReadDC</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
+        <td><span class="parametername">hglrc</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Graphics_Wgl_Wgl_EXT_QueryPbufferEXT_" data-uid="OpenTK.Graphics.Wgl.Wgl.EXT.QueryPbufferEXT*"></a>
+  <h4 id="OpenTK_Graphics_Wgl_Wgl_EXT_QueryPbufferEXT_System_IntPtr_OpenTK_Graphics_Wgl_PBufferAttribute_System_Int32__" data-uid="OpenTK.Graphics.Wgl.Wgl.EXT.QueryPbufferEXT(System.IntPtr,OpenTK.Graphics.Wgl.PBufferAttribute,System.Int32*)">QueryPbufferEXT(nint, PBufferAttribute, int*)</h4>
+  <div class="markdown level1 summary"><p><b>[requires: WGL_EXT_pbuffer]</b> <b>[entry point: <code>wglQueryPbufferEXT</code>]</b><br></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int QueryPbufferEXT(nint hPbuffer, PBufferAttribute iAttribute, int* piValue)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
+        <td><span class="parametername">hPbuffer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Graphics.Wgl.PBufferAttribute.html">PBufferAttribute</a></td>
+        <td><span class="parametername">iAttribute</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>*</td>
+        <td><span class="parametername">piValue</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Graphics_Wgl_Wgl_EXT_QueryPbufferEXT_" data-uid="OpenTK.Graphics.Wgl.Wgl.EXT.QueryPbufferEXT*"></a>
+  <h4 id="OpenTK_Graphics_Wgl_Wgl_EXT_QueryPbufferEXT_System_IntPtr_OpenTK_Graphics_Wgl_PBufferAttribute_System_Int32__" data-uid="OpenTK.Graphics.Wgl.Wgl.EXT.QueryPbufferEXT(System.IntPtr,OpenTK.Graphics.Wgl.PBufferAttribute,System.Int32@)">QueryPbufferEXT(nint, PBufferAttribute, ref int)</h4>
+  <div class="markdown level1 summary"><p><b>[requires: WGL_EXT_pbuffer]</b>
+<b>[entry point: <code>wglQueryPbufferEXT</code>]</b>
+<br></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool QueryPbufferEXT(nint hPbuffer, PBufferAttribute iAttribute, ref int piValue)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
+        <td><span class="parametername">hPbuffer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Graphics.Wgl.PBufferAttribute.html">PBufferAttribute</a></td>
+        <td><span class="parametername">iAttribute</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">piValue</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Graphics_Wgl_Wgl_EXT_QueryPbufferEXT_" data-uid="OpenTK.Graphics.Wgl.Wgl.EXT.QueryPbufferEXT*"></a>
+  <h4 id="OpenTK_Graphics_Wgl_Wgl_EXT_QueryPbufferEXT_System_IntPtr_OpenTK_Graphics_Wgl_PBufferAttribute_System_Int32___" data-uid="OpenTK.Graphics.Wgl.Wgl.EXT.QueryPbufferEXT(System.IntPtr,OpenTK.Graphics.Wgl.PBufferAttribute,System.Int32[])">QueryPbufferEXT(nint, PBufferAttribute, int[])</h4>
+  <div class="markdown level1 summary"><p><b>[requires: WGL_EXT_pbuffer]</b>
+<b>[entry point: <code>wglQueryPbufferEXT</code>]</b>
+<br></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool QueryPbufferEXT(nint hPbuffer, PBufferAttribute iAttribute, int[] piValue)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
+        <td><span class="parametername">hPbuffer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Graphics.Wgl.PBufferAttribute.html">PBufferAttribute</a></td>
+        <td><span class="parametername">iAttribute</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</td>
+        <td><span class="parametername">piValue</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Graphics_Wgl_Wgl_EXT_QueryPbufferEXT_" data-uid="OpenTK.Graphics.Wgl.Wgl.EXT.QueryPbufferEXT*"></a>
+  <h4 id="OpenTK_Graphics_Wgl_Wgl_EXT_QueryPbufferEXT_System_IntPtr_OpenTK_Graphics_Wgl_PBufferAttribute_System_Span_System_Int32__" data-uid="OpenTK.Graphics.Wgl.Wgl.EXT.QueryPbufferEXT(System.IntPtr,OpenTK.Graphics.Wgl.PBufferAttribute,System.Span{System.Int32})">QueryPbufferEXT(nint, PBufferAttribute, Span&lt;int&gt;)</h4>
+  <div class="markdown level1 summary"><p><b>[requires: WGL_EXT_pbuffer]</b>
+<b>[entry point: <code>wglQueryPbufferEXT</code>]</b>
+<br></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool QueryPbufferEXT(nint hPbuffer, PBufferAttribute iAttribute, Span&lt;int&gt; piValue)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
+        <td><span class="parametername">hPbuffer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Graphics.Wgl.PBufferAttribute.html">PBufferAttribute</a></td>
+        <td><span class="parametername">iAttribute</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.span-1">Span</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</td>
+        <td><span class="parametername">piValue</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Graphics_Wgl_Wgl_EXT_ReleasePbufferDCEXT_" data-uid="OpenTK.Graphics.Wgl.Wgl.EXT.ReleasePbufferDCEXT*"></a>
+  <h4 id="OpenTK_Graphics_Wgl_Wgl_EXT_ReleasePbufferDCEXT_System_IntPtr_System_IntPtr_" data-uid="OpenTK.Graphics.Wgl.Wgl.EXT.ReleasePbufferDCEXT(System.IntPtr,System.IntPtr)">ReleasePbufferDCEXT(nint, nint)</h4>
+  <div class="markdown level1 summary"><p><b>[requires: WGL_EXT_pbuffer]</b> <b>[entry point: <code>wglReleasePbufferDCEXT</code>]</b><br></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ReleasePbufferDCEXT(nint hPbuffer, nint hDC)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
+        <td><span class="parametername">hPbuffer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
+        <td><span class="parametername">hDC</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Graphics_Wgl_Wgl_EXT_SwapIntervalEXT_" data-uid="OpenTK.Graphics.Wgl.Wgl.EXT.SwapIntervalEXT*"></a>
+  <h4 id="OpenTK_Graphics_Wgl_Wgl_EXT_SwapIntervalEXT_System_Int32_" data-uid="OpenTK.Graphics.Wgl.Wgl.EXT.SwapIntervalEXT(System.Int32)">SwapIntervalEXT(int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool SwapIntervalEXT(int interval)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -207,6 +1948,47 @@
       </tr>
     </tbody>
   </table>
+  <a id="OpenTK_Graphics_Wgl_Wgl_EXT_SwapIntervalEXT__" data-uid="OpenTK.Graphics.Wgl.Wgl.EXT.SwapIntervalEXT_*"></a>
+  <h4 id="OpenTK_Graphics_Wgl_Wgl_EXT_SwapIntervalEXT__System_Int32_" data-uid="OpenTK.Graphics.Wgl.Wgl.EXT.SwapIntervalEXT_(System.Int32)">SwapIntervalEXT_(int)</h4>
+  <div class="markdown level1 summary"><p><b>[requires: WGL_EXT_swap_control]</b> <b>[entry point: <code>wglSwapIntervalEXT</code>]</b><br></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SwapIntervalEXT_(int interval)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">interval</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
 </article>
           </div>
@@ -214,7 +1996,7 @@
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-                <h5>In This Article</h5>
+                <h5>In this article</h5>
                 <div></div>
               </nav>
             </div>

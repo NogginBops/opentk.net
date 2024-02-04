@@ -478,6 +478,140 @@
       </tr>
     </tbody>
   </table>
+  <a id="OpenTK_Platform_Native_macOS_MacOSDisplayComponent_GetSafeArea_" data-uid="OpenTK.Platform.Native.macOS.MacOSDisplayComponent.GetSafeArea*"></a>
+  <h4 id="OpenTK_Platform_Native_macOS_MacOSDisplayComponent_GetSafeArea_OpenTK_Core_Platform_DisplayHandle_OpenTK_Mathematics_Box2i__" data-uid="OpenTK.Platform.Native.macOS.MacOSDisplayComponent.GetSafeArea(OpenTK.Core.Platform.DisplayHandle,OpenTK.Mathematics.Box2i@)">GetSafeArea(DisplayHandle, out Box2i)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetSafeArea(DisplayHandle handle, out Box2i area)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Core.Platform.DisplayHandle.html">DisplayHandle</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Box2i.html">Box2i</a></td>
+        <td><span class="parametername">area</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Platform_Native_macOS_MacOSDisplayComponent_GetSafeLeftAuxArea_" data-uid="OpenTK.Platform.Native.macOS.MacOSDisplayComponent.GetSafeLeftAuxArea*"></a>
+  <h4 id="OpenTK_Platform_Native_macOS_MacOSDisplayComponent_GetSafeLeftAuxArea_OpenTK_Core_Platform_DisplayHandle_OpenTK_Mathematics_Box2i__" data-uid="OpenTK.Platform.Native.macOS.MacOSDisplayComponent.GetSafeLeftAuxArea(OpenTK.Core.Platform.DisplayHandle,OpenTK.Mathematics.Box2i@)">GetSafeLeftAuxArea(DisplayHandle, out Box2i)</h4>
+  <div class="markdown level1 summary"><p>The the top left unobscured area of the screen.
+Some macOS devices have a portion of the screen covered by the camera housing,
+this function returns the visible are left to the that.
+If there is no obscured area of the display this function returns false.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetSafeLeftAuxArea(DisplayHandle handle, out Box2i area)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Core.Platform.DisplayHandle.html">DisplayHandle</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>The display to get the safe area of.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Box2i.html">Box2i</a></td>
+        <td><span class="parametername">area</span></td>
+        <td><p>The top left auxiliary area.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p>If there is an auxiliary area.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Platform_Native_macOS_MacOSDisplayComponent_GetSafeRightAuxArea_" data-uid="OpenTK.Platform.Native.macOS.MacOSDisplayComponent.GetSafeRightAuxArea*"></a>
+  <h4 id="OpenTK_Platform_Native_macOS_MacOSDisplayComponent_GetSafeRightAuxArea_OpenTK_Core_Platform_DisplayHandle_OpenTK_Mathematics_Box2i__" data-uid="OpenTK.Platform.Native.macOS.MacOSDisplayComponent.GetSafeRightAuxArea(OpenTK.Core.Platform.DisplayHandle,OpenTK.Mathematics.Box2i@)">GetSafeRightAuxArea(DisplayHandle, out Box2i)</h4>
+  <div class="markdown level1 summary"><p>The the top right unobscured area of the screen.
+Some macOS devices have a portion of the screen covered by the camera housing,
+this function returns the visible are left to the that.
+If there is no obscured area of the display this function returns false.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetSafeRightAuxArea(DisplayHandle handle, out Box2i area)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Core.Platform.DisplayHandle.html">DisplayHandle</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>The display to get the safe area of.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Box2i.html">Box2i</a></td>
+        <td><span class="parametername">area</span></td>
+        <td><p>The top left auxiliary area.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p>If there is an auxiliary area.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="OpenTK_Platform_Native_macOS_MacOSDisplayComponent_GetSupportedVideoModes_" data-uid="OpenTK.Platform.Native.macOS.MacOSDisplayComponent.GetSupportedVideoModes*"></a>
   <h4 id="OpenTK_Platform_Native_macOS_MacOSDisplayComponent_GetSupportedVideoModes_OpenTK_Core_Platform_DisplayHandle_" data-uid="OpenTK.Platform.Native.macOS.MacOSDisplayComponent.GetSupportedVideoModes(OpenTK.Core.Platform.DisplayHandle)">GetSupportedVideoModes(DisplayHandle)</h4>
   <div class="markdown level1 summary"><p>Get all supported video modes for a specific display.</p>
