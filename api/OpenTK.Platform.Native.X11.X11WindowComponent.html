@@ -671,6 +671,108 @@ We could add a delay where we wait for the server to change the window, but for 
       </tr>
     </tbody>
   </table>
+  <a id="OpenTK_Platform_Native_X11_X11WindowComponent_GetBounds_" data-uid="OpenTK.Platform.Native.X11.X11WindowComponent.GetBounds*"></a>
+  <h4 id="OpenTK_Platform_Native_X11_X11WindowComponent_GetBounds_OpenTK_Core_Platform_WindowHandle_System_Int32__System_Int32__System_Int32__System_Int32__" data-uid="OpenTK.Platform.Native.X11.X11WindowComponent.GetBounds(OpenTK.Core.Platform.WindowHandle,System.Int32@,System.Int32@,System.Int32@,System.Int32@)">GetBounds(WindowHandle, out int, out int, out int, out int)</h4>
+  <div class="markdown level1 summary"><p>Get the bounds of the window.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetBounds(WindowHandle handle, out int x, out int y, out int width, out int height)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Core.Platform.WindowHandle.html">WindowHandle</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>Handle to a window.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">x</span></td>
+        <td><p>X coordinate of the window.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">y</span></td>
+        <td><p>Y coordinate of the window.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">width</span></td>
+        <td><p>Width of the window in pixels.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">height</span></td>
+        <td><p>Height of the window in pixels.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Platform_Native_X11_X11WindowComponent_GetClientBounds_" data-uid="OpenTK.Platform.Native.X11.X11WindowComponent.GetClientBounds*"></a>
+  <h4 id="OpenTK_Platform_Native_X11_X11WindowComponent_GetClientBounds_OpenTK_Core_Platform_WindowHandle_System_Int32__System_Int32__System_Int32__System_Int32__" data-uid="OpenTK.Platform.Native.X11.X11WindowComponent.GetClientBounds(OpenTK.Core.Platform.WindowHandle,System.Int32@,System.Int32@,System.Int32@,System.Int32@)">GetClientBounds(WindowHandle, out int, out int, out int, out int)</h4>
+  <div class="markdown level1 summary"><p>Get the client area bounds (drawing area) of a window.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetClientBounds(WindowHandle handle, out int x, out int y, out int width, out int height)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Core.Platform.WindowHandle.html">WindowHandle</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>Handle to a window.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">x</span></td>
+        <td><p>X coordinate of the client area.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">y</span></td>
+        <td><p>Y coordinate of the client area.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">width</span></td>
+        <td><p>Width of the client area in pixels.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">height</span></td>
+        <td><p>Height of the client area in pixels.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="OpenTK_Platform_Native_X11_X11WindowComponent_GetClientPosition_" data-uid="OpenTK.Platform.Native.X11.X11WindowComponent.GetClientPosition*"></a>
   <h4 id="OpenTK_Platform_Native_X11_X11WindowComponent_GetClientPosition_OpenTK_Core_Platform_WindowHandle_System_Int32__System_Int32__" data-uid="OpenTK.Platform.Native.X11.X11WindowComponent.GetClientPosition(OpenTK.Core.Platform.WindowHandle,System.Int32@,System.Int32@)">GetClientPosition(WindowHandle, out int, out int)</h4>
   <div class="markdown level1 summary"><p>Get the position of the client area (drawing area) of a window.</p>
@@ -1617,6 +1719,108 @@ We could add a delay where we wait for the server to change the window, but for 
       <tr>
         <td><a class="xref" href="OpenTK.Core.Platform.PalNotImplementedException.html">PalNotImplementedException</a></td>
         <td><p>Driver does not support the value set by <code class="paramref">style</code>. See <a class="xref" href="OpenTK.Core.Platform.IWindowComponent.html#OpenTK_Core_Platform_IWindowComponent_SupportedStyles">SupportedStyles</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Platform_Native_X11_X11WindowComponent_SetBounds_" data-uid="OpenTK.Platform.Native.X11.X11WindowComponent.SetBounds*"></a>
+  <h4 id="OpenTK_Platform_Native_X11_X11WindowComponent_SetBounds_OpenTK_Core_Platform_WindowHandle_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="OpenTK.Platform.Native.X11.X11WindowComponent.SetBounds(OpenTK.Core.Platform.WindowHandle,System.Int32,System.Int32,System.Int32,System.Int32)">SetBounds(WindowHandle, int, int, int, int)</h4>
+  <div class="markdown level1 summary"><p>Set the bounds of the window.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetBounds(WindowHandle handle, int x, int y, int width, int height)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Core.Platform.WindowHandle.html">WindowHandle</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>Handle to a window.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">x</span></td>
+        <td><p>New X coordinate of the window.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">y</span></td>
+        <td><p>New Y coordinate of the window.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">width</span></td>
+        <td><p>New width of the window in pixels.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">height</span></td>
+        <td><p>New height of the window in pixels.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Platform_Native_X11_X11WindowComponent_SetClientBounds_" data-uid="OpenTK.Platform.Native.X11.X11WindowComponent.SetClientBounds*"></a>
+  <h4 id="OpenTK_Platform_Native_X11_X11WindowComponent_SetClientBounds_OpenTK_Core_Platform_WindowHandle_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="OpenTK.Platform.Native.X11.X11WindowComponent.SetClientBounds(OpenTK.Core.Platform.WindowHandle,System.Int32,System.Int32,System.Int32,System.Int32)">SetClientBounds(WindowHandle, int, int, int, int)</h4>
+  <div class="markdown level1 summary"><p>Set the client area bounds (drawing area) of a window.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetClientBounds(WindowHandle handle, int x, int y, int width, int height)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Core.Platform.WindowHandle.html">WindowHandle</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>Handle to a window.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">x</span></td>
+        <td><p>New X coordinate of the client area.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">y</span></td>
+        <td><p>New Y coordinate of the client area.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">width</span></td>
+        <td><p>New width of the client area in pixels.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">height</span></td>
+        <td><p>New height of the client area in pixels.</p>
 </td>
       </tr>
     </tbody>

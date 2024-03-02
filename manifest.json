@@ -4204,6 +4204,26 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.Native.Toolkit.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.Native.Toolkit.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.Native.ToolkitOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.Native.ToolkitOptions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/OpenTK.Platform.Native.Windows.ClipboardComponent.yml",
       "output": {
         ".html": {
@@ -4464,6 +4484,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.Native.macOS.MacOSKeyboardComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.Native.macOS.MacOSKeyboardComponent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/OpenTK.Platform.Native.macOS.MacOSMouseComponent.yml",
       "output": {
         ".html": {
@@ -4478,6 +4508,16 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenTK.Platform.Native.macOS.MacOSOpenGLComponent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.Native.macOS.MacOSShellComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.Native.macOS.MacOSShellComponent.html"
         }
       },
       "version": ""
