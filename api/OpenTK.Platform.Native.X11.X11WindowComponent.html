@@ -1413,6 +1413,74 @@ We could add a delay where we wait for the server to change the window, but for 
       </tr>
     </tbody>
   </table>
+  <a id="OpenTK_Platform_Native_X11_X11WindowComponent_GetX11Display_" data-uid="OpenTK.Platform.Native.X11.X11WindowComponent.GetX11Display*"></a>
+  <h4 id="OpenTK_Platform_Native_X11_X11WindowComponent_GetX11Display" data-uid="OpenTK.Platform.Native.X11.X11WindowComponent.GetX11Display">GetX11Display()</h4>
+  <div class="markdown level1 summary"><p>Returns the X11 <code>Display</code> used by OpenTK.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public nint GetX11Display()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
+        <td><p>The X11 <code>Display</code> handle.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Platform_Native_X11_X11WindowComponent_GetX11Window_" data-uid="OpenTK.Platform.Native.X11.X11WindowComponent.GetX11Window*"></a>
+  <h4 id="OpenTK_Platform_Native_X11_X11WindowComponent_GetX11Window_OpenTK_Core_Platform_WindowHandle_" data-uid="OpenTK.Platform.Native.X11.X11WindowComponent.GetX11Window(OpenTK.Core.Platform.WindowHandle)">GetX11Window(WindowHandle)</h4>
+  <div class="markdown level1 summary"><p>Returns the X11 <code>Window</code> handle associated with this window.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public nint GetX11Window(WindowHandle handle)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Core.Platform.WindowHandle.html">WindowHandle</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>The window handle to get the associated X11 <code>Window</code> from.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
+        <td><p>The X11 <code>Window</code> associated with the window handle.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="OpenTK_Platform_Native_X11_X11WindowComponent_Initialize_" data-uid="OpenTK.Platform.Native.X11.X11WindowComponent.Initialize*"></a>
   <h4 id="OpenTK_Platform_Native_X11_X11WindowComponent_Initialize_OpenTK_Core_Platform_PalComponents_" data-uid="OpenTK.Platform.Native.X11.X11WindowComponent.Initialize(OpenTK.Core.Platform.PalComponents)">Initialize(PalComponents)</h4>
   <div class="markdown level1 summary"><p>Initialize the driver.</p>

@@ -97,6 +97,34 @@
 </thead>
 <tbody>
 <tr>
+<td><code>WindowComponent</code></td>
+<td></td>
+</tr>
+<tr>
+<td><a class="xref" href="../../api/OpenTK.Platform.Native.Windows.WindowComponent.html#OpenTK_Platform_Native_Windows_WindowComponent_GetHWND_OpenTK_Core_Platform_WindowHandle_"><code>WindowComponent.GetHWND</code></a></td>
+<td>Gets the native Win32 <code>HWND</code> handle for the window.</td>
+</tr>
+<tr>
+<td><code>OpenGLComponent</code></td>
+<td></td>
+</tr>
+<tr>
+<td><a class="xref" href="../../api/OpenTK.Platform.Native.Windows.OpenGLComponent.html#OpenTK_Platform_Native_Windows_OpenGLComponent_GetHGLRC_OpenTK_Core_Platform_OpenGLContextHandle_"><code>OpenGLComponent.GetHGLRC</code></a></td>
+<td>Gets the native Win32 <code>HGLRC</code> handle for the OpenGL context.</td>
+</tr>
+<tr>
+<td><code>DisplayComponent</code></td>
+<td></td>
+</tr>
+<tr>
+<td><a class="xref" href="../../api/OpenTK.Platform.Native.Windows.DisplayComponent.html#OpenTK_Platform_Native_Windows_DisplayComponent_GetAdapter_OpenTK_Core_Platform_DisplayHandle_"><code>DisplayComponent.GetAdapter</code></a></td>
+<td>Gets the native Win32 adapter name (e.g. <code>\\.\DISPLAY1</code>) for the display handle.</td>
+</tr>
+<tr>
+<td><a class="xref" href="../../api/OpenTK.Platform.Native.Windows.DisplayComponent.html#OpenTK_Platform_Native_Windows_DisplayComponent_GetMonitor_OpenTK_Core_Platform_DisplayHandle_"><code>DisplayComponent.GetMonitor</code></a></td>
+<td>Gets the native Win32 monitor name (e.g. <code>\\.\DISPLAY1\Monitor0</code>) for the display handle.</td>
+</tr>
+<tr>
 <td><code>ShellComponent</code></td>
 <td></td>
 </tr>
@@ -197,12 +225,40 @@
 <td>Shows a popup to the user that the window is ready.</td>
 </tr>
 <tr>
+<td><a class="xref" href="../../api/OpenTK.Platform.Native.X11.X11WindowComponent.html#OpenTK_Platform_Native_X11_X11WindowComponent_GetX11Display"><code>X11WindowComponent.GetX11Display</code></a></td>
+<td>Gets the X11 <code>Display</code> used by OpenTK.</td>
+</tr>
+<tr>
+<td><a class="xref" href="../../api/OpenTK.Platform.Native.X11.X11WindowComponent.html#OpenTK_Platform_Native_X11_X11WindowComponent_GetX11Window_OpenTK_Core_Platform_WindowHandle_"><code>X11WindowComponent.GetX11Window</code></a></td>
+<td>Gets the X11 <code>Window</code> for this window handle.</td>
+</tr>
+<tr>
 <td><code>X11OpenGLComponent</code></td>
 <td></td>
 </tr>
 <tr>
 <td><a class="xref" href="../../api/OpenTK.Platform.Native.X11.X11OpenGLComponent.html#OpenTK_Platform_Native_X11_X11OpenGLComponent_EXT_swap_control_GetMaxSwapInterval"><code>X11OpenGLComponent.EXT_swap_control_GetMaxSwapInterval</code></a></td>
 <td>Queries <code>EXT_swap_control</code> for the maximum supported swap interval.</td>
+</tr>
+<tr>
+<td><a class="xref" href="../../api/OpenTK.Platform.Native.X11.X11OpenGLComponent.html#OpenTK_Platform_Native_X11_X11OpenGLComponent_GetGLXContext_OpenTK_Core_Platform_OpenGLContextHandle_"><code>X11OpenGLComponent.GetGLXContext</code></a></td>
+<td>Get the GLX <code>GLXContext</code> for the OpenGL context.</td>
+</tr>
+<tr>
+<td><a class="xref" href="../../api/OpenTK.Platform.Native.X11.X11OpenGLComponent.html#OpenTK_Platform_Native_X11_X11OpenGLComponent_GetGLXWindow_OpenTK_Core_Platform_OpenGLContextHandle_"><code>X11OpenGLComponent.GetGLXWindow</code></a></td>
+<td>Get the GLX <code>GLXWindow</code> for the OpenGL context.</td>
+</tr>
+<tr>
+<td><code>X11DisplayComponent</code></td>
+<td></td>
+</tr>
+<tr>
+<td><a class="xref" href="../../api/OpenTK.Platform.Native.X11.X11DisplayComponent.html#OpenTK_Platform_Native_X11_X11DisplayComponent_GetRRCrtc_OpenTK_Core_Platform_DisplayHandle_"><code>X11DisplayComponent.GetRRCrtc</code></a></td>
+<td>Get the X11 RandR <code>RRCrtc</code> for the display handle.</td>
+</tr>
+<tr>
+<td><a class="xref" href="../../api/OpenTK.Platform.Native.X11.X11DisplayComponent.html#OpenTK_Platform_Native_X11_X11DisplayComponent_GetRROutput_OpenTK_Core_Platform_DisplayHandle_"><code>X11DisplayComponent.GetRROutput</code></a></td>
+<td>Get the X11 RandR <code>RROutput</code> for the display handle.</td>
 </tr>
 <tr>
 <td><code>X11IconComponent</code></td>
@@ -233,6 +289,22 @@
 <td>Sets the dock icon of the application</td>
 </tr>
 <tr>
+<td><a class="xref" href="../../api/OpenTK.Platform.Native.macOS.MacOSWindowComponent.html#OpenTK_Platform_Native_macOS_MacOSWindowComponent_GetNSWindow_OpenTK_Core_Platform_WindowHandle_"><code>MacOSWindowComponent.GetNSWindow</code></a></td>
+<td>Gets the <code>NSWindow</code> of the window handle. This is an instance of the <code>NSOpenTKWindow</code> subclass of <code>NSWindow</code>.</td>
+</tr>
+<tr>
+<td><a class="xref" href="../../api/OpenTK.Platform.Native.macOS.MacOSWindowComponent.html#OpenTK_Platform_Native_macOS_MacOSWindowComponent_GetNSView_OpenTK_Core_Platform_WindowHandle_"><code>MacOSWindowComponent.GetNSView</code></a></td>
+<td>Gets the <code>NSView</code> of the window handle. This is an instance of the <code>NSOpenTKView</code> subclass of <code>NSView</code>.</td>
+</tr>
+<tr>
+<td><code>MacOSOpenGLComponent</code></td>
+<td></td>
+</tr>
+<tr>
+<td><a class="xref" href="../../api/OpenTK.Platform.Native.macOS.MacOSOpenGLComponent.html#OpenTK_Platform_Native_macOS_MacOSOpenGLComponent_GetNSOpenGLContext_OpenTK_Core_Platform_OpenGLContextHandle_"><code>MacOSOpenGLComponent.GetNSOpenGLContext</code></a></td>
+<td>Gets the <code>NSOpenGLContext</code> of the OpenGL context handle.</td>
+</tr>
+<tr>
 <td><code>MacOSIconComponent</code></td>
 <td></td>
 </tr>
@@ -257,6 +329,10 @@
 <td>Gets the visible area of the screen to the right of the camera housing or an empty area of there is no camera housing.</td>
 </tr>
 <tr>
+<td><a class="xref" href="../../api/OpenTK.Platform.Native.macOS.MacOSDisplayComponent.html#OpenTK_Platform_Native_macOS_MacOSDisplayComponent_GetDirectDisplayID_OpenTK_Core_Platform_DisplayHandle_"><code>MacOSDisplayComponent.GetDirectDisplayID</code></a></td>
+<td>Gets the <code>CGDirectDisplayID</code> for the display handle.</td>
+</tr>
+<tr>
 <td><code>MacOSCursorComponent</code></td>
 <td></td>
 </tr>
@@ -271,6 +347,34 @@
 <tr>
 <td><a class="xref" href="../../api/OpenTK.Platform.Native.macOS.MacOSCursorComponent.html#OpenTK_Platform_Native_macOS_MacOSCursorComponent_UpdateAnimation_OpenTK_Core_Platform_CursorHandle_System_Double_"><code>MacOSCursorComponent.UpdateAnimation</code></a></td>
 <td>Used to update the animation of a given cursor.</td>
+</tr>
+</tbody>
+</table>
+<h1 id="angle">ANGLE</h1>
+<p>When using ANGLE to create OpenGL contexts <code>ANGLEOpenGLComponent</code> exposes a few ANGLE specific functions.</p>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>ANGLEOpenGLComponent</code></td>
+<td></td>
+</tr>
+<tr>
+<td><a class="xref" href="../../api/OpenTK.Platform.Native.ANGLE.ANGLEOpenGLComponent.html#OpenTK_Platform_Native_ANGLE_ANGLEOpenGLComponent_GetEglDisplay"><code>ANGLEOpenGLComponent.GetEglDisplay</code></a></td>
+<td>Gets the <code>EGLDisplay</code> used by OpenTK.</td>
+</tr>
+<tr>
+<td><a class="xref" href="../../api/OpenTK.Platform.Native.ANGLE.ANGLEOpenGLComponent.html#OpenTK_Platform_Native_ANGLE_ANGLEOpenGLComponent_GetEglContext_OpenTK_Core_Platform_OpenGLContextHandle_"><code>ANGLEOpenGLComponent.GetEglContext</code></a></td>
+<td>Gets the <code>EGLContext</code> for the OpenGL context.</td>
+</tr>
+<tr>
+<td><a class="xref" href="../../api/OpenTK.Platform.Native.ANGLE.ANGLEOpenGLComponent.html#OpenTK_Platform_Native_ANGLE_ANGLEOpenGLComponent_GetEglSurface_OpenTK_Core_Platform_OpenGLContextHandle_"><code>ANGLEOpenGLComponent.GetEglSurface</code></a></td>
+<td>Gets the <code>EGLSurface</code> for the OpenGL context.</td>
 </tr>
 </tbody>
 </table>

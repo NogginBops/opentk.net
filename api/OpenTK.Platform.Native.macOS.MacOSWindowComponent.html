@@ -1194,6 +1194,94 @@
       </tr>
     </tbody>
   </table>
+  <a id="OpenTK_Platform_Native_macOS_MacOSWindowComponent_GetNSView_" data-uid="OpenTK.Platform.Native.macOS.MacOSWindowComponent.GetNSView*"></a>
+  <h4 id="OpenTK_Platform_Native_macOS_MacOSWindowComponent_GetNSView_OpenTK_Core_Platform_WindowHandle_" data-uid="OpenTK.Platform.Native.macOS.MacOSWindowComponent.GetNSView(OpenTK.Core.Platform.WindowHandle)">GetNSView(WindowHandle)</h4>
+  <div class="markdown level1 summary"><p>Returns the <code>NSView</code> used by the specified window handle.
+The Objective-C object returned is a subclass of <code>NSView</code> called <code>NSOpenTKView</code></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public nint GetNSView(WindowHandle handle)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Core.Platform.WindowHandle.html">WindowHandle</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>A handle to a window to get the associated <code>NSView</code> from.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
+        <td><p>The <code>NSView</code> associated with the window handle.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Platform_Native_macOS_MacOSWindowComponent_GetNSWindow_" data-uid="OpenTK.Platform.Native.macOS.MacOSWindowComponent.GetNSWindow*"></a>
+  <h4 id="OpenTK_Platform_Native_macOS_MacOSWindowComponent_GetNSWindow_OpenTK_Core_Platform_WindowHandle_" data-uid="OpenTK.Platform.Native.macOS.MacOSWindowComponent.GetNSWindow(OpenTK.Core.Platform.WindowHandle)">GetNSWindow(WindowHandle)</h4>
+  <div class="markdown level1 summary"><p>Returns the <code>NSWindow</code> used by the specified window handle.
+The Objective-C object returned is a subclass of <code>NSWindow</code> called <code>NSOpenTKWindow</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public nint GetNSWindow(WindowHandle handle)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Core.Platform.WindowHandle.html">WindowHandle</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>A handle to a window to get the associated <code>NSWindow</code> from.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
+        <td><p>The <code>NSWindow</code> associated with the window handle.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="OpenTK_Platform_Native_macOS_MacOSWindowComponent_GetPosition_" data-uid="OpenTK.Platform.Native.macOS.MacOSWindowComponent.GetPosition*"></a>
   <h4 id="OpenTK_Platform_Native_macOS_MacOSWindowComponent_GetPosition_OpenTK_Core_Platform_WindowHandle_System_Int32__System_Int32__" data-uid="OpenTK.Platform.Native.macOS.MacOSWindowComponent.GetPosition(OpenTK.Core.Platform.WindowHandle,System.Int32@,System.Int32@)">GetPosition(WindowHandle, out int, out int)</h4>
   <div class="markdown level1 summary"><p>Get the window position in display coordinates (top left origin).</p>
