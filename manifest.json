@@ -1484,6 +1484,36 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Core.Platform.ContextPixelFormat.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Core.Platform.ContextPixelFormat.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Core.Platform.ContextReleaseBehaviour.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Core.Platform.ContextReleaseBehaviour.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Core.Platform.ContextResetNotificationStrategy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Core.Platform.ContextResetNotificationStrategy.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/OpenTK.Core.Platform.ContextSettings.yml",
       "output": {
         ".html": {
@@ -1498,6 +1528,26 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenTK.Core.Platform.ContextStencilBits.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Core.Platform.ContextSwapMethod.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Core.Platform.ContextSwapMethod.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Core.Platform.ContextValueSelector.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Core.Platform.ContextValueSelector.html"
         }
       },
       "version": ""
@@ -1528,6 +1578,16 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenTK.Core.Platform.CursorHandle.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Core.Platform.DialogFileFilter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Core.Platform.DialogFileFilter.html"
         }
       },
       "version": ""
@@ -1668,6 +1728,16 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenTK.Core.Platform.ICursorComponent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Core.Platform.IDialogComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Core.Platform.IDialogComponent.html"
         }
       },
       "version": ""
@@ -1944,6 +2014,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Core.Platform.OpenDialogOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Core.Platform.OpenDialogOptions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/OpenTK.Core.Platform.OpenGLContextHandle.yml",
       "output": {
         ".html": {
@@ -2064,6 +2144,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Core.Platform.SaveDialogOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Core.Platform.SaveDialogOptions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/OpenTK.Core.Platform.Scancode.yml",
       "output": {
         ".html": {
@@ -2174,6 +2264,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Core.Platform.ToolkitOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Core.Platform.ToolkitOptions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/OpenTK.Core.Platform.VideoMode.yml",
       "output": {
         ".html": {
@@ -2218,6 +2318,16 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenTK.Core.Platform.WindowEventHandler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Core.Platform.WindowFramebufferResizeEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Core.Platform.WindowFramebufferResizeEventArgs.html"
         }
       },
       "version": ""
@@ -2274,6 +2384,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Core.Platform.WindowScaleChangeEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Core.Platform.WindowScaleChangeEventArgs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/OpenTK.Core.Platform.yml",
       "output": {
         ".html": {
@@ -2298,6 +2418,16 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenTK.Core.Utility.DebugFileLogger.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Core.Utility.DebugLogger.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Core.Utility.DebugLogger.html"
         }
       },
       "version": ""
@@ -2498,6 +2628,26 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenTK.Graphics.GLSync.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Graphics.GLXLoader.BindingsContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Graphics.GLXLoader.BindingsContext.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Graphics.GLXLoader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Graphics.GLXLoader.html"
         }
       },
       "version": ""
@@ -2854,6 +3004,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Graphics.Glx.ScreenPtr.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Graphics.Glx.ScreenPtr.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/OpenTK.Graphics.Glx.Window.yml",
       "output": {
         ".html": {
@@ -2868,6 +3028,16 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenTK.Graphics.Glx.XVisualInfo.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Graphics.Glx.XVisualInfoPtr.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Graphics.Glx.XVisualInfoPtr.html"
         }
       },
       "version": ""
@@ -2988,6 +3158,26 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenTK.Graphics.VertexArrayHandle.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Graphics.WGLLoader.BindingsContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Graphics.WGLLoader.BindingsContext.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Graphics.WGLLoader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Graphics.WGLLoader.html"
         }
       },
       "version": ""
@@ -4244,6 +4434,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.Native.Windows.DialogComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.Native.Windows.DialogComponent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/OpenTK.Platform.Native.Windows.DisplayComponent.yml",
       "output": {
         ".html": {
@@ -4298,6 +4498,16 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenTK.Platform.Native.Windows.OpenGLComponent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.Native.Windows.ShellComponent.CornerPrefernce.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.Native.Windows.ShellComponent.CornerPrefernce.html"
         }
       },
       "version": ""
@@ -4444,6 +4654,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.Native.macOS.MacOSClipboardComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.Native.macOS.MacOSClipboardComponent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/OpenTK.Platform.Native.macOS.MacOSCursorComponent.Frame.yml",
       "output": {
         ".html": {
@@ -4458,6 +4678,16 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenTK.Platform.Native.macOS.MacOSCursorComponent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.Native.macOS.MacOSDialogComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.Native.macOS.MacOSDialogComponent.html"
         }
       },
       "version": ""
@@ -4618,6 +4848,16 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenTK.Windowing.Common.FrameEventArgs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Windowing.Common.FramebufferResizeEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Windowing.Common.FramebufferResizeEventArgs.html"
         }
       },
       "version": ""
@@ -7283,6 +7523,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "UidNotFound"
+      ],
       "type": "Conceptual",
       "source_relative_path": "learn/pal2/Event-Handling.md",
       "output": {
@@ -7338,6 +7581,16 @@
       "output": {
         "resource": {
           "relative_path": "opentk/documentation/icon.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "opentk/tests/Bejeweled/Assets/Icon/ruby_icon.png",
+      "output": {
+        "resource": {
+          "relative_path": "opentk/tests/Bejeweled/Assets/Icon/ruby_icon.png"
         }
       },
       "version": ""

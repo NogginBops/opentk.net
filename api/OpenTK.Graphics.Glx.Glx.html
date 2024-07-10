@@ -122,13 +122,13 @@
   <h3 id="methods">Methods
 </h3>
   <a id="OpenTK_Graphics_Glx_Glx_ChooseFBConfig_" data-uid="OpenTK.Graphics.Glx.Glx.ChooseFBConfig*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_ChooseFBConfig_OpenTK_Graphics_Glx_Display__System_Int32_System_Int32__System_Int32__" data-uid="OpenTK.Graphics.Glx.Glx.ChooseFBConfig(OpenTK.Graphics.Glx.Display*,System.Int32,System.Int32*,System.Int32*)">ChooseFBConfig(Display*, int, int*, int*)</h4>
+  <h4 id="OpenTK_Graphics_Glx_Glx_ChooseFBConfig_OpenTK_Graphics_Glx_DisplayPtr_System_Int32_System_Int32__System_Int32__" data-uid="OpenTK.Graphics.Glx.Glx.ChooseFBConfig(OpenTK.Graphics.Glx.DisplayPtr,System.Int32,System.Int32*,System.Int32*)">ChooseFBConfig(DisplayPtr, int, int*, int*)</h4>
   <div class="markdown level1 summary"><p><b>[requires: v1.3]</b> <b>[entry point: <code>glXChooseFBConfig</code>]</b><br></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static GLXFBConfig* ChooseFBConfig(Display* dpy, int screen, int* attrib_list, int* nelements)</code></pre>
+    <pre><code class="lang-csharp hljs">public static GLXFBConfig* ChooseFBConfig(DisplayPtr dpy, int screen, int* attrib_list, int* nelements)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -141,7 +141,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*</td>
+        <td><a class="xref" href="OpenTK.Graphics.Glx.DisplayPtr.html">DisplayPtr</a></td>
         <td><span class="parametername">dpy</span></td>
         <td></td>
       </tr>
@@ -178,7 +178,7 @@
     </tbody>
   </table>
   <a id="OpenTK_Graphics_Glx_Glx_ChooseFBConfig_" data-uid="OpenTK.Graphics.Glx.Glx.ChooseFBConfig*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_ChooseFBConfig_OpenTK_Graphics_Glx_Display__System_Int32_System_Int32__System_Int32__" data-uid="OpenTK.Graphics.Glx.Glx.ChooseFBConfig(OpenTK.Graphics.Glx.Display@,System.Int32,System.Int32@,System.Int32@)">ChooseFBConfig(ref Display, int, in int, ref int)</h4>
+  <h4 id="OpenTK_Graphics_Glx_Glx_ChooseFBConfig_OpenTK_Graphics_Glx_DisplayPtr_System_Int32_System_Int32__System_Int32__" data-uid="OpenTK.Graphics.Glx.Glx.ChooseFBConfig(OpenTK.Graphics.Glx.DisplayPtr,System.Int32,System.Int32@,System.Int32@)">ChooseFBConfig(DisplayPtr, int, in int, ref int)</h4>
   <div class="markdown level1 summary"><p><b>[requires: v1.3]</b>
 <b>[entry point: <code>glXChooseFBConfig</code>]</b>
 <br></p>
@@ -186,7 +186,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static GLXFBConfig* ChooseFBConfig(ref Display dpy, int screen, in int attrib_list, ref int nelements)</code></pre>
+    <pre><code class="lang-csharp hljs">public static GLXFBConfig* ChooseFBConfig(DisplayPtr dpy, int screen, in int attrib_list, ref int nelements)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -199,7 +199,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a></td>
+        <td><a class="xref" href="OpenTK.Graphics.Glx.DisplayPtr.html">DisplayPtr</a></td>
         <td><span class="parametername">dpy</span></td>
         <td></td>
       </tr>
@@ -236,13 +236,13 @@
     </tbody>
   </table>
   <a id="OpenTK_Graphics_Glx_Glx_ChooseVisual_" data-uid="OpenTK.Graphics.Glx.Glx.ChooseVisual*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_ChooseVisual_OpenTK_Graphics_Glx_Display__System_Int32_System_Int32__" data-uid="OpenTK.Graphics.Glx.Glx.ChooseVisual(OpenTK.Graphics.Glx.Display*,System.Int32,System.Int32*)">ChooseVisual(Display*, int, int*)</h4>
+  <h4 id="OpenTK_Graphics_Glx_Glx_ChooseVisual_OpenTK_Graphics_Glx_DisplayPtr_System_Int32_System_Int32__" data-uid="OpenTK.Graphics.Glx.Glx.ChooseVisual(OpenTK.Graphics.Glx.DisplayPtr,System.Int32,System.Int32*)">ChooseVisual(DisplayPtr, int, int*)</h4>
   <div class="markdown level1 summary"><p><b>[requires: v1.0]</b> <b>[entry point: <code>glXChooseVisual</code>]</b><br></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static XVisualInfo* ChooseVisual(Display* dpy, int screen, int* attribList)</code></pre>
+    <pre><code class="lang-csharp hljs">public static XVisualInfoPtr ChooseVisual(DisplayPtr dpy, int screen, int* attribList)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -255,7 +255,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*</td>
+        <td><a class="xref" href="OpenTK.Graphics.Glx.DisplayPtr.html">DisplayPtr</a></td>
         <td><span class="parametername">dpy</span></td>
         <td></td>
       </tr>
@@ -281,13 +281,13 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.XVisualInfo.html">XVisualInfo</a>*</td>
+        <td><a class="xref" href="OpenTK.Graphics.Glx.XVisualInfoPtr.html">XVisualInfoPtr</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <a id="OpenTK_Graphics_Glx_Glx_ChooseVisual_" data-uid="OpenTK.Graphics.Glx.Glx.ChooseVisual*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_ChooseVisual_OpenTK_Graphics_Glx_Display__System_Int32_System_Int32__" data-uid="OpenTK.Graphics.Glx.Glx.ChooseVisual(OpenTK.Graphics.Glx.Display@,System.Int32,System.Int32@)">ChooseVisual(ref Display, int, ref int)</h4>
+  <h4 id="OpenTK_Graphics_Glx_Glx_ChooseVisual_OpenTK_Graphics_Glx_DisplayPtr_System_Int32_System_Int32__" data-uid="OpenTK.Graphics.Glx.Glx.ChooseVisual(OpenTK.Graphics.Glx.DisplayPtr,System.Int32,System.Int32@)">ChooseVisual(DisplayPtr, int, ref int)</h4>
   <div class="markdown level1 summary"><p><b>[requires: v1.0]</b>
 <b>[entry point: <code>glXChooseVisual</code>]</b>
 <br></p>
@@ -295,7 +295,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static XVisualInfo* ChooseVisual(ref Display dpy, int screen, ref int attribList)</code></pre>
+    <pre><code class="lang-csharp hljs">public static XVisualInfoPtr ChooseVisual(DisplayPtr dpy, int screen, ref int attribList)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -308,7 +308,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a></td>
+        <td><a class="xref" href="OpenTK.Graphics.Glx.DisplayPtr.html">DisplayPtr</a></td>
         <td><span class="parametername">dpy</span></td>
         <td></td>
       </tr>
@@ -334,19 +334,19 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.XVisualInfo.html">XVisualInfo</a>*</td>
+        <td><a class="xref" href="OpenTK.Graphics.Glx.XVisualInfoPtr.html">XVisualInfoPtr</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <a id="OpenTK_Graphics_Glx_Glx_CopyContext_" data-uid="OpenTK.Graphics.Glx.Glx.CopyContext*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_CopyContext_OpenTK_Graphics_Glx_Display__OpenTK_Graphics_Glx_GLXContext_OpenTK_Graphics_Glx_GLXContext_System_UInt64_" data-uid="OpenTK.Graphics.Glx.Glx.CopyContext(OpenTK.Graphics.Glx.Display*,OpenTK.Graphics.Glx.GLXContext,OpenTK.Graphics.Glx.GLXContext,System.UInt64)">CopyContext(Display*, GLXContext, GLXContext, ulong)</h4>
+  <h4 id="OpenTK_Graphics_Glx_Glx_CopyContext_OpenTK_Graphics_Glx_DisplayPtr_OpenTK_Graphics_Glx_GLXContext_OpenTK_Graphics_Glx_GLXContext_System_UInt64_" data-uid="OpenTK.Graphics.Glx.Glx.CopyContext(OpenTK.Graphics.Glx.DisplayPtr,OpenTK.Graphics.Glx.GLXContext,OpenTK.Graphics.Glx.GLXContext,System.UInt64)">CopyContext(DisplayPtr, GLXContext, GLXContext, ulong)</h4>
   <div class="markdown level1 summary"><p><b>[requires: v1.0]</b> <b>[entry point: <code>glXCopyContext</code>]</b><br></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void CopyContext(Display* dpy, GLXContext src, GLXContext dst, ulong mask)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void CopyContext(DisplayPtr dpy, GLXContext src, GLXContext dst, ulong mask)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -359,50 +359,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*</td>
-        <td><span class="parametername">dpy</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.GLXContext.html">GLXContext</a></td>
-        <td><span class="parametername">src</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.GLXContext.html">GLXContext</a></td>
-        <td><span class="parametername">dst</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></td>
-        <td><span class="parametername">mask</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="OpenTK_Graphics_Glx_Glx_CopyContext_" data-uid="OpenTK.Graphics.Glx.Glx.CopyContext*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_CopyContext_OpenTK_Graphics_Glx_Display__OpenTK_Graphics_Glx_GLXContext_OpenTK_Graphics_Glx_GLXContext_System_UInt64_" data-uid="OpenTK.Graphics.Glx.Glx.CopyContext(OpenTK.Graphics.Glx.Display@,OpenTK.Graphics.Glx.GLXContext,OpenTK.Graphics.Glx.GLXContext,System.UInt64)">CopyContext(ref Display, GLXContext, GLXContext, ulong)</h4>
-  <div class="markdown level1 summary"><p><b>[requires: v1.0]</b>
-<b>[entry point: <code>glXCopyContext</code>]</b>
-<br></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void CopyContext(ref Display dpy, GLXContext src, GLXContext dst, ulong mask)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a></td>
+        <td><a class="xref" href="OpenTK.Graphics.Glx.DisplayPtr.html">DisplayPtr</a></td>
         <td><span class="parametername">dpy</span></td>
         <td></td>
       </tr>
@@ -424,13 +381,13 @@
     </tbody>
   </table>
   <a id="OpenTK_Graphics_Glx_Glx_CreateContext_" data-uid="OpenTK.Graphics.Glx.Glx.CreateContext*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_CreateContext_OpenTK_Graphics_Glx_Display__OpenTK_Graphics_Glx_XVisualInfo__OpenTK_Graphics_Glx_GLXContext_System_Boolean_" data-uid="OpenTK.Graphics.Glx.Glx.CreateContext(OpenTK.Graphics.Glx.Display*,OpenTK.Graphics.Glx.XVisualInfo*,OpenTK.Graphics.Glx.GLXContext,System.Boolean)">CreateContext(Display*, XVisualInfo*, GLXContext, bool)</h4>
+  <h4 id="OpenTK_Graphics_Glx_Glx_CreateContext_OpenTK_Graphics_Glx_DisplayPtr_OpenTK_Graphics_Glx_XVisualInfoPtr_OpenTK_Graphics_Glx_GLXContext_System_Boolean_" data-uid="OpenTK.Graphics.Glx.Glx.CreateContext(OpenTK.Graphics.Glx.DisplayPtr,OpenTK.Graphics.Glx.XVisualInfoPtr,OpenTK.Graphics.Glx.GLXContext,System.Boolean)">CreateContext(DisplayPtr, XVisualInfoPtr, GLXContext, bool)</h4>
   <div class="markdown level1 summary"><p><b>[requires: v1.0]</b> <b>[entry point: <code>glXCreateContext</code>]</b><br></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static GLXContext CreateContext(Display* dpy, XVisualInfo* vis, GLXContext shareList, bool direct)</code></pre>
+    <pre><code class="lang-csharp hljs">public static GLXContext CreateContext(DisplayPtr dpy, XVisualInfoPtr vis, GLXContext shareList, bool direct)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -443,70 +400,12 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*</td>
+        <td><a class="xref" href="OpenTK.Graphics.Glx.DisplayPtr.html">DisplayPtr</a></td>
         <td><span class="parametername">dpy</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.XVisualInfo.html">XVisualInfo</a>*</td>
-        <td><span class="parametername">vis</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.GLXContext.html">GLXContext</a></td>
-        <td><span class="parametername">shareList</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
-        <td><span class="parametername">direct</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.GLXContext.html">GLXContext</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="OpenTK_Graphics_Glx_Glx_CreateContext_" data-uid="OpenTK.Graphics.Glx.Glx.CreateContext*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_CreateContext_OpenTK_Graphics_Glx_Display__OpenTK_Graphics_Glx_XVisualInfo__OpenTK_Graphics_Glx_GLXContext_System_Boolean_" data-uid="OpenTK.Graphics.Glx.Glx.CreateContext(OpenTK.Graphics.Glx.Display@,OpenTK.Graphics.Glx.XVisualInfo@,OpenTK.Graphics.Glx.GLXContext,System.Boolean)">CreateContext(ref Display, ref XVisualInfo, GLXContext, bool)</h4>
-  <div class="markdown level1 summary"><p><b>[requires: v1.0]</b>
-<b>[entry point: <code>glXCreateContext</code>]</b>
-<br></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static GLXContext CreateContext(ref Display dpy, ref XVisualInfo vis, GLXContext shareList, bool direct)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a></td>
-        <td><span class="parametername">dpy</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.XVisualInfo.html">XVisualInfo</a></td>
+        <td><a class="xref" href="OpenTK.Graphics.Glx.XVisualInfoPtr.html">XVisualInfoPtr</a></td>
         <td><span class="parametername">vis</span></td>
         <td></td>
       </tr>
@@ -538,13 +437,13 @@
     </tbody>
   </table>
   <a id="OpenTK_Graphics_Glx_Glx_CreateGLXPixmap_" data-uid="OpenTK.Graphics.Glx.Glx.CreateGLXPixmap*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_CreateGLXPixmap_OpenTK_Graphics_Glx_Display__OpenTK_Graphics_Glx_XVisualInfo__OpenTK_Graphics_Glx_Pixmap_" data-uid="OpenTK.Graphics.Glx.Glx.CreateGLXPixmap(OpenTK.Graphics.Glx.Display*,OpenTK.Graphics.Glx.XVisualInfo*,OpenTK.Graphics.Glx.Pixmap)">CreateGLXPixmap(Display*, XVisualInfo*, Pixmap)</h4>
+  <h4 id="OpenTK_Graphics_Glx_Glx_CreateGLXPixmap_OpenTK_Graphics_Glx_DisplayPtr_OpenTK_Graphics_Glx_XVisualInfoPtr_OpenTK_Graphics_Glx_Pixmap_" data-uid="OpenTK.Graphics.Glx.Glx.CreateGLXPixmap(OpenTK.Graphics.Glx.DisplayPtr,OpenTK.Graphics.Glx.XVisualInfoPtr,OpenTK.Graphics.Glx.Pixmap)">CreateGLXPixmap(DisplayPtr, XVisualInfoPtr, Pixmap)</h4>
   <div class="markdown level1 summary"><p><b>[requires: v1.0]</b> <b>[entry point: <code>glXCreateGLXPixmap</code>]</b><br></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static GLXPixmap CreateGLXPixmap(Display* dpy, XVisualInfo* visual, Pixmap pixmap)</code></pre>
+    <pre><code class="lang-csharp hljs">public static GLXPixmap CreateGLXPixmap(DisplayPtr dpy, XVisualInfoPtr visual, Pixmap pixmap)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -557,65 +456,12 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*</td>
+        <td><a class="xref" href="OpenTK.Graphics.Glx.DisplayPtr.html">DisplayPtr</a></td>
         <td><span class="parametername">dpy</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.XVisualInfo.html">XVisualInfo</a>*</td>
-        <td><span class="parametername">visual</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.Pixmap.html">Pixmap</a></td>
-        <td><span class="parametername">pixmap</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.GLXPixmap.html">GLXPixmap</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="OpenTK_Graphics_Glx_Glx_CreateGLXPixmap_" data-uid="OpenTK.Graphics.Glx.Glx.CreateGLXPixmap*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_CreateGLXPixmap_OpenTK_Graphics_Glx_Display__OpenTK_Graphics_Glx_XVisualInfo__OpenTK_Graphics_Glx_Pixmap_" data-uid="OpenTK.Graphics.Glx.Glx.CreateGLXPixmap(OpenTK.Graphics.Glx.Display@,OpenTK.Graphics.Glx.XVisualInfo@,OpenTK.Graphics.Glx.Pixmap)">CreateGLXPixmap(ref Display, ref XVisualInfo, Pixmap)</h4>
-  <div class="markdown level1 summary"><p><b>[requires: v1.0]</b>
-<b>[entry point: <code>glXCreateGLXPixmap</code>]</b>
-<br></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static GLXPixmap CreateGLXPixmap(ref Display dpy, ref XVisualInfo visual, Pixmap pixmap)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a></td>
-        <td><span class="parametername">dpy</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.XVisualInfo.html">XVisualInfo</a></td>
+        <td><a class="xref" href="OpenTK.Graphics.Glx.XVisualInfoPtr.html">XVisualInfoPtr</a></td>
         <td><span class="parametername">visual</span></td>
         <td></td>
       </tr>
@@ -642,13 +488,13 @@
     </tbody>
   </table>
   <a id="OpenTK_Graphics_Glx_Glx_CreateNewContext_" data-uid="OpenTK.Graphics.Glx.Glx.CreateNewContext*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_CreateNewContext_OpenTK_Graphics_Glx_Display__OpenTK_Graphics_Glx_GLXFBConfig_System_Int32_OpenTK_Graphics_Glx_GLXContext_System_Boolean_" data-uid="OpenTK.Graphics.Glx.Glx.CreateNewContext(OpenTK.Graphics.Glx.Display*,OpenTK.Graphics.Glx.GLXFBConfig,System.Int32,OpenTK.Graphics.Glx.GLXContext,System.Boolean)">CreateNewContext(Display*, GLXFBConfig, int, GLXContext, bool)</h4>
+  <h4 id="OpenTK_Graphics_Glx_Glx_CreateNewContext_OpenTK_Graphics_Glx_DisplayPtr_OpenTK_Graphics_Glx_GLXFBConfig_System_Int32_OpenTK_Graphics_Glx_GLXContext_System_Boolean_" data-uid="OpenTK.Graphics.Glx.Glx.CreateNewContext(OpenTK.Graphics.Glx.DisplayPtr,OpenTK.Graphics.Glx.GLXFBConfig,System.Int32,OpenTK.Graphics.Glx.GLXContext,System.Boolean)">CreateNewContext(DisplayPtr, GLXFBConfig, int, GLXContext, bool)</h4>
   <div class="markdown level1 summary"><p><b>[requires: v1.3]</b> <b>[entry point: <code>glXCreateNewContext</code>]</b><br></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static GLXContext CreateNewContext(Display* dpy, GLXFBConfig config, int render_type, GLXContext share_list, bool direct)</code></pre>
+    <pre><code class="lang-csharp hljs">public static GLXContext CreateNewContext(DisplayPtr dpy, GLXFBConfig config, int render_type, GLXContext share_list, bool direct)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -661,70 +507,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*</td>
-        <td><span class="parametername">dpy</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.GLXFBConfig.html">GLXFBConfig</a></td>
-        <td><span class="parametername">config</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
-        <td><span class="parametername">render_type</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.GLXContext.html">GLXContext</a></td>
-        <td><span class="parametername">share_list</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
-        <td><span class="parametername">direct</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.GLXContext.html">GLXContext</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="OpenTK_Graphics_Glx_Glx_CreateNewContext_" data-uid="OpenTK.Graphics.Glx.Glx.CreateNewContext*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_CreateNewContext_OpenTK_Graphics_Glx_Display__OpenTK_Graphics_Glx_GLXFBConfig_System_Int32_OpenTK_Graphics_Glx_GLXContext_System_Boolean_" data-uid="OpenTK.Graphics.Glx.Glx.CreateNewContext(OpenTK.Graphics.Glx.Display@,OpenTK.Graphics.Glx.GLXFBConfig,System.Int32,OpenTK.Graphics.Glx.GLXContext,System.Boolean)">CreateNewContext(ref Display, GLXFBConfig, int, GLXContext, bool)</h4>
-  <div class="markdown level1 summary"><p><b>[requires: v1.3]</b>
-<b>[entry point: <code>glXCreateNewContext</code>]</b>
-<br></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static GLXContext CreateNewContext(ref Display dpy, GLXFBConfig config, int render_type, GLXContext share_list, bool direct)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a></td>
+        <td><a class="xref" href="OpenTK.Graphics.Glx.DisplayPtr.html">DisplayPtr</a></td>
         <td><span class="parametername">dpy</span></td>
         <td></td>
       </tr>
@@ -766,13 +549,13 @@
     </tbody>
   </table>
   <a id="OpenTK_Graphics_Glx_Glx_CreatePbuffer_" data-uid="OpenTK.Graphics.Glx.Glx.CreatePbuffer*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_CreatePbuffer_OpenTK_Graphics_Glx_Display__OpenTK_Graphics_Glx_GLXFBConfig_System_Int32__" data-uid="OpenTK.Graphics.Glx.Glx.CreatePbuffer(OpenTK.Graphics.Glx.Display*,OpenTK.Graphics.Glx.GLXFBConfig,System.Int32*)">CreatePbuffer(Display*, GLXFBConfig, int*)</h4>
+  <h4 id="OpenTK_Graphics_Glx_Glx_CreatePbuffer_OpenTK_Graphics_Glx_DisplayPtr_OpenTK_Graphics_Glx_GLXFBConfig_System_Int32__" data-uid="OpenTK.Graphics.Glx.Glx.CreatePbuffer(OpenTK.Graphics.Glx.DisplayPtr,OpenTK.Graphics.Glx.GLXFBConfig,System.Int32*)">CreatePbuffer(DisplayPtr, GLXFBConfig, int*)</h4>
   <div class="markdown level1 summary"><p><b>[requires: v1.3]</b> <b>[entry point: <code>glXCreatePbuffer</code>]</b><br></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static GLXPbuffer CreatePbuffer(Display* dpy, GLXFBConfig config, int* attrib_list)</code></pre>
+    <pre><code class="lang-csharp hljs">public static GLXPbuffer CreatePbuffer(DisplayPtr dpy, GLXFBConfig config, int* attrib_list)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -785,7 +568,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*</td>
+        <td><a class="xref" href="OpenTK.Graphics.Glx.DisplayPtr.html">DisplayPtr</a></td>
         <td><span class="parametername">dpy</span></td>
         <td></td>
       </tr>
@@ -817,7 +600,7 @@
     </tbody>
   </table>
   <a id="OpenTK_Graphics_Glx_Glx_CreatePbuffer_" data-uid="OpenTK.Graphics.Glx.Glx.CreatePbuffer*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_CreatePbuffer_OpenTK_Graphics_Glx_Display__OpenTK_Graphics_Glx_GLXFBConfig_System_Int32__" data-uid="OpenTK.Graphics.Glx.Glx.CreatePbuffer(OpenTK.Graphics.Glx.Display@,OpenTK.Graphics.Glx.GLXFBConfig,System.Int32@)">CreatePbuffer(ref Display, GLXFBConfig, in int)</h4>
+  <h4 id="OpenTK_Graphics_Glx_Glx_CreatePbuffer_OpenTK_Graphics_Glx_DisplayPtr_OpenTK_Graphics_Glx_GLXFBConfig_System_Int32__" data-uid="OpenTK.Graphics.Glx.Glx.CreatePbuffer(OpenTK.Graphics.Glx.DisplayPtr,OpenTK.Graphics.Glx.GLXFBConfig,System.Int32@)">CreatePbuffer(DisplayPtr, GLXFBConfig, in int)</h4>
   <div class="markdown level1 summary"><p><b>[requires: v1.3]</b>
 <b>[entry point: <code>glXCreatePbuffer</code>]</b>
 <br></p>
@@ -825,7 +608,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static GLXPbuffer CreatePbuffer(ref Display dpy, GLXFBConfig config, in int attrib_list)</code></pre>
+    <pre><code class="lang-csharp hljs">public static GLXPbuffer CreatePbuffer(DisplayPtr dpy, GLXFBConfig config, in int attrib_list)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -838,7 +621,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a></td>
+        <td><a class="xref" href="OpenTK.Graphics.Glx.DisplayPtr.html">DisplayPtr</a></td>
         <td><span class="parametername">dpy</span></td>
         <td></td>
       </tr>
@@ -870,13 +653,13 @@
     </tbody>
   </table>
   <a id="OpenTK_Graphics_Glx_Glx_CreatePixmap_" data-uid="OpenTK.Graphics.Glx.Glx.CreatePixmap*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_CreatePixmap_OpenTK_Graphics_Glx_Display__OpenTK_Graphics_Glx_GLXFBConfig_OpenTK_Graphics_Glx_Pixmap_System_Int32__" data-uid="OpenTK.Graphics.Glx.Glx.CreatePixmap(OpenTK.Graphics.Glx.Display*,OpenTK.Graphics.Glx.GLXFBConfig,OpenTK.Graphics.Glx.Pixmap,System.Int32*)">CreatePixmap(Display*, GLXFBConfig, Pixmap, int*)</h4>
+  <h4 id="OpenTK_Graphics_Glx_Glx_CreatePixmap_OpenTK_Graphics_Glx_DisplayPtr_OpenTK_Graphics_Glx_GLXFBConfig_OpenTK_Graphics_Glx_Pixmap_System_Int32__" data-uid="OpenTK.Graphics.Glx.Glx.CreatePixmap(OpenTK.Graphics.Glx.DisplayPtr,OpenTK.Graphics.Glx.GLXFBConfig,OpenTK.Graphics.Glx.Pixmap,System.Int32*)">CreatePixmap(DisplayPtr, GLXFBConfig, Pixmap, int*)</h4>
   <div class="markdown level1 summary"><p><b>[requires: v1.3]</b> <b>[entry point: <code>glXCreatePixmap</code>]</b><br></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static GLXPixmap CreatePixmap(Display* dpy, GLXFBConfig config, Pixmap pixmap, int* attrib_list)</code></pre>
+    <pre><code class="lang-csharp hljs">public static GLXPixmap CreatePixmap(DisplayPtr dpy, GLXFBConfig config, Pixmap pixmap, int* attrib_list)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -889,7 +672,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*</td>
+        <td><a class="xref" href="OpenTK.Graphics.Glx.DisplayPtr.html">DisplayPtr</a></td>
         <td><span class="parametername">dpy</span></td>
         <td></td>
       </tr>
@@ -926,7 +709,7 @@
     </tbody>
   </table>
   <a id="OpenTK_Graphics_Glx_Glx_CreatePixmap_" data-uid="OpenTK.Graphics.Glx.Glx.CreatePixmap*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_CreatePixmap_OpenTK_Graphics_Glx_Display__OpenTK_Graphics_Glx_GLXFBConfig_OpenTK_Graphics_Glx_Pixmap_System_Int32__" data-uid="OpenTK.Graphics.Glx.Glx.CreatePixmap(OpenTK.Graphics.Glx.Display@,OpenTK.Graphics.Glx.GLXFBConfig,OpenTK.Graphics.Glx.Pixmap,System.Int32@)">CreatePixmap(ref Display, GLXFBConfig, Pixmap, in int)</h4>
+  <h4 id="OpenTK_Graphics_Glx_Glx_CreatePixmap_OpenTK_Graphics_Glx_DisplayPtr_OpenTK_Graphics_Glx_GLXFBConfig_OpenTK_Graphics_Glx_Pixmap_System_Int32__" data-uid="OpenTK.Graphics.Glx.Glx.CreatePixmap(OpenTK.Graphics.Glx.DisplayPtr,OpenTK.Graphics.Glx.GLXFBConfig,OpenTK.Graphics.Glx.Pixmap,System.Int32@)">CreatePixmap(DisplayPtr, GLXFBConfig, Pixmap, in int)</h4>
   <div class="markdown level1 summary"><p><b>[requires: v1.3]</b>
 <b>[entry point: <code>glXCreatePixmap</code>]</b>
 <br></p>
@@ -934,7 +717,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static GLXPixmap CreatePixmap(ref Display dpy, GLXFBConfig config, Pixmap pixmap, in int attrib_list)</code></pre>
+    <pre><code class="lang-csharp hljs">public static GLXPixmap CreatePixmap(DisplayPtr dpy, GLXFBConfig config, Pixmap pixmap, in int attrib_list)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -947,7 +730,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a></td>
+        <td><a class="xref" href="OpenTK.Graphics.Glx.DisplayPtr.html">DisplayPtr</a></td>
         <td><span class="parametername">dpy</span></td>
         <td></td>
       </tr>
@@ -984,13 +767,13 @@
     </tbody>
   </table>
   <a id="OpenTK_Graphics_Glx_Glx_CreateWindow_" data-uid="OpenTK.Graphics.Glx.Glx.CreateWindow*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_CreateWindow_OpenTK_Graphics_Glx_Display__OpenTK_Graphics_Glx_GLXFBConfig_OpenTK_Graphics_Glx_Window_System_Int32__" data-uid="OpenTK.Graphics.Glx.Glx.CreateWindow(OpenTK.Graphics.Glx.Display*,OpenTK.Graphics.Glx.GLXFBConfig,OpenTK.Graphics.Glx.Window,System.Int32*)">CreateWindow(Display*, GLXFBConfig, Window, int*)</h4>
+  <h4 id="OpenTK_Graphics_Glx_Glx_CreateWindow_OpenTK_Graphics_Glx_DisplayPtr_OpenTK_Graphics_Glx_GLXFBConfig_OpenTK_Graphics_Glx_Window_System_Int32__" data-uid="OpenTK.Graphics.Glx.Glx.CreateWindow(OpenTK.Graphics.Glx.DisplayPtr,OpenTK.Graphics.Glx.GLXFBConfig,OpenTK.Graphics.Glx.Window,System.Int32*)">CreateWindow(DisplayPtr, GLXFBConfig, Window, int*)</h4>
   <div class="markdown level1 summary"><p><b>[requires: v1.3]</b> <b>[entry point: <code>glXCreateWindow</code>]</b><br></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static GLXWindow CreateWindow(Display* dpy, GLXFBConfig config, Window win, int* attrib_list)</code></pre>
+    <pre><code class="lang-csharp hljs">public static GLXWindow CreateWindow(DisplayPtr dpy, GLXFBConfig config, Window win, int* attrib_list)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -1003,7 +786,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*</td>
+        <td><a class="xref" href="OpenTK.Graphics.Glx.DisplayPtr.html">DisplayPtr</a></td>
         <td><span class="parametername">dpy</span></td>
         <td></td>
       </tr>
@@ -1040,7 +823,7 @@
     </tbody>
   </table>
   <a id="OpenTK_Graphics_Glx_Glx_CreateWindow_" data-uid="OpenTK.Graphics.Glx.Glx.CreateWindow*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_CreateWindow_OpenTK_Graphics_Glx_Display__OpenTK_Graphics_Glx_GLXFBConfig_OpenTK_Graphics_Glx_Window_System_Int32__" data-uid="OpenTK.Graphics.Glx.Glx.CreateWindow(OpenTK.Graphics.Glx.Display@,OpenTK.Graphics.Glx.GLXFBConfig,OpenTK.Graphics.Glx.Window,System.Int32@)">CreateWindow(ref Display, GLXFBConfig, Window, in int)</h4>
+  <h4 id="OpenTK_Graphics_Glx_Glx_CreateWindow_OpenTK_Graphics_Glx_DisplayPtr_OpenTK_Graphics_Glx_GLXFBConfig_OpenTK_Graphics_Glx_Window_System_Int32__" data-uid="OpenTK.Graphics.Glx.Glx.CreateWindow(OpenTK.Graphics.Glx.DisplayPtr,OpenTK.Graphics.Glx.GLXFBConfig,OpenTK.Graphics.Glx.Window,System.Int32@)">CreateWindow(DisplayPtr, GLXFBConfig, Window, in int)</h4>
   <div class="markdown level1 summary"><p><b>[requires: v1.3]</b>
 <b>[entry point: <code>glXCreateWindow</code>]</b>
 <br></p>
@@ -1048,7 +831,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static GLXWindow CreateWindow(ref Display dpy, GLXFBConfig config, Window win, in int attrib_list)</code></pre>
+    <pre><code class="lang-csharp hljs">public static GLXWindow CreateWindow(DisplayPtr dpy, GLXFBConfig config, Window win, in int attrib_list)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -1061,7 +844,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a></td>
+        <td><a class="xref" href="OpenTK.Graphics.Glx.DisplayPtr.html">DisplayPtr</a></td>
         <td><span class="parametername">dpy</span></td>
         <td></td>
       </tr>
@@ -1098,13 +881,13 @@
     </tbody>
   </table>
   <a id="OpenTK_Graphics_Glx_Glx_DestroyContext_" data-uid="OpenTK.Graphics.Glx.Glx.DestroyContext*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_DestroyContext_OpenTK_Graphics_Glx_Display__OpenTK_Graphics_Glx_GLXContext_" data-uid="OpenTK.Graphics.Glx.Glx.DestroyContext(OpenTK.Graphics.Glx.Display*,OpenTK.Graphics.Glx.GLXContext)">DestroyContext(Display*, GLXContext)</h4>
+  <h4 id="OpenTK_Graphics_Glx_Glx_DestroyContext_OpenTK_Graphics_Glx_DisplayPtr_OpenTK_Graphics_Glx_GLXContext_" data-uid="OpenTK.Graphics.Glx.Glx.DestroyContext(OpenTK.Graphics.Glx.DisplayPtr,OpenTK.Graphics.Glx.GLXContext)">DestroyContext(DisplayPtr, GLXContext)</h4>
   <div class="markdown level1 summary"><p><b>[requires: v1.0]</b> <b>[entry point: <code>glXDestroyContext</code>]</b><br></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void DestroyContext(Display* dpy, GLXContext ctx)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void DestroyContext(DisplayPtr dpy, GLXContext ctx)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -1117,40 +900,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*</td>
-        <td><span class="parametername">dpy</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.GLXContext.html">GLXContext</a></td>
-        <td><span class="parametername">ctx</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="OpenTK_Graphics_Glx_Glx_DestroyContext_" data-uid="OpenTK.Graphics.Glx.Glx.DestroyContext*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_DestroyContext_OpenTK_Graphics_Glx_Display__OpenTK_Graphics_Glx_GLXContext_" data-uid="OpenTK.Graphics.Glx.Glx.DestroyContext(OpenTK.Graphics.Glx.Display@,OpenTK.Graphics.Glx.GLXContext)">DestroyContext(ref Display, GLXContext)</h4>
-  <div class="markdown level1 summary"><p><b>[requires: v1.0]</b>
-<b>[entry point: <code>glXDestroyContext</code>]</b>
-<br></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void DestroyContext(ref Display dpy, GLXContext ctx)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a></td>
+        <td><a class="xref" href="OpenTK.Graphics.Glx.DisplayPtr.html">DisplayPtr</a></td>
         <td><span class="parametername">dpy</span></td>
         <td></td>
       </tr>
@@ -1162,13 +912,13 @@
     </tbody>
   </table>
   <a id="OpenTK_Graphics_Glx_Glx_DestroyGLXPixmap_" data-uid="OpenTK.Graphics.Glx.Glx.DestroyGLXPixmap*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_DestroyGLXPixmap_OpenTK_Graphics_Glx_Display__OpenTK_Graphics_Glx_GLXPixmap_" data-uid="OpenTK.Graphics.Glx.Glx.DestroyGLXPixmap(OpenTK.Graphics.Glx.Display*,OpenTK.Graphics.Glx.GLXPixmap)">DestroyGLXPixmap(Display*, GLXPixmap)</h4>
+  <h4 id="OpenTK_Graphics_Glx_Glx_DestroyGLXPixmap_OpenTK_Graphics_Glx_DisplayPtr_OpenTK_Graphics_Glx_GLXPixmap_" data-uid="OpenTK.Graphics.Glx.Glx.DestroyGLXPixmap(OpenTK.Graphics.Glx.DisplayPtr,OpenTK.Graphics.Glx.GLXPixmap)">DestroyGLXPixmap(DisplayPtr, GLXPixmap)</h4>
   <div class="markdown level1 summary"><p><b>[requires: v1.0]</b> <b>[entry point: <code>glXDestroyGLXPixmap</code>]</b><br></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void DestroyGLXPixmap(Display* dpy, GLXPixmap pixmap)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void DestroyGLXPixmap(DisplayPtr dpy, GLXPixmap pixmap)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -1181,40 +931,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*</td>
-        <td><span class="parametername">dpy</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.GLXPixmap.html">GLXPixmap</a></td>
-        <td><span class="parametername">pixmap</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="OpenTK_Graphics_Glx_Glx_DestroyGLXPixmap_" data-uid="OpenTK.Graphics.Glx.Glx.DestroyGLXPixmap*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_DestroyGLXPixmap_OpenTK_Graphics_Glx_Display__OpenTK_Graphics_Glx_GLXPixmap_" data-uid="OpenTK.Graphics.Glx.Glx.DestroyGLXPixmap(OpenTK.Graphics.Glx.Display@,OpenTK.Graphics.Glx.GLXPixmap)">DestroyGLXPixmap(ref Display, GLXPixmap)</h4>
-  <div class="markdown level1 summary"><p><b>[requires: v1.0]</b>
-<b>[entry point: <code>glXDestroyGLXPixmap</code>]</b>
-<br></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void DestroyGLXPixmap(ref Display dpy, GLXPixmap pixmap)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a></td>
+        <td><a class="xref" href="OpenTK.Graphics.Glx.DisplayPtr.html">DisplayPtr</a></td>
         <td><span class="parametername">dpy</span></td>
         <td></td>
       </tr>
@@ -1226,13 +943,13 @@
     </tbody>
   </table>
   <a id="OpenTK_Graphics_Glx_Glx_DestroyPbuffer_" data-uid="OpenTK.Graphics.Glx.Glx.DestroyPbuffer*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_DestroyPbuffer_OpenTK_Graphics_Glx_Display__OpenTK_Graphics_Glx_GLXPbuffer_" data-uid="OpenTK.Graphics.Glx.Glx.DestroyPbuffer(OpenTK.Graphics.Glx.Display*,OpenTK.Graphics.Glx.GLXPbuffer)">DestroyPbuffer(Display*, GLXPbuffer)</h4>
+  <h4 id="OpenTK_Graphics_Glx_Glx_DestroyPbuffer_OpenTK_Graphics_Glx_DisplayPtr_OpenTK_Graphics_Glx_GLXPbuffer_" data-uid="OpenTK.Graphics.Glx.Glx.DestroyPbuffer(OpenTK.Graphics.Glx.DisplayPtr,OpenTK.Graphics.Glx.GLXPbuffer)">DestroyPbuffer(DisplayPtr, GLXPbuffer)</h4>
   <div class="markdown level1 summary"><p><b>[requires: v1.3]</b> <b>[entry point: <code>glXDestroyPbuffer</code>]</b><br></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void DestroyPbuffer(Display* dpy, GLXPbuffer pbuf)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void DestroyPbuffer(DisplayPtr dpy, GLXPbuffer pbuf)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -1245,40 +962,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*</td>
-        <td><span class="parametername">dpy</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.GLXPbuffer.html">GLXPbuffer</a></td>
-        <td><span class="parametername">pbuf</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="OpenTK_Graphics_Glx_Glx_DestroyPbuffer_" data-uid="OpenTK.Graphics.Glx.Glx.DestroyPbuffer*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_DestroyPbuffer_OpenTK_Graphics_Glx_Display__OpenTK_Graphics_Glx_GLXPbuffer_" data-uid="OpenTK.Graphics.Glx.Glx.DestroyPbuffer(OpenTK.Graphics.Glx.Display@,OpenTK.Graphics.Glx.GLXPbuffer)">DestroyPbuffer(ref Display, GLXPbuffer)</h4>
-  <div class="markdown level1 summary"><p><b>[requires: v1.3]</b>
-<b>[entry point: <code>glXDestroyPbuffer</code>]</b>
-<br></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void DestroyPbuffer(ref Display dpy, GLXPbuffer pbuf)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a></td>
+        <td><a class="xref" href="OpenTK.Graphics.Glx.DisplayPtr.html">DisplayPtr</a></td>
         <td><span class="parametername">dpy</span></td>
         <td></td>
       </tr>
@@ -1290,13 +974,13 @@
     </tbody>
   </table>
   <a id="OpenTK_Graphics_Glx_Glx_DestroyPixmap_" data-uid="OpenTK.Graphics.Glx.Glx.DestroyPixmap*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_DestroyPixmap_OpenTK_Graphics_Glx_Display__OpenTK_Graphics_Glx_GLXPixmap_" data-uid="OpenTK.Graphics.Glx.Glx.DestroyPixmap(OpenTK.Graphics.Glx.Display*,OpenTK.Graphics.Glx.GLXPixmap)">DestroyPixmap(Display*, GLXPixmap)</h4>
+  <h4 id="OpenTK_Graphics_Glx_Glx_DestroyPixmap_OpenTK_Graphics_Glx_DisplayPtr_OpenTK_Graphics_Glx_GLXPixmap_" data-uid="OpenTK.Graphics.Glx.Glx.DestroyPixmap(OpenTK.Graphics.Glx.DisplayPtr,OpenTK.Graphics.Glx.GLXPixmap)">DestroyPixmap(DisplayPtr, GLXPixmap)</h4>
   <div class="markdown level1 summary"><p><b>[requires: v1.3]</b> <b>[entry point: <code>glXDestroyPixmap</code>]</b><br></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void DestroyPixmap(Display* dpy, GLXPixmap pixmap)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void DestroyPixmap(DisplayPtr dpy, GLXPixmap pixmap)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -1309,40 +993,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*</td>
-        <td><span class="parametername">dpy</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.GLXPixmap.html">GLXPixmap</a></td>
-        <td><span class="parametername">pixmap</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="OpenTK_Graphics_Glx_Glx_DestroyPixmap_" data-uid="OpenTK.Graphics.Glx.Glx.DestroyPixmap*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_DestroyPixmap_OpenTK_Graphics_Glx_Display__OpenTK_Graphics_Glx_GLXPixmap_" data-uid="OpenTK.Graphics.Glx.Glx.DestroyPixmap(OpenTK.Graphics.Glx.Display@,OpenTK.Graphics.Glx.GLXPixmap)">DestroyPixmap(ref Display, GLXPixmap)</h4>
-  <div class="markdown level1 summary"><p><b>[requires: v1.3]</b>
-<b>[entry point: <code>glXDestroyPixmap</code>]</b>
-<br></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void DestroyPixmap(ref Display dpy, GLXPixmap pixmap)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a></td>
+        <td><a class="xref" href="OpenTK.Graphics.Glx.DisplayPtr.html">DisplayPtr</a></td>
         <td><span class="parametername">dpy</span></td>
         <td></td>
       </tr>
@@ -1354,13 +1005,13 @@
     </tbody>
   </table>
   <a id="OpenTK_Graphics_Glx_Glx_DestroyWindow_" data-uid="OpenTK.Graphics.Glx.Glx.DestroyWindow*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_DestroyWindow_OpenTK_Graphics_Glx_Display__OpenTK_Graphics_Glx_GLXWindow_" data-uid="OpenTK.Graphics.Glx.Glx.DestroyWindow(OpenTK.Graphics.Glx.Display*,OpenTK.Graphics.Glx.GLXWindow)">DestroyWindow(Display*, GLXWindow)</h4>
+  <h4 id="OpenTK_Graphics_Glx_Glx_DestroyWindow_OpenTK_Graphics_Glx_DisplayPtr_OpenTK_Graphics_Glx_GLXWindow_" data-uid="OpenTK.Graphics.Glx.Glx.DestroyWindow(OpenTK.Graphics.Glx.DisplayPtr,OpenTK.Graphics.Glx.GLXWindow)">DestroyWindow(DisplayPtr, GLXWindow)</h4>
   <div class="markdown level1 summary"><p><b>[requires: v1.3]</b> <b>[entry point: <code>glXDestroyWindow</code>]</b><br></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void DestroyWindow(Display* dpy, GLXWindow win)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void DestroyWindow(DisplayPtr dpy, GLXWindow win)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -1373,40 +1024,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*</td>
-        <td><span class="parametername">dpy</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.GLXWindow.html">GLXWindow</a></td>
-        <td><span class="parametername">win</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="OpenTK_Graphics_Glx_Glx_DestroyWindow_" data-uid="OpenTK.Graphics.Glx.Glx.DestroyWindow*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_DestroyWindow_OpenTK_Graphics_Glx_Display__OpenTK_Graphics_Glx_GLXWindow_" data-uid="OpenTK.Graphics.Glx.Glx.DestroyWindow(OpenTK.Graphics.Glx.Display@,OpenTK.Graphics.Glx.GLXWindow)">DestroyWindow(ref Display, GLXWindow)</h4>
-  <div class="markdown level1 summary"><p><b>[requires: v1.3]</b>
-<b>[entry point: <code>glXDestroyWindow</code>]</b>
-<br></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void DestroyWindow(ref Display dpy, GLXWindow win)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a></td>
+        <td><a class="xref" href="OpenTK.Graphics.Glx.DisplayPtr.html">DisplayPtr</a></td>
         <td><span class="parametername">dpy</span></td>
         <td></td>
       </tr>
@@ -1418,13 +1036,12 @@
     </tbody>
   </table>
   <a id="OpenTK_Graphics_Glx_Glx_GetClientString_" data-uid="OpenTK.Graphics.Glx.Glx.GetClientString*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_GetClientString_OpenTK_Graphics_Glx_Display__System_Int32_" data-uid="OpenTK.Graphics.Glx.Glx.GetClientString(OpenTK.Graphics.Glx.Display*,System.Int32)">GetClientString(Display*, int)</h4>
-  <div class="markdown level1 summary"><p><b>[requires: v1.1]</b> <b>[entry point: <code>glXGetClientString</code>]</b><br></p>
-</div>
+  <h4 id="OpenTK_Graphics_Glx_Glx_GetClientString_OpenTK_Graphics_Glx_DisplayPtr_System_Int32_" data-uid="OpenTK.Graphics.Glx.Glx.GetClientString(OpenTK.Graphics.Glx.DisplayPtr,System.Int32)">GetClientString(DisplayPtr, int)</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static byte* GetClientString(Display* dpy, int name)</code></pre>
+    <pre><code class="lang-csharp hljs">public static string? GetClientString(DisplayPtr dpy, int name)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -1437,55 +1054,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*</td>
-        <td><span class="parametername">dpy</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
-        <td><span class="parametername">name</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>*</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="OpenTK_Graphics_Glx_Glx_GetClientString_" data-uid="OpenTK.Graphics.Glx.Glx.GetClientString*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_GetClientString_OpenTK_Graphics_Glx_Display__System_Int32_" data-uid="OpenTK.Graphics.Glx.Glx.GetClientString(OpenTK.Graphics.Glx.Display@,System.Int32)">GetClientString(ref Display, int)</h4>
-  <div class="markdown level1 summary"><p><b>[requires: v1.1]</b>
-<b>[entry point: <code>glXGetClientString</code>]</b>
-<br></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string? GetClientString(ref Display dpy, int name)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a></td>
+        <td><a class="xref" href="OpenTK.Graphics.Glx.DisplayPtr.html">DisplayPtr</a></td>
         <td><span class="parametername">dpy</span></td>
         <td></td>
       </tr>
@@ -1511,14 +1080,14 @@
       </tr>
     </tbody>
   </table>
-  <a id="OpenTK_Graphics_Glx_Glx_GetConfig_" data-uid="OpenTK.Graphics.Glx.Glx.GetConfig*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_GetConfig_OpenTK_Graphics_Glx_Display__OpenTK_Graphics_Glx_XVisualInfo__System_Int32_System_Int32__" data-uid="OpenTK.Graphics.Glx.Glx.GetConfig(OpenTK.Graphics.Glx.Display*,OpenTK.Graphics.Glx.XVisualInfo*,System.Int32,System.Int32*)">GetConfig(Display*, XVisualInfo*, int, int*)</h4>
-  <div class="markdown level1 summary"><p><b>[requires: v1.0]</b> <b>[entry point: <code>glXGetConfig</code>]</b><br></p>
+  <a id="OpenTK_Graphics_Glx_Glx_GetClientString__" data-uid="OpenTK.Graphics.Glx.Glx.GetClientString_*"></a>
+  <h4 id="OpenTK_Graphics_Glx_Glx_GetClientString__OpenTK_Graphics_Glx_DisplayPtr_System_Int32_" data-uid="OpenTK.Graphics.Glx.Glx.GetClientString_(OpenTK.Graphics.Glx.DisplayPtr,System.Int32)">GetClientString_(DisplayPtr, int)</h4>
+  <div class="markdown level1 summary"><p><b>[requires: v1.1]</b> <b>[entry point: <code>glXGetClientString</code>]</b><br></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int GetConfig(Display* dpy, XVisualInfo* visual, int attrib, int* value)</code></pre>
+    <pre><code class="lang-csharp hljs">public static byte* GetClientString_(DisplayPtr dpy, int name)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -1531,12 +1100,58 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*</td>
+        <td><a class="xref" href="OpenTK.Graphics.Glx.DisplayPtr.html">DisplayPtr</a></td>
         <td><span class="parametername">dpy</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.XVisualInfo.html">XVisualInfo</a>*</td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>*</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Graphics_Glx_Glx_GetConfig_" data-uid="OpenTK.Graphics.Glx.Glx.GetConfig*"></a>
+  <h4 id="OpenTK_Graphics_Glx_Glx_GetConfig_OpenTK_Graphics_Glx_DisplayPtr_OpenTK_Graphics_Glx_XVisualInfoPtr_System_Int32_System_Int32__" data-uid="OpenTK.Graphics.Glx.Glx.GetConfig(OpenTK.Graphics.Glx.DisplayPtr,OpenTK.Graphics.Glx.XVisualInfoPtr,System.Int32,System.Int32*)">GetConfig(DisplayPtr, XVisualInfoPtr, int, int*)</h4>
+  <div class="markdown level1 summary"><p><b>[requires: v1.0]</b> <b>[entry point: <code>glXGetConfig</code>]</b><br></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GetConfig(DisplayPtr dpy, XVisualInfoPtr visual, int attrib, int* value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Graphics.Glx.DisplayPtr.html">DisplayPtr</a></td>
+        <td><span class="parametername">dpy</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Graphics.Glx.XVisualInfoPtr.html">XVisualInfoPtr</a></td>
         <td><span class="parametername">visual</span></td>
         <td></td>
       </tr>
@@ -1568,7 +1183,7 @@
     </tbody>
   </table>
   <a id="OpenTK_Graphics_Glx_Glx_GetConfig_" data-uid="OpenTK.Graphics.Glx.Glx.GetConfig*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_GetConfig_OpenTK_Graphics_Glx_Display__OpenTK_Graphics_Glx_XVisualInfo__System_Int32_System_Int32__" data-uid="OpenTK.Graphics.Glx.Glx.GetConfig(OpenTK.Graphics.Glx.Display@,OpenTK.Graphics.Glx.XVisualInfo@,System.Int32,System.Int32@)">GetConfig(ref Display, ref XVisualInfo, int, ref int)</h4>
+  <h4 id="OpenTK_Graphics_Glx_Glx_GetConfig_OpenTK_Graphics_Glx_DisplayPtr_OpenTK_Graphics_Glx_XVisualInfoPtr_System_Int32_System_Int32__" data-uid="OpenTK.Graphics.Glx.Glx.GetConfig(OpenTK.Graphics.Glx.DisplayPtr,OpenTK.Graphics.Glx.XVisualInfoPtr,System.Int32,System.Int32@)">GetConfig(DisplayPtr, XVisualInfoPtr, int, ref int)</h4>
   <div class="markdown level1 summary"><p><b>[requires: v1.0]</b>
 <b>[entry point: <code>glXGetConfig</code>]</b>
 <br></p>
@@ -1576,7 +1191,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int GetConfig(ref Display dpy, ref XVisualInfo visual, int attrib, ref int value)</code></pre>
+    <pre><code class="lang-csharp hljs">public static int GetConfig(DisplayPtr dpy, XVisualInfoPtr visual, int attrib, ref int value)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -1589,12 +1204,12 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a></td>
+        <td><a class="xref" href="OpenTK.Graphics.Glx.DisplayPtr.html">DisplayPtr</a></td>
         <td><span class="parametername">dpy</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.XVisualInfo.html">XVisualInfo</a></td>
+        <td><a class="xref" href="OpenTK.Graphics.Glx.XVisualInfoPtr.html">XVisualInfoPtr</a></td>
         <td><span class="parametername">visual</span></td>
         <td></td>
       </tr>
@@ -1656,7 +1271,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Display* GetCurrentDisplay()</code></pre>
+    <pre><code class="lang-csharp hljs">public static DisplayPtr GetCurrentDisplay()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-condensed">
@@ -1668,7 +1283,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*</td>
+        <td><a class="xref" href="OpenTK.Graphics.Glx.DisplayPtr.html">DisplayPtr</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -1722,7 +1337,7 @@
     </tbody>
   </table>
   <a id="OpenTK_Graphics_Glx_Glx_GetFBConfig_" data-uid="OpenTK.Graphics.Glx.Glx.GetFBConfig*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_GetFBConfig_OpenTK_Graphics_Glx_Display__System_Int32_System_Int32__" data-uid="OpenTK.Graphics.Glx.Glx.GetFBConfig(OpenTK.Graphics.Glx.Display@,System.Int32,System.Int32@)">GetFBConfig(ref Display, int, ref int)</h4>
+  <h4 id="OpenTK_Graphics_Glx_Glx_GetFBConfig_OpenTK_Graphics_Glx_DisplayPtr_System_Int32_System_Int32__" data-uid="OpenTK.Graphics.Glx.Glx.GetFBConfig(OpenTK.Graphics.Glx.DisplayPtr,System.Int32,System.Int32@)">GetFBConfig(DisplayPtr, int, ref int)</h4>
   <div class="markdown level1 summary"><p><b>[requires: v1.3]</b>
 <b>[entry point: <code>glXGetFBConfigs</code>]</b>
 <br></p>
@@ -1730,7 +1345,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static GLXFBConfig* GetFBConfig(ref Display dpy, int screen, ref int nelements)</code></pre>
+    <pre><code class="lang-csharp hljs">public static GLXFBConfig* GetFBConfig(DisplayPtr dpy, int screen, ref int nelements)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -1743,7 +1358,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a></td>
+        <td><a class="xref" href="OpenTK.Graphics.Glx.DisplayPtr.html">DisplayPtr</a></td>
         <td><span class="parametername">dpy</span></td>
         <td></td>
       </tr>
@@ -1775,13 +1390,13 @@
     </tbody>
   </table>
   <a id="OpenTK_Graphics_Glx_Glx_GetFBConfigAttrib_" data-uid="OpenTK.Graphics.Glx.Glx.GetFBConfigAttrib*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_GetFBConfigAttrib_OpenTK_Graphics_Glx_Display__OpenTK_Graphics_Glx_GLXFBConfig_System_Int32_System_Int32__" data-uid="OpenTK.Graphics.Glx.Glx.GetFBConfigAttrib(OpenTK.Graphics.Glx.Display*,OpenTK.Graphics.Glx.GLXFBConfig,System.Int32,System.Int32*)">GetFBConfigAttrib(Display*, GLXFBConfig, int, int*)</h4>
+  <h4 id="OpenTK_Graphics_Glx_Glx_GetFBConfigAttrib_OpenTK_Graphics_Glx_DisplayPtr_OpenTK_Graphics_Glx_GLXFBConfig_System_Int32_System_Int32__" data-uid="OpenTK.Graphics.Glx.Glx.GetFBConfigAttrib(OpenTK.Graphics.Glx.DisplayPtr,OpenTK.Graphics.Glx.GLXFBConfig,System.Int32,System.Int32*)">GetFBConfigAttrib(DisplayPtr, GLXFBConfig, int, int*)</h4>
   <div class="markdown level1 summary"><p><b>[requires: v1.3]</b> <b>[entry point: <code>glXGetFBConfigAttrib</code>]</b><br></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int GetFBConfigAttrib(Display* dpy, GLXFBConfig config, int attribute, int* value)</code></pre>
+    <pre><code class="lang-csharp hljs">public static int GetFBConfigAttrib(DisplayPtr dpy, GLXFBConfig config, int attribute, int* value)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -1794,7 +1409,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*</td>
+        <td><a class="xref" href="OpenTK.Graphics.Glx.DisplayPtr.html">DisplayPtr</a></td>
         <td><span class="parametername">dpy</span></td>
         <td></td>
       </tr>
@@ -1831,7 +1446,7 @@
     </tbody>
   </table>
   <a id="OpenTK_Graphics_Glx_Glx_GetFBConfigAttrib_" data-uid="OpenTK.Graphics.Glx.Glx.GetFBConfigAttrib*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_GetFBConfigAttrib_OpenTK_Graphics_Glx_Display__OpenTK_Graphics_Glx_GLXFBConfig_System_Int32_System_Int32__" data-uid="OpenTK.Graphics.Glx.Glx.GetFBConfigAttrib(OpenTK.Graphics.Glx.Display@,OpenTK.Graphics.Glx.GLXFBConfig,System.Int32,System.Int32@)">GetFBConfigAttrib(ref Display, GLXFBConfig, int, ref int)</h4>
+  <h4 id="OpenTK_Graphics_Glx_Glx_GetFBConfigAttrib_OpenTK_Graphics_Glx_DisplayPtr_OpenTK_Graphics_Glx_GLXFBConfig_System_Int32_System_Int32__" data-uid="OpenTK.Graphics.Glx.Glx.GetFBConfigAttrib(OpenTK.Graphics.Glx.DisplayPtr,OpenTK.Graphics.Glx.GLXFBConfig,System.Int32,System.Int32@)">GetFBConfigAttrib(DisplayPtr, GLXFBConfig, int, ref int)</h4>
   <div class="markdown level1 summary"><p><b>[requires: v1.3]</b>
 <b>[entry point: <code>glXGetFBConfigAttrib</code>]</b>
 <br></p>
@@ -1839,7 +1454,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int GetFBConfigAttrib(ref Display dpy, GLXFBConfig config, int attribute, ref int value)</code></pre>
+    <pre><code class="lang-csharp hljs">public static int GetFBConfigAttrib(DisplayPtr dpy, GLXFBConfig config, int attribute, ref int value)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -1852,7 +1467,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a></td>
+        <td><a class="xref" href="OpenTK.Graphics.Glx.DisplayPtr.html">DisplayPtr</a></td>
         <td><span class="parametername">dpy</span></td>
         <td></td>
       </tr>
@@ -1889,13 +1504,13 @@
     </tbody>
   </table>
   <a id="OpenTK_Graphics_Glx_Glx_GetFBConfigs_" data-uid="OpenTK.Graphics.Glx.Glx.GetFBConfigs*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_GetFBConfigs_OpenTK_Graphics_Glx_Display__System_Int32_System_Int32__" data-uid="OpenTK.Graphics.Glx.Glx.GetFBConfigs(OpenTK.Graphics.Glx.Display*,System.Int32,System.Int32*)">GetFBConfigs(Display*, int, int*)</h4>
+  <h4 id="OpenTK_Graphics_Glx_Glx_GetFBConfigs_OpenTK_Graphics_Glx_DisplayPtr_System_Int32_System_Int32__" data-uid="OpenTK.Graphics.Glx.Glx.GetFBConfigs(OpenTK.Graphics.Glx.DisplayPtr,System.Int32,System.Int32*)">GetFBConfigs(DisplayPtr, int, int*)</h4>
   <div class="markdown level1 summary"><p><b>[requires: v1.3]</b> <b>[entry point: <code>glXGetFBConfigs</code>]</b><br></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static GLXFBConfig* GetFBConfigs(Display* dpy, int screen, int* nelements)</code></pre>
+    <pre><code class="lang-csharp hljs">public static GLXFBConfig* GetFBConfigs(DisplayPtr dpy, int screen, int* nelements)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -1908,7 +1523,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*</td>
+        <td><a class="xref" href="OpenTK.Graphics.Glx.DisplayPtr.html">DisplayPtr</a></td>
         <td><span class="parametername">dpy</span></td>
         <td></td>
       </tr>
@@ -2024,13 +1639,13 @@
     </tbody>
   </table>
   <a id="OpenTK_Graphics_Glx_Glx_GetSelectedEvent_" data-uid="OpenTK.Graphics.Glx.Glx.GetSelectedEvent*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_GetSelectedEvent_OpenTK_Graphics_Glx_Display__OpenTK_Graphics_Glx_GLXDrawable_System_UInt64__" data-uid="OpenTK.Graphics.Glx.Glx.GetSelectedEvent(OpenTK.Graphics.Glx.Display*,OpenTK.Graphics.Glx.GLXDrawable,System.UInt64*)">GetSelectedEvent(Display*, GLXDrawable, ulong*)</h4>
+  <h4 id="OpenTK_Graphics_Glx_Glx_GetSelectedEvent_OpenTK_Graphics_Glx_DisplayPtr_OpenTK_Graphics_Glx_GLXDrawable_System_UInt64__" data-uid="OpenTK.Graphics.Glx.Glx.GetSelectedEvent(OpenTK.Graphics.Glx.DisplayPtr,OpenTK.Graphics.Glx.GLXDrawable,System.UInt64*)">GetSelectedEvent(DisplayPtr, GLXDrawable, ulong*)</h4>
   <div class="markdown level1 summary"><p><b>[requires: v1.3]</b> <b>[entry point: <code>glXGetSelectedEvent</code>]</b><br></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void GetSelectedEvent(Display* dpy, GLXDrawable draw, ulong* event_mask)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void GetSelectedEvent(DisplayPtr dpy, GLXDrawable draw, ulong* event_mask)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -2043,7 +1658,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*</td>
+        <td><a class="xref" href="OpenTK.Graphics.Glx.DisplayPtr.html">DisplayPtr</a></td>
         <td><span class="parametername">dpy</span></td>
         <td></td>
       </tr>
@@ -2060,7 +1675,7 @@
     </tbody>
   </table>
   <a id="OpenTK_Graphics_Glx_Glx_GetSelectedEvent_" data-uid="OpenTK.Graphics.Glx.Glx.GetSelectedEvent*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_GetSelectedEvent_OpenTK_Graphics_Glx_Display__OpenTK_Graphics_Glx_GLXDrawable_System_UInt64__" data-uid="OpenTK.Graphics.Glx.Glx.GetSelectedEvent(OpenTK.Graphics.Glx.Display@,OpenTK.Graphics.Glx.GLXDrawable,System.UInt64@)">GetSelectedEvent(ref Display, GLXDrawable, ref ulong)</h4>
+  <h4 id="OpenTK_Graphics_Glx_Glx_GetSelectedEvent_OpenTK_Graphics_Glx_DisplayPtr_OpenTK_Graphics_Glx_GLXDrawable_System_UInt64__" data-uid="OpenTK.Graphics.Glx.Glx.GetSelectedEvent(OpenTK.Graphics.Glx.DisplayPtr,OpenTK.Graphics.Glx.GLXDrawable,System.UInt64@)">GetSelectedEvent(DisplayPtr, GLXDrawable, ref ulong)</h4>
   <div class="markdown level1 summary"><p><b>[requires: v1.3]</b>
 <b>[entry point: <code>glXGetSelectedEvent</code>]</b>
 <br></p>
@@ -2068,7 +1683,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void GetSelectedEvent(ref Display dpy, GLXDrawable draw, ref ulong event_mask)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void GetSelectedEvent(DisplayPtr dpy, GLXDrawable draw, ref ulong event_mask)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -2081,7 +1696,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a></td>
+        <td><a class="xref" href="OpenTK.Graphics.Glx.DisplayPtr.html">DisplayPtr</a></td>
         <td><span class="parametername">dpy</span></td>
         <td></td>
       </tr>
@@ -2098,13 +1713,13 @@
     </tbody>
   </table>
   <a id="OpenTK_Graphics_Glx_Glx_GetVisualFromFBConfig_" data-uid="OpenTK.Graphics.Glx.Glx.GetVisualFromFBConfig*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_GetVisualFromFBConfig_OpenTK_Graphics_Glx_Display__OpenTK_Graphics_Glx_GLXFBConfig_" data-uid="OpenTK.Graphics.Glx.Glx.GetVisualFromFBConfig(OpenTK.Graphics.Glx.Display*,OpenTK.Graphics.Glx.GLXFBConfig)">GetVisualFromFBConfig(Display*, GLXFBConfig)</h4>
+  <h4 id="OpenTK_Graphics_Glx_Glx_GetVisualFromFBConfig_OpenTK_Graphics_Glx_DisplayPtr_OpenTK_Graphics_Glx_GLXFBConfig_" data-uid="OpenTK.Graphics.Glx.Glx.GetVisualFromFBConfig(OpenTK.Graphics.Glx.DisplayPtr,OpenTK.Graphics.Glx.GLXFBConfig)">GetVisualFromFBConfig(DisplayPtr, GLXFBConfig)</h4>
   <div class="markdown level1 summary"><p><b>[requires: v1.3]</b> <b>[entry point: <code>glXGetVisualFromFBConfig</code>]</b><br></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static XVisualInfo* GetVisualFromFBConfig(Display* dpy, GLXFBConfig config)</code></pre>
+    <pre><code class="lang-csharp hljs">public static XVisualInfoPtr GetVisualFromFBConfig(DisplayPtr dpy, GLXFBConfig config)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -2117,7 +1732,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*</td>
+        <td><a class="xref" href="OpenTK.Graphics.Glx.DisplayPtr.html">DisplayPtr</a></td>
         <td><span class="parametername">dpy</span></td>
         <td></td>
       </tr>
@@ -2138,67 +1753,19 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.XVisualInfo.html">XVisualInfo</a>*</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="OpenTK_Graphics_Glx_Glx_GetVisualFromFBConfig_" data-uid="OpenTK.Graphics.Glx.Glx.GetVisualFromFBConfig*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_GetVisualFromFBConfig_OpenTK_Graphics_Glx_Display__OpenTK_Graphics_Glx_GLXFBConfig_" data-uid="OpenTK.Graphics.Glx.Glx.GetVisualFromFBConfig(OpenTK.Graphics.Glx.Display@,OpenTK.Graphics.Glx.GLXFBConfig)">GetVisualFromFBConfig(ref Display, GLXFBConfig)</h4>
-  <div class="markdown level1 summary"><p><b>[requires: v1.3]</b>
-<b>[entry point: <code>glXGetVisualFromFBConfig</code>]</b>
-<br></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static XVisualInfo* GetVisualFromFBConfig(ref Display dpy, GLXFBConfig config)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a></td>
-        <td><span class="parametername">dpy</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.GLXFBConfig.html">GLXFBConfig</a></td>
-        <td><span class="parametername">config</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.XVisualInfo.html">XVisualInfo</a>*</td>
+        <td><a class="xref" href="OpenTK.Graphics.Glx.XVisualInfoPtr.html">XVisualInfoPtr</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <a id="OpenTK_Graphics_Glx_Glx_IsDirect_" data-uid="OpenTK.Graphics.Glx.Glx.IsDirect*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_IsDirect_OpenTK_Graphics_Glx_Display__OpenTK_Graphics_Glx_GLXContext_" data-uid="OpenTK.Graphics.Glx.Glx.IsDirect(OpenTK.Graphics.Glx.Display*,OpenTK.Graphics.Glx.GLXContext)">IsDirect(Display*, GLXContext)</h4>
+  <h4 id="OpenTK_Graphics_Glx_Glx_IsDirect_OpenTK_Graphics_Glx_DisplayPtr_OpenTK_Graphics_Glx_GLXContext_" data-uid="OpenTK.Graphics.Glx.Glx.IsDirect(OpenTK.Graphics.Glx.DisplayPtr,OpenTK.Graphics.Glx.GLXContext)">IsDirect(DisplayPtr, GLXContext)</h4>
   <div class="markdown level1 summary"><p><b>[requires: v1.0]</b> <b>[entry point: <code>glXIsDirect</code>]</b><br></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool IsDirect(Display* dpy, GLXContext ctx)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool IsDirect(DisplayPtr dpy, GLXContext ctx)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -2211,55 +1778,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*</td>
-        <td><span class="parametername">dpy</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.GLXContext.html">GLXContext</a></td>
-        <td><span class="parametername">ctx</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="OpenTK_Graphics_Glx_Glx_IsDirect_" data-uid="OpenTK.Graphics.Glx.Glx.IsDirect*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_IsDirect_OpenTK_Graphics_Glx_Display__OpenTK_Graphics_Glx_GLXContext_" data-uid="OpenTK.Graphics.Glx.Glx.IsDirect(OpenTK.Graphics.Glx.Display@,OpenTK.Graphics.Glx.GLXContext)">IsDirect(ref Display, GLXContext)</h4>
-  <div class="markdown level1 summary"><p><b>[requires: v1.0]</b>
-<b>[entry point: <code>glXIsDirect</code>]</b>
-<br></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool IsDirect(ref Display dpy, GLXContext ctx)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a></td>
+        <td><a class="xref" href="OpenTK.Graphics.Glx.DisplayPtr.html">DisplayPtr</a></td>
         <td><span class="parametername">dpy</span></td>
         <td></td>
       </tr>
@@ -2286,13 +1805,13 @@
     </tbody>
   </table>
   <a id="OpenTK_Graphics_Glx_Glx_MakeContextCurrent_" data-uid="OpenTK.Graphics.Glx.Glx.MakeContextCurrent*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_MakeContextCurrent_OpenTK_Graphics_Glx_Display__OpenTK_Graphics_Glx_GLXDrawable_OpenTK_Graphics_Glx_GLXDrawable_OpenTK_Graphics_Glx_GLXContext_" data-uid="OpenTK.Graphics.Glx.Glx.MakeContextCurrent(OpenTK.Graphics.Glx.Display*,OpenTK.Graphics.Glx.GLXDrawable,OpenTK.Graphics.Glx.GLXDrawable,OpenTK.Graphics.Glx.GLXContext)">MakeContextCurrent(Display*, GLXDrawable, GLXDrawable, GLXContext)</h4>
+  <h4 id="OpenTK_Graphics_Glx_Glx_MakeContextCurrent_OpenTK_Graphics_Glx_DisplayPtr_OpenTK_Graphics_Glx_GLXDrawable_OpenTK_Graphics_Glx_GLXDrawable_OpenTK_Graphics_Glx_GLXContext_" data-uid="OpenTK.Graphics.Glx.Glx.MakeContextCurrent(OpenTK.Graphics.Glx.DisplayPtr,OpenTK.Graphics.Glx.GLXDrawable,OpenTK.Graphics.Glx.GLXDrawable,OpenTK.Graphics.Glx.GLXContext)">MakeContextCurrent(DisplayPtr, GLXDrawable, GLXDrawable, GLXContext)</h4>
   <div class="markdown level1 summary"><p><b>[requires: v1.3]</b> <b>[entry point: <code>glXMakeContextCurrent</code>]</b><br></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool MakeContextCurrent(Display* dpy, GLXDrawable draw, GLXDrawable read, GLXContext ctx)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool MakeContextCurrent(DisplayPtr dpy, GLXDrawable draw, GLXDrawable read, GLXContext ctx)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -2305,65 +1824,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*</td>
-        <td><span class="parametername">dpy</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.GLXDrawable.html">GLXDrawable</a></td>
-        <td><span class="parametername">draw</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.GLXDrawable.html">GLXDrawable</a></td>
-        <td><span class="parametername">read</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.GLXContext.html">GLXContext</a></td>
-        <td><span class="parametername">ctx</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="OpenTK_Graphics_Glx_Glx_MakeContextCurrent_" data-uid="OpenTK.Graphics.Glx.Glx.MakeContextCurrent*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_MakeContextCurrent_OpenTK_Graphics_Glx_Display__OpenTK_Graphics_Glx_GLXDrawable_OpenTK_Graphics_Glx_GLXDrawable_OpenTK_Graphics_Glx_GLXContext_" data-uid="OpenTK.Graphics.Glx.Glx.MakeContextCurrent(OpenTK.Graphics.Glx.Display@,OpenTK.Graphics.Glx.GLXDrawable,OpenTK.Graphics.Glx.GLXDrawable,OpenTK.Graphics.Glx.GLXContext)">MakeContextCurrent(ref Display, GLXDrawable, GLXDrawable, GLXContext)</h4>
-  <div class="markdown level1 summary"><p><b>[requires: v1.3]</b>
-<b>[entry point: <code>glXMakeContextCurrent</code>]</b>
-<br></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool MakeContextCurrent(ref Display dpy, GLXDrawable draw, GLXDrawable read, GLXContext ctx)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a></td>
+        <td><a class="xref" href="OpenTK.Graphics.Glx.DisplayPtr.html">DisplayPtr</a></td>
         <td><span class="parametername">dpy</span></td>
         <td></td>
       </tr>
@@ -2400,13 +1861,13 @@
     </tbody>
   </table>
   <a id="OpenTK_Graphics_Glx_Glx_MakeCurrent_" data-uid="OpenTK.Graphics.Glx.Glx.MakeCurrent*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_MakeCurrent_OpenTK_Graphics_Glx_Display__OpenTK_Graphics_Glx_GLXDrawable_OpenTK_Graphics_Glx_GLXContext_" data-uid="OpenTK.Graphics.Glx.Glx.MakeCurrent(OpenTK.Graphics.Glx.Display*,OpenTK.Graphics.Glx.GLXDrawable,OpenTK.Graphics.Glx.GLXContext)">MakeCurrent(Display*, GLXDrawable, GLXContext)</h4>
+  <h4 id="OpenTK_Graphics_Glx_Glx_MakeCurrent_OpenTK_Graphics_Glx_DisplayPtr_OpenTK_Graphics_Glx_GLXDrawable_OpenTK_Graphics_Glx_GLXContext_" data-uid="OpenTK.Graphics.Glx.Glx.MakeCurrent(OpenTK.Graphics.Glx.DisplayPtr,OpenTK.Graphics.Glx.GLXDrawable,OpenTK.Graphics.Glx.GLXContext)">MakeCurrent(DisplayPtr, GLXDrawable, GLXContext)</h4>
   <div class="markdown level1 summary"><p><b>[requires: v1.0]</b> <b>[entry point: <code>glXMakeCurrent</code>]</b><br></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool MakeCurrent(Display* dpy, GLXDrawable drawable, GLXContext ctx)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool MakeCurrent(DisplayPtr dpy, GLXDrawable drawable, GLXContext ctx)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -2419,60 +1880,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*</td>
-        <td><span class="parametername">dpy</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.GLXDrawable.html">GLXDrawable</a></td>
-        <td><span class="parametername">drawable</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.GLXContext.html">GLXContext</a></td>
-        <td><span class="parametername">ctx</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="OpenTK_Graphics_Glx_Glx_MakeCurrent_" data-uid="OpenTK.Graphics.Glx.Glx.MakeCurrent*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_MakeCurrent_OpenTK_Graphics_Glx_Display__OpenTK_Graphics_Glx_GLXDrawable_OpenTK_Graphics_Glx_GLXContext_" data-uid="OpenTK.Graphics.Glx.Glx.MakeCurrent(OpenTK.Graphics.Glx.Display@,OpenTK.Graphics.Glx.GLXDrawable,OpenTK.Graphics.Glx.GLXContext)">MakeCurrent(ref Display, GLXDrawable, GLXContext)</h4>
-  <div class="markdown level1 summary"><p><b>[requires: v1.0]</b>
-<b>[entry point: <code>glXMakeCurrent</code>]</b>
-<br></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool MakeCurrent(ref Display dpy, GLXDrawable drawable, GLXContext ctx)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a></td>
+        <td><a class="xref" href="OpenTK.Graphics.Glx.DisplayPtr.html">DisplayPtr</a></td>
         <td><span class="parametername">dpy</span></td>
         <td></td>
       </tr>
@@ -2504,13 +1912,13 @@
     </tbody>
   </table>
   <a id="OpenTK_Graphics_Glx_Glx_QueryContext_" data-uid="OpenTK.Graphics.Glx.Glx.QueryContext*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_QueryContext_OpenTK_Graphics_Glx_Display__OpenTK_Graphics_Glx_GLXContext_System_Int32_System_Int32__" data-uid="OpenTK.Graphics.Glx.Glx.QueryContext(OpenTK.Graphics.Glx.Display*,OpenTK.Graphics.Glx.GLXContext,System.Int32,System.Int32*)">QueryContext(Display*, GLXContext, int, int*)</h4>
+  <h4 id="OpenTK_Graphics_Glx_Glx_QueryContext_OpenTK_Graphics_Glx_DisplayPtr_OpenTK_Graphics_Glx_GLXContext_System_Int32_System_Int32__" data-uid="OpenTK.Graphics.Glx.Glx.QueryContext(OpenTK.Graphics.Glx.DisplayPtr,OpenTK.Graphics.Glx.GLXContext,System.Int32,System.Int32*)">QueryContext(DisplayPtr, GLXContext, int, int*)</h4>
   <div class="markdown level1 summary"><p><b>[requires: v1.3]</b> <b>[entry point: <code>glXQueryContext</code>]</b><br></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int QueryContext(Display* dpy, GLXContext ctx, int attribute, int* value)</code></pre>
+    <pre><code class="lang-csharp hljs">public static int QueryContext(DisplayPtr dpy, GLXContext ctx, int attribute, int* value)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -2523,7 +1931,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*</td>
+        <td><a class="xref" href="OpenTK.Graphics.Glx.DisplayPtr.html">DisplayPtr</a></td>
         <td><span class="parametername">dpy</span></td>
         <td></td>
       </tr>
@@ -2560,7 +1968,7 @@
     </tbody>
   </table>
   <a id="OpenTK_Graphics_Glx_Glx_QueryContext_" data-uid="OpenTK.Graphics.Glx.Glx.QueryContext*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_QueryContext_OpenTK_Graphics_Glx_Display__OpenTK_Graphics_Glx_GLXContext_System_Int32_System_Int32__" data-uid="OpenTK.Graphics.Glx.Glx.QueryContext(OpenTK.Graphics.Glx.Display@,OpenTK.Graphics.Glx.GLXContext,System.Int32,System.Int32@)">QueryContext(ref Display, GLXContext, int, ref int)</h4>
+  <h4 id="OpenTK_Graphics_Glx_Glx_QueryContext_OpenTK_Graphics_Glx_DisplayPtr_OpenTK_Graphics_Glx_GLXContext_System_Int32_System_Int32__" data-uid="OpenTK.Graphics.Glx.Glx.QueryContext(OpenTK.Graphics.Glx.DisplayPtr,OpenTK.Graphics.Glx.GLXContext,System.Int32,System.Int32@)">QueryContext(DisplayPtr, GLXContext, int, ref int)</h4>
   <div class="markdown level1 summary"><p><b>[requires: v1.3]</b>
 <b>[entry point: <code>glXQueryContext</code>]</b>
 <br></p>
@@ -2568,7 +1976,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int QueryContext(ref Display dpy, GLXContext ctx, int attribute, ref int value)</code></pre>
+    <pre><code class="lang-csharp hljs">public static int QueryContext(DisplayPtr dpy, GLXContext ctx, int attribute, ref int value)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -2581,7 +1989,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a></td>
+        <td><a class="xref" href="OpenTK.Graphics.Glx.DisplayPtr.html">DisplayPtr</a></td>
         <td><span class="parametername">dpy</span></td>
         <td></td>
       </tr>
@@ -2618,13 +2026,13 @@
     </tbody>
   </table>
   <a id="OpenTK_Graphics_Glx_Glx_QueryDrawable_" data-uid="OpenTK.Graphics.Glx.Glx.QueryDrawable*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_QueryDrawable_OpenTK_Graphics_Glx_Display__OpenTK_Graphics_Glx_GLXDrawable_System_Int32_System_UInt32__" data-uid="OpenTK.Graphics.Glx.Glx.QueryDrawable(OpenTK.Graphics.Glx.Display*,OpenTK.Graphics.Glx.GLXDrawable,System.Int32,System.UInt32*)">QueryDrawable(Display*, GLXDrawable, int, uint*)</h4>
+  <h4 id="OpenTK_Graphics_Glx_Glx_QueryDrawable_OpenTK_Graphics_Glx_DisplayPtr_OpenTK_Graphics_Glx_GLXDrawable_System_Int32_System_UInt32__" data-uid="OpenTK.Graphics.Glx.Glx.QueryDrawable(OpenTK.Graphics.Glx.DisplayPtr,OpenTK.Graphics.Glx.GLXDrawable,System.Int32,System.UInt32*)">QueryDrawable(DisplayPtr, GLXDrawable, int, uint*)</h4>
   <div class="markdown level1 summary"><p><b>[requires: v1.3]</b> <b>[entry point: <code>glXQueryDrawable</code>]</b><br></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void QueryDrawable(Display* dpy, GLXDrawable draw, int attribute, uint* value)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void QueryDrawable(DisplayPtr dpy, GLXDrawable draw, int attribute, uint* value)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -2637,7 +2045,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*</td>
+        <td><a class="xref" href="OpenTK.Graphics.Glx.DisplayPtr.html">DisplayPtr</a></td>
         <td><span class="parametername">dpy</span></td>
         <td></td>
       </tr>
@@ -2659,7 +2067,7 @@
     </tbody>
   </table>
   <a id="OpenTK_Graphics_Glx_Glx_QueryDrawable_" data-uid="OpenTK.Graphics.Glx.Glx.QueryDrawable*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_QueryDrawable_OpenTK_Graphics_Glx_Display__OpenTK_Graphics_Glx_GLXDrawable_System_Int32_System_UInt32__" data-uid="OpenTK.Graphics.Glx.Glx.QueryDrawable(OpenTK.Graphics.Glx.Display@,OpenTK.Graphics.Glx.GLXDrawable,System.Int32,System.UInt32@)">QueryDrawable(ref Display, GLXDrawable, int, ref uint)</h4>
+  <h4 id="OpenTK_Graphics_Glx_Glx_QueryDrawable_OpenTK_Graphics_Glx_DisplayPtr_OpenTK_Graphics_Glx_GLXDrawable_System_Int32_System_UInt32__" data-uid="OpenTK.Graphics.Glx.Glx.QueryDrawable(OpenTK.Graphics.Glx.DisplayPtr,OpenTK.Graphics.Glx.GLXDrawable,System.Int32,System.UInt32@)">QueryDrawable(DisplayPtr, GLXDrawable, int, ref uint)</h4>
   <div class="markdown level1 summary"><p><b>[requires: v1.3]</b>
 <b>[entry point: <code>glXQueryDrawable</code>]</b>
 <br></p>
@@ -2667,7 +2075,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void QueryDrawable(ref Display dpy, GLXDrawable draw, int attribute, ref uint value)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void QueryDrawable(DisplayPtr dpy, GLXDrawable draw, int attribute, ref uint value)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -2680,7 +2088,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a></td>
+        <td><a class="xref" href="OpenTK.Graphics.Glx.DisplayPtr.html">DisplayPtr</a></td>
         <td><span class="parametername">dpy</span></td>
         <td></td>
       </tr>
@@ -2702,13 +2110,13 @@
     </tbody>
   </table>
   <a id="OpenTK_Graphics_Glx_Glx_QueryExtension_" data-uid="OpenTK.Graphics.Glx.Glx.QueryExtension*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_QueryExtension_OpenTK_Graphics_Glx_Display__System_Int32__System_Int32__" data-uid="OpenTK.Graphics.Glx.Glx.QueryExtension(OpenTK.Graphics.Glx.Display*,System.Int32*,System.Int32*)">QueryExtension(Display*, int*, int*)</h4>
+  <h4 id="OpenTK_Graphics_Glx_Glx_QueryExtension_OpenTK_Graphics_Glx_DisplayPtr_System_Int32__System_Int32__" data-uid="OpenTK.Graphics.Glx.Glx.QueryExtension(OpenTK.Graphics.Glx.DisplayPtr,System.Int32*,System.Int32*)">QueryExtension(DisplayPtr, int*, int*)</h4>
   <div class="markdown level1 summary"><p><b>[requires: v1.0]</b> <b>[entry point: <code>glXQueryExtension</code>]</b><br></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool QueryExtension(Display* dpy, int* errorb, int* @event)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool QueryExtension(DisplayPtr dpy, int* errorb, int* @event)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -2721,7 +2129,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*</td>
+        <td><a class="xref" href="OpenTK.Graphics.Glx.DisplayPtr.html">DisplayPtr</a></td>
         <td><span class="parametername">dpy</span></td>
         <td></td>
       </tr>
@@ -2753,7 +2161,7 @@
     </tbody>
   </table>
   <a id="OpenTK_Graphics_Glx_Glx_QueryExtension_" data-uid="OpenTK.Graphics.Glx.Glx.QueryExtension*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_QueryExtension_OpenTK_Graphics_Glx_Display__System_Int32__System_Int32__" data-uid="OpenTK.Graphics.Glx.Glx.QueryExtension(OpenTK.Graphics.Glx.Display@,System.Int32@,System.Int32@)">QueryExtension(ref Display, ref int, ref int)</h4>
+  <h4 id="OpenTK_Graphics_Glx_Glx_QueryExtension_OpenTK_Graphics_Glx_DisplayPtr_System_Int32__System_Int32__" data-uid="OpenTK.Graphics.Glx.Glx.QueryExtension(OpenTK.Graphics.Glx.DisplayPtr,System.Int32@,System.Int32@)">QueryExtension(DisplayPtr, ref int, ref int)</h4>
   <div class="markdown level1 summary"><p><b>[requires: v1.0]</b>
 <b>[entry point: <code>glXQueryExtension</code>]</b>
 <br></p>
@@ -2761,7 +2169,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool QueryExtension(ref Display dpy, ref int errorb, ref int @event)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool QueryExtension(DisplayPtr dpy, ref int errorb, ref int @event)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -2774,7 +2182,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a></td>
+        <td><a class="xref" href="OpenTK.Graphics.Glx.DisplayPtr.html">DisplayPtr</a></td>
         <td><span class="parametername">dpy</span></td>
         <td></td>
       </tr>
@@ -2806,13 +2214,58 @@
     </tbody>
   </table>
   <a id="OpenTK_Graphics_Glx_Glx_QueryExtensionsString_" data-uid="OpenTK.Graphics.Glx.Glx.QueryExtensionsString*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_QueryExtensionsString_OpenTK_Graphics_Glx_Display__System_Int32_" data-uid="OpenTK.Graphics.Glx.Glx.QueryExtensionsString(OpenTK.Graphics.Glx.Display*,System.Int32)">QueryExtensionsString(Display*, int)</h4>
+  <h4 id="OpenTK_Graphics_Glx_Glx_QueryExtensionsString_OpenTK_Graphics_Glx_DisplayPtr_System_Int32_" data-uid="OpenTK.Graphics.Glx.Glx.QueryExtensionsString(OpenTK.Graphics.Glx.DisplayPtr,System.Int32)">QueryExtensionsString(DisplayPtr, int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string? QueryExtensionsString(DisplayPtr dpy, int screen)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Graphics.Glx.DisplayPtr.html">DisplayPtr</a></td>
+        <td><span class="parametername">dpy</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">screen</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Graphics_Glx_Glx_QueryExtensionsString__" data-uid="OpenTK.Graphics.Glx.Glx.QueryExtensionsString_*"></a>
+  <h4 id="OpenTK_Graphics_Glx_Glx_QueryExtensionsString__OpenTK_Graphics_Glx_DisplayPtr_System_Int32_" data-uid="OpenTK.Graphics.Glx.Glx.QueryExtensionsString_(OpenTK.Graphics.Glx.DisplayPtr,System.Int32)">QueryExtensionsString_(DisplayPtr, int)</h4>
   <div class="markdown level1 summary"><p><b>[requires: v1.1]</b> <b>[entry point: <code>glXQueryExtensionsString</code>]</b><br></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static byte* QueryExtensionsString(Display* dpy, int screen)</code></pre>
+    <pre><code class="lang-csharp hljs">public static byte* QueryExtensionsString_(DisplayPtr dpy, int screen)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -2825,7 +2278,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*</td>
+        <td><a class="xref" href="OpenTK.Graphics.Glx.DisplayPtr.html">DisplayPtr</a></td>
         <td><span class="parametername">dpy</span></td>
         <td></td>
       </tr>
@@ -2851,16 +2304,13 @@
       </tr>
     </tbody>
   </table>
-  <a id="OpenTK_Graphics_Glx_Glx_QueryExtensionsString_" data-uid="OpenTK.Graphics.Glx.Glx.QueryExtensionsString*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_QueryExtensionsString_OpenTK_Graphics_Glx_Display__System_Int32_" data-uid="OpenTK.Graphics.Glx.Glx.QueryExtensionsString(OpenTK.Graphics.Glx.Display@,System.Int32)">QueryExtensionsString(ref Display, int)</h4>
-  <div class="markdown level1 summary"><p><b>[requires: v1.1]</b>
-<b>[entry point: <code>glXQueryExtensionsString</code>]</b>
-<br></p>
-</div>
+  <a id="OpenTK_Graphics_Glx_Glx_QueryServerString_" data-uid="OpenTK.Graphics.Glx.Glx.QueryServerString*"></a>
+  <h4 id="OpenTK_Graphics_Glx_Glx_QueryServerString_OpenTK_Graphics_Glx_DisplayPtr_System_Int32_System_Int32_" data-uid="OpenTK.Graphics.Glx.Glx.QueryServerString(OpenTK.Graphics.Glx.DisplayPtr,System.Int32,System.Int32)">QueryServerString(DisplayPtr, int, int)</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string? QueryExtensionsString(ref Display dpy, int screen)</code></pre>
+    <pre><code class="lang-csharp hljs">public static string? QueryServerString(DisplayPtr dpy, int screen, int name)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -2873,13 +2323,18 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a></td>
+        <td><a class="xref" href="OpenTK.Graphics.Glx.DisplayPtr.html">DisplayPtr</a></td>
         <td><span class="parametername">dpy</span></td>
         <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td><span class="parametername">screen</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">name</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -2899,14 +2354,14 @@
       </tr>
     </tbody>
   </table>
-  <a id="OpenTK_Graphics_Glx_Glx_QueryServerString_" data-uid="OpenTK.Graphics.Glx.Glx.QueryServerString*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_QueryServerString_OpenTK_Graphics_Glx_Display__System_Int32_System_Int32_" data-uid="OpenTK.Graphics.Glx.Glx.QueryServerString(OpenTK.Graphics.Glx.Display*,System.Int32,System.Int32)">QueryServerString(Display*, int, int)</h4>
+  <a id="OpenTK_Graphics_Glx_Glx_QueryServerString__" data-uid="OpenTK.Graphics.Glx.Glx.QueryServerString_*"></a>
+  <h4 id="OpenTK_Graphics_Glx_Glx_QueryServerString__OpenTK_Graphics_Glx_DisplayPtr_System_Int32_System_Int32_" data-uid="OpenTK.Graphics.Glx.Glx.QueryServerString_(OpenTK.Graphics.Glx.DisplayPtr,System.Int32,System.Int32)">QueryServerString_(DisplayPtr, int, int)</h4>
   <div class="markdown level1 summary"><p><b>[requires: v1.1]</b> <b>[entry point: <code>glXQueryServerString</code>]</b><br></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static byte* QueryServerString(Display* dpy, int screen, int name)</code></pre>
+    <pre><code class="lang-csharp hljs">public static byte* QueryServerString_(DisplayPtr dpy, int screen, int name)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -2919,7 +2374,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*</td>
+        <td><a class="xref" href="OpenTK.Graphics.Glx.DisplayPtr.html">DisplayPtr</a></td>
         <td><span class="parametername">dpy</span></td>
         <td></td>
       </tr>
@@ -2950,67 +2405,14 @@
       </tr>
     </tbody>
   </table>
-  <a id="OpenTK_Graphics_Glx_Glx_QueryServerString_" data-uid="OpenTK.Graphics.Glx.Glx.QueryServerString*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_QueryServerString_OpenTK_Graphics_Glx_Display__System_Int32_System_Int32_" data-uid="OpenTK.Graphics.Glx.Glx.QueryServerString(OpenTK.Graphics.Glx.Display@,System.Int32,System.Int32)">QueryServerString(ref Display, int, int)</h4>
-  <div class="markdown level1 summary"><p><b>[requires: v1.1]</b>
-<b>[entry point: <code>glXQueryServerString</code>]</b>
-<br></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string? QueryServerString(ref Display dpy, int screen, int name)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a></td>
-        <td><span class="parametername">dpy</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
-        <td><span class="parametername">screen</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
-        <td><span class="parametername">name</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   <a id="OpenTK_Graphics_Glx_Glx_QueryVersion_" data-uid="OpenTK.Graphics.Glx.Glx.QueryVersion*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_QueryVersion_OpenTK_Graphics_Glx_Display__System_Int32__System_Int32__" data-uid="OpenTK.Graphics.Glx.Glx.QueryVersion(OpenTK.Graphics.Glx.Display*,System.Int32*,System.Int32*)">QueryVersion(Display*, int*, int*)</h4>
+  <h4 id="OpenTK_Graphics_Glx_Glx_QueryVersion_OpenTK_Graphics_Glx_DisplayPtr_System_Int32__System_Int32__" data-uid="OpenTK.Graphics.Glx.Glx.QueryVersion(OpenTK.Graphics.Glx.DisplayPtr,System.Int32*,System.Int32*)">QueryVersion(DisplayPtr, int*, int*)</h4>
   <div class="markdown level1 summary"><p><b>[requires: v1.0]</b> <b>[entry point: <code>glXQueryVersion</code>]</b><br></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool QueryVersion(Display* dpy, int* maj, int* min)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool QueryVersion(DisplayPtr dpy, int* maj, int* min)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -3023,7 +2425,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*</td>
+        <td><a class="xref" href="OpenTK.Graphics.Glx.DisplayPtr.html">DisplayPtr</a></td>
         <td><span class="parametername">dpy</span></td>
         <td></td>
       </tr>
@@ -3055,7 +2457,7 @@
     </tbody>
   </table>
   <a id="OpenTK_Graphics_Glx_Glx_QueryVersion_" data-uid="OpenTK.Graphics.Glx.Glx.QueryVersion*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_QueryVersion_OpenTK_Graphics_Glx_Display__System_Int32__System_Int32__" data-uid="OpenTK.Graphics.Glx.Glx.QueryVersion(OpenTK.Graphics.Glx.Display@,System.Int32@,System.Int32@)">QueryVersion(ref Display, ref int, ref int)</h4>
+  <h4 id="OpenTK_Graphics_Glx_Glx_QueryVersion_OpenTK_Graphics_Glx_DisplayPtr_System_Int32__System_Int32__" data-uid="OpenTK.Graphics.Glx.Glx.QueryVersion(OpenTK.Graphics.Glx.DisplayPtr,System.Int32@,System.Int32@)">QueryVersion(DisplayPtr, ref int, ref int)</h4>
   <div class="markdown level1 summary"><p><b>[requires: v1.0]</b>
 <b>[entry point: <code>glXQueryVersion</code>]</b>
 <br></p>
@@ -3063,7 +2465,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool QueryVersion(ref Display dpy, ref int maj, ref int min)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool QueryVersion(DisplayPtr dpy, ref int maj, ref int min)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -3076,7 +2478,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a></td>
+        <td><a class="xref" href="OpenTK.Graphics.Glx.DisplayPtr.html">DisplayPtr</a></td>
         <td><span class="parametername">dpy</span></td>
         <td></td>
       </tr>
@@ -3108,13 +2510,13 @@
     </tbody>
   </table>
   <a id="OpenTK_Graphics_Glx_Glx_SelectEvent_" data-uid="OpenTK.Graphics.Glx.Glx.SelectEvent*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_SelectEvent_OpenTK_Graphics_Glx_Display__OpenTK_Graphics_Glx_GLXDrawable_System_UInt64_" data-uid="OpenTK.Graphics.Glx.Glx.SelectEvent(OpenTK.Graphics.Glx.Display*,OpenTK.Graphics.Glx.GLXDrawable,System.UInt64)">SelectEvent(Display*, GLXDrawable, ulong)</h4>
+  <h4 id="OpenTK_Graphics_Glx_Glx_SelectEvent_OpenTK_Graphics_Glx_DisplayPtr_OpenTK_Graphics_Glx_GLXDrawable_System_UInt64_" data-uid="OpenTK.Graphics.Glx.Glx.SelectEvent(OpenTK.Graphics.Glx.DisplayPtr,OpenTK.Graphics.Glx.GLXDrawable,System.UInt64)">SelectEvent(DisplayPtr, GLXDrawable, ulong)</h4>
   <div class="markdown level1 summary"><p><b>[requires: v1.3]</b> <b>[entry point: <code>glXSelectEvent</code>]</b><br></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void SelectEvent(Display* dpy, GLXDrawable draw, ulong event_mask)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void SelectEvent(DisplayPtr dpy, GLXDrawable draw, ulong event_mask)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -3127,45 +2529,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*</td>
-        <td><span class="parametername">dpy</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.GLXDrawable.html">GLXDrawable</a></td>
-        <td><span class="parametername">draw</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></td>
-        <td><span class="parametername">event_mask</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="OpenTK_Graphics_Glx_Glx_SelectEvent_" data-uid="OpenTK.Graphics.Glx.Glx.SelectEvent*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_SelectEvent_OpenTK_Graphics_Glx_Display__OpenTK_Graphics_Glx_GLXDrawable_System_UInt64_" data-uid="OpenTK.Graphics.Glx.Glx.SelectEvent(OpenTK.Graphics.Glx.Display@,OpenTK.Graphics.Glx.GLXDrawable,System.UInt64)">SelectEvent(ref Display, GLXDrawable, ulong)</h4>
-  <div class="markdown level1 summary"><p><b>[requires: v1.3]</b>
-<b>[entry point: <code>glXSelectEvent</code>]</b>
-<br></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void SelectEvent(ref Display dpy, GLXDrawable draw, ulong event_mask)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a></td>
+        <td><a class="xref" href="OpenTK.Graphics.Glx.DisplayPtr.html">DisplayPtr</a></td>
         <td><span class="parametername">dpy</span></td>
         <td></td>
       </tr>
@@ -3182,13 +2546,13 @@
     </tbody>
   </table>
   <a id="OpenTK_Graphics_Glx_Glx_SwapBuffers_" data-uid="OpenTK.Graphics.Glx.Glx.SwapBuffers*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_SwapBuffers_OpenTK_Graphics_Glx_Display__OpenTK_Graphics_Glx_GLXDrawable_" data-uid="OpenTK.Graphics.Glx.Glx.SwapBuffers(OpenTK.Graphics.Glx.Display*,OpenTK.Graphics.Glx.GLXDrawable)">SwapBuffers(Display*, GLXDrawable)</h4>
+  <h4 id="OpenTK_Graphics_Glx_Glx_SwapBuffers_OpenTK_Graphics_Glx_DisplayPtr_OpenTK_Graphics_Glx_GLXDrawable_" data-uid="OpenTK.Graphics.Glx.Glx.SwapBuffers(OpenTK.Graphics.Glx.DisplayPtr,OpenTK.Graphics.Glx.GLXDrawable)">SwapBuffers(DisplayPtr, GLXDrawable)</h4>
   <div class="markdown level1 summary"><p><b>[requires: v1.0]</b> <b>[entry point: <code>glXSwapBuffers</code>]</b><br></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void SwapBuffers(Display* dpy, GLXDrawable drawable)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void SwapBuffers(DisplayPtr dpy, GLXDrawable drawable)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -3201,40 +2565,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*</td>
-        <td><span class="parametername">dpy</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.GLXDrawable.html">GLXDrawable</a></td>
-        <td><span class="parametername">drawable</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="OpenTK_Graphics_Glx_Glx_SwapBuffers_" data-uid="OpenTK.Graphics.Glx.Glx.SwapBuffers*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_SwapBuffers_OpenTK_Graphics_Glx_Display__OpenTK_Graphics_Glx_GLXDrawable_" data-uid="OpenTK.Graphics.Glx.Glx.SwapBuffers(OpenTK.Graphics.Glx.Display@,OpenTK.Graphics.Glx.GLXDrawable)">SwapBuffers(ref Display, GLXDrawable)</h4>
-  <div class="markdown level1 summary"><p><b>[requires: v1.0]</b>
-<b>[entry point: <code>glXSwapBuffers</code>]</b>
-<br></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void SwapBuffers(ref Display dpy, GLXDrawable drawable)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a></td>
+        <td><a class="xref" href="OpenTK.Graphics.Glx.DisplayPtr.html">DisplayPtr</a></td>
         <td><span class="parametername">dpy</span></td>
         <td></td>
       </tr>

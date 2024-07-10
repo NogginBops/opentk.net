@@ -630,13 +630,13 @@ Modifying the context outsite of OpenTK functions may cause side effects when ca
     </tbody>
   </table>
   <a id="OpenTK_Platform_Native_Windows_OpenGLComponent_Initialize_" data-uid="OpenTK.Platform.Native.Windows.OpenGLComponent.Initialize*"></a>
-  <h4 id="OpenTK_Platform_Native_Windows_OpenGLComponent_Initialize_OpenTK_Core_Platform_PalComponents_" data-uid="OpenTK.Platform.Native.Windows.OpenGLComponent.Initialize(OpenTK.Core.Platform.PalComponents)">Initialize(PalComponents)</h4>
-  <div class="markdown level1 summary"><p>Initialize the driver.</p>
+  <h4 id="OpenTK_Platform_Native_Windows_OpenGLComponent_Initialize_OpenTK_Core_Platform_ToolkitOptions_" data-uid="OpenTK.Platform.Native.Windows.OpenGLComponent.Initialize(OpenTK.Core.Platform.ToolkitOptions)">Initialize(ToolkitOptions)</h4>
+  <div class="markdown level1 summary"><p>Initialize the component.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Initialize(PalComponents which)</code></pre>
+    <pre><code class="lang-csharp hljs">public void Initialize(ToolkitOptions options)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -649,9 +649,9 @@ Modifying the context outsite of OpenTK functions may cause side effects when ca
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Core.Platform.PalComponents.html">PalComponents</a></td>
-        <td><span class="parametername">which</span></td>
-        <td><p>Bitfield of which components the driver need to be initialized.</p>
+        <td><a class="xref" href="OpenTK.Core.Platform.ToolkitOptions.html">ToolkitOptions</a></td>
+        <td><span class="parametername">options</span></td>
+        <td><p>The options to initialize the component with.</p>
 </td>
       </tr>
     </tbody>
@@ -749,6 +749,42 @@ Modifying the context outsite of OpenTK functions may cause side effects when ca
         <td><a class="xref" href="OpenTK.Core.Platform.OpenGLContextHandle.html">OpenGLContextHandle</a></td>
         <td><span class="parametername">handle</span></td>
         <td><p>Handle to the context.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Platform_Native_Windows_OpenGLComponent_UseDwmFlushIfApplicable_" data-uid="OpenTK.Platform.Native.Windows.OpenGLComponent.UseDwmFlushIfApplicable*"></a>
+  <h4 id="OpenTK_Platform_Native_Windows_OpenGLComponent_UseDwmFlushIfApplicable_OpenTK_Core_Platform_OpenGLContextHandle_System_Boolean_" data-uid="OpenTK.Platform.Native.Windows.OpenGLComponent.UseDwmFlushIfApplicable(OpenTK.Core.Platform.OpenGLContextHandle,System.Boolean)">UseDwmFlushIfApplicable(OpenGLContextHandle, bool)</h4>
+  <div class="markdown level1 summary"><p>Sets whether calls to <a class="xref" href="OpenTK.Platform.Native.Windows.OpenGLComponent.html#OpenTK_Platform_Native_Windows_OpenGLComponent_SwapBuffers_OpenTK_Core_Platform_OpenGLContextHandle_">SwapBuffers(OpenGLContextHandle)</a> should use <code>DwmFlush()</code> to sync if DWM compositing is enabled.
+This can improve vsync performance on systems with multiple monitors using different refresh rates, but is likely to break in a multi-window scenario.
+If using multiple windows, only one window should have this property set.</p>
+<p>By default this value is set to <code>false</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UseDwmFlushIfApplicable(OpenGLContextHandle handle, bool enable)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Core.Platform.OpenGLContextHandle.html">OpenGLContextHandle</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>The OpenGL context that should <code>DwmFlush()</code> setting.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">enable</span></td>
+        <td><p>Whether to enable <code>DwmFlush()</code> sync or not.</p>
 </td>
       </tr>
     </tbody>

@@ -912,7 +912,9 @@
   </table>
   <a id="OpenTK_Platform_Native_macOS_MacOSWindowComponent_GetFramebufferSize_" data-uid="OpenTK.Platform.Native.macOS.MacOSWindowComponent.GetFramebufferSize*"></a>
   <h4 id="OpenTK_Platform_Native_macOS_MacOSWindowComponent_GetFramebufferSize_OpenTK_Core_Platform_WindowHandle_System_Int32__System_Int32__" data-uid="OpenTK.Platform.Native.macOS.MacOSWindowComponent.GetFramebufferSize(OpenTK.Core.Platform.WindowHandle,System.Int32@,System.Int32@)">GetFramebufferSize(WindowHandle, out int, out int)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Get the size of the window framebuffer in pixels.
+Use this value when calls to graphics APIs that want pixels, e.g. GL.Viewport().</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -931,17 +933,20 @@
       <tr>
         <td><a class="xref" href="OpenTK.Core.Platform.WindowHandle.html">WindowHandle</a></td>
         <td><span class="parametername">handle</span></td>
-        <td></td>
+        <td><p>Handle to a window.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td><span class="parametername">width</span></td>
-        <td></td>
+        <td><p>Width in pixels of the window framebuffer.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td><span class="parametername">height</span></td>
-        <td></td>
+        <td><p>Height in pixels of the window framebuffer.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1337,6 +1342,49 @@ The Objective-C object returned is a subclass of <code>NSWindow</code> called <c
       </tr>
     </tbody>
   </table>
+  <a id="OpenTK_Platform_Native_macOS_MacOSWindowComponent_GetScaleFactor_" data-uid="OpenTK.Platform.Native.macOS.MacOSWindowComponent.GetScaleFactor*"></a>
+  <h4 id="OpenTK_Platform_Native_macOS_MacOSWindowComponent_GetScaleFactor_OpenTK_Core_Platform_WindowHandle_System_Single__System_Single__" data-uid="OpenTK.Platform.Native.macOS.MacOSWindowComponent.GetScaleFactor(OpenTK.Core.Platform.WindowHandle,System.Single@,System.Single@)">GetScaleFactor(WindowHandle, out float, out float)</h4>
+  <div class="markdown level1 summary"><p>Returns the current scale factor of this window.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetScaleFactor(WindowHandle handle, out float scaleX, out float scaleY)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Core.Platform.WindowHandle.html">WindowHandle</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>The window handle.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">scaleX</span></td>
+        <td><p>The x scale factor of the window.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">scaleY</span></td>
+        <td><p>The y scale factor of the window.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenTK_Platform_Native_macOS_MacOSWindowComponent_GetScaleFactor_OpenTK_Core_Platform_WindowHandle_System_Single__System_Single___seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="OpenTK.Core.Platform.WindowScaleChangeEventArgs.html">WindowScaleChangeEventArgs</a></div>
+  </div>
   <a id="OpenTK_Platform_Native_macOS_MacOSWindowComponent_GetSize_" data-uid="OpenTK.Platform.Native.macOS.MacOSWindowComponent.GetSize*"></a>
   <h4 id="OpenTK_Platform_Native_macOS_MacOSWindowComponent_GetSize_OpenTK_Core_Platform_WindowHandle_System_Int32__System_Int32__" data-uid="OpenTK.Platform.Native.macOS.MacOSWindowComponent.GetSize(OpenTK.Core.Platform.WindowHandle,System.Int32@,System.Int32@)">GetSize(WindowHandle, out int, out int)</h4>
   <div class="markdown level1 summary"><p>Get the size of the window.</p>
@@ -1452,13 +1500,13 @@ The Objective-C object returned is a subclass of <code>NSWindow</code> called <c
     </tbody>
   </table>
   <a id="OpenTK_Platform_Native_macOS_MacOSWindowComponent_Initialize_" data-uid="OpenTK.Platform.Native.macOS.MacOSWindowComponent.Initialize*"></a>
-  <h4 id="OpenTK_Platform_Native_macOS_MacOSWindowComponent_Initialize_OpenTK_Core_Platform_PalComponents_" data-uid="OpenTK.Platform.Native.macOS.MacOSWindowComponent.Initialize(OpenTK.Core.Platform.PalComponents)">Initialize(PalComponents)</h4>
-  <div class="markdown level1 summary"><p>Initialize the driver.</p>
+  <h4 id="OpenTK_Platform_Native_macOS_MacOSWindowComponent_Initialize_OpenTK_Core_Platform_ToolkitOptions_" data-uid="OpenTK.Platform.Native.macOS.MacOSWindowComponent.Initialize(OpenTK.Core.Platform.ToolkitOptions)">Initialize(ToolkitOptions)</h4>
+  <div class="markdown level1 summary"><p>Initialize the component.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Initialize(PalComponents which)</code></pre>
+    <pre><code class="lang-csharp hljs">public void Initialize(ToolkitOptions options)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -1471,9 +1519,9 @@ The Objective-C object returned is a subclass of <code>NSWindow</code> called <c
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Core.Platform.PalComponents.html">PalComponents</a></td>
-        <td><span class="parametername">which</span></td>
-        <td><p>Bitfield of which components the driver need to be initialized.</p>
+        <td><a class="xref" href="OpenTK.Core.Platform.ToolkitOptions.html">ToolkitOptions</a></td>
+        <td><span class="parametername">options</span></td>
+        <td><p>The options to initialize the component with.</p>
 </td>
       </tr>
     </tbody>
@@ -1517,6 +1565,49 @@ The Objective-C object returned is a subclass of <code>NSWindow</code> called <c
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><p>Whether the window is always on top or not.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Platform_Native_macOS_MacOSWindowComponent_IsFocused_" data-uid="OpenTK.Platform.Native.macOS.MacOSWindowComponent.IsFocused*"></a>
+  <h4 id="OpenTK_Platform_Native_macOS_MacOSWindowComponent_IsFocused_OpenTK_Core_Platform_WindowHandle_" data-uid="OpenTK.Platform.Native.macOS.MacOSWindowComponent.IsFocused(OpenTK.Core.Platform.WindowHandle)">IsFocused(WindowHandle)</h4>
+  <div class="markdown level1 summary"><p>Returns true if the given window has input focus.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsFocused(WindowHandle handle)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Core.Platform.WindowHandle.html">WindowHandle</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>Handle to a window.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p>If the window has input focus.</p>
 </td>
       </tr>
     </tbody>
@@ -2099,7 +2190,7 @@ If <code class="paramref">display</code> is <code>null</code> then the window wi
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void SetFullscreenDisplay(WindowHandle window, DisplayHandle? display)</code></pre>
+    <pre><code class="lang-csharp hljs">public void SetFullscreenDisplay(WindowHandle handle, DisplayHandle? display)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -2113,8 +2204,9 @@ If <code class="paramref">display</code> is <code>null</code> then the window wi
     <tbody>
       <tr>
         <td><a class="xref" href="OpenTK.Core.Platform.WindowHandle.html">WindowHandle</a></td>
-        <td><span class="parametername">window</span></td>
-        <td></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>The window to make fullscreen.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="OpenTK.Core.Platform.DisplayHandle.html">DisplayHandle</a></td>
@@ -2170,6 +2262,40 @@ are expected to work.</p>
   <h5 id="OpenTK_Platform_Native_macOS_MacOSWindowComponent_SetFullscreenDisplay_OpenTK_Core_Platform_WindowHandle_OpenTK_Core_Platform_DisplayHandle_OpenTK_Core_Platform_VideoMode__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>To make an 'windowed fullscreen' window see <a class="xref" href="OpenTK.Core.Platform.IWindowComponent.html#OpenTK_Core_Platform_IWindowComponent_SetFullscreenDisplay_OpenTK_Core_Platform_WindowHandle_OpenTK_Core_Platform_DisplayHandle_">SetFullscreenDisplay(WindowHandle, DisplayHandle?)</a>.</p>
 </div>
+  <a id="OpenTK_Platform_Native_macOS_MacOSWindowComponent_SetFullscreenDisplayNoSpace_" data-uid="OpenTK.Platform.Native.macOS.MacOSWindowComponent.SetFullscreenDisplayNoSpace*"></a>
+  <h4 id="OpenTK_Platform_Native_macOS_MacOSWindowComponent_SetFullscreenDisplayNoSpace_OpenTK_Core_Platform_WindowHandle_OpenTK_Core_Platform_DisplayHandle_" data-uid="OpenTK.Platform.Native.macOS.MacOSWindowComponent.SetFullscreenDisplayNoSpace(OpenTK.Core.Platform.WindowHandle,OpenTK.Core.Platform.DisplayHandle)">SetFullscreenDisplayNoSpace(WindowHandle, DisplayHandle?)</h4>
+  <div class="markdown level1 summary"><p>Put a window into 'windowed fullscreen' on a specific display without creating a space for it.
+If <code class="paramref">display</code> is <code>null</code> then the window will be made fullscreen on the 'nearest' display.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetFullscreenDisplayNoSpace(WindowHandle window, DisplayHandle? display)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Core.Platform.WindowHandle.html">WindowHandle</a></td>
+        <td><span class="parametername">window</span></td>
+        <td><p>The window to make fullscreen.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Core.Platform.DisplayHandle.html">DisplayHandle</a></td>
+        <td><span class="parametername">display</span></td>
+        <td><p>The display to make the window fullscreen on.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="OpenTK_Platform_Native_macOS_MacOSWindowComponent_SetHitTestCallback_" data-uid="OpenTK.Platform.Native.macOS.MacOSWindowComponent.SetHitTestCallback*"></a>
   <h4 id="OpenTK_Platform_Native_macOS_MacOSWindowComponent_SetHitTestCallback_OpenTK_Core_Platform_WindowHandle_OpenTK_Core_Platform_HitTest_" data-uid="OpenTK.Platform.Native.macOS.MacOSWindowComponent.SetHitTestCallback(OpenTK.Core.Platform.WindowHandle,OpenTK.Core.Platform.HitTest)">SetHitTestCallback(WindowHandle, HitTest?)</h4>
   <div class="markdown level1 summary"><p>Sets a delegate that is used for hit testing.

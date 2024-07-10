@@ -97,12 +97,6 @@ Classes
       <h4><a class="xref" href="OpenTK.Core.Platform.CloseEventArgs.html">CloseEventArgs</a></h4>
       <section><p>This event is triggered when the user presses the exit button of a window.</p>
 </section>
-      <h4><a class="xref" href="OpenTK.Core.Platform.ComponentSet.html">ComponentSet</a></h4>
-      <section><p>A set of platform abstraction layer components.</p>
-</section>
-      <h4><a class="xref" href="OpenTK.Core.Platform.ContextSettings.html">ContextSettings</a></h4>
-      <section><p>Settings for creating OpenGL contexts.</p>
-</section>
       <h4><a class="xref" href="OpenTK.Core.Platform.CursorHandle.html">CursorHandle</a></h4>
       <section><p>Handle to a mouse cursor object.</p>
 </section>
@@ -199,13 +193,15 @@ layer driver which does not implement it.</p>
       <h4><a class="xref" href="OpenTK.Core.Platform.ThemeChangeEventArgs.html">ThemeChangeEventArgs</a></h4>
       <section><p>This event is triggered when a user changes the preferred theme.</p>
 </section>
-      <h4><a class="xref" href="OpenTK.Core.Platform.WindowDpiChangeEventArgs.html">WindowDpiChangeEventArgs</a></h4>
-      <section><p>This event is triggered when the DPI of a window changes.
-This can happen if the window is moved between monitors with
-different DPI scaling settings or if the user changes DPI settings.</p>
+      <h4><a class="xref" href="OpenTK.Core.Platform.ToolkitOptions.html">ToolkitOptions</a></h4>
+      <section><p>Options used to initialize OpenTK with.</p>
 </section>
       <h4><a class="xref" href="OpenTK.Core.Platform.WindowEventArgs.html">WindowEventArgs</a></h4>
       <section><p>Base class for OpenTK window event arguments.</p>
+</section>
+      <h4><a class="xref" href="OpenTK.Core.Platform.WindowFramebufferResizeEventArgs.html">WindowFramebufferResizeEventArgs</a></h4>
+      <section><p>This event is triggered when a window has its framebuffer change size.
+This event can occur for different reasons, not only the window changing size.</p>
 </section>
       <h4><a class="xref" href="OpenTK.Core.Platform.WindowHandle.html">WindowHandle</a></h4>
       <section><p>Handle to a window object.</p>
@@ -219,6 +215,11 @@ different DPI scaling settings or if the user changes DPI settings.</p>
       <h4><a class="xref" href="OpenTK.Core.Platform.WindowResizeEventArgs.html">WindowResizeEventArgs</a></h4>
       <section><p>This event is triggered when a window has its size changed on screen.</p>
 </section>
+      <h4><a class="xref" href="OpenTK.Core.Platform.WindowScaleChangeEventArgs.html">WindowScaleChangeEventArgs</a></h4>
+      <section><p>This event is triggered when the DPI of a window changes.
+This can happen if the window is moved between monitors with
+different DPI scaling settings or if the user changes DPI settings.</p>
+</section>
     <h3 id="structs">
 Structs
 </h3>
@@ -226,6 +227,8 @@ Structs
       <section><p>A struct containing information about the battery status of the computer.</p>
 </section>
       <h4><a class="xref" href="OpenTK.Core.Platform.ContextValues.html">ContextValues</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenTK.Core.Platform.DialogFileFilter.html">DialogFileFilter</a></h4>
       <section></section>
       <h4><a class="xref" href="OpenTK.Core.Platform.DisplayResolution.html">DisplayResolution</a></h4>
       <section><p>Represents a display resolution.</p>
@@ -254,6 +257,8 @@ Interfaces
       <h4><a class="xref" href="OpenTK.Core.Platform.ICursorComponent.html">ICursorComponent</a></h4>
       <section><p>Interface for drivers which provide the cursor component of the platform abstraction layer.</p>
 </section>
+      <h4><a class="xref" href="OpenTK.Core.Platform.IDialogComponent.html">IDialogComponent</a></h4>
+      <section></section>
       <h4><a class="xref" href="OpenTK.Core.Platform.IDisplayComponent.html">IDisplayComponent</a></h4>
       <section><p>Interface for drivers which provide the display component.</p>
 </section>
@@ -299,8 +304,22 @@ Enums
       <h4><a class="xref" href="OpenTK.Core.Platform.ContextDepthBits.html">ContextDepthBits</a></h4>
       <section><p>Represents the number of depth bits of the context depth backbuffer.</p>
 </section>
+      <h4><a class="xref" href="OpenTK.Core.Platform.ContextPixelFormat.html">ContextPixelFormat</a></h4>
+      <section><p>Defined the pixel format type of the context.
+This is used to differentiate between &quot;normal&quot; fixed point LDR formats
+and floating point HDR formats.</p>
+</section>
+      <h4><a class="xref" href="OpenTK.Core.Platform.ContextReleaseBehaviour.html">ContextReleaseBehaviour</a></h4>
+      <section><p>See <a href="https://registry.khronos.org/OpenGL/extensions/KHR/KHR_context_flush_control.txt">KHR_context_flush_control</a> extension for details.</p>
+</section>
+      <h4><a class="xref" href="OpenTK.Core.Platform.ContextResetNotificationStrategy.html">ContextResetNotificationStrategy</a></h4>
+      <section><p>See <a href="https://registry.khronos.org/OpenGL/extensions/ARB/ARB_robustness.txt">GL_ARB_robustness</a> extension for details.</p>
+</section>
       <h4><a class="xref" href="OpenTK.Core.Platform.ContextStencilBits.html">ContextStencilBits</a></h4>
       <section><p>Represents the number of depth bits of the context stencil backbuffer.</p>
+</section>
+      <h4><a class="xref" href="OpenTK.Core.Platform.ContextSwapMethod.html">ContextSwapMethod</a></h4>
+      <section><p>Defines differnet semantics for what happens to the backbuffer after a swap.</p>
 </section>
       <h4><a class="xref" href="OpenTK.Core.Platform.CursorCaptureMode.html">CursorCaptureMode</a></h4>
       <section><p>Cursor capture modes.</p>
@@ -331,6 +350,9 @@ Enums
       <h4><a class="xref" href="OpenTK.Core.Platform.MouseButtonFlags.html">MouseButtonFlags</a></h4>
       <section><p>Mouse button flags.</p>
 </section>
+      <h4><a class="xref" href="OpenTK.Core.Platform.OpenDialogOptions.html">OpenDialogOptions</a></h4>
+      <section><p>Options for open dialogs.</p>
+</section>
       <h4><a class="xref" href="OpenTK.Core.Platform.OpenGLProfile.html">OpenGLProfile</a></h4>
       <section><p>OpenGL Profile.</p>
 </section>
@@ -339,6 +361,9 @@ Enums
 </section>
       <h4><a class="xref" href="OpenTK.Core.Platform.PlatformEventType.html">PlatformEventType</a></h4>
       <section><p>Enumeration of all OpenTK window events.</p>
+</section>
+      <h4><a class="xref" href="OpenTK.Core.Platform.SaveDialogOptions.html">SaveDialogOptions</a></h4>
+      <section><p>Options for save dialogs.</p>
 </section>
       <h4><a class="xref" href="OpenTK.Core.Platform.Scancode.html">Scancode</a></h4>
       <section></section>
@@ -360,6 +385,9 @@ Enums
     <h3 id="delegates">
 Delegates
 </h3>
+      <h4><a class="xref" href="OpenTK.Core.Platform.ContextValueSelector.html">ContextValueSelector</a></h4>
+      <section><p>Delegate used to select appropriate context values to use.</p>
+</section>
       <h4><a class="xref" href="OpenTK.Core.Platform.HitTest.html">HitTest</a></h4>
       <section><p>A delegate for hit testing.</p>
 <p>Hit testing is not always done in respone to the user clicking the mouse.

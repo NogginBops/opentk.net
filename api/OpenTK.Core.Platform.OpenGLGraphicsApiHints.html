@@ -124,32 +124,14 @@
   <h3 id="constructors">Constructors
 </h3>
   <a id="OpenTK_Core_Platform_OpenGLGraphicsApiHints__ctor_" data-uid="OpenTK.Core.Platform.OpenGLGraphicsApiHints.#ctor*"></a>
-  <h4 id="OpenTK_Core_Platform_OpenGLGraphicsApiHints__ctor_OpenTK_Core_Platform_GraphicsApi_" data-uid="OpenTK.Core.Platform.OpenGLGraphicsApiHints.#ctor(OpenTK.Core.Platform.GraphicsApi)">OpenGLGraphicsApiHints(GraphicsApi)</h4>
+  <h4 id="OpenTK_Core_Platform_OpenGLGraphicsApiHints__ctor" data-uid="OpenTK.Core.Platform.OpenGLGraphicsApiHints.#ctor">OpenGLGraphicsApiHints()</h4>
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="OpenTK.Core.Platform.OpenGLGraphicsApiHints.html">OpenGLGraphicsApiHints</a> class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public OpenGLGraphicsApiHints(GraphicsApi api = GraphicsApi.OpenGL)</code></pre>
+    <pre><code class="lang-csharp hljs">public OpenGLGraphicsApiHints()</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Core.Platform.GraphicsApi.html">GraphicsApi</a></td>
-        <td><span class="parametername">api</span></td>
-        <td><p>The OpenGL variant the hints are for.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
   <h3 id="properties">Properties
 </h3>
   <a id="OpenTK_Core_Platform_OpenGLGraphicsApiHints_AlphaColorBits_" data-uid="OpenTK.Core.Platform.OpenGLGraphicsApiHints.AlphaColorBits*"></a>
@@ -370,6 +352,60 @@
       </tr>
     </tbody>
   </table>
+  <a id="OpenTK_Core_Platform_OpenGLGraphicsApiHints_NoError_" data-uid="OpenTK.Core.Platform.OpenGLGraphicsApiHints.NoError*"></a>
+  <h4 id="OpenTK_Core_Platform_OpenGLGraphicsApiHints_NoError" data-uid="OpenTK.Core.Platform.OpenGLGraphicsApiHints.NoError">NoError</h4>
+  <div class="markdown level1 summary"><p>If the &quot;no error&quot; flag should be set or not.
+See <a href="https://registry.khronos.org/OpenGL/extensions/KHR/KHR_no_error.txt">KHR_no_error</a>.
+Cannot be enabled while <a class="xref" href="OpenTK.Core.Platform.OpenGLGraphicsApiHints.html#OpenTK_Core_Platform_OpenGLGraphicsApiHints_DebugFlag">DebugFlag</a> or <a class="xref" href="OpenTK.Core.Platform.OpenGLGraphicsApiHints.html#OpenTK_Core_Platform_OpenGLGraphicsApiHints_RobustnessFlag">RobustnessFlag</a> is set.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool NoError { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Core_Platform_OpenGLGraphicsApiHints_PixelFormat_" data-uid="OpenTK.Core.Platform.OpenGLGraphicsApiHints.PixelFormat*"></a>
+  <h4 id="OpenTK_Core_Platform_OpenGLGraphicsApiHints_PixelFormat" data-uid="OpenTK.Core.Platform.OpenGLGraphicsApiHints.PixelFormat">PixelFormat</h4>
+  <div class="markdown level1 summary"><p>The pixel format of the context.
+This differentiates between &quot;normal&quot; fixed point LDR formats
+and floating point HDR formats.
+Use <a class="xref" href="OpenTK.Core.Platform.ContextPixelFormat.html#OpenTK_Core_Platform_ContextPixelFormat_RGBAFloat">RGBAFloat</a> or <a class="xref" href="OpenTK.Core.Platform.ContextPixelFormat.html#OpenTK_Core_Platform_ContextPixelFormat_RGBAPackedFloat">RGBAPackedFloat</a> for HDR support.
+Is <a class="xref" href="OpenTK.Core.Platform.ContextPixelFormat.html#OpenTK_Core_Platform_ContextPixelFormat_RGBA">RGBA</a> by default.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ContextPixelFormat PixelFormat { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Core.Platform.ContextPixelFormat.html">ContextPixelFormat</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <a id="OpenTK_Core_Platform_OpenGLGraphicsApiHints_Profile_" data-uid="OpenTK.Core.Platform.OpenGLGraphicsApiHints.Profile*"></a>
   <h4 id="OpenTK_Core_Platform_OpenGLGraphicsApiHints_Profile" data-uid="OpenTK.Core.Platform.OpenGLGraphicsApiHints.Profile">Profile</h4>
   <div class="markdown level1 summary"><p>The OpenGL profile to request.</p>
@@ -418,6 +454,130 @@
       </tr>
     </tbody>
   </table>
+  <a id="OpenTK_Core_Platform_OpenGLGraphicsApiHints_ReleaseBehaviour_" data-uid="OpenTK.Core.Platform.OpenGLGraphicsApiHints.ReleaseBehaviour*"></a>
+  <h4 id="OpenTK_Core_Platform_OpenGLGraphicsApiHints_ReleaseBehaviour" data-uid="OpenTK.Core.Platform.OpenGLGraphicsApiHints.ReleaseBehaviour">ReleaseBehaviour</h4>
+  <div class="markdown level1 summary"><p>If <a class="xref" href="OpenTK.Core.Platform.OpenGLGraphicsApiHints.html#OpenTK_Core_Platform_OpenGLGraphicsApiHints_UseFlushControl">UseFlushControl</a> is true then this controls the context release behaviour when the context is changed.
+Is <a class="xref" href="OpenTK.Core.Platform.ContextReleaseBehaviour.html#OpenTK_Core_Platform_ContextReleaseBehaviour_Flush">Flush</a> by default.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ContextReleaseBehaviour ReleaseBehaviour { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Core.Platform.ContextReleaseBehaviour.html">ContextReleaseBehaviour</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Core_Platform_OpenGLGraphicsApiHints_ResetIsolation_" data-uid="OpenTK.Core.Platform.OpenGLGraphicsApiHints.ResetIsolation*"></a>
+  <h4 id="OpenTK_Core_Platform_OpenGLGraphicsApiHints_ResetIsolation" data-uid="OpenTK.Core.Platform.OpenGLGraphicsApiHints.ResetIsolation">ResetIsolation</h4>
+  <div class="markdown level1 summary"><p>See <a href="https://registry.khronos.org/OpenGL/extensions/ARB/ARB_robustness_application_isolation.txt">GL_ARB_robustness_isolation</a>.
+<a class="xref" href="OpenTK.Core.Platform.OpenGLGraphicsApiHints.html#OpenTK_Core_Platform_OpenGLGraphicsApiHints_ResetNotificationStrategy">ResetNotificationStrategy</a> needs to be <a class="xref" href="OpenTK.Core.Platform.ContextResetNotificationStrategy.html#OpenTK_Core_Platform_ContextResetNotificationStrategy_LoseContextOnReset">LoseContextOnReset</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ResetIsolation { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Core_Platform_OpenGLGraphicsApiHints_ResetNotificationStrategy_" data-uid="OpenTK.Core.Platform.OpenGLGraphicsApiHints.ResetNotificationStrategy*"></a>
+  <h4 id="OpenTK_Core_Platform_OpenGLGraphicsApiHints_ResetNotificationStrategy" data-uid="OpenTK.Core.Platform.OpenGLGraphicsApiHints.ResetNotificationStrategy">ResetNotificationStrategy</h4>
+  <div class="markdown level1 summary"><p>The reset notification strategy to use if <a class="xref" href="OpenTK.Core.Platform.OpenGLGraphicsApiHints.html#OpenTK_Core_Platform_OpenGLGraphicsApiHints_RobustnessFlag">RobustnessFlag</a> is set to <code>true</code>.
+See <a href="https://registry.khronos.org/OpenGL/extensions/ARB/ARB_robustness.txt">GL_ARB_robustness</a> for details.
+Default value is <a class="xref" href="OpenTK.Core.Platform.ContextResetNotificationStrategy.html#OpenTK_Core_Platform_ContextResetNotificationStrategy_NoResetNotification">NoResetNotification</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ContextResetNotificationStrategy ResetNotificationStrategy { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Core.Platform.ContextResetNotificationStrategy.html">ContextResetNotificationStrategy</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Core_Platform_OpenGLGraphicsApiHints_RobustnessFlag_" data-uid="OpenTK.Core.Platform.OpenGLGraphicsApiHints.RobustnessFlag*"></a>
+  <h4 id="OpenTK_Core_Platform_OpenGLGraphicsApiHints_RobustnessFlag" data-uid="OpenTK.Core.Platform.OpenGLGraphicsApiHints.RobustnessFlag">RobustnessFlag</h4>
+  <div class="markdown level1 summary"><p>If the robustness flag should be set or not.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RobustnessFlag { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Core_Platform_OpenGLGraphicsApiHints_Selector_" data-uid="OpenTK.Core.Platform.OpenGLGraphicsApiHints.Selector*"></a>
+  <h4 id="OpenTK_Core_Platform_OpenGLGraphicsApiHints_Selector" data-uid="OpenTK.Core.Platform.OpenGLGraphicsApiHints.Selector">Selector</h4>
+  <div class="markdown level1 summary"><p>A callback that can be used to select appropriate backbuffer values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ContextValueSelector Selector { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Core.Platform.ContextValueSelector.html">ContextValueSelector</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <a id="OpenTK_Core_Platform_OpenGLGraphicsApiHints_SharedContext_" data-uid="OpenTK.Core.Platform.OpenGLGraphicsApiHints.SharedContext*"></a>
   <h4 id="OpenTK_Core_Platform_OpenGLGraphicsApiHints_SharedContext" data-uid="OpenTK.Core.Platform.OpenGLGraphicsApiHints.SharedContext">SharedContext</h4>
   <div class="markdown level1 summary"><p>A context to enable context sharing with.</p>
@@ -462,6 +622,81 @@
     <tbody>
       <tr>
         <td><a class="xref" href="OpenTK.Core.Platform.ContextStencilBits.html">ContextStencilBits</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Core_Platform_OpenGLGraphicsApiHints_SwapMethod_" data-uid="OpenTK.Core.Platform.OpenGLGraphicsApiHints.SwapMethod*"></a>
+  <h4 id="OpenTK_Core_Platform_OpenGLGraphicsApiHints_SwapMethod" data-uid="OpenTK.Core.Platform.OpenGLGraphicsApiHints.SwapMethod">SwapMethod</h4>
+  <div class="markdown level1 summary"><p>The swap method to use for the context.
+Is <a class="xref" href="OpenTK.Core.Platform.ContextSwapMethod.html#OpenTK_Core_Platform_ContextSwapMethod_Undefined">Undefined</a> by default.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ContextSwapMethod SwapMethod { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Core.Platform.ContextSwapMethod.html">ContextSwapMethod</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Core_Platform_OpenGLGraphicsApiHints_UseFlushControl_" data-uid="OpenTK.Core.Platform.OpenGLGraphicsApiHints.UseFlushControl*"></a>
+  <h4 id="OpenTK_Core_Platform_OpenGLGraphicsApiHints_UseFlushControl" data-uid="OpenTK.Core.Platform.OpenGLGraphicsApiHints.UseFlushControl">UseFlushControl</h4>
+  <div class="markdown level1 summary"><p>Whether to use KHR_context_flush_control (if available) or not.
+See <a class="xref" href="OpenTK.Core.Platform.OpenGLGraphicsApiHints.html#OpenTK_Core_Platform_OpenGLGraphicsApiHints_ReleaseBehaviour">ReleaseBehaviour</a> for flush control options.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool UseFlushControl { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Core_Platform_OpenGLGraphicsApiHints_UseSelectorOnMacOS_" data-uid="OpenTK.Core.Platform.OpenGLGraphicsApiHints.UseSelectorOnMacOS*"></a>
+  <h4 id="OpenTK_Core_Platform_OpenGLGraphicsApiHints_UseSelectorOnMacOS" data-uid="OpenTK.Core.Platform.OpenGLGraphicsApiHints.UseSelectorOnMacOS">UseSelectorOnMacOS</h4>
+  <div class="markdown level1 summary"><p>Enumerating <a class="xref" href="OpenTK.Core.Platform.ContextValues.html">ContextValues</a> on macOS is slow, so by default <a class="xref" href="OpenTK.Core.Platform.OpenGLGraphicsApiHints.html#OpenTK_Core_Platform_OpenGLGraphicsApiHints_Selector">Selector</a> is not used on macOS.
+When this property is <code>false</code> the default platform selection of context values are used, which tries to find a closest match.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool UseSelectorOnMacOS { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td></td>
       </tr>
     </tbody>

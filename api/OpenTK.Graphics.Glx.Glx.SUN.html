@@ -123,13 +123,13 @@
   <h3 id="methods">Methods
 </h3>
   <a id="OpenTK_Graphics_Glx_Glx_SUN_GetTransparentIndexSUN_" data-uid="OpenTK.Graphics.Glx.Glx.SUN.GetTransparentIndexSUN*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_SUN_GetTransparentIndexSUN_OpenTK_Graphics_Glx_Display__OpenTK_Graphics_Glx_Window_OpenTK_Graphics_Glx_Window_System_UInt64__" data-uid="OpenTK.Graphics.Glx.Glx.SUN.GetTransparentIndexSUN(OpenTK.Graphics.Glx.Display*,OpenTK.Graphics.Glx.Window,OpenTK.Graphics.Glx.Window,System.UInt64*)">GetTransparentIndexSUN(Display*, Window, Window, ulong*)</h4>
+  <h4 id="OpenTK_Graphics_Glx_Glx_SUN_GetTransparentIndexSUN_OpenTK_Graphics_Glx_DisplayPtr_OpenTK_Graphics_Glx_Window_OpenTK_Graphics_Glx_Window_System_UInt64__" data-uid="OpenTK.Graphics.Glx.Glx.SUN.GetTransparentIndexSUN(OpenTK.Graphics.Glx.DisplayPtr,OpenTK.Graphics.Glx.Window,OpenTK.Graphics.Glx.Window,System.UInt64*)">GetTransparentIndexSUN(DisplayPtr, Window, Window, ulong*)</h4>
   <div class="markdown level1 summary"><p><b>[requires: GLX_SUN_get_transparent_index]</b> <b>[entry point: <code>glXGetTransparentIndexSUN</code>]</b><br></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int GetTransparentIndexSUN(Display* dpy, Window overlay, Window underlay, ulong* pTransparentIndex)</code></pre>
+    <pre><code class="lang-csharp hljs">public static int GetTransparentIndexSUN(DisplayPtr dpy, Window overlay, Window underlay, ulong* pTransparentIndex)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -142,7 +142,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*</td>
+        <td><a class="xref" href="OpenTK.Graphics.Glx.DisplayPtr.html">DisplayPtr</a></td>
         <td><span class="parametername">dpy</span></td>
         <td></td>
       </tr>
@@ -179,7 +179,7 @@
     </tbody>
   </table>
   <a id="OpenTK_Graphics_Glx_Glx_SUN_GetTransparentIndexSUN_" data-uid="OpenTK.Graphics.Glx.Glx.SUN.GetTransparentIndexSUN*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_SUN_GetTransparentIndexSUN_OpenTK_Graphics_Glx_Display__OpenTK_Graphics_Glx_Window_OpenTK_Graphics_Glx_Window_System_UInt64__" data-uid="OpenTK.Graphics.Glx.Glx.SUN.GetTransparentIndexSUN(OpenTK.Graphics.Glx.Display@,OpenTK.Graphics.Glx.Window,OpenTK.Graphics.Glx.Window,System.UInt64@)">GetTransparentIndexSUN(ref Display, Window, Window, ref ulong)</h4>
+  <h4 id="OpenTK_Graphics_Glx_Glx_SUN_GetTransparentIndexSUN_OpenTK_Graphics_Glx_DisplayPtr_OpenTK_Graphics_Glx_Window_OpenTK_Graphics_Glx_Window_System_UInt64__" data-uid="OpenTK.Graphics.Glx.Glx.SUN.GetTransparentIndexSUN(OpenTK.Graphics.Glx.DisplayPtr,OpenTK.Graphics.Glx.Window,OpenTK.Graphics.Glx.Window,System.UInt64@)">GetTransparentIndexSUN(DisplayPtr, Window, Window, ref ulong)</h4>
   <div class="markdown level1 summary"><p><b>[requires: GLX_SUN_get_transparent_index]</b>
 <b>[entry point: <code>glXGetTransparentIndexSUN</code>]</b>
 <br></p>
@@ -187,7 +187,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int GetTransparentIndexSUN(ref Display dpy, Window overlay, Window underlay, ref ulong pTransparentIndex)</code></pre>
+    <pre><code class="lang-csharp hljs">public static int GetTransparentIndexSUN(DisplayPtr dpy, Window overlay, Window underlay, ref ulong pTransparentIndex)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -200,7 +200,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a></td>
+        <td><a class="xref" href="OpenTK.Graphics.Glx.DisplayPtr.html">DisplayPtr</a></td>
         <td><span class="parametername">dpy</span></td>
         <td></td>
       </tr>

@@ -883,13 +883,13 @@ Getting the hotspot of a system cursor is not guaranteed to be possible, check <
       <div><a class="xref" href="OpenTK.Core.Platform.ICursorComponent.html#OpenTK_Core_Platform_ICursorComponent_CanInspectSystemCursors">CanInspectSystemCursors</a></div>
   </div>
   <a id="OpenTK_Platform_Native_Windows_CursorComponent_Initialize_" data-uid="OpenTK.Platform.Native.Windows.CursorComponent.Initialize*"></a>
-  <h4 id="OpenTK_Platform_Native_Windows_CursorComponent_Initialize_OpenTK_Core_Platform_PalComponents_" data-uid="OpenTK.Platform.Native.Windows.CursorComponent.Initialize(OpenTK.Core.Platform.PalComponents)">Initialize(PalComponents)</h4>
-  <div class="markdown level1 summary"><p>Initialize the driver.</p>
+  <h4 id="OpenTK_Platform_Native_Windows_CursorComponent_Initialize_OpenTK_Core_Platform_ToolkitOptions_" data-uid="OpenTK.Platform.Native.Windows.CursorComponent.Initialize(OpenTK.Core.Platform.ToolkitOptions)">Initialize(ToolkitOptions)</h4>
+  <div class="markdown level1 summary"><p>Initialize the component.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Initialize(PalComponents which)</code></pre>
+    <pre><code class="lang-csharp hljs">public void Initialize(ToolkitOptions options)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -902,9 +902,9 @@ Getting the hotspot of a system cursor is not guaranteed to be possible, check <
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Core.Platform.PalComponents.html">PalComponents</a></td>
-        <td><span class="parametername">which</span></td>
-        <td><p>Bitfield of which components the driver need to be initialized.</p>
+        <td><a class="xref" href="OpenTK.Core.Platform.ToolkitOptions.html">ToolkitOptions</a></td>
+        <td><span class="parametername">options</span></td>
+        <td><p>The options to initialize the component with.</p>
 </td>
       </tr>
     </tbody>

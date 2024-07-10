@@ -324,13 +324,13 @@ By default this setting is untouched.</p>
     </tbody>
   </table>
   <a id="OpenTK_Platform_Native_Windows_ShellComponent_Initialize_" data-uid="OpenTK.Platform.Native.Windows.ShellComponent.Initialize*"></a>
-  <h4 id="OpenTK_Platform_Native_Windows_ShellComponent_Initialize_OpenTK_Core_Platform_PalComponents_" data-uid="OpenTK.Platform.Native.Windows.ShellComponent.Initialize(OpenTK.Core.Platform.PalComponents)">Initialize(PalComponents)</h4>
-  <div class="markdown level1 summary"><p>Initialize the driver.</p>
+  <h4 id="OpenTK_Platform_Native_Windows_ShellComponent_Initialize_OpenTK_Core_Platform_ToolkitOptions_" data-uid="OpenTK.Platform.Native.Windows.ShellComponent.Initialize(OpenTK.Core.Platform.ToolkitOptions)">Initialize(ToolkitOptions)</h4>
+  <div class="markdown level1 summary"><p>Initialize the component.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Initialize(PalComponents which)</code></pre>
+    <pre><code class="lang-csharp hljs">public void Initialize(ToolkitOptions options)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -343,16 +343,17 @@ By default this setting is untouched.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Core.Platform.PalComponents.html">PalComponents</a></td>
-        <td><span class="parametername">which</span></td>
-        <td><p>Bitfield of which components the driver need to be initialized.</p>
+        <td><a class="xref" href="OpenTK.Core.Platform.ToolkitOptions.html">ToolkitOptions</a></td>
+        <td><span class="parametername">options</span></td>
+        <td><p>The options to initialize the component with.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="OpenTK_Platform_Native_Windows_ShellComponent_SetCaptionColor_" data-uid="OpenTK.Platform.Native.Windows.ShellComponent.SetCaptionColor*"></a>
   <h4 id="OpenTK_Platform_Native_Windows_ShellComponent_SetCaptionColor_OpenTK_Core_Platform_WindowHandle_OpenTK_Mathematics_Color3_OpenTK_Mathematics_Rgb__" data-uid="OpenTK.Platform.Native.Windows.ShellComponent.SetCaptionColor(OpenTK.Core.Platform.WindowHandle,OpenTK.Mathematics.Color3{OpenTK.Mathematics.Rgb})">SetCaptionColor(WindowHandle, Color3&lt;Rgb&gt;)</h4>
-  <div class="markdown level1 summary"><p>Sets the color of the windows caption bar.</p>
+  <div class="markdown level1 summary"><p>Works on Windows 11 only.
+Sets the color of the windows caption bar.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -383,7 +384,8 @@ By default this setting is untouched.</p>
   </table>
   <a id="OpenTK_Platform_Native_Windows_ShellComponent_SetCaptionTextColor_" data-uid="OpenTK.Platform.Native.Windows.ShellComponent.SetCaptionTextColor*"></a>
   <h4 id="OpenTK_Platform_Native_Windows_ShellComponent_SetCaptionTextColor_OpenTK_Core_Platform_WindowHandle_OpenTK_Mathematics_Color3_OpenTK_Mathematics_Rgb__" data-uid="OpenTK.Platform.Native.Windows.ShellComponent.SetCaptionTextColor(OpenTK.Core.Platform.WindowHandle,OpenTK.Mathematics.Color3{OpenTK.Mathematics.Rgb})">SetCaptionTextColor(WindowHandle, Color3&lt;Rgb&gt;)</h4>
-  <div class="markdown level1 summary"><p>Sets the color of the windows caption bar text.</p>
+  <div class="markdown level1 summary"><p>Works on Windows 11 only.
+Sets the color of the windows caption bar text.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -442,6 +444,38 @@ By default this setting is untouched.</p>
         <td><span class="parametername">useImmersiveDarkMode</span></td>
         <td><p>Whether to use immersive dark mode or not.</p>
 </td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Platform_Native_Windows_ShellComponent_SetWindowCornerPreference_" data-uid="OpenTK.Platform.Native.Windows.ShellComponent.SetWindowCornerPreference*"></a>
+  <h4 id="OpenTK_Platform_Native_Windows_ShellComponent_SetWindowCornerPreference_OpenTK_Core_Platform_WindowHandle_OpenTK_Platform_Native_Windows_ShellComponent_CornerPrefernce_" data-uid="OpenTK.Platform.Native.Windows.ShellComponent.SetWindowCornerPreference(OpenTK.Core.Platform.WindowHandle,OpenTK.Platform.Native.Windows.ShellComponent.CornerPrefernce)">SetWindowCornerPreference(WindowHandle, CornerPrefernce)</h4>
+  <div class="markdown level1 summary"><p>Works on Windows 11 only.
+Sets if the window should have rounded corners or not.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetWindowCornerPreference(WindowHandle handle, ShellComponent.CornerPrefernce preference)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Core.Platform.WindowHandle.html">WindowHandle</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Platform.Native.Windows.ShellComponent.html">ShellComponent</a>.<a class="xref" href="OpenTK.Platform.Native.Windows.ShellComponent.CornerPrefernce.html">CornerPrefernce</a></td>
+        <td><span class="parametername">preference</span></td>
+        <td></td>
       </tr>
     </tbody>
   </table>

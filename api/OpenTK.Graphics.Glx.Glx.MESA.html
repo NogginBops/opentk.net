@@ -123,13 +123,13 @@
   <h3 id="methods">Methods
 </h3>
   <a id="OpenTK_Graphics_Glx_Glx_MESA_CopySubBufferMESA_" data-uid="OpenTK.Graphics.Glx.Glx.MESA.CopySubBufferMESA*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_MESA_CopySubBufferMESA_OpenTK_Graphics_Glx_Display__OpenTK_Graphics_Glx_GLXDrawable_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="OpenTK.Graphics.Glx.Glx.MESA.CopySubBufferMESA(OpenTK.Graphics.Glx.Display*,OpenTK.Graphics.Glx.GLXDrawable,System.Int32,System.Int32,System.Int32,System.Int32)">CopySubBufferMESA(Display*, GLXDrawable, int, int, int, int)</h4>
+  <h4 id="OpenTK_Graphics_Glx_Glx_MESA_CopySubBufferMESA_OpenTK_Graphics_Glx_DisplayPtr_OpenTK_Graphics_Glx_GLXDrawable_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="OpenTK.Graphics.Glx.Glx.MESA.CopySubBufferMESA(OpenTK.Graphics.Glx.DisplayPtr,OpenTK.Graphics.Glx.GLXDrawable,System.Int32,System.Int32,System.Int32,System.Int32)">CopySubBufferMESA(DisplayPtr, GLXDrawable, int, int, int, int)</h4>
   <div class="markdown level1 summary"><p><b>[requires: GLX_MESA_copy_sub_buffer]</b> <b>[entry point: <code>glXCopySubBufferMESA</code>]</b><br></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void CopySubBufferMESA(Display* dpy, GLXDrawable drawable, int x, int y, int width, int height)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void CopySubBufferMESA(DisplayPtr dpy, GLXDrawable drawable, int x, int y, int width, int height)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -142,60 +142,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*</td>
-        <td><span class="parametername">dpy</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.GLXDrawable.html">GLXDrawable</a></td>
-        <td><span class="parametername">drawable</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
-        <td><span class="parametername">x</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
-        <td><span class="parametername">y</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
-        <td><span class="parametername">width</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
-        <td><span class="parametername">height</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="OpenTK_Graphics_Glx_Glx_MESA_CopySubBufferMESA_" data-uid="OpenTK.Graphics.Glx.Glx.MESA.CopySubBufferMESA*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_MESA_CopySubBufferMESA_OpenTK_Graphics_Glx_Display__OpenTK_Graphics_Glx_GLXDrawable_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="OpenTK.Graphics.Glx.Glx.MESA.CopySubBufferMESA(OpenTK.Graphics.Glx.Display@,OpenTK.Graphics.Glx.GLXDrawable,System.Int32,System.Int32,System.Int32,System.Int32)">CopySubBufferMESA(ref Display, GLXDrawable, int, int, int, int)</h4>
-  <div class="markdown level1 summary"><p><b>[requires: GLX_MESA_copy_sub_buffer]</b>
-<b>[entry point: <code>glXCopySubBufferMESA</code>]</b>
-<br></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void CopySubBufferMESA(ref Display dpy, GLXDrawable drawable, int x, int y, int width, int height)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a></td>
+        <td><a class="xref" href="OpenTK.Graphics.Glx.DisplayPtr.html">DisplayPtr</a></td>
         <td><span class="parametername">dpy</span></td>
         <td></td>
       </tr>
@@ -227,13 +174,13 @@
     </tbody>
   </table>
   <a id="OpenTK_Graphics_Glx_Glx_MESA_CreateGLXPixmapMESA_" data-uid="OpenTK.Graphics.Glx.Glx.MESA.CreateGLXPixmapMESA*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_MESA_CreateGLXPixmapMESA_OpenTK_Graphics_Glx_Display__OpenTK_Graphics_Glx_XVisualInfo__OpenTK_Graphics_Glx_Pixmap_OpenTK_Graphics_Glx_Colormap_" data-uid="OpenTK.Graphics.Glx.Glx.MESA.CreateGLXPixmapMESA(OpenTK.Graphics.Glx.Display*,OpenTK.Graphics.Glx.XVisualInfo*,OpenTK.Graphics.Glx.Pixmap,OpenTK.Graphics.Glx.Colormap)">CreateGLXPixmapMESA(Display*, XVisualInfo*, Pixmap, Colormap)</h4>
+  <h4 id="OpenTK_Graphics_Glx_Glx_MESA_CreateGLXPixmapMESA_OpenTK_Graphics_Glx_DisplayPtr_OpenTK_Graphics_Glx_XVisualInfoPtr_OpenTK_Graphics_Glx_Pixmap_OpenTK_Graphics_Glx_Colormap_" data-uid="OpenTK.Graphics.Glx.Glx.MESA.CreateGLXPixmapMESA(OpenTK.Graphics.Glx.DisplayPtr,OpenTK.Graphics.Glx.XVisualInfoPtr,OpenTK.Graphics.Glx.Pixmap,OpenTK.Graphics.Glx.Colormap)">CreateGLXPixmapMESA(DisplayPtr, XVisualInfoPtr, Pixmap, Colormap)</h4>
   <div class="markdown level1 summary"><p><b>[requires: GLX_MESA_pixmap_colormap]</b> <b>[entry point: <code>glXCreateGLXPixmapMESA</code>]</b><br></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static GLXPixmap CreateGLXPixmapMESA(Display* dpy, XVisualInfo* visual, Pixmap pixmap, Colormap cmap)</code></pre>
+    <pre><code class="lang-csharp hljs">public static GLXPixmap CreateGLXPixmapMESA(DisplayPtr dpy, XVisualInfoPtr visual, Pixmap pixmap, Colormap cmap)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -246,70 +193,12 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*</td>
+        <td><a class="xref" href="OpenTK.Graphics.Glx.DisplayPtr.html">DisplayPtr</a></td>
         <td><span class="parametername">dpy</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.XVisualInfo.html">XVisualInfo</a>*</td>
-        <td><span class="parametername">visual</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.Pixmap.html">Pixmap</a></td>
-        <td><span class="parametername">pixmap</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.Colormap.html">Colormap</a></td>
-        <td><span class="parametername">cmap</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.GLXPixmap.html">GLXPixmap</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="OpenTK_Graphics_Glx_Glx_MESA_CreateGLXPixmapMESA_" data-uid="OpenTK.Graphics.Glx.Glx.MESA.CreateGLXPixmapMESA*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_MESA_CreateGLXPixmapMESA_OpenTK_Graphics_Glx_Display__OpenTK_Graphics_Glx_XVisualInfo__OpenTK_Graphics_Glx_Pixmap_OpenTK_Graphics_Glx_Colormap_" data-uid="OpenTK.Graphics.Glx.Glx.MESA.CreateGLXPixmapMESA(OpenTK.Graphics.Glx.Display@,OpenTK.Graphics.Glx.XVisualInfo@,OpenTK.Graphics.Glx.Pixmap,OpenTK.Graphics.Glx.Colormap)">CreateGLXPixmapMESA(ref Display, ref XVisualInfo, Pixmap, Colormap)</h4>
-  <div class="markdown level1 summary"><p><b>[requires: GLX_MESA_pixmap_colormap]</b>
-<b>[entry point: <code>glXCreateGLXPixmapMESA</code>]</b>
-<br></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static GLXPixmap CreateGLXPixmapMESA(ref Display dpy, ref XVisualInfo visual, Pixmap pixmap, Colormap cmap)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a></td>
-        <td><span class="parametername">dpy</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.XVisualInfo.html">XVisualInfo</a></td>
+        <td><a class="xref" href="OpenTK.Graphics.Glx.XVisualInfoPtr.html">XVisualInfoPtr</a></td>
         <td><span class="parametername">visual</span></td>
         <td></td>
       </tr>
@@ -682,13 +571,13 @@
     </tbody>
   </table>
   <a id="OpenTK_Graphics_Glx_Glx_MESA_QueryRendererIntegerMESA_" data-uid="OpenTK.Graphics.Glx.Glx.MESA.QueryRendererIntegerMESA*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_MESA_QueryRendererIntegerMESA_OpenTK_Graphics_Glx_Display__System_Int32_System_Int32_System_Int32_System_UInt32__" data-uid="OpenTK.Graphics.Glx.Glx.MESA.QueryRendererIntegerMESA(OpenTK.Graphics.Glx.Display*,System.Int32,System.Int32,System.Int32,System.UInt32*)">QueryRendererIntegerMESA(Display*, int, int, int, uint*)</h4>
+  <h4 id="OpenTK_Graphics_Glx_Glx_MESA_QueryRendererIntegerMESA_OpenTK_Graphics_Glx_DisplayPtr_System_Int32_System_Int32_System_Int32_System_UInt32__" data-uid="OpenTK.Graphics.Glx.Glx.MESA.QueryRendererIntegerMESA(OpenTK.Graphics.Glx.DisplayPtr,System.Int32,System.Int32,System.Int32,System.UInt32*)">QueryRendererIntegerMESA(DisplayPtr, int, int, int, uint*)</h4>
   <div class="markdown level1 summary"><p><b>[requires: GLX_MESA_query_renderer]</b> <b>[entry point: <code>glXQueryRendererIntegerMESA</code>]</b><br></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool QueryRendererIntegerMESA(Display* dpy, int screen, int renderer, int attribute, uint* value)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool QueryRendererIntegerMESA(DisplayPtr dpy, int screen, int renderer, int attribute, uint* value)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -701,7 +590,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*</td>
+        <td><a class="xref" href="OpenTK.Graphics.Glx.DisplayPtr.html">DisplayPtr</a></td>
         <td><span class="parametername">dpy</span></td>
         <td></td>
       </tr>
@@ -743,7 +632,7 @@
     </tbody>
   </table>
   <a id="OpenTK_Graphics_Glx_Glx_MESA_QueryRendererIntegerMESA_" data-uid="OpenTK.Graphics.Glx.Glx.MESA.QueryRendererIntegerMESA*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_MESA_QueryRendererIntegerMESA_OpenTK_Graphics_Glx_Display__System_Int32_System_Int32_System_Int32_System_UInt32__" data-uid="OpenTK.Graphics.Glx.Glx.MESA.QueryRendererIntegerMESA(OpenTK.Graphics.Glx.Display@,System.Int32,System.Int32,System.Int32,System.UInt32@)">QueryRendererIntegerMESA(ref Display, int, int, int, ref uint)</h4>
+  <h4 id="OpenTK_Graphics_Glx_Glx_MESA_QueryRendererIntegerMESA_OpenTK_Graphics_Glx_DisplayPtr_System_Int32_System_Int32_System_Int32_System_UInt32__" data-uid="OpenTK.Graphics.Glx.Glx.MESA.QueryRendererIntegerMESA(OpenTK.Graphics.Glx.DisplayPtr,System.Int32,System.Int32,System.Int32,System.UInt32@)">QueryRendererIntegerMESA(DisplayPtr, int, int, int, ref uint)</h4>
   <div class="markdown level1 summary"><p><b>[requires: GLX_MESA_query_renderer]</b>
 <b>[entry point: <code>glXQueryRendererIntegerMESA</code>]</b>
 <br></p>
@@ -751,7 +640,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool QueryRendererIntegerMESA(ref Display dpy, int screen, int renderer, int attribute, ref uint value)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool QueryRendererIntegerMESA(DisplayPtr dpy, int screen, int renderer, int attribute, ref uint value)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -764,7 +653,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a></td>
+        <td><a class="xref" href="OpenTK.Graphics.Glx.DisplayPtr.html">DisplayPtr</a></td>
         <td><span class="parametername">dpy</span></td>
         <td></td>
       </tr>
@@ -806,13 +695,12 @@
     </tbody>
   </table>
   <a id="OpenTK_Graphics_Glx_Glx_MESA_QueryRendererStringMESA_" data-uid="OpenTK.Graphics.Glx.Glx.MESA.QueryRendererStringMESA*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_MESA_QueryRendererStringMESA_OpenTK_Graphics_Glx_Display__System_Int32_System_Int32_System_Int32_" data-uid="OpenTK.Graphics.Glx.Glx.MESA.QueryRendererStringMESA(OpenTK.Graphics.Glx.Display*,System.Int32,System.Int32,System.Int32)">QueryRendererStringMESA(Display*, int, int, int)</h4>
-  <div class="markdown level1 summary"><p><b>[requires: GLX_MESA_query_renderer]</b> <b>[entry point: <code>glXQueryRendererStringMESA</code>]</b><br></p>
-</div>
+  <h4 id="OpenTK_Graphics_Glx_Glx_MESA_QueryRendererStringMESA_OpenTK_Graphics_Glx_DisplayPtr_System_Int32_System_Int32_System_Int32_" data-uid="OpenTK.Graphics.Glx.Glx.MESA.QueryRendererStringMESA(OpenTK.Graphics.Glx.DisplayPtr,System.Int32,System.Int32,System.Int32)">QueryRendererStringMESA(DisplayPtr, int, int, int)</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static byte* QueryRendererStringMESA(Display* dpy, int screen, int renderer, int attribute)</code></pre>
+    <pre><code class="lang-csharp hljs">public static string? QueryRendererStringMESA(DisplayPtr dpy, int screen, int renderer, int attribute)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -825,65 +713,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*</td>
-        <td><span class="parametername">dpy</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
-        <td><span class="parametername">screen</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
-        <td><span class="parametername">renderer</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
-        <td><span class="parametername">attribute</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>*</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="OpenTK_Graphics_Glx_Glx_MESA_QueryRendererStringMESA_" data-uid="OpenTK.Graphics.Glx.Glx.MESA.QueryRendererStringMESA*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_MESA_QueryRendererStringMESA_OpenTK_Graphics_Glx_Display__System_Int32_System_Int32_System_Int32_" data-uid="OpenTK.Graphics.Glx.Glx.MESA.QueryRendererStringMESA(OpenTK.Graphics.Glx.Display@,System.Int32,System.Int32,System.Int32)">QueryRendererStringMESA(ref Display, int, int, int)</h4>
-  <div class="markdown level1 summary"><p><b>[requires: GLX_MESA_query_renderer]</b>
-<b>[entry point: <code>glXQueryRendererStringMESA</code>]</b>
-<br></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string? QueryRendererStringMESA(ref Display dpy, int screen, int renderer, int attribute)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a></td>
+        <td><a class="xref" href="OpenTK.Graphics.Glx.DisplayPtr.html">DisplayPtr</a></td>
         <td><span class="parametername">dpy</span></td>
         <td></td>
       </tr>
@@ -919,14 +749,14 @@
       </tr>
     </tbody>
   </table>
-  <a id="OpenTK_Graphics_Glx_Glx_MESA_ReleaseBuffersMESA_" data-uid="OpenTK.Graphics.Glx.Glx.MESA.ReleaseBuffersMESA*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_MESA_ReleaseBuffersMESA_OpenTK_Graphics_Glx_Display__OpenTK_Graphics_Glx_GLXDrawable_" data-uid="OpenTK.Graphics.Glx.Glx.MESA.ReleaseBuffersMESA(OpenTK.Graphics.Glx.Display*,OpenTK.Graphics.Glx.GLXDrawable)">ReleaseBuffersMESA(Display*, GLXDrawable)</h4>
-  <div class="markdown level1 summary"><p><b>[requires: GLX_MESA_release_buffers]</b> <b>[entry point: <code>glXReleaseBuffersMESA</code>]</b><br></p>
+  <a id="OpenTK_Graphics_Glx_Glx_MESA_QueryRendererStringMESA__" data-uid="OpenTK.Graphics.Glx.Glx.MESA.QueryRendererStringMESA_*"></a>
+  <h4 id="OpenTK_Graphics_Glx_Glx_MESA_QueryRendererStringMESA__OpenTK_Graphics_Glx_DisplayPtr_System_Int32_System_Int32_System_Int32_" data-uid="OpenTK.Graphics.Glx.Glx.MESA.QueryRendererStringMESA_(OpenTK.Graphics.Glx.DisplayPtr,System.Int32,System.Int32,System.Int32)">QueryRendererStringMESA_(DisplayPtr, int, int, int)</h4>
+  <div class="markdown level1 summary"><p><b>[requires: GLX_MESA_query_renderer]</b> <b>[entry point: <code>glXQueryRendererStringMESA</code>]</b><br></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool ReleaseBuffersMESA(Display* dpy, GLXDrawable drawable)</code></pre>
+    <pre><code class="lang-csharp hljs">public static byte* QueryRendererStringMESA_(DisplayPtr dpy, int screen, int renderer, int attribute)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -939,13 +769,23 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*</td>
+        <td><a class="xref" href="OpenTK.Graphics.Glx.DisplayPtr.html">DisplayPtr</a></td>
         <td><span class="parametername">dpy</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.GLXDrawable.html">GLXDrawable</a></td>
-        <td><span class="parametername">drawable</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">screen</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">renderer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">attribute</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -960,21 +800,19 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>*</td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <a id="OpenTK_Graphics_Glx_Glx_MESA_ReleaseBuffersMESA_" data-uid="OpenTK.Graphics.Glx.Glx.MESA.ReleaseBuffersMESA*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_MESA_ReleaseBuffersMESA_OpenTK_Graphics_Glx_Display__OpenTK_Graphics_Glx_GLXDrawable_" data-uid="OpenTK.Graphics.Glx.Glx.MESA.ReleaseBuffersMESA(OpenTK.Graphics.Glx.Display@,OpenTK.Graphics.Glx.GLXDrawable)">ReleaseBuffersMESA(ref Display, GLXDrawable)</h4>
-  <div class="markdown level1 summary"><p><b>[requires: GLX_MESA_release_buffers]</b>
-<b>[entry point: <code>glXReleaseBuffersMESA</code>]</b>
-<br></p>
+  <h4 id="OpenTK_Graphics_Glx_Glx_MESA_ReleaseBuffersMESA_OpenTK_Graphics_Glx_DisplayPtr_OpenTK_Graphics_Glx_GLXDrawable_" data-uid="OpenTK.Graphics.Glx.Glx.MESA.ReleaseBuffersMESA(OpenTK.Graphics.Glx.DisplayPtr,OpenTK.Graphics.Glx.GLXDrawable)">ReleaseBuffersMESA(DisplayPtr, GLXDrawable)</h4>
+  <div class="markdown level1 summary"><p><b>[requires: GLX_MESA_release_buffers]</b> <b>[entry point: <code>glXReleaseBuffersMESA</code>]</b><br></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool ReleaseBuffersMESA(ref Display dpy, GLXDrawable drawable)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool ReleaseBuffersMESA(DisplayPtr dpy, GLXDrawable drawable)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -987,7 +825,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a></td>
+        <td><a class="xref" href="OpenTK.Graphics.Glx.DisplayPtr.html">DisplayPtr</a></td>
         <td><span class="parametername">dpy</span></td>
         <td></td>
       </tr>

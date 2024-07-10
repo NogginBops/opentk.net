@@ -97,7 +97,7 @@
       <a class="xref" href="OpenTK.Core.Platform.IPalComponent.html#OpenTK_Core_Platform_IPalComponent_Logger">IPalComponent.Logger</a>
     </div>
     <div>
-      <a class="xref" href="OpenTK.Core.Platform.IPalComponent.html#OpenTK_Core_Platform_IPalComponent_Initialize_OpenTK_Core_Platform_PalComponents_">IPalComponent.Initialize(PalComponents)</a>
+      <a class="xref" href="OpenTK.Core.Platform.IPalComponent.html#OpenTK_Core_Platform_IPalComponent_Initialize_OpenTK_Core_Platform_ToolkitOptions_">IPalComponent.Initialize(ToolkitOptions)</a>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="OpenTK.html">OpenTK</a>.<a class="xref" href="OpenTK.Core.html">Core</a>.<a class="xref" href="OpenTK.Core.Platform.html">Platform</a></h6>
@@ -820,6 +820,46 @@
       </tr>
     </tbody>
   </table>
+  <a id="OpenTK_Core_Platform_IWindowComponent_GetFramebufferSize_" data-uid="OpenTK.Core.Platform.IWindowComponent.GetFramebufferSize*"></a>
+  <h4 id="OpenTK_Core_Platform_IWindowComponent_GetFramebufferSize_OpenTK_Core_Platform_WindowHandle_System_Int32__System_Int32__" data-uid="OpenTK.Core.Platform.IWindowComponent.GetFramebufferSize(OpenTK.Core.Platform.WindowHandle,System.Int32@,System.Int32@)">GetFramebufferSize(WindowHandle, out int, out int)</h4>
+  <div class="markdown level1 summary"><p>Get the size of the window framebuffer in pixels.
+Use this value when calls to graphics APIs that want pixels, e.g. GL.Viewport().</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void GetFramebufferSize(WindowHandle handle, out int width, out int height)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Core.Platform.WindowHandle.html">WindowHandle</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>Handle to a window.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">width</span></td>
+        <td><p>Width in pixels of the window framebuffer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">height</span></td>
+        <td><p>Height in pixels of the window framebuffer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="OpenTK_Core_Platform_IWindowComponent_GetFullscreenDisplay_" data-uid="OpenTK.Core.Platform.IWindowComponent.GetFullscreenDisplay*"></a>
   <h4 id="OpenTK_Core_Platform_IWindowComponent_GetFullscreenDisplay_OpenTK_Core_Platform_WindowHandle_OpenTK_Core_Platform_DisplayHandle__" data-uid="OpenTK.Core.Platform.IWindowComponent.GetFullscreenDisplay(OpenTK.Core.Platform.WindowHandle,OpenTK.Core.Platform.DisplayHandle@)">GetFullscreenDisplay(WindowHandle, out DisplayHandle?)</h4>
   <div class="markdown level1 summary"><p>Gets the display that the specified window is fullscreen on, if the window is fullscreen.</p>
@@ -1125,6 +1165,49 @@
       </tr>
     </tbody>
   </table>
+  <a id="OpenTK_Core_Platform_IWindowComponent_GetScaleFactor_" data-uid="OpenTK.Core.Platform.IWindowComponent.GetScaleFactor*"></a>
+  <h4 id="OpenTK_Core_Platform_IWindowComponent_GetScaleFactor_OpenTK_Core_Platform_WindowHandle_System_Single__System_Single__" data-uid="OpenTK.Core.Platform.IWindowComponent.GetScaleFactor(OpenTK.Core.Platform.WindowHandle,System.Single@,System.Single@)">GetScaleFactor(WindowHandle, out float, out float)</h4>
+  <div class="markdown level1 summary"><p>Returns the current scale factor of this window.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void GetScaleFactor(WindowHandle handle, out float scaleX, out float scaleY)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Core.Platform.WindowHandle.html">WindowHandle</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>The window handle.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">scaleX</span></td>
+        <td><p>The x scale factor of the window.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">scaleY</span></td>
+        <td><p>The y scale factor of the window.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenTK_Core_Platform_IWindowComponent_GetScaleFactor_OpenTK_Core_Platform_WindowHandle_System_Single__System_Single___seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="OpenTK.Core.Platform.WindowScaleChangeEventArgs.html">WindowScaleChangeEventArgs</a></div>
+  </div>
   <a id="OpenTK_Core_Platform_IWindowComponent_GetSize_" data-uid="OpenTK.Core.Platform.IWindowComponent.GetSize*"></a>
   <h4 id="OpenTK_Core_Platform_IWindowComponent_GetSize_OpenTK_Core_Platform_WindowHandle_System_Int32__System_Int32__" data-uid="OpenTK.Core.Platform.IWindowComponent.GetSize(OpenTK.Core.Platform.WindowHandle,System.Int32@,System.Int32@)">GetSize(WindowHandle, out int, out int)</h4>
   <div class="markdown level1 summary"><p>Get the size of the window.</p>
@@ -1278,6 +1361,49 @@
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><p>Whether the window is always on top or not.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Core_Platform_IWindowComponent_IsFocused_" data-uid="OpenTK.Core.Platform.IWindowComponent.IsFocused*"></a>
+  <h4 id="OpenTK_Core_Platform_IWindowComponent_IsFocused_OpenTK_Core_Platform_WindowHandle_" data-uid="OpenTK.Core.Platform.IWindowComponent.IsFocused(OpenTK.Core.Platform.WindowHandle)">IsFocused(WindowHandle)</h4>
+  <div class="markdown level1 summary"><p>Returns true if the given window has input focus.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsFocused(WindowHandle handle)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Core.Platform.WindowHandle.html">WindowHandle</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>Handle to a window.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p>If the window has input focus.</p>
 </td>
       </tr>
     </tbody>

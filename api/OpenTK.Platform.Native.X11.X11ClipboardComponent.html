@@ -327,32 +327,6 @@ This function returns null if the current clipboard data doesn't have the <a cla
       </tr>
     </tbody>
   </table>
-  <a id="OpenTK_Platform_Native_X11_X11ClipboardComponent_GetClipboardHTML_" data-uid="OpenTK.Platform.Native.X11.X11ClipboardComponent.GetClipboardHTML*"></a>
-  <h4 id="OpenTK_Platform_Native_X11_X11ClipboardComponent_GetClipboardHTML" data-uid="OpenTK.Platform.Native.X11.X11ClipboardComponent.GetClipboardHTML">GetClipboardHTML()</h4>
-  <div class="markdown level1 summary"><p>Gets the HTML string currently in the clipboard.
-This function returns null if the current clipboard data doesn't have the <a class="xref" href="OpenTK.Core.Platform.ClipboardFormat.html#OpenTK_Core_Platform_ClipboardFormat_HTML">HTML</a> format.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string? GetClipboardHTML()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
-        <td><p>The HTML string currently in the clipboard.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
   <a id="OpenTK_Platform_Native_X11_X11ClipboardComponent_GetClipboardText_" data-uid="OpenTK.Platform.Native.X11.X11ClipboardComponent.GetClipboardText*"></a>
   <h4 id="OpenTK_Platform_Native_X11_X11ClipboardComponent_GetClipboardText" data-uid="OpenTK.Platform.Native.X11.X11ClipboardComponent.GetClipboardText">GetClipboardText()</h4>
   <div class="markdown level1 summary"><p>Returns the string currently in the clipboard.
@@ -380,13 +354,13 @@ This function returns null if the current clipboard data doesn't have the <a cla
     </tbody>
   </table>
   <a id="OpenTK_Platform_Native_X11_X11ClipboardComponent_Initialize_" data-uid="OpenTK.Platform.Native.X11.X11ClipboardComponent.Initialize*"></a>
-  <h4 id="OpenTK_Platform_Native_X11_X11ClipboardComponent_Initialize_OpenTK_Core_Platform_PalComponents_" data-uid="OpenTK.Platform.Native.X11.X11ClipboardComponent.Initialize(OpenTK.Core.Platform.PalComponents)">Initialize(PalComponents)</h4>
-  <div class="markdown level1 summary"><p>Initialize the driver.</p>
+  <h4 id="OpenTK_Platform_Native_X11_X11ClipboardComponent_Initialize_OpenTK_Core_Platform_ToolkitOptions_" data-uid="OpenTK.Platform.Native.X11.X11ClipboardComponent.Initialize(OpenTK.Core.Platform.ToolkitOptions)">Initialize(ToolkitOptions)</h4>
+  <div class="markdown level1 summary"><p>Initialize the component.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Initialize(PalComponents which)</code></pre>
+    <pre><code class="lang-csharp hljs">public void Initialize(ToolkitOptions options)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -399,9 +373,9 @@ This function returns null if the current clipboard data doesn't have the <a cla
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Core.Platform.PalComponents.html">PalComponents</a></td>
-        <td><span class="parametername">which</span></td>
-        <td><p>Bitfield of which components the driver need to be initialized.</p>
+        <td><a class="xref" href="OpenTK.Core.Platform.ToolkitOptions.html">ToolkitOptions</a></td>
+        <td><span class="parametername">options</span></td>
+        <td><p>The options to initialize the component with.</p>
 </td>
       </tr>
     </tbody>

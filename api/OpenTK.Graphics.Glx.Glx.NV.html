@@ -123,13 +123,13 @@
   <h3 id="methods">Methods
 </h3>
   <a id="OpenTK_Graphics_Glx_Glx_NV_BindSwapBarrierNV_" data-uid="OpenTK.Graphics.Glx.Glx.NV.BindSwapBarrierNV*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_NV_BindSwapBarrierNV_OpenTK_Graphics_Glx_Display__System_UInt32_System_UInt32_" data-uid="OpenTK.Graphics.Glx.Glx.NV.BindSwapBarrierNV(OpenTK.Graphics.Glx.Display*,System.UInt32,System.UInt32)">BindSwapBarrierNV(Display*, uint, uint)</h4>
+  <h4 id="OpenTK_Graphics_Glx_Glx_NV_BindSwapBarrierNV_OpenTK_Graphics_Glx_DisplayPtr_System_UInt32_System_UInt32_" data-uid="OpenTK.Graphics.Glx.Glx.NV.BindSwapBarrierNV(OpenTK.Graphics.Glx.DisplayPtr,System.UInt32,System.UInt32)">BindSwapBarrierNV(DisplayPtr, uint, uint)</h4>
   <div class="markdown level1 summary"><p><b>[requires: GLX_NV_swap_group]</b> <b>[entry point: <code>glXBindSwapBarrierNV</code>]</b><br></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool BindSwapBarrierNV(Display* dpy, uint group, uint barrier)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool BindSwapBarrierNV(DisplayPtr dpy, uint group, uint barrier)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -142,60 +142,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*</td>
-        <td><span class="parametername">dpy</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
-        <td><span class="parametername">group</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
-        <td><span class="parametername">barrier</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="OpenTK_Graphics_Glx_Glx_NV_BindSwapBarrierNV_" data-uid="OpenTK.Graphics.Glx.Glx.NV.BindSwapBarrierNV*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_NV_BindSwapBarrierNV_OpenTK_Graphics_Glx_Display__System_UInt32_System_UInt32_" data-uid="OpenTK.Graphics.Glx.Glx.NV.BindSwapBarrierNV(OpenTK.Graphics.Glx.Display@,System.UInt32,System.UInt32)">BindSwapBarrierNV(ref Display, uint, uint)</h4>
-  <div class="markdown level1 summary"><p><b>[requires: GLX_NV_swap_group]</b>
-<b>[entry point: <code>glXBindSwapBarrierNV</code>]</b>
-<br></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool BindSwapBarrierNV(ref Display dpy, uint group, uint barrier)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a></td>
+        <td><a class="xref" href="OpenTK.Graphics.Glx.DisplayPtr.html">DisplayPtr</a></td>
         <td><span class="parametername">dpy</span></td>
         <td></td>
       </tr>
@@ -227,13 +174,13 @@
     </tbody>
   </table>
   <a id="OpenTK_Graphics_Glx_Glx_NV_BindVideoCaptureDeviceNV_" data-uid="OpenTK.Graphics.Glx.Glx.NV.BindVideoCaptureDeviceNV*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_NV_BindVideoCaptureDeviceNV_OpenTK_Graphics_Glx_Display__System_UInt32_OpenTK_Graphics_Glx_GLXVideoCaptureDeviceNV_" data-uid="OpenTK.Graphics.Glx.Glx.NV.BindVideoCaptureDeviceNV(OpenTK.Graphics.Glx.Display*,System.UInt32,OpenTK.Graphics.Glx.GLXVideoCaptureDeviceNV)">BindVideoCaptureDeviceNV(Display*, uint, GLXVideoCaptureDeviceNV)</h4>
+  <h4 id="OpenTK_Graphics_Glx_Glx_NV_BindVideoCaptureDeviceNV_OpenTK_Graphics_Glx_DisplayPtr_System_UInt32_OpenTK_Graphics_Glx_GLXVideoCaptureDeviceNV_" data-uid="OpenTK.Graphics.Glx.Glx.NV.BindVideoCaptureDeviceNV(OpenTK.Graphics.Glx.DisplayPtr,System.UInt32,OpenTK.Graphics.Glx.GLXVideoCaptureDeviceNV)">BindVideoCaptureDeviceNV(DisplayPtr, uint, GLXVideoCaptureDeviceNV)</h4>
   <div class="markdown level1 summary"><p><b>[requires: GLX_NV_video_capture]</b> <b>[entry point: <code>glXBindVideoCaptureDeviceNV</code>]</b><br></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int BindVideoCaptureDeviceNV(Display* dpy, uint video_capture_slot, GLXVideoCaptureDeviceNV device)</code></pre>
+    <pre><code class="lang-csharp hljs">public static int BindVideoCaptureDeviceNV(DisplayPtr dpy, uint video_capture_slot, GLXVideoCaptureDeviceNV device)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -246,60 +193,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*</td>
-        <td><span class="parametername">dpy</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
-        <td><span class="parametername">video_capture_slot</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.GLXVideoCaptureDeviceNV.html">GLXVideoCaptureDeviceNV</a></td>
-        <td><span class="parametername">device</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="OpenTK_Graphics_Glx_Glx_NV_BindVideoCaptureDeviceNV_" data-uid="OpenTK.Graphics.Glx.Glx.NV.BindVideoCaptureDeviceNV*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_NV_BindVideoCaptureDeviceNV_OpenTK_Graphics_Glx_Display__System_UInt32_OpenTK_Graphics_Glx_GLXVideoCaptureDeviceNV_" data-uid="OpenTK.Graphics.Glx.Glx.NV.BindVideoCaptureDeviceNV(OpenTK.Graphics.Glx.Display@,System.UInt32,OpenTK.Graphics.Glx.GLXVideoCaptureDeviceNV)">BindVideoCaptureDeviceNV(ref Display, uint, GLXVideoCaptureDeviceNV)</h4>
-  <div class="markdown level1 summary"><p><b>[requires: GLX_NV_video_capture]</b>
-<b>[entry point: <code>glXBindVideoCaptureDeviceNV</code>]</b>
-<br></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int BindVideoCaptureDeviceNV(ref Display dpy, uint video_capture_slot, GLXVideoCaptureDeviceNV device)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a></td>
+        <td><a class="xref" href="OpenTK.Graphics.Glx.DisplayPtr.html">DisplayPtr</a></td>
         <td><span class="parametername">dpy</span></td>
         <td></td>
       </tr>
@@ -331,13 +225,13 @@
     </tbody>
   </table>
   <a id="OpenTK_Graphics_Glx_Glx_NV_BindVideoDeviceNV_" data-uid="OpenTK.Graphics.Glx.Glx.NV.BindVideoDeviceNV*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_NV_BindVideoDeviceNV_OpenTK_Graphics_Glx_Display__System_UInt32_System_UInt32_System_Int32__" data-uid="OpenTK.Graphics.Glx.Glx.NV.BindVideoDeviceNV(OpenTK.Graphics.Glx.Display*,System.UInt32,System.UInt32,System.Int32*)">BindVideoDeviceNV(Display*, uint, uint, int*)</h4>
+  <h4 id="OpenTK_Graphics_Glx_Glx_NV_BindVideoDeviceNV_OpenTK_Graphics_Glx_DisplayPtr_System_UInt32_System_UInt32_System_Int32__" data-uid="OpenTK.Graphics.Glx.Glx.NV.BindVideoDeviceNV(OpenTK.Graphics.Glx.DisplayPtr,System.UInt32,System.UInt32,System.Int32*)">BindVideoDeviceNV(DisplayPtr, uint, uint, int*)</h4>
   <div class="markdown level1 summary"><p><b>[requires: GLX_NV_present_video]</b> <b>[entry point: <code>glXBindVideoDeviceNV</code>]</b><br></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int BindVideoDeviceNV(Display* dpy, uint video_slot, uint video_device, int* attrib_list)</code></pre>
+    <pre><code class="lang-csharp hljs">public static int BindVideoDeviceNV(DisplayPtr dpy, uint video_slot, uint video_device, int* attrib_list)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -350,7 +244,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*</td>
+        <td><a class="xref" href="OpenTK.Graphics.Glx.DisplayPtr.html">DisplayPtr</a></td>
         <td><span class="parametername">dpy</span></td>
         <td></td>
       </tr>
@@ -387,7 +281,7 @@
     </tbody>
   </table>
   <a id="OpenTK_Graphics_Glx_Glx_NV_BindVideoDeviceNV_" data-uid="OpenTK.Graphics.Glx.Glx.NV.BindVideoDeviceNV*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_NV_BindVideoDeviceNV_OpenTK_Graphics_Glx_Display__System_UInt32_System_UInt32_System_Int32__" data-uid="OpenTK.Graphics.Glx.Glx.NV.BindVideoDeviceNV(OpenTK.Graphics.Glx.Display@,System.UInt32,System.UInt32,System.Int32@)">BindVideoDeviceNV(ref Display, uint, uint, in int)</h4>
+  <h4 id="OpenTK_Graphics_Glx_Glx_NV_BindVideoDeviceNV_OpenTK_Graphics_Glx_DisplayPtr_System_UInt32_System_UInt32_System_Int32__" data-uid="OpenTK.Graphics.Glx.Glx.NV.BindVideoDeviceNV(OpenTK.Graphics.Glx.DisplayPtr,System.UInt32,System.UInt32,System.Int32@)">BindVideoDeviceNV(DisplayPtr, uint, uint, in int)</h4>
   <div class="markdown level1 summary"><p><b>[requires: GLX_NV_present_video]</b>
 <b>[entry point: <code>glXBindVideoDeviceNV</code>]</b>
 <br></p>
@@ -395,7 +289,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int BindVideoDeviceNV(ref Display dpy, uint video_slot, uint video_device, in int attrib_list)</code></pre>
+    <pre><code class="lang-csharp hljs">public static int BindVideoDeviceNV(DisplayPtr dpy, uint video_slot, uint video_device, in int attrib_list)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -408,7 +302,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a></td>
+        <td><a class="xref" href="OpenTK.Graphics.Glx.DisplayPtr.html">DisplayPtr</a></td>
         <td><span class="parametername">dpy</span></td>
         <td></td>
       </tr>
@@ -445,13 +339,13 @@
     </tbody>
   </table>
   <a id="OpenTK_Graphics_Glx_Glx_NV_BindVideoImageNV_" data-uid="OpenTK.Graphics.Glx.Glx.NV.BindVideoImageNV*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_NV_BindVideoImageNV_OpenTK_Graphics_Glx_Display__OpenTK_Graphics_Glx_GLXVideoDeviceNV_OpenTK_Graphics_Glx_GLXPbuffer_System_Int32_" data-uid="OpenTK.Graphics.Glx.Glx.NV.BindVideoImageNV(OpenTK.Graphics.Glx.Display*,OpenTK.Graphics.Glx.GLXVideoDeviceNV,OpenTK.Graphics.Glx.GLXPbuffer,System.Int32)">BindVideoImageNV(Display*, GLXVideoDeviceNV, GLXPbuffer, int)</h4>
+  <h4 id="OpenTK_Graphics_Glx_Glx_NV_BindVideoImageNV_OpenTK_Graphics_Glx_DisplayPtr_OpenTK_Graphics_Glx_GLXVideoDeviceNV_OpenTK_Graphics_Glx_GLXPbuffer_System_Int32_" data-uid="OpenTK.Graphics.Glx.Glx.NV.BindVideoImageNV(OpenTK.Graphics.Glx.DisplayPtr,OpenTK.Graphics.Glx.GLXVideoDeviceNV,OpenTK.Graphics.Glx.GLXPbuffer,System.Int32)">BindVideoImageNV(DisplayPtr, GLXVideoDeviceNV, GLXPbuffer, int)</h4>
   <div class="markdown level1 summary"><p><b>[requires: GLX_NV_video_out]</b> <b>[entry point: <code>glXBindVideoImageNV</code>]</b><br></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int BindVideoImageNV(Display* dpy, GLXVideoDeviceNV VideoDevice, GLXPbuffer pbuf, int iVideoBuffer)</code></pre>
+    <pre><code class="lang-csharp hljs">public static int BindVideoImageNV(DisplayPtr dpy, GLXVideoDeviceNV VideoDevice, GLXPbuffer pbuf, int iVideoBuffer)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -464,65 +358,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*</td>
-        <td><span class="parametername">dpy</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.GLXVideoDeviceNV.html">GLXVideoDeviceNV</a></td>
-        <td><span class="parametername">VideoDevice</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.GLXPbuffer.html">GLXPbuffer</a></td>
-        <td><span class="parametername">pbuf</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
-        <td><span class="parametername">iVideoBuffer</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="OpenTK_Graphics_Glx_Glx_NV_BindVideoImageNV_" data-uid="OpenTK.Graphics.Glx.Glx.NV.BindVideoImageNV*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_NV_BindVideoImageNV_OpenTK_Graphics_Glx_Display__OpenTK_Graphics_Glx_GLXVideoDeviceNV_OpenTK_Graphics_Glx_GLXPbuffer_System_Int32_" data-uid="OpenTK.Graphics.Glx.Glx.NV.BindVideoImageNV(OpenTK.Graphics.Glx.Display@,OpenTK.Graphics.Glx.GLXVideoDeviceNV,OpenTK.Graphics.Glx.GLXPbuffer,System.Int32)">BindVideoImageNV(ref Display, GLXVideoDeviceNV, GLXPbuffer, int)</h4>
-  <div class="markdown level1 summary"><p><b>[requires: GLX_NV_video_out]</b>
-<b>[entry point: <code>glXBindVideoImageNV</code>]</b>
-<br></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int BindVideoImageNV(ref Display dpy, GLXVideoDeviceNV VideoDevice, GLXPbuffer pbuf, int iVideoBuffer)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a></td>
+        <td><a class="xref" href="OpenTK.Graphics.Glx.DisplayPtr.html">DisplayPtr</a></td>
         <td><span class="parametername">dpy</span></td>
         <td></td>
       </tr>
@@ -559,13 +395,13 @@
     </tbody>
   </table>
   <a id="OpenTK_Graphics_Glx_Glx_NV_CopyBufferSubDataNV_" data-uid="OpenTK.Graphics.Glx.Glx.NV.CopyBufferSubDataNV*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_NV_CopyBufferSubDataNV_OpenTK_Graphics_Glx_Display__OpenTK_Graphics_Glx_GLXContext_OpenTK_Graphics_Glx_GLXContext_OpenTK_Graphics_Glx_All_OpenTK_Graphics_Glx_All_System_IntPtr_System_IntPtr_System_IntPtr_" data-uid="OpenTK.Graphics.Glx.Glx.NV.CopyBufferSubDataNV(OpenTK.Graphics.Glx.Display*,OpenTK.Graphics.Glx.GLXContext,OpenTK.Graphics.Glx.GLXContext,OpenTK.Graphics.Glx.All,OpenTK.Graphics.Glx.All,System.IntPtr,System.IntPtr,System.IntPtr)">CopyBufferSubDataNV(Display*, GLXContext, GLXContext, All, All, nint, nint, nint)</h4>
+  <h4 id="OpenTK_Graphics_Glx_Glx_NV_CopyBufferSubDataNV_OpenTK_Graphics_Glx_DisplayPtr_OpenTK_Graphics_Glx_GLXContext_OpenTK_Graphics_Glx_GLXContext_OpenTK_Graphics_Glx_All_OpenTK_Graphics_Glx_All_System_IntPtr_System_IntPtr_System_IntPtr_" data-uid="OpenTK.Graphics.Glx.Glx.NV.CopyBufferSubDataNV(OpenTK.Graphics.Glx.DisplayPtr,OpenTK.Graphics.Glx.GLXContext,OpenTK.Graphics.Glx.GLXContext,OpenTK.Graphics.Glx.All,OpenTK.Graphics.Glx.All,System.IntPtr,System.IntPtr,System.IntPtr)">CopyBufferSubDataNV(DisplayPtr, GLXContext, GLXContext, All, All, nint, nint, nint)</h4>
   <div class="markdown level1 summary"><p><b>[requires: GLX_NV_copy_buffer]</b> <b>[entry point: <code>glXCopyBufferSubDataNV</code>]</b><br></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void CopyBufferSubDataNV(Display* dpy, GLXContext readCtx, GLXContext writeCtx, All readTarget, All writeTarget, nint readOffset, nint writeOffset, nint size)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void CopyBufferSubDataNV(DisplayPtr dpy, GLXContext readCtx, GLXContext writeCtx, All readTarget, All writeTarget, nint readOffset, nint writeOffset, nint size)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -578,70 +414,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*</td>
-        <td><span class="parametername">dpy</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.GLXContext.html">GLXContext</a></td>
-        <td><span class="parametername">readCtx</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.GLXContext.html">GLXContext</a></td>
-        <td><span class="parametername">writeCtx</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.All.html">All</a></td>
-        <td><span class="parametername">readTarget</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.All.html">All</a></td>
-        <td><span class="parametername">writeTarget</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
-        <td><span class="parametername">readOffset</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
-        <td><span class="parametername">writeOffset</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
-        <td><span class="parametername">size</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="OpenTK_Graphics_Glx_Glx_NV_CopyBufferSubDataNV_" data-uid="OpenTK.Graphics.Glx.Glx.NV.CopyBufferSubDataNV*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_NV_CopyBufferSubDataNV_OpenTK_Graphics_Glx_Display__OpenTK_Graphics_Glx_GLXContext_OpenTK_Graphics_Glx_GLXContext_OpenTK_Graphics_Glx_All_OpenTK_Graphics_Glx_All_System_IntPtr_System_IntPtr_System_IntPtr_" data-uid="OpenTK.Graphics.Glx.Glx.NV.CopyBufferSubDataNV(OpenTK.Graphics.Glx.Display@,OpenTK.Graphics.Glx.GLXContext,OpenTK.Graphics.Glx.GLXContext,OpenTK.Graphics.Glx.All,OpenTK.Graphics.Glx.All,System.IntPtr,System.IntPtr,System.IntPtr)">CopyBufferSubDataNV(ref Display, GLXContext, GLXContext, All, All, nint, nint, nint)</h4>
-  <div class="markdown level1 summary"><p><b>[requires: GLX_NV_copy_buffer]</b>
-<b>[entry point: <code>glXCopyBufferSubDataNV</code>]</b>
-<br></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void CopyBufferSubDataNV(ref Display dpy, GLXContext readCtx, GLXContext writeCtx, All readTarget, All writeTarget, nint readOffset, nint writeOffset, nint size)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a></td>
+        <td><a class="xref" href="OpenTK.Graphics.Glx.DisplayPtr.html">DisplayPtr</a></td>
         <td><span class="parametername">dpy</span></td>
         <td></td>
       </tr>
@@ -683,13 +456,13 @@
     </tbody>
   </table>
   <a id="OpenTK_Graphics_Glx_Glx_NV_CopyImageSubDataNV_" data-uid="OpenTK.Graphics.Glx.Glx.NV.CopyImageSubDataNV*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_NV_CopyImageSubDataNV_OpenTK_Graphics_Glx_Display__OpenTK_Graphics_Glx_GLXContext_System_UInt32_OpenTK_Graphics_Glx_All_System_Int32_System_Int32_System_Int32_System_Int32_OpenTK_Graphics_Glx_GLXContext_System_UInt32_OpenTK_Graphics_Glx_All_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="OpenTK.Graphics.Glx.Glx.NV.CopyImageSubDataNV(OpenTK.Graphics.Glx.Display*,OpenTK.Graphics.Glx.GLXContext,System.UInt32,OpenTK.Graphics.Glx.All,System.Int32,System.Int32,System.Int32,System.Int32,OpenTK.Graphics.Glx.GLXContext,System.UInt32,OpenTK.Graphics.Glx.All,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">CopyImageSubDataNV(Display*, GLXContext, uint, All, int, int, int, int, GLXContext, uint, All, int, int, int, int, int, int, int)</h4>
+  <h4 id="OpenTK_Graphics_Glx_Glx_NV_CopyImageSubDataNV_OpenTK_Graphics_Glx_DisplayPtr_OpenTK_Graphics_Glx_GLXContext_System_UInt32_OpenTK_Graphics_Glx_All_System_Int32_System_Int32_System_Int32_System_Int32_OpenTK_Graphics_Glx_GLXContext_System_UInt32_OpenTK_Graphics_Glx_All_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="OpenTK.Graphics.Glx.Glx.NV.CopyImageSubDataNV(OpenTK.Graphics.Glx.DisplayPtr,OpenTK.Graphics.Glx.GLXContext,System.UInt32,OpenTK.Graphics.Glx.All,System.Int32,System.Int32,System.Int32,System.Int32,OpenTK.Graphics.Glx.GLXContext,System.UInt32,OpenTK.Graphics.Glx.All,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">CopyImageSubDataNV(DisplayPtr, GLXContext, uint, All, int, int, int, int, GLXContext, uint, All, int, int, int, int, int, int, int)</h4>
   <div class="markdown level1 summary"><p><b>[requires: GLX_NV_copy_image]</b> <b>[entry point: <code>glXCopyImageSubDataNV</code>]</b><br></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void CopyImageSubDataNV(Display* dpy, GLXContext srcCtx, uint srcName, All srcTarget, int srcLevel, int srcX, int srcY, int srcZ, GLXContext dstCtx, uint dstName, All dstTarget, int dstLevel, int dstX, int dstY, int dstZ, int width, int height, int depth)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void CopyImageSubDataNV(DisplayPtr dpy, GLXContext srcCtx, uint srcName, All srcTarget, int srcLevel, int srcX, int srcY, int srcZ, GLXContext dstCtx, uint dstName, All dstTarget, int dstLevel, int dstX, int dstY, int dstZ, int width, int height, int depth)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -702,120 +475,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*</td>
-        <td><span class="parametername">dpy</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.GLXContext.html">GLXContext</a></td>
-        <td><span class="parametername">srcCtx</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
-        <td><span class="parametername">srcName</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.All.html">All</a></td>
-        <td><span class="parametername">srcTarget</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
-        <td><span class="parametername">srcLevel</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
-        <td><span class="parametername">srcX</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
-        <td><span class="parametername">srcY</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
-        <td><span class="parametername">srcZ</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.GLXContext.html">GLXContext</a></td>
-        <td><span class="parametername">dstCtx</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
-        <td><span class="parametername">dstName</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.All.html">All</a></td>
-        <td><span class="parametername">dstTarget</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
-        <td><span class="parametername">dstLevel</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
-        <td><span class="parametername">dstX</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
-        <td><span class="parametername">dstY</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
-        <td><span class="parametername">dstZ</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
-        <td><span class="parametername">width</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
-        <td><span class="parametername">height</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
-        <td><span class="parametername">depth</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="OpenTK_Graphics_Glx_Glx_NV_CopyImageSubDataNV_" data-uid="OpenTK.Graphics.Glx.Glx.NV.CopyImageSubDataNV*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_NV_CopyImageSubDataNV_OpenTK_Graphics_Glx_Display__OpenTK_Graphics_Glx_GLXContext_System_UInt32_OpenTK_Graphics_Glx_All_System_Int32_System_Int32_System_Int32_System_Int32_OpenTK_Graphics_Glx_GLXContext_System_UInt32_OpenTK_Graphics_Glx_All_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="OpenTK.Graphics.Glx.Glx.NV.CopyImageSubDataNV(OpenTK.Graphics.Glx.Display@,OpenTK.Graphics.Glx.GLXContext,System.UInt32,OpenTK.Graphics.Glx.All,System.Int32,System.Int32,System.Int32,System.Int32,OpenTK.Graphics.Glx.GLXContext,System.UInt32,OpenTK.Graphics.Glx.All,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">CopyImageSubDataNV(ref Display, GLXContext, uint, All, int, int, int, int, GLXContext, uint, All, int, int, int, int, int, int, int)</h4>
-  <div class="markdown level1 summary"><p><b>[requires: GLX_NV_copy_image]</b>
-<b>[entry point: <code>glXCopyImageSubDataNV</code>]</b>
-<br></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void CopyImageSubDataNV(ref Display dpy, GLXContext srcCtx, uint srcName, All srcTarget, int srcLevel, int srcX, int srcY, int srcZ, GLXContext dstCtx, uint dstName, All dstTarget, int dstLevel, int dstX, int dstY, int dstZ, int width, int height, int depth)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a></td>
+        <td><a class="xref" href="OpenTK.Graphics.Glx.DisplayPtr.html">DisplayPtr</a></td>
         <td><span class="parametername">dpy</span></td>
         <td></td>
       </tr>
@@ -907,13 +567,13 @@
     </tbody>
   </table>
   <a id="OpenTK_Graphics_Glx_Glx_NV_DelayBeforeSwapNV_" data-uid="OpenTK.Graphics.Glx.Glx.NV.DelayBeforeSwapNV*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_NV_DelayBeforeSwapNV_OpenTK_Graphics_Glx_Display__OpenTK_Graphics_Glx_GLXDrawable_System_Single_" data-uid="OpenTK.Graphics.Glx.Glx.NV.DelayBeforeSwapNV(OpenTK.Graphics.Glx.Display*,OpenTK.Graphics.Glx.GLXDrawable,System.Single)">DelayBeforeSwapNV(Display*, GLXDrawable, float)</h4>
+  <h4 id="OpenTK_Graphics_Glx_Glx_NV_DelayBeforeSwapNV_OpenTK_Graphics_Glx_DisplayPtr_OpenTK_Graphics_Glx_GLXDrawable_System_Single_" data-uid="OpenTK.Graphics.Glx.Glx.NV.DelayBeforeSwapNV(OpenTK.Graphics.Glx.DisplayPtr,OpenTK.Graphics.Glx.GLXDrawable,System.Single)">DelayBeforeSwapNV(DisplayPtr, GLXDrawable, float)</h4>
   <div class="markdown level1 summary"><p><b>[requires: GLX_NV_delay_before_swap]</b> <b>[entry point: <code>glXDelayBeforeSwapNV</code>]</b><br></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool DelayBeforeSwapNV(Display* dpy, GLXDrawable drawable, float seconds)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool DelayBeforeSwapNV(DisplayPtr dpy, GLXDrawable drawable, float seconds)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -926,60 +586,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*</td>
-        <td><span class="parametername">dpy</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.GLXDrawable.html">GLXDrawable</a></td>
-        <td><span class="parametername">drawable</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
-        <td><span class="parametername">seconds</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="OpenTK_Graphics_Glx_Glx_NV_DelayBeforeSwapNV_" data-uid="OpenTK.Graphics.Glx.Glx.NV.DelayBeforeSwapNV*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_NV_DelayBeforeSwapNV_OpenTK_Graphics_Glx_Display__OpenTK_Graphics_Glx_GLXDrawable_System_Single_" data-uid="OpenTK.Graphics.Glx.Glx.NV.DelayBeforeSwapNV(OpenTK.Graphics.Glx.Display@,OpenTK.Graphics.Glx.GLXDrawable,System.Single)">DelayBeforeSwapNV(ref Display, GLXDrawable, float)</h4>
-  <div class="markdown level1 summary"><p><b>[requires: GLX_NV_delay_before_swap]</b>
-<b>[entry point: <code>glXDelayBeforeSwapNV</code>]</b>
-<br></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool DelayBeforeSwapNV(ref Display dpy, GLXDrawable drawable, float seconds)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a></td>
+        <td><a class="xref" href="OpenTK.Graphics.Glx.DisplayPtr.html">DisplayPtr</a></td>
         <td><span class="parametername">dpy</span></td>
         <td></td>
       </tr>
@@ -1011,13 +618,13 @@
     </tbody>
   </table>
   <a id="OpenTK_Graphics_Glx_Glx_NV_EnumerateVideoCaptureDevicesNV_" data-uid="OpenTK.Graphics.Glx.Glx.NV.EnumerateVideoCaptureDevicesNV*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_NV_EnumerateVideoCaptureDevicesNV_OpenTK_Graphics_Glx_Display__System_Int32_System_Int32__" data-uid="OpenTK.Graphics.Glx.Glx.NV.EnumerateVideoCaptureDevicesNV(OpenTK.Graphics.Glx.Display*,System.Int32,System.Int32*)">EnumerateVideoCaptureDevicesNV(Display*, int, int*)</h4>
+  <h4 id="OpenTK_Graphics_Glx_Glx_NV_EnumerateVideoCaptureDevicesNV_OpenTK_Graphics_Glx_DisplayPtr_System_Int32_System_Int32__" data-uid="OpenTK.Graphics.Glx.Glx.NV.EnumerateVideoCaptureDevicesNV(OpenTK.Graphics.Glx.DisplayPtr,System.Int32,System.Int32*)">EnumerateVideoCaptureDevicesNV(DisplayPtr, int, int*)</h4>
   <div class="markdown level1 summary"><p><b>[requires: GLX_NV_video_capture]</b> <b>[entry point: <code>glXEnumerateVideoCaptureDevicesNV</code>]</b><br></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static GLXVideoCaptureDeviceNV* EnumerateVideoCaptureDevicesNV(Display* dpy, int screen, int* nelements)</code></pre>
+    <pre><code class="lang-csharp hljs">public static GLXVideoCaptureDeviceNV* EnumerateVideoCaptureDevicesNV(DisplayPtr dpy, int screen, int* nelements)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -1030,7 +637,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*</td>
+        <td><a class="xref" href="OpenTK.Graphics.Glx.DisplayPtr.html">DisplayPtr</a></td>
         <td><span class="parametername">dpy</span></td>
         <td></td>
       </tr>
@@ -1062,7 +669,7 @@
     </tbody>
   </table>
   <a id="OpenTK_Graphics_Glx_Glx_NV_EnumerateVideoCaptureDevicesNV_" data-uid="OpenTK.Graphics.Glx.Glx.NV.EnumerateVideoCaptureDevicesNV*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_NV_EnumerateVideoCaptureDevicesNV_OpenTK_Graphics_Glx_Display__System_Int32_System_Int32__" data-uid="OpenTK.Graphics.Glx.Glx.NV.EnumerateVideoCaptureDevicesNV(OpenTK.Graphics.Glx.Display@,System.Int32,System.Int32@)">EnumerateVideoCaptureDevicesNV(ref Display, int, ref int)</h4>
+  <h4 id="OpenTK_Graphics_Glx_Glx_NV_EnumerateVideoCaptureDevicesNV_OpenTK_Graphics_Glx_DisplayPtr_System_Int32_System_Int32__" data-uid="OpenTK.Graphics.Glx.Glx.NV.EnumerateVideoCaptureDevicesNV(OpenTK.Graphics.Glx.DisplayPtr,System.Int32,System.Int32@)">EnumerateVideoCaptureDevicesNV(DisplayPtr, int, ref int)</h4>
   <div class="markdown level1 summary"><p><b>[requires: GLX_NV_video_capture]</b>
 <b>[entry point: <code>glXEnumerateVideoCaptureDevicesNV</code>]</b>
 <br></p>
@@ -1070,7 +677,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static GLXVideoCaptureDeviceNV* EnumerateVideoCaptureDevicesNV(ref Display dpy, int screen, ref int nelements)</code></pre>
+    <pre><code class="lang-csharp hljs">public static GLXVideoCaptureDeviceNV* EnumerateVideoCaptureDevicesNV(DisplayPtr dpy, int screen, ref int nelements)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -1083,7 +690,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a></td>
+        <td><a class="xref" href="OpenTK.Graphics.Glx.DisplayPtr.html">DisplayPtr</a></td>
         <td><span class="parametername">dpy</span></td>
         <td></td>
       </tr>
@@ -1115,13 +722,13 @@
     </tbody>
   </table>
   <a id="OpenTK_Graphics_Glx_Glx_NV_EnumerateVideoDevicesNV_" data-uid="OpenTK.Graphics.Glx.Glx.NV.EnumerateVideoDevicesNV*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_NV_EnumerateVideoDevicesNV_OpenTK_Graphics_Glx_Display__System_Int32_System_Int32__" data-uid="OpenTK.Graphics.Glx.Glx.NV.EnumerateVideoDevicesNV(OpenTK.Graphics.Glx.Display*,System.Int32,System.Int32*)">EnumerateVideoDevicesNV(Display*, int, int*)</h4>
+  <h4 id="OpenTK_Graphics_Glx_Glx_NV_EnumerateVideoDevicesNV_OpenTK_Graphics_Glx_DisplayPtr_System_Int32_System_Int32__" data-uid="OpenTK.Graphics.Glx.Glx.NV.EnumerateVideoDevicesNV(OpenTK.Graphics.Glx.DisplayPtr,System.Int32,System.Int32*)">EnumerateVideoDevicesNV(DisplayPtr, int, int*)</h4>
   <div class="markdown level1 summary"><p><b>[requires: GLX_NV_present_video]</b> <b>[entry point: <code>glXEnumerateVideoDevicesNV</code>]</b><br></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static uint* EnumerateVideoDevicesNV(Display* dpy, int screen, int* nelements)</code></pre>
+    <pre><code class="lang-csharp hljs">public static uint* EnumerateVideoDevicesNV(DisplayPtr dpy, int screen, int* nelements)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -1134,7 +741,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*</td>
+        <td><a class="xref" href="OpenTK.Graphics.Glx.DisplayPtr.html">DisplayPtr</a></td>
         <td><span class="parametername">dpy</span></td>
         <td></td>
       </tr>
@@ -1166,7 +773,7 @@
     </tbody>
   </table>
   <a id="OpenTK_Graphics_Glx_Glx_NV_EnumerateVideoDevicesNV_" data-uid="OpenTK.Graphics.Glx.Glx.NV.EnumerateVideoDevicesNV*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_NV_EnumerateVideoDevicesNV_OpenTK_Graphics_Glx_Display__System_Int32_System_Int32__" data-uid="OpenTK.Graphics.Glx.Glx.NV.EnumerateVideoDevicesNV(OpenTK.Graphics.Glx.Display@,System.Int32,System.Int32@)">EnumerateVideoDevicesNV(ref Display, int, ref int)</h4>
+  <h4 id="OpenTK_Graphics_Glx_Glx_NV_EnumerateVideoDevicesNV_OpenTK_Graphics_Glx_DisplayPtr_System_Int32_System_Int32__" data-uid="OpenTK.Graphics.Glx.Glx.NV.EnumerateVideoDevicesNV(OpenTK.Graphics.Glx.DisplayPtr,System.Int32,System.Int32@)">EnumerateVideoDevicesNV(DisplayPtr, int, ref int)</h4>
   <div class="markdown level1 summary"><p><b>[requires: GLX_NV_present_video]</b>
 <b>[entry point: <code>glXEnumerateVideoDevicesNV</code>]</b>
 <br></p>
@@ -1174,7 +781,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static uint* EnumerateVideoDevicesNV(ref Display dpy, int screen, ref int nelements)</code></pre>
+    <pre><code class="lang-csharp hljs">public static uint* EnumerateVideoDevicesNV(DisplayPtr dpy, int screen, ref int nelements)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -1187,7 +794,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a></td>
+        <td><a class="xref" href="OpenTK.Graphics.Glx.DisplayPtr.html">DisplayPtr</a></td>
         <td><span class="parametername">dpy</span></td>
         <td></td>
       </tr>
@@ -1219,13 +826,13 @@
     </tbody>
   </table>
   <a id="OpenTK_Graphics_Glx_Glx_NV_GetVideoDeviceNV_" data-uid="OpenTK.Graphics.Glx.Glx.NV.GetVideoDeviceNV*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_NV_GetVideoDeviceNV_OpenTK_Graphics_Glx_Display__System_Int32_System_Int32_OpenTK_Graphics_Glx_GLXVideoDeviceNV__" data-uid="OpenTK.Graphics.Glx.Glx.NV.GetVideoDeviceNV(OpenTK.Graphics.Glx.Display*,System.Int32,System.Int32,OpenTK.Graphics.Glx.GLXVideoDeviceNV*)">GetVideoDeviceNV(Display*, int, int, GLXVideoDeviceNV*)</h4>
+  <h4 id="OpenTK_Graphics_Glx_Glx_NV_GetVideoDeviceNV_OpenTK_Graphics_Glx_DisplayPtr_System_Int32_System_Int32_OpenTK_Graphics_Glx_GLXVideoDeviceNV__" data-uid="OpenTK.Graphics.Glx.Glx.NV.GetVideoDeviceNV(OpenTK.Graphics.Glx.DisplayPtr,System.Int32,System.Int32,OpenTK.Graphics.Glx.GLXVideoDeviceNV*)">GetVideoDeviceNV(DisplayPtr, int, int, GLXVideoDeviceNV*)</h4>
   <div class="markdown level1 summary"><p><b>[requires: GLX_NV_video_out]</b> <b>[entry point: <code>glXGetVideoDeviceNV</code>]</b><br></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int GetVideoDeviceNV(Display* dpy, int screen, int numVideoDevices, GLXVideoDeviceNV* pVideoDevice)</code></pre>
+    <pre><code class="lang-csharp hljs">public static int GetVideoDeviceNV(DisplayPtr dpy, int screen, int numVideoDevices, GLXVideoDeviceNV* pVideoDevice)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -1238,7 +845,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*</td>
+        <td><a class="xref" href="OpenTK.Graphics.Glx.DisplayPtr.html">DisplayPtr</a></td>
         <td><span class="parametername">dpy</span></td>
         <td></td>
       </tr>
@@ -1275,7 +882,7 @@
     </tbody>
   </table>
   <a id="OpenTK_Graphics_Glx_Glx_NV_GetVideoDeviceNV_" data-uid="OpenTK.Graphics.Glx.Glx.NV.GetVideoDeviceNV*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_NV_GetVideoDeviceNV_OpenTK_Graphics_Glx_Display__System_Int32_System_Int32_OpenTK_Graphics_Glx_GLXVideoDeviceNV__" data-uid="OpenTK.Graphics.Glx.Glx.NV.GetVideoDeviceNV(OpenTK.Graphics.Glx.Display@,System.Int32,System.Int32,OpenTK.Graphics.Glx.GLXVideoDeviceNV@)">GetVideoDeviceNV(ref Display, int, int, ref GLXVideoDeviceNV)</h4>
+  <h4 id="OpenTK_Graphics_Glx_Glx_NV_GetVideoDeviceNV_OpenTK_Graphics_Glx_DisplayPtr_System_Int32_System_Int32_OpenTK_Graphics_Glx_GLXVideoDeviceNV__" data-uid="OpenTK.Graphics.Glx.Glx.NV.GetVideoDeviceNV(OpenTK.Graphics.Glx.DisplayPtr,System.Int32,System.Int32,OpenTK.Graphics.Glx.GLXVideoDeviceNV@)">GetVideoDeviceNV(DisplayPtr, int, int, ref GLXVideoDeviceNV)</h4>
   <div class="markdown level1 summary"><p><b>[requires: GLX_NV_video_out]</b>
 <b>[entry point: <code>glXGetVideoDeviceNV</code>]</b>
 <br></p>
@@ -1283,7 +890,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int GetVideoDeviceNV(ref Display dpy, int screen, int numVideoDevices, ref GLXVideoDeviceNV pVideoDevice)</code></pre>
+    <pre><code class="lang-csharp hljs">public static int GetVideoDeviceNV(DisplayPtr dpy, int screen, int numVideoDevices, ref GLXVideoDeviceNV pVideoDevice)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -1296,7 +903,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a></td>
+        <td><a class="xref" href="OpenTK.Graphics.Glx.DisplayPtr.html">DisplayPtr</a></td>
         <td><span class="parametername">dpy</span></td>
         <td></td>
       </tr>
@@ -1333,13 +940,13 @@
     </tbody>
   </table>
   <a id="OpenTK_Graphics_Glx_Glx_NV_GetVideoInfoNV_" data-uid="OpenTK.Graphics.Glx.Glx.NV.GetVideoInfoNV*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_NV_GetVideoInfoNV_OpenTK_Graphics_Glx_Display__System_Int32_OpenTK_Graphics_Glx_GLXVideoDeviceNV_System_UInt64__System_UInt64__" data-uid="OpenTK.Graphics.Glx.Glx.NV.GetVideoInfoNV(OpenTK.Graphics.Glx.Display*,System.Int32,OpenTK.Graphics.Glx.GLXVideoDeviceNV,System.UInt64*,System.UInt64*)">GetVideoInfoNV(Display*, int, GLXVideoDeviceNV, ulong*, ulong*)</h4>
+  <h4 id="OpenTK_Graphics_Glx_Glx_NV_GetVideoInfoNV_OpenTK_Graphics_Glx_DisplayPtr_System_Int32_OpenTK_Graphics_Glx_GLXVideoDeviceNV_System_UInt64__System_UInt64__" data-uid="OpenTK.Graphics.Glx.Glx.NV.GetVideoInfoNV(OpenTK.Graphics.Glx.DisplayPtr,System.Int32,OpenTK.Graphics.Glx.GLXVideoDeviceNV,System.UInt64*,System.UInt64*)">GetVideoInfoNV(DisplayPtr, int, GLXVideoDeviceNV, ulong*, ulong*)</h4>
   <div class="markdown level1 summary"><p><b>[requires: GLX_NV_video_out]</b> <b>[entry point: <code>glXGetVideoInfoNV</code>]</b><br></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int GetVideoInfoNV(Display* dpy, int screen, GLXVideoDeviceNV VideoDevice, ulong* pulCounterOutputPbuffer, ulong* pulCounterOutputVideo)</code></pre>
+    <pre><code class="lang-csharp hljs">public static int GetVideoInfoNV(DisplayPtr dpy, int screen, GLXVideoDeviceNV VideoDevice, ulong* pulCounterOutputPbuffer, ulong* pulCounterOutputVideo)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -1352,7 +959,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*</td>
+        <td><a class="xref" href="OpenTK.Graphics.Glx.DisplayPtr.html">DisplayPtr</a></td>
         <td><span class="parametername">dpy</span></td>
         <td></td>
       </tr>
@@ -1394,7 +1001,7 @@
     </tbody>
   </table>
   <a id="OpenTK_Graphics_Glx_Glx_NV_GetVideoInfoNV_" data-uid="OpenTK.Graphics.Glx.Glx.NV.GetVideoInfoNV*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_NV_GetVideoInfoNV_OpenTK_Graphics_Glx_Display__System_Int32_OpenTK_Graphics_Glx_GLXVideoDeviceNV_System_UInt64__System_UInt64__" data-uid="OpenTK.Graphics.Glx.Glx.NV.GetVideoInfoNV(OpenTK.Graphics.Glx.Display@,System.Int32,OpenTK.Graphics.Glx.GLXVideoDeviceNV,System.UInt64@,System.UInt64@)">GetVideoInfoNV(ref Display, int, GLXVideoDeviceNV, ref ulong, ref ulong)</h4>
+  <h4 id="OpenTK_Graphics_Glx_Glx_NV_GetVideoInfoNV_OpenTK_Graphics_Glx_DisplayPtr_System_Int32_OpenTK_Graphics_Glx_GLXVideoDeviceNV_System_UInt64__System_UInt64__" data-uid="OpenTK.Graphics.Glx.Glx.NV.GetVideoInfoNV(OpenTK.Graphics.Glx.DisplayPtr,System.Int32,OpenTK.Graphics.Glx.GLXVideoDeviceNV,System.UInt64@,System.UInt64@)">GetVideoInfoNV(DisplayPtr, int, GLXVideoDeviceNV, ref ulong, ref ulong)</h4>
   <div class="markdown level1 summary"><p><b>[requires: GLX_NV_video_out]</b>
 <b>[entry point: <code>glXGetVideoInfoNV</code>]</b>
 <br></p>
@@ -1402,7 +1009,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int GetVideoInfoNV(ref Display dpy, int screen, GLXVideoDeviceNV VideoDevice, ref ulong pulCounterOutputPbuffer, ref ulong pulCounterOutputVideo)</code></pre>
+    <pre><code class="lang-csharp hljs">public static int GetVideoInfoNV(DisplayPtr dpy, int screen, GLXVideoDeviceNV VideoDevice, ref ulong pulCounterOutputPbuffer, ref ulong pulCounterOutputVideo)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -1415,7 +1022,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a></td>
+        <td><a class="xref" href="OpenTK.Graphics.Glx.DisplayPtr.html">DisplayPtr</a></td>
         <td><span class="parametername">dpy</span></td>
         <td></td>
       </tr>
@@ -1457,13 +1064,13 @@
     </tbody>
   </table>
   <a id="OpenTK_Graphics_Glx_Glx_NV_JoinSwapGroupNV_" data-uid="OpenTK.Graphics.Glx.Glx.NV.JoinSwapGroupNV*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_NV_JoinSwapGroupNV_OpenTK_Graphics_Glx_Display__OpenTK_Graphics_Glx_GLXDrawable_System_UInt32_" data-uid="OpenTK.Graphics.Glx.Glx.NV.JoinSwapGroupNV(OpenTK.Graphics.Glx.Display*,OpenTK.Graphics.Glx.GLXDrawable,System.UInt32)">JoinSwapGroupNV(Display*, GLXDrawable, uint)</h4>
+  <h4 id="OpenTK_Graphics_Glx_Glx_NV_JoinSwapGroupNV_OpenTK_Graphics_Glx_DisplayPtr_OpenTK_Graphics_Glx_GLXDrawable_System_UInt32_" data-uid="OpenTK.Graphics.Glx.Glx.NV.JoinSwapGroupNV(OpenTK.Graphics.Glx.DisplayPtr,OpenTK.Graphics.Glx.GLXDrawable,System.UInt32)">JoinSwapGroupNV(DisplayPtr, GLXDrawable, uint)</h4>
   <div class="markdown level1 summary"><p><b>[requires: GLX_NV_swap_group]</b> <b>[entry point: <code>glXJoinSwapGroupNV</code>]</b><br></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool JoinSwapGroupNV(Display* dpy, GLXDrawable drawable, uint group)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool JoinSwapGroupNV(DisplayPtr dpy, GLXDrawable drawable, uint group)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -1476,60 +1083,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*</td>
-        <td><span class="parametername">dpy</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.GLXDrawable.html">GLXDrawable</a></td>
-        <td><span class="parametername">drawable</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
-        <td><span class="parametername">group</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="OpenTK_Graphics_Glx_Glx_NV_JoinSwapGroupNV_" data-uid="OpenTK.Graphics.Glx.Glx.NV.JoinSwapGroupNV*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_NV_JoinSwapGroupNV_OpenTK_Graphics_Glx_Display__OpenTK_Graphics_Glx_GLXDrawable_System_UInt32_" data-uid="OpenTK.Graphics.Glx.Glx.NV.JoinSwapGroupNV(OpenTK.Graphics.Glx.Display@,OpenTK.Graphics.Glx.GLXDrawable,System.UInt32)">JoinSwapGroupNV(ref Display, GLXDrawable, uint)</h4>
-  <div class="markdown level1 summary"><p><b>[requires: GLX_NV_swap_group]</b>
-<b>[entry point: <code>glXJoinSwapGroupNV</code>]</b>
-<br></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool JoinSwapGroupNV(ref Display dpy, GLXDrawable drawable, uint group)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a></td>
+        <td><a class="xref" href="OpenTK.Graphics.Glx.DisplayPtr.html">DisplayPtr</a></td>
         <td><span class="parametername">dpy</span></td>
         <td></td>
       </tr>
@@ -1561,13 +1115,13 @@
     </tbody>
   </table>
   <a id="OpenTK_Graphics_Glx_Glx_NV_LockVideoCaptureDeviceNV_" data-uid="OpenTK.Graphics.Glx.Glx.NV.LockVideoCaptureDeviceNV*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_NV_LockVideoCaptureDeviceNV_OpenTK_Graphics_Glx_Display__OpenTK_Graphics_Glx_GLXVideoCaptureDeviceNV_" data-uid="OpenTK.Graphics.Glx.Glx.NV.LockVideoCaptureDeviceNV(OpenTK.Graphics.Glx.Display*,OpenTK.Graphics.Glx.GLXVideoCaptureDeviceNV)">LockVideoCaptureDeviceNV(Display*, GLXVideoCaptureDeviceNV)</h4>
+  <h4 id="OpenTK_Graphics_Glx_Glx_NV_LockVideoCaptureDeviceNV_OpenTK_Graphics_Glx_DisplayPtr_OpenTK_Graphics_Glx_GLXVideoCaptureDeviceNV_" data-uid="OpenTK.Graphics.Glx.Glx.NV.LockVideoCaptureDeviceNV(OpenTK.Graphics.Glx.DisplayPtr,OpenTK.Graphics.Glx.GLXVideoCaptureDeviceNV)">LockVideoCaptureDeviceNV(DisplayPtr, GLXVideoCaptureDeviceNV)</h4>
   <div class="markdown level1 summary"><p><b>[requires: GLX_NV_video_capture]</b> <b>[entry point: <code>glXLockVideoCaptureDeviceNV</code>]</b><br></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void LockVideoCaptureDeviceNV(Display* dpy, GLXVideoCaptureDeviceNV device)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void LockVideoCaptureDeviceNV(DisplayPtr dpy, GLXVideoCaptureDeviceNV device)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -1580,40 +1134,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*</td>
-        <td><span class="parametername">dpy</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.GLXVideoCaptureDeviceNV.html">GLXVideoCaptureDeviceNV</a></td>
-        <td><span class="parametername">device</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="OpenTK_Graphics_Glx_Glx_NV_LockVideoCaptureDeviceNV_" data-uid="OpenTK.Graphics.Glx.Glx.NV.LockVideoCaptureDeviceNV*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_NV_LockVideoCaptureDeviceNV_OpenTK_Graphics_Glx_Display__OpenTK_Graphics_Glx_GLXVideoCaptureDeviceNV_" data-uid="OpenTK.Graphics.Glx.Glx.NV.LockVideoCaptureDeviceNV(OpenTK.Graphics.Glx.Display@,OpenTK.Graphics.Glx.GLXVideoCaptureDeviceNV)">LockVideoCaptureDeviceNV(ref Display, GLXVideoCaptureDeviceNV)</h4>
-  <div class="markdown level1 summary"><p><b>[requires: GLX_NV_video_capture]</b>
-<b>[entry point: <code>glXLockVideoCaptureDeviceNV</code>]</b>
-<br></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void LockVideoCaptureDeviceNV(ref Display dpy, GLXVideoCaptureDeviceNV device)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a></td>
+        <td><a class="xref" href="OpenTK.Graphics.Glx.DisplayPtr.html">DisplayPtr</a></td>
         <td><span class="parametername">dpy</span></td>
         <td></td>
       </tr>
@@ -1625,13 +1146,13 @@
     </tbody>
   </table>
   <a id="OpenTK_Graphics_Glx_Glx_NV_NamedCopyBufferSubDataNV_" data-uid="OpenTK.Graphics.Glx.Glx.NV.NamedCopyBufferSubDataNV*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_NV_NamedCopyBufferSubDataNV_OpenTK_Graphics_Glx_Display__OpenTK_Graphics_Glx_GLXContext_OpenTK_Graphics_Glx_GLXContext_System_UInt32_System_UInt32_System_IntPtr_System_IntPtr_System_IntPtr_" data-uid="OpenTK.Graphics.Glx.Glx.NV.NamedCopyBufferSubDataNV(OpenTK.Graphics.Glx.Display*,OpenTK.Graphics.Glx.GLXContext,OpenTK.Graphics.Glx.GLXContext,System.UInt32,System.UInt32,System.IntPtr,System.IntPtr,System.IntPtr)">NamedCopyBufferSubDataNV(Display*, GLXContext, GLXContext, uint, uint, nint, nint, nint)</h4>
+  <h4 id="OpenTK_Graphics_Glx_Glx_NV_NamedCopyBufferSubDataNV_OpenTK_Graphics_Glx_DisplayPtr_OpenTK_Graphics_Glx_GLXContext_OpenTK_Graphics_Glx_GLXContext_System_UInt32_System_UInt32_System_IntPtr_System_IntPtr_System_IntPtr_" data-uid="OpenTK.Graphics.Glx.Glx.NV.NamedCopyBufferSubDataNV(OpenTK.Graphics.Glx.DisplayPtr,OpenTK.Graphics.Glx.GLXContext,OpenTK.Graphics.Glx.GLXContext,System.UInt32,System.UInt32,System.IntPtr,System.IntPtr,System.IntPtr)">NamedCopyBufferSubDataNV(DisplayPtr, GLXContext, GLXContext, uint, uint, nint, nint, nint)</h4>
   <div class="markdown level1 summary"><p><b>[requires: GLX_NV_copy_buffer]</b> <b>[entry point: <code>glXNamedCopyBufferSubDataNV</code>]</b><br></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void NamedCopyBufferSubDataNV(Display* dpy, GLXContext readCtx, GLXContext writeCtx, uint readBuffer, uint writeBuffer, nint readOffset, nint writeOffset, nint size)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void NamedCopyBufferSubDataNV(DisplayPtr dpy, GLXContext readCtx, GLXContext writeCtx, uint readBuffer, uint writeBuffer, nint readOffset, nint writeOffset, nint size)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -1644,70 +1165,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*</td>
-        <td><span class="parametername">dpy</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.GLXContext.html">GLXContext</a></td>
-        <td><span class="parametername">readCtx</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.GLXContext.html">GLXContext</a></td>
-        <td><span class="parametername">writeCtx</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
-        <td><span class="parametername">readBuffer</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
-        <td><span class="parametername">writeBuffer</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
-        <td><span class="parametername">readOffset</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
-        <td><span class="parametername">writeOffset</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
-        <td><span class="parametername">size</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="OpenTK_Graphics_Glx_Glx_NV_NamedCopyBufferSubDataNV_" data-uid="OpenTK.Graphics.Glx.Glx.NV.NamedCopyBufferSubDataNV*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_NV_NamedCopyBufferSubDataNV_OpenTK_Graphics_Glx_Display__OpenTK_Graphics_Glx_GLXContext_OpenTK_Graphics_Glx_GLXContext_System_UInt32_System_UInt32_System_IntPtr_System_IntPtr_System_IntPtr_" data-uid="OpenTK.Graphics.Glx.Glx.NV.NamedCopyBufferSubDataNV(OpenTK.Graphics.Glx.Display@,OpenTK.Graphics.Glx.GLXContext,OpenTK.Graphics.Glx.GLXContext,System.UInt32,System.UInt32,System.IntPtr,System.IntPtr,System.IntPtr)">NamedCopyBufferSubDataNV(ref Display, GLXContext, GLXContext, uint, uint, nint, nint, nint)</h4>
-  <div class="markdown level1 summary"><p><b>[requires: GLX_NV_copy_buffer]</b>
-<b>[entry point: <code>glXNamedCopyBufferSubDataNV</code>]</b>
-<br></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void NamedCopyBufferSubDataNV(ref Display dpy, GLXContext readCtx, GLXContext writeCtx, uint readBuffer, uint writeBuffer, nint readOffset, nint writeOffset, nint size)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a></td>
+        <td><a class="xref" href="OpenTK.Graphics.Glx.DisplayPtr.html">DisplayPtr</a></td>
         <td><span class="parametername">dpy</span></td>
         <td></td>
       </tr>
@@ -1749,13 +1207,13 @@
     </tbody>
   </table>
   <a id="OpenTK_Graphics_Glx_Glx_NV_QueryFrameCountNV_" data-uid="OpenTK.Graphics.Glx.Glx.NV.QueryFrameCountNV*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_NV_QueryFrameCountNV_OpenTK_Graphics_Glx_Display__System_Int32_System_UInt32__" data-uid="OpenTK.Graphics.Glx.Glx.NV.QueryFrameCountNV(OpenTK.Graphics.Glx.Display*,System.Int32,System.UInt32*)">QueryFrameCountNV(Display*, int, uint*)</h4>
+  <h4 id="OpenTK_Graphics_Glx_Glx_NV_QueryFrameCountNV_OpenTK_Graphics_Glx_DisplayPtr_System_Int32_System_UInt32__" data-uid="OpenTK.Graphics.Glx.Glx.NV.QueryFrameCountNV(OpenTK.Graphics.Glx.DisplayPtr,System.Int32,System.UInt32*)">QueryFrameCountNV(DisplayPtr, int, uint*)</h4>
   <div class="markdown level1 summary"><p><b>[requires: GLX_NV_swap_group]</b> <b>[entry point: <code>glXQueryFrameCountNV</code>]</b><br></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool QueryFrameCountNV(Display* dpy, int screen, uint* count)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool QueryFrameCountNV(DisplayPtr dpy, int screen, uint* count)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -1768,7 +1226,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*</td>
+        <td><a class="xref" href="OpenTK.Graphics.Glx.DisplayPtr.html">DisplayPtr</a></td>
         <td><span class="parametername">dpy</span></td>
         <td></td>
       </tr>
@@ -1800,7 +1258,7 @@
     </tbody>
   </table>
   <a id="OpenTK_Graphics_Glx_Glx_NV_QueryFrameCountNV_" data-uid="OpenTK.Graphics.Glx.Glx.NV.QueryFrameCountNV*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_NV_QueryFrameCountNV_OpenTK_Graphics_Glx_Display__System_Int32_System_UInt32__" data-uid="OpenTK.Graphics.Glx.Glx.NV.QueryFrameCountNV(OpenTK.Graphics.Glx.Display@,System.Int32,System.UInt32@)">QueryFrameCountNV(ref Display, int, ref uint)</h4>
+  <h4 id="OpenTK_Graphics_Glx_Glx_NV_QueryFrameCountNV_OpenTK_Graphics_Glx_DisplayPtr_System_Int32_System_UInt32__" data-uid="OpenTK.Graphics.Glx.Glx.NV.QueryFrameCountNV(OpenTK.Graphics.Glx.DisplayPtr,System.Int32,System.UInt32@)">QueryFrameCountNV(DisplayPtr, int, ref uint)</h4>
   <div class="markdown level1 summary"><p><b>[requires: GLX_NV_swap_group]</b>
 <b>[entry point: <code>glXQueryFrameCountNV</code>]</b>
 <br></p>
@@ -1808,7 +1266,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool QueryFrameCountNV(ref Display dpy, int screen, ref uint count)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool QueryFrameCountNV(DisplayPtr dpy, int screen, ref uint count)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -1821,7 +1279,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a></td>
+        <td><a class="xref" href="OpenTK.Graphics.Glx.DisplayPtr.html">DisplayPtr</a></td>
         <td><span class="parametername">dpy</span></td>
         <td></td>
       </tr>
@@ -1853,13 +1311,13 @@
     </tbody>
   </table>
   <a id="OpenTK_Graphics_Glx_Glx_NV_QueryMaxSwapGroupsNV_" data-uid="OpenTK.Graphics.Glx.Glx.NV.QueryMaxSwapGroupsNV*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_NV_QueryMaxSwapGroupsNV_OpenTK_Graphics_Glx_Display__System_Int32_System_UInt32__System_UInt32__" data-uid="OpenTK.Graphics.Glx.Glx.NV.QueryMaxSwapGroupsNV(OpenTK.Graphics.Glx.Display*,System.Int32,System.UInt32*,System.UInt32*)">QueryMaxSwapGroupsNV(Display*, int, uint*, uint*)</h4>
+  <h4 id="OpenTK_Graphics_Glx_Glx_NV_QueryMaxSwapGroupsNV_OpenTK_Graphics_Glx_DisplayPtr_System_Int32_System_UInt32__System_UInt32__" data-uid="OpenTK.Graphics.Glx.Glx.NV.QueryMaxSwapGroupsNV(OpenTK.Graphics.Glx.DisplayPtr,System.Int32,System.UInt32*,System.UInt32*)">QueryMaxSwapGroupsNV(DisplayPtr, int, uint*, uint*)</h4>
   <div class="markdown level1 summary"><p><b>[requires: GLX_NV_swap_group]</b> <b>[entry point: <code>glXQueryMaxSwapGroupsNV</code>]</b><br></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool QueryMaxSwapGroupsNV(Display* dpy, int screen, uint* maxGroups, uint* maxBarriers)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool QueryMaxSwapGroupsNV(DisplayPtr dpy, int screen, uint* maxGroups, uint* maxBarriers)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -1872,7 +1330,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*</td>
+        <td><a class="xref" href="OpenTK.Graphics.Glx.DisplayPtr.html">DisplayPtr</a></td>
         <td><span class="parametername">dpy</span></td>
         <td></td>
       </tr>
@@ -1909,7 +1367,7 @@
     </tbody>
   </table>
   <a id="OpenTK_Graphics_Glx_Glx_NV_QueryMaxSwapGroupsNV_" data-uid="OpenTK.Graphics.Glx.Glx.NV.QueryMaxSwapGroupsNV*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_NV_QueryMaxSwapGroupsNV_OpenTK_Graphics_Glx_Display__System_Int32_System_UInt32__System_UInt32__" data-uid="OpenTK.Graphics.Glx.Glx.NV.QueryMaxSwapGroupsNV(OpenTK.Graphics.Glx.Display@,System.Int32,System.UInt32@,System.UInt32@)">QueryMaxSwapGroupsNV(ref Display, int, ref uint, ref uint)</h4>
+  <h4 id="OpenTK_Graphics_Glx_Glx_NV_QueryMaxSwapGroupsNV_OpenTK_Graphics_Glx_DisplayPtr_System_Int32_System_UInt32__System_UInt32__" data-uid="OpenTK.Graphics.Glx.Glx.NV.QueryMaxSwapGroupsNV(OpenTK.Graphics.Glx.DisplayPtr,System.Int32,System.UInt32@,System.UInt32@)">QueryMaxSwapGroupsNV(DisplayPtr, int, ref uint, ref uint)</h4>
   <div class="markdown level1 summary"><p><b>[requires: GLX_NV_swap_group]</b>
 <b>[entry point: <code>glXQueryMaxSwapGroupsNV</code>]</b>
 <br></p>
@@ -1917,7 +1375,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool QueryMaxSwapGroupsNV(ref Display dpy, int screen, ref uint maxGroups, ref uint maxBarriers)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool QueryMaxSwapGroupsNV(DisplayPtr dpy, int screen, ref uint maxGroups, ref uint maxBarriers)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -1930,7 +1388,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a></td>
+        <td><a class="xref" href="OpenTK.Graphics.Glx.DisplayPtr.html">DisplayPtr</a></td>
         <td><span class="parametername">dpy</span></td>
         <td></td>
       </tr>
@@ -1967,13 +1425,13 @@
     </tbody>
   </table>
   <a id="OpenTK_Graphics_Glx_Glx_NV_QuerySwapGroupNV_" data-uid="OpenTK.Graphics.Glx.Glx.NV.QuerySwapGroupNV*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_NV_QuerySwapGroupNV_OpenTK_Graphics_Glx_Display__OpenTK_Graphics_Glx_GLXDrawable_System_UInt32__System_UInt32__" data-uid="OpenTK.Graphics.Glx.Glx.NV.QuerySwapGroupNV(OpenTK.Graphics.Glx.Display*,OpenTK.Graphics.Glx.GLXDrawable,System.UInt32*,System.UInt32*)">QuerySwapGroupNV(Display*, GLXDrawable, uint*, uint*)</h4>
+  <h4 id="OpenTK_Graphics_Glx_Glx_NV_QuerySwapGroupNV_OpenTK_Graphics_Glx_DisplayPtr_OpenTK_Graphics_Glx_GLXDrawable_System_UInt32__System_UInt32__" data-uid="OpenTK.Graphics.Glx.Glx.NV.QuerySwapGroupNV(OpenTK.Graphics.Glx.DisplayPtr,OpenTK.Graphics.Glx.GLXDrawable,System.UInt32*,System.UInt32*)">QuerySwapGroupNV(DisplayPtr, GLXDrawable, uint*, uint*)</h4>
   <div class="markdown level1 summary"><p><b>[requires: GLX_NV_swap_group]</b> <b>[entry point: <code>glXQuerySwapGroupNV</code>]</b><br></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool QuerySwapGroupNV(Display* dpy, GLXDrawable drawable, uint* group, uint* barrier)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool QuerySwapGroupNV(DisplayPtr dpy, GLXDrawable drawable, uint* group, uint* barrier)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -1986,7 +1444,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*</td>
+        <td><a class="xref" href="OpenTK.Graphics.Glx.DisplayPtr.html">DisplayPtr</a></td>
         <td><span class="parametername">dpy</span></td>
         <td></td>
       </tr>
@@ -2023,7 +1481,7 @@
     </tbody>
   </table>
   <a id="OpenTK_Graphics_Glx_Glx_NV_QuerySwapGroupNV_" data-uid="OpenTK.Graphics.Glx.Glx.NV.QuerySwapGroupNV*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_NV_QuerySwapGroupNV_OpenTK_Graphics_Glx_Display__OpenTK_Graphics_Glx_GLXDrawable_System_UInt32__System_UInt32__" data-uid="OpenTK.Graphics.Glx.Glx.NV.QuerySwapGroupNV(OpenTK.Graphics.Glx.Display@,OpenTK.Graphics.Glx.GLXDrawable,System.UInt32@,System.UInt32@)">QuerySwapGroupNV(ref Display, GLXDrawable, ref uint, ref uint)</h4>
+  <h4 id="OpenTK_Graphics_Glx_Glx_NV_QuerySwapGroupNV_OpenTK_Graphics_Glx_DisplayPtr_OpenTK_Graphics_Glx_GLXDrawable_System_UInt32__System_UInt32__" data-uid="OpenTK.Graphics.Glx.Glx.NV.QuerySwapGroupNV(OpenTK.Graphics.Glx.DisplayPtr,OpenTK.Graphics.Glx.GLXDrawable,System.UInt32@,System.UInt32@)">QuerySwapGroupNV(DisplayPtr, GLXDrawable, ref uint, ref uint)</h4>
   <div class="markdown level1 summary"><p><b>[requires: GLX_NV_swap_group]</b>
 <b>[entry point: <code>glXQuerySwapGroupNV</code>]</b>
 <br></p>
@@ -2031,7 +1489,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool QuerySwapGroupNV(ref Display dpy, GLXDrawable drawable, ref uint group, ref uint barrier)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool QuerySwapGroupNV(DisplayPtr dpy, GLXDrawable drawable, ref uint group, ref uint barrier)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -2044,7 +1502,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a></td>
+        <td><a class="xref" href="OpenTK.Graphics.Glx.DisplayPtr.html">DisplayPtr</a></td>
         <td><span class="parametername">dpy</span></td>
         <td></td>
       </tr>
@@ -2081,13 +1539,13 @@
     </tbody>
   </table>
   <a id="OpenTK_Graphics_Glx_Glx_NV_QueryVideoCaptureDeviceNV_" data-uid="OpenTK.Graphics.Glx.Glx.NV.QueryVideoCaptureDeviceNV*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_NV_QueryVideoCaptureDeviceNV_OpenTK_Graphics_Glx_Display__OpenTK_Graphics_Glx_GLXVideoCaptureDeviceNV_System_Int32_System_Int32__" data-uid="OpenTK.Graphics.Glx.Glx.NV.QueryVideoCaptureDeviceNV(OpenTK.Graphics.Glx.Display*,OpenTK.Graphics.Glx.GLXVideoCaptureDeviceNV,System.Int32,System.Int32*)">QueryVideoCaptureDeviceNV(Display*, GLXVideoCaptureDeviceNV, int, int*)</h4>
+  <h4 id="OpenTK_Graphics_Glx_Glx_NV_QueryVideoCaptureDeviceNV_OpenTK_Graphics_Glx_DisplayPtr_OpenTK_Graphics_Glx_GLXVideoCaptureDeviceNV_System_Int32_System_Int32__" data-uid="OpenTK.Graphics.Glx.Glx.NV.QueryVideoCaptureDeviceNV(OpenTK.Graphics.Glx.DisplayPtr,OpenTK.Graphics.Glx.GLXVideoCaptureDeviceNV,System.Int32,System.Int32*)">QueryVideoCaptureDeviceNV(DisplayPtr, GLXVideoCaptureDeviceNV, int, int*)</h4>
   <div class="markdown level1 summary"><p><b>[requires: GLX_NV_video_capture]</b> <b>[entry point: <code>glXQueryVideoCaptureDeviceNV</code>]</b><br></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int QueryVideoCaptureDeviceNV(Display* dpy, GLXVideoCaptureDeviceNV device, int attribute, int* value)</code></pre>
+    <pre><code class="lang-csharp hljs">public static int QueryVideoCaptureDeviceNV(DisplayPtr dpy, GLXVideoCaptureDeviceNV device, int attribute, int* value)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -2100,7 +1558,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*</td>
+        <td><a class="xref" href="OpenTK.Graphics.Glx.DisplayPtr.html">DisplayPtr</a></td>
         <td><span class="parametername">dpy</span></td>
         <td></td>
       </tr>
@@ -2137,7 +1595,7 @@
     </tbody>
   </table>
   <a id="OpenTK_Graphics_Glx_Glx_NV_QueryVideoCaptureDeviceNV_" data-uid="OpenTK.Graphics.Glx.Glx.NV.QueryVideoCaptureDeviceNV*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_NV_QueryVideoCaptureDeviceNV_OpenTK_Graphics_Glx_Display__OpenTK_Graphics_Glx_GLXVideoCaptureDeviceNV_System_Int32_System_Int32__" data-uid="OpenTK.Graphics.Glx.Glx.NV.QueryVideoCaptureDeviceNV(OpenTK.Graphics.Glx.Display@,OpenTK.Graphics.Glx.GLXVideoCaptureDeviceNV,System.Int32,System.Int32@)">QueryVideoCaptureDeviceNV(ref Display, GLXVideoCaptureDeviceNV, int, ref int)</h4>
+  <h4 id="OpenTK_Graphics_Glx_Glx_NV_QueryVideoCaptureDeviceNV_OpenTK_Graphics_Glx_DisplayPtr_OpenTK_Graphics_Glx_GLXVideoCaptureDeviceNV_System_Int32_System_Int32__" data-uid="OpenTK.Graphics.Glx.Glx.NV.QueryVideoCaptureDeviceNV(OpenTK.Graphics.Glx.DisplayPtr,OpenTK.Graphics.Glx.GLXVideoCaptureDeviceNV,System.Int32,System.Int32@)">QueryVideoCaptureDeviceNV(DisplayPtr, GLXVideoCaptureDeviceNV, int, ref int)</h4>
   <div class="markdown level1 summary"><p><b>[requires: GLX_NV_video_capture]</b>
 <b>[entry point: <code>glXQueryVideoCaptureDeviceNV</code>]</b>
 <br></p>
@@ -2145,7 +1603,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int QueryVideoCaptureDeviceNV(ref Display dpy, GLXVideoCaptureDeviceNV device, int attribute, ref int value)</code></pre>
+    <pre><code class="lang-csharp hljs">public static int QueryVideoCaptureDeviceNV(DisplayPtr dpy, GLXVideoCaptureDeviceNV device, int attribute, ref int value)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -2158,7 +1616,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a></td>
+        <td><a class="xref" href="OpenTK.Graphics.Glx.DisplayPtr.html">DisplayPtr</a></td>
         <td><span class="parametername">dpy</span></td>
         <td></td>
       </tr>
@@ -2195,13 +1653,13 @@
     </tbody>
   </table>
   <a id="OpenTK_Graphics_Glx_Glx_NV_ReleaseVideoCaptureDeviceNV_" data-uid="OpenTK.Graphics.Glx.Glx.NV.ReleaseVideoCaptureDeviceNV*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_NV_ReleaseVideoCaptureDeviceNV_OpenTK_Graphics_Glx_Display__OpenTK_Graphics_Glx_GLXVideoCaptureDeviceNV_" data-uid="OpenTK.Graphics.Glx.Glx.NV.ReleaseVideoCaptureDeviceNV(OpenTK.Graphics.Glx.Display*,OpenTK.Graphics.Glx.GLXVideoCaptureDeviceNV)">ReleaseVideoCaptureDeviceNV(Display*, GLXVideoCaptureDeviceNV)</h4>
+  <h4 id="OpenTK_Graphics_Glx_Glx_NV_ReleaseVideoCaptureDeviceNV_OpenTK_Graphics_Glx_DisplayPtr_OpenTK_Graphics_Glx_GLXVideoCaptureDeviceNV_" data-uid="OpenTK.Graphics.Glx.Glx.NV.ReleaseVideoCaptureDeviceNV(OpenTK.Graphics.Glx.DisplayPtr,OpenTK.Graphics.Glx.GLXVideoCaptureDeviceNV)">ReleaseVideoCaptureDeviceNV(DisplayPtr, GLXVideoCaptureDeviceNV)</h4>
   <div class="markdown level1 summary"><p><b>[requires: GLX_NV_video_capture]</b> <b>[entry point: <code>glXReleaseVideoCaptureDeviceNV</code>]</b><br></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void ReleaseVideoCaptureDeviceNV(Display* dpy, GLXVideoCaptureDeviceNV device)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void ReleaseVideoCaptureDeviceNV(DisplayPtr dpy, GLXVideoCaptureDeviceNV device)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -2214,40 +1672,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*</td>
-        <td><span class="parametername">dpy</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.GLXVideoCaptureDeviceNV.html">GLXVideoCaptureDeviceNV</a></td>
-        <td><span class="parametername">device</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="OpenTK_Graphics_Glx_Glx_NV_ReleaseVideoCaptureDeviceNV_" data-uid="OpenTK.Graphics.Glx.Glx.NV.ReleaseVideoCaptureDeviceNV*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_NV_ReleaseVideoCaptureDeviceNV_OpenTK_Graphics_Glx_Display__OpenTK_Graphics_Glx_GLXVideoCaptureDeviceNV_" data-uid="OpenTK.Graphics.Glx.Glx.NV.ReleaseVideoCaptureDeviceNV(OpenTK.Graphics.Glx.Display@,OpenTK.Graphics.Glx.GLXVideoCaptureDeviceNV)">ReleaseVideoCaptureDeviceNV(ref Display, GLXVideoCaptureDeviceNV)</h4>
-  <div class="markdown level1 summary"><p><b>[requires: GLX_NV_video_capture]</b>
-<b>[entry point: <code>glXReleaseVideoCaptureDeviceNV</code>]</b>
-<br></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void ReleaseVideoCaptureDeviceNV(ref Display dpy, GLXVideoCaptureDeviceNV device)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a></td>
+        <td><a class="xref" href="OpenTK.Graphics.Glx.DisplayPtr.html">DisplayPtr</a></td>
         <td><span class="parametername">dpy</span></td>
         <td></td>
       </tr>
@@ -2259,13 +1684,13 @@
     </tbody>
   </table>
   <a id="OpenTK_Graphics_Glx_Glx_NV_ReleaseVideoDeviceNV_" data-uid="OpenTK.Graphics.Glx.Glx.NV.ReleaseVideoDeviceNV*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_NV_ReleaseVideoDeviceNV_OpenTK_Graphics_Glx_Display__System_Int32_OpenTK_Graphics_Glx_GLXVideoDeviceNV_" data-uid="OpenTK.Graphics.Glx.Glx.NV.ReleaseVideoDeviceNV(OpenTK.Graphics.Glx.Display*,System.Int32,OpenTK.Graphics.Glx.GLXVideoDeviceNV)">ReleaseVideoDeviceNV(Display*, int, GLXVideoDeviceNV)</h4>
+  <h4 id="OpenTK_Graphics_Glx_Glx_NV_ReleaseVideoDeviceNV_OpenTK_Graphics_Glx_DisplayPtr_System_Int32_OpenTK_Graphics_Glx_GLXVideoDeviceNV_" data-uid="OpenTK.Graphics.Glx.Glx.NV.ReleaseVideoDeviceNV(OpenTK.Graphics.Glx.DisplayPtr,System.Int32,OpenTK.Graphics.Glx.GLXVideoDeviceNV)">ReleaseVideoDeviceNV(DisplayPtr, int, GLXVideoDeviceNV)</h4>
   <div class="markdown level1 summary"><p><b>[requires: GLX_NV_video_out]</b> <b>[entry point: <code>glXReleaseVideoDeviceNV</code>]</b><br></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int ReleaseVideoDeviceNV(Display* dpy, int screen, GLXVideoDeviceNV VideoDevice)</code></pre>
+    <pre><code class="lang-csharp hljs">public static int ReleaseVideoDeviceNV(DisplayPtr dpy, int screen, GLXVideoDeviceNV VideoDevice)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -2278,60 +1703,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*</td>
-        <td><span class="parametername">dpy</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
-        <td><span class="parametername">screen</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.GLXVideoDeviceNV.html">GLXVideoDeviceNV</a></td>
-        <td><span class="parametername">VideoDevice</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="OpenTK_Graphics_Glx_Glx_NV_ReleaseVideoDeviceNV_" data-uid="OpenTK.Graphics.Glx.Glx.NV.ReleaseVideoDeviceNV*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_NV_ReleaseVideoDeviceNV_OpenTK_Graphics_Glx_Display__System_Int32_OpenTK_Graphics_Glx_GLXVideoDeviceNV_" data-uid="OpenTK.Graphics.Glx.Glx.NV.ReleaseVideoDeviceNV(OpenTK.Graphics.Glx.Display@,System.Int32,OpenTK.Graphics.Glx.GLXVideoDeviceNV)">ReleaseVideoDeviceNV(ref Display, int, GLXVideoDeviceNV)</h4>
-  <div class="markdown level1 summary"><p><b>[requires: GLX_NV_video_out]</b>
-<b>[entry point: <code>glXReleaseVideoDeviceNV</code>]</b>
-<br></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int ReleaseVideoDeviceNV(ref Display dpy, int screen, GLXVideoDeviceNV VideoDevice)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a></td>
+        <td><a class="xref" href="OpenTK.Graphics.Glx.DisplayPtr.html">DisplayPtr</a></td>
         <td><span class="parametername">dpy</span></td>
         <td></td>
       </tr>
@@ -2363,13 +1735,13 @@
     </tbody>
   </table>
   <a id="OpenTK_Graphics_Glx_Glx_NV_ReleaseVideoImageNV_" data-uid="OpenTK.Graphics.Glx.Glx.NV.ReleaseVideoImageNV*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_NV_ReleaseVideoImageNV_OpenTK_Graphics_Glx_Display__OpenTK_Graphics_Glx_GLXPbuffer_" data-uid="OpenTK.Graphics.Glx.Glx.NV.ReleaseVideoImageNV(OpenTK.Graphics.Glx.Display*,OpenTK.Graphics.Glx.GLXPbuffer)">ReleaseVideoImageNV(Display*, GLXPbuffer)</h4>
+  <h4 id="OpenTK_Graphics_Glx_Glx_NV_ReleaseVideoImageNV_OpenTK_Graphics_Glx_DisplayPtr_OpenTK_Graphics_Glx_GLXPbuffer_" data-uid="OpenTK.Graphics.Glx.Glx.NV.ReleaseVideoImageNV(OpenTK.Graphics.Glx.DisplayPtr,OpenTK.Graphics.Glx.GLXPbuffer)">ReleaseVideoImageNV(DisplayPtr, GLXPbuffer)</h4>
   <div class="markdown level1 summary"><p><b>[requires: GLX_NV_video_out]</b> <b>[entry point: <code>glXReleaseVideoImageNV</code>]</b><br></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int ReleaseVideoImageNV(Display* dpy, GLXPbuffer pbuf)</code></pre>
+    <pre><code class="lang-csharp hljs">public static int ReleaseVideoImageNV(DisplayPtr dpy, GLXPbuffer pbuf)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -2382,55 +1754,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*</td>
-        <td><span class="parametername">dpy</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.GLXPbuffer.html">GLXPbuffer</a></td>
-        <td><span class="parametername">pbuf</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="OpenTK_Graphics_Glx_Glx_NV_ReleaseVideoImageNV_" data-uid="OpenTK.Graphics.Glx.Glx.NV.ReleaseVideoImageNV*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_NV_ReleaseVideoImageNV_OpenTK_Graphics_Glx_Display__OpenTK_Graphics_Glx_GLXPbuffer_" data-uid="OpenTK.Graphics.Glx.Glx.NV.ReleaseVideoImageNV(OpenTK.Graphics.Glx.Display@,OpenTK.Graphics.Glx.GLXPbuffer)">ReleaseVideoImageNV(ref Display, GLXPbuffer)</h4>
-  <div class="markdown level1 summary"><p><b>[requires: GLX_NV_video_out]</b>
-<b>[entry point: <code>glXReleaseVideoImageNV</code>]</b>
-<br></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int ReleaseVideoImageNV(ref Display dpy, GLXPbuffer pbuf)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a></td>
+        <td><a class="xref" href="OpenTK.Graphics.Glx.DisplayPtr.html">DisplayPtr</a></td>
         <td><span class="parametername">dpy</span></td>
         <td></td>
       </tr>
@@ -2457,13 +1781,13 @@
     </tbody>
   </table>
   <a id="OpenTK_Graphics_Glx_Glx_NV_ResetFrameCountNV_" data-uid="OpenTK.Graphics.Glx.Glx.NV.ResetFrameCountNV*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_NV_ResetFrameCountNV_OpenTK_Graphics_Glx_Display__System_Int32_" data-uid="OpenTK.Graphics.Glx.Glx.NV.ResetFrameCountNV(OpenTK.Graphics.Glx.Display*,System.Int32)">ResetFrameCountNV(Display*, int)</h4>
+  <h4 id="OpenTK_Graphics_Glx_Glx_NV_ResetFrameCountNV_OpenTK_Graphics_Glx_DisplayPtr_System_Int32_" data-uid="OpenTK.Graphics.Glx.Glx.NV.ResetFrameCountNV(OpenTK.Graphics.Glx.DisplayPtr,System.Int32)">ResetFrameCountNV(DisplayPtr, int)</h4>
   <div class="markdown level1 summary"><p><b>[requires: GLX_NV_swap_group]</b> <b>[entry point: <code>glXResetFrameCountNV</code>]</b><br></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool ResetFrameCountNV(Display* dpy, int screen)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool ResetFrameCountNV(DisplayPtr dpy, int screen)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -2476,55 +1800,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*</td>
-        <td><span class="parametername">dpy</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
-        <td><span class="parametername">screen</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="OpenTK_Graphics_Glx_Glx_NV_ResetFrameCountNV_" data-uid="OpenTK.Graphics.Glx.Glx.NV.ResetFrameCountNV*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_NV_ResetFrameCountNV_OpenTK_Graphics_Glx_Display__System_Int32_" data-uid="OpenTK.Graphics.Glx.Glx.NV.ResetFrameCountNV(OpenTK.Graphics.Glx.Display@,System.Int32)">ResetFrameCountNV(ref Display, int)</h4>
-  <div class="markdown level1 summary"><p><b>[requires: GLX_NV_swap_group]</b>
-<b>[entry point: <code>glXResetFrameCountNV</code>]</b>
-<br></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool ResetFrameCountNV(ref Display dpy, int screen)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a></td>
+        <td><a class="xref" href="OpenTK.Graphics.Glx.DisplayPtr.html">DisplayPtr</a></td>
         <td><span class="parametername">dpy</span></td>
         <td></td>
       </tr>
@@ -2551,13 +1827,13 @@
     </tbody>
   </table>
   <a id="OpenTK_Graphics_Glx_Glx_NV_SendPbufferToVideoNV_" data-uid="OpenTK.Graphics.Glx.Glx.NV.SendPbufferToVideoNV*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_NV_SendPbufferToVideoNV_OpenTK_Graphics_Glx_Display__OpenTK_Graphics_Glx_GLXPbuffer_System_Int32_System_UInt64__System_Boolean_" data-uid="OpenTK.Graphics.Glx.Glx.NV.SendPbufferToVideoNV(OpenTK.Graphics.Glx.Display*,OpenTK.Graphics.Glx.GLXPbuffer,System.Int32,System.UInt64*,System.Boolean)">SendPbufferToVideoNV(Display*, GLXPbuffer, int, ulong*, bool)</h4>
+  <h4 id="OpenTK_Graphics_Glx_Glx_NV_SendPbufferToVideoNV_OpenTK_Graphics_Glx_DisplayPtr_OpenTK_Graphics_Glx_GLXPbuffer_System_Int32_System_UInt64__System_Boolean_" data-uid="OpenTK.Graphics.Glx.Glx.NV.SendPbufferToVideoNV(OpenTK.Graphics.Glx.DisplayPtr,OpenTK.Graphics.Glx.GLXPbuffer,System.Int32,System.UInt64*,System.Boolean)">SendPbufferToVideoNV(DisplayPtr, GLXPbuffer, int, ulong*, bool)</h4>
   <div class="markdown level1 summary"><p><b>[requires: GLX_NV_video_out]</b> <b>[entry point: <code>glXSendPbufferToVideoNV</code>]</b><br></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int SendPbufferToVideoNV(Display* dpy, GLXPbuffer pbuf, int iBufferType, ulong* pulCounterPbuffer, bool bBlock)</code></pre>
+    <pre><code class="lang-csharp hljs">public static int SendPbufferToVideoNV(DisplayPtr dpy, GLXPbuffer pbuf, int iBufferType, ulong* pulCounterPbuffer, bool bBlock)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -2570,7 +1846,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a>*</td>
+        <td><a class="xref" href="OpenTK.Graphics.Glx.DisplayPtr.html">DisplayPtr</a></td>
         <td><span class="parametername">dpy</span></td>
         <td></td>
       </tr>
@@ -2612,7 +1888,7 @@
     </tbody>
   </table>
   <a id="OpenTK_Graphics_Glx_Glx_NV_SendPbufferToVideoNV_" data-uid="OpenTK.Graphics.Glx.Glx.NV.SendPbufferToVideoNV*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_NV_SendPbufferToVideoNV_OpenTK_Graphics_Glx_Display__OpenTK_Graphics_Glx_GLXPbuffer_System_Int32_System_UInt64__System_Boolean_" data-uid="OpenTK.Graphics.Glx.Glx.NV.SendPbufferToVideoNV(OpenTK.Graphics.Glx.Display@,OpenTK.Graphics.Glx.GLXPbuffer,System.Int32,System.UInt64@,System.Boolean)">SendPbufferToVideoNV(ref Display, GLXPbuffer, int, ref ulong, bool)</h4>
+  <h4 id="OpenTK_Graphics_Glx_Glx_NV_SendPbufferToVideoNV_OpenTK_Graphics_Glx_DisplayPtr_OpenTK_Graphics_Glx_GLXPbuffer_System_Int32_System_UInt64__System_Boolean_" data-uid="OpenTK.Graphics.Glx.Glx.NV.SendPbufferToVideoNV(OpenTK.Graphics.Glx.DisplayPtr,OpenTK.Graphics.Glx.GLXPbuffer,System.Int32,System.UInt64@,System.Boolean)">SendPbufferToVideoNV(DisplayPtr, GLXPbuffer, int, ref ulong, bool)</h4>
   <div class="markdown level1 summary"><p><b>[requires: GLX_NV_video_out]</b>
 <b>[entry point: <code>glXSendPbufferToVideoNV</code>]</b>
 <br></p>
@@ -2620,7 +1896,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int SendPbufferToVideoNV(ref Display dpy, GLXPbuffer pbuf, int iBufferType, ref ulong pulCounterPbuffer, bool bBlock)</code></pre>
+    <pre><code class="lang-csharp hljs">public static int SendPbufferToVideoNV(DisplayPtr dpy, GLXPbuffer pbuf, int iBufferType, ref ulong pulCounterPbuffer, bool bBlock)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -2633,7 +1909,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.Display.html">Display</a></td>
+        <td><a class="xref" href="OpenTK.Graphics.Glx.DisplayPtr.html">DisplayPtr</a></td>
         <td><span class="parametername">dpy</span></td>
         <td></td>
       </tr>

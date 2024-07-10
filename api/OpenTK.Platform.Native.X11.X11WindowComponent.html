@@ -990,6 +990,46 @@ We could add a delay where we wait for the server to change the window, but for 
       </tr>
     </tbody>
   </table>
+  <a id="OpenTK_Platform_Native_X11_X11WindowComponent_GetFramebufferSize_" data-uid="OpenTK.Platform.Native.X11.X11WindowComponent.GetFramebufferSize*"></a>
+  <h4 id="OpenTK_Platform_Native_X11_X11WindowComponent_GetFramebufferSize_OpenTK_Core_Platform_WindowHandle_System_Int32__System_Int32__" data-uid="OpenTK.Platform.Native.X11.X11WindowComponent.GetFramebufferSize(OpenTK.Core.Platform.WindowHandle,System.Int32@,System.Int32@)">GetFramebufferSize(WindowHandle, out int, out int)</h4>
+  <div class="markdown level1 summary"><p>Get the size of the window framebuffer in pixels.
+Use this value when calls to graphics APIs that want pixels, e.g. GL.Viewport().</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetFramebufferSize(WindowHandle handle, out int width, out int height)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Core.Platform.WindowHandle.html">WindowHandle</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>Handle to a window.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">width</span></td>
+        <td><p>Width in pixels of the window framebuffer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">height</span></td>
+        <td><p>Height in pixels of the window framebuffer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="OpenTK_Platform_Native_X11_X11WindowComponent_GetFullscreenDisplay_" data-uid="OpenTK.Platform.Native.X11.X11WindowComponent.GetFullscreenDisplay*"></a>
   <h4 id="OpenTK_Platform_Native_X11_X11WindowComponent_GetFullscreenDisplay_OpenTK_Core_Platform_WindowHandle_OpenTK_Core_Platform_DisplayHandle__" data-uid="OpenTK.Platform.Native.X11.X11WindowComponent.GetFullscreenDisplay(OpenTK.Core.Platform.WindowHandle,OpenTK.Core.Platform.DisplayHandle@)">GetFullscreenDisplay(WindowHandle, out DisplayHandle?)</h4>
   <div class="markdown level1 summary"><p>Gets the display that the specified window is fullscreen on, if the window is fullscreen.</p>
@@ -1099,6 +1139,49 @@ We could add a delay where we wait for the server to change the window, but for 
       <tr>
         <td><a class="xref" href="OpenTK.Core.Platform.PalNotImplementedException.html">PalNotImplementedException</a></td>
         <td><p>Driver does not support getting the window icon. See <a class="xref" href="OpenTK.Core.Platform.IWindowComponent.html#OpenTK_Core_Platform_IWindowComponent_CanSetIcon">CanSetIcon</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Platform_Native_X11_X11WindowComponent_GetIconifiedTitle_" data-uid="OpenTK.Platform.Native.X11.X11WindowComponent.GetIconifiedTitle*"></a>
+  <h4 id="OpenTK_Platform_Native_X11_X11WindowComponent_GetIconifiedTitle_OpenTK_Core_Platform_WindowHandle_" data-uid="OpenTK.Platform.Native.X11.X11WindowComponent.GetIconifiedTitle(OpenTK.Core.Platform.WindowHandle)">GetIconifiedTitle(WindowHandle)</h4>
+  <div class="markdown level1 summary"><p>Gets the iconified title of the window using either <code>_NET_WM_ICON_NAME</code> or <code>WM_ICON_NAME</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetIconifiedTitle(WindowHandle handle)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Core.Platform.WindowHandle.html">WindowHandle</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>A handle to the window to get the iconified title of.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>The title of the window when it's iconified.</p>
 </td>
       </tr>
     </tbody>
@@ -1299,6 +1382,49 @@ We could add a delay where we wait for the server to change the window, but for 
       </tr>
     </tbody>
   </table>
+  <a id="OpenTK_Platform_Native_X11_X11WindowComponent_GetScaleFactor_" data-uid="OpenTK.Platform.Native.X11.X11WindowComponent.GetScaleFactor*"></a>
+  <h4 id="OpenTK_Platform_Native_X11_X11WindowComponent_GetScaleFactor_OpenTK_Core_Platform_WindowHandle_System_Single__System_Single__" data-uid="OpenTK.Platform.Native.X11.X11WindowComponent.GetScaleFactor(OpenTK.Core.Platform.WindowHandle,System.Single@,System.Single@)">GetScaleFactor(WindowHandle, out float, out float)</h4>
+  <div class="markdown level1 summary"><p>Returns the current scale factor of this window.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetScaleFactor(WindowHandle handle, out float scaleX, out float scaleY)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Core.Platform.WindowHandle.html">WindowHandle</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>The window handle.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">scaleX</span></td>
+        <td><p>The x scale factor of the window.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">scaleY</span></td>
+        <td><p>The y scale factor of the window.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenTK_Platform_Native_X11_X11WindowComponent_GetScaleFactor_OpenTK_Core_Platform_WindowHandle_System_Single__System_Single___seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="OpenTK.Core.Platform.WindowScaleChangeEventArgs.html">WindowScaleChangeEventArgs</a></div>
+  </div>
   <a id="OpenTK_Platform_Native_X11_X11WindowComponent_GetSize_" data-uid="OpenTK.Platform.Native.X11.X11WindowComponent.GetSize*"></a>
   <h4 id="OpenTK_Platform_Native_X11_X11WindowComponent_GetSize_OpenTK_Core_Platform_WindowHandle_System_Int32__System_Int32__" data-uid="OpenTK.Platform.Native.X11.X11WindowComponent.GetSize(OpenTK.Core.Platform.WindowHandle,System.Int32@,System.Int32@)">GetSize(WindowHandle, out int, out int)</h4>
   <div class="markdown level1 summary"><p>Get the size of the window.</p>
@@ -1482,13 +1608,13 @@ We could add a delay where we wait for the server to change the window, but for 
     </tbody>
   </table>
   <a id="OpenTK_Platform_Native_X11_X11WindowComponent_Initialize_" data-uid="OpenTK.Platform.Native.X11.X11WindowComponent.Initialize*"></a>
-  <h4 id="OpenTK_Platform_Native_X11_X11WindowComponent_Initialize_OpenTK_Core_Platform_PalComponents_" data-uid="OpenTK.Platform.Native.X11.X11WindowComponent.Initialize(OpenTK.Core.Platform.PalComponents)">Initialize(PalComponents)</h4>
-  <div class="markdown level1 summary"><p>Initialize the driver.</p>
+  <h4 id="OpenTK_Platform_Native_X11_X11WindowComponent_Initialize_OpenTK_Core_Platform_ToolkitOptions_" data-uid="OpenTK.Platform.Native.X11.X11WindowComponent.Initialize(OpenTK.Core.Platform.ToolkitOptions)">Initialize(ToolkitOptions)</h4>
+  <div class="markdown level1 summary"><p>Initialize the component.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Initialize(PalComponents which)</code></pre>
+    <pre><code class="lang-csharp hljs">public void Initialize(ToolkitOptions options)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -1501,9 +1627,9 @@ We could add a delay where we wait for the server to change the window, but for 
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Core.Platform.PalComponents.html">PalComponents</a></td>
-        <td><span class="parametername">which</span></td>
-        <td><p>Bitfield of which components the driver need to be initialized.</p>
+        <td><a class="xref" href="OpenTK.Core.Platform.ToolkitOptions.html">ToolkitOptions</a></td>
+        <td><span class="parametername">options</span></td>
+        <td><p>The options to initialize the component with.</p>
 </td>
       </tr>
     </tbody>
@@ -1547,6 +1673,49 @@ We could add a delay where we wait for the server to change the window, but for 
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><p>Whether the window is always on top or not.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Platform_Native_X11_X11WindowComponent_IsFocused_" data-uid="OpenTK.Platform.Native.X11.X11WindowComponent.IsFocused*"></a>
+  <h4 id="OpenTK_Platform_Native_X11_X11WindowComponent_IsFocused_OpenTK_Core_Platform_WindowHandle_" data-uid="OpenTK.Platform.Native.X11.X11WindowComponent.IsFocused(OpenTK.Core.Platform.WindowHandle)">IsFocused(WindowHandle)</h4>
+  <div class="markdown level1 summary"><p>Returns true if the given window has input focus.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsFocused(WindowHandle handle)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Core.Platform.WindowHandle.html">WindowHandle</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>Handle to a window.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p>If the window has input focus.</p>
 </td>
       </tr>
     </tbody>
@@ -2259,6 +2428,39 @@ It is recommended to keep this code efficient as it will be called often.</p>
       <tr>
         <td><a class="xref" href="OpenTK.Core.Platform.PalNotImplementedException.html">PalNotImplementedException</a></td>
         <td><p>Driver does not support setting the window icon. See <a class="xref" href="OpenTK.Core.Platform.IWindowComponent.html#OpenTK_Core_Platform_IWindowComponent_CanSetIcon">CanSetIcon</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Platform_Native_X11_X11WindowComponent_SetIconifiedTitle_" data-uid="OpenTK.Platform.Native.X11.X11WindowComponent.SetIconifiedTitle*"></a>
+  <h4 id="OpenTK_Platform_Native_X11_X11WindowComponent_SetIconifiedTitle_OpenTK_Core_Platform_WindowHandle_System_String_" data-uid="OpenTK.Platform.Native.X11.X11WindowComponent.SetIconifiedTitle(OpenTK.Core.Platform.WindowHandle,System.String)">SetIconifiedTitle(WindowHandle, string)</h4>
+  <div class="markdown level1 summary"><p>Sets the iconified title of the window using both <code>_NET_WM_ICON_NAME</code> and <code>WM_ICON_NAME</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetIconifiedTitle(WindowHandle handle, string iconTitle)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Core.Platform.WindowHandle.html">WindowHandle</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>A handle to the window to set the iconified title of.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">iconTitle</span></td>
+        <td><p>The new iconified title.</p>
 </td>
       </tr>
     </tbody>

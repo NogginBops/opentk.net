@@ -82,7 +82,9 @@
 
   <h1 id="OpenTK_Platform_Native_Toolkit" data-uid="OpenTK.Platform.Native.Toolkit" class="text-break">Class Toolkit
 </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Provides static access to all OpenTK platform abstraction interfaces.
+This is the main way to access the OpenTK PAL2 api.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -123,7 +125,8 @@
 </h3>
   <a id="OpenTK_Platform_Native_Toolkit_Clipboard_" data-uid="OpenTK.Platform.Native.Toolkit.Clipboard*"></a>
   <h4 id="OpenTK_Platform_Native_Toolkit_Clipboard" data-uid="OpenTK.Platform.Native.Toolkit.Clipboard">Clipboard</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Interface for getting and setting clipboard data.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -146,7 +149,8 @@
   </table>
   <a id="OpenTK_Platform_Native_Toolkit_Cursor_" data-uid="OpenTK.Platform.Native.Toolkit.Cursor*"></a>
   <h4 id="OpenTK_Platform_Native_Toolkit_Cursor" data-uid="OpenTK.Platform.Native.Toolkit.Cursor">Cursor</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Interface for creating, interacting with, and deleting mouse cursor images.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -167,9 +171,34 @@
       </tr>
     </tbody>
   </table>
+  <a id="OpenTK_Platform_Native_Toolkit_Dialog_" data-uid="OpenTK.Platform.Native.Toolkit.Dialog*"></a>
+  <h4 id="OpenTK_Platform_Native_Toolkit_Dialog" data-uid="OpenTK.Platform.Native.Toolkit.Dialog">Dialog</h4>
+  <div class="markdown level1 summary"><p>Interface for opening system dialogs such as file open dialogs.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IDialogComponent Dialog { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Core.Platform.IDialogComponent.html">IDialogComponent</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <a id="OpenTK_Platform_Native_Toolkit_Display_" data-uid="OpenTK.Platform.Native.Toolkit.Display*"></a>
   <h4 id="OpenTK_Platform_Native_Toolkit_Display" data-uid="OpenTK.Platform.Native.Toolkit.Display">Display</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Interface for querying information about displays attached to the system.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -192,7 +221,8 @@
   </table>
   <a id="OpenTK_Platform_Native_Toolkit_Icon_" data-uid="OpenTK.Platform.Native.Toolkit.Icon*"></a>
   <h4 id="OpenTK_Platform_Native_Toolkit_Icon" data-uid="OpenTK.Platform.Native.Toolkit.Icon">Icon</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Interface for creating, interacting with, and deleting window icon images.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -215,7 +245,8 @@
   </table>
   <a id="OpenTK_Platform_Native_Toolkit_Joystick_" data-uid="OpenTK.Platform.Native.Toolkit.Joystick*"></a>
   <h4 id="OpenTK_Platform_Native_Toolkit_Joystick" data-uid="OpenTK.Platform.Native.Toolkit.Joystick">Joystick</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Interface for getting joystick input.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -238,7 +269,8 @@
   </table>
   <a id="OpenTK_Platform_Native_Toolkit_Keyboard_" data-uid="OpenTK.Platform.Native.Toolkit.Keyboard*"></a>
   <h4 id="OpenTK_Platform_Native_Toolkit_Keyboard" data-uid="OpenTK.Platform.Native.Toolkit.Keyboard">Keyboard</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Interface for dealing with keyboard layouts, conversions between <a class="xref" href="OpenTK.Core.Platform.Key.html">Key</a> and <a class="xref" href="OpenTK.Core.Platform.Scancode.html">Scancode</a>, and IME.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -261,7 +293,8 @@
   </table>
   <a id="OpenTK_Platform_Native_Toolkit_Mouse_" data-uid="OpenTK.Platform.Native.Toolkit.Mouse*"></a>
   <h4 id="OpenTK_Platform_Native_Toolkit_Mouse" data-uid="OpenTK.Platform.Native.Toolkit.Mouse">Mouse</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Interface for getting and setting the mouse position, and getting mouse button information.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -284,7 +317,8 @@
   </table>
   <a id="OpenTK_Platform_Native_Toolkit_OpenGL_" data-uid="OpenTK.Platform.Native.Toolkit.OpenGL*"></a>
   <h4 id="OpenTK_Platform_Native_Toolkit_OpenGL" data-uid="OpenTK.Platform.Native.Toolkit.OpenGL">OpenGL</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Interface for creating, interacting with, and deleting OpenGL contexts.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -307,7 +341,8 @@
   </table>
   <a id="OpenTK_Platform_Native_Toolkit_Shell_" data-uid="OpenTK.Platform.Native.Toolkit.Shell*"></a>
   <h4 id="OpenTK_Platform_Native_Toolkit_Shell" data-uid="OpenTK.Platform.Native.Toolkit.Shell">Shell</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Interface for shell functions such as battery information, preferred theme, etc.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -330,7 +365,8 @@
   </table>
   <a id="OpenTK_Platform_Native_Toolkit_Surface_" data-uid="OpenTK.Platform.Native.Toolkit.Surface*"></a>
   <h4 id="OpenTK_Platform_Native_Toolkit_Surface" data-uid="OpenTK.Platform.Native.Toolkit.Surface">Surface</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Interface for creating, interacting with, and deleting surfaces.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -353,7 +389,8 @@
   </table>
   <a id="OpenTK_Platform_Native_Toolkit_Window_" data-uid="OpenTK.Platform.Native.Toolkit.Window*"></a>
   <h4 id="OpenTK_Platform_Native_Toolkit_Window" data-uid="OpenTK.Platform.Native.Toolkit.Window">Window</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Interface for creating, interacting with, and deleting windows.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -377,8 +414,10 @@
   <h3 id="methods">Methods
 </h3>
   <a id="OpenTK_Platform_Native_Toolkit_Init_" data-uid="OpenTK.Platform.Native.Toolkit.Init*"></a>
-  <h4 id="OpenTK_Platform_Native_Toolkit_Init_OpenTK_Platform_Native_ToolkitOptions_" data-uid="OpenTK.Platform.Native.Toolkit.Init(OpenTK.Platform.Native.ToolkitOptions)">Init(ToolkitOptions)</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="OpenTK_Platform_Native_Toolkit_Init_OpenTK_Core_Platform_ToolkitOptions_" data-uid="OpenTK.Platform.Native.Toolkit.Init(OpenTK.Core.Platform.ToolkitOptions)">Init(ToolkitOptions)</h4>
+  <div class="markdown level1 summary"><p>Initialize OpenTK with the given settings.
+This function must be called before trying to use the OpenTK api.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -395,9 +434,10 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Platform.Native.ToolkitOptions.html">ToolkitOptions</a></td>
+        <td><a class="xref" href="OpenTK.Core.Platform.ToolkitOptions.html">ToolkitOptions</a></td>
         <td><span class="parametername">options</span></td>
-        <td></td>
+        <td><p>The options to initialize with.</p>
+</td>
       </tr>
     </tbody>
   </table>
