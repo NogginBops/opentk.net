@@ -1,0 +1,386 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IDialogComponent  - OpenTK</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IDialogComponent ">
+    <meta name="generator" content="docfx ">
+  
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+  
+  
+  
+
+    <meta name="author" content="The Open Toolkit Project">
+    <meta property="og:image" content="https://opentk.net/otkBig.png">
+    <meta property="og:image:width" content="142">
+    <meta property="og:image:height" content="50">
+    <meta property="og:site_name" content="OpenTK">
+    <meta property="og:title" content="Interface IDialogComponent  - OpenTK">
+    <meta name="theme-color" content="#ffffff">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation" style="background: #0052cc;">
+          <div class="container">
+            <a class="navbar-brand" href="../index.html">
+          <img id="logo" src="../otkBig.png" alt="">
+        </a>
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="OpenTK.Platform.IDialogComponent">
+
+
+
+  <h1 id="OpenTK_Platform_IDialogComponent" data-uid="OpenTK.Platform.IDialogComponent" class="text-break">Interface IDialogComponent</h1>
+  <div class="markdown level0 summary"><p>Interface for creating and interacting with modal dialogs.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="OpenTK.Platform.IPalComponent.html#OpenTK_Platform_IPalComponent_Name">IPalComponent.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenTK.Platform.IPalComponent.html#OpenTK_Platform_IPalComponent_Provides">IPalComponent.Provides</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenTK.Platform.IPalComponent.html#OpenTK_Platform_IPalComponent_Logger">IPalComponent.Logger</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenTK.Platform.IPalComponent.html#OpenTK_Platform_IPalComponent_Initialize_OpenTK_Platform_ToolkitOptions_">IPalComponent.Initialize(ToolkitOptions)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="OpenTK.html">OpenTK</a>.<a class="xref" href="OpenTK.Platform.html">Platform</a></h6>
+  <h6><strong>Assembly</strong>: OpenTK.Platform.dll</h6>
+  <h5 id="OpenTK_Platform_IDialogComponent_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IDialogComponent : IPalComponent</code></pre>
+  </div>
+  <h3 id="properties">Properties
+</h3>
+  <a id="OpenTK_Platform_IDialogComponent_CanTargetFolders_" data-uid="OpenTK.Platform.IDialogComponent.CanTargetFolders*"></a>
+  <h4 id="OpenTK_Platform_IDialogComponent_CanTargetFolders" data-uid="OpenTK.Platform.IDialogComponent.CanTargetFolders">CanTargetFolders</h4>
+  <div class="markdown level1 summary"><p>If the value of this property is true <a class="xref" href="OpenTK.Platform.OpenDialogOptions.html#OpenTK_Platform_OpenDialogOptions_SelectDirectory">SelectDirectory</a> will work.
+Otherwise these flags will be ignored.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool CanTargetFolders { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenTK_Platform_IDialogComponent_CanTargetFolders_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="OpenTK.Platform.OpenDialogOptions.html#OpenTK_Platform_OpenDialogOptions_SelectDirectory">SelectDirectory</a></div>
+      <div><a class="xref" href="OpenTK.Platform.IDialogComponent.html#OpenTK_Platform_IDialogComponent_ShowOpenDialog_OpenTK_Platform_WindowHandle_System_String_System_String_OpenTK_Platform_DialogFileFilter___OpenTK_Platform_OpenDialogOptions_">ShowOpenDialog(WindowHandle, string, string, DialogFileFilter[]?, OpenDialogOptions)</a></div>
+  </div>
+  <h3 id="methods">Methods
+</h3>
+  <a id="OpenTK_Platform_IDialogComponent_ShowMessageBox_" data-uid="OpenTK.Platform.IDialogComponent.ShowMessageBox*"></a>
+  <h4 id="OpenTK_Platform_IDialogComponent_ShowMessageBox_OpenTK_Platform_WindowHandle_System_String_System_String_OpenTK_Platform_MessageBoxType_OpenTK_Platform_IconHandle_" data-uid="OpenTK.Platform.IDialogComponent.ShowMessageBox(OpenTK.Platform.WindowHandle,System.String,System.String,OpenTK.Platform.MessageBoxType,OpenTK.Platform.IconHandle)">ShowMessageBox(WindowHandle, string, string, MessageBoxType, IconHandle?)</h4>
+  <div class="markdown level1 summary"><p>Shows a modal message box.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">MessageBoxButton ShowMessageBox(WindowHandle parent, string title, string content, MessageBoxType messageBoxType, IconHandle? customIcon = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Platform.WindowHandle.html">WindowHandle</a></td>
+        <td><span class="parametername">parent</span></td>
+        <td><p>The parent window for which this dialog is modal.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">title</span></td>
+        <td><p>The title of the dialog box.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">content</span></td>
+        <td><p>The content text of the dialog box.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Platform.MessageBoxType.html">MessageBoxType</a></td>
+        <td><span class="parametername">messageBoxType</span></td>
+        <td><p>The type of message box. Determines button layout and default icon.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Platform.IconHandle.html">IconHandle</a></td>
+        <td><span class="parametername">customIcon</span></td>
+        <td><p>An optional custom icon to use instead of the default one.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Platform.MessageBoxButton.html">MessageBoxButton</a></td>
+        <td><p>The pressed message box button.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Platform_IDialogComponent_ShowOpenDialog_" data-uid="OpenTK.Platform.IDialogComponent.ShowOpenDialog*"></a>
+  <h4 id="OpenTK_Platform_IDialogComponent_ShowOpenDialog_OpenTK_Platform_WindowHandle_System_String_System_String_OpenTK_Platform_DialogFileFilter___OpenTK_Platform_OpenDialogOptions_" data-uid="OpenTK.Platform.IDialogComponent.ShowOpenDialog(OpenTK.Platform.WindowHandle,System.String,System.String,OpenTK.Platform.DialogFileFilter[],OpenTK.Platform.OpenDialogOptions)">ShowOpenDialog(WindowHandle, string, string, DialogFileFilter[]?, OpenDialogOptions)</h4>
+  <div class="markdown level1 summary"><p>Shows a modal &quot;open file/folder&quot; dialog.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">List&lt;string&gt;? ShowOpenDialog(WindowHandle parent, string title, string directory, DialogFileFilter[]? allowedExtensions, OpenDialogOptions options)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Platform.WindowHandle.html">WindowHandle</a></td>
+        <td><span class="parametername">parent</span></td>
+        <td><p>The parent window handle for which this dialog will be modal.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">title</span></td>
+        <td><p>The title of the dialog.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">directory</span></td>
+        <td><p>The start directory of the file dialog.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Platform.DialogFileFilter.html">DialogFileFilter</a>[]</td>
+        <td><span class="parametername">allowedExtensions</span></td>
+        <td><p>A list of file filters that filter valid files to open. See <a class="xref" href="OpenTK.Platform.DialogFileFilter.html">DialogFileFilter</a> for more info.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Platform.OpenDialogOptions.html">OpenDialogOptions</a></td>
+        <td><span class="parametername">options</span></td>
+        <td><p>Additional options for the file dialog (e.g. <a class="xref" href="OpenTK.Platform.OpenDialogOptions.html#OpenTK_Platform_OpenDialogOptions_AllowMultiSelect">AllowMultiSelect</a> for allowing multiple files to be selected.)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</td>
+        <td><p>A list of selected files or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> if no files where selected.
+If <a class="xref" href="OpenTK.Platform.OpenDialogOptions.html#OpenTK_Platform_OpenDialogOptions_AllowMultiSelect">AllowMultiSelect</a> is not specified the list will only contain a single element.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenTK_Platform_IDialogComponent_ShowOpenDialog_OpenTK_Platform_WindowHandle_System_String_System_String_OpenTK_Platform_DialogFileFilter___OpenTK_Platform_OpenDialogOptions__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="OpenTK.Platform.DialogFileFilter.html">DialogFileFilter</a></div>
+      <div><a class="xref" href="OpenTK.Platform.OpenDialogOptions.html">OpenDialogOptions</a></div>
+      <div><a class="xref" href="OpenTK.Platform.IDialogComponent.html#OpenTK_Platform_IDialogComponent_ShowSaveDialog_OpenTK_Platform_WindowHandle_System_String_System_String_OpenTK_Platform_DialogFileFilter___OpenTK_Platform_SaveDialogOptions_">ShowSaveDialog(WindowHandle, string, string, DialogFileFilter[]?, SaveDialogOptions)</a></div>
+      <div><a class="xref" href="OpenTK.Platform.IDialogComponent.html#OpenTK_Platform_IDialogComponent_CanTargetFolders">CanTargetFolders</a></div>
+  </div>
+  <a id="OpenTK_Platform_IDialogComponent_ShowSaveDialog_" data-uid="OpenTK.Platform.IDialogComponent.ShowSaveDialog*"></a>
+  <h4 id="OpenTK_Platform_IDialogComponent_ShowSaveDialog_OpenTK_Platform_WindowHandle_System_String_System_String_OpenTK_Platform_DialogFileFilter___OpenTK_Platform_SaveDialogOptions_" data-uid="OpenTK.Platform.IDialogComponent.ShowSaveDialog(OpenTK.Platform.WindowHandle,System.String,System.String,OpenTK.Platform.DialogFileFilter[],OpenTK.Platform.SaveDialogOptions)">ShowSaveDialog(WindowHandle, string, string, DialogFileFilter[]?, SaveDialogOptions)</h4>
+  <div class="markdown level1 summary"><p>Shows a modal &quot;save file&quot; dialog.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string? ShowSaveDialog(WindowHandle parent, string title, string directory, DialogFileFilter[]? allowedExtensions, SaveDialogOptions options)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Platform.WindowHandle.html">WindowHandle</a></td>
+        <td><span class="parametername">parent</span></td>
+        <td><p>The parent window handle for which this dialog will be modal.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">title</span></td>
+        <td><p>The title of the dialog.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">directory</span></td>
+        <td><p>The starting directory of the file dialog.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Platform.DialogFileFilter.html">DialogFileFilter</a>[]</td>
+        <td><span class="parametername">allowedExtensions</span></td>
+        <td><p>A list of file filters that filter valid file extensions to save as. See <a class="xref" href="OpenTK.Platform.DialogFileFilter.html">DialogFileFilter</a> for more info.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Platform.SaveDialogOptions.html">SaveDialogOptions</a></td>
+        <td><span class="parametername">options</span></td>
+        <td><p>Additional options for the file dialog.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>The path to the selected save file, or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> if no file was selected.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenTK_Platform_IDialogComponent_ShowSaveDialog_OpenTK_Platform_WindowHandle_System_String_System_String_OpenTK_Platform_DialogFileFilter___OpenTK_Platform_SaveDialogOptions__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="OpenTK.Platform.DialogFileFilter.html">DialogFileFilter</a></div>
+      <div><a class="xref" href="OpenTK.Platform.SaveDialogOptions.html">SaveDialogOptions</a></div>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

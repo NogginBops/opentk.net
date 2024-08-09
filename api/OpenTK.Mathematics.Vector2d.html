@@ -5,11 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Struct Vector2d
-  - OpenTK</title>
+    <title>Struct Vector2d  - OpenTK</title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Struct Vector2d
- ">
+    <meta name="title" content="Struct Vector2d ">
     <meta name="generator" content="docfx ">
   
     <link rel="shortcut icon" href="../favicon.ico">
@@ -27,8 +25,7 @@
     <meta property="og:image:width" content="142">
     <meta property="og:image:height" content="50">
     <meta property="og:site_name" content="OpenTK">
-    <meta property="og:title" content="Struct Vector2d
-  - OpenTK">
+    <meta property="og:title" content="Struct Vector2d  - OpenTK">
     <meta name="theme-color" content="#ffffff">
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
@@ -80,8 +77,7 @@
 
 
 
-  <h1 id="OpenTK_Mathematics_Vector2d" data-uid="OpenTK.Mathematics.Vector2d" class="text-break">Struct Vector2d
-</h1>
+  <h1 id="OpenTK_Mathematics_Vector2d" data-uid="OpenTK.Mathematics.Vector2d" class="text-break">Struct Vector2d</h1>
   <div class="markdown level0 summary"><p>Represents a 2D vector using two double-precision floating-point numbers.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
@@ -389,7 +385,7 @@ public struct Vector2d : IEquatable&lt;Vector2d&gt;, IFormattable</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public double this[int index] { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public double this[int index] { readonly get; set; }</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -447,7 +443,7 @@ public struct Vector2d : IEquatable&lt;Vector2d&gt;, IFormattable</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public double Length { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly double Length { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -468,6 +464,37 @@ public struct Vector2d : IEquatable&lt;Vector2d&gt;, IFormattable</code></pre>
   <div class="seealso">
       <div><a class="xref" href="OpenTK.Mathematics.Vector2d.html#OpenTK_Mathematics_Vector2d_LengthSquared">LengthSquared</a></div>
   </div>
+  <a id="OpenTK_Mathematics_Vector2d_LengthFast_" data-uid="OpenTK.Mathematics.Vector2d.LengthFast*"></a>
+  <h4 id="OpenTK_Mathematics_Vector2d_LengthFast" data-uid="OpenTK.Mathematics.Vector2d.LengthFast">LengthFast</h4>
+  <div class="markdown level1 summary"><p>Gets an approximation of the vector length (magnitude).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly double LengthFast { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenTK_Mathematics_Vector2d_LengthFast_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This property uses an approximation of the square root function to calculate vector magnitude.</p>
+</div>
+  <h5 id="OpenTK_Mathematics_Vector2d_LengthFast_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="OpenTK.Mathematics.Vector2d.html#OpenTK_Mathematics_Vector2d_LengthSquared">LengthSquared</a></div>
+  </div>
   <a id="OpenTK_Mathematics_Vector2d_LengthSquared_" data-uid="OpenTK.Mathematics.Vector2d.LengthSquared*"></a>
   <h4 id="OpenTK_Mathematics_Vector2d_LengthSquared" data-uid="OpenTK.Mathematics.Vector2d.LengthSquared">LengthSquared</h4>
   <div class="markdown level1 summary"><p>Gets the square of the vector length (magnitude).</p>
@@ -475,7 +502,7 @@ public struct Vector2d : IEquatable&lt;Vector2d&gt;, IFormattable</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public double LengthSquared { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly double LengthSquared { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -503,7 +530,7 @@ for comparisons.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Vector2d PerpendicularLeft { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly Vector2d PerpendicularLeft { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -527,7 +554,7 @@ for comparisons.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Vector2d PerpendicularRight { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly Vector2d PerpendicularRight { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -544,6 +571,30 @@ for comparisons.</p>
       </tr>
     </tbody>
   </table>
+  <a id="OpenTK_Mathematics_Vector2d_ReciprocalLengthFast_" data-uid="OpenTK.Mathematics.Vector2d.ReciprocalLengthFast*"></a>
+  <h4 id="OpenTK_Mathematics_Vector2d_ReciprocalLengthFast" data-uid="OpenTK.Mathematics.Vector2d.ReciprocalLengthFast">ReciprocalLengthFast</h4>
+  <div class="markdown level1 summary"><p>Gets an approximation of 1 over the length (magnitude) of the vector.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly double ReciprocalLengthFast { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <a id="OpenTK_Mathematics_Vector2d_Yx_" data-uid="OpenTK.Mathematics.Vector2d.Yx*"></a>
   <h4 id="OpenTK_Mathematics_Vector2d_Yx" data-uid="OpenTK.Mathematics.Vector2d.Yx">Yx</h4>
   <div class="markdown level1 summary"><p>Gets or sets an OpenTK.Vector2d with the Y and X components of this instance.</p>
@@ -551,7 +602,7 @@ for comparisons.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Vector2d Yx { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public Vector2d Yx { readonly get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -570,6 +621,107 @@ for comparisons.</p>
   </table>
   <h3 id="methods">Methods
 </h3>
+  <a id="OpenTK_Mathematics_Vector2d_Abs_" data-uid="OpenTK.Mathematics.Vector2d.Abs*"></a>
+  <h4 id="OpenTK_Mathematics_Vector2d_Abs" data-uid="OpenTK.Mathematics.Vector2d.Abs">Abs()</h4>
+  <div class="markdown level1 summary"><p>Returns a new vector that is the component-wise absolute value of the vector.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly Vector2d Abs()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector2d.html">Vector2d</a></td>
+        <td><p>The component-wise absolute value vector.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Vector2d_Abs_" data-uid="OpenTK.Mathematics.Vector2d.Abs*"></a>
+  <h4 id="OpenTK_Mathematics_Vector2d_Abs_OpenTK_Mathematics_Vector2d_" data-uid="OpenTK.Mathematics.Vector2d.Abs(OpenTK.Mathematics.Vector2d)">Abs(Vector2d)</h4>
+  <div class="markdown level1 summary"><p>Take the component-wise absolute value of a vector.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector2d Abs(Vector2d vec)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector2d.html">Vector2d</a></td>
+        <td><span class="parametername">vec</span></td>
+        <td><p>The vector to apply component-wise absolute value to.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector2d.html">Vector2d</a></td>
+        <td><p>The component-wise absolute value vector.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Vector2d_Abs_" data-uid="OpenTK.Mathematics.Vector2d.Abs*"></a>
+  <h4 id="OpenTK_Mathematics_Vector2d_Abs_OpenTK_Mathematics_Vector2d__OpenTK_Mathematics_Vector2d__" data-uid="OpenTK.Mathematics.Vector2d.Abs(OpenTK.Mathematics.Vector2d@,OpenTK.Mathematics.Vector2d@)">Abs(in Vector2d, out Vector2d)</h4>
+  <div class="markdown level1 summary"><p>Take the component-wise absolute value of a vector.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Abs(in Vector2d vec, out Vector2d result)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector2d.html">Vector2d</a></td>
+        <td><span class="parametername">vec</span></td>
+        <td><p>The vector to apply component-wise absolute value to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector2d.html">Vector2d</a></td>
+        <td><span class="parametername">result</span></td>
+        <td><p>The component-wise absolute value vector.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="OpenTK_Mathematics_Vector2d_Add_" data-uid="OpenTK.Mathematics.Vector2d.Add*"></a>
   <h4 id="OpenTK_Mathematics_Vector2d_Add_OpenTK_Mathematics_Vector2d_OpenTK_Mathematics_Vector2d_" data-uid="OpenTK.Mathematics.Vector2d.Add(OpenTK.Mathematics.Vector2d,OpenTK.Mathematics.Vector2d)">Add(Vector2d, Vector2d)</h4>
   <div class="markdown level1 summary"><p>Adds two vectors.</p>
@@ -1072,7 +1224,7 @@ public static Vector2d ComponentMin(Vector2d a, Vector2d b)</code></pre>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Pure]
-public void Deconstruct(out double x, out double y)</code></pre>
+public readonly void Deconstruct(out double x, out double y)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -1543,6 +1695,116 @@ public static double Dot(Vector2d left, Vector2d right)</code></pre>
       </tr>
     </tbody>
   </table>
+  <a id="OpenTK_Mathematics_Vector2d_Elerp_" data-uid="OpenTK.Mathematics.Vector2d.Elerp*"></a>
+  <h4 id="OpenTK_Mathematics_Vector2d_Elerp_OpenTK_Mathematics_Vector2d_OpenTK_Mathematics_Vector2d_System_Double_" data-uid="OpenTK.Mathematics.Vector2d.Elerp(OpenTK.Mathematics.Vector2d,OpenTK.Mathematics.Vector2d,System.Double)">Elerp(Vector2d, Vector2d, double)</h4>
+  <div class="markdown level1 summary"><p>Returns a new vector that is the exponential interpolation of the two vectors.
+Equivalent to <code>a * pow(b/a, t)</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector2d Elerp(Vector2d a, Vector2d b, double t)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector2d.html">Vector2d</a></td>
+        <td><span class="parametername">a</span></td>
+        <td><p>The starting value. Must be non-negative.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector2d.html">Vector2d</a></td>
+        <td><span class="parametername">b</span></td>
+        <td><p>The end value. Must be non-negative.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">t</span></td>
+        <td><p>The blend factor.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector2d.html">Vector2d</a></td>
+        <td><p>The exponential interpolation between <code class="paramref">a</code> and <code class="paramref">b</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenTK_Mathematics_Vector2d_Elerp_OpenTK_Mathematics_Vector2d_OpenTK_Mathematics_Vector2d_System_Double__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="OpenTK.Mathematics.MathHelper.html#OpenTK_Mathematics_MathHelper_Elerp_System_Double_System_Double_System_Double_">Elerp</a>(<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>)</div>
+  </div>
+  <a id="OpenTK_Mathematics_Vector2d_Elerp_" data-uid="OpenTK.Mathematics.Vector2d.Elerp*"></a>
+  <h4 id="OpenTK_Mathematics_Vector2d_Elerp_OpenTK_Mathematics_Vector2d__OpenTK_Mathematics_Vector2d__System_Double_OpenTK_Mathematics_Vector2d__" data-uid="OpenTK.Mathematics.Vector2d.Elerp(OpenTK.Mathematics.Vector2d@,OpenTK.Mathematics.Vector2d@,System.Double,OpenTK.Mathematics.Vector2d@)">Elerp(in Vector2d, in Vector2d, double, out Vector2d)</h4>
+  <div class="markdown level1 summary"><p>Returns a new vector that is the exponential interpolation of the two vectors.
+Equivalent to <code>a * pow(b/a, t)</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Elerp(in Vector2d a, in Vector2d b, double t, out Vector2d result)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector2d.html">Vector2d</a></td>
+        <td><span class="parametername">a</span></td>
+        <td><p>The starting value. Must be non-negative.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector2d.html">Vector2d</a></td>
+        <td><span class="parametername">b</span></td>
+        <td><p>The end value. Must be non-negative.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">t</span></td>
+        <td><p>The blend factor.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector2d.html">Vector2d</a></td>
+        <td><span class="parametername">result</span></td>
+        <td><p>The exponential interpolation between <code class="paramref">a</code> and <code class="paramref">b</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenTK_Mathematics_Vector2d_Elerp_OpenTK_Mathematics_Vector2d__OpenTK_Mathematics_Vector2d__System_Double_OpenTK_Mathematics_Vector2d___seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="OpenTK.Mathematics.MathHelper.html#OpenTK_Mathematics_MathHelper_Elerp_System_Double_System_Double_System_Double_">Elerp</a>(<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>)</div>
+  </div>
   <a id="OpenTK_Mathematics_Vector2d_Equals_" data-uid="OpenTK.Mathematics.Vector2d.Equals*"></a>
   <h4 id="OpenTK_Mathematics_Vector2d_Equals_OpenTK_Mathematics_Vector2d_" data-uid="OpenTK.Mathematics.Vector2d.Equals(OpenTK.Mathematics.Vector2d)">Equals(Vector2d)</h4>
   <div class="markdown level1 summary"><p>Indicates whether the current object is equal to another object of the same type.</p>
@@ -1550,7 +1812,7 @@ public static double Dot(Vector2d left, Vector2d right)</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool Equals(Vector2d other)</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly bool Equals(Vector2d other)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -1638,7 +1900,7 @@ public static double Dot(Vector2d left, Vector2d right)</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+    <pre><code class="lang-csharp hljs">public override readonly int GetHashCode()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-condensed">
@@ -2307,6 +2569,15 @@ public static Vector2d Normalize(Vector2d vec)</code></pre>
     </tbody>
   </table>
   <a id="OpenTK_Mathematics_Vector2d_NormalizeFast_" data-uid="OpenTK.Mathematics.Vector2d.NormalizeFast*"></a>
+  <h4 id="OpenTK_Mathematics_Vector2d_NormalizeFast" data-uid="OpenTK.Mathematics.Vector2d.NormalizeFast">NormalizeFast()</h4>
+  <div class="markdown level1 summary"><p>Scales the Vector2d to approximately unit length.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void NormalizeFast()</code></pre>
+  </div>
+  <a id="OpenTK_Mathematics_Vector2d_NormalizeFast_" data-uid="OpenTK.Mathematics.Vector2d.NormalizeFast*"></a>
   <h4 id="OpenTK_Mathematics_Vector2d_NormalizeFast_OpenTK_Mathematics_Vector2d_" data-uid="OpenTK.Mathematics.Vector2d.NormalizeFast(OpenTK.Mathematics.Vector2d)">NormalizeFast(Vector2d)</h4>
   <div class="markdown level1 summary"><p>Scale a vector to approximately unit length.</p>
 </div>
@@ -2390,7 +2661,7 @@ public static Vector2d NormalizeFast(Vector2d vec)</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Vector2d Normalized()</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly Vector2d Normalized()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-condensed">
@@ -2404,6 +2675,109 @@ public static Vector2d NormalizeFast(Vector2d vec)</code></pre>
       <tr>
         <td><a class="xref" href="OpenTK.Mathematics.Vector2d.html">Vector2d</a></td>
         <td><p>The normalized copy.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Vector2d_Slerp_" data-uid="OpenTK.Mathematics.Vector2d.Slerp*"></a>
+  <h4 id="OpenTK_Mathematics_Vector2d_Slerp_OpenTK_Mathematics_Vector2d_OpenTK_Mathematics_Vector2d_System_Double_" data-uid="OpenTK.Mathematics.Vector2d.Slerp(OpenTK.Mathematics.Vector2d,OpenTK.Mathematics.Vector2d,System.Double)">Slerp(Vector2d, Vector2d, double)</h4>
+  <div class="markdown level1 summary"><p>Returns a new vector that is the spherical interpolation of the two given vectors.
+<code class="paramref">a</code> and <code class="paramref">b</code> need to be normalized for this function to work properly.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static Vector2d Slerp(Vector2d a, Vector2d b, double t)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector2d.html">Vector2d</a></td>
+        <td><span class="parametername">a</span></td>
+        <td><p>Unit vector start point.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector2d.html">Vector2d</a></td>
+        <td><span class="parametername">b</span></td>
+        <td><p>Unit vector end point.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">t</span></td>
+        <td><p>The blend factor.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector2d.html">Vector2d</a></td>
+        <td><p><code class="paramref">a</code> when <code class="paramref">t</code>=0, <code class="paramref">b</code> when <code class="paramref">t</code>=1, and a spherical interpolation between the vectors otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Vector2d_Slerp_" data-uid="OpenTK.Mathematics.Vector2d.Slerp*"></a>
+  <h4 id="OpenTK_Mathematics_Vector2d_Slerp_OpenTK_Mathematics_Vector2d__OpenTK_Mathematics_Vector2d__System_Double_OpenTK_Mathematics_Vector2d__" data-uid="OpenTK.Mathematics.Vector2d.Slerp(OpenTK.Mathematics.Vector2d@,OpenTK.Mathematics.Vector2d@,System.Double,OpenTK.Mathematics.Vector2d@)">Slerp(in Vector2d, in Vector2d, double, out Vector2d)</h4>
+  <div class="markdown level1 summary"><p>Returns a new vector that is the spherical interpolation of the two given vectors.
+<code class="paramref">a</code> and <code class="paramref">b</code> need to be normalized for this function to work properly.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Slerp(in Vector2d a, in Vector2d b, double t, out Vector2d result)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector2d.html">Vector2d</a></td>
+        <td><span class="parametername">a</span></td>
+        <td><p>Unit vector start point.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector2d.html">Vector2d</a></td>
+        <td><span class="parametername">b</span></td>
+        <td><p>Unit vector end point.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">t</span></td>
+        <td><p>The blend factor.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector2d.html">Vector2d</a></td>
+        <td><span class="parametername">result</span></td>
+        <td><p>Is <code class="paramref">a</code> when <code class="paramref">t</code>=0, <code class="paramref">b</code> when <code class="paramref">t</code>=1, and a spherical interpolation between the vectors otherwise.</p>
 </td>
       </tr>
     </tbody>
@@ -2621,7 +2995,7 @@ public static Vector2d Subtract(Vector2d a, Vector2d b)</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string ToString(string format, IFormatProvider formatProvider)</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly string ToString(string format, IFormatProvider formatProvider)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">

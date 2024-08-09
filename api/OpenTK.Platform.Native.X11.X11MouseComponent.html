@@ -5,11 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class X11MouseComponent
-  - OpenTK</title>
+    <title>Class X11MouseComponent  - OpenTK</title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class X11MouseComponent
- ">
+    <meta name="title" content="Class X11MouseComponent ">
     <meta name="generator" content="docfx ">
   
     <link rel="shortcut icon" href="../favicon.ico">
@@ -27,8 +25,7 @@
     <meta property="og:image:width" content="142">
     <meta property="og:image:height" content="50">
     <meta property="og:site_name" content="OpenTK">
-    <meta property="og:title" content="Class X11MouseComponent
-  - OpenTK">
+    <meta property="og:title" content="Class X11MouseComponent  - OpenTK">
     <meta name="theme-color" content="#ffffff">
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
@@ -80,8 +77,7 @@
 
 
 
-  <h1 id="OpenTK_Platform_Native_X11_X11MouseComponent" data-uid="OpenTK.Platform.Native.X11.X11MouseComponent" class="text-break">Class X11MouseComponent
-</h1>
+  <h1 id="OpenTK_Platform_Native_X11_X11MouseComponent" data-uid="OpenTK.Platform.Native.X11.X11MouseComponent" class="text-break">Class X11MouseComponent</h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
@@ -91,8 +87,8 @@
   </div>
   <div class="implements">
     <h5>Implements</h5>
-    <div><a class="xref" href="OpenTK.Core.Platform.IMouseComponent.html">IMouseComponent</a></div>
-    <div><a class="xref" href="OpenTK.Core.Platform.IPalComponent.html">IPalComponent</a></div>
+    <div><a class="xref" href="OpenTK.Platform.IMouseComponent.html">IMouseComponent</a></div>
+    <div><a class="xref" href="OpenTK.Platform.IPalComponent.html">IPalComponent</a></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -119,7 +115,7 @@
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="OpenTK.html">OpenTK</a>.<a class="xref" href="OpenTK.Platform.html">Platform</a>.<a class="xref" href="OpenTK.Platform.Native.html">Native</a>.<a class="xref" href="OpenTK.Platform.Native.X11.html">X11</a></h6>
-  <h6><strong>Assembly</strong>: OpenTK.Platform.Native.dll</h6>
+  <h6><strong>Assembly</strong>: OpenTK.Platform.dll</h6>
   <h5 id="OpenTK_Platform_Native_X11_X11MouseComponent_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class X11MouseComponent : IMouseComponent, IPalComponent</code></pre>
@@ -128,7 +124,7 @@
 </h3>
   <a id="OpenTK_Platform_Native_X11_X11MouseComponent_CanSetMousePosition_" data-uid="OpenTK.Platform.Native.X11.X11MouseComponent.CanSetMousePosition*"></a>
   <h4 id="OpenTK_Platform_Native_X11_X11MouseComponent_CanSetMousePosition" data-uid="OpenTK.Platform.Native.X11.X11MouseComponent.CanSetMousePosition">CanSetMousePosition</h4>
-  <div class="markdown level1 summary"><p>If it's possible to set the position of the mouse.</p>
+  <div class="markdown level1 summary"><p>If it's possible to set the position of the mouse using <a class="xref" href="OpenTK.Platform.IMouseComponent.html#OpenTK_Platform_IMouseComponent_SetPosition_System_Int32_System_Int32_">SetPosition(int, int)</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -150,6 +146,10 @@
       </tr>
     </tbody>
   </table>
+  <h5 id="OpenTK_Platform_Native_X11_X11MouseComponent_CanSetMousePosition_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="OpenTK.Platform.IMouseComponent.html#OpenTK_Platform_IMouseComponent_SetPosition_System_Int32_System_Int32_">SetPosition</a>(<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>)</div>
+  </div>
   <a id="OpenTK_Platform_Native_X11_X11MouseComponent_Logger_" data-uid="OpenTK.Platform.Native.X11.X11MouseComponent.Logger*"></a>
   <h4 id="OpenTK_Platform_Native_X11_X11MouseComponent_Logger" data-uid="OpenTK.Platform.Native.X11.X11MouseComponent.Logger">Logger</h4>
   <div class="markdown level1 summary"><p>Provides a logger for this component.</p>
@@ -217,15 +217,85 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Core.Platform.PalComponents.html">PalComponents</a></td>
+        <td><a class="xref" href="OpenTK.Platform.PalComponents.html">PalComponents</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
+  <a id="OpenTK_Platform_Native_X11_X11MouseComponent_SupportsRawMouseMotion_" data-uid="OpenTK.Platform.Native.X11.X11MouseComponent.SupportsRawMouseMotion*"></a>
+  <h4 id="OpenTK_Platform_Native_X11_X11MouseComponent_SupportsRawMouseMotion" data-uid="OpenTK.Platform.Native.X11.X11MouseComponent.SupportsRawMouseMotion">SupportsRawMouseMotion</h4>
+  <div class="markdown level1 summary"><p>If raw mouse motion is supported on this platform.
+If this is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a><a class="xref" href="OpenTK.Platform.IMouseComponent.html#OpenTK_Platform_IMouseComponent_IsRawMouseMotionEnabled_OpenTK_Platform_WindowHandle_">IsRawMouseMotionEnabled(WindowHandle)</a> and <a class="xref" href="OpenTK.Platform.IMouseComponent.html#OpenTK_Platform_IMouseComponent_EnableRawMouseMotion_OpenTK_Platform_WindowHandle_System_Boolean_">EnableRawMouseMotion(WindowHandle, bool)</a> should not be used.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SupportsRawMouseMotion { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenTK_Platform_Native_X11_X11MouseComponent_SupportsRawMouseMotion_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="OpenTK.Platform.IMouseComponent.html#OpenTK_Platform_IMouseComponent_IsRawMouseMotionEnabled_OpenTK_Platform_WindowHandle_">IsRawMouseMotionEnabled</a>(<a class="xref" href="OpenTK.Platform.WindowHandle.html">WindowHandle</a>)</div>
+      <div><a class="xref" href="OpenTK.Platform.IMouseComponent.html#OpenTK_Platform_IMouseComponent_EnableRawMouseMotion_OpenTK_Platform_WindowHandle_System_Boolean_">EnableRawMouseMotion</a>(<a class="xref" href="OpenTK.Platform.WindowHandle.html">WindowHandle</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>)</div>
+  </div>
   <h3 id="methods">Methods
 </h3>
+  <a id="OpenTK_Platform_Native_X11_X11MouseComponent_EnableRawMouseMotion_" data-uid="OpenTK.Platform.Native.X11.X11MouseComponent.EnableRawMouseMotion*"></a>
+  <h4 id="OpenTK_Platform_Native_X11_X11MouseComponent_EnableRawMouseMotion_OpenTK_Platform_WindowHandle_System_Boolean_" data-uid="OpenTK.Platform.Native.X11.X11MouseComponent.EnableRawMouseMotion(OpenTK.Platform.WindowHandle,System.Boolean)">EnableRawMouseMotion(WindowHandle, bool)</h4>
+  <div class="markdown level1 summary"><p>Enables or disables raw mouse motion for a specific window.
+When raw mouse motion is enabled the window will receive <a class="xref" href="OpenTK.Platform.RawMouseMoveEventArgs.html">RawMouseMoveEventArgs</a> events,
+in addition to the normal <a class="xref" href="OpenTK.Platform.MouseMoveEventArgs.html">MouseMoveEventArgs</a> events.
+Check that <a class="xref" href="OpenTK.Platform.IMouseComponent.html#OpenTK_Platform_IMouseComponent_SupportsRawMouseMotion">SupportsRawMouseMotion</a> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> before using this.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void EnableRawMouseMotion(WindowHandle window, bool enable)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Platform.WindowHandle.html">WindowHandle</a></td>
+        <td><span class="parametername">window</span></td>
+        <td><p>The window to enable or disable raw mouse motion for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">enable</span></td>
+        <td><p>Whether to enable or disable raw mouse motion.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenTK_Platform_Native_X11_X11MouseComponent_EnableRawMouseMotion_OpenTK_Platform_WindowHandle_System_Boolean__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="OpenTK.Platform.IMouseComponent.html#OpenTK_Platform_IMouseComponent_SupportsRawMouseMotion">SupportsRawMouseMotion</a></div>
+  </div>
   <a id="OpenTK_Platform_Native_X11_X11MouseComponent_GetMouseState_" data-uid="OpenTK.Platform.Native.X11.X11MouseComponent.GetMouseState*"></a>
-  <h4 id="OpenTK_Platform_Native_X11_X11MouseComponent_GetMouseState_OpenTK_Core_Platform_MouseState__" data-uid="OpenTK.Platform.Native.X11.X11MouseComponent.GetMouseState(OpenTK.Core.Platform.MouseState@)">GetMouseState(out MouseState)</h4>
+  <h4 id="OpenTK_Platform_Native_X11_X11MouseComponent_GetMouseState_OpenTK_Platform_MouseState__" data-uid="OpenTK.Platform.Native.X11.X11MouseComponent.GetMouseState(OpenTK.Platform.MouseState@)">GetMouseState(out MouseState)</h4>
   <div class="markdown level1 summary"><p>Fills the <code class="paramref">state</code> struct with the current mouse state.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -244,7 +314,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Core.Platform.MouseState.html">MouseState</a></td>
+        <td><a class="xref" href="OpenTK.Platform.MouseState.html">MouseState</a></td>
         <td><span class="parametername">state</span></td>
         <td><p>The current mouse state.</p>
 </td>
@@ -285,7 +355,7 @@
     </tbody>
   </table>
   <a id="OpenTK_Platform_Native_X11_X11MouseComponent_Initialize_" data-uid="OpenTK.Platform.Native.X11.X11MouseComponent.Initialize*"></a>
-  <h4 id="OpenTK_Platform_Native_X11_X11MouseComponent_Initialize_OpenTK_Core_Platform_ToolkitOptions_" data-uid="OpenTK.Platform.Native.X11.X11MouseComponent.Initialize(OpenTK.Core.Platform.ToolkitOptions)">Initialize(ToolkitOptions)</h4>
+  <h4 id="OpenTK_Platform_Native_X11_X11MouseComponent_Initialize_OpenTK_Platform_ToolkitOptions_" data-uid="OpenTK.Platform.Native.X11.X11MouseComponent.Initialize(OpenTK.Platform.ToolkitOptions)">Initialize(ToolkitOptions)</h4>
   <div class="markdown level1 summary"><p>Initialize the component.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -304,16 +374,65 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Core.Platform.ToolkitOptions.html">ToolkitOptions</a></td>
+        <td><a class="xref" href="OpenTK.Platform.ToolkitOptions.html">ToolkitOptions</a></td>
         <td><span class="parametername">options</span></td>
         <td><p>The options to initialize the component with.</p>
 </td>
       </tr>
     </tbody>
   </table>
+  <a id="OpenTK_Platform_Native_X11_X11MouseComponent_IsRawMouseMotionEnabled_" data-uid="OpenTK.Platform.Native.X11.X11MouseComponent.IsRawMouseMotionEnabled*"></a>
+  <h4 id="OpenTK_Platform_Native_X11_X11MouseComponent_IsRawMouseMotionEnabled_OpenTK_Platform_WindowHandle_" data-uid="OpenTK.Platform.Native.X11.X11MouseComponent.IsRawMouseMotionEnabled(OpenTK.Platform.WindowHandle)">IsRawMouseMotionEnabled(WindowHandle)</h4>
+  <div class="markdown level1 summary"><p>Returns whether raw mouse motion is enabled for the given window or not.
+Check that <a class="xref" href="OpenTK.Platform.IMouseComponent.html#OpenTK_Platform_IMouseComponent_SupportsRawMouseMotion">SupportsRawMouseMotion</a> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> before using this.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsRawMouseMotionEnabled(WindowHandle window)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Platform.WindowHandle.html">WindowHandle</a></td>
+        <td><span class="parametername">window</span></td>
+        <td><p>The window to query.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p>If raw mouse motion is enabled.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenTK_Platform_Native_X11_X11MouseComponent_IsRawMouseMotionEnabled_OpenTK_Platform_WindowHandle__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="OpenTK.Platform.IMouseComponent.html#OpenTK_Platform_IMouseComponent_SupportsRawMouseMotion">SupportsRawMouseMotion</a></div>
+  </div>
   <a id="OpenTK_Platform_Native_X11_X11MouseComponent_SetPosition_" data-uid="OpenTK.Platform.Native.X11.X11MouseComponent.SetPosition*"></a>
   <h4 id="OpenTK_Platform_Native_X11_X11MouseComponent_SetPosition_System_Int32_System_Int32_" data-uid="OpenTK.Platform.Native.X11.X11MouseComponent.SetPosition(System.Int32,System.Int32)">SetPosition(int, int)</h4>
-  <div class="markdown level1 summary"><p>Set the mouse cursor position.</p>
+  <div class="markdown level1 summary"><p>Set the mouse cursor position.
+Check that <a class="xref" href="OpenTK.Platform.IMouseComponent.html#OpenTK_Platform_IMouseComponent_CanSetMousePosition">CanSetMousePosition</a> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> before using this.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -344,12 +463,16 @@
       </tr>
     </tbody>
   </table>
+  <h5 id="OpenTK_Platform_Native_X11_X11MouseComponent_SetPosition_System_Int32_System_Int32__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="OpenTK.Platform.IMouseComponent.html#OpenTK_Platform_IMouseComponent_CanSetMousePosition">CanSetMousePosition</a></div>
+  </div>
   <h3 id="implements">Implements</h3>
   <div>
-      <a class="xref" href="OpenTK.Core.Platform.IMouseComponent.html">IMouseComponent</a>
+      <a class="xref" href="OpenTK.Platform.IMouseComponent.html">IMouseComponent</a>
   </div>
   <div>
-      <a class="xref" href="OpenTK.Core.Platform.IPalComponent.html">IPalComponent</a>
+      <a class="xref" href="OpenTK.Platform.IPalComponent.html">IPalComponent</a>
   </div>
 
 </article>

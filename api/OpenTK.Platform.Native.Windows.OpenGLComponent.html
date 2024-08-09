@@ -5,11 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class OpenGLComponent
-  - OpenTK</title>
+    <title>Class OpenGLComponent  - OpenTK</title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class OpenGLComponent
- ">
+    <meta name="title" content="Class OpenGLComponent ">
     <meta name="generator" content="docfx ">
   
     <link rel="shortcut icon" href="../favicon.ico">
@@ -27,8 +25,7 @@
     <meta property="og:image:width" content="142">
     <meta property="og:image:height" content="50">
     <meta property="og:site_name" content="OpenTK">
-    <meta property="og:title" content="Class OpenGLComponent
-  - OpenTK">
+    <meta property="og:title" content="Class OpenGLComponent  - OpenTK">
     <meta name="theme-color" content="#ffffff">
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
@@ -80,8 +77,7 @@
 
 
 
-  <h1 id="OpenTK_Platform_Native_Windows_OpenGLComponent" data-uid="OpenTK.Platform.Native.Windows.OpenGLComponent" class="text-break">Class OpenGLComponent
-</h1>
+  <h1 id="OpenTK_Platform_Native_Windows_OpenGLComponent" data-uid="OpenTK.Platform.Native.Windows.OpenGLComponent" class="text-break">Class OpenGLComponent</h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
@@ -91,8 +87,8 @@
   </div>
   <div class="implements">
     <h5>Implements</h5>
-    <div><a class="xref" href="OpenTK.Core.Platform.IOpenGLComponent.html">IOpenGLComponent</a></div>
-    <div><a class="xref" href="OpenTK.Core.Platform.IPalComponent.html">IPalComponent</a></div>
+    <div><a class="xref" href="OpenTK.Platform.IOpenGLComponent.html">IOpenGLComponent</a></div>
+    <div><a class="xref" href="OpenTK.Platform.IPalComponent.html">IPalComponent</a></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -119,7 +115,7 @@
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="OpenTK.html">OpenTK</a>.<a class="xref" href="OpenTK.Platform.html">Platform</a>.<a class="xref" href="OpenTK.Platform.Native.html">Native</a>.<a class="xref" href="OpenTK.Platform.Native.Windows.html">Windows</a></h6>
-  <h6><strong>Assembly</strong>: OpenTK.Platform.Native.dll</h6>
+  <h6><strong>Assembly</strong>: OpenTK.Platform.dll</h6>
   <h5 id="OpenTK_Platform_Native_Windows_OpenGLComponent_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class OpenGLComponent : IOpenGLComponent, IPalComponent</code></pre>
@@ -128,7 +124,7 @@
 </h3>
   <a id="OpenTK_Platform_Native_Windows_OpenGLComponent_CanCreateFromSurface_" data-uid="OpenTK.Platform.Native.Windows.OpenGLComponent.CanCreateFromSurface*"></a>
   <h4 id="OpenTK_Platform_Native_Windows_OpenGLComponent_CanCreateFromSurface" data-uid="OpenTK.Platform.Native.Windows.OpenGLComponent.CanCreateFromSurface">CanCreateFromSurface</h4>
-  <div class="markdown level1 summary"><p>True if the component driver can create a context from surfaces.</p>
+  <div class="markdown level1 summary"><p>True if the component driver can create a context from surfaces using <a class="xref" href="OpenTK.Platform.IOpenGLComponent.html#OpenTK_Platform_IOpenGLComponent_CreateFromSurface">CreateFromSurface()</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -152,7 +148,7 @@
   </table>
   <a id="OpenTK_Platform_Native_Windows_OpenGLComponent_CanCreateFromWindow_" data-uid="OpenTK.Platform.Native.Windows.OpenGLComponent.CanCreateFromWindow*"></a>
   <h4 id="OpenTK_Platform_Native_Windows_OpenGLComponent_CanCreateFromWindow" data-uid="OpenTK.Platform.Native.Windows.OpenGLComponent.CanCreateFromWindow">CanCreateFromWindow</h4>
-  <div class="markdown level1 summary"><p>True if the component driver can create a context from windows.</p>
+  <div class="markdown level1 summary"><p>True if the component driver can create a context from windows using <a class="xref" href="OpenTK.Platform.IOpenGLComponent.html#OpenTK_Platform_IOpenGLComponent_CreateFromWindow_OpenTK_Platform_WindowHandle_">CreateFromWindow(WindowHandle)</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -174,6 +170,10 @@
       </tr>
     </tbody>
   </table>
+  <h5 id="OpenTK_Platform_Native_Windows_OpenGLComponent_CanCreateFromWindow_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="OpenTK.Platform.IOpenGLComponent.html#OpenTK_Platform_IOpenGLComponent_CreateFromWindow_OpenTK_Platform_WindowHandle_">CreateFromWindow</a>(<a class="xref" href="OpenTK.Platform.WindowHandle.html">WindowHandle</a>)</div>
+  </div>
   <a id="OpenTK_Platform_Native_Windows_OpenGLComponent_CanShareContexts_" data-uid="OpenTK.Platform.Native.Windows.OpenGLComponent.CanShareContexts*"></a>
   <h4 id="OpenTK_Platform_Native_Windows_OpenGLComponent_CanShareContexts" data-uid="OpenTK.Platform.Native.Windows.OpenGLComponent.CanShareContexts">CanShareContexts</h4>
   <div class="markdown level1 summary"><p>True if the component driver has the capability to share display lists between OpenGL contexts.</p>
@@ -265,7 +265,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Core.Platform.PalComponents.html">PalComponents</a></td>
+        <td><a class="xref" href="OpenTK.Platform.PalComponents.html">PalComponents</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -291,14 +291,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Core.Platform.OpenGLContextHandle.html">OpenGLContextHandle</a></td>
+        <td><a class="xref" href="OpenTK.Platform.OpenGLContextHandle.html">OpenGLContextHandle</a></td>
         <td><p>An OpenGL context handle.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="OpenTK_Platform_Native_Windows_OpenGLComponent_CreateFromWindow_" data-uid="OpenTK.Platform.Native.Windows.OpenGLComponent.CreateFromWindow*"></a>
-  <h4 id="OpenTK_Platform_Native_Windows_OpenGLComponent_CreateFromWindow_OpenTK_Core_Platform_WindowHandle_" data-uid="OpenTK.Platform.Native.Windows.OpenGLComponent.CreateFromWindow(OpenTK.Core.Platform.WindowHandle)">CreateFromWindow(WindowHandle)</h4>
+  <h4 id="OpenTK_Platform_Native_Windows_OpenGLComponent_CreateFromWindow_OpenTK_Platform_WindowHandle_" data-uid="OpenTK.Platform.Native.Windows.OpenGLComponent.CreateFromWindow(OpenTK.Platform.WindowHandle)">CreateFromWindow(WindowHandle)</h4>
   <div class="markdown level1 summary"><p>Create an OpenGL context for a window.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -317,7 +317,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Core.Platform.WindowHandle.html">WindowHandle</a></td>
+        <td><a class="xref" href="OpenTK.Platform.WindowHandle.html">WindowHandle</a></td>
         <td><span class="parametername">handle</span></td>
         <td><p>The window for which the OpenGL context should be created.</p>
 </td>
@@ -334,14 +334,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Core.Platform.OpenGLContextHandle.html">OpenGLContextHandle</a></td>
+        <td><a class="xref" href="OpenTK.Platform.OpenGLContextHandle.html">OpenGLContextHandle</a></td>
         <td><p>An OpenGL context handle.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="OpenTK_Platform_Native_Windows_OpenGLComponent_DestroyContext_" data-uid="OpenTK.Platform.Native.Windows.OpenGLComponent.DestroyContext*"></a>
-  <h4 id="OpenTK_Platform_Native_Windows_OpenGLComponent_DestroyContext_OpenTK_Core_Platform_OpenGLContextHandle_" data-uid="OpenTK.Platform.Native.Windows.OpenGLComponent.DestroyContext(OpenTK.Core.Platform.OpenGLContextHandle)">DestroyContext(OpenGLContextHandle)</h4>
+  <h4 id="OpenTK_Platform_Native_Windows_OpenGLComponent_DestroyContext_OpenTK_Platform_OpenGLContextHandle_" data-uid="OpenTK.Platform.Native.Windows.OpenGLComponent.DestroyContext(OpenTK.Platform.OpenGLContextHandle)">DestroyContext(OpenGLContextHandle)</h4>
   <div class="markdown level1 summary"><p>Destroy an OpenGL context.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -360,7 +360,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Core.Platform.OpenGLContextHandle.html">OpenGLContextHandle</a></td>
+        <td><a class="xref" href="OpenTK.Platform.OpenGLContextHandle.html">OpenGLContextHandle</a></td>
         <td><span class="parametername">handle</span></td>
         <td><p>Handle to the OpenGL context to destroy.</p>
 </td>
@@ -384,8 +384,8 @@
     </tbody>
   </table>
   <a id="OpenTK_Platform_Native_Windows_OpenGLComponent_GetBindingsContext_" data-uid="OpenTK.Platform.Native.Windows.OpenGLComponent.GetBindingsContext*"></a>
-  <h4 id="OpenTK_Platform_Native_Windows_OpenGLComponent_GetBindingsContext_OpenTK_Core_Platform_OpenGLContextHandle_" data-uid="OpenTK.Platform.Native.Windows.OpenGLComponent.GetBindingsContext(OpenTK.Core.Platform.OpenGLContextHandle)">GetBindingsContext(OpenGLContextHandle)</h4>
-  <div class="markdown level1 summary"><p>Gets a <a class="xref" href="OpenTK.IBindingsContext.html">IBindingsContext</a> from an <a class="xref" href="OpenTK.Core.Platform.OpenGLContextHandle.html">OpenGLContextHandle</a>.</p>
+  <h4 id="OpenTK_Platform_Native_Windows_OpenGLComponent_GetBindingsContext_OpenTK_Platform_OpenGLContextHandle_" data-uid="OpenTK.Platform.Native.Windows.OpenGLComponent.GetBindingsContext(OpenTK.Platform.OpenGLContextHandle)">GetBindingsContext(OpenGLContextHandle)</h4>
+  <div class="markdown level1 summary"><p>Gets a <a class="xref" href="OpenTK.IBindingsContext.html">IBindingsContext</a> from an <a class="xref" href="OpenTK.Platform.OpenGLContextHandle.html">OpenGLContextHandle</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -403,7 +403,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Core.Platform.OpenGLContextHandle.html">OpenGLContextHandle</a></td>
+        <td><a class="xref" href="OpenTK.Platform.OpenGLContextHandle.html">OpenGLContextHandle</a></td>
         <td><span class="parametername">handle</span></td>
         <td><p>The handle to get a bindings context for.</p>
 </td>
@@ -445,14 +445,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Core.Platform.OpenGLContextHandle.html">OpenGLContextHandle</a></td>
+        <td><a class="xref" href="OpenTK.Platform.OpenGLContextHandle.html">OpenGLContextHandle</a></td>
         <td><p>Handle to the current OpenGL context, null if none are current.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="OpenTK_Platform_Native_Windows_OpenGLComponent_GetHGLRC_" data-uid="OpenTK.Platform.Native.Windows.OpenGLComponent.GetHGLRC*"></a>
-  <h4 id="OpenTK_Platform_Native_Windows_OpenGLComponent_GetHGLRC_OpenTK_Core_Platform_OpenGLContextHandle_" data-uid="OpenTK.Platform.Native.Windows.OpenGLComponent.GetHGLRC(OpenTK.Core.Platform.OpenGLContextHandle)">GetHGLRC(OpenGLContextHandle)</h4>
+  <h4 id="OpenTK_Platform_Native_Windows_OpenGLComponent_GetHGLRC_OpenTK_Platform_OpenGLContextHandle_" data-uid="OpenTK.Platform.Native.Windows.OpenGLComponent.GetHGLRC(OpenTK.Platform.OpenGLContextHandle)">GetHGLRC(OpenGLContextHandle)</h4>
   <div class="markdown level1 summary"><p>Gets the win32 <code>HGLRC</code> opengl context handle associated with the context.
 This OpenGL context is associated with the window or surface that was used to create this context.
 Modifying the context outsite of OpenTK functions may cause side effects when calling OpenTK functions.</p>
@@ -473,7 +473,7 @@ Modifying the context outsite of OpenTK functions may cause side effects when ca
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Core.Platform.OpenGLContextHandle.html">OpenGLContextHandle</a></td>
+        <td><a class="xref" href="OpenTK.Platform.OpenGLContextHandle.html">OpenGLContextHandle</a></td>
         <td><span class="parametername">handle</span></td>
         <td><p>The OpenGL context to get the associated win32 <code>HGLRC</code> handle from.</p>
 </td>
@@ -497,7 +497,7 @@ Modifying the context outsite of OpenTK functions may cause side effects when ca
     </tbody>
   </table>
   <a id="OpenTK_Platform_Native_Windows_OpenGLComponent_GetProcedureAddress_" data-uid="OpenTK.Platform.Native.Windows.OpenGLComponent.GetProcedureAddress*"></a>
-  <h4 id="OpenTK_Platform_Native_Windows_OpenGLComponent_GetProcedureAddress_OpenTK_Core_Platform_OpenGLContextHandle_System_String_" data-uid="OpenTK.Platform.Native.Windows.OpenGLComponent.GetProcedureAddress(OpenTK.Core.Platform.OpenGLContextHandle,System.String)">GetProcedureAddress(OpenGLContextHandle, string)</h4>
+  <h4 id="OpenTK_Platform_Native_Windows_OpenGLComponent_GetProcedureAddress_OpenTK_Platform_OpenGLContextHandle_System_String_" data-uid="OpenTK.Platform.Native.Windows.OpenGLComponent.GetProcedureAddress(OpenTK.Platform.OpenGLContextHandle,System.String)">GetProcedureAddress(OpenGLContextHandle, string)</h4>
   <div class="markdown level1 summary"><p>Get the procedure address for an OpenGL command.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -516,7 +516,7 @@ Modifying the context outsite of OpenTK functions may cause side effects when ca
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Core.Platform.OpenGLContextHandle.html">OpenGLContextHandle</a></td>
+        <td><a class="xref" href="OpenTK.Platform.OpenGLContextHandle.html">OpenGLContextHandle</a></td>
         <td><span class="parametername">handle</span></td>
         <td><p>Handle to an OpenGL context.</p>
 </td>
@@ -562,7 +562,7 @@ Modifying the context outsite of OpenTK functions may cause side effects when ca
     </tbody>
   </table>
   <a id="OpenTK_Platform_Native_Windows_OpenGLComponent_GetSharedContext_" data-uid="OpenTK.Platform.Native.Windows.OpenGLComponent.GetSharedContext*"></a>
-  <h4 id="OpenTK_Platform_Native_Windows_OpenGLComponent_GetSharedContext_OpenTK_Core_Platform_OpenGLContextHandle_" data-uid="OpenTK.Platform.Native.Windows.OpenGLComponent.GetSharedContext(OpenTK.Core.Platform.OpenGLContextHandle)">GetSharedContext(OpenGLContextHandle)</h4>
+  <h4 id="OpenTK_Platform_Native_Windows_OpenGLComponent_GetSharedContext_OpenTK_Platform_OpenGLContextHandle_" data-uid="OpenTK.Platform.Native.Windows.OpenGLComponent.GetSharedContext(OpenTK.Platform.OpenGLContextHandle)">GetSharedContext(OpenGLContextHandle)</h4>
   <div class="markdown level1 summary"><p>Gets the context which the given context shares display lists with.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -581,7 +581,7 @@ Modifying the context outsite of OpenTK functions may cause side effects when ca
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Core.Platform.OpenGLContextHandle.html">OpenGLContextHandle</a></td>
+        <td><a class="xref" href="OpenTK.Platform.OpenGLContextHandle.html">OpenGLContextHandle</a></td>
         <td><span class="parametername">handle</span></td>
         <td><p>Handle to the OpenGL context.</p>
 </td>
@@ -598,7 +598,7 @@ Modifying the context outsite of OpenTK functions may cause side effects when ca
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Core.Platform.OpenGLContextHandle.html">OpenGLContextHandle</a></td>
+        <td><a class="xref" href="OpenTK.Platform.OpenGLContextHandle.html">OpenGLContextHandle</a></td>
         <td><p>Handle to the OpenGL context the given context shares display lists with.</p>
 </td>
       </tr>
@@ -630,7 +630,7 @@ Modifying the context outsite of OpenTK functions may cause side effects when ca
     </tbody>
   </table>
   <a id="OpenTK_Platform_Native_Windows_OpenGLComponent_Initialize_" data-uid="OpenTK.Platform.Native.Windows.OpenGLComponent.Initialize*"></a>
-  <h4 id="OpenTK_Platform_Native_Windows_OpenGLComponent_Initialize_OpenTK_Core_Platform_ToolkitOptions_" data-uid="OpenTK.Platform.Native.Windows.OpenGLComponent.Initialize(OpenTK.Core.Platform.ToolkitOptions)">Initialize(ToolkitOptions)</h4>
+  <h4 id="OpenTK_Platform_Native_Windows_OpenGLComponent_Initialize_OpenTK_Platform_ToolkitOptions_" data-uid="OpenTK.Platform.Native.Windows.OpenGLComponent.Initialize(OpenTK.Platform.ToolkitOptions)">Initialize(ToolkitOptions)</h4>
   <div class="markdown level1 summary"><p>Initialize the component.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -649,7 +649,7 @@ Modifying the context outsite of OpenTK functions may cause side effects when ca
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Core.Platform.ToolkitOptions.html">ToolkitOptions</a></td>
+        <td><a class="xref" href="OpenTK.Platform.ToolkitOptions.html">ToolkitOptions</a></td>
         <td><span class="parametername">options</span></td>
         <td><p>The options to initialize the component with.</p>
 </td>
@@ -657,7 +657,7 @@ Modifying the context outsite of OpenTK functions may cause side effects when ca
     </tbody>
   </table>
   <a id="OpenTK_Platform_Native_Windows_OpenGLComponent_SetCurrentContext_" data-uid="OpenTK.Platform.Native.Windows.OpenGLComponent.SetCurrentContext*"></a>
-  <h4 id="OpenTK_Platform_Native_Windows_OpenGLComponent_SetCurrentContext_OpenTK_Core_Platform_OpenGLContextHandle_" data-uid="OpenTK.Platform.Native.Windows.OpenGLComponent.SetCurrentContext(OpenTK.Core.Platform.OpenGLContextHandle)">SetCurrentContext(OpenGLContextHandle?)</h4>
+  <h4 id="OpenTK_Platform_Native_Windows_OpenGLComponent_SetCurrentContext_OpenTK_Platform_OpenGLContextHandle_" data-uid="OpenTK.Platform.Native.Windows.OpenGLComponent.SetCurrentContext(OpenTK.Platform.OpenGLContextHandle)">SetCurrentContext(OpenGLContextHandle?)</h4>
   <div class="markdown level1 summary"><p>Set the current OpenGL context for this thread.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -676,7 +676,7 @@ Modifying the context outsite of OpenTK functions may cause side effects when ca
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Core.Platform.OpenGLContextHandle.html">OpenGLContextHandle</a></td>
+        <td><a class="xref" href="OpenTK.Platform.OpenGLContextHandle.html">OpenGLContextHandle</a></td>
         <td><span class="parametername">handle</span></td>
         <td><p>Handle to the OpenGL context to make current, or null to make none current.</p>
 </td>
@@ -727,7 +727,7 @@ Modifying the context outsite of OpenTK functions may cause side effects when ca
     </tbody>
   </table>
   <a id="OpenTK_Platform_Native_Windows_OpenGLComponent_SwapBuffers_" data-uid="OpenTK.Platform.Native.Windows.OpenGLComponent.SwapBuffers*"></a>
-  <h4 id="OpenTK_Platform_Native_Windows_OpenGLComponent_SwapBuffers_OpenTK_Core_Platform_OpenGLContextHandle_" data-uid="OpenTK.Platform.Native.Windows.OpenGLComponent.SwapBuffers(OpenTK.Core.Platform.OpenGLContextHandle)">SwapBuffers(OpenGLContextHandle)</h4>
+  <h4 id="OpenTK_Platform_Native_Windows_OpenGLComponent_SwapBuffers_OpenTK_Platform_OpenGLContextHandle_" data-uid="OpenTK.Platform.Native.Windows.OpenGLComponent.SwapBuffers(OpenTK.Platform.OpenGLContextHandle)">SwapBuffers(OpenGLContextHandle)</h4>
   <div class="markdown level1 summary"><p>Swaps the buffer of the specified context.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -746,7 +746,7 @@ Modifying the context outsite of OpenTK functions may cause side effects when ca
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Core.Platform.OpenGLContextHandle.html">OpenGLContextHandle</a></td>
+        <td><a class="xref" href="OpenTK.Platform.OpenGLContextHandle.html">OpenGLContextHandle</a></td>
         <td><span class="parametername">handle</span></td>
         <td><p>Handle to the context.</p>
 </td>
@@ -754,8 +754,8 @@ Modifying the context outsite of OpenTK functions may cause side effects when ca
     </tbody>
   </table>
   <a id="OpenTK_Platform_Native_Windows_OpenGLComponent_UseDwmFlushIfApplicable_" data-uid="OpenTK.Platform.Native.Windows.OpenGLComponent.UseDwmFlushIfApplicable*"></a>
-  <h4 id="OpenTK_Platform_Native_Windows_OpenGLComponent_UseDwmFlushIfApplicable_OpenTK_Core_Platform_OpenGLContextHandle_System_Boolean_" data-uid="OpenTK.Platform.Native.Windows.OpenGLComponent.UseDwmFlushIfApplicable(OpenTK.Core.Platform.OpenGLContextHandle,System.Boolean)">UseDwmFlushIfApplicable(OpenGLContextHandle, bool)</h4>
-  <div class="markdown level1 summary"><p>Sets whether calls to <a class="xref" href="OpenTK.Platform.Native.Windows.OpenGLComponent.html#OpenTK_Platform_Native_Windows_OpenGLComponent_SwapBuffers_OpenTK_Core_Platform_OpenGLContextHandle_">SwapBuffers(OpenGLContextHandle)</a> should use <code>DwmFlush()</code> to sync if DWM compositing is enabled.
+  <h4 id="OpenTK_Platform_Native_Windows_OpenGLComponent_UseDwmFlushIfApplicable_OpenTK_Platform_OpenGLContextHandle_System_Boolean_" data-uid="OpenTK.Platform.Native.Windows.OpenGLComponent.UseDwmFlushIfApplicable(OpenTK.Platform.OpenGLContextHandle,System.Boolean)">UseDwmFlushIfApplicable(OpenGLContextHandle, bool)</h4>
+  <div class="markdown level1 summary"><p>Sets whether calls to <a class="xref" href="OpenTK.Platform.Native.Windows.OpenGLComponent.html#OpenTK_Platform_Native_Windows_OpenGLComponent_SwapBuffers_OpenTK_Platform_OpenGLContextHandle_">SwapBuffers(OpenGLContextHandle)</a> should use <code>DwmFlush()</code> to sync if DWM compositing is enabled.
 This can improve vsync performance on systems with multiple monitors using different refresh rates, but is likely to break in a multi-window scenario.
 If using multiple windows, only one window should have this property set.</p>
 <p>By default this value is set to <code>false</code>.</p>
@@ -776,7 +776,7 @@ If using multiple windows, only one window should have this property set.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Core.Platform.OpenGLContextHandle.html">OpenGLContextHandle</a></td>
+        <td><a class="xref" href="OpenTK.Platform.OpenGLContextHandle.html">OpenGLContextHandle</a></td>
         <td><span class="parametername">handle</span></td>
         <td><p>The OpenGL context that should <code>DwmFlush()</code> setting.</p>
 </td>
@@ -791,10 +791,10 @@ If using multiple windows, only one window should have this property set.</p>
   </table>
   <h3 id="implements">Implements</h3>
   <div>
-      <a class="xref" href="OpenTK.Core.Platform.IOpenGLComponent.html">IOpenGLComponent</a>
+      <a class="xref" href="OpenTK.Platform.IOpenGLComponent.html">IOpenGLComponent</a>
   </div>
   <div>
-      <a class="xref" href="OpenTK.Core.Platform.IPalComponent.html">IPalComponent</a>
+      <a class="xref" href="OpenTK.Platform.IPalComponent.html">IPalComponent</a>
   </div>
 
 </article>

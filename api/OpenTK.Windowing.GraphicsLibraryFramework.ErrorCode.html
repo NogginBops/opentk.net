@@ -5,11 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Enum ErrorCode
-  - OpenTK</title>
+    <title>Enum ErrorCode  - OpenTK</title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Enum ErrorCode
- ">
+    <meta name="title" content="Enum ErrorCode ">
     <meta name="generator" content="docfx ">
   
     <link rel="shortcut icon" href="../favicon.ico">
@@ -27,8 +25,7 @@
     <meta property="og:image:width" content="142">
     <meta property="og:image:height" content="50">
     <meta property="og:site_name" content="OpenTK">
-    <meta property="og:title" content="Enum ErrorCode
-  - OpenTK">
+    <meta property="og:title" content="Enum ErrorCode  - OpenTK">
     <meta name="theme-color" content="#ffffff">
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
@@ -81,8 +78,7 @@
 
 
 
-  <h1 id="OpenTK_Windowing_GraphicsLibraryFramework_ErrorCode" data-uid="OpenTK.Windowing.GraphicsLibraryFramework.ErrorCode" class="text-break">Enum ErrorCode
-</h1>
+  <h1 id="OpenTK_Windowing_GraphicsLibraryFramework_ErrorCode" data-uid="OpenTK.Windowing.GraphicsLibraryFramework.ErrorCode" class="text-break">Enum ErrorCode</h1>
   <div class="markdown level0 summary"><p>Error codes, used in the error callback.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
@@ -101,10 +97,44 @@
         <th>Description</th>
       </tr>
     <thead>
-    <tbody>
+    </thead></thead><tbody>
       <tr>
         <td id="OpenTK_Windowing_GraphicsLibraryFramework_ErrorCode_ApiUnavailable">ApiUnavailable</td>
         <td><p>The requested API is not available on the system.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="OpenTK_Windowing_GraphicsLibraryFramework_ErrorCode_CursorUnavailable">CursorUnavailable</td>
+        <td><p>The specified standard cursor shape is not available, either because the
+current platform cursor theme does not provide it or because it is not
+available on the platform.</p>
+<p>Platform or system settings limitation.
+Pick another <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.CursorShape.html">CursorShape</a> or create a custom cursor.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="OpenTK_Windowing_GraphicsLibraryFramework_ErrorCode_FeatureUnavailable">FeatureUnavailable</td>
+        <td><p>The requested feature is not provided by the platform, so GLFW is unable to
+implement it.  The documentation for each function notes if it could emit
+this error.</p>
+<p>Platform or platform version limitation.  The error can be ignored
+unless the feature is critical to the application.</p>
+<p>
+A function call that emits this error has no effect other than the error and
+updating any existing out parameters.
+</p>
+</td>
+      </tr>
+      <tr>
+        <td id="OpenTK_Windowing_GraphicsLibraryFramework_ErrorCode_FeatureUnimplemented">FeatureUnimplemented</td>
+        <td><p>The requested feature has not yet been implemented in GLFW for this platform.</p>
+<p>An incomplete implementation of GLFW for this platform, hopefully
+fixed in a future release.  The error can be ignored unless the feature is
+critical to the application.</p>
+<p>
+A function call that emits this error has no effect other than the error and
+updating any existing out parameters.
+</p>
 </td>
       </tr>
       <tr>
@@ -153,12 +183,32 @@
 </td>
       </tr>
       <tr>
+        <td id="OpenTK_Windowing_GraphicsLibraryFramework_ErrorCode_PlatformUnavailable">PlatformUnavailable</td>
+        <td><p>If emitted during initialization, no matching platform was found.  If the
+<a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.InitHintPlatform.html#OpenTK_Windowing_GraphicsLibraryFramework_InitHintPlatform_Platform">Platform</a> init hint was set to <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.Platform.html#OpenTK_Windowing_GraphicsLibraryFramework_Platform_Any">Any</a>,
+GLFW could not detect any of the platforms supported by this library binary,
+except for the Null platform.
+If the init hint was set to a specific platform, it is either not supported by this library
+binary or GLFW was not able to detect it.</p>
+<p>If emitted by a native access function, GLFW was initialized for a different platform
+than the function is for.</p>
+<p>Failure to detect any platform usually only happens on non-macOS Unix
+systems, either when no window system is running or the program was run from
+a terminal that does not have the necessary environment variables.  Fall back to
+a different platform if possible or notify the user that no usable platform was
+detected.</p>
+<p>Failure to detect a specific platform may have the same cause as above or be because
+support for that platform was not compiled in.  Call <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.html#OpenTK_Windowing_GraphicsLibraryFramework_GLFW_PlatformSupported_OpenTK_Windowing_GraphicsLibraryFramework_Platform_">PlatformSupported(Platform)</a> to
+check whether a specific platform is supported by a library binary.</p>
+</td>
+      </tr>
+      <tr>
         <td id="OpenTK_Windowing_GraphicsLibraryFramework_ErrorCode_VersionUnavailable">VersionUnavailable</td>
         <td><p>The requested OpenGL version is not available on the system.</p>
 </td>
       </tr>
     </tbody>
-  </thead></thead></table>
+  </table>
 </article>
           </div>
 

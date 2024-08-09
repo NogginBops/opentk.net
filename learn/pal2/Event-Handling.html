@@ -93,12 +93,12 @@
     if (args is CloseEventArgs close)
     {
         // Destroy the window that the user wanted to close.
-        windowComp.Destroy(closeArgs.Window);
+        Toolkit.Window.Destroy(closeArgs.Window);
     }
 }
 </code></pre>
 <h1 id="window-events">Window Events</h1>
-<p>Here follows a list of events that extend <a class="xref" href="../../api/OpenTK.Core.Platform.WindowEventArgs.html">WindowEventArgs</a> and what they mean.</p>
+<p>Here follows a list of events that extend <a class="xref" href="../../api/OpenTK.Platform.WindowEventArgs.html">WindowEventArgs</a> and what they mean.</p>
 <table>
 <thead>
 <tr>
@@ -109,88 +109,98 @@
 </thead>
 <tbody>
 <tr>
-<td><a class="xref" href="../../api/OpenTK.Core.Platform.PlatformEventType.html#OpenTK_Core_Platform_PlatformEventType_Close"><code>Close</code></a></td>
-<td><a class="xref" href="../../api/OpenTK.Core.Platform.CloseEventArgs.html"><code>CloseEventArgs</code></a></td>
+<td><a class="xref" href="../../api/OpenTK.Platform.PlatformEventType.html#OpenTK_Platform_PlatformEventType_Close"><code>Close</code></a></td>
+<td><a class="xref" href="../../api/OpenTK.Platform.CloseEventArgs.html"><code>CloseEventArgs</code></a></td>
 <td>This event is triggered when the user presses the exit button of the window. <code>CloseEventArgs.Window</code> contains the handle to the window the user wanted to close.</td>
 </tr>
 <tr>
-<td><a class="xref" href="../../api/OpenTK.Core.Platform.PlatformEventType.html#OpenTK_Core_Platform_PlatformEventType_Focus"><code>Focus</code></a></td>
-<td><a class="xref" href="../../api/OpenTK.Core.Platform.FocusEventArgs.html"><code>FocusEventArgs</code></a></td>
+<td><a class="xref" href="../../api/OpenTK.Platform.PlatformEventType.html#OpenTK_Platform_PlatformEventType_Focus"><code>Focus</code></a></td>
+<td><a class="xref" href="../../api/OpenTK.Platform.FocusEventArgs.html"><code>FocusEventArgs</code></a></td>
 <td>This event is triggered when a window gains or loses input focus. <code>FocusEventArgs.GotFocus</code> tells if the window got or lost focus.</td>
 </tr>
 <tr>
-<td><a class="xref" href="../../api/OpenTK.Core.Platform.PlatformEventType.html#OpenTK_Core_Platform_PlatformEventType_WindowMove"><code>WindowMove</code></a></td>
-<td><a class="xref" href="../../api/OpenTK.Core.Platform.WindowMoveEventArgs.html"><code>WindowMoveEventArgs</code></a></td>
+<td><a class="xref" href="../../api/OpenTK.Platform.PlatformEventType.html#OpenTK_Platform_PlatformEventType_WindowMove"><code>WindowMove</code></a></td>
+<td><a class="xref" href="../../api/OpenTK.Platform.WindowMoveEventArgs.html"><code>WindowMoveEventArgs</code></a></td>
 <td>This event is triggered when a window has its position changed on screen.</td>
 </tr>
 <tr>
-<td><a class="xref" href="../../api/OpenTK.Core.Platform.PlatformEventType.html#OpenTK_Core_Platform_PlatformEventType_WindowResize"><code>WindowResize</code></a></td>
-<td><a class="xref" href="../../api/OpenTK.Core.Platform.WindowResizeEventArgs.html"><code>WindowResizeEventArgs</code></a></td>
+<td><a class="xref" href="../../api/OpenTK.Platform.PlatformEventType.html#OpenTK_Platform_PlatformEventType_WindowResize"><code>WindowResize</code></a></td>
+<td><a class="xref" href="../../api/OpenTK.Platform.WindowResizeEventArgs.html"><code>WindowResizeEventArgs</code></a></td>
 <td>This event is triggered when a window has its size changed on screen.</td>
 </tr>
 <tr>
-<td><a class="xref" href="../../api/OpenTK.Core.Platform.PlatformEventType.html#OpenTK_Core_Platform_PlatformEventType_WindowModeChange"><code>WindowModeChange</code></a></td>
-<td><a class="xref" href="../../api/OpenTK.Core.Platform.WindowModeChangeEventArgs.html"><code>WindowModeChangeEventArgs</code></a></td>
+<td><a class="xref" href="../../api/OpenTK.Platform.PlatformEventType.html#OpenTK_Platform_PlatformEventType_WindowFramebufferResize"><code>WindowFramebufferResize</code></a></td>
+<td><a class="xref" href="../../api/OpenTK.Platform.WindowFramebufferResizeEventArgs.html"><code>WindowFramebufferResizeEventArgs</code></a></td>
+<td>This event is triggered when a window has its size changed on screen.</td>
+</tr>
+<tr>
+<td><a class="xref" href="../../api/OpenTK.Platform.PlatformEventType.html#OpenTK_Platform_PlatformEventType_WindowModeChange"><code>WindowModeChange</code></a></td>
+<td><a class="xref" href="../../api/OpenTK.Platform.WindowModeChangeEventArgs.html"><code>WindowModeChangeEventArgs</code></a></td>
 <td>This event is triggered when the window mode of a window changes.</td>
 </tr>
 <tr>
-<td><a href="xref:OpenTK.Core.Platform.PlatformEventType.WindowDpiChange"><code>WindowDpiChange</code></a></td>
-<td><a class="xref" href="../../api/OpenTK.Core.Platform.WindowDpiChangeEventArgs.html"><code>WindowDpiChangeEventArgs</code></a></td>
-<td>This event is triggered when the dpi the window should display at has changed. Typically because the user has moved the window to another monitor with different scaling settings, or because the user changed system dpi settings.</td>
+<td><a class="xref" href="../../api/OpenTK.Platform.PlatformEventType.html#OpenTK_Platform_PlatformEventType_WindowScaleChange"><code>WindowScaleChange</code></a></td>
+<td><a class="xref" href="../../api/OpenTK.Platform.WindowScaleChangeEventArgs.html"><code>WindowScaleChangeEventArgs</code></a></td>
+<td>This event is triggered when the scale the window should display at has changed. Typically because the user has moved the window to another monitor with different scaling settings, or because the user changed system dpi settings.</td>
 </tr>
 <tr>
-<td><a class="xref" href="../../api/OpenTK.Core.Platform.PlatformEventType.html#OpenTK_Core_Platform_PlatformEventType_MouseEnter"><code>MouseEnter</code></a></td>
-<td><a class="xref" href="../../api/OpenTK.Core.Platform.MouseEnterEventArgs.html"><code>MouseEnterEventArgs</code></a></td>
+<td><a class="xref" href="../../api/OpenTK.Platform.PlatformEventType.html#OpenTK_Platform_PlatformEventType_MouseEnter"><code>MouseEnter</code></a></td>
+<td><a class="xref" href="../../api/OpenTK.Platform.MouseEnterEventArgs.html"><code>MouseEnterEventArgs</code></a></td>
 <td>This event is triggered when the mouse cursor enters or exits a window.</td>
 </tr>
 <tr>
-<td><a class="xref" href="../../api/OpenTK.Core.Platform.PlatformEventType.html#OpenTK_Core_Platform_PlatformEventType_MouseMove"><code>MouseMove</code></a></td>
-<td><a class="xref" href="../../api/OpenTK.Core.Platform.MouseMoveEventArgs.html"><code>MouseMoveEventArgs</code></a></td>
+<td><a class="xref" href="../../api/OpenTK.Platform.PlatformEventType.html#OpenTK_Platform_PlatformEventType_MouseMove"><code>MouseMove</code></a></td>
+<td><a class="xref" href="../../api/OpenTK.Platform.MouseMoveEventArgs.html"><code>MouseMoveEventArgs</code></a></td>
 <td>This event is triggered when the mouse moves.</td>
 </tr>
 <tr>
-<td><a class="xref" href="../../api/OpenTK.Core.Platform.PlatformEventType.html#OpenTK_Core_Platform_PlatformEventType_MouseDown"><code>MouseDown</code></a></td>
-<td><a class="xref" href="../../api/OpenTK.Core.Platform.MouseButtonDownEventArgs.html"><code>MouseButtonDownEventArgs</code></a></td>
+<td><a class="xref" href="../../api/OpenTK.Platform.PlatformEventType.html#OpenTK_Platform_PlatformEventType_RawMouseMove"><code>RawMouseMove</code></a></td>
+<td><a class="xref" href="../../api/OpenTK.Platform.RawMouseMoveEventArgs.html"><code>RawMouseMoveEventArgs</code></a></td>
+<td>The event is triggered when the mouse moves and raw mouse input is enabled.</td>
+</tr>
+<tr>
+<td><a class="xref" href="../../api/OpenTK.Platform.PlatformEventType.html#OpenTK_Platform_PlatformEventType_MouseDown"><code>MouseDown</code></a></td>
+<td><a class="xref" href="../../api/OpenTK.Platform.MouseButtonDownEventArgs.html"><code>MouseButtonDownEventArgs</code></a></td>
 <td>This event is triggered when a mouse button is pressed.</td>
 </tr>
 <tr>
-<td><a class="xref" href="../../api/OpenTK.Core.Platform.PlatformEventType.html#OpenTK_Core_Platform_PlatformEventType_MouseUp"><code>MouseUp</code></a></td>
-<td><a class="xref" href="../../api/OpenTK.Core.Platform.MouseButtonDownEventArgs.html"><code>MouseButtonDownEventArgs</code></a></td>
+<td><a class="xref" href="../../api/OpenTK.Platform.PlatformEventType.html#OpenTK_Platform_PlatformEventType_MouseUp"><code>MouseUp</code></a></td>
+<td><a class="xref" href="../../api/OpenTK.Platform.MouseButtonDownEventArgs.html"><code>MouseButtonDownEventArgs</code></a></td>
 <td>This event is triggered when a mouse button is pressed.</td>
 </tr>
 <tr>
-<td><a class="xref" href="../../api/OpenTK.Core.Platform.PlatformEventType.html#OpenTK_Core_Platform_PlatformEventType_Scroll"><code>Scroll</code></a></td>
-<td><a class="xref" href="../../api/OpenTK.Core.Platform.ScrollEventArgs.html"><code>ScrollEventArgs</code></a></td>
+<td><a class="xref" href="../../api/OpenTK.Platform.PlatformEventType.html#OpenTK_Platform_PlatformEventType_Scroll"><code>Scroll</code></a></td>
+<td><a class="xref" href="../../api/OpenTK.Platform.ScrollEventArgs.html"><code>ScrollEventArgs</code></a></td>
 <td>This event is triggered when the scrollwheel on a mouse is used.</td>
 </tr>
 <tr>
-<td><a class="xref" href="../../api/OpenTK.Core.Platform.PlatformEventType.html#OpenTK_Core_Platform_PlatformEventType_KeyDown"><code>KeyDown</code></a></td>
-<td><a class="xref" href="../../api/OpenTK.Core.Platform.KeyDownEventArgs.html"><code>KeyDownEventArgs</code></a></td>
+<td><a class="xref" href="../../api/OpenTK.Platform.PlatformEventType.html#OpenTK_Platform_PlatformEventType_KeyDown"><code>KeyDown</code></a></td>
+<td><a class="xref" href="../../api/OpenTK.Platform.KeyDownEventArgs.html"><code>KeyDownEventArgs</code></a></td>
 <td>This event is triggered when a keyboard key is pressed. <br><br> Do not use this event to handle typing, use the <a href="#textinput">TextInput event</a> instead.</td>
 </tr>
 <tr>
-<td><a class="xref" href="../../api/OpenTK.Core.Platform.PlatformEventType.html#OpenTK_Core_Platform_PlatformEventType_KeyUp"><code>KeyUp</code></a></td>
-<td><a class="xref" href="../../api/OpenTK.Core.Platform.KeyUpEventArgs.html"><code>KeyUpEventArgs</code></a></td>
+<td><a class="xref" href="../../api/OpenTK.Platform.PlatformEventType.html#OpenTK_Platform_PlatformEventType_KeyUp"><code>KeyUp</code></a></td>
+<td><a class="xref" href="../../api/OpenTK.Platform.KeyUpEventArgs.html"><code>KeyUpEventArgs</code></a></td>
 <td>This event is triggered when a keyboard key is released. <br><br> Do not use this event to handle typing, use the <a href="#textinput">TextInput event</a> instead.</td>
 </tr>
 <tr>
-<td><span id="textinput"><a class="xref" href="../../api/OpenTK.Core.Platform.PlatformEventType.html#OpenTK_Core_Platform_PlatformEventType_TextInput"><code>TextInput</code></a></span></td>
-<td><a class="xref" href="../../api/OpenTK.Core.Platform.TextInputEventArgs.html"><code>TextInputEventArgs</code></a></td>
+<td><span id="textinput"><a class="xref" href="../../api/OpenTK.Platform.PlatformEventType.html#OpenTK_Platform_PlatformEventType_TextInput"><code>TextInput</code></a></span></td>
+<td><a class="xref" href="../../api/OpenTK.Platform.TextInputEventArgs.html"><code>TextInputEventArgs</code></a></td>
 <td>This event is triggered when the user has typed text.</td>
 </tr>
 <tr>
-<td><a class="xref" href="../../api/OpenTK.Core.Platform.PlatformEventType.html#OpenTK_Core_Platform_PlatformEventType_TextEditing"><code>TextEditing</code></a></td>
-<td><a class="xref" href="../../api/OpenTK.Core.Platform.TextEditingEventArgs.html"><code>TextEditingEventArgs</code></a></td>
+<td><a class="xref" href="../../api/OpenTK.Platform.PlatformEventType.html#OpenTK_Platform_PlatformEventType_TextEditing"><code>TextEditing</code></a></td>
+<td><a class="xref" href="../../api/OpenTK.Platform.TextEditingEventArgs.html"><code>TextEditingEventArgs</code></a></td>
 <td>This event is triggered when the user is composing text using something like IME (e.g. Chinese, Japanese, or Korean).</td>
 </tr>
 <tr>
-<td><a class="xref" href="../../api/OpenTK.Core.Platform.PlatformEventType.html#OpenTK_Core_Platform_PlatformEventType_FileDrop"><code>FileDrop</code></a></td>
-<td><a class="xref" href="../../api/OpenTK.Core.Platform.FileDropEventArgs.html"><code>FileDropEventArgs</code></a></td>
+<td><a class="xref" href="../../api/OpenTK.Platform.PlatformEventType.html#OpenTK_Platform_PlatformEventType_FileDrop"><code>FileDrop</code></a></td>
+<td><a class="xref" href="../../api/OpenTK.Platform.FileDropEventArgs.html"><code>FileDropEventArgs</code></a></td>
 <td>This event is triggered when a user drags files into a window.</td>
 </tr>
 <tr>
-<td><a class="xref" href="../../api/OpenTK.Core.Platform.PlatformEventType.html#OpenTK_Core_Platform_PlatformEventType_InputLanguageChanged"><code>InputLanguageChanged</code></a></td>
-<td><a class="xref" href="../../api/OpenTK.Core.Platform.InputLanguageChangedEventArgs.html"><code>InputLanguageChangedEventArgs</code></a></td>
+<td><a class="xref" href="../../api/OpenTK.Platform.PlatformEventType.html#OpenTK_Platform_PlatformEventType_InputLanguageChanged"><code>InputLanguageChanged</code></a></td>
+<td><a class="xref" href="../../api/OpenTK.Platform.InputLanguageChangedEventArgs.html"><code>InputLanguageChangedEventArgs</code></a></td>
 <td>This event is triggered when the input language for the window has changed.</td>
 </tr>
 </tbody>
@@ -207,27 +217,28 @@
 </thead>
 <tbody>
 <tr>
-<td><a class="xref" href="../../api/OpenTK.Core.Platform.PlatformEventType.html#OpenTK_Core_Platform_PlatformEventType_ThemeChange"><code>ThemeChange</code></a></td>
-<td><a class="xref" href="../../api/OpenTK.Core.Platform.ThemeChangeEventArgs.html"><code>ThemeChangeEventArgs</code></a></td>
+<td><a class="xref" href="../../api/OpenTK.Platform.PlatformEventType.html#OpenTK_Platform_PlatformEventType_ThemeChange"><code>ThemeChange</code></a></td>
+<td><a class="xref" href="../../api/OpenTK.Platform.ThemeChangeEventArgs.html"><code>ThemeChangeEventArgs</code></a></td>
 <td>This event is triggered when a user changes the preferred theme.</td>
 </tr>
 <tr>
-<td><a class="xref" href="../../api/OpenTK.Core.Platform.PlatformEventType.html#OpenTK_Core_Platform_PlatformEventType_DisplayConnectionChanged"><code>DisplayConnectionChanged</code></a></td>
-<td><a class="xref" href="../../api/OpenTK.Core.Platform.DisplayConnectionChangedEventArgs.html"><code>DisplayConnectionChangedEventArgs</code></a></td>
+<td><a class="xref" href="../../api/OpenTK.Platform.PlatformEventType.html#OpenTK_Platform_PlatformEventType_DisplayConnectionChanged"><code>DisplayConnectionChanged</code></a></td>
+<td><a class="xref" href="../../api/OpenTK.Platform.DisplayConnectionChangedEventArgs.html"><code>DisplayConnectionChangedEventArgs</code></a></td>
 <td>This event is triggered when a display is connected or disconnected from the system.</td>
 </tr>
 <tr>
-<td><a class="xref" href="../../api/OpenTK.Core.Platform.PlatformEventType.html#OpenTK_Core_Platform_PlatformEventType_PowerStateChange"><code>PowerStateChange</code></a></td>
-<td><a class="xref" href="../../api/OpenTK.Core.Platform.PowerStateChangeEventArgs.html"><code>PowerStateChangeEventArgs</code></a></td>
+<td><a class="xref" href="../../api/OpenTK.Platform.PlatformEventType.html#OpenTK_Platform_PlatformEventType_PowerStateChange"><code>PowerStateChange</code></a></td>
+<td><a class="xref" href="../../api/OpenTK.Platform.PowerStateChangeEventArgs.html"><code>PowerStateChangeEventArgs</code></a></td>
 <td>This event is triggered when the power state of the system changes. For example if the user put the system to sleep.</td>
 </tr>
 <tr>
-<td><a class="xref" href="../../api/OpenTK.Core.Platform.PlatformEventType.html#OpenTK_Core_Platform_PlatformEventType_ClipboardUpdate"><code>ClipboardUpdate</code></a></td>
-<td><a class="xref" href="../../api/OpenTK.Core.Platform.ClipboardUpdateEventArgs.html"><code>ClipboardUpdateEventArgs</code></a></td>
+<td><a class="xref" href="../../api/OpenTK.Platform.PlatformEventType.html#OpenTK_Platform_PlatformEventType_ClipboardUpdate"><code>ClipboardUpdate</code></a></td>
+<td><a class="xref" href="../../api/OpenTK.Platform.ClipboardUpdateEventArgs.html"><code>ClipboardUpdateEventArgs</code></a></td>
 <td>This event is triggered when the contents of the clipboard has changed.</td>
 </tr>
 </tbody>
 </table>
+
 </article>
           </div>
 

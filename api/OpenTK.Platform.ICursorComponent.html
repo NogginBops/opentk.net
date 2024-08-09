@@ -1,0 +1,667 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface ICursorComponent  - OpenTK</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface ICursorComponent ">
+    <meta name="generator" content="docfx ">
+  
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+  
+  
+  
+
+    <meta name="author" content="The Open Toolkit Project">
+    <meta property="og:image" content="https://opentk.net/otkBig.png">
+    <meta property="og:image:width" content="142">
+    <meta property="og:image:height" content="50">
+    <meta property="og:site_name" content="OpenTK">
+    <meta property="og:title" content="Interface ICursorComponent  - OpenTK">
+    <meta name="theme-color" content="#ffffff">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation" style="background: #0052cc;">
+          <div class="container">
+            <a class="navbar-brand" href="../index.html">
+          <img id="logo" src="../otkBig.png" alt="">
+        </a>
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="OpenTK.Platform.ICursorComponent">
+
+
+
+  <h1 id="OpenTK_Platform_ICursorComponent" data-uid="OpenTK.Platform.ICursorComponent" class="text-break">Interface ICursorComponent</h1>
+  <div class="markdown level0 summary"><p>Interface for drivers which provide the cursor component of the platform abstraction layer.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="OpenTK.Platform.IPalComponent.html#OpenTK_Platform_IPalComponent_Name">IPalComponent.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenTK.Platform.IPalComponent.html#OpenTK_Platform_IPalComponent_Provides">IPalComponent.Provides</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenTK.Platform.IPalComponent.html#OpenTK_Platform_IPalComponent_Logger">IPalComponent.Logger</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenTK.Platform.IPalComponent.html#OpenTK_Platform_IPalComponent_Initialize_OpenTK_Platform_ToolkitOptions_">IPalComponent.Initialize(ToolkitOptions)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="OpenTK.html">OpenTK</a>.<a class="xref" href="OpenTK.Platform.html">Platform</a></h6>
+  <h6><strong>Assembly</strong>: OpenTK.Platform.dll</h6>
+  <h5 id="OpenTK_Platform_ICursorComponent_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface ICursorComponent : IPalComponent</code></pre>
+  </div>
+  <h3 id="properties">Properties
+</h3>
+  <a id="OpenTK_Platform_ICursorComponent_CanInspectSystemCursors_" data-uid="OpenTK.Platform.ICursorComponent.CanInspectSystemCursors*"></a>
+  <h4 id="OpenTK_Platform_ICursorComponent_CanInspectSystemCursors" data-uid="OpenTK.Platform.ICursorComponent.CanInspectSystemCursors">CanInspectSystemCursors</h4>
+  <div class="markdown level1 summary"><p>True if the backend supports inspecting system cursor handles.
+If true, functions like <a class="xref" href="OpenTK.Platform.ICursorComponent.html#OpenTK_Platform_ICursorComponent_GetSize_OpenTK_Platform_CursorHandle_System_Int32__System_Int32__">GetSize(CursorHandle, out int, out int)</a> and <a class="xref" href="OpenTK.Platform.ICursorComponent.html#OpenTK_Platform_ICursorComponent_GetHotspot_OpenTK_Platform_CursorHandle_System_Int32__System_Int32__">GetHotspot(CursorHandle, out int, out int)</a> works on system cursors.
+If false, these functions will fail.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool CanInspectSystemCursors { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenTK_Platform_ICursorComponent_CanInspectSystemCursors_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="OpenTK.Platform.ICursorComponent.html#OpenTK_Platform_ICursorComponent_GetSize_OpenTK_Platform_CursorHandle_System_Int32__System_Int32__">GetSize(CursorHandle, out int, out int)</a></div>
+      <div><a class="xref" href="OpenTK.Platform.ICursorComponent.html#OpenTK_Platform_ICursorComponent_GetHotspot_OpenTK_Platform_CursorHandle_System_Int32__System_Int32__">GetHotspot(CursorHandle, out int, out int)</a></div>
+  </div>
+  <a id="OpenTK_Platform_ICursorComponent_CanLoadSystemCursors_" data-uid="OpenTK.Platform.ICursorComponent.CanLoadSystemCursors*"></a>
+  <h4 id="OpenTK_Platform_ICursorComponent_CanLoadSystemCursors" data-uid="OpenTK.Platform.ICursorComponent.CanLoadSystemCursors">CanLoadSystemCursors</h4>
+  <div class="markdown level1 summary"><p>True if the driver can load system cursors.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool CanLoadSystemCursors { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenTK_Platform_ICursorComponent_CanLoadSystemCursors_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="OpenTK.Platform.ICursorComponent.html#OpenTK_Platform_ICursorComponent_Create_OpenTK_Platform_SystemCursorType_">Create(SystemCursorType)</a></div>
+  </div>
+  <h3 id="methods">Methods
+</h3>
+  <a id="OpenTK_Platform_ICursorComponent_Create_" data-uid="OpenTK.Platform.ICursorComponent.Create*"></a>
+  <h4 id="OpenTK_Platform_ICursorComponent_Create_OpenTK_Platform_SystemCursorType_" data-uid="OpenTK.Platform.ICursorComponent.Create(OpenTK.Platform.SystemCursorType)">Create(SystemCursorType)</h4>
+  <div class="markdown level1 summary"><p>Create a standard system cursor.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">CursorHandle Create(SystemCursorType systemCursor)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Platform.SystemCursorType.html">SystemCursorType</a></td>
+        <td><span class="parametername">systemCursor</span></td>
+        <td><p>Type of the standard cursor to load.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Platform.CursorHandle.html">CursorHandle</a></td>
+        <td><p>A handle to the created cursor.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenTK_Platform_ICursorComponent_Create_OpenTK_Platform_SystemCursorType__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This function is only supported if <a class="xref" href="OpenTK.Platform.ICursorComponent.html#OpenTK_Platform_ICursorComponent_CanLoadSystemCursors">CanLoadSystemCursors</a> is true.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Platform.PalNotImplementedException.html">PalNotImplementedException</a></td>
+        <td><p>Driver does not implement this function. See <a class="xref" href="OpenTK.Platform.ICursorComponent.html#OpenTK_Platform_ICursorComponent_CanLoadSystemCursors">CanLoadSystemCursors</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Platform.PlatformException.html">PlatformException</a></td>
+        <td><p>System does not provide cursor type selected by <code class="paramref">systemCursor</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Platform_ICursorComponent_Create_" data-uid="OpenTK.Platform.ICursorComponent.Create*"></a>
+  <h4 id="OpenTK_Platform_ICursorComponent_Create_System_Int32_System_Int32_System_ReadOnlySpan_System_Byte__System_Int32_System_Int32_" data-uid="OpenTK.Platform.ICursorComponent.Create(System.Int32,System.Int32,System.ReadOnlySpan{System.Byte},System.Int32,System.Int32)">Create(int, int, ReadOnlySpan&lt;byte&gt;, int, int)</h4>
+  <div class="markdown level1 summary"><p>Load a cursor image from memory.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">CursorHandle Create(int width, int height, ReadOnlySpan&lt;byte&gt; image, int hotspotX, int hotspotY)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">width</span></td>
+        <td><p>Width of the cursor image.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">height</span></td>
+        <td><p>Height of the cursor image.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</td>
+        <td><span class="parametername">image</span></td>
+        <td><p>Buffer containing image data.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">hotspotX</span></td>
+        <td><p>The x coordinate of the cursor hotspot.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">hotspotY</span></td>
+        <td><p>The y coordinate of the cursor hotspot.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Platform.CursorHandle.html">CursorHandle</a></td>
+        <td><p>A handle to the created cursor.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></td>
+        <td><p><code class="paramref">width</code> or <code class="paramref">height</code> is negative.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></td>
+        <td><p><code class="paramref">image</code> is smaller than specified dimensions.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Platform_ICursorComponent_Create_" data-uid="OpenTK.Platform.ICursorComponent.Create*"></a>
+  <h4 id="OpenTK_Platform_ICursorComponent_Create_System_Int32_System_Int32_System_ReadOnlySpan_System_Byte__System_ReadOnlySpan_System_Byte__System_Int32_System_Int32_" data-uid="OpenTK.Platform.ICursorComponent.Create(System.Int32,System.Int32,System.ReadOnlySpan{System.Byte},System.ReadOnlySpan{System.Byte},System.Int32,System.Int32)">Create(int, int, ReadOnlySpan&lt;byte&gt;, ReadOnlySpan&lt;byte&gt;, int, int)</h4>
+  <div class="markdown level1 summary"><p>Load a cursor image from memory.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">CursorHandle Create(int width, int height, ReadOnlySpan&lt;byte&gt; colorData, ReadOnlySpan&lt;byte&gt; maskData, int hotspotX, int hotspotY)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">width</span></td>
+        <td><p>Width of the cursor image.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">height</span></td>
+        <td><p>Height of the cursor image.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</td>
+        <td><span class="parametername">colorData</span></td>
+        <td><p>Buffer containing color data.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</td>
+        <td><span class="parametername">maskData</span></td>
+        <td><p>Buffer containing mask data.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">hotspotX</span></td>
+        <td><p>The x coordinate of the cursor hotspot.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">hotspotY</span></td>
+        <td><p>The y coordinate of the cursor hotspot.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Platform.CursorHandle.html">CursorHandle</a></td>
+        <td><p>A handle to the created handle.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></td>
+        <td><p><code class="paramref">width</code> or <code class="paramref">height</code> is negative.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></td>
+        <td><p><code class="paramref">colorData</code> or <code class="paramref">maskData</code> is smaller than specified dimensions.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Platform_ICursorComponent_Destroy_" data-uid="OpenTK.Platform.ICursorComponent.Destroy*"></a>
+  <h4 id="OpenTK_Platform_ICursorComponent_Destroy_OpenTK_Platform_CursorHandle_" data-uid="OpenTK.Platform.ICursorComponent.Destroy(OpenTK.Platform.CursorHandle)">Destroy(CursorHandle)</h4>
+  <div class="markdown level1 summary"><p>Destroy a cursor object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Destroy(CursorHandle handle)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Platform.CursorHandle.html">CursorHandle</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>Handle to a cursor object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p><code class="paramref">handle</code> is null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Platform_ICursorComponent_GetHotspot_" data-uid="OpenTK.Platform.ICursorComponent.GetHotspot*"></a>
+  <h4 id="OpenTK_Platform_ICursorComponent_GetHotspot_OpenTK_Platform_CursorHandle_System_Int32__System_Int32__" data-uid="OpenTK.Platform.ICursorComponent.GetHotspot(OpenTK.Platform.CursorHandle,System.Int32@,System.Int32@)">GetHotspot(CursorHandle, out int, out int)</h4>
+  <div class="markdown level1 summary"><p>Get the hotspot location of the mouse cursor.
+Getting the hotspot of a system cursor is not guaranteed to be possible, check <a class="xref" href="OpenTK.Platform.ICursorComponent.html#OpenTK_Platform_ICursorComponent_CanInspectSystemCursors">CanInspectSystemCursors</a> before trying.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void GetHotspot(CursorHandle handle, out int x, out int y)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Platform.CursorHandle.html">CursorHandle</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>Handle to a cursor object.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">x</span></td>
+        <td><p>X coordinate of the hotspot.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">y</span></td>
+        <td><p>Y coordinate of the hotspot.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenTK_Platform_ICursorComponent_GetHotspot_OpenTK_Platform_CursorHandle_System_Int32__System_Int32___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If <code class="paramref">handle</code> is a system cursor and <a class="xref" href="OpenTK.Platform.ICursorComponent.html#OpenTK_Platform_ICursorComponent_CanInspectSystemCursors">CanInspectSystemCursors</a> is false this function will fail.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p><code class="paramref">handle</code> is null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenTK_Platform_ICursorComponent_GetHotspot_OpenTK_Platform_CursorHandle_System_Int32__System_Int32___seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="OpenTK.Platform.ICursorComponent.html#OpenTK_Platform_ICursorComponent_IsSystemCursor_OpenTK_Platform_CursorHandle_">IsSystemCursor(CursorHandle)</a></div>
+      <div><a class="xref" href="OpenTK.Platform.ICursorComponent.html#OpenTK_Platform_ICursorComponent_CanInspectSystemCursors">CanInspectSystemCursors</a></div>
+  </div>
+  <a id="OpenTK_Platform_ICursorComponent_GetSize_" data-uid="OpenTK.Platform.ICursorComponent.GetSize*"></a>
+  <h4 id="OpenTK_Platform_ICursorComponent_GetSize_OpenTK_Platform_CursorHandle_System_Int32__System_Int32__" data-uid="OpenTK.Platform.ICursorComponent.GetSize(OpenTK.Platform.CursorHandle,System.Int32@,System.Int32@)">GetSize(CursorHandle, out int, out int)</h4>
+  <div class="markdown level1 summary"><p>Get the size of the cursor image.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void GetSize(CursorHandle handle, out int width, out int height)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Platform.CursorHandle.html">CursorHandle</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>Handle to a cursor object.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">width</span></td>
+        <td><p>Width of the cursor.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">height</span></td>
+        <td><p>Height of the cursor.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenTK_Platform_ICursorComponent_GetSize_OpenTK_Platform_CursorHandle_System_Int32__System_Int32___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If <code class="paramref">handle</code> is a system cursor and <a class="xref" href="OpenTK.Platform.ICursorComponent.html#OpenTK_Platform_ICursorComponent_CanInspectSystemCursors">CanInspectSystemCursors</a> is false this function will fail.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p><code class="paramref">handle</code> is null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenTK_Platform_ICursorComponent_GetSize_OpenTK_Platform_CursorHandle_System_Int32__System_Int32___seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="OpenTK.Platform.ICursorComponent.html#OpenTK_Platform_ICursorComponent_IsSystemCursor_OpenTK_Platform_CursorHandle_">IsSystemCursor(CursorHandle)</a></div>
+      <div><a class="xref" href="OpenTK.Platform.ICursorComponent.html#OpenTK_Platform_ICursorComponent_CanInspectSystemCursors">CanInspectSystemCursors</a></div>
+  </div>
+  <a id="OpenTK_Platform_ICursorComponent_IsSystemCursor_" data-uid="OpenTK.Platform.ICursorComponent.IsSystemCursor*"></a>
+  <h4 id="OpenTK_Platform_ICursorComponent_IsSystemCursor_OpenTK_Platform_CursorHandle_" data-uid="OpenTK.Platform.ICursorComponent.IsSystemCursor(OpenTK.Platform.CursorHandle)">IsSystemCursor(CursorHandle)</h4>
+  <div class="markdown level1 summary"><p>Returns true if this cursor is a system cursor.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsSystemCursor(CursorHandle handle)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Platform.CursorHandle.html">CursorHandle</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>Handle to a cursor.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p>If the cursor is a system cursor or not.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenTK_Platform_ICursorComponent_IsSystemCursor_OpenTK_Platform_CursorHandle__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="OpenTK.Platform.ICursorComponent.html#OpenTK_Platform_ICursorComponent_Create_OpenTK_Platform_SystemCursorType_">Create(SystemCursorType)</a></div>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

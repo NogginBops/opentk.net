@@ -1384,1026 +1384,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Core.Platform.AppTheme.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Core.Platform.AppTheme.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Core.Platform.AudioData.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Core.Platform.AudioData.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Core.Platform.BatteryInfo.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Core.Platform.BatteryInfo.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Core.Platform.BatteryStatus.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Core.Platform.BatteryStatus.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Core.Platform.Bitmap.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Core.Platform.Bitmap.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Core.Platform.ClipboardFormat.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Core.Platform.ClipboardFormat.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Core.Platform.ClipboardUpdateEventArgs.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Core.Platform.ClipboardUpdateEventArgs.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Core.Platform.CloseEventArgs.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Core.Platform.CloseEventArgs.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Core.Platform.ComponentSet.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Core.Platform.ComponentSet.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Core.Platform.ContextDepthBits.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Core.Platform.ContextDepthBits.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Core.Platform.ContextPixelFormat.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Core.Platform.ContextPixelFormat.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Core.Platform.ContextReleaseBehaviour.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Core.Platform.ContextReleaseBehaviour.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Core.Platform.ContextResetNotificationStrategy.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Core.Platform.ContextResetNotificationStrategy.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Core.Platform.ContextSettings.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Core.Platform.ContextSettings.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Core.Platform.ContextStencilBits.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Core.Platform.ContextStencilBits.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Core.Platform.ContextSwapMethod.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Core.Platform.ContextSwapMethod.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Core.Platform.ContextValueSelector.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Core.Platform.ContextValueSelector.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Core.Platform.ContextValues.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Core.Platform.ContextValues.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Core.Platform.CursorCaptureMode.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Core.Platform.CursorCaptureMode.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Core.Platform.CursorHandle.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Core.Platform.CursorHandle.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Core.Platform.DialogFileFilter.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Core.Platform.DialogFileFilter.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Core.Platform.DisplayConnectionChangedEventArgs.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Core.Platform.DisplayConnectionChangedEventArgs.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Core.Platform.DisplayHandle.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Core.Platform.DisplayHandle.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Core.Platform.DisplayResolution.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Core.Platform.DisplayResolution.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Core.Platform.EventQueue.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Core.Platform.EventQueue.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Core.Platform.FileDropEventArgs.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Core.Platform.FileDropEventArgs.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Core.Platform.FocusEventArgs.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Core.Platform.FocusEventArgs.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Core.Platform.GamepadBatteryInfo.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Core.Platform.GamepadBatteryInfo.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Core.Platform.GamepadBatteryType.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Core.Platform.GamepadBatteryType.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Core.Platform.GraphicsApi.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Core.Platform.GraphicsApi.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Core.Platform.GraphicsApiHints.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Core.Platform.GraphicsApiHints.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Core.Platform.HitTest.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Core.Platform.HitTest.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Core.Platform.HitType.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Core.Platform.HitType.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Core.Platform.IClipboardComponent.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Core.Platform.IClipboardComponent.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Core.Platform.ICursorComponent.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Core.Platform.ICursorComponent.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Core.Platform.IDialogComponent.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Core.Platform.IDialogComponent.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Core.Platform.IDisplayComponent.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Core.Platform.IDisplayComponent.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Core.Platform.IIconComponent.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Core.Platform.IIconComponent.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Core.Platform.IJoystickComponent.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Core.Platform.IJoystickComponent.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Core.Platform.IKeyboardComponent.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Core.Platform.IKeyboardComponent.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Core.Platform.IMouseComponent.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Core.Platform.IMouseComponent.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Core.Platform.IOpenGLComponent.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Core.Platform.IOpenGLComponent.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Core.Platform.IPalComponent.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Core.Platform.IPalComponent.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Core.Platform.IShellComponent.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Core.Platform.IShellComponent.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Core.Platform.ISurfaceComponent.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Core.Platform.ISurfaceComponent.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Core.Platform.IWindowComponent.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Core.Platform.IWindowComponent.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Core.Platform.IconHandle.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Core.Platform.IconHandle.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Core.Platform.InputLanguageChangedEventArgs.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Core.Platform.InputLanguageChangedEventArgs.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Core.Platform.JoystickAxis.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Core.Platform.JoystickAxis.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Core.Platform.JoystickButton.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Core.Platform.JoystickButton.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Core.Platform.JoystickHandle.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Core.Platform.JoystickHandle.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Core.Platform.Key.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Core.Platform.Key.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Core.Platform.KeyDownEventArgs.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Core.Platform.KeyDownEventArgs.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Core.Platform.KeyModifier.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Core.Platform.KeyModifier.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Core.Platform.KeyUpEventArgs.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Core.Platform.KeyUpEventArgs.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Core.Platform.MouseButton.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Core.Platform.MouseButton.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Core.Platform.MouseButtonDownEventArgs.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Core.Platform.MouseButtonDownEventArgs.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Core.Platform.MouseButtonFlags.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Core.Platform.MouseButtonFlags.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Core.Platform.MouseButtonUpEventArgs.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Core.Platform.MouseButtonUpEventArgs.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Core.Platform.MouseEnterEventArgs.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Core.Platform.MouseEnterEventArgs.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Core.Platform.MouseHandle.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Core.Platform.MouseHandle.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Core.Platform.MouseMoveEventArgs.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Core.Platform.MouseMoveEventArgs.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Core.Platform.MouseState.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Core.Platform.MouseState.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Core.Platform.OpenDialogOptions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Core.Platform.OpenDialogOptions.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Core.Platform.OpenGLContextHandle.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Core.Platform.OpenGLContextHandle.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Core.Platform.OpenGLGraphicsApiHints.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Core.Platform.OpenGLGraphicsApiHints.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Core.Platform.OpenGLProfile.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Core.Platform.OpenGLProfile.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Core.Platform.Pal2BindingsContext.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Core.Platform.Pal2BindingsContext.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Core.Platform.PalComponents.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Core.Platform.PalComponents.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Core.Platform.PalException.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Core.Platform.PalException.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Core.Platform.PalHandle.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Core.Platform.PalHandle.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Core.Platform.PalNotImplementedException.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Core.Platform.PalNotImplementedException.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Core.Platform.PlatformEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Core.Platform.PlatformEventHandler.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Core.Platform.PlatformEventType.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Core.Platform.PlatformEventType.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Core.Platform.PlatformException.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Core.Platform.PlatformException.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Core.Platform.PowerStateChangeEventArgs.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Core.Platform.PowerStateChangeEventArgs.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Core.Platform.SaveDialogOptions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Core.Platform.SaveDialogOptions.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Core.Platform.Scancode.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Core.Platform.Scancode.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Core.Platform.ScrollEventArgs.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Core.Platform.ScrollEventArgs.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Core.Platform.SurfaceHandle.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Core.Platform.SurfaceHandle.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Core.Platform.SurfaceType.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Core.Platform.SurfaceType.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Core.Platform.SystemCursorType.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Core.Platform.SystemCursorType.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Core.Platform.SystemIconType.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Core.Platform.SystemIconType.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Core.Platform.SystemMemoryInfo.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Core.Platform.SystemMemoryInfo.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Core.Platform.TextEditingEventArgs.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Core.Platform.TextEditingEventArgs.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Core.Platform.TextInputEventArgs.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Core.Platform.TextInputEventArgs.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Core.Platform.ThemeChangeEventArgs.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Core.Platform.ThemeChangeEventArgs.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Core.Platform.ThemeInfo.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Core.Platform.ThemeInfo.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Core.Platform.ToolkitOptions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Core.Platform.ToolkitOptions.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Core.Platform.VideoMode.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Core.Platform.VideoMode.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Core.Platform.WindowBorderStyle.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Core.Platform.WindowBorderStyle.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Core.Platform.WindowDpiChangeEventArgs.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Core.Platform.WindowDpiChangeEventArgs.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Core.Platform.WindowEventArgs.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Core.Platform.WindowEventArgs.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Core.Platform.WindowEventHandler.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Core.Platform.WindowEventHandler.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Core.Platform.WindowFramebufferResizeEventArgs.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Core.Platform.WindowFramebufferResizeEventArgs.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Core.Platform.WindowHandle.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Core.Platform.WindowHandle.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Core.Platform.WindowMode.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Core.Platform.WindowMode.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Core.Platform.WindowModeChangeEventArgs.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Core.Platform.WindowModeChangeEventArgs.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Core.Platform.WindowMoveEventArgs.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Core.Platform.WindowMoveEventArgs.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Core.Platform.WindowResizeEventArgs.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Core.Platform.WindowResizeEventArgs.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Core.Platform.WindowScaleChangeEventArgs.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Core.Platform.WindowScaleChangeEventArgs.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Core.Platform.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Core.Platform.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/OpenTK.Core.Utility.ConsoleLogger.yml",
       "output": {
         ".html": {
@@ -2668,16 +1648,6 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenTK.Graphics.Glx.Colormap.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Graphics.Glx.Display.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Graphics.Glx.Display.html"
         }
       },
       "version": ""
@@ -2994,16 +1964,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Graphics.Glx.Screen.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Graphics.Glx.Screen.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/OpenTK.Graphics.Glx.ScreenPtr.yml",
       "output": {
         ".html": {
@@ -3018,16 +1978,6 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenTK.Graphics.Glx.Window.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Graphics.Glx.XVisualInfo.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Graphics.Glx.XVisualInfo.html"
         }
       },
       "version": ""
@@ -3154,6 +2104,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Graphics.VKLoader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Graphics.VKLoader.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/OpenTK.Graphics.VertexArrayHandle.yml",
       "output": {
         ".html": {
@@ -3214,6 +2174,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Graphics.Wgl.ColorBufferMask.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Graphics.Wgl.ColorBufferMask.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/OpenTK.Graphics.Wgl.ColorRef.yml",
       "output": {
         ".html": {
@@ -3238,6 +2208,36 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenTK.Graphics.Wgl.ContextAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Graphics.Wgl.ContextFlagsMask.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Graphics.Wgl.ContextFlagsMask.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Graphics.Wgl.ContextProfileMask.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Graphics.Wgl.ContextProfileMask.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Graphics.Wgl.DXInteropMaskNV.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Graphics.Wgl.DXInteropMaskNV.html"
         }
       },
       "version": ""
@@ -3284,10 +2284,30 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Graphics.Wgl.ImageBufferMaskI3D.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Graphics.Wgl.ImageBufferMaskI3D.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/OpenTK.Graphics.Wgl.LayerPlaneDescriptor.yml",
       "output": {
         ".html": {
           "relative_path": "api/OpenTK.Graphics.Wgl.LayerPlaneDescriptor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Graphics.Wgl.LayerPlaneMask.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Graphics.Wgl.LayerPlaneMask.html"
         }
       },
       "version": ""
@@ -3428,66 +2448,6 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenTK.Graphics.Wgl.VideoOutputBufferType.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Graphics.Wgl.WGLColorBufferMask.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Graphics.Wgl.WGLColorBufferMask.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Graphics.Wgl.WGLContextFlagsMask.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Graphics.Wgl.WGLContextFlagsMask.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Graphics.Wgl.WGLContextProfileMask.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Graphics.Wgl.WGLContextProfileMask.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Graphics.Wgl.WGLDXInteropMaskNV.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Graphics.Wgl.WGLDXInteropMaskNV.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Graphics.Wgl.WGLImageBufferMaskI3D.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Graphics.Wgl.WGLImageBufferMaskI3D.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Graphics.Wgl.WGLLayerPlaneMask.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Graphics.Wgl.WGLLayerPlaneMask.html"
         }
       },
       "version": ""
@@ -4244,6 +3204,646 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.AppTheme.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.AppTheme.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.AudioData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.AudioData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.BatteryInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.BatteryInfo.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.BatteryStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.BatteryStatus.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.Bitmap.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.Bitmap.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.ClipboardFormat.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.ClipboardFormat.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.ClipboardUpdateEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.ClipboardUpdateEventArgs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.CloseEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.CloseEventArgs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.ContextDepthBits.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.ContextDepthBits.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.ContextPixelFormat.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.ContextPixelFormat.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.ContextReleaseBehaviour.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.ContextReleaseBehaviour.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.ContextResetNotificationStrategy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.ContextResetNotificationStrategy.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.ContextStencilBits.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.ContextStencilBits.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.ContextSwapMethod.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.ContextSwapMethod.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.ContextValueSelector.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.ContextValueSelector.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.ContextValues.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.ContextValues.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.CursorCaptureMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.CursorCaptureMode.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.CursorHandle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.CursorHandle.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.DialogFileFilter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.DialogFileFilter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.DisplayConnectionChangedEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.DisplayConnectionChangedEventArgs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.DisplayHandle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.DisplayHandle.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.DisplayResolution.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.DisplayResolution.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.EventQueue.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.EventQueue.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.FileDropEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.FileDropEventArgs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.FocusEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.FocusEventArgs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.GamepadBatteryInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.GamepadBatteryInfo.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.GamepadBatteryType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.GamepadBatteryType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.GraphicsApi.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.GraphicsApi.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.GraphicsApiHints.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.GraphicsApiHints.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.HitTest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.HitTest.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.HitType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.HitType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.IClipboardComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.IClipboardComponent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.ICursorComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.ICursorComponent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.IDialogComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.IDialogComponent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.IDisplayComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.IDisplayComponent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.IIconComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.IIconComponent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.IJoystickComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.IJoystickComponent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.IKeyboardComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.IKeyboardComponent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.IMouseComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.IMouseComponent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.IOpenGLComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.IOpenGLComponent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.IPalComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.IPalComponent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.IShellComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.IShellComponent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.ISurfaceComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.ISurfaceComponent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.IVulkanComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.IVulkanComponent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.IWindowComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.IWindowComponent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.IconHandle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.IconHandle.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.InputLanguageChangedEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.InputLanguageChangedEventArgs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.JoystickAxis.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.JoystickAxis.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.JoystickButton.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.JoystickButton.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.JoystickHandle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.JoystickHandle.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.Key.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.Key.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.KeyDownEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.KeyDownEventArgs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.KeyModifier.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.KeyModifier.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.KeyUpEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.KeyUpEventArgs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.MessageBoxButton.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.MessageBoxButton.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.MessageBoxType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.MessageBoxType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.MouseButton.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.MouseButton.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.MouseButtonDownEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.MouseButtonDownEventArgs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.MouseButtonFlags.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.MouseButtonFlags.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.MouseButtonUpEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.MouseButtonUpEventArgs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.MouseEnterEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.MouseEnterEventArgs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.MouseHandle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.MouseHandle.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.MouseMoveEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.MouseMoveEventArgs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.MouseState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.MouseState.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/OpenTK.Platform.Native.ANGLE.ANGLEOpenGLComponent.yml",
       "output": {
         ".html": {
@@ -4394,26 +3994,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Platform.Native.Toolkit.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Platform.Native.Toolkit.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Platform.Native.ToolkitOptions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Platform.Native.ToolkitOptions.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/OpenTK.Platform.Native.Windows.ClipboardComponent.yml",
       "output": {
         ".html": {
@@ -4558,6 +4138,16 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenTK.Platform.Native.X11.X11CursorComponent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.Native.X11.X11DialogComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.Native.X11.X11DialogComponent.html"
         }
       },
       "version": ""
@@ -4778,6 +4368,436 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenTK.Platform.Native.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.OpenDialogOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.OpenDialogOptions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.OpenGLContextHandle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.OpenGLContextHandle.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.OpenGLGraphicsApiHints.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.OpenGLGraphicsApiHints.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.OpenGLProfile.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.OpenGLProfile.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.Pal2BindingsContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.Pal2BindingsContext.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.PalComponents.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.PalComponents.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.PalException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.PalException.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.PalHandle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.PalHandle.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.PalNotImplementedException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.PalNotImplementedException.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.PlatformEventHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.PlatformEventHandler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.PlatformEventType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.PlatformEventType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.PlatformException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.PlatformException.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.PowerStateChangeEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.PowerStateChangeEventArgs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.RawMouseMoveEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.RawMouseMoveEventArgs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.SaveDialogOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.SaveDialogOptions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.Scancode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.Scancode.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.ScrollEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.ScrollEventArgs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.SurfaceHandle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.SurfaceHandle.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.SurfaceType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.SurfaceType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.SystemCursorType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.SystemCursorType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.SystemIconType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.SystemIconType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.SystemMemoryInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.SystemMemoryInfo.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.TextEditingEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.TextEditingEventArgs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.TextInputEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.TextInputEventArgs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.ThemeChangeEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.ThemeChangeEventArgs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.ThemeInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.ThemeInfo.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.Toolkit.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.Toolkit.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.ToolkitOptions.MacOSOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.ToolkitOptions.MacOSOptions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.ToolkitOptions.WindowsOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.ToolkitOptions.WindowsOptions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.ToolkitOptions.X11Options.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.ToolkitOptions.X11Options.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.ToolkitOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.ToolkitOptions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.VideoMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.VideoMode.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.WindowBorderStyle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.WindowBorderStyle.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.WindowEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.WindowEventArgs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.WindowEventHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.WindowEventHandler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.WindowFramebufferResizeEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.WindowFramebufferResizeEventArgs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.WindowHandle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.WindowHandle.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.WindowMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.WindowMode.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.WindowModeChangeEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.WindowModeChangeEventArgs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.WindowMoveEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.WindowMoveEventArgs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.WindowResizeEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.WindowResizeEventArgs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.WindowScaleChangeEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.WindowScaleChangeEventArgs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.html"
         }
       },
       "version": ""
@@ -5194,6 +5214,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Windowing.GraphicsLibraryFramework.ANGLEPlatformType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Windowing.GraphicsLibraryFramework.ANGLEPlatformType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/OpenTK.Windowing.GraphicsLibraryFramework.ClientApi.yml",
       "output": {
         ".html": {
@@ -5514,6 +5544,46 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Windowing.GraphicsLibraryFramework.GLFWallocatefun.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Windowing.GraphicsLibraryFramework.GLFWallocatefun.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Windowing.GraphicsLibraryFramework.GLFWallocator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Windowing.GraphicsLibraryFramework.GLFWallocator.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Windowing.GraphicsLibraryFramework.GLFWdeallocatefun.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Windowing.GraphicsLibraryFramework.GLFWdeallocatefun.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Windowing.GraphicsLibraryFramework.GLFWreallocatefun.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Windowing.GraphicsLibraryFramework.GLFWreallocatefun.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/OpenTK.Windowing.GraphicsLibraryFramework.GamepadState.yml",
       "output": {
         ".html": {
@@ -5544,6 +5614,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Windowing.GraphicsLibraryFramework.InitHintANGLEPlatformType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Windowing.GraphicsLibraryFramework.InitHintANGLEPlatformType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/OpenTK.Windowing.GraphicsLibraryFramework.InitHintBool.yml",
       "output": {
         ".html": {
@@ -5558,6 +5638,16 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenTK.Windowing.GraphicsLibraryFramework.InitHintInt.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Windowing.GraphicsLibraryFramework.InitHintPlatform.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Windowing.GraphicsLibraryFramework.InitHintPlatform.html"
         }
       },
       "version": ""
@@ -5684,6 +5774,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Windowing.GraphicsLibraryFramework.Platform.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Windowing.GraphicsLibraryFramework.Platform.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/OpenTK.Windowing.GraphicsLibraryFramework.RawMouseMotionAttribute.yml",
       "output": {
         ".html": {
@@ -5738,6 +5838,16 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenTK.Windowing.GraphicsLibraryFramework.VkHandle.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Windowing.GraphicsLibraryFramework.WaylandLibDecor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Windowing.GraphicsLibraryFramework.WaylandLibDecor.html"
         }
       },
       "version": ""
@@ -5948,6 +6058,9 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
         }
       },
       "version": ""
@@ -7523,9 +7636,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "UidNotFound"
-      ],
       "type": "Conceptual",
       "source_relative_path": "learn/pal2/Event-Handling.md",
       "output": {
@@ -7561,6 +7671,9 @@
       "output": {
         ".html": {
           "relative_path": "learn/toc.html"
+        },
+        ".json": {
+          "relative_path": "learn/toc.json"
         }
       },
       "version": ""
@@ -7621,6 +7734,9 @@
       "output": {
         ".html": {
           "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
         }
       },
       "version": ""

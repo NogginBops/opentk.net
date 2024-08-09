@@ -5,11 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Struct Box2
-  - OpenTK</title>
+    <title>Struct Box2  - OpenTK</title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Struct Box2
- ">
+    <meta name="title" content="Struct Box2 ">
     <meta name="generator" content="docfx ">
   
     <link rel="shortcut icon" href="../favicon.ico">
@@ -27,8 +25,7 @@
     <meta property="og:image:width" content="142">
     <meta property="og:image:height" content="50">
     <meta property="og:site_name" content="OpenTK">
-    <meta property="og:title" content="Struct Box2
-  - OpenTK">
+    <meta property="og:title" content="Struct Box2  - OpenTK">
     <meta name="theme-color" content="#ffffff">
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
@@ -80,8 +77,7 @@
 
 
 
-  <h1 id="OpenTK_Mathematics_Box2" data-uid="OpenTK.Mathematics.Box2" class="text-break">Struct Box2
-</h1>
+  <h1 id="OpenTK_Mathematics_Box2" data-uid="OpenTK.Mathematics.Box2" class="text-break">Struct Box2</h1>
   <div class="markdown level0 summary"><p>Defines an axis-aligned 2d box (rectangle).</p>
 </div>
   <div class="markdown level0 conceptual"></div>
@@ -438,7 +434,7 @@ public struct Box2 : IEquatable&lt;Box2&gt;, IFormattable</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Vector2 Max { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public Vector2 Max { readonly get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -462,7 +458,7 @@ public struct Box2 : IEquatable&lt;Box2&gt;, IFormattable</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Vector2 Min { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public Vector2 Min { readonly get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -724,7 +720,7 @@ public struct Box2 : IEquatable&lt;Box2&gt;, IFormattable</code></pre>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Pure]
-public bool Contains(Box2 other)</code></pre>
+public readonly bool Contains(Box2 other)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -769,7 +765,7 @@ public bool Contains(Box2 other)</code></pre>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Pure]
 [Obsolete(&quot;This function used to exclude borders, but to follow changes from the other Box structs it&#39;s deprecated. Use ContainsInclusive and ContainsExclusive for the desired behaviour.&quot;)]
-public bool Contains(Vector2 point)</code></pre>
+public readonly bool Contains(Vector2 point)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -863,7 +859,7 @@ public bool Contains(Vector2 point, bool boundaryInclusive)</code></pre>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Pure]
-public bool ContainsExclusive(Vector2 point)</code></pre>
+public readonly bool ContainsExclusive(Vector2 point)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -907,7 +903,7 @@ public bool ContainsExclusive(Vector2 point)</code></pre>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Pure]
-public bool ContainsInclusive(Vector2 point)</code></pre>
+public readonly bool ContainsInclusive(Vector2 point)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -951,7 +947,7 @@ public bool ContainsInclusive(Vector2 point)</code></pre>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Pure]
-public float DistanceToNearestEdge(Vector2 point)</code></pre>
+public readonly float DistanceToNearestEdge(Vector2 point)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -1110,7 +1106,7 @@ public float DistanceToNearestEdge(Vector2 point)</code></pre>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Pure]
-public Box2 Extended(Vector2 point)</code></pre>
+public readonly Box2 Extended(Vector2 point)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -1355,7 +1351,7 @@ public Box2 Extended(Vector2 point)</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+    <pre><code class="lang-csharp hljs">public override readonly int GetHashCode()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-condensed">
@@ -1412,7 +1408,7 @@ Use the <a class="xref" href="OpenTK.Mathematics.Box2.html#OpenTK_Mathematics_Bo
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Pure]
-public Box2 Inflated(Vector2 size)</code></pre>
+public readonly Box2 Inflated(Vector2 size)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -1694,7 +1690,7 @@ public Box2 Inflated(Vector2 size)</code></pre>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Pure]
-public Box2 Scaled(Vector2 scale, Vector2 anchor)</code></pre>
+public readonly Box2 Scaled(Vector2 scale, Vector2 anchor)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -1984,7 +1980,7 @@ public Box2 Scaled(Vector2 scale, Vector2 anchor)</code></pre>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Pure]
-public Box2 Translated(Vector2 distance)</code></pre>
+public readonly Box2 Translated(Vector2 distance)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">

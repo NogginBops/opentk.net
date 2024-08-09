@@ -77,14 +77,11 @@
 <h1 id="introduction">Introduction</h1>
 
 <p>PAL 2 consists of a number of components that allows the user to create windows and interact with the user system. These interfaces are designed to work cross-platform. But sometimes there are functions and settings that are so platform specific that these is no good cross-platform API for them.</p>
-<p>Platform specific component APIs can be accessed by casting the component interface to it's concrete platform type. For example, <code>IClipboardComponent</code> has windows specific settings related to cloud clipboard syncing and history, which can be accessed like follows:</p>
-<pre><code class="lang-cs">IClipboardComponent clipboardComp = ...;
-
-// By using 'as' and ?. we can run this code on all platforms
+<p>Platform specific component APIs can be accessed by casting the component interface to it's concrete platform type. For example, <code>Toolkit.Clipboard</code> has windows specific settings related to cloud clipboard syncing and history, which can be accessed like follows:</p>
+<pre><code class="lang-cs">// By using 'as' and ?. we can run this code on all platforms
 // but the effects will only take effect on windows.
-(clipboardComp as Native.Windows.WindowComponent)?.CanUploadToCloudClipboard = false;
-(clipboardComp as Native.Windows.WindowComponent)?.CanIncludeInClipboardHistory = true;
-
+(Toolkit.Clipboard as Native.Windows.WindowComponent)?.CanUploadToCloudClipboard = false;
+(Toolkit.Clipboard as Native.Windows.WindowComponent)?.CanIncludeInClipboardHistory = true;
 </code></pre>
 <h1 id="windows">Windows</h1>
 <p>The following is a list of windows specific settings and functions.</p>
@@ -101,7 +98,7 @@
 <td></td>
 </tr>
 <tr>
-<td><a class="xref" href="../../api/OpenTK.Platform.Native.Windows.WindowComponent.html#OpenTK_Platform_Native_Windows_WindowComponent_GetHWND_OpenTK_Core_Platform_WindowHandle_"><code>WindowComponent.GetHWND</code></a></td>
+<td><a class="xref" href="../../api/OpenTK.Platform.Native.Windows.WindowComponent.html#OpenTK_Platform_Native_Windows_WindowComponent_GetHWND_OpenTK_Platform_WindowHandle_"><code>WindowComponent.GetHWND</code></a></td>
 <td>Gets the native Win32 <code>HWND</code> handle for the window.</td>
 </tr>
 <tr>
@@ -109,7 +106,11 @@
 <td></td>
 </tr>
 <tr>
-<td><a class="xref" href="../../api/OpenTK.Platform.Native.Windows.OpenGLComponent.html#OpenTK_Platform_Native_Windows_OpenGLComponent_GetHGLRC_OpenTK_Core_Platform_OpenGLContextHandle_"><code>OpenGLComponent.GetHGLRC</code></a></td>
+<td><a class="xref" href="../../api/OpenTK.Platform.Native.Windows.OpenGLComponent.html#OpenTK_Platform_Native_Windows_OpenGLComponent_UseDwmFlushIfApplicable_OpenTK_Platform_OpenGLContextHandle_System_Boolean_"><code>OpenGLComponent.UseDwmFlushIfApplicable</code></a></td>
+<td>Sets if <code>SwapBuffers</code> should call <code>DwmFlush()</code> to sync if DWM compositing is enabled.</td>
+</tr>
+<tr>
+<td><a class="xref" href="../../api/OpenTK.Platform.Native.Windows.OpenGLComponent.html#OpenTK_Platform_Native_Windows_OpenGLComponent_GetHGLRC_OpenTK_Platform_OpenGLContextHandle_"><code>OpenGLComponent.GetHGLRC</code></a></td>
 <td>Gets the native Win32 <code>HGLRC</code> handle for the OpenGL context.</td>
 </tr>
 <tr>
@@ -117,11 +118,11 @@
 <td></td>
 </tr>
 <tr>
-<td><a class="xref" href="../../api/OpenTK.Platform.Native.Windows.DisplayComponent.html#OpenTK_Platform_Native_Windows_DisplayComponent_GetAdapter_OpenTK_Core_Platform_DisplayHandle_"><code>DisplayComponent.GetAdapter</code></a></td>
+<td><a class="xref" href="../../api/OpenTK.Platform.Native.Windows.DisplayComponent.html#OpenTK_Platform_Native_Windows_DisplayComponent_GetAdapter_OpenTK_Platform_DisplayHandle_"><code>DisplayComponent.GetAdapter</code></a></td>
 <td>Gets the native Win32 adapter name (e.g. <code>\\.\DISPLAY1</code>) for the display handle.</td>
 </tr>
 <tr>
-<td><a class="xref" href="../../api/OpenTK.Platform.Native.Windows.DisplayComponent.html#OpenTK_Platform_Native_Windows_DisplayComponent_GetMonitor_OpenTK_Core_Platform_DisplayHandle_"><code>DisplayComponent.GetMonitor</code></a></td>
+<td><a class="xref" href="../../api/OpenTK.Platform.Native.Windows.DisplayComponent.html#OpenTK_Platform_Native_Windows_DisplayComponent_GetMonitor_OpenTK_Platform_DisplayHandle_"><code>DisplayComponent.GetMonitor</code></a></td>
 <td>Gets the native Win32 monitor name (e.g. <code>\\.\DISPLAY1\Monitor0</code>) for the display handle.</td>
 </tr>
 <tr>
@@ -129,16 +130,20 @@
 <td></td>
 </tr>
 <tr>
-<td><a class="xref" href="../../api/OpenTK.Platform.Native.Windows.ShellComponent.html#OpenTK_Platform_Native_Windows_ShellComponent_SetImmersiveDarkMode_OpenTK_Core_Platform_WindowHandle_System_Boolean_"><code>ShellComponent.SetImmersiveDarkMode</code></a></td>
+<td><a class="xref" href="../../api/OpenTK.Platform.Native.Windows.ShellComponent.html#OpenTK_Platform_Native_Windows_ShellComponent_SetImmersiveDarkMode_OpenTK_Platform_WindowHandle_System_Boolean_"><code>ShellComponent.SetImmersiveDarkMode</code></a></td>
 <td>Sets the <code>DWMWA_USE_IMMERSIVE_DARK_MODE</code> flag on the window causing the titlebar be rendered in dark mode colors. This is only officially supported from Window 11 Build 220000, but can sometimes work on Windows 10.</td>
 </tr>
 <tr>
-<td><a class="xref" href="../../api/OpenTK.Platform.Native.Windows.ShellComponent.html#OpenTK_Platform_Native_Windows_ShellComponent_SetCaptionTextColor_OpenTK_Core_Platform_WindowHandle_OpenTK_Mathematics_Color3_OpenTK_Mathematics_Rgb__"><code>ShellComponent.SetCaptionTextColor</code></a></td>
+<td><a class="xref" href="../../api/OpenTK.Platform.Native.Windows.ShellComponent.html#OpenTK_Platform_Native_Windows_ShellComponent_SetCaptionTextColor_OpenTK_Platform_WindowHandle_OpenTK_Mathematics_Color3_OpenTK_Mathematics_Rgb__"><code>ShellComponent.SetCaptionTextColor</code></a></td>
 <td>Used to set the text color in the windows titlebar. This is only officially supported from Window 11 Build 220000, but can sometimes work on Windows 10.</td>
 </tr>
 <tr>
-<td><a class="xref" href="../../api/OpenTK.Platform.Native.Windows.ShellComponent.html#OpenTK_Platform_Native_Windows_ShellComponent_SetCaptionColor_OpenTK_Core_Platform_WindowHandle_OpenTK_Mathematics_Color3_OpenTK_Mathematics_Rgb__"><code>ShellComponent.SetCaptionColor</code></a></td>
+<td><a class="xref" href="../../api/OpenTK.Platform.Native.Windows.ShellComponent.html#OpenTK_Platform_Native_Windows_ShellComponent_SetCaptionColor_OpenTK_Platform_WindowHandle_OpenTK_Mathematics_Color3_OpenTK_Mathematics_Rgb__"><code>ShellComponent.SetCaptionColor</code></a></td>
 <td>Used to set the color of the window titlebar. This is only officially supported from Window 11 Build 220000, but can sometimes work on Windows 10.</td>
+</tr>
+<tr>
+<td><a class="xref" href="../../api/OpenTK.Platform.Native.Windows.ShellComponent.html#OpenTK_Platform_Native_Windows_ShellComponent_SetWindowCornerPreference_OpenTK_Platform_WindowHandle_OpenTK_Platform_Native_Windows_ShellComponent_CornerPrefernce_"><code>ShellComponent.SetWindowCornerPreference</code></a></td>
+<td>Used to set the rounded corner preference on Windows 11.</td>
 </tr>
 <tr>
 <td><code>IconComponent</code></td>
@@ -157,12 +162,12 @@
 <td>Used to create an <code>IconHandle</code> from a win32 embedded resource created using an <code>.rc</code> file and <code>&lt;Win32Resource&gt;</code>.</td>
 </tr>
 <tr>
-<td><a class="xref" href="../../api/OpenTK.Platform.Native.Windows.IconComponent.html#OpenTK_Platform_Native_Windows_IconComponent_GetBitmapData_OpenTK_Core_Platform_IconHandle_System_Span_System_Byte__"><code>IconComponent.GetBitmapData</code></a></td>
+<td><a class="xref" href="../../api/OpenTK.Platform.Native.Windows.IconComponent.html#OpenTK_Platform_Native_Windows_IconComponent_GetBitmapData_OpenTK_Platform_IconHandle_System_Span_System_Byte__"><code>IconComponent.GetBitmapData</code></a></td>
 <td>Allows for extracting icon data. Works with system icons.</td>
 </tr>
 <tr>
-<td><a class="xref" href="../../api/OpenTK.Platform.Native.Windows.IconComponent.html#OpenTK_Platform_Native_Windows_IconComponent_GetBitmapByteSize_OpenTK_Core_Platform_IconHandle_"><code>IconComponent.GetBitmapByteSize</code></a></td>
-<td>Returns the size in bytes of the bitmap data. For use with <a class="xref" href="../../api/OpenTK.Platform.Native.Windows.IconComponent.html#OpenTK_Platform_Native_Windows_IconComponent_GetBitmapData_OpenTK_Core_Platform_IconHandle_System_Span_System_Byte__"><code>IconComponent.GetBitmapData</code></a>.</td>
+<td><a class="xref" href="../../api/OpenTK.Platform.Native.Windows.IconComponent.html#OpenTK_Platform_Native_Windows_IconComponent_GetBitmapByteSize_OpenTK_Platform_IconHandle_"><code>IconComponent.GetBitmapByteSize</code></a></td>
+<td>Returns the size in bytes of the bitmap data. For use with <a class="xref" href="../../api/OpenTK.Platform.Native.Windows.IconComponent.html#OpenTK_Platform_Native_Windows_IconComponent_GetBitmapData_OpenTK_Platform_IconHandle_System_Span_System_Byte__"><code>IconComponent.GetBitmapData</code></a>.</td>
 </tr>
 <tr>
 <td><code>CursorComponent</code></td>
@@ -181,7 +186,7 @@
 <td>Used to create a <code>CursorHandle</code> from a <code>.cur</code> file embedded in a <code>.rc</code> file and using <code>&lt;Win32Resource&gt;</code>.</td>
 </tr>
 <tr>
-<td><a class="xref" href="../../api/OpenTK.Platform.Native.Windows.CursorComponent.html#OpenTK_Platform_Native_Windows_CursorComponent_GetImage_OpenTK_Core_Platform_CursorHandle_System_Span_System_Byte__"><code>CursorComponent.GetImage</code></a></td>
+<td><a class="xref" href="../../api/OpenTK.Platform.Native.Windows.CursorComponent.html#OpenTK_Platform_Native_Windows_CursorComponent_GetImage_OpenTK_Platform_CursorHandle_System_Span_System_Byte__"><code>CursorComponent.GetImage</code></a></td>
 <td>Allows for extracting cursor data. Works with system cursors.</td>
 </tr>
 <tr>
@@ -197,11 +202,11 @@
 <td>Toggles whether clipboard data set using <a class="xref" href="../../api/OpenTK.Platform.Native.Windows.ClipboardComponent.html#OpenTK_Platform_Native_Windows_ClipboardComponent_SetClipboardText_System_String_"><code>SetClipboardText</code></a> can be by synced between the users devices.</td>
 </tr>
 <tr>
-<td><a class="xref" href="../../api/OpenTK.Platform.Native.Windows.ClipboardComponent.html#OpenTK_Platform_Native_Windows_ClipboardComponent_SetClipboardAudio_OpenTK_Core_Platform_AudioData_"><code>ClipboardComponent.SetClipboardAudio</code></a></td>
+<td><a class="xref" href="../../api/OpenTK.Platform.Native.Windows.ClipboardComponent.html#OpenTK_Platform_Native_Windows_ClipboardComponent_SetClipboardAudio_OpenTK_Platform_AudioData_"><code>ClipboardComponent.SetClipboardAudio</code></a></td>
 <td>Allows uploading audio data to the clipboard. Audio clipboard support is generally poorly supported by audio applications.</td>
 </tr>
 <tr>
-<td><a class="xref" href="../../api/OpenTK.Platform.Native.Windows.ClipboardComponent.html#OpenTK_Platform_Native_Windows_ClipboardComponent_SetClipboardBitmap_OpenTK_Core_Platform_Bitmap_"><code>ClipboardComponent.SetClipboardBitmap</code></a></td>
+<td><a class="xref" href="../../api/OpenTK.Platform.Native.Windows.ClipboardComponent.html#OpenTK_Platform_Native_Windows_ClipboardComponent_SetClipboardBitmap_OpenTK_Platform_Bitmap_"><code>ClipboardComponent.SetClipboardBitmap</code></a></td>
 <td>Allows uploading image data to the clipboard.</td>
 </tr>
 </tbody>
@@ -221,7 +226,15 @@
 <td></td>
 </tr>
 <tr>
-<td><a class="xref" href="../../api/OpenTK.Platform.Native.X11.X11WindowComponent.html#OpenTK_Platform_Native_X11_X11WindowComponent_DemandAttention_OpenTK_Core_Platform_WindowHandle_"><code>X11WindowComponent.DemandAttention</code></a></td>
+<td><a class="xref" href="../../api/OpenTK.Platform.Native.X11.X11WindowComponent.html#OpenTK_Platform_Native_X11_X11WindowComponent_GetIconifiedTitle_OpenTK_Platform_WindowHandle_"><code>X11WindowComponent.GetIconifiedTitle</code></a></td>
+<td>Gets the iconified window title.</td>
+</tr>
+<tr>
+<td><a class="xref" href="../../api/OpenTK.Platform.Native.X11.X11WindowComponent.html#OpenTK_Platform_Native_X11_X11WindowComponent_SetIconifiedTitle_OpenTK_Platform_WindowHandle_System_String_"><code>X11WindowComponent.SetIconifiedTitle</code></a></td>
+<td>Sets the iconified window title.</td>
+</tr>
+<tr>
+<td><a class="xref" href="../../api/OpenTK.Platform.Native.X11.X11WindowComponent.html#OpenTK_Platform_Native_X11_X11WindowComponent_DemandAttention_OpenTK_Platform_WindowHandle_"><code>X11WindowComponent.DemandAttention</code></a></td>
 <td>Shows a popup to the user that the window is ready.</td>
 </tr>
 <tr>
@@ -229,7 +242,7 @@
 <td>Gets the X11 <code>Display</code> used by OpenTK.</td>
 </tr>
 <tr>
-<td><a class="xref" href="../../api/OpenTK.Platform.Native.X11.X11WindowComponent.html#OpenTK_Platform_Native_X11_X11WindowComponent_GetX11Window_OpenTK_Core_Platform_WindowHandle_"><code>X11WindowComponent.GetX11Window</code></a></td>
+<td><a class="xref" href="../../api/OpenTK.Platform.Native.X11.X11WindowComponent.html#OpenTK_Platform_Native_X11_X11WindowComponent_GetX11Window_OpenTK_Platform_WindowHandle_"><code>X11WindowComponent.GetX11Window</code></a></td>
 <td>Gets the X11 <code>Window</code> for this window handle.</td>
 </tr>
 <tr>
@@ -241,11 +254,11 @@
 <td>Queries <code>EXT_swap_control</code> for the maximum supported swap interval.</td>
 </tr>
 <tr>
-<td><a class="xref" href="../../api/OpenTK.Platform.Native.X11.X11OpenGLComponent.html#OpenTK_Platform_Native_X11_X11OpenGLComponent_GetGLXContext_OpenTK_Core_Platform_OpenGLContextHandle_"><code>X11OpenGLComponent.GetGLXContext</code></a></td>
+<td><a class="xref" href="../../api/OpenTK.Platform.Native.X11.X11OpenGLComponent.html#OpenTK_Platform_Native_X11_X11OpenGLComponent_GetGLXContext_OpenTK_Platform_OpenGLContextHandle_"><code>X11OpenGLComponent.GetGLXContext</code></a></td>
 <td>Get the GLX <code>GLXContext</code> for the OpenGL context.</td>
 </tr>
 <tr>
-<td><a class="xref" href="../../api/OpenTK.Platform.Native.X11.X11OpenGLComponent.html#OpenTK_Platform_Native_X11_X11OpenGLComponent_GetGLXWindow_OpenTK_Core_Platform_OpenGLContextHandle_"><code>X11OpenGLComponent.GetGLXWindow</code></a></td>
+<td><a class="xref" href="../../api/OpenTK.Platform.Native.X11.X11OpenGLComponent.html#OpenTK_Platform_Native_X11_X11OpenGLComponent_GetGLXWindow_OpenTK_Platform_OpenGLContextHandle_"><code>X11OpenGLComponent.GetGLXWindow</code></a></td>
 <td>Get the GLX <code>GLXWindow</code> for the OpenGL context.</td>
 </tr>
 <tr>
@@ -253,11 +266,11 @@
 <td></td>
 </tr>
 <tr>
-<td><a class="xref" href="../../api/OpenTK.Platform.Native.X11.X11DisplayComponent.html#OpenTK_Platform_Native_X11_X11DisplayComponent_GetRRCrtc_OpenTK_Core_Platform_DisplayHandle_"><code>X11DisplayComponent.GetRRCrtc</code></a></td>
+<td><a class="xref" href="../../api/OpenTK.Platform.Native.X11.X11DisplayComponent.html#OpenTK_Platform_Native_X11_X11DisplayComponent_GetRRCrtc_OpenTK_Platform_DisplayHandle_"><code>X11DisplayComponent.GetRRCrtc</code></a></td>
 <td>Get the X11 RandR <code>RRCrtc</code> for the display handle.</td>
 </tr>
 <tr>
-<td><a class="xref" href="../../api/OpenTK.Platform.Native.X11.X11DisplayComponent.html#OpenTK_Platform_Native_X11_X11DisplayComponent_GetRROutput_OpenTK_Core_Platform_DisplayHandle_"><code>X11DisplayComponent.GetRROutput</code></a></td>
+<td><a class="xref" href="../../api/OpenTK.Platform.Native.X11.X11DisplayComponent.html#OpenTK_Platform_Native_X11_X11DisplayComponent_GetRROutput_OpenTK_Platform_DisplayHandle_"><code>X11DisplayComponent.GetRROutput</code></a></td>
 <td>Get the X11 RandR <code>RROutput</code> for the display handle.</td>
 </tr>
 <tr>
@@ -285,15 +298,19 @@
 <td></td>
 </tr>
 <tr>
-<td><a class="xref" href="../../api/OpenTK.Platform.Native.macOS.MacOSWindowComponent.html#OpenTK_Platform_Native_macOS_MacOSWindowComponent_SetDockIcon_OpenTK_Core_Platform_WindowHandle_OpenTK_Core_Platform_IconHandle_"><code>MacOSWindowComponent.SetDockIcon</code></a></td>
+<td><a class="xref" href="../../api/OpenTK.Platform.Native.macOS.MacOSWindowComponent.html#OpenTK_Platform_Native_macOS_MacOSWindowComponent_SetDockIcon_OpenTK_Platform_WindowHandle_OpenTK_Platform_IconHandle_"><code>MacOSWindowComponent.SetDockIcon</code></a></td>
 <td>Sets the dock icon of the application</td>
 </tr>
 <tr>
-<td><a class="xref" href="../../api/OpenTK.Platform.Native.macOS.MacOSWindowComponent.html#OpenTK_Platform_Native_macOS_MacOSWindowComponent_GetNSWindow_OpenTK_Core_Platform_WindowHandle_"><code>MacOSWindowComponent.GetNSWindow</code></a></td>
+<td><a class="xref" href="../../api/OpenTK.Platform.Native.macOS.MacOSWindowComponent.html#OpenTK_Platform_Native_macOS_MacOSWindowComponent_SetFullscreenDisplayNoSpace_OpenTK_Platform_WindowHandle_OpenTK_Platform_DisplayHandle_"><code>MacOSWindowComponent.SetFullscreenDisplayNoSpace</code></a></td>
+<td>Make the window fullscreen without creating a new space for the window.</td>
+</tr>
+<tr>
+<td><a class="xref" href="../../api/OpenTK.Platform.Native.macOS.MacOSWindowComponent.html#OpenTK_Platform_Native_macOS_MacOSWindowComponent_GetNSWindow_OpenTK_Platform_WindowHandle_"><code>MacOSWindowComponent.GetNSWindow</code></a></td>
 <td>Gets the <code>NSWindow</code> of the window handle. This is an instance of the <code>NSOpenTKWindow</code> subclass of <code>NSWindow</code>.</td>
 </tr>
 <tr>
-<td><a class="xref" href="../../api/OpenTK.Platform.Native.macOS.MacOSWindowComponent.html#OpenTK_Platform_Native_macOS_MacOSWindowComponent_GetNSView_OpenTK_Core_Platform_WindowHandle_"><code>MacOSWindowComponent.GetNSView</code></a></td>
+<td><a class="xref" href="../../api/OpenTK.Platform.Native.macOS.MacOSWindowComponent.html#OpenTK_Platform_Native_macOS_MacOSWindowComponent_GetNSView_OpenTK_Platform_WindowHandle_"><code>MacOSWindowComponent.GetNSView</code></a></td>
 <td>Gets the <code>NSView</code> of the window handle. This is an instance of the <code>NSOpenTKView</code> subclass of <code>NSView</code>.</td>
 </tr>
 <tr>
@@ -301,7 +318,7 @@
 <td></td>
 </tr>
 <tr>
-<td><a class="xref" href="../../api/OpenTK.Platform.Native.macOS.MacOSOpenGLComponent.html#OpenTK_Platform_Native_macOS_MacOSOpenGLComponent_GetNSOpenGLContext_OpenTK_Core_Platform_OpenGLContextHandle_"><code>MacOSOpenGLComponent.GetNSOpenGLContext</code></a></td>
+<td><a class="xref" href="../../api/OpenTK.Platform.Native.macOS.MacOSOpenGLComponent.html#OpenTK_Platform_Native_macOS_MacOSOpenGLComponent_GetNSOpenGLContext_OpenTK_Platform_OpenGLContextHandle_"><code>MacOSOpenGLComponent.GetNSOpenGLContext</code></a></td>
 <td>Gets the <code>NSOpenGLContext</code> of the OpenGL context handle.</td>
 </tr>
 <tr>
@@ -317,19 +334,19 @@
 <td></td>
 </tr>
 <tr>
-<td><a class="xref" href="../../api/OpenTK.Platform.Native.macOS.MacOSDisplayComponent.html#OpenTK_Platform_Native_macOS_MacOSDisplayComponent_GetSafeArea_OpenTK_Core_Platform_DisplayHandle_OpenTK_Mathematics_Box2i__"><code>MacOSDisplayComponent.GetSafeArea</code></a></td>
+<td><a class="xref" href="../../api/OpenTK.Platform.Native.macOS.MacOSDisplayComponent.html#OpenTK_Platform_Native_macOS_MacOSDisplayComponent_GetSafeArea_OpenTK_Platform_DisplayHandle_OpenTK_Mathematics_Box2i__"><code>MacOSDisplayComponent.GetSafeArea</code></a></td>
 <td>Gets the area of the screen that is not covered by things like camera housings.</td>
 </tr>
 <tr>
-<td><a class="xref" href="../../api/OpenTK.Platform.Native.macOS.MacOSDisplayComponent.html#OpenTK_Platform_Native_macOS_MacOSDisplayComponent_GetSafeLeftAuxArea_OpenTK_Core_Platform_DisplayHandle_OpenTK_Mathematics_Box2i__"><code>MacOSDisplayComponent.GetSafeLeftAuxArea</code></a></td>
+<td><a class="xref" href="../../api/OpenTK.Platform.Native.macOS.MacOSDisplayComponent.html#OpenTK_Platform_Native_macOS_MacOSDisplayComponent_GetSafeLeftAuxArea_OpenTK_Platform_DisplayHandle_OpenTK_Mathematics_Box2i__"><code>MacOSDisplayComponent.GetSafeLeftAuxArea</code></a></td>
 <td>Gets the visible area of the screen to the left of the camera housing or an empty area if there is no camera housing.</td>
 </tr>
 <tr>
-<td><a class="xref" href="../../api/OpenTK.Platform.Native.macOS.MacOSDisplayComponent.html#OpenTK_Platform_Native_macOS_MacOSDisplayComponent_GetSafeRightAuxArea_OpenTK_Core_Platform_DisplayHandle_OpenTK_Mathematics_Box2i__"><code>MacOSDisplayComponent.GetSafeRightAuxArea</code></a></td>
+<td><a class="xref" href="../../api/OpenTK.Platform.Native.macOS.MacOSDisplayComponent.html#OpenTK_Platform_Native_macOS_MacOSDisplayComponent_GetSafeRightAuxArea_OpenTK_Platform_DisplayHandle_OpenTK_Mathematics_Box2i__"><code>MacOSDisplayComponent.GetSafeRightAuxArea</code></a></td>
 <td>Gets the visible area of the screen to the right of the camera housing or an empty area of there is no camera housing.</td>
 </tr>
 <tr>
-<td><a class="xref" href="../../api/OpenTK.Platform.Native.macOS.MacOSDisplayComponent.html#OpenTK_Platform_Native_macOS_MacOSDisplayComponent_GetDirectDisplayID_OpenTK_Core_Platform_DisplayHandle_"><code>MacOSDisplayComponent.GetDirectDisplayID</code></a></td>
+<td><a class="xref" href="../../api/OpenTK.Platform.Native.macOS.MacOSDisplayComponent.html#OpenTK_Platform_Native_macOS_MacOSDisplayComponent_GetDirectDisplayID_OpenTK_Platform_DisplayHandle_"><code>MacOSDisplayComponent.GetDirectDisplayID</code></a></td>
 <td>Gets the <code>CGDirectDisplayID</code> for the display handle.</td>
 </tr>
 <tr>
@@ -341,11 +358,11 @@
 <td>Used to create an animated cursor.</td>
 </tr>
 <tr>
-<td><a class="xref" href="../../api/OpenTK.Platform.Native.macOS.MacOSCursorComponent.html#OpenTK_Platform_Native_macOS_MacOSCursorComponent_IsAnimatedCursor_OpenTK_Core_Platform_CursorHandle_"><code>MacOSCursorComponent.IsAnimatedCursor</code></a></td>
+<td><a class="xref" href="../../api/OpenTK.Platform.Native.macOS.MacOSCursorComponent.html#OpenTK_Platform_Native_macOS_MacOSCursorComponent_IsAnimatedCursor_OpenTK_Platform_CursorHandle_"><code>MacOSCursorComponent.IsAnimatedCursor</code></a></td>
 <td>Used to check if a given cursor is animated.</td>
 </tr>
 <tr>
-<td><a class="xref" href="../../api/OpenTK.Platform.Native.macOS.MacOSCursorComponent.html#OpenTK_Platform_Native_macOS_MacOSCursorComponent_UpdateAnimation_OpenTK_Core_Platform_CursorHandle_System_Double_"><code>MacOSCursorComponent.UpdateAnimation</code></a></td>
+<td><a class="xref" href="../../api/OpenTK.Platform.Native.macOS.MacOSCursorComponent.html#OpenTK_Platform_Native_macOS_MacOSCursorComponent_UpdateAnimation_OpenTK_Platform_CursorHandle_System_Double_"><code>MacOSCursorComponent.UpdateAnimation</code></a></td>
 <td>Used to update the animation of a given cursor.</td>
 </tr>
 </tbody>
@@ -369,15 +386,16 @@
 <td>Gets the <code>EGLDisplay</code> used by OpenTK.</td>
 </tr>
 <tr>
-<td><a class="xref" href="../../api/OpenTK.Platform.Native.ANGLE.ANGLEOpenGLComponent.html#OpenTK_Platform_Native_ANGLE_ANGLEOpenGLComponent_GetEglContext_OpenTK_Core_Platform_OpenGLContextHandle_"><code>ANGLEOpenGLComponent.GetEglContext</code></a></td>
+<td><a class="xref" href="../../api/OpenTK.Platform.Native.ANGLE.ANGLEOpenGLComponent.html#OpenTK_Platform_Native_ANGLE_ANGLEOpenGLComponent_GetEglContext_OpenTK_Platform_OpenGLContextHandle_"><code>ANGLEOpenGLComponent.GetEglContext</code></a></td>
 <td>Gets the <code>EGLContext</code> for the OpenGL context.</td>
 </tr>
 <tr>
-<td><a class="xref" href="../../api/OpenTK.Platform.Native.ANGLE.ANGLEOpenGLComponent.html#OpenTK_Platform_Native_ANGLE_ANGLEOpenGLComponent_GetEglSurface_OpenTK_Core_Platform_OpenGLContextHandle_"><code>ANGLEOpenGLComponent.GetEglSurface</code></a></td>
+<td><a class="xref" href="../../api/OpenTK.Platform.Native.ANGLE.ANGLEOpenGLComponent.html#OpenTK_Platform_Native_ANGLE_ANGLEOpenGLComponent_GetEglSurface_OpenTK_Platform_OpenGLContextHandle_"><code>ANGLEOpenGLComponent.GetEglSurface</code></a></td>
 <td>Gets the <code>EGLSurface</code> for the OpenGL context.</td>
 </tr>
 </tbody>
 </table>
+
 </article>
           </div>
 

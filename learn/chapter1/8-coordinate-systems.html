@@ -277,6 +277,7 @@ shader.SetMatrix4(&quot;projection&quot;, projection);
 <p>Since we're using a depth buffer we also want to clear the depth buffer before each render iteration (otherwise the depth information of the previous frame stays in the buffer). Just like clearing the color buffer, we can clear the depth buffer by specifying the <code>ClearBufferMask.DepthBufferBit</code> bit in the glClear function:</p>
 <pre><code class="lang-cs">GL.Clear(ClearBufferMask.ColorBufferBit | ClearBufferMask.DepthBufferBit);
 </code></pre>
+
 </article>
           </div>
 

@@ -1,0 +1,1458 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Struct ContextValues  - OpenTK</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Struct ContextValues ">
+    <meta name="generator" content="docfx ">
+  
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+  
+  
+  
+
+    <meta name="author" content="The Open Toolkit Project">
+    <meta property="og:image" content="https://opentk.net/otkBig.png">
+    <meta property="og:image:width" content="142">
+    <meta property="og:image:height" content="50">
+    <meta property="og:site_name" content="OpenTK">
+    <meta property="og:title" content="Struct ContextValues  - OpenTK">
+    <meta name="theme-color" content="#ffffff">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation" style="background: #0052cc;">
+          <div class="container">
+            <a class="navbar-brand" href="../index.html">
+          <img id="logo" src="../otkBig.png" alt="">
+        </a>
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="OpenTK.Platform.ContextValues">
+
+
+
+  <h1 id="OpenTK_Platform_ContextValues" data-uid="OpenTK.Platform.ContextValues" class="text-break">Struct ContextValues</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="OpenTK.Platform.ContextValues.html">ContextValues</a>&gt;</div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="OpenTK.html">OpenTK</a>.<a class="xref" href="OpenTK.Platform.html">Platform</a></h6>
+  <h6><strong>Assembly</strong>: OpenTK.Platform.dll</h6>
+  <h5 id="OpenTK_Platform_ContextValues_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public struct ContextValues : IEquatable&lt;ContextValues&gt;</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+  <a id="OpenTK_Platform_ContextValues__ctor_" data-uid="OpenTK.Platform.ContextValues.#ctor*"></a>
+  <h4 id="OpenTK_Platform_ContextValues__ctor_System_UInt64_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Boolean_System_Boolean_OpenTK_Platform_ContextPixelFormat_OpenTK_Platform_ContextSwapMethod_System_Int32_" data-uid="OpenTK.Platform.ContextValues.#ctor(System.UInt64,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Boolean,System.Boolean,OpenTK.Platform.ContextPixelFormat,OpenTK.Platform.ContextSwapMethod,System.Int32)">ContextValues(ulong, int, int, int, int, int, int, bool, bool, ContextPixelFormat, ContextSwapMethod, int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ContextValues(ulong id, int redBits, int greenBits, int blueBits, int alphaBits, int depthBits, int stencilBits, bool doubleBuffered, bool sRGBFramebuffer, ContextPixelFormat pixelFormat, ContextSwapMethod swapMethod, int samples)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">redBits</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">greenBits</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">blueBits</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">alphaBits</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">depthBits</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">stencilBits</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">doubleBuffered</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">sRGBFramebuffer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Platform.ContextPixelFormat.html">ContextPixelFormat</a></td>
+        <td><span class="parametername">pixelFormat</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Platform.ContextSwapMethod.html">ContextSwapMethod</a></td>
+        <td><span class="parametername">swapMethod</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">samples</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+</h3>
+  <h4 id="OpenTK_Platform_ContextValues_AlphaBits" data-uid="OpenTK.Platform.ContextValues.AlphaBits">AlphaBits</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int AlphaBits</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Platform_ContextValues_BlueBits" data-uid="OpenTK.Platform.ContextValues.BlueBits">BlueBits</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int BlueBits</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Platform_ContextValues_DepthBits" data-uid="OpenTK.Platform.ContextValues.DepthBits">DepthBits</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int DepthBits</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Platform_ContextValues_DoubleBuffered" data-uid="OpenTK.Platform.ContextValues.DoubleBuffered">DoubleBuffered</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool DoubleBuffered</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Platform_ContextValues_GreenBits" data-uid="OpenTK.Platform.ContextValues.GreenBits">GreenBits</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GreenBits</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Platform_ContextValues_ID" data-uid="OpenTK.Platform.ContextValues.ID">ID</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ulong ID</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Platform_ContextValues_PixelFormat" data-uid="OpenTK.Platform.ContextValues.PixelFormat">PixelFormat</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ContextPixelFormat PixelFormat</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Platform.ContextPixelFormat.html">ContextPixelFormat</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Platform_ContextValues_RedBits" data-uid="OpenTK.Platform.ContextValues.RedBits">RedBits</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int RedBits</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Platform_ContextValues_SRGBFramebuffer" data-uid="OpenTK.Platform.ContextValues.SRGBFramebuffer">SRGBFramebuffer</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SRGBFramebuffer</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Platform_ContextValues_Samples" data-uid="OpenTK.Platform.ContextValues.Samples">Samples</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Samples</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Platform_ContextValues_StencilBits" data-uid="OpenTK.Platform.ContextValues.StencilBits">StencilBits</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int StencilBits</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Platform_ContextValues_SwapMethod" data-uid="OpenTK.Platform.ContextValues.SwapMethod">SwapMethod</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ContextSwapMethod SwapMethod</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Platform.ContextSwapMethod.html">ContextSwapMethod</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+  <a id="OpenTK_Platform_ContextValues_DefaultValuesSelector_" data-uid="OpenTK.Platform.ContextValues.DefaultValuesSelector*"></a>
+  <h4 id="OpenTK_Platform_ContextValues_DefaultValuesSelector_System_Collections_Generic_IReadOnlyList_OpenTK_Platform_ContextValues__OpenTK_Platform_ContextValues_OpenTK_Core_Utility_ILogger_" data-uid="OpenTK.Platform.ContextValues.DefaultValuesSelector(System.Collections.Generic.IReadOnlyList{OpenTK.Platform.ContextValues},OpenTK.Platform.ContextValues,OpenTK.Core.Utility.ILogger)">DefaultValuesSelector(IReadOnlyList&lt;ContextValues&gt;, ContextValues, ILogger?)</h4>
+  <div class="markdown level1 summary"><p>Default context values selector. Prioritizes the requested values with a series of &quot;relaxations&quot; to find a close match.<br>
+The relaxations are done in the following order:</p>
+<ol><li>If no exact match is found try find a format with a larger number of color, depth, or stencil bits.</li><li>If <a class="xref" href="OpenTK.Platform.ContextValues.html#OpenTK_Platform_ContextValues_SRGBFramebuffer">SRGBFramebuffer</a> == false is requested, <a class="xref" href="OpenTK.Platform.ContextValues.html#OpenTK_Platform_ContextValues_SRGBFramebuffer">SRGBFramebuffer</a> == true formats will be accepted.</li><li>If <a class="xref" href="OpenTK.Platform.ContextValues.html#OpenTK_Platform_ContextValues_SwapMethod">SwapMethod</a> == <a class="xref" href="OpenTK.Platform.ContextSwapMethod.html#OpenTK_Platform_ContextSwapMethod_Undefined">Undefined</a>, any swap method will be accepted.</li><li>If <a class="xref" href="OpenTK.Platform.ContextValues.html#OpenTK_Platform_ContextValues_SRGBFramebuffer">SRGBFramebuffer</a> == true, accept <a class="xref" href="OpenTK.Platform.ContextValues.html#OpenTK_Platform_ContextValues_SRGBFramebuffer">SRGBFramebuffer</a> == false formats.</li><li>Accept any <a class="xref" href="OpenTK.Platform.ContextValues.html#OpenTK_Platform_ContextValues_PixelFormat">PixelFormat</a>.</li><li>Decrement <a class="xref" href="OpenTK.Platform.ContextValues.html#OpenTK_Platform_ContextValues_Samples">Samples</a> by one at a time until 0 and see if any alternative sample counts are possible.</li><li>Accept any <a class="xref" href="OpenTK.Platform.ContextValues.html#OpenTK_Platform_ContextValues_SwapMethod">SwapMethod</a>.</li><li>Allow one of color bits (<a class="xref" href="OpenTK.Platform.ContextValues.html#OpenTK_Platform_ContextValues_RedBits">RedBits</a>, <a class="xref" href="OpenTK.Platform.ContextValues.html#OpenTK_Platform_ContextValues_GreenBits">GreenBits</a>, <a class="xref" href="OpenTK.Platform.ContextValues.html#OpenTK_Platform_ContextValues_BlueBits">BlueBits</a>, and <a class="xref" href="OpenTK.Platform.ContextValues.html#OpenTK_Platform_ContextValues_AlphaBits">AlphaBits</a>), <a class="xref" href="OpenTK.Platform.ContextValues.html#OpenTK_Platform_ContextValues_DepthBits">DepthBits</a>, or <a class="xref" href="OpenTK.Platform.ContextValues.html#OpenTK_Platform_ContextValues_StencilBits">StencilBits</a> to be lower than requested.</li><li>Allow two of color bits (<a class="xref" href="OpenTK.Platform.ContextValues.html#OpenTK_Platform_ContextValues_RedBits">RedBits</a>, <a class="xref" href="OpenTK.Platform.ContextValues.html#OpenTK_Platform_ContextValues_GreenBits">GreenBits</a>, <a class="xref" href="OpenTK.Platform.ContextValues.html#OpenTK_Platform_ContextValues_BlueBits">BlueBits</a>, and <a class="xref" href="OpenTK.Platform.ContextValues.html#OpenTK_Platform_ContextValues_AlphaBits">AlphaBits</a>), <a class="xref" href="OpenTK.Platform.ContextValues.html#OpenTK_Platform_ContextValues_DepthBits">DepthBits</a>, or <a class="xref" href="OpenTK.Platform.ContextValues.html#OpenTK_Platform_ContextValues_StencilBits">StencilBits</a> to be lower than requested.</li><li>Relax all bit requirements.</li><li>If all relaxations fail, select the first option in the list.</li></ol>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int DefaultValuesSelector(IReadOnlyList&lt;ContextValues&gt; options, ContextValues requested, ILogger? logger)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="OpenTK.Platform.ContextValues.html">ContextValues</a>&gt;</td>
+        <td><span class="parametername">options</span></td>
+        <td><p>The possible context values.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Platform.ContextValues.html">ContextValues</a></td>
+        <td><span class="parametername">requested</span></td>
+        <td><p>The requested context values.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Core.Utility.ILogger.html">ILogger</a></td>
+        <td><span class="parametername">logger</span></td>
+        <td><p>A logger to use for logging.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><p>The index of the selected &quot;best match&quot; context values.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Platform_ContextValues_Equals_" data-uid="OpenTK.Platform.ContextValues.Equals*"></a>
+  <h4 id="OpenTK_Platform_ContextValues_Equals_OpenTK_Platform_ContextValues_" data-uid="OpenTK.Platform.ContextValues.Equals(OpenTK.Platform.ContextValues)">Equals(ContextValues)</h4>
+  <div class="markdown level1 summary"><p>Indicates whether the current object is equal to another object of the same type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(ContextValues other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Platform.ContextValues.html">ContextValues</a></td>
+        <td><span class="parametername">other</span></td>
+        <td><p>An object to compare with this object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Platform_ContextValues_Equals_" data-uid="OpenTK.Platform.ContextValues.Equals*"></a>
+  <h4 id="OpenTK_Platform_ContextValues_Equals_System_Object_" data-uid="OpenTK.Platform.ContextValues.Equals(System.Object)">Equals(object?)</h4>
+  <div class="markdown level1 summary"><p>Indicates whether this instance and a specified object are equal.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object? obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></td>
+        <td><span class="parametername">obj</span></td>
+        <td><p>The object to compare with the current instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if <code class="paramref">obj</code> and this instance are the same type and represent the same value; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetype.equals">ValueType.Equals(object)</a></div>
+  <a id="OpenTK_Platform_ContextValues_GetHashCode_" data-uid="OpenTK.Platform.ContextValues.GetHashCode*"></a>
+  <h4 id="OpenTK_Platform_ContextValues_GetHashCode" data-uid="OpenTK.Platform.ContextValues.GetHashCode">GetHashCode()</h4>
+  <div class="markdown level1 summary"><p>Returns the hash code for this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><p>A 32-bit signed integer that is the hash code for this instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode">ValueType.GetHashCode()</a></div>
+  <a id="OpenTK_Platform_ContextValues_HasEqualColorBits_" data-uid="OpenTK.Platform.ContextValues.HasEqualColorBits*"></a>
+  <h4 id="OpenTK_Platform_ContextValues_HasEqualColorBits_OpenTK_Platform_ContextValues_OpenTK_Platform_ContextValues_" data-uid="OpenTK.Platform.ContextValues.HasEqualColorBits(OpenTK.Platform.ContextValues,OpenTK.Platform.ContextValues)">HasEqualColorBits(ContextValues, ContextValues)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool HasEqualColorBits(ContextValues option, ContextValues requested)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Platform.ContextValues.html">ContextValues</a></td>
+        <td><span class="parametername">option</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Platform.ContextValues.html">ContextValues</a></td>
+        <td><span class="parametername">requested</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Platform_ContextValues_HasEqualDepthBits_" data-uid="OpenTK.Platform.ContextValues.HasEqualDepthBits*"></a>
+  <h4 id="OpenTK_Platform_ContextValues_HasEqualDepthBits_OpenTK_Platform_ContextValues_OpenTK_Platform_ContextValues_" data-uid="OpenTK.Platform.ContextValues.HasEqualDepthBits(OpenTK.Platform.ContextValues,OpenTK.Platform.ContextValues)">HasEqualDepthBits(ContextValues, ContextValues)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool HasEqualDepthBits(ContextValues option, ContextValues requested)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Platform.ContextValues.html">ContextValues</a></td>
+        <td><span class="parametername">option</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Platform.ContextValues.html">ContextValues</a></td>
+        <td><span class="parametername">requested</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Platform_ContextValues_HasEqualDoubleBuffer_" data-uid="OpenTK.Platform.ContextValues.HasEqualDoubleBuffer*"></a>
+  <h4 id="OpenTK_Platform_ContextValues_HasEqualDoubleBuffer_OpenTK_Platform_ContextValues_OpenTK_Platform_ContextValues_" data-uid="OpenTK.Platform.ContextValues.HasEqualDoubleBuffer(OpenTK.Platform.ContextValues,OpenTK.Platform.ContextValues)">HasEqualDoubleBuffer(ContextValues, ContextValues)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool HasEqualDoubleBuffer(ContextValues option, ContextValues requested)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Platform.ContextValues.html">ContextValues</a></td>
+        <td><span class="parametername">option</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Platform.ContextValues.html">ContextValues</a></td>
+        <td><span class="parametername">requested</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Platform_ContextValues_HasEqualMSAA_" data-uid="OpenTK.Platform.ContextValues.HasEqualMSAA*"></a>
+  <h4 id="OpenTK_Platform_ContextValues_HasEqualMSAA_OpenTK_Platform_ContextValues_OpenTK_Platform_ContextValues_" data-uid="OpenTK.Platform.ContextValues.HasEqualMSAA(OpenTK.Platform.ContextValues,OpenTK.Platform.ContextValues)">HasEqualMSAA(ContextValues, ContextValues)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool HasEqualMSAA(ContextValues option, ContextValues requested)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Platform.ContextValues.html">ContextValues</a></td>
+        <td><span class="parametername">option</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Platform.ContextValues.html">ContextValues</a></td>
+        <td><span class="parametername">requested</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Platform_ContextValues_HasEqualPixelFormat_" data-uid="OpenTK.Platform.ContextValues.HasEqualPixelFormat*"></a>
+  <h4 id="OpenTK_Platform_ContextValues_HasEqualPixelFormat_OpenTK_Platform_ContextValues_OpenTK_Platform_ContextValues_" data-uid="OpenTK.Platform.ContextValues.HasEqualPixelFormat(OpenTK.Platform.ContextValues,OpenTK.Platform.ContextValues)">HasEqualPixelFormat(ContextValues, ContextValues)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool HasEqualPixelFormat(ContextValues option, ContextValues requested)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Platform.ContextValues.html">ContextValues</a></td>
+        <td><span class="parametername">option</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Platform.ContextValues.html">ContextValues</a></td>
+        <td><span class="parametername">requested</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Platform_ContextValues_HasEqualSRGB_" data-uid="OpenTK.Platform.ContextValues.HasEqualSRGB*"></a>
+  <h4 id="OpenTK_Platform_ContextValues_HasEqualSRGB_OpenTK_Platform_ContextValues_OpenTK_Platform_ContextValues_" data-uid="OpenTK.Platform.ContextValues.HasEqualSRGB(OpenTK.Platform.ContextValues,OpenTK.Platform.ContextValues)">HasEqualSRGB(ContextValues, ContextValues)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool HasEqualSRGB(ContextValues option, ContextValues requested)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Platform.ContextValues.html">ContextValues</a></td>
+        <td><span class="parametername">option</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Platform.ContextValues.html">ContextValues</a></td>
+        <td><span class="parametername">requested</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Platform_ContextValues_HasEqualStencilBits_" data-uid="OpenTK.Platform.ContextValues.HasEqualStencilBits*"></a>
+  <h4 id="OpenTK_Platform_ContextValues_HasEqualStencilBits_OpenTK_Platform_ContextValues_OpenTK_Platform_ContextValues_" data-uid="OpenTK.Platform.ContextValues.HasEqualStencilBits(OpenTK.Platform.ContextValues,OpenTK.Platform.ContextValues)">HasEqualStencilBits(ContextValues, ContextValues)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool HasEqualStencilBits(ContextValues option, ContextValues requested)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Platform.ContextValues.html">ContextValues</a></td>
+        <td><span class="parametername">option</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Platform.ContextValues.html">ContextValues</a></td>
+        <td><span class="parametername">requested</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Platform_ContextValues_HasEqualSwapMethod_" data-uid="OpenTK.Platform.ContextValues.HasEqualSwapMethod*"></a>
+  <h4 id="OpenTK_Platform_ContextValues_HasEqualSwapMethod_OpenTK_Platform_ContextValues_OpenTK_Platform_ContextValues_" data-uid="OpenTK.Platform.ContextValues.HasEqualSwapMethod(OpenTK.Platform.ContextValues,OpenTK.Platform.ContextValues)">HasEqualSwapMethod(ContextValues, ContextValues)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool HasEqualSwapMethod(ContextValues option, ContextValues requested)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Platform.ContextValues.html">ContextValues</a></td>
+        <td><span class="parametername">option</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Platform.ContextValues.html">ContextValues</a></td>
+        <td><span class="parametername">requested</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Platform_ContextValues_HasGreaterOrEqualColorBits_" data-uid="OpenTK.Platform.ContextValues.HasGreaterOrEqualColorBits*"></a>
+  <h4 id="OpenTK_Platform_ContextValues_HasGreaterOrEqualColorBits_OpenTK_Platform_ContextValues_OpenTK_Platform_ContextValues_" data-uid="OpenTK.Platform.ContextValues.HasGreaterOrEqualColorBits(OpenTK.Platform.ContextValues,OpenTK.Platform.ContextValues)">HasGreaterOrEqualColorBits(ContextValues, ContextValues)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool HasGreaterOrEqualColorBits(ContextValues option, ContextValues requested)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Platform.ContextValues.html">ContextValues</a></td>
+        <td><span class="parametername">option</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Platform.ContextValues.html">ContextValues</a></td>
+        <td><span class="parametername">requested</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Platform_ContextValues_HasGreaterOrEqualDepthBits_" data-uid="OpenTK.Platform.ContextValues.HasGreaterOrEqualDepthBits*"></a>
+  <h4 id="OpenTK_Platform_ContextValues_HasGreaterOrEqualDepthBits_OpenTK_Platform_ContextValues_OpenTK_Platform_ContextValues_" data-uid="OpenTK.Platform.ContextValues.HasGreaterOrEqualDepthBits(OpenTK.Platform.ContextValues,OpenTK.Platform.ContextValues)">HasGreaterOrEqualDepthBits(ContextValues, ContextValues)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool HasGreaterOrEqualDepthBits(ContextValues option, ContextValues requested)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Platform.ContextValues.html">ContextValues</a></td>
+        <td><span class="parametername">option</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Platform.ContextValues.html">ContextValues</a></td>
+        <td><span class="parametername">requested</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Platform_ContextValues_HasGreaterOrEqualStencilBits_" data-uid="OpenTK.Platform.ContextValues.HasGreaterOrEqualStencilBits*"></a>
+  <h4 id="OpenTK_Platform_ContextValues_HasGreaterOrEqualStencilBits_OpenTK_Platform_ContextValues_OpenTK_Platform_ContextValues_" data-uid="OpenTK.Platform.ContextValues.HasGreaterOrEqualStencilBits(OpenTK.Platform.ContextValues,OpenTK.Platform.ContextValues)">HasGreaterOrEqualStencilBits(ContextValues, ContextValues)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool HasGreaterOrEqualStencilBits(ContextValues option, ContextValues requested)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Platform.ContextValues.html">ContextValues</a></td>
+        <td><span class="parametername">option</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Platform.ContextValues.html">ContextValues</a></td>
+        <td><span class="parametername">requested</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Platform_ContextValues_HasLessOrEqualColorBits_" data-uid="OpenTK.Platform.ContextValues.HasLessOrEqualColorBits*"></a>
+  <h4 id="OpenTK_Platform_ContextValues_HasLessOrEqualColorBits_OpenTK_Platform_ContextValues_OpenTK_Platform_ContextValues_" data-uid="OpenTK.Platform.ContextValues.HasLessOrEqualColorBits(OpenTK.Platform.ContextValues,OpenTK.Platform.ContextValues)">HasLessOrEqualColorBits(ContextValues, ContextValues)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool HasLessOrEqualColorBits(ContextValues option, ContextValues requested)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Platform.ContextValues.html">ContextValues</a></td>
+        <td><span class="parametername">option</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Platform.ContextValues.html">ContextValues</a></td>
+        <td><span class="parametername">requested</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Platform_ContextValues_HasLessOrEqualDepthBits_" data-uid="OpenTK.Platform.ContextValues.HasLessOrEqualDepthBits*"></a>
+  <h4 id="OpenTK_Platform_ContextValues_HasLessOrEqualDepthBits_OpenTK_Platform_ContextValues_OpenTK_Platform_ContextValues_" data-uid="OpenTK.Platform.ContextValues.HasLessOrEqualDepthBits(OpenTK.Platform.ContextValues,OpenTK.Platform.ContextValues)">HasLessOrEqualDepthBits(ContextValues, ContextValues)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool HasLessOrEqualDepthBits(ContextValues option, ContextValues requested)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Platform.ContextValues.html">ContextValues</a></td>
+        <td><span class="parametername">option</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Platform.ContextValues.html">ContextValues</a></td>
+        <td><span class="parametername">requested</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Platform_ContextValues_HasLessOrEqualStencilBits_" data-uid="OpenTK.Platform.ContextValues.HasLessOrEqualStencilBits*"></a>
+  <h4 id="OpenTK_Platform_ContextValues_HasLessOrEqualStencilBits_OpenTK_Platform_ContextValues_OpenTK_Platform_ContextValues_" data-uid="OpenTK.Platform.ContextValues.HasLessOrEqualStencilBits(OpenTK.Platform.ContextValues,OpenTK.Platform.ContextValues)">HasLessOrEqualStencilBits(ContextValues, ContextValues)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool HasLessOrEqualStencilBits(ContextValues option, ContextValues requested)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Platform.ContextValues.html">ContextValues</a></td>
+        <td><span class="parametername">option</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Platform.ContextValues.html">ContextValues</a></td>
+        <td><span class="parametername">requested</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Platform_ContextValues_IsEqualExcludingID_" data-uid="OpenTK.Platform.ContextValues.IsEqualExcludingID*"></a>
+  <h4 id="OpenTK_Platform_ContextValues_IsEqualExcludingID_OpenTK_Platform_ContextValues_OpenTK_Platform_ContextValues_" data-uid="OpenTK.Platform.ContextValues.IsEqualExcludingID(OpenTK.Platform.ContextValues,OpenTK.Platform.ContextValues)">IsEqualExcludingID(ContextValues, ContextValues)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsEqualExcludingID(ContextValues option, ContextValues requested)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Platform.ContextValues.html">ContextValues</a></td>
+        <td><span class="parametername">option</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Platform.ContextValues.html">ContextValues</a></td>
+        <td><span class="parametername">requested</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Platform_ContextValues_ToString_" data-uid="OpenTK.Platform.ContextValues.ToString*"></a>
+  <h4 id="OpenTK_Platform_ContextValues_ToString" data-uid="OpenTK.Platform.ContextValues.ToString">ToString()</h4>
+  <div class="markdown level1 summary"><p>Returns the fully qualified type name of this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override readonly string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>The fully qualified type name.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetype.tostring">ValueType.ToString()</a></div>
+  <h3 id="operators">Operators
+</h3>
+  <a id="OpenTK_Platform_ContextValues_op_Equality_" data-uid="OpenTK.Platform.ContextValues.op_Equality*"></a>
+  <h4 id="OpenTK_Platform_ContextValues_op_Equality_OpenTK_Platform_ContextValues_OpenTK_Platform_ContextValues_" data-uid="OpenTK.Platform.ContextValues.op_Equality(OpenTK.Platform.ContextValues,OpenTK.Platform.ContextValues)">operator ==(ContextValues, ContextValues)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(ContextValues left, ContextValues right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Platform.ContextValues.html">ContextValues</a></td>
+        <td><span class="parametername">left</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Platform.ContextValues.html">ContextValues</a></td>
+        <td><span class="parametername">right</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Platform_ContextValues_op_Inequality_" data-uid="OpenTK.Platform.ContextValues.op_Inequality*"></a>
+  <h4 id="OpenTK_Platform_ContextValues_op_Inequality_OpenTK_Platform_ContextValues_OpenTK_Platform_ContextValues_" data-uid="OpenTK.Platform.ContextValues.op_Inequality(OpenTK.Platform.ContextValues,OpenTK.Platform.ContextValues)">operator !=(ContextValues, ContextValues)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(ContextValues left, ContextValues right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Platform.ContextValues.html">ContextValues</a></td>
+        <td><span class="parametername">left</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Platform.ContextValues.html">ContextValues</a></td>
+        <td><span class="parametername">right</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable&lt;T&gt;</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

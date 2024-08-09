@@ -79,6 +79,7 @@
 <p>ANGLE allows for the creation of compliant OpenGL ES contexts running on underlying platform APIs. Most often used by browsers to provide WebGL, but also useful for writing code that is portable between desktop applications and mobile phones. PAL2 has built-in support for ANGLE using <a class="xref" href="../../api/OpenTK.Platform.Native.ANGLE.ANGLEOpenGLComponent.html"><code>ANGLEOpenGLComponent</code></a>. <a href=""><code>PlatformComponents.PreferANGLE</code></a> can be used to prefer loading <code>ANGLEOpenGLComponent</code> over the native <code>IOpenGLComponent</code>. Contexts created by <code>ANGLEOpenGLComponent</code> will be OpenGL ES (<strong>not</strong> Desktop OpenGL contexts) contexts of thee requested version.</p>
 <p>To be able to run <code>ANGLEOpenGLComponent</code> the ANGLE native dependencies need to be available to load. On windows those are: <code>libEGL.dll</code>, <code>libGLESv1_CM.dll</code>, <code>libGLESv2.dll</code>, and <code>d3dcompiler_47.dll</code> (as of 2023-10-14).</p>
 <p>For other platforms such as linux and macOS other dependencies are needed. These will be documented in time, and ideally a nuget package with the native ANGLE dependencies will be created.</p>
+
 </article>
           </div>
 

@@ -77,58 +77,80 @@
 <h1 id="components">Components</h1>
 
 <p>PAL2 is build on top of a set of components that are responsible for their own part of the platform API. The idea is to allow partial implementations of platforms to easily be created and allow support for new platforms to be added in steps. It also groups related APIs into a specific namespace.</p>
-<p>There are currently 10 components in PAL2.</p>
+<p>There are currently 12 components in PAL2.</p>
 <table>
 <thead>
 <tr>
+<th>Toolkit</th>
 <th>Component</th>
 <th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><a class="xref" href="../../api/OpenTK.Core.Platform.IWindowComponent.html"><code>IWindowComponent</code></a></td>
+<td><code>Toolkit.Window</code></td>
+<td><a class="xref" href="../../api/OpenTK.Platform.IWindowComponent.html"><code>IWindowComponent</code></a></td>
 <td>This component is responsible for creating, destroying and managing windows. It is also responsible for processing events.</td>
 </tr>
 <tr>
-<td><a class="xref" href="../../api/OpenTK.Core.Platform.IOpenGLComponent.html"><code>IOpenGLComponent</code></a></td>
+<td><code>Toolkit.OpenGL</code></td>
+<td><a class="xref" href="../../api/OpenTK.Platform.IOpenGLComponent.html"><code>IOpenGLComponent</code></a></td>
 <td>This components is responsible for creating and managing OpenGL contexts. <code>SwapBuffers()</code> lives here.</td>
 </tr>
 <tr>
-<td><a class="xref" href="../../api/OpenTK.Core.Platform.IDisplayComponent.html"><code>IDisplayComponent</code></a></td>
+<td><code>Toolkit.Vulkan</code></td>
+<td><a class="xref" href="../../api/OpenTK.Platform.IVulkanComponent.html"><code>IVulkanComponent</code></a></td>
+<td>This components contains convenience functions for creating a vulkan surface from a window.</td>
+</tr>
+<tr>
+<td><code>Toolkit.Display</code></td>
+<td><a class="xref" href="../../api/OpenTK.Platform.IDisplayComponent.html"><code>IDisplayComponent</code></a></td>
 <td>This component contains functions for retrieving information about displays (aka, monitors or screens) connected to the system. Allows for enumeration of video modes etc.</td>
 </tr>
 <tr>
-<td><a class="xref" href="../../api/OpenTK.Core.Platform.ICursorComponent.html"><code>ICursorComponent</code></a></td>
+<td><code>Toolkit.Cursor</code></td>
+<td><a class="xref" href="../../api/OpenTK.Platform.ICursorComponent.html"><code>ICursorComponent</code></a></td>
 <td>This component is responsible for loading and managing cursor images that can be set as the mouse cursor.</td>
 </tr>
 <tr>
-<td><a class="xref" href="../../api/OpenTK.Core.Platform.IIconComponent.html"><code>IIconComponent</code></a></td>
+<td><code>Toolkit.Icon</code></td>
+<td><a class="xref" href="../../api/OpenTK.Platform.IIconComponent.html"><code>IIconComponent</code></a></td>
 <td>This component is responsible for loading and managing icon images that can be used as window icons.</td>
 </tr>
 <tr>
-<td><a class="xref" href="../../api/OpenTK.Core.Platform.IMouseComponent.html"><code>IMouseComponent</code></a></td>
+<td><code>Toolkit.Mouse</code></td>
+<td><a class="xref" href="../../api/OpenTK.Platform.IMouseComponent.html"><code>IMouseComponent</code></a></td>
 <td>This component allows for getting and setting of the mouse cursor position.</td>
 </tr>
 <tr>
-<td><a class="xref" href="../../api/OpenTK.Core.Platform.IKeyboardComponent.html"><code>IKeyboardComponent</code></a></td>
+<td><code>Toolkit.Keyboard</code></td>
+<td><a class="xref" href="../../api/OpenTK.Platform.IKeyboardComponent.html"><code>IKeyboardComponent</code></a></td>
 <td>This component is responsible for translating platform dependent keycodes and scancodes to a cross platform representation. This component also exposes information about keyboard layout and has functions for IME input.</td>
 </tr>
 <tr>
-<td><a class="xref" href="../../api/OpenTK.Core.Platform.IJoystickComponent.html"><code>IJoystickComponent</code></a></td>
+<td><code>Toolkit.Joystick</code></td>
+<td><a class="xref" href="../../api/OpenTK.Platform.IJoystickComponent.html"><code>IJoystickComponent</code></a></td>
 <td>This component is responsible for exposing joystick input and interfacing with joystick controllers.</td>
 </tr>
 <tr>
-<td><a class="xref" href="../../api/OpenTK.Core.Platform.IClipboardComponent.html"><code>IClipboardComponent</code></a></td>
+<td><code>Toolkit.Clipboard</code></td>
+<td><a class="xref" href="../../api/OpenTK.Platform.IClipboardComponent.html"><code>IClipboardComponent</code></a></td>
 <td>This component is used to read and write to the clipboard.</td>
 </tr>
 <tr>
-<td><a class="xref" href="../../api/OpenTK.Core.Platform.IShellComponent.html"><code>IShellComponent</code></a></td>
+<td><code>Toolkit.Shell</code></td>
+<td><a class="xref" href="../../api/OpenTK.Platform.IShellComponent.html"><code>IShellComponent</code></a></td>
 <td>This component exposes functions for interacting with the system more generally. Things like battery status and user prefered theme is exposed here.</td>
+</tr>
+<tr>
+<td><code>Toolkit.Dialog</code></td>
+<td><a class="xref" href="../../api/OpenTK.Platform.IDialogComponent.html"><code>IDialogComponent</code></a></td>
+<td>This component has functions for creating modal message boxes and open/save file dialogs.</td>
 </tr>
 </tbody>
 </table>
 <p>Some platform implementation of these interfaces contains platform specific functions that can be called. A complete description of these function can be found in <a href="Platform-Specific-Settings.html">Platform Spcific Settings</a>.</p>
+
 </article>
           </div>
 

@@ -5,11 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Enum WindowHintBool
-  - OpenTK</title>
+    <title>Enum WindowHintBool  - OpenTK</title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Enum WindowHintBool
- ">
+    <meta name="title" content="Enum WindowHintBool ">
     <meta name="generator" content="docfx ">
   
     <link rel="shortcut icon" href="../favicon.ico">
@@ -27,8 +25,7 @@
     <meta property="og:image:width" content="142">
     <meta property="og:image:height" content="50">
     <meta property="og:site_name" content="OpenTK">
-    <meta property="og:title" content="Enum WindowHintBool
-  - OpenTK">
+    <meta property="og:title" content="Enum WindowHintBool  - OpenTK">
     <meta name="theme-color" content="#ffffff">
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
@@ -81,8 +78,7 @@
 
 
 
-  <h1 id="OpenTK_Windowing_GraphicsLibraryFramework_WindowHintBool" data-uid="OpenTK.Windowing.GraphicsLibraryFramework.WindowHintBool" class="text-break">Enum WindowHintBool
-</h1>
+  <h1 id="OpenTK_Windowing_GraphicsLibraryFramework_WindowHintBool" data-uid="OpenTK.Windowing.GraphicsLibraryFramework.WindowHintBool" class="text-break">Enum WindowHintBool</h1>
   <div class="markdown level0 summary"><p>Context related boolean attributes.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
@@ -101,7 +97,7 @@
         <th>Description</th>
       </tr>
     <thead>
-    <tbody>
+    </thead></thead><tbody>
       <tr>
         <td id="OpenTK_Windowing_GraphicsLibraryFramework_WindowHintBool_AutoIconify">AutoIconify</td>
         <td><p>Specifies whether the full screen window will automatically iconify and restore
@@ -113,6 +109,24 @@ Possible values are <code>true</code> and <code>false</code>. This hint is ignor
         <td id="OpenTK_Windowing_GraphicsLibraryFramework_WindowHintBool_CenterCursor">CenterCursor</td>
         <td><p>Specifies whether the cursor should be centered over newly created full screen windows.
 Possible values are <code>true</code> and <code>false</code>. This hint is ignored for windowed mode windows.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="OpenTK_Windowing_GraphicsLibraryFramework_WindowHintBool_CocoaGraphicsSwitching">CocoaGraphicsSwitching</td>
+        <td><p>Specifies whether to in Automatic Graphics Switching, i.e.
+to allow the system to choose the integrated GPU for the OpenGL context and move it between
+GPUs if necessary or whether to force it to always run on the discrete GPU.
+This only affects systems with both integrated and discrete GPUs.
+Possible values are GLFW_TRUE and GLFW_FALSE. This is ignored on other platforms.</p>
+<p>Simpler programs and tools may want to enable this to save power, while games and other applications performing advanced rendering will want to leave it disabled.</p>
+<p>A bundled application that wishes to participate in Automatic Graphics Switching should also declare this in its Info.plist by setting the NSSupportsAutomaticGraphicsSwitching key to true.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="OpenTK_Windowing_GraphicsLibraryFramework_WindowHintBool_CocoaRetinaFramebuffer">CocoaRetinaFramebuffer</td>
+        <td><p>Specifies whether to use full resolution framebuffers on Retina displays.
+Possible values are GLFW_TRUE and GLFW_FALSE.
+This is ignored on other platforms.</p>
 </td>
       </tr>
       <tr>
@@ -197,6 +211,27 @@ This is set on creation with the window hint with the same name.</p>
 </td>
       </tr>
       <tr>
+        <td id="OpenTK_Windowing_GraphicsLibraryFramework_WindowHintBool_ScaleFramebuffer">ScaleFramebuffer</td>
+        <td><p>Specifies whether the framebuffer should be resized based on content scale changes.
+This can be because of a global user settings change or because the window was moved to a monitor with different scale settings.</p>
+<p>This hint only has an effect on platforms where screen coordinates can be scaled relative to pixel coordinates,
+such as macOS and Wayland.
+On platforms like Windows and X11 the framebuffer and window content area sizes always map 1:1.</p>
+<p>This is the new name, introduced in GLFW 3.4.
+The older <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.WindowHintBool.html#OpenTK_Windowing_GraphicsLibraryFramework_WindowHintBool_CocoaRetinaFramebuffer">CocoaRetinaFramebuffer</a> name is also available for compatibility.
+Both names modify the same hint value.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="OpenTK_Windowing_GraphicsLibraryFramework_WindowHintBool_ScaleToMonitor">ScaleToMonitor</td>
+        <td><p>Specifies whether the window content area should be resized based on content scale changes.
+This can be because of a global user settings change or because the window was moved to a monitor with different scale settings.</p>
+<p>This hint only has an effect on platforms where screen coordinates and pixels always map 1:1,
+such as Windows and X11.
+On platforms like macOS the resolution of the framebuffer can change independently of the window size.</p>
+</td>
+      </tr>
+      <tr>
         <td id="OpenTK_Windowing_GraphicsLibraryFramework_WindowHintBool_SrgbCapable">SrgbCapable</td>
         <td><p>Specifies whether the framebuffer should be sRGB capable.
 If supported, a created OpenGL context will support the
@@ -224,8 +259,24 @@ Window visibility can be controlled with <a class="xref" href="OpenTK.Windowing.
 and initial visibility is controlled by the window hint with the same name.</p>
 </td>
       </tr>
+      <tr>
+        <td id="OpenTK_Windowing_GraphicsLibraryFramework_WindowHintBool_Win32KeyboardMenu">Win32KeyboardMenu</td>
+        <td><p>Specifies whether to allow access to the window menu via the Alt+Space and Alt-and-then-Space keyboard shortcuts.
+This is ignored on other platforms.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="OpenTK_Windowing_GraphicsLibraryFramework_WindowHintBool_Win32ShowDefault">Win32ShowDefault</td>
+        <td><p>Specifies whether to show the window the way specified in the program's STARTUPINFO when it is shown for the first time.
+This is the same information as the Run option in the shortcut properties window.
+If this information was not specified when the program was started,
+GLFW behaves as if this hint was set to GLFW_FALSE.
+Possible values are GLFW_TRUE and GLFW_FALSE.
+This is ignored on other platforms.</p>
+</td>
+      </tr>
     </tbody>
-  </thead></thead></table>
+  </table>
   <h5 id="OpenTK_Windowing_GraphicsLibraryFramework_WindowHintBool_seealso">See Also</h5>
   <div class="seealso">
       <div><a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.html#OpenTK_Windowing_GraphicsLibraryFramework_GLFW_WindowHint_OpenTK_Windowing_GraphicsLibraryFramework_WindowHintBool_System_Boolean_">WindowHint</a>(<a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.WindowHintBool.html">WindowHintBool</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>)</div>

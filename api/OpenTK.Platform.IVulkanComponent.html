@@ -1,0 +1,282 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IVulkanComponent  - OpenTK</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IVulkanComponent ">
+    <meta name="generator" content="docfx ">
+  
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+  
+  
+  
+
+    <meta name="author" content="The Open Toolkit Project">
+    <meta property="og:image" content="https://opentk.net/otkBig.png">
+    <meta property="og:image:width" content="142">
+    <meta property="og:image:height" content="50">
+    <meta property="og:site_name" content="OpenTK">
+    <meta property="og:title" content="Interface IVulkanComponent  - OpenTK">
+    <meta name="theme-color" content="#ffffff">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation" style="background: #0052cc;">
+          <div class="container">
+            <a class="navbar-brand" href="../index.html">
+          <img id="logo" src="../otkBig.png" alt="">
+        </a>
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="OpenTK.Platform.IVulkanComponent">
+
+
+
+  <h1 id="OpenTK_Platform_IVulkanComponent" data-uid="OpenTK.Platform.IVulkanComponent" class="text-break">Interface IVulkanComponent</h1>
+  <div class="markdown level0 summary"><p>Interface for creating and interacting with vulkan.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="OpenTK.Platform.IPalComponent.html#OpenTK_Platform_IPalComponent_Name">IPalComponent.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenTK.Platform.IPalComponent.html#OpenTK_Platform_IPalComponent_Provides">IPalComponent.Provides</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenTK.Platform.IPalComponent.html#OpenTK_Platform_IPalComponent_Logger">IPalComponent.Logger</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenTK.Platform.IPalComponent.html#OpenTK_Platform_IPalComponent_Initialize_OpenTK_Platform_ToolkitOptions_">IPalComponent.Initialize(ToolkitOptions)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="OpenTK.html">OpenTK</a>.<a class="xref" href="OpenTK.Platform.html">Platform</a></h6>
+  <h6><strong>Assembly</strong>: OpenTK.Platform.dll</h6>
+  <h5 id="OpenTK_Platform_IVulkanComponent_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IVulkanComponent : IPalComponent</code></pre>
+  </div>
+  <h3 id="methods">Methods
+</h3>
+  <a id="OpenTK_Platform_IVulkanComponent_CreateWindowSurface_" data-uid="OpenTK.Platform.IVulkanComponent.CreateWindowSurface*"></a>
+  <h4 id="OpenTK_Platform_IVulkanComponent_CreateWindowSurface_OpenTK_Graphics_Vulkan_VkInstance_OpenTK_Platform_WindowHandle_OpenTK_Graphics_Vulkan_VkAllocationCallbacks__OpenTK_Graphics_Vulkan_VkSurfaceKHR__" data-uid="OpenTK.Platform.IVulkanComponent.CreateWindowSurface(OpenTK.Graphics.Vulkan.VkInstance,OpenTK.Platform.WindowHandle,OpenTK.Graphics.Vulkan.VkAllocationCallbacks*,OpenTK.Graphics.Vulkan.VkSurfaceKHR@)">CreateWindowSurface(VkInstance, WindowHandle, VkAllocationCallbacks*, out VkSurfaceKHR)</h4>
+  <div class="markdown level1 summary"><p>Creates a Vulkan surface for the specified window.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">VkResult CreateWindowSurface(VkInstance instance, WindowHandle window, VkAllocationCallbacks* allocator, out VkSurfaceKHR surface)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Graphics.Vulkan.VkInstance.html">VkInstance</a></td>
+        <td><span class="parametername">instance</span></td>
+        <td><p>The instance to create the surface with.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Platform.WindowHandle.html">WindowHandle</a></td>
+        <td><span class="parametername">window</span></td>
+        <td><p>The window to create the surface in.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Graphics.Vulkan.VkAllocationCallbacks.html">VkAllocationCallbacks</a>*</td>
+        <td><span class="parametername">allocator</span></td>
+        <td><p>The allocator to use or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> to use the default allocator.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Graphics.Vulkan.VkSurfaceKHR.html">VkSurfaceKHR</a></td>
+        <td><span class="parametername">surface</span></td>
+        <td><p>The created surface.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Graphics.Vulkan.VkResult.html">VkResult</a></td>
+        <td><p>The Vulkan result code of this operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Platform_IVulkanComponent_GetPhysicalDevicePresentationSupport_" data-uid="OpenTK.Platform.IVulkanComponent.GetPhysicalDevicePresentationSupport*"></a>
+  <h4 id="OpenTK_Platform_IVulkanComponent_GetPhysicalDevicePresentationSupport_OpenTK_Graphics_Vulkan_VkInstance_OpenTK_Graphics_Vulkan_VkPhysicalDevice_System_UInt32_" data-uid="OpenTK.Platform.IVulkanComponent.GetPhysicalDevicePresentationSupport(OpenTK.Graphics.Vulkan.VkInstance,OpenTK.Graphics.Vulkan.VkPhysicalDevice,System.UInt32)">GetPhysicalDevicePresentationSupport(VkInstance, VkPhysicalDevice, uint)</h4>
+  <div class="markdown level1 summary"><p>Returns true of the given queue family supports presentation to a surface created with <a class="xref" href="OpenTK.Platform.IVulkanComponent.html#OpenTK_Platform_IVulkanComponent_CreateWindowSurface_OpenTK_Graphics_Vulkan_VkInstance_OpenTK_Platform_WindowHandle_OpenTK_Graphics_Vulkan_VkAllocationCallbacks__OpenTK_Graphics_Vulkan_VkSurfaceKHR__">CreateWindowSurface(VkInstance, WindowHandle, VkAllocationCallbacks*, out VkSurfaceKHR)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool GetPhysicalDevicePresentationSupport(VkInstance instance, VkPhysicalDevice device, uint queueFamily)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Graphics.Vulkan.VkInstance.html">VkInstance</a></td>
+        <td><span class="parametername">instance</span></td>
+        <td><p>The <a class="xref" href="OpenTK.Graphics.Vulkan.VkInstance.html">VkInstance</a> to physical device belongs to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Graphics.Vulkan.VkPhysicalDevice.html">VkPhysicalDevice</a></td>
+        <td><span class="parametername">device</span></td>
+        <td><p>The <a class="xref" href="OpenTK.Graphics.Vulkan.VkPhysicalDevice.html">VkPhysicalDevice</a> that the <code class="paramref">queueFamily</code> belongs to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
+        <td><span class="parametername">queueFamily</span></td>
+        <td><p>The index of the queue family to query for presentation support.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Platform_IVulkanComponent_GetRequiredInstanceExtensions_" data-uid="OpenTK.Platform.IVulkanComponent.GetRequiredInstanceExtensions*"></a>
+  <h4 id="OpenTK_Platform_IVulkanComponent_GetRequiredInstanceExtensions" data-uid="OpenTK.Platform.IVulkanComponent.GetRequiredInstanceExtensions">GetRequiredInstanceExtensions()</h4>
+  <div class="markdown level1 summary"><p>Returns a list of required instance extensions required for
+<a class="xref" href="OpenTK.Platform.IVulkanComponent.html#OpenTK_Platform_IVulkanComponent_GetPhysicalDevicePresentationSupport_OpenTK_Graphics_Vulkan_VkInstance_OpenTK_Graphics_Vulkan_VkPhysicalDevice_System_UInt32_">GetPhysicalDevicePresentationSupport(VkInstance, VkPhysicalDevice, uint)</a> and
+<a class="xref" href="OpenTK.Platform.IVulkanComponent.html#OpenTK_Platform_IVulkanComponent_CreateWindowSurface_OpenTK_Graphics_Vulkan_VkInstance_OpenTK_Platform_WindowHandle_OpenTK_Graphics_Vulkan_VkAllocationCallbacks__OpenTK_Graphics_Vulkan_VkSurfaceKHR__">CreateWindowSurface(VkInstance, WindowHandle, VkAllocationCallbacks*, out VkSurfaceKHR)</a>
+to work. Include these extensions when creating <a class="xref" href="OpenTK.Graphics.Vulkan.VkInstance.html">VkInstance</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ReadOnlySpan&lt;string&gt; GetRequiredInstanceExtensions()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

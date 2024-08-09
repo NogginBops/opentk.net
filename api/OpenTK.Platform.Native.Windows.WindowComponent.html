@@ -5,11 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class WindowComponent
-  - OpenTK</title>
+    <title>Class WindowComponent  - OpenTK</title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class WindowComponent
- ">
+    <meta name="title" content="Class WindowComponent ">
     <meta name="generator" content="docfx ">
   
     <link rel="shortcut icon" href="../favicon.ico">
@@ -27,8 +25,7 @@
     <meta property="og:image:width" content="142">
     <meta property="og:image:height" content="50">
     <meta property="og:site_name" content="OpenTK">
-    <meta property="og:title" content="Class WindowComponent
-  - OpenTK">
+    <meta property="og:title" content="Class WindowComponent  - OpenTK">
     <meta name="theme-color" content="#ffffff">
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
@@ -80,9 +77,8 @@
 
 
 
-  <h1 id="OpenTK_Platform_Native_Windows_WindowComponent" data-uid="OpenTK.Platform.Native.Windows.WindowComponent" class="text-break">Class WindowComponent
-</h1>
-  <div class="markdown level0 summary"><p>Win32 implementation of <a class="xref" href="OpenTK.Core.Platform.IWindowComponent.html">IWindowComponent</a>.</p>
+  <h1 id="OpenTK_Platform_Native_Windows_WindowComponent" data-uid="OpenTK.Platform.Native.Windows.WindowComponent" class="text-break">Class WindowComponent</h1>
+  <div class="markdown level0 summary"><p>Win32 implementation of <a class="xref" href="OpenTK.Platform.IWindowComponent.html">IWindowComponent</a>.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
@@ -92,8 +88,8 @@
   </div>
   <div class="implements">
     <h5>Implements</h5>
-    <div><a class="xref" href="OpenTK.Core.Platform.IWindowComponent.html">IWindowComponent</a></div>
-    <div><a class="xref" href="OpenTK.Core.Platform.IPalComponent.html">IPalComponent</a></div>
+    <div><a class="xref" href="OpenTK.Platform.IWindowComponent.html">IWindowComponent</a></div>
+    <div><a class="xref" href="OpenTK.Platform.IPalComponent.html">IPalComponent</a></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -120,7 +116,7 @@
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="OpenTK.html">OpenTK</a>.<a class="xref" href="OpenTK.Platform.html">Platform</a>.<a class="xref" href="OpenTK.Platform.Native.html">Native</a>.<a class="xref" href="OpenTK.Platform.Native.Windows.html">Windows</a></h6>
-  <h6><strong>Assembly</strong>: OpenTK.Platform.Native.dll</h6>
+  <h6><strong>Assembly</strong>: OpenTK.Platform.dll</h6>
   <h5 id="OpenTK_Platform_Native_Windows_WindowComponent_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class WindowComponent : IWindowComponent, IPalComponent</code></pre>
@@ -177,7 +173,7 @@
 </h3>
   <a id="OpenTK_Platform_Native_Windows_WindowComponent_CanCaptureCursor_" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.CanCaptureCursor*"></a>
   <h4 id="OpenTK_Platform_Native_Windows_WindowComponent_CanCaptureCursor" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.CanCaptureCursor">CanCaptureCursor</h4>
-  <div class="markdown level1 summary"><p>True when the driver supports capturing the cursor in a window.</p>
+  <div class="markdown level1 summary"><p>True when the driver supports capturing the cursor in a window using <a class="xref" href="OpenTK.Platform.IWindowComponent.html#OpenTK_Platform_IWindowComponent_SetCursorCaptureMode_OpenTK_Platform_WindowHandle_OpenTK_Platform_CursorCaptureMode_">SetCursorCaptureMode(WindowHandle, CursorCaptureMode)</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -199,9 +195,13 @@
       </tr>
     </tbody>
   </table>
+  <h5 id="OpenTK_Platform_Native_Windows_WindowComponent_CanCaptureCursor_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="OpenTK.Platform.IWindowComponent.html#OpenTK_Platform_IWindowComponent_SetCursorCaptureMode_OpenTK_Platform_WindowHandle_OpenTK_Platform_CursorCaptureMode_">SetCursorCaptureMode</a>(<a class="xref" href="OpenTK.Platform.WindowHandle.html">WindowHandle</a>, <a class="xref" href="OpenTK.Platform.CursorCaptureMode.html">CursorCaptureMode</a>)</div>
+  </div>
   <a id="OpenTK_Platform_Native_Windows_WindowComponent_CanGetDisplay_" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.CanGetDisplay*"></a>
   <h4 id="OpenTK_Platform_Native_Windows_WindowComponent_CanGetDisplay" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.CanGetDisplay">CanGetDisplay</h4>
-  <div class="markdown level1 summary"><p>True when the driver can provide the display the window is in.</p>
+  <div class="markdown level1 summary"><p>True when the driver can provide the display the window is in using <a class="xref" href="OpenTK.Platform.IWindowComponent.html#OpenTK_Platform_IWindowComponent_GetDisplay_OpenTK_Platform_WindowHandle_">GetDisplay(WindowHandle)</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -223,9 +223,13 @@
       </tr>
     </tbody>
   </table>
+  <h5 id="OpenTK_Platform_Native_Windows_WindowComponent_CanGetDisplay_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="OpenTK.Platform.IWindowComponent.html#OpenTK_Platform_IWindowComponent_GetDisplay_OpenTK_Platform_WindowHandle_">GetDisplay</a>(<a class="xref" href="OpenTK.Platform.WindowHandle.html">WindowHandle</a>)</div>
+  </div>
   <a id="OpenTK_Platform_Native_Windows_WindowComponent_CanSetCursor_" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.CanSetCursor*"></a>
   <h4 id="OpenTK_Platform_Native_Windows_WindowComponent_CanSetCursor" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.CanSetCursor">CanSetCursor</h4>
-  <div class="markdown level1 summary"><p>True when the driver supports setting the cursor of the window.</p>
+  <div class="markdown level1 summary"><p>True when the driver supports setting the cursor of the window using <a class="xref" href="OpenTK.Platform.IWindowComponent.html#OpenTK_Platform_IWindowComponent_SetCursor_OpenTK_Platform_WindowHandle_OpenTK_Platform_CursorHandle_">SetCursor(WindowHandle, CursorHandle?)</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -247,9 +251,13 @@
       </tr>
     </tbody>
   </table>
+  <h5 id="OpenTK_Platform_Native_Windows_WindowComponent_CanSetCursor_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="OpenTK.Platform.IWindowComponent.html#OpenTK_Platform_IWindowComponent_SetCursor_OpenTK_Platform_WindowHandle_OpenTK_Platform_CursorHandle_">SetCursor</a>(<a class="xref" href="OpenTK.Platform.WindowHandle.html">WindowHandle</a>, <a class="xref" href="OpenTK.Platform.CursorHandle.html">CursorHandle</a>)</div>
+  </div>
   <a id="OpenTK_Platform_Native_Windows_WindowComponent_CanSetIcon_" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.CanSetIcon*"></a>
   <h4 id="OpenTK_Platform_Native_Windows_WindowComponent_CanSetIcon" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.CanSetIcon">CanSetIcon</h4>
-  <div class="markdown level1 summary"><p>True when the driver supports setting the window icon.</p>
+  <div class="markdown level1 summary"><p>True when the driver supports setting the window icon using <a class="xref" href="OpenTK.Platform.IWindowComponent.html#OpenTK_Platform_IWindowComponent_SetIcon_OpenTK_Platform_WindowHandle_OpenTK_Platform_IconHandle_">SetIcon(WindowHandle, IconHandle)</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -271,6 +279,10 @@
       </tr>
     </tbody>
   </table>
+  <h5 id="OpenTK_Platform_Native_Windows_WindowComponent_CanSetIcon_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="OpenTK.Platform.IWindowComponent.html#OpenTK_Platform_IWindowComponent_SetIcon_OpenTK_Platform_WindowHandle_OpenTK_Platform_IconHandle_">SetIcon</a>(<a class="xref" href="OpenTK.Platform.WindowHandle.html">WindowHandle</a>, <a class="xref" href="OpenTK.Platform.IconHandle.html">IconHandle</a>)</div>
+  </div>
   <a id="OpenTK_Platform_Native_Windows_WindowComponent_HelperHWnd_" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.HelperHWnd*"></a>
   <h4 id="OpenTK_Platform_Native_Windows_WindowComponent_HelperHWnd" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.HelperHWnd">HelperHWnd</h4>
   <div class="markdown level1 summary"><p>The helper window used to load wgl extensions.</p>
@@ -362,7 +374,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Core.Platform.PalComponents.html">PalComponents</a></td>
+        <td><a class="xref" href="OpenTK.Platform.PalComponents.html">PalComponents</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -386,7 +398,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="OpenTK.Core.Platform.PlatformEventType.html">PlatformEventType</a>&gt;</td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="OpenTK.Platform.PlatformEventType.html">PlatformEventType</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -410,7 +422,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="OpenTK.Core.Platform.WindowMode.html">WindowMode</a>&gt;</td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="OpenTK.Platform.WindowMode.html">WindowMode</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -434,7 +446,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="OpenTK.Core.Platform.WindowBorderStyle.html">WindowBorderStyle</a>&gt;</td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="OpenTK.Platform.WindowBorderStyle.html">WindowBorderStyle</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -442,7 +454,7 @@
   <h3 id="methods">Methods
 </h3>
   <a id="OpenTK_Platform_Native_Windows_WindowComponent_ClientToScreen_" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.ClientToScreen*"></a>
-  <h4 id="OpenTK_Platform_Native_Windows_WindowComponent_ClientToScreen_OpenTK_Core_Platform_WindowHandle_System_Int32_System_Int32_System_Int32__System_Int32__" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.ClientToScreen(OpenTK.Core.Platform.WindowHandle,System.Int32,System.Int32,System.Int32@,System.Int32@)">ClientToScreen(WindowHandle, int, int, out int, out int)</h4>
+  <h4 id="OpenTK_Platform_Native_Windows_WindowComponent_ClientToScreen_OpenTK_Platform_WindowHandle_System_Int32_System_Int32_System_Int32__System_Int32__" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.ClientToScreen(OpenTK.Platform.WindowHandle,System.Int32,System.Int32,System.Int32@,System.Int32@)">ClientToScreen(WindowHandle, int, int, out int, out int)</h4>
   <div class="markdown level1 summary"><p>Converts window relative coordinates to screen coordinates.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -461,7 +473,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Core.Platform.WindowHandle.html">WindowHandle</a></td>
+        <td><a class="xref" href="OpenTK.Platform.WindowHandle.html">WindowHandle</a></td>
         <td><span class="parametername">handle</span></td>
         <td><p>The window handle.</p>
 </td>
@@ -493,7 +505,7 @@
     </tbody>
   </table>
   <a id="OpenTK_Platform_Native_Windows_WindowComponent_Create_" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.Create*"></a>
-  <h4 id="OpenTK_Platform_Native_Windows_WindowComponent_Create_OpenTK_Core_Platform_GraphicsApiHints_" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.Create(OpenTK.Core.Platform.GraphicsApiHints)">Create(GraphicsApiHints)</h4>
+  <h4 id="OpenTK_Platform_Native_Windows_WindowComponent_Create_OpenTK_Platform_GraphicsApiHints_" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.Create(OpenTK.Platform.GraphicsApiHints)">Create(GraphicsApiHints)</h4>
   <div class="markdown level1 summary"><p>Create a window object.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -512,7 +524,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Core.Platform.GraphicsApiHints.html">GraphicsApiHints</a></td>
+        <td><a class="xref" href="OpenTK.Platform.GraphicsApiHints.html">GraphicsApiHints</a></td>
         <td><span class="parametername">hints</span></td>
         <td><p>Graphics API hints to be passed to the operating system.</p>
 </td>
@@ -529,15 +541,15 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Core.Platform.WindowHandle.html">WindowHandle</a></td>
+        <td><a class="xref" href="OpenTK.Platform.WindowHandle.html">WindowHandle</a></td>
         <td><p>Handle to the new window object.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="OpenTK_Platform_Native_Windows_WindowComponent_Destroy_" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.Destroy*"></a>
-  <h4 id="OpenTK_Platform_Native_Windows_WindowComponent_Destroy_OpenTK_Core_Platform_WindowHandle_" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.Destroy(OpenTK.Core.Platform.WindowHandle)">Destroy(WindowHandle)</h4>
-  <div class="markdown level1 summary"><p>Destroy a window object.</p>
+  <h4 id="OpenTK_Platform_Native_Windows_WindowComponent_Destroy_OpenTK_Platform_WindowHandle_" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.Destroy(OpenTK.Platform.WindowHandle)">Destroy(WindowHandle)</h4>
+  <div class="markdown level1 summary"><p>Destroy a window object. After a window has been destroyed the handle should no longer be used in any function other than <a class="xref" href="OpenTK.Platform.IWindowComponent.html#OpenTK_Platform_IWindowComponent_IsWindowDestroyed_OpenTK_Platform_WindowHandle_">IsWindowDestroyed(WindowHandle)</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -555,7 +567,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Core.Platform.WindowHandle.html">WindowHandle</a></td>
+        <td><a class="xref" href="OpenTK.Platform.WindowHandle.html">WindowHandle</a></td>
         <td><span class="parametername">handle</span></td>
         <td><p>Handle to a window object.</p>
 </td>
@@ -579,7 +591,7 @@
     </tbody>
   </table>
   <a id="OpenTK_Platform_Native_Windows_WindowComponent_FocusWindow_" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.FocusWindow*"></a>
-  <h4 id="OpenTK_Platform_Native_Windows_WindowComponent_FocusWindow_OpenTK_Core_Platform_WindowHandle_" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.FocusWindow(OpenTK.Core.Platform.WindowHandle)">FocusWindow(WindowHandle)</h4>
+  <h4 id="OpenTK_Platform_Native_Windows_WindowComponent_FocusWindow_OpenTK_Platform_WindowHandle_" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.FocusWindow(OpenTK.Platform.WindowHandle)">FocusWindow(WindowHandle)</h4>
   <div class="markdown level1 summary"><p>Gives the window input focus.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -598,7 +610,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Core.Platform.WindowHandle.html">WindowHandle</a></td>
+        <td><a class="xref" href="OpenTK.Platform.WindowHandle.html">WindowHandle</a></td>
         <td><span class="parametername">handle</span></td>
         <td><p>Handle to the window to focus.</p>
 </td>
@@ -606,7 +618,7 @@
     </tbody>
   </table>
   <a id="OpenTK_Platform_Native_Windows_WindowComponent_GetBorderStyle_" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.GetBorderStyle*"></a>
-  <h4 id="OpenTK_Platform_Native_Windows_WindowComponent_GetBorderStyle_OpenTK_Core_Platform_WindowHandle_" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.GetBorderStyle(OpenTK.Core.Platform.WindowHandle)">GetBorderStyle(WindowHandle)</h4>
+  <h4 id="OpenTK_Platform_Native_Windows_WindowComponent_GetBorderStyle_OpenTK_Platform_WindowHandle_" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.GetBorderStyle(OpenTK.Platform.WindowHandle)">GetBorderStyle(WindowHandle)</h4>
   <div class="markdown level1 summary"><p>Get the border style of a window.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -625,7 +637,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Core.Platform.WindowHandle.html">WindowHandle</a></td>
+        <td><a class="xref" href="OpenTK.Platform.WindowHandle.html">WindowHandle</a></td>
         <td><span class="parametername">handle</span></td>
         <td><p>Handle to window.</p>
 </td>
@@ -642,7 +654,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Core.Platform.WindowBorderStyle.html">WindowBorderStyle</a></td>
+        <td><a class="xref" href="OpenTK.Platform.WindowBorderStyle.html">WindowBorderStyle</a></td>
         <td><p>The border style of the window.</p>
 </td>
       </tr>
@@ -665,7 +677,7 @@
     </tbody>
   </table>
   <a id="OpenTK_Platform_Native_Windows_WindowComponent_GetBounds_" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.GetBounds*"></a>
-  <h4 id="OpenTK_Platform_Native_Windows_WindowComponent_GetBounds_OpenTK_Core_Platform_WindowHandle_System_Int32__System_Int32__System_Int32__System_Int32__" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.GetBounds(OpenTK.Core.Platform.WindowHandle,System.Int32@,System.Int32@,System.Int32@,System.Int32@)">GetBounds(WindowHandle, out int, out int, out int, out int)</h4>
+  <h4 id="OpenTK_Platform_Native_Windows_WindowComponent_GetBounds_OpenTK_Platform_WindowHandle_System_Int32__System_Int32__System_Int32__System_Int32__" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.GetBounds(OpenTK.Platform.WindowHandle,System.Int32@,System.Int32@,System.Int32@,System.Int32@)">GetBounds(WindowHandle, out int, out int, out int, out int)</h4>
   <div class="markdown level1 summary"><p>Get the bounds of the window.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -684,7 +696,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Core.Platform.WindowHandle.html">WindowHandle</a></td>
+        <td><a class="xref" href="OpenTK.Platform.WindowHandle.html">WindowHandle</a></td>
         <td><span class="parametername">handle</span></td>
         <td><p>Handle to a window.</p>
 </td>
@@ -716,7 +728,7 @@
     </tbody>
   </table>
   <a id="OpenTK_Platform_Native_Windows_WindowComponent_GetClientBounds_" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.GetClientBounds*"></a>
-  <h4 id="OpenTK_Platform_Native_Windows_WindowComponent_GetClientBounds_OpenTK_Core_Platform_WindowHandle_System_Int32__System_Int32__System_Int32__System_Int32__" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.GetClientBounds(OpenTK.Core.Platform.WindowHandle,System.Int32@,System.Int32@,System.Int32@,System.Int32@)">GetClientBounds(WindowHandle, out int, out int, out int, out int)</h4>
+  <h4 id="OpenTK_Platform_Native_Windows_WindowComponent_GetClientBounds_OpenTK_Platform_WindowHandle_System_Int32__System_Int32__System_Int32__System_Int32__" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.GetClientBounds(OpenTK.Platform.WindowHandle,System.Int32@,System.Int32@,System.Int32@,System.Int32@)">GetClientBounds(WindowHandle, out int, out int, out int, out int)</h4>
   <div class="markdown level1 summary"><p>Get the client area bounds (drawing area) of a window.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -735,7 +747,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Core.Platform.WindowHandle.html">WindowHandle</a></td>
+        <td><a class="xref" href="OpenTK.Platform.WindowHandle.html">WindowHandle</a></td>
         <td><span class="parametername">handle</span></td>
         <td><p>Handle to a window.</p>
 </td>
@@ -767,7 +779,7 @@
     </tbody>
   </table>
   <a id="OpenTK_Platform_Native_Windows_WindowComponent_GetClientPosition_" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.GetClientPosition*"></a>
-  <h4 id="OpenTK_Platform_Native_Windows_WindowComponent_GetClientPosition_OpenTK_Core_Platform_WindowHandle_System_Int32__System_Int32__" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.GetClientPosition(OpenTK.Core.Platform.WindowHandle,System.Int32@,System.Int32@)">GetClientPosition(WindowHandle, out int, out int)</h4>
+  <h4 id="OpenTK_Platform_Native_Windows_WindowComponent_GetClientPosition_OpenTK_Platform_WindowHandle_System_Int32__System_Int32__" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.GetClientPosition(OpenTK.Platform.WindowHandle,System.Int32@,System.Int32@)">GetClientPosition(WindowHandle, out int, out int)</h4>
   <div class="markdown level1 summary"><p>Get the position of the client area (drawing area) of a window.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -786,7 +798,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Core.Platform.WindowHandle.html">WindowHandle</a></td>
+        <td><a class="xref" href="OpenTK.Platform.WindowHandle.html">WindowHandle</a></td>
         <td><span class="parametername">handle</span></td>
         <td><p>Handle to a window.</p>
 </td>
@@ -822,7 +834,7 @@
     </tbody>
   </table>
   <a id="OpenTK_Platform_Native_Windows_WindowComponent_GetClientSize_" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.GetClientSize*"></a>
-  <h4 id="OpenTK_Platform_Native_Windows_WindowComponent_GetClientSize_OpenTK_Core_Platform_WindowHandle_System_Int32__System_Int32__" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.GetClientSize(OpenTK.Core.Platform.WindowHandle,System.Int32@,System.Int32@)">GetClientSize(WindowHandle, out int, out int)</h4>
+  <h4 id="OpenTK_Platform_Native_Windows_WindowComponent_GetClientSize_OpenTK_Platform_WindowHandle_System_Int32__System_Int32__" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.GetClientSize(OpenTK.Platform.WindowHandle,System.Int32@,System.Int32@)">GetClientSize(WindowHandle, out int, out int)</h4>
   <div class="markdown level1 summary"><p>Get the size of the client area (drawing area) of a window.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -841,7 +853,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Core.Platform.WindowHandle.html">WindowHandle</a></td>
+        <td><a class="xref" href="OpenTK.Platform.WindowHandle.html">WindowHandle</a></td>
         <td><span class="parametername">handle</span></td>
         <td><p>Handle to a window.</p>
 </td>
@@ -877,8 +889,8 @@
     </tbody>
   </table>
   <a id="OpenTK_Platform_Native_Windows_WindowComponent_GetCursorCaptureMode_" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.GetCursorCaptureMode*"></a>
-  <h4 id="OpenTK_Platform_Native_Windows_WindowComponent_GetCursorCaptureMode_OpenTK_Core_Platform_WindowHandle_" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.GetCursorCaptureMode(OpenTK.Core.Platform.WindowHandle)">GetCursorCaptureMode(WindowHandle)</h4>
-  <div class="markdown level1 summary"><p>Gets the current cursor capture mode. See <a class="xref" href="OpenTK.Core.Platform.IWindowComponent.html#OpenTK_Core_Platform_IWindowComponent_SetCursorCaptureMode_OpenTK_Core_Platform_WindowHandle_OpenTK_Core_Platform_CursorCaptureMode_">SetCursorCaptureMode(WindowHandle, CursorCaptureMode)</a> for more details.</p>
+  <h4 id="OpenTK_Platform_Native_Windows_WindowComponent_GetCursorCaptureMode_OpenTK_Platform_WindowHandle_" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.GetCursorCaptureMode(OpenTK.Platform.WindowHandle)">GetCursorCaptureMode(WindowHandle)</h4>
+  <div class="markdown level1 summary"><p>Gets the current cursor capture mode. See <a class="xref" href="OpenTK.Platform.IWindowComponent.html#OpenTK_Platform_IWindowComponent_SetCursorCaptureMode_OpenTK_Platform_WindowHandle_OpenTK_Platform_CursorCaptureMode_">SetCursorCaptureMode(WindowHandle, CursorCaptureMode)</a> for more details.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -896,7 +908,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Core.Platform.WindowHandle.html">WindowHandle</a></td>
+        <td><a class="xref" href="OpenTK.Platform.WindowHandle.html">WindowHandle</a></td>
         <td><span class="parametername">handle</span></td>
         <td><p>Handle to a window.</p>
 </td>
@@ -913,14 +925,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Core.Platform.CursorCaptureMode.html">CursorCaptureMode</a></td>
+        <td><a class="xref" href="OpenTK.Platform.CursorCaptureMode.html">CursorCaptureMode</a></td>
         <td><p>The current cursor capture mode.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="OpenTK_Platform_Native_Windows_WindowComponent_GetDisplay_" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.GetDisplay*"></a>
-  <h4 id="OpenTK_Platform_Native_Windows_WindowComponent_GetDisplay_OpenTK_Core_Platform_WindowHandle_" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.GetDisplay(OpenTK.Core.Platform.WindowHandle)">GetDisplay(WindowHandle)</h4>
+  <h4 id="OpenTK_Platform_Native_Windows_WindowComponent_GetDisplay_OpenTK_Platform_WindowHandle_" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.GetDisplay(OpenTK.Platform.WindowHandle)">GetDisplay(WindowHandle)</h4>
   <div class="markdown level1 summary"><p>Get the display handle a window is in.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -939,7 +951,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Core.Platform.WindowHandle.html">WindowHandle</a></td>
+        <td><a class="xref" href="OpenTK.Platform.WindowHandle.html">WindowHandle</a></td>
         <td><span class="parametername">handle</span></td>
         <td><p>Handle to a window.</p>
 </td>
@@ -956,7 +968,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Core.Platform.DisplayHandle.html">DisplayHandle</a></td>
+        <td><a class="xref" href="OpenTK.Platform.DisplayHandle.html">DisplayHandle</a></td>
         <td><p>The display handle the window is in.</p>
 </td>
       </tr>
@@ -977,14 +989,18 @@
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="OpenTK.Core.Platform.PalNotImplementedException.html">PalNotImplementedException</a></td>
-        <td><p>Driver does not support finding the window display. <a class="xref" href="OpenTK.Core.Platform.IWindowComponent.html#OpenTK_Core_Platform_IWindowComponent_CanGetDisplay">CanGetDisplay</a>.</p>
+        <td><a class="xref" href="OpenTK.Platform.PalNotImplementedException.html">PalNotImplementedException</a></td>
+        <td><p>Backend does not support finding the window display. <a class="xref" href="OpenTK.Platform.IWindowComponent.html#OpenTK_Platform_IWindowComponent_CanGetDisplay">CanGetDisplay</a>.</p>
 </td>
       </tr>
     </tbody>
   </table>
+  <h5 id="OpenTK_Platform_Native_Windows_WindowComponent_GetDisplay_OpenTK_Platform_WindowHandle__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="OpenTK.Platform.IWindowComponent.html#OpenTK_Platform_IWindowComponent_CanGetDisplay">CanGetDisplay</a></div>
+  </div>
   <a id="OpenTK_Platform_Native_Windows_WindowComponent_GetFramebufferSize_" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.GetFramebufferSize*"></a>
-  <h4 id="OpenTK_Platform_Native_Windows_WindowComponent_GetFramebufferSize_OpenTK_Core_Platform_WindowHandle_System_Int32__System_Int32__" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.GetFramebufferSize(OpenTK.Core.Platform.WindowHandle,System.Int32@,System.Int32@)">GetFramebufferSize(WindowHandle, out int, out int)</h4>
+  <h4 id="OpenTK_Platform_Native_Windows_WindowComponent_GetFramebufferSize_OpenTK_Platform_WindowHandle_System_Int32__System_Int32__" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.GetFramebufferSize(OpenTK.Platform.WindowHandle,System.Int32@,System.Int32@)">GetFramebufferSize(WindowHandle, out int, out int)</h4>
   <div class="markdown level1 summary"><p>Get the size of the window framebuffer in pixels.
 Use this value when calls to graphics APIs that want pixels, e.g. GL.Viewport().</p>
 </div>
@@ -1004,7 +1020,7 @@ Use this value when calls to graphics APIs that want pixels, e.g. GL.Viewport().
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Core.Platform.WindowHandle.html">WindowHandle</a></td>
+        <td><a class="xref" href="OpenTK.Platform.WindowHandle.html">WindowHandle</a></td>
         <td><span class="parametername">handle</span></td>
         <td><p>Handle to a window.</p>
 </td>
@@ -1024,7 +1040,7 @@ Use this value when calls to graphics APIs that want pixels, e.g. GL.Viewport().
     </tbody>
   </table>
   <a id="OpenTK_Platform_Native_Windows_WindowComponent_GetFullscreenDisplay_" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.GetFullscreenDisplay*"></a>
-  <h4 id="OpenTK_Platform_Native_Windows_WindowComponent_GetFullscreenDisplay_OpenTK_Core_Platform_WindowHandle_OpenTK_Core_Platform_DisplayHandle__" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.GetFullscreenDisplay(OpenTK.Core.Platform.WindowHandle,OpenTK.Core.Platform.DisplayHandle@)">GetFullscreenDisplay(WindowHandle, out DisplayHandle?)</h4>
+  <h4 id="OpenTK_Platform_Native_Windows_WindowComponent_GetFullscreenDisplay_OpenTK_Platform_WindowHandle_OpenTK_Platform_DisplayHandle__" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.GetFullscreenDisplay(OpenTK.Platform.WindowHandle,OpenTK.Platform.DisplayHandle@)">GetFullscreenDisplay(WindowHandle, out DisplayHandle?)</h4>
   <div class="markdown level1 summary"><p>Gets the display that the specified window is fullscreen on, if the window is fullscreen.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -1043,12 +1059,12 @@ Use this value when calls to graphics APIs that want pixels, e.g. GL.Viewport().
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Core.Platform.WindowHandle.html">WindowHandle</a></td>
+        <td><a class="xref" href="OpenTK.Platform.WindowHandle.html">WindowHandle</a></td>
         <td><span class="parametername">window</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="OpenTK.Core.Platform.DisplayHandle.html">DisplayHandle</a></td>
+        <td><a class="xref" href="OpenTK.Platform.DisplayHandle.html">DisplayHandle</a></td>
         <td><span class="parametername">display</span></td>
         <td><p>The display where the window is fullscreen or null if the window is not fullscreen.</p>
 </td>
@@ -1072,7 +1088,7 @@ Use this value when calls to graphics APIs that want pixels, e.g. GL.Viewport().
     </tbody>
   </table>
   <a id="OpenTK_Platform_Native_Windows_WindowComponent_GetHWND_" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.GetHWND*"></a>
-  <h4 id="OpenTK_Platform_Native_Windows_WindowComponent_GetHWND_OpenTK_Core_Platform_WindowHandle_" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.GetHWND(OpenTK.Core.Platform.WindowHandle)">GetHWND(WindowHandle)</h4>
+  <h4 id="OpenTK_Platform_Native_Windows_WindowComponent_GetHWND_OpenTK_Platform_WindowHandle_" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.GetHWND(OpenTK.Platform.WindowHandle)">GetHWND(WindowHandle)</h4>
   <div class="markdown level1 summary"><p>Returns the underlying win32 <code>HWND</code> for the specified window.
 Modifying things about the window outside of OpenTK functions may cause inconsistent behaviour of OpenTK functions.</p>
 </div>
@@ -1092,7 +1108,7 @@ Modifying things about the window outside of OpenTK functions may cause inconsis
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Core.Platform.WindowHandle.html">WindowHandle</a></td>
+        <td><a class="xref" href="OpenTK.Platform.WindowHandle.html">WindowHandle</a></td>
         <td><span class="parametername">handle</span></td>
         <td><p>The window to get the <code>HWND</code> from.</p>
 </td>
@@ -1116,7 +1132,7 @@ Modifying things about the window outside of OpenTK functions may cause inconsis
     </tbody>
   </table>
   <a id="OpenTK_Platform_Native_Windows_WindowComponent_GetIcon_" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.GetIcon*"></a>
-  <h4 id="OpenTK_Platform_Native_Windows_WindowComponent_GetIcon_OpenTK_Core_Platform_WindowHandle_" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.GetIcon(OpenTK.Core.Platform.WindowHandle)">GetIcon(WindowHandle)</h4>
+  <h4 id="OpenTK_Platform_Native_Windows_WindowComponent_GetIcon_OpenTK_Platform_WindowHandle_" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.GetIcon(OpenTK.Platform.WindowHandle)">GetIcon(WindowHandle)</h4>
   <div class="markdown level1 summary"><p>Get a handle to the window icon object.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -1135,7 +1151,7 @@ Modifying things about the window outside of OpenTK functions may cause inconsis
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Core.Platform.WindowHandle.html">WindowHandle</a></td>
+        <td><a class="xref" href="OpenTK.Platform.WindowHandle.html">WindowHandle</a></td>
         <td><span class="parametername">handle</span></td>
         <td><p>Handle to a window.</p>
 </td>
@@ -1152,7 +1168,7 @@ Modifying things about the window outside of OpenTK functions may cause inconsis
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Core.Platform.IconHandle.html">IconHandle</a></td>
+        <td><a class="xref" href="OpenTK.Platform.IconHandle.html">IconHandle</a></td>
         <td><p>Handle to the windows icon object, or null if none is set.</p>
 </td>
       </tr>
@@ -1173,14 +1189,14 @@ Modifying things about the window outside of OpenTK functions may cause inconsis
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="OpenTK.Core.Platform.PalNotImplementedException.html">PalNotImplementedException</a></td>
-        <td><p>Driver does not support getting the window icon. See <a class="xref" href="OpenTK.Core.Platform.IWindowComponent.html#OpenTK_Core_Platform_IWindowComponent_CanSetIcon">CanSetIcon</a>.</p>
+        <td><a class="xref" href="OpenTK.Platform.PalNotImplementedException.html">PalNotImplementedException</a></td>
+        <td><p>Driver does not support getting the window icon. See <a class="xref" href="OpenTK.Platform.IWindowComponent.html#OpenTK_Platform_IWindowComponent_CanSetIcon">CanSetIcon</a>.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="OpenTK_Platform_Native_Windows_WindowComponent_GetMaxClientSize_" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.GetMaxClientSize*"></a>
-  <h4 id="OpenTK_Platform_Native_Windows_WindowComponent_GetMaxClientSize_OpenTK_Core_Platform_WindowHandle_System_Nullable_System_Int32___System_Nullable_System_Int32___" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.GetMaxClientSize(OpenTK.Core.Platform.WindowHandle,System.Nullable{System.Int32}@,System.Nullable{System.Int32}@)">GetMaxClientSize(WindowHandle, out int?, out int?)</h4>
+  <h4 id="OpenTK_Platform_Native_Windows_WindowComponent_GetMaxClientSize_OpenTK_Platform_WindowHandle_System_Nullable_System_Int32___System_Nullable_System_Int32___" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.GetMaxClientSize(OpenTK.Platform.WindowHandle,System.Nullable{System.Int32}@,System.Nullable{System.Int32}@)">GetMaxClientSize(WindowHandle, out int?, out int?)</h4>
   <div class="markdown level1 summary"><p>Gets the maximum size of the client area.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -1199,7 +1215,7 @@ Modifying things about the window outside of OpenTK functions may cause inconsis
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Core.Platform.WindowHandle.html">WindowHandle</a></td>
+        <td><a class="xref" href="OpenTK.Platform.WindowHandle.html">WindowHandle</a></td>
         <td><span class="parametername">handle</span></td>
         <td><p>Handle to a window.</p>
 </td>
@@ -1219,7 +1235,7 @@ Modifying things about the window outside of OpenTK functions may cause inconsis
     </tbody>
   </table>
   <a id="OpenTK_Platform_Native_Windows_WindowComponent_GetMinClientSize_" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.GetMinClientSize*"></a>
-  <h4 id="OpenTK_Platform_Native_Windows_WindowComponent_GetMinClientSize_OpenTK_Core_Platform_WindowHandle_System_Nullable_System_Int32___System_Nullable_System_Int32___" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.GetMinClientSize(OpenTK.Core.Platform.WindowHandle,System.Nullable{System.Int32}@,System.Nullable{System.Int32}@)">GetMinClientSize(WindowHandle, out int?, out int?)</h4>
+  <h4 id="OpenTK_Platform_Native_Windows_WindowComponent_GetMinClientSize_OpenTK_Platform_WindowHandle_System_Nullable_System_Int32___System_Nullable_System_Int32___" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.GetMinClientSize(OpenTK.Platform.WindowHandle,System.Nullable{System.Int32}@,System.Nullable{System.Int32}@)">GetMinClientSize(WindowHandle, out int?, out int?)</h4>
   <div class="markdown level1 summary"><p>Gets the minimum size of the client area.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -1238,7 +1254,7 @@ Modifying things about the window outside of OpenTK functions may cause inconsis
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Core.Platform.WindowHandle.html">WindowHandle</a></td>
+        <td><a class="xref" href="OpenTK.Platform.WindowHandle.html">WindowHandle</a></td>
         <td><span class="parametername">handle</span></td>
         <td><p>Handle to a window.</p>
 </td>
@@ -1258,7 +1274,7 @@ Modifying things about the window outside of OpenTK functions may cause inconsis
     </tbody>
   </table>
   <a id="OpenTK_Platform_Native_Windows_WindowComponent_GetMode_" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.GetMode*"></a>
-  <h4 id="OpenTK_Platform_Native_Windows_WindowComponent_GetMode_OpenTK_Core_Platform_WindowHandle_" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.GetMode(OpenTK.Core.Platform.WindowHandle)">GetMode(WindowHandle)</h4>
+  <h4 id="OpenTK_Platform_Native_Windows_WindowComponent_GetMode_OpenTK_Platform_WindowHandle_" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.GetMode(OpenTK.Platform.WindowHandle)">GetMode(WindowHandle)</h4>
   <div class="markdown level1 summary"><p>Get the mode of a window.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -1277,7 +1293,7 @@ Modifying things about the window outside of OpenTK functions may cause inconsis
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Core.Platform.WindowHandle.html">WindowHandle</a></td>
+        <td><a class="xref" href="OpenTK.Platform.WindowHandle.html">WindowHandle</a></td>
         <td><span class="parametername">handle</span></td>
         <td><p>Handle to a window.</p>
 </td>
@@ -1294,7 +1310,7 @@ Modifying things about the window outside of OpenTK functions may cause inconsis
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Core.Platform.WindowMode.html">WindowMode</a></td>
+        <td><a class="xref" href="OpenTK.Platform.WindowMode.html">WindowMode</a></td>
         <td><p>The mode of the window.</p>
 </td>
       </tr>
@@ -1317,7 +1333,7 @@ Modifying things about the window outside of OpenTK functions may cause inconsis
     </tbody>
   </table>
   <a id="OpenTK_Platform_Native_Windows_WindowComponent_GetPosition_" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.GetPosition*"></a>
-  <h4 id="OpenTK_Platform_Native_Windows_WindowComponent_GetPosition_OpenTK_Core_Platform_WindowHandle_System_Int32__System_Int32__" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.GetPosition(OpenTK.Core.Platform.WindowHandle,System.Int32@,System.Int32@)">GetPosition(WindowHandle, out int, out int)</h4>
+  <h4 id="OpenTK_Platform_Native_Windows_WindowComponent_GetPosition_OpenTK_Platform_WindowHandle_System_Int32__System_Int32__" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.GetPosition(OpenTK.Platform.WindowHandle,System.Int32@,System.Int32@)">GetPosition(WindowHandle, out int, out int)</h4>
   <div class="markdown level1 summary"><p>Get the window position in display coordinates (top left origin).</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -1336,7 +1352,7 @@ Modifying things about the window outside of OpenTK functions may cause inconsis
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Core.Platform.WindowHandle.html">WindowHandle</a></td>
+        <td><a class="xref" href="OpenTK.Platform.WindowHandle.html">WindowHandle</a></td>
         <td><span class="parametername">handle</span></td>
         <td><p>Handle to a window.</p>
 </td>
@@ -1372,7 +1388,7 @@ Modifying things about the window outside of OpenTK functions may cause inconsis
     </tbody>
   </table>
   <a id="OpenTK_Platform_Native_Windows_WindowComponent_GetScaleFactor_" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.GetScaleFactor*"></a>
-  <h4 id="OpenTK_Platform_Native_Windows_WindowComponent_GetScaleFactor_OpenTK_Core_Platform_WindowHandle_System_Single__System_Single__" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.GetScaleFactor(OpenTK.Core.Platform.WindowHandle,System.Single@,System.Single@)">GetScaleFactor(WindowHandle, out float, out float)</h4>
+  <h4 id="OpenTK_Platform_Native_Windows_WindowComponent_GetScaleFactor_OpenTK_Platform_WindowHandle_System_Single__System_Single__" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.GetScaleFactor(OpenTK.Platform.WindowHandle,System.Single@,System.Single@)">GetScaleFactor(WindowHandle, out float, out float)</h4>
   <div class="markdown level1 summary"><p>Returns the current scale factor of this window.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -1391,7 +1407,7 @@ Modifying things about the window outside of OpenTK functions may cause inconsis
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Core.Platform.WindowHandle.html">WindowHandle</a></td>
+        <td><a class="xref" href="OpenTK.Platform.WindowHandle.html">WindowHandle</a></td>
         <td><span class="parametername">handle</span></td>
         <td><p>The window handle.</p>
 </td>
@@ -1410,12 +1426,12 @@ Modifying things about the window outside of OpenTK functions may cause inconsis
       </tr>
     </tbody>
   </table>
-  <h5 id="OpenTK_Platform_Native_Windows_WindowComponent_GetScaleFactor_OpenTK_Core_Platform_WindowHandle_System_Single__System_Single___seealso">See Also</h5>
+  <h5 id="OpenTK_Platform_Native_Windows_WindowComponent_GetScaleFactor_OpenTK_Platform_WindowHandle_System_Single__System_Single___seealso">See Also</h5>
   <div class="seealso">
-      <div><a class="xref" href="OpenTK.Core.Platform.WindowScaleChangeEventArgs.html">WindowScaleChangeEventArgs</a></div>
+      <div><a class="xref" href="OpenTK.Platform.WindowScaleChangeEventArgs.html">WindowScaleChangeEventArgs</a></div>
   </div>
   <a id="OpenTK_Platform_Native_Windows_WindowComponent_GetSize_" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.GetSize*"></a>
-  <h4 id="OpenTK_Platform_Native_Windows_WindowComponent_GetSize_OpenTK_Core_Platform_WindowHandle_System_Int32__System_Int32__" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.GetSize(OpenTK.Core.Platform.WindowHandle,System.Int32@,System.Int32@)">GetSize(WindowHandle, out int, out int)</h4>
+  <h4 id="OpenTK_Platform_Native_Windows_WindowComponent_GetSize_OpenTK_Platform_WindowHandle_System_Int32__System_Int32__" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.GetSize(OpenTK.Platform.WindowHandle,System.Int32@,System.Int32@)">GetSize(WindowHandle, out int, out int)</h4>
   <div class="markdown level1 summary"><p>Get the size of the window.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -1434,7 +1450,7 @@ Modifying things about the window outside of OpenTK functions may cause inconsis
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Core.Platform.WindowHandle.html">WindowHandle</a></td>
+        <td><a class="xref" href="OpenTK.Platform.WindowHandle.html">WindowHandle</a></td>
         <td><span class="parametername">handle</span></td>
         <td><p>Handle to a window.</p>
 </td>
@@ -1470,7 +1486,7 @@ Modifying things about the window outside of OpenTK functions may cause inconsis
     </tbody>
   </table>
   <a id="OpenTK_Platform_Native_Windows_WindowComponent_GetTitle_" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.GetTitle*"></a>
-  <h4 id="OpenTK_Platform_Native_Windows_WindowComponent_GetTitle_OpenTK_Core_Platform_WindowHandle_" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.GetTitle(OpenTK.Core.Platform.WindowHandle)">GetTitle(WindowHandle)</h4>
+  <h4 id="OpenTK_Platform_Native_Windows_WindowComponent_GetTitle_OpenTK_Platform_WindowHandle_" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.GetTitle(OpenTK.Platform.WindowHandle)">GetTitle(WindowHandle)</h4>
   <div class="markdown level1 summary"><p>Get the title of a window.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -1489,7 +1505,7 @@ Modifying things about the window outside of OpenTK functions may cause inconsis
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Core.Platform.WindowHandle.html">WindowHandle</a></td>
+        <td><a class="xref" href="OpenTK.Platform.WindowHandle.html">WindowHandle</a></td>
         <td><span class="parametername">handle</span></td>
         <td><p>Handle to a window.</p>
 </td>
@@ -1529,7 +1545,7 @@ Modifying things about the window outside of OpenTK functions may cause inconsis
     </tbody>
   </table>
   <a id="OpenTK_Platform_Native_Windows_WindowComponent_Initialize_" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.Initialize*"></a>
-  <h4 id="OpenTK_Platform_Native_Windows_WindowComponent_Initialize_OpenTK_Core_Platform_ToolkitOptions_" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.Initialize(OpenTK.Core.Platform.ToolkitOptions)">Initialize(ToolkitOptions)</h4>
+  <h4 id="OpenTK_Platform_Native_Windows_WindowComponent_Initialize_OpenTK_Platform_ToolkitOptions_" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.Initialize(OpenTK.Platform.ToolkitOptions)">Initialize(ToolkitOptions)</h4>
   <div class="markdown level1 summary"><p>Initialize the component.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -1548,7 +1564,7 @@ Modifying things about the window outside of OpenTK functions may cause inconsis
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Core.Platform.ToolkitOptions.html">ToolkitOptions</a></td>
+        <td><a class="xref" href="OpenTK.Platform.ToolkitOptions.html">ToolkitOptions</a></td>
         <td><span class="parametername">options</span></td>
         <td><p>The options to initialize the component with.</p>
 </td>
@@ -1556,7 +1572,7 @@ Modifying things about the window outside of OpenTK functions may cause inconsis
     </tbody>
   </table>
   <a id="OpenTK_Platform_Native_Windows_WindowComponent_IsAlwaysOnTop_" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.IsAlwaysOnTop*"></a>
-  <h4 id="OpenTK_Platform_Native_Windows_WindowComponent_IsAlwaysOnTop_OpenTK_Core_Platform_WindowHandle_" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.IsAlwaysOnTop(OpenTK.Core.Platform.WindowHandle)">IsAlwaysOnTop(WindowHandle)</h4>
+  <h4 id="OpenTK_Platform_Native_Windows_WindowComponent_IsAlwaysOnTop_OpenTK_Platform_WindowHandle_" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.IsAlwaysOnTop(OpenTK.Platform.WindowHandle)">IsAlwaysOnTop(WindowHandle)</h4>
   <div class="markdown level1 summary"><p>Gets if the current window is always on top or not.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -1575,7 +1591,7 @@ Modifying things about the window outside of OpenTK functions may cause inconsis
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Core.Platform.WindowHandle.html">WindowHandle</a></td>
+        <td><a class="xref" href="OpenTK.Platform.WindowHandle.html">WindowHandle</a></td>
         <td><span class="parametername">handle</span></td>
         <td><p>A handle to the window to get whether or not is always on top.</p>
 </td>
@@ -1599,7 +1615,7 @@ Modifying things about the window outside of OpenTK functions may cause inconsis
     </tbody>
   </table>
   <a id="OpenTK_Platform_Native_Windows_WindowComponent_IsFocused_" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.IsFocused*"></a>
-  <h4 id="OpenTK_Platform_Native_Windows_WindowComponent_IsFocused_OpenTK_Core_Platform_WindowHandle_" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.IsFocused(OpenTK.Core.Platform.WindowHandle)">IsFocused(WindowHandle)</h4>
+  <h4 id="OpenTK_Platform_Native_Windows_WindowComponent_IsFocused_OpenTK_Platform_WindowHandle_" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.IsFocused(OpenTK.Platform.WindowHandle)">IsFocused(WindowHandle)</h4>
   <div class="markdown level1 summary"><p>Returns true if the given window has input focus.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -1618,7 +1634,7 @@ Modifying things about the window outside of OpenTK functions may cause inconsis
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Core.Platform.WindowHandle.html">WindowHandle</a></td>
+        <td><a class="xref" href="OpenTK.Platform.WindowHandle.html">WindowHandle</a></td>
         <td><span class="parametername">handle</span></td>
         <td><p>Handle to a window.</p>
 </td>
@@ -1642,8 +1658,8 @@ Modifying things about the window outside of OpenTK functions may cause inconsis
     </tbody>
   </table>
   <a id="OpenTK_Platform_Native_Windows_WindowComponent_IsWindowDestroyed_" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.IsWindowDestroyed*"></a>
-  <h4 id="OpenTK_Platform_Native_Windows_WindowComponent_IsWindowDestroyed_OpenTK_Core_Platform_WindowHandle_" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.IsWindowDestroyed(OpenTK.Core.Platform.WindowHandle)">IsWindowDestroyed(WindowHandle)</h4>
-  <div class="markdown level1 summary"><p>Checks if <a class="xref" href="OpenTK.Core.Platform.IWindowComponent.html#OpenTK_Core_Platform_IWindowComponent_Destroy_OpenTK_Core_Platform_WindowHandle_">Destroy(WindowHandle)</a> has been called on this handle.</p>
+  <h4 id="OpenTK_Platform_Native_Windows_WindowComponent_IsWindowDestroyed_OpenTK_Platform_WindowHandle_" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.IsWindowDestroyed(OpenTK.Platform.WindowHandle)">IsWindowDestroyed(WindowHandle)</h4>
+  <div class="markdown level1 summary"><p>Checks if <a class="xref" href="OpenTK.Platform.IWindowComponent.html#OpenTK_Platform_IWindowComponent_Destroy_OpenTK_Platform_WindowHandle_">Destroy(WindowHandle)</a> has been called on this handle.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -1661,7 +1677,7 @@ Modifying things about the window outside of OpenTK functions may cause inconsis
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Core.Platform.WindowHandle.html">WindowHandle</a></td>
+        <td><a class="xref" href="OpenTK.Platform.WindowHandle.html">WindowHandle</a></td>
         <td><span class="parametername">handle</span></td>
         <td><p>The window handle to check if it's destroyed or not.</p>
 </td>
@@ -1679,19 +1695,19 @@ Modifying things about the window outside of OpenTK functions may cause inconsis
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
-        <td><p>If <a class="xref" href="OpenTK.Core.Platform.IWindowComponent.html#OpenTK_Core_Platform_IWindowComponent_Destroy_OpenTK_Core_Platform_WindowHandle_">Destroy(WindowHandle)</a> was called with the window handle.</p>
+        <td><p>If <a class="xref" href="OpenTK.Platform.IWindowComponent.html#OpenTK_Platform_IWindowComponent_Destroy_OpenTK_Platform_WindowHandle_">Destroy(WindowHandle)</a> was called with the window handle.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="OpenTK_Platform_Native_Windows_WindowComponent_ProcessEvents_" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.ProcessEvents*"></a>
   <h4 id="OpenTK_Platform_Native_Windows_WindowComponent_ProcessEvents_System_Boolean_" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.ProcessEvents(System.Boolean)">ProcessEvents(bool)</h4>
-  <div class="markdown level1 summary"><p>Processes platform events and sends them to the <a class="xref" href="OpenTK.Core.Platform.EventQueue.html">EventQueue</a>.</p>
+  <div class="markdown level1 summary"><p>Processes platform events and sends them to the <a class="xref" href="OpenTK.Platform.EventQueue.html">EventQueue</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void ProcessEvents(bool waitForEvents = false)</code></pre>
+    <pre><code class="lang-csharp hljs">public void ProcessEvents(bool waitForEvents)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -1712,7 +1728,7 @@ Modifying things about the window outside of OpenTK functions may cause inconsis
     </tbody>
   </table>
   <a id="OpenTK_Platform_Native_Windows_WindowComponent_RequestAttention_" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.RequestAttention*"></a>
-  <h4 id="OpenTK_Platform_Native_Windows_WindowComponent_RequestAttention_OpenTK_Core_Platform_WindowHandle_" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.RequestAttention(OpenTK.Core.Platform.WindowHandle)">RequestAttention(WindowHandle)</h4>
+  <h4 id="OpenTK_Platform_Native_Windows_WindowComponent_RequestAttention_OpenTK_Platform_WindowHandle_" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.RequestAttention(OpenTK.Platform.WindowHandle)">RequestAttention(WindowHandle)</h4>
   <div class="markdown level1 summary"><p>Requests that the user pay attention to the window.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -1731,7 +1747,7 @@ Modifying things about the window outside of OpenTK functions may cause inconsis
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Core.Platform.WindowHandle.html">WindowHandle</a></td>
+        <td><a class="xref" href="OpenTK.Platform.WindowHandle.html">WindowHandle</a></td>
         <td><span class="parametername">handle</span></td>
         <td><p>A handle to the window that requests attention.</p>
 </td>
@@ -1739,7 +1755,7 @@ Modifying things about the window outside of OpenTK functions may cause inconsis
     </tbody>
   </table>
   <a id="OpenTK_Platform_Native_Windows_WindowComponent_ScreenToClient_" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.ScreenToClient*"></a>
-  <h4 id="OpenTK_Platform_Native_Windows_WindowComponent_ScreenToClient_OpenTK_Core_Platform_WindowHandle_System_Int32_System_Int32_System_Int32__System_Int32__" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.ScreenToClient(OpenTK.Core.Platform.WindowHandle,System.Int32,System.Int32,System.Int32@,System.Int32@)">ScreenToClient(WindowHandle, int, int, out int, out int)</h4>
+  <h4 id="OpenTK_Platform_Native_Windows_WindowComponent_ScreenToClient_OpenTK_Platform_WindowHandle_System_Int32_System_Int32_System_Int32__System_Int32__" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.ScreenToClient(OpenTK.Platform.WindowHandle,System.Int32,System.Int32,System.Int32@,System.Int32@)">ScreenToClient(WindowHandle, int, int, out int, out int)</h4>
   <div class="markdown level1 summary"><p>Converts screen coordinates to window relative coordinates.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -1758,7 +1774,7 @@ Modifying things about the window outside of OpenTK functions may cause inconsis
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Core.Platform.WindowHandle.html">WindowHandle</a></td>
+        <td><a class="xref" href="OpenTK.Platform.WindowHandle.html">WindowHandle</a></td>
         <td><span class="parametername">handle</span></td>
         <td><p>The window handle.</p>
 </td>
@@ -1790,7 +1806,7 @@ Modifying things about the window outside of OpenTK functions may cause inconsis
     </tbody>
   </table>
   <a id="OpenTK_Platform_Native_Windows_WindowComponent_SetAlwaysOnTop_" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.SetAlwaysOnTop*"></a>
-  <h4 id="OpenTK_Platform_Native_Windows_WindowComponent_SetAlwaysOnTop_OpenTK_Core_Platform_WindowHandle_System_Boolean_" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.SetAlwaysOnTop(OpenTK.Core.Platform.WindowHandle,System.Boolean)">SetAlwaysOnTop(WindowHandle, bool)</h4>
+  <h4 id="OpenTK_Platform_Native_Windows_WindowComponent_SetAlwaysOnTop_OpenTK_Platform_WindowHandle_System_Boolean_" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.SetAlwaysOnTop(OpenTK.Platform.WindowHandle,System.Boolean)">SetAlwaysOnTop(WindowHandle, bool)</h4>
   <div class="markdown level1 summary"><p>Set if the window is an always on top window or not.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -1809,7 +1825,7 @@ Modifying things about the window outside of OpenTK functions may cause inconsis
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Core.Platform.WindowHandle.html">WindowHandle</a></td>
+        <td><a class="xref" href="OpenTK.Platform.WindowHandle.html">WindowHandle</a></td>
         <td><span class="parametername">handle</span></td>
         <td><p>A handle to the window to make always on top.</p>
 </td>
@@ -1823,7 +1839,7 @@ Modifying things about the window outside of OpenTK functions may cause inconsis
     </tbody>
   </table>
   <a id="OpenTK_Platform_Native_Windows_WindowComponent_SetBorderStyle_" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.SetBorderStyle*"></a>
-  <h4 id="OpenTK_Platform_Native_Windows_WindowComponent_SetBorderStyle_OpenTK_Core_Platform_WindowHandle_OpenTK_Core_Platform_WindowBorderStyle_" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.SetBorderStyle(OpenTK.Core.Platform.WindowHandle,OpenTK.Core.Platform.WindowBorderStyle)">SetBorderStyle(WindowHandle, WindowBorderStyle)</h4>
+  <h4 id="OpenTK_Platform_Native_Windows_WindowComponent_SetBorderStyle_OpenTK_Platform_WindowHandle_OpenTK_Platform_WindowBorderStyle_" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.SetBorderStyle(OpenTK.Platform.WindowHandle,OpenTK.Platform.WindowBorderStyle)">SetBorderStyle(WindowHandle, WindowBorderStyle)</h4>
   <div class="markdown level1 summary"><p>Set the border style of a window.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -1842,13 +1858,13 @@ Modifying things about the window outside of OpenTK functions may cause inconsis
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Core.Platform.WindowHandle.html">WindowHandle</a></td>
+        <td><a class="xref" href="OpenTK.Platform.WindowHandle.html">WindowHandle</a></td>
         <td><span class="parametername">handle</span></td>
         <td><p>Handle to a window.</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="OpenTK.Core.Platform.WindowBorderStyle.html">WindowBorderStyle</a></td>
+        <td><a class="xref" href="OpenTK.Platform.WindowBorderStyle.html">WindowBorderStyle</a></td>
         <td><span class="parametername">style</span></td>
         <td><p>The new border style of the window.</p>
 </td>
@@ -1875,14 +1891,14 @@ Modifying things about the window outside of OpenTK functions may cause inconsis
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="OpenTK.Core.Platform.PalNotImplementedException.html">PalNotImplementedException</a></td>
-        <td><p>Driver does not support the value set by <code class="paramref">style</code>. See <a class="xref" href="OpenTK.Core.Platform.IWindowComponent.html#OpenTK_Core_Platform_IWindowComponent_SupportedStyles">SupportedStyles</a>.</p>
+        <td><a class="xref" href="OpenTK.Platform.PalNotImplementedException.html">PalNotImplementedException</a></td>
+        <td><p>Driver does not support the value set by <code class="paramref">style</code>. See <a class="xref" href="OpenTK.Platform.IWindowComponent.html#OpenTK_Platform_IWindowComponent_SupportedStyles">SupportedStyles</a>.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="OpenTK_Platform_Native_Windows_WindowComponent_SetBounds_" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.SetBounds*"></a>
-  <h4 id="OpenTK_Platform_Native_Windows_WindowComponent_SetBounds_OpenTK_Core_Platform_WindowHandle_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.SetBounds(OpenTK.Core.Platform.WindowHandle,System.Int32,System.Int32,System.Int32,System.Int32)">SetBounds(WindowHandle, int, int, int, int)</h4>
+  <h4 id="OpenTK_Platform_Native_Windows_WindowComponent_SetBounds_OpenTK_Platform_WindowHandle_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.SetBounds(OpenTK.Platform.WindowHandle,System.Int32,System.Int32,System.Int32,System.Int32)">SetBounds(WindowHandle, int, int, int, int)</h4>
   <div class="markdown level1 summary"><p>Set the bounds of the window.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -1901,7 +1917,7 @@ Modifying things about the window outside of OpenTK functions may cause inconsis
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Core.Platform.WindowHandle.html">WindowHandle</a></td>
+        <td><a class="xref" href="OpenTK.Platform.WindowHandle.html">WindowHandle</a></td>
         <td><span class="parametername">handle</span></td>
         <td><p>Handle to a window.</p>
 </td>
@@ -1933,7 +1949,7 @@ Modifying things about the window outside of OpenTK functions may cause inconsis
     </tbody>
   </table>
   <a id="OpenTK_Platform_Native_Windows_WindowComponent_SetClientBounds_" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.SetClientBounds*"></a>
-  <h4 id="OpenTK_Platform_Native_Windows_WindowComponent_SetClientBounds_OpenTK_Core_Platform_WindowHandle_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.SetClientBounds(OpenTK.Core.Platform.WindowHandle,System.Int32,System.Int32,System.Int32,System.Int32)">SetClientBounds(WindowHandle, int, int, int, int)</h4>
+  <h4 id="OpenTK_Platform_Native_Windows_WindowComponent_SetClientBounds_OpenTK_Platform_WindowHandle_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.SetClientBounds(OpenTK.Platform.WindowHandle,System.Int32,System.Int32,System.Int32,System.Int32)">SetClientBounds(WindowHandle, int, int, int, int)</h4>
   <div class="markdown level1 summary"><p>Set the client area bounds (drawing area) of a window.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -1952,7 +1968,7 @@ Modifying things about the window outside of OpenTK functions may cause inconsis
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Core.Platform.WindowHandle.html">WindowHandle</a></td>
+        <td><a class="xref" href="OpenTK.Platform.WindowHandle.html">WindowHandle</a></td>
         <td><span class="parametername">handle</span></td>
         <td><p>Handle to a window.</p>
 </td>
@@ -1984,7 +2000,7 @@ Modifying things about the window outside of OpenTK functions may cause inconsis
     </tbody>
   </table>
   <a id="OpenTK_Platform_Native_Windows_WindowComponent_SetClientPosition_" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.SetClientPosition*"></a>
-  <h4 id="OpenTK_Platform_Native_Windows_WindowComponent_SetClientPosition_OpenTK_Core_Platform_WindowHandle_System_Int32_System_Int32_" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.SetClientPosition(OpenTK.Core.Platform.WindowHandle,System.Int32,System.Int32)">SetClientPosition(WindowHandle, int, int)</h4>
+  <h4 id="OpenTK_Platform_Native_Windows_WindowComponent_SetClientPosition_OpenTK_Platform_WindowHandle_System_Int32_System_Int32_" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.SetClientPosition(OpenTK.Platform.WindowHandle,System.Int32,System.Int32)">SetClientPosition(WindowHandle, int, int)</h4>
   <div class="markdown level1 summary"><p>Set the position of the client area (drawing area) of a window.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -2003,7 +2019,7 @@ Modifying things about the window outside of OpenTK functions may cause inconsis
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Core.Platform.WindowHandle.html">WindowHandle</a></td>
+        <td><a class="xref" href="OpenTK.Platform.WindowHandle.html">WindowHandle</a></td>
         <td><span class="parametername">handle</span></td>
         <td><p>Handle to a window.</p>
 </td>
@@ -2039,7 +2055,7 @@ Modifying things about the window outside of OpenTK functions may cause inconsis
     </tbody>
   </table>
   <a id="OpenTK_Platform_Native_Windows_WindowComponent_SetClientSize_" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.SetClientSize*"></a>
-  <h4 id="OpenTK_Platform_Native_Windows_WindowComponent_SetClientSize_OpenTK_Core_Platform_WindowHandle_System_Int32_System_Int32_" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.SetClientSize(OpenTK.Core.Platform.WindowHandle,System.Int32,System.Int32)">SetClientSize(WindowHandle, int, int)</h4>
+  <h4 id="OpenTK_Platform_Native_Windows_WindowComponent_SetClientSize_OpenTK_Platform_WindowHandle_System_Int32_System_Int32_" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.SetClientSize(OpenTK.Platform.WindowHandle,System.Int32,System.Int32)">SetClientSize(WindowHandle, int, int)</h4>
   <div class="markdown level1 summary"><p>Set the size of the client area (drawing area) of a window.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -2058,7 +2074,7 @@ Modifying things about the window outside of OpenTK functions may cause inconsis
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Core.Platform.WindowHandle.html">WindowHandle</a></td>
+        <td><a class="xref" href="OpenTK.Platform.WindowHandle.html">WindowHandle</a></td>
         <td><span class="parametername">handle</span></td>
         <td><p>Handle to a window.</p>
 </td>
@@ -2094,7 +2110,7 @@ Modifying things about the window outside of OpenTK functions may cause inconsis
     </tbody>
   </table>
   <a id="OpenTK_Platform_Native_Windows_WindowComponent_SetCursor_" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.SetCursor*"></a>
-  <h4 id="OpenTK_Platform_Native_Windows_WindowComponent_SetCursor_OpenTK_Core_Platform_WindowHandle_OpenTK_Core_Platform_CursorHandle_" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.SetCursor(OpenTK.Core.Platform.WindowHandle,OpenTK.Core.Platform.CursorHandle)">SetCursor(WindowHandle, CursorHandle?)</h4>
+  <h4 id="OpenTK_Platform_Native_Windows_WindowComponent_SetCursor_OpenTK_Platform_WindowHandle_OpenTK_Platform_CursorHandle_" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.SetCursor(OpenTK.Platform.WindowHandle,OpenTK.Platform.CursorHandle)">SetCursor(WindowHandle, CursorHandle?)</h4>
   <div class="markdown level1 summary"><p>Set the cursor object for a window.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -2113,13 +2129,13 @@ Modifying things about the window outside of OpenTK functions may cause inconsis
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Core.Platform.WindowHandle.html">WindowHandle</a></td>
+        <td><a class="xref" href="OpenTK.Platform.WindowHandle.html">WindowHandle</a></td>
         <td><span class="parametername">handle</span></td>
         <td><p>Handle to a window.</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="OpenTK.Core.Platform.CursorHandle.html">CursorHandle</a></td>
+        <td><a class="xref" href="OpenTK.Platform.CursorHandle.html">CursorHandle</a></td>
         <td><span class="parametername">cursor</span></td>
         <td><p>Handle to a cursor object, or null for hidden cursor.</p>
 </td>
@@ -2141,14 +2157,18 @@ Modifying things about the window outside of OpenTK functions may cause inconsis
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="OpenTK.Core.Platform.PalNotImplementedException.html">PalNotImplementedException</a></td>
-        <td><p>Driver does not support setting the window mouse cursor. See <a class="xref" href="OpenTK.Core.Platform.IWindowComponent.html#OpenTK_Core_Platform_IWindowComponent_CanSetCursor">CanSetCursor</a>.</p>
+        <td><a class="xref" href="OpenTK.Platform.PalNotImplementedException.html">PalNotImplementedException</a></td>
+        <td><p>Backend does not support setting the window mouse cursor. See <a class="xref" href="OpenTK.Platform.IWindowComponent.html#OpenTK_Platform_IWindowComponent_CanSetCursor">CanSetCursor</a>.</p>
 </td>
       </tr>
     </tbody>
   </table>
+  <h5 id="OpenTK_Platform_Native_Windows_WindowComponent_SetCursor_OpenTK_Platform_WindowHandle_OpenTK_Platform_CursorHandle__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="OpenTK.Platform.IWindowComponent.html#OpenTK_Platform_IWindowComponent_CanSetCursor">CanSetCursor</a></div>
+  </div>
   <a id="OpenTK_Platform_Native_Windows_WindowComponent_SetCursorCaptureMode_" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.SetCursorCaptureMode*"></a>
-  <h4 id="OpenTK_Platform_Native_Windows_WindowComponent_SetCursorCaptureMode_OpenTK_Core_Platform_WindowHandle_OpenTK_Core_Platform_CursorCaptureMode_" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.SetCursorCaptureMode(OpenTK.Core.Platform.WindowHandle,OpenTK.Core.Platform.CursorCaptureMode)">SetCursorCaptureMode(WindowHandle, CursorCaptureMode)</h4>
+  <h4 id="OpenTK_Platform_Native_Windows_WindowComponent_SetCursorCaptureMode_OpenTK_Platform_WindowHandle_OpenTK_Platform_CursorCaptureMode_" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.SetCursorCaptureMode(OpenTK.Platform.WindowHandle,OpenTK.Platform.CursorCaptureMode)">SetCursorCaptureMode(WindowHandle, CursorCaptureMode)</h4>
   <div class="markdown level1 summary"><p>Sets the cursor capture mode of the window.
 A cursor can be confined to the bounds of the window, or locked to the center of the window.</p>
 </div>
@@ -2168,21 +2188,25 @@ A cursor can be confined to the bounds of the window, or locked to the center of
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Core.Platform.WindowHandle.html">WindowHandle</a></td>
+        <td><a class="xref" href="OpenTK.Platform.WindowHandle.html">WindowHandle</a></td>
         <td><span class="parametername">handle</span></td>
         <td><p>Handle to a window.</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="OpenTK.Core.Platform.CursorCaptureMode.html">CursorCaptureMode</a></td>
+        <td><a class="xref" href="OpenTK.Platform.CursorCaptureMode.html">CursorCaptureMode</a></td>
         <td><span class="parametername">mode</span></td>
         <td><p>The cursor capture mode.</p>
 </td>
       </tr>
     </tbody>
   </table>
+  <h5 id="OpenTK_Platform_Native_Windows_WindowComponent_SetCursorCaptureMode_OpenTK_Platform_WindowHandle_OpenTK_Platform_CursorCaptureMode__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="OpenTK.Platform.IWindowComponent.html#OpenTK_Platform_IWindowComponent_CanCaptureCursor">CanCaptureCursor</a></div>
+  </div>
   <a id="OpenTK_Platform_Native_Windows_WindowComponent_SetFullscreenDisplay_" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.SetFullscreenDisplay*"></a>
-  <h4 id="OpenTK_Platform_Native_Windows_WindowComponent_SetFullscreenDisplay_OpenTK_Core_Platform_WindowHandle_OpenTK_Core_Platform_DisplayHandle_" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.SetFullscreenDisplay(OpenTK.Core.Platform.WindowHandle,OpenTK.Core.Platform.DisplayHandle)">SetFullscreenDisplay(WindowHandle, DisplayHandle?)</h4>
+  <h4 id="OpenTK_Platform_Native_Windows_WindowComponent_SetFullscreenDisplay_OpenTK_Platform_WindowHandle_OpenTK_Platform_DisplayHandle_" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.SetFullscreenDisplay(OpenTK.Platform.WindowHandle,OpenTK.Platform.DisplayHandle)">SetFullscreenDisplay(WindowHandle, DisplayHandle?)</h4>
   <div class="markdown level1 summary"><p>Put a window into 'windowed fullscreen' on a specified display or the display the window is displayed on.
 If <code class="paramref">display</code> is <code>null</code> then the window will be made fullscreen on the 'nearest' display.</p>
 </div>
@@ -2202,25 +2226,25 @@ If <code class="paramref">display</code> is <code>null</code> then the window wi
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Core.Platform.WindowHandle.html">WindowHandle</a></td>
+        <td><a class="xref" href="OpenTK.Platform.WindowHandle.html">WindowHandle</a></td>
         <td><span class="parametername">window</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="OpenTK.Core.Platform.DisplayHandle.html">DisplayHandle</a></td>
+        <td><a class="xref" href="OpenTK.Platform.DisplayHandle.html">DisplayHandle</a></td>
         <td><span class="parametername">display</span></td>
         <td><p>The display to make the window fullscreen on.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <h5 id="OpenTK_Platform_Native_Windows_WindowComponent_SetFullscreenDisplay_OpenTK_Core_Platform_WindowHandle_OpenTK_Core_Platform_DisplayHandle__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>To make an 'exclusive fullscreen' window see <a class="xref" href="OpenTK.Core.Platform.IWindowComponent.html#OpenTK_Core_Platform_IWindowComponent_SetFullscreenDisplay_OpenTK_Core_Platform_WindowHandle_OpenTK_Core_Platform_DisplayHandle_OpenTK_Core_Platform_VideoMode_">SetFullscreenDisplay(WindowHandle, DisplayHandle, VideoMode)</a>.</p>
+  <h5 id="OpenTK_Platform_Native_Windows_WindowComponent_SetFullscreenDisplay_OpenTK_Platform_WindowHandle_OpenTK_Platform_DisplayHandle__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>To make an 'exclusive fullscreen' window see <a class="xref" href="OpenTK.Platform.IWindowComponent.html#OpenTK_Platform_IWindowComponent_SetFullscreenDisplay_OpenTK_Platform_WindowHandle_OpenTK_Platform_DisplayHandle_OpenTK_Platform_VideoMode_">SetFullscreenDisplay(WindowHandle, DisplayHandle, VideoMode)</a>.</p>
 </div>
   <a id="OpenTK_Platform_Native_Windows_WindowComponent_SetFullscreenDisplay_" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.SetFullscreenDisplay*"></a>
-  <h4 id="OpenTK_Platform_Native_Windows_WindowComponent_SetFullscreenDisplay_OpenTK_Core_Platform_WindowHandle_OpenTK_Core_Platform_DisplayHandle_OpenTK_Core_Platform_VideoMode_" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.SetFullscreenDisplay(OpenTK.Core.Platform.WindowHandle,OpenTK.Core.Platform.DisplayHandle,OpenTK.Core.Platform.VideoMode)">SetFullscreenDisplay(WindowHandle, DisplayHandle, VideoMode)</h4>
+  <h4 id="OpenTK_Platform_Native_Windows_WindowComponent_SetFullscreenDisplay_OpenTK_Platform_WindowHandle_OpenTK_Platform_DisplayHandle_OpenTK_Platform_VideoMode_" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.SetFullscreenDisplay(OpenTK.Platform.WindowHandle,OpenTK.Platform.DisplayHandle,OpenTK.Platform.VideoMode)">SetFullscreenDisplay(WindowHandle, DisplayHandle, VideoMode)</h4>
   <div class="markdown level1 summary"><p>Put a window into 'exclusive fullscreen' on a specified display and change the video mode to the specified video mode.
-Only video modes accuired using <a class="xref" href="OpenTK.Core.Platform.IDisplayComponent.html#OpenTK_Core_Platform_IDisplayComponent_GetSupportedVideoModes_OpenTK_Core_Platform_DisplayHandle_">GetSupportedVideoModes(DisplayHandle)</a>
+Only video modes accuired using <a class="xref" href="OpenTK.Platform.IDisplayComponent.html#OpenTK_Platform_IDisplayComponent_GetSupportedVideoModes_OpenTK_Platform_DisplayHandle_">GetSupportedVideoModes(DisplayHandle)</a>
 are expected to work.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -2239,29 +2263,29 @@ are expected to work.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Core.Platform.WindowHandle.html">WindowHandle</a></td>
+        <td><a class="xref" href="OpenTK.Platform.WindowHandle.html">WindowHandle</a></td>
         <td><span class="parametername">window</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="OpenTK.Core.Platform.DisplayHandle.html">DisplayHandle</a></td>
+        <td><a class="xref" href="OpenTK.Platform.DisplayHandle.html">DisplayHandle</a></td>
         <td><span class="parametername">display</span></td>
         <td><p>The display to make the window fullscreen on.</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="OpenTK.Core.Platform.VideoMode.html">VideoMode</a></td>
+        <td><a class="xref" href="OpenTK.Platform.VideoMode.html">VideoMode</a></td>
         <td><span class="parametername">videoMode</span></td>
         <td><p>The video mode to use when making the window fullscreen.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <h5 id="OpenTK_Platform_Native_Windows_WindowComponent_SetFullscreenDisplay_OpenTK_Core_Platform_WindowHandle_OpenTK_Core_Platform_DisplayHandle_OpenTK_Core_Platform_VideoMode__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>To make an 'windowed fullscreen' window see <a class="xref" href="OpenTK.Core.Platform.IWindowComponent.html#OpenTK_Core_Platform_IWindowComponent_SetFullscreenDisplay_OpenTK_Core_Platform_WindowHandle_OpenTK_Core_Platform_DisplayHandle_">SetFullscreenDisplay(WindowHandle, DisplayHandle?)</a>.</p>
+  <h5 id="OpenTK_Platform_Native_Windows_WindowComponent_SetFullscreenDisplay_OpenTK_Platform_WindowHandle_OpenTK_Platform_DisplayHandle_OpenTK_Platform_VideoMode__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>To make an 'windowed fullscreen' window see <a class="xref" href="OpenTK.Platform.IWindowComponent.html#OpenTK_Platform_IWindowComponent_SetFullscreenDisplay_OpenTK_Platform_WindowHandle_OpenTK_Platform_DisplayHandle_">SetFullscreenDisplay(WindowHandle, DisplayHandle?)</a>.</p>
 </div>
   <a id="OpenTK_Platform_Native_Windows_WindowComponent_SetHitTestCallback_" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.SetHitTestCallback*"></a>
-  <h4 id="OpenTK_Platform_Native_Windows_WindowComponent_SetHitTestCallback_OpenTK_Core_Platform_WindowHandle_OpenTK_Core_Platform_HitTest_" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.SetHitTestCallback(OpenTK.Core.Platform.WindowHandle,OpenTK.Core.Platform.HitTest)">SetHitTestCallback(WindowHandle, HitTest?)</h4>
+  <h4 id="OpenTK_Platform_Native_Windows_WindowComponent_SetHitTestCallback_OpenTK_Platform_WindowHandle_OpenTK_Platform_HitTest_" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.SetHitTestCallback(OpenTK.Platform.WindowHandle,OpenTK.Platform.HitTest)">SetHitTestCallback(WindowHandle, HitTest?)</h4>
   <div class="markdown level1 summary"><p>Sets a delegate that is used for hit testing.
 Hit testing allows the user to specify if a click should start a drag or resize operation on the window.</p>
 <p>Hit testing is not always done in respone to the user clicking the mouse.
@@ -2284,13 +2308,13 @@ It is recommended to keep this code efficient as it will be called often.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Core.Platform.WindowHandle.html">WindowHandle</a></td>
+        <td><a class="xref" href="OpenTK.Platform.WindowHandle.html">WindowHandle</a></td>
         <td><span class="parametername">handle</span></td>
         <td><p>The window for which this hit test delegate should be used for.</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="OpenTK.Core.Platform.HitTest.html">HitTest</a></td>
+        <td><a class="xref" href="OpenTK.Platform.HitTest.html">HitTest</a></td>
         <td><span class="parametername">test</span></td>
         <td><p>The hit test delegate.</p>
 </td>
@@ -2298,7 +2322,7 @@ It is recommended to keep this code efficient as it will be called often.</p>
     </tbody>
   </table>
   <a id="OpenTK_Platform_Native_Windows_WindowComponent_SetIcon_" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.SetIcon*"></a>
-  <h4 id="OpenTK_Platform_Native_Windows_WindowComponent_SetIcon_OpenTK_Core_Platform_WindowHandle_OpenTK_Core_Platform_IconHandle_" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.SetIcon(OpenTK.Core.Platform.WindowHandle,OpenTK.Core.Platform.IconHandle)">SetIcon(WindowHandle, IconHandle)</h4>
+  <h4 id="OpenTK_Platform_Native_Windows_WindowComponent_SetIcon_OpenTK_Platform_WindowHandle_OpenTK_Platform_IconHandle_" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.SetIcon(OpenTK.Platform.WindowHandle,OpenTK.Platform.IconHandle)">SetIcon(WindowHandle, IconHandle)</h4>
   <div class="markdown level1 summary"><p>Set window icon object handle.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -2317,13 +2341,13 @@ It is recommended to keep this code efficient as it will be called often.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Core.Platform.WindowHandle.html">WindowHandle</a></td>
+        <td><a class="xref" href="OpenTK.Platform.WindowHandle.html">WindowHandle</a></td>
         <td><span class="parametername">handle</span></td>
         <td><p>Handle to a window.</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="OpenTK.Core.Platform.IconHandle.html">IconHandle</a></td>
+        <td><a class="xref" href="OpenTK.Platform.IconHandle.html">IconHandle</a></td>
         <td><span class="parametername">icon</span></td>
         <td><p>Handle to an icon object, or null to revert to default.</p>
 </td>
@@ -2345,14 +2369,18 @@ It is recommended to keep this code efficient as it will be called often.</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="OpenTK.Core.Platform.PalNotImplementedException.html">PalNotImplementedException</a></td>
-        <td><p>Driver does not support setting the window icon. See <a class="xref" href="OpenTK.Core.Platform.IWindowComponent.html#OpenTK_Core_Platform_IWindowComponent_CanSetIcon">CanSetIcon</a>.</p>
+        <td><a class="xref" href="OpenTK.Platform.PalNotImplementedException.html">PalNotImplementedException</a></td>
+        <td><p>Backend does not support setting the window icon. See <a class="xref" href="OpenTK.Platform.IWindowComponent.html#OpenTK_Platform_IWindowComponent_CanSetIcon">CanSetIcon</a>.</p>
 </td>
       </tr>
     </tbody>
   </table>
+  <h5 id="OpenTK_Platform_Native_Windows_WindowComponent_SetIcon_OpenTK_Platform_WindowHandle_OpenTK_Platform_IconHandle__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="OpenTK.Platform.IWindowComponent.html#OpenTK_Platform_IWindowComponent_CanSetIcon">CanSetIcon</a></div>
+  </div>
   <a id="OpenTK_Platform_Native_Windows_WindowComponent_SetMaxClientSize_" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.SetMaxClientSize*"></a>
-  <h4 id="OpenTK_Platform_Native_Windows_WindowComponent_SetMaxClientSize_OpenTK_Core_Platform_WindowHandle_System_Nullable_System_Int32__System_Nullable_System_Int32__" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.SetMaxClientSize(OpenTK.Core.Platform.WindowHandle,System.Nullable{System.Int32},System.Nullable{System.Int32})">SetMaxClientSize(WindowHandle, int?, int?)</h4>
+  <h4 id="OpenTK_Platform_Native_Windows_WindowComponent_SetMaxClientSize_OpenTK_Platform_WindowHandle_System_Nullable_System_Int32__System_Nullable_System_Int32__" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.SetMaxClientSize(OpenTK.Platform.WindowHandle,System.Nullable{System.Int32},System.Nullable{System.Int32})">SetMaxClientSize(WindowHandle, int?, int?)</h4>
   <div class="markdown level1 summary"><p>Sets the maximum size of the client area.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -2371,7 +2399,7 @@ It is recommended to keep this code efficient as it will be called often.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Core.Platform.WindowHandle.html">WindowHandle</a></td>
+        <td><a class="xref" href="OpenTK.Platform.WindowHandle.html">WindowHandle</a></td>
         <td><span class="parametername">handle</span></td>
         <td><p>Handle to a window.</p>
 </td>
@@ -2391,7 +2419,7 @@ It is recommended to keep this code efficient as it will be called often.</p>
     </tbody>
   </table>
   <a id="OpenTK_Platform_Native_Windows_WindowComponent_SetMinClientSize_" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.SetMinClientSize*"></a>
-  <h4 id="OpenTK_Platform_Native_Windows_WindowComponent_SetMinClientSize_OpenTK_Core_Platform_WindowHandle_System_Nullable_System_Int32__System_Nullable_System_Int32__" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.SetMinClientSize(OpenTK.Core.Platform.WindowHandle,System.Nullable{System.Int32},System.Nullable{System.Int32})">SetMinClientSize(WindowHandle, int?, int?)</h4>
+  <h4 id="OpenTK_Platform_Native_Windows_WindowComponent_SetMinClientSize_OpenTK_Platform_WindowHandle_System_Nullable_System_Int32__System_Nullable_System_Int32__" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.SetMinClientSize(OpenTK.Platform.WindowHandle,System.Nullable{System.Int32},System.Nullable{System.Int32})">SetMinClientSize(WindowHandle, int?, int?)</h4>
   <div class="markdown level1 summary"><p>Sets the minimum size of the client area.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -2410,7 +2438,7 @@ It is recommended to keep this code efficient as it will be called often.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Core.Platform.WindowHandle.html">WindowHandle</a></td>
+        <td><a class="xref" href="OpenTK.Platform.WindowHandle.html">WindowHandle</a></td>
         <td><span class="parametername">handle</span></td>
         <td><p>Handle to a window.</p>
 </td>
@@ -2430,7 +2458,7 @@ It is recommended to keep this code efficient as it will be called often.</p>
     </tbody>
   </table>
   <a id="OpenTK_Platform_Native_Windows_WindowComponent_SetMode_" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.SetMode*"></a>
-  <h4 id="OpenTK_Platform_Native_Windows_WindowComponent_SetMode_OpenTK_Core_Platform_WindowHandle_OpenTK_Core_Platform_WindowMode_" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.SetMode(OpenTK.Core.Platform.WindowHandle,OpenTK.Core.Platform.WindowMode)">SetMode(WindowHandle, WindowMode)</h4>
+  <h4 id="OpenTK_Platform_Native_Windows_WindowComponent_SetMode_OpenTK_Platform_WindowHandle_OpenTK_Platform_WindowMode_" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.SetMode(OpenTK.Platform.WindowHandle,OpenTK.Platform.WindowMode)">SetMode(WindowHandle, WindowMode)</h4>
   <div class="markdown level1 summary"><p>Set the mode of a window.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -2449,24 +2477,24 @@ It is recommended to keep this code efficient as it will be called often.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Core.Platform.WindowHandle.html">WindowHandle</a></td>
+        <td><a class="xref" href="OpenTK.Platform.WindowHandle.html">WindowHandle</a></td>
         <td><span class="parametername">handle</span></td>
         <td><p>Handle to a window.</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="OpenTK.Core.Platform.WindowMode.html">WindowMode</a></td>
+        <td><a class="xref" href="OpenTK.Platform.WindowMode.html">WindowMode</a></td>
         <td><span class="parametername">mode</span></td>
         <td><p>The new mode of the window.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <h5 id="OpenTK_Platform_Native_Windows_WindowComponent_SetMode_OpenTK_Core_Platform_WindowHandle_OpenTK_Core_Platform_WindowMode__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>Setting <a class="xref" href="OpenTK.Core.Platform.WindowMode.html#OpenTK_Core_Platform_WindowMode_WindowedFullscreen">WindowedFullscreen</a> or <a class="xref" href="OpenTK.Core.Platform.WindowMode.html#OpenTK_Core_Platform_WindowMode_ExclusiveFullscreen">ExclusiveFullscreen</a>
+  <h5 id="OpenTK_Platform_Native_Windows_WindowComponent_SetMode_OpenTK_Platform_WindowHandle_OpenTK_Platform_WindowMode__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Setting <a class="xref" href="OpenTK.Platform.WindowMode.html#OpenTK_Platform_WindowMode_WindowedFullscreen">WindowedFullscreen</a> or <a class="xref" href="OpenTK.Platform.WindowMode.html#OpenTK_Platform_WindowMode_ExclusiveFullscreen">ExclusiveFullscreen</a>
 will make the window fullscreen in the nearest monitor to the window location.
-Use <a class="xref" href="OpenTK.Core.Platform.IWindowComponent.html#OpenTK_Core_Platform_IWindowComponent_SetFullscreenDisplay_OpenTK_Core_Platform_WindowHandle_OpenTK_Core_Platform_DisplayHandle_">SetFullscreenDisplay(WindowHandle, DisplayHandle?)</a> or
-<a class="xref" href="OpenTK.Core.Platform.IWindowComponent.html#OpenTK_Core_Platform_IWindowComponent_SetFullscreenDisplay_OpenTK_Core_Platform_WindowHandle_OpenTK_Core_Platform_DisplayHandle_OpenTK_Core_Platform_VideoMode_">SetFullscreenDisplay(WindowHandle, DisplayHandle, VideoMode)</a> to explicitly set the monitor.</p>
+Use <a class="xref" href="OpenTK.Platform.IWindowComponent.html#OpenTK_Platform_IWindowComponent_SetFullscreenDisplay_OpenTK_Platform_WindowHandle_OpenTK_Platform_DisplayHandle_">SetFullscreenDisplay(WindowHandle, DisplayHandle?)</a> or
+<a class="xref" href="OpenTK.Platform.IWindowComponent.html#OpenTK_Platform_IWindowComponent_SetFullscreenDisplay_OpenTK_Platform_WindowHandle_OpenTK_Platform_DisplayHandle_OpenTK_Platform_VideoMode_">SetFullscreenDisplay(WindowHandle, DisplayHandle, VideoMode)</a> to explicitly set the monitor.</p>
 </div>
   <h5 class="exceptions">Exceptions</h5>
   <table class="table table-bordered table-condensed">
@@ -2488,14 +2516,14 @@ Use <a class="xref" href="OpenTK.Core.Platform.IWindowComponent.html#OpenTK_Core
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="OpenTK.Core.Platform.PalNotImplementedException.html">PalNotImplementedException</a></td>
-        <td><p>Driver does not support the value set by <code class="paramref">mode</code>. See <a class="xref" href="OpenTK.Core.Platform.IWindowComponent.html#OpenTK_Core_Platform_IWindowComponent_SupportedModes">SupportedModes</a>.</p>
+        <td><a class="xref" href="OpenTK.Platform.PalNotImplementedException.html">PalNotImplementedException</a></td>
+        <td><p>Driver does not support the value set by <code class="paramref">mode</code>. See <a class="xref" href="OpenTK.Platform.IWindowComponent.html#OpenTK_Platform_IWindowComponent_SupportedModes">SupportedModes</a>.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="OpenTK_Platform_Native_Windows_WindowComponent_SetPosition_" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.SetPosition*"></a>
-  <h4 id="OpenTK_Platform_Native_Windows_WindowComponent_SetPosition_OpenTK_Core_Platform_WindowHandle_System_Int32_System_Int32_" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.SetPosition(OpenTK.Core.Platform.WindowHandle,System.Int32,System.Int32)">SetPosition(WindowHandle, int, int)</h4>
+  <h4 id="OpenTK_Platform_Native_Windows_WindowComponent_SetPosition_OpenTK_Platform_WindowHandle_System_Int32_System_Int32_" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.SetPosition(OpenTK.Platform.WindowHandle,System.Int32,System.Int32)">SetPosition(WindowHandle, int, int)</h4>
   <div class="markdown level1 summary"><p>Set the window position in display coordinates (top left origin).</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -2514,7 +2542,7 @@ Use <a class="xref" href="OpenTK.Core.Platform.IWindowComponent.html#OpenTK_Core
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Core.Platform.WindowHandle.html">WindowHandle</a></td>
+        <td><a class="xref" href="OpenTK.Platform.WindowHandle.html">WindowHandle</a></td>
         <td><span class="parametername">handle</span></td>
         <td><p>Handle to a window.</p>
 </td>
@@ -2550,7 +2578,7 @@ Use <a class="xref" href="OpenTK.Core.Platform.IWindowComponent.html#OpenTK_Core
     </tbody>
   </table>
   <a id="OpenTK_Platform_Native_Windows_WindowComponent_SetSize_" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.SetSize*"></a>
-  <h4 id="OpenTK_Platform_Native_Windows_WindowComponent_SetSize_OpenTK_Core_Platform_WindowHandle_System_Int32_System_Int32_" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.SetSize(OpenTK.Core.Platform.WindowHandle,System.Int32,System.Int32)">SetSize(WindowHandle, int, int)</h4>
+  <h4 id="OpenTK_Platform_Native_Windows_WindowComponent_SetSize_OpenTK_Platform_WindowHandle_System_Int32_System_Int32_" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.SetSize(OpenTK.Platform.WindowHandle,System.Int32,System.Int32)">SetSize(WindowHandle, int, int)</h4>
   <div class="markdown level1 summary"><p>Set the size of the window.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -2569,7 +2597,7 @@ Use <a class="xref" href="OpenTK.Core.Platform.IWindowComponent.html#OpenTK_Core
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Core.Platform.WindowHandle.html">WindowHandle</a></td>
+        <td><a class="xref" href="OpenTK.Platform.WindowHandle.html">WindowHandle</a></td>
         <td><span class="parametername">handle</span></td>
         <td><p>Handle to a window.</p>
 </td>
@@ -2605,7 +2633,7 @@ Use <a class="xref" href="OpenTK.Core.Platform.IWindowComponent.html#OpenTK_Core
     </tbody>
   </table>
   <a id="OpenTK_Platform_Native_Windows_WindowComponent_SetTitle_" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.SetTitle*"></a>
-  <h4 id="OpenTK_Platform_Native_Windows_WindowComponent_SetTitle_OpenTK_Core_Platform_WindowHandle_System_String_" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.SetTitle(OpenTK.Core.Platform.WindowHandle,System.String)">SetTitle(WindowHandle, string)</h4>
+  <h4 id="OpenTK_Platform_Native_Windows_WindowComponent_SetTitle_OpenTK_Platform_WindowHandle_System_String_" data-uid="OpenTK.Platform.Native.Windows.WindowComponent.SetTitle(OpenTK.Platform.WindowHandle,System.String)">SetTitle(WindowHandle, string)</h4>
   <div class="markdown level1 summary"><p>Set the title of a window.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -2624,7 +2652,7 @@ Use <a class="xref" href="OpenTK.Core.Platform.IWindowComponent.html#OpenTK_Core
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Core.Platform.WindowHandle.html">WindowHandle</a></td>
+        <td><a class="xref" href="OpenTK.Platform.WindowHandle.html">WindowHandle</a></td>
         <td><span class="parametername">handle</span></td>
         <td><p>Handle to a window.</p>
 </td>
@@ -2655,10 +2683,10 @@ Use <a class="xref" href="OpenTK.Core.Platform.IWindowComponent.html#OpenTK_Core
   </table>
   <h3 id="implements">Implements</h3>
   <div>
-      <a class="xref" href="OpenTK.Core.Platform.IWindowComponent.html">IWindowComponent</a>
+      <a class="xref" href="OpenTK.Platform.IWindowComponent.html">IWindowComponent</a>
   </div>
   <div>
-      <a class="xref" href="OpenTK.Core.Platform.IPalComponent.html">IPalComponent</a>
+      <a class="xref" href="OpenTK.Platform.IPalComponent.html">IPalComponent</a>
   </div>
 
 </article>

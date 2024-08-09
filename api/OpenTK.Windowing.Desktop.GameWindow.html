@@ -5,11 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class GameWindow
-  - OpenTK</title>
+    <title>Class GameWindow  - OpenTK</title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class GameWindow
- ">
+    <meta name="title" content="Class GameWindow ">
     <meta name="generator" content="docfx ">
   
     <link rel="shortcut icon" href="../favicon.ico">
@@ -27,8 +25,7 @@
     <meta property="og:image:width" content="142">
     <meta property="og:image:height" content="50">
     <meta property="og:site_name" content="OpenTK">
-    <meta property="og:title" content="Class GameWindow
-  - OpenTK">
+    <meta property="og:title" content="Class GameWindow  - OpenTK">
     <meta name="theme-color" content="#ffffff">
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
@@ -80,8 +77,7 @@
 
 
 
-  <h1 id="OpenTK_Windowing_Desktop_GameWindow" data-uid="OpenTK.Windowing.Desktop.GameWindow" class="text-break">Class GameWindow
-</h1>
+  <h1 id="OpenTK_Windowing_Desktop_GameWindow" data-uid="OpenTK.Windowing.Desktop.GameWindow" class="text-break">Class GameWindow</h1>
   <div class="markdown level0 summary"><p>The <a class="xref" href="OpenTK.Windowing.Desktop.GameWindow.html">GameWindow</a> class contains cross-platform methods to create and render on an OpenGL
 window, handle input and load resources.</p>
 </div>
@@ -524,9 +520,9 @@ public bool IsMultiThreaded { get; }</code></pre>
   </table>
   <h5 id="OpenTK_Windowing_Desktop_GameWindow_IsMultiThreaded_remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>
-  If this is true, render frames will be processed in a separate thread.
-  Do not enable this unless your code is thread safe.
-</p>
+    If this is true, render frames will be processed in a separate thread.
+    Do not enable this unless your code is thread safe.
+  </p>
 </div>
   <a id="OpenTK_Windowing_Desktop_GameWindow_IsRunningSlowly_" data-uid="OpenTK.Windowing.Desktop.GameWindow.IsRunningSlowly*"></a>
   <h4 id="OpenTK_Windowing_Desktop_GameWindow_IsRunningSlowly" data-uid="OpenTK.Windowing.Desktop.GameWindow.IsRunningSlowly">IsRunningSlowly</h4>
@@ -580,11 +576,11 @@ public double RenderFrequency { get; set; }</code></pre>
     </tbody>
   </table>
   <h5 id="OpenTK_Windowing_Desktop_GameWindow_RenderFrequency_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"> <p>
+  <div class="markdown level1 remarks"><p>
 A value of 0.0 indicates that RenderFrame events are generated at the maximum possible frequency (i.e. only
 limited by the hardware's capabilities).
  </p>
- <p>Values lower than 1.0Hz are clamped to 0.0. Values higher than 500.0Hz are clamped to 500.0Hz.</p>
+<p>Values lower than 1.0Hz are clamped to 0.0. Values higher than 500.0Hz are clamped to 500.0Hz.</p>
 </div>
   <a id="OpenTK_Windowing_Desktop_GameWindow_RenderTime_" data-uid="OpenTK.Windowing.Desktop.GameWindow.RenderTime*"></a>
   <h4 id="OpenTK_Windowing_Desktop_GameWindow_RenderTime" data-uid="OpenTK.Windowing.Desktop.GameWindow.RenderTime">RenderTime</h4>
@@ -636,11 +632,11 @@ public double RenderTime { get; protected set; }</code></pre>
     </tbody>
   </table>
   <h5 id="OpenTK_Windowing_Desktop_GameWindow_UpdateFrequency_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"> <p>
+  <div class="markdown level1 remarks"><p>
 A value of 0.0 indicates that UpdateFrame events are generated at the maximum possible frequency (i.e. only
 limited by the hardware's capabilities).
  </p>
- <p>Values lower than 1.0Hz are clamped to 0.0. Values higher than 500.0Hz are clamped to 500.0Hz.</p>
+<p>Values lower than 1.0Hz are clamped to 0.0. Values higher than 500.0Hz are clamped to 500.0Hz.</p>
 </div>
   <a id="OpenTK_Windowing_Desktop_GameWindow_UpdateTime_" data-uid="OpenTK.Windowing.Desktop.GameWindow.UpdateTime*"></a>
   <h4 id="OpenTK_Windowing_Desktop_GameWindow_UpdateTime" data-uid="OpenTK.Windowing.Desktop.GameWindow.UpdateTime">UpdateTime</h4>
@@ -728,7 +724,8 @@ limited by the hardware's capabilities).
   </table>
   <a id="OpenTK_Windowing_Desktop_GameWindow_OnRenderThreadStarted_" data-uid="OpenTK.Windowing.Desktop.GameWindow.OnRenderThreadStarted*"></a>
   <h4 id="OpenTK_Windowing_Desktop_GameWindow_OnRenderThreadStarted" data-uid="OpenTK.Windowing.Desktop.GameWindow.OnRenderThreadStarted">OnRenderThreadStarted()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Run when the update thread is started. This will never run if you set <a class="xref" href="OpenTK.Windowing.Desktop.GameWindow.html#OpenTK_Windowing_Desktop_GameWindow_IsMultiThreaded">IsMultiThreaded</a> to false.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
