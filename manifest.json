@@ -7627,6 +7627,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "learn/pal2/Application-Icon.md",
+      "output": {
+        ".html": {
+          "relative_path": "learn/pal2/Application-Icon.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "learn/pal2/Components.md",
       "output": {
         ".html": {

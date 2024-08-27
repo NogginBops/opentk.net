@@ -1,0 +1,201 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Setting up your PAL2 application with an application icon  - OpenTK</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Setting up your PAL2 application with an application icon ">
+    <meta name="generator" content="docfx ">
+  
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+  
+  
+  
+
+    <meta name="author" content="The Open Toolkit Project">
+    <meta property="og:image" content="https://opentk.net/otkBig.png">
+    <meta property="og:image:width" content="142">
+    <meta property="og:image:height" content="50">
+    <meta property="og:site_name" content="OpenTK">
+    <meta property="og:title" content="Setting up your PAL2 application with an application icon  - OpenTK">
+    <meta name="theme-color" content="#ffffff">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation" style="background: #0052cc;">
+          <div class="container">
+            <a class="navbar-brand" href="../../index.html">
+          <img id="logo" src="../../otkBig.png" alt="">
+        </a>
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="setting-up-your-pal2-application-with-an-application-icon">Setting up your PAL2 application with an application icon</h1>
+
+<p>Every operating system has a different way of handling application icons. This document will guide you through the different icon options available in PAL2 and how to set them up to work.</p>
+<p>The simplest way to set your application icon is through <a class="xref" href="../../api/OpenTK.Platform.IWindowComponent.html#OpenTK_Platform_IWindowComponent_SetIcon_OpenTK_Platform_WindowHandle_OpenTK_Platform_IconHandle_"><code>Toolkit.Window.SetIcon</code></a> which will set the window icon at runtime. But this might be undesirable the desktop icon that the operating system will use to represent your application will still be unset. This is where the operating system specific setup comes into play.</p>
+<p>Here are the guides for the different operating systems.</p>
+<ul>
+<li><a href="#windows">Windows</a></li>
+<li><a href="#macOS">macOS</a></li>
+<li><a href="#linux">Linux</a></li>
+</ul>
+<h2 id="windows">Windows</h2>
+<div class="NOTE">
+<h5>Note</h5>
+<p>TODO: Add note about multi-resolution icons and accessing embedded resources through the PAL2 interface.</p>
+</div>
+<h3 id="the-simple-way">The simple way</h3>
+<p>On windows your <code>.exe</code> contains a number of embedded resources. These resources contain a bunch of info related to your application. One of these pieces of information is the icon the <code>.exe</code> should use. The easiest way to set this up is by adding the following line to your <code>.csproj</code> file:</p>
+<pre><code class="lang-xml">&lt;PropertyGroup&gt;
+    &lt;ApplicationIcon&gt;path/to/icon.ico&lt;/ApplicationIcon&gt;
+&lt;/PropertyGroup&gt;
+</code></pre>
+<p>This will automatically add this <code>.ico</code> file into the manifest of your built <code>.exe</code> and so the application will have the correct appearence in explorer and on the desktop.</p>
+<h3 id="the-more-involved-way">The more involved way</h3>
+<p>Setting the icon like we did the simple way works fine for application icons, but if you want to have more control over your icon or potentially add native <code>.cur</code> cursors to your project you might want to consider using a win32 resource file (<code>.res</code>).
+This requires a little setup when building C# projects, this is because you need to compile your binary <code>.res</code> file from a <code>.rc</code> file using <code>rc.exe</code> (located in your windows SDK, e.g. <code>C:\Program Files (x86)\Windows Kits\10\bin\10.0.22000.0\x64\rc.exe</code>). More info on resource files can be found here: <a href="https://learn.microsoft.com/en-us/windows/win32/menurc/about-resource-files">https://learn.microsoft.com/en-us/windows/win32/menurc/about-resource-files</a></p>
+<p>But a basic <code>app.rc</code> file might look like this:</p>
+<pre><code class="lang-rc">app_ico ICON &quot;path/to/app.ico&quot;
+</code></pre>
+<p><code>app_ico</code> is a name you can later use to load this icon, but by placing it as the first icon in the <code>.rc</code> file it will also become the application icon.</p>
+<p>Then to compile this file you would run <code>rc.exe app.rc</code> which will produce a <code>app.res</code> file that we will now include include in our <code>.csproj</code> like this:</p>
+<pre><code class="lang-xml">&lt;PropertyGroup&gt;
+    &lt;Win32Resource&gt;path/to/app.res&lt;/Win32Resource&gt;
+&lt;/PropertyGroup&gt;
+</code></pre>
+<p>This will allow you to add additional entries in your <code>.rc</code> resource file like cursors, manifests, or whatever else you might want. To read more about windows publishing, please read this article: <a href="">TODO: Windows publishing</a></p>
+<h2 id="macos">macOS</h2>
+<div class="NOTE">
+<h5>Note</h5>
+<p>TODO: Mention <code>MacOSIconComponent.CreateSFSymbol</code>?</p>
+</div>
+<p>On macOS an application is a special folder that contains a bunch of different files and folders. One of these files is called <code>info.plist</code> and contains a bunch of information about your application, including the icon to use.</p>
+<p>A simple <code>info.plist</code> could look like this:</p>
+<pre><code class="lang-plist">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE plist PUBLIC &quot;-//Apple//DTD PLIST 1.0//EN&quot; &quot;http://www.apple.com/DTDs/PropertyList-1.0.dtd&quot;&gt;
+&lt;plist version=&quot;1.0&quot;&gt;
+&lt;dict&gt;
+    &lt;key&gt;CFBundleIdentifier&lt;/key&gt;
+    &lt;string&gt;my.app.Application&lt;/string&gt;
+    &lt;key&gt;CFBundleInfoDictionaryVersion&lt;/key&gt;
+	&lt;string&gt;6.0&lt;/string&gt;
+    &lt;key&gt;CFBundleName&lt;/key&gt;
+	&lt;string&gt;My app name&lt;/string&gt;
+    &lt;key&gt;CFBundleIconFile&lt;/key&gt;
+    &lt;string&gt;icon.png&lt;/string&gt;
+    &lt;key&gt;CFBundlePackageType&lt;/key&gt;
+	&lt;string&gt;APPL&lt;/string&gt;
+&lt;/dict&gt;
+&lt;/plist&gt;
+</code></pre>
+<p>You can read more about <code>info.plist</code> and other keys and features related to it here: <a href="https://developer.apple.com/documentation/bundleresources/information_property_list/managing_your_app_s_information_property_list?language=objc">https://developer.apple.com/documentation/bundleresources/information_property_list/managing_your_app_s_information_property_list?language=objc</a></p>
+<p><code>info.plist</code> keys of interest might be <code>CFBundleDisplayName</code> in combination with a <code>InfoPlist.strings</code> file for application name localization, or <code>CFBundleDevelopmentRegion</code> to set the default language for the application.</p>
+<p>To include this in your project we can do the following in the <code>.csproj</code>:</p>
+<pre><code class="lang-xml">&lt;ItemList&gt;
+    &lt;ItemGroup&gt;
+        &lt;!-- FIXME: Add condition on compiling for macOS so we don't have an unecessary files on other platforms. --&gt;
+        &lt;Content Include=&quot;info.plist&quot;&gt;
+            &lt;CopyToOutputDirectory&gt;PreserveNewest&lt;/CopyToOutputDirectory&gt;
+        &lt;/Content&gt;
+    &lt;/ItemGroup&gt;
+&lt;/PropertyGroup&gt;
+</code></pre>
+<p>To read more about packaging on macOS, read this article: <a href="">TODO: macOS publishing</a>.</p>
+<h2 id="linux">Linux</h2>
+<div class="NOTE">
+<h5>Note</h5>
+<p>TODO: Mention the PAL2 api for setting multi-resolution icons programatically. The <code>.desktop</code> method is still preferred.</p>
+</div>
+<p>On KDE and GNOME <code>.desktop</code> files are used to specify application metadata similar to <code>info.plist</code>. The specification for how these <code>.desktop</code> files can be found here: <a href="https://specifications.freedesktop.org/desktop-entry-spec/latest/">https://specifications.freedesktop.org/desktop-entry-spec/latest/</a></p>
+<p>Here is a basic <code>my.application.desktop</code> (TODO: Make a note about this matching some OpenTK specified d-bus name... something something):</p>
+<pre><code>[Desktop Entry]
+Version=1.0
+Type=Application
+Name=My Application
+Exec=/usr/bin/myapplication
+Path=/usr/bin/
+Icon=/usr/share/icons/Humanity/apps/32/icon.svg
+Terminal=false
+Categories=Game;
+</code></pre>
+<p>Additional entires might be interesting such as <code>PrefersNonDefaultGPU</code> as a hint to default to a more powerful GPU (if the desktop environment honors this hint).</p>
+<p>This file should then at install time be placed into <code>/usr/share/applications/my.application.desktop</code>. To read more about publishing for linux, please read this article: <a href="">TODO: linux publishing</a></p>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>
