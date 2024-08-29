@@ -7676,6 +7676,16 @@
       "version": ""
     },
     {
+      "type": "Conceptual",
+      "source_relative_path": "learn/pal2/Vulkan.md",
+      "output": {
+        ".html": {
+          "relative_path": "learn/pal2/Vulkan.html"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Toc",
       "source_relative_path": "learn/toc.yml",
       "output": {

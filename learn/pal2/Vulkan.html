@@ -1,0 +1,197 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Getting started with the OpenTK PAL2 Vulkan component  - OpenTK</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Getting started with the OpenTK PAL2 Vulkan component ">
+    <meta name="generator" content="docfx ">
+  
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+  
+  
+  
+
+    <meta name="author" content="The Open Toolkit Project">
+    <meta property="og:image" content="https://opentk.net/otkBig.png">
+    <meta property="og:image:width" content="142">
+    <meta property="og:image:height" content="50">
+    <meta property="og:site_name" content="OpenTK">
+    <meta property="og:title" content="Getting started with the OpenTK PAL2 Vulkan component  - OpenTK">
+    <meta name="theme-color" content="#ffffff">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation" style="background: #0052cc;">
+          <div class="container">
+            <a class="navbar-brand" href="../../index.html">
+          <img id="logo" src="../../otkBig.png" alt="">
+        </a>
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="getting-started-with-the-opentk-pal2-vulkan-component">Getting started with the OpenTK PAL2 Vulkan component</h1>
+
+<p>OpenTK 5 brings Vulkan bindings to OpenTK. Unlike OpenGL Vulkan contains extensions for platform creation and display, so with the basic native access that both GLFW and PAL2 offer it's possible to create your own Vulkan instance and device just with the OpenTK Vulkan bindings.</p>
+<p>However this requires code for each operating system which is not very beginner friendly or in the spirit of OpenTK as a cross-platform API. So like APIs like GLFW and SDL, OpenTKs PAL2 contains a Vulkan component that makes creating cross-platform device instances easier.</p>
+<h2 id="the-vkloader-class">The <a class="xref" href="../../api/OpenTK.Graphics.VKLoader.html"><code>VKLoader</code></a> class</h2>
+<p>The first piece of the puzzle is the <a class="xref" href="../../api/OpenTK.Graphics.VKLoader.html"><code>VKLoader</code></a> class that contains the logic for loading Vulkan function entry-points.
+All of the <code>VK.*</code> functions use this loader to on-demand load Vulkan functions as they are called.
+For this to work <a class="xref" href="../../api/OpenTK.Graphics.VKLoader.html"><code>VKLoader</code></a> must first dynamically load the Vulkan library of the current platform by calling <a class="xref" href="../../api/OpenTK.Graphics.VKLoader.html#OpenTK_Graphics_VKLoader_Init"><code>VKLoader.Init()</code></a>.
+Below is a list of the default names OpenTK will look for:</p>
+<table>
+<thead>
+<tr>
+<th>Platform</th>
+<th>Vulkan dynamic library</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Windows</td>
+<td><code>vulkan-1.dll</code></td>
+</tr>
+<tr>
+<td>Linux</td>
+<td><code>libvulkan.so.1</code></td>
+</tr>
+<tr>
+<td>FreeBSD</td>
+<td><code>libvulkan.so.1</code></td>
+</tr>
+<tr>
+<td>macOS</td>
+<td><code>libvulkan.1.dylib</code></td>
+</tr>
+</tbody>
+</table>
+<p>After the Vulkan loader has been found <a class="xref" href="../../api/OpenTK.Graphics.VKLoader.html"><code>VKLoader</code></a> will load the <code>vkGetInstanceProcAddr</code> entry-point which is the future base for all function loading in Vulkan. This type of loading will work fine for functions that are &quot;global commands&quot;:</p>
+<table>
+<thead>
+<tr>
+<th>Global commands</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://registry.khronos.org/vulkan/specs/1.3-extensions/man/html/vkEnumerateInstanceVersion.html"><code>vkEnumerateInstanceVersion</code></a></td>
+</tr>
+<tr>
+<td><a href="https://registry.khronos.org/vulkan/specs/1.3-extensions/man/html/vkEnumerateInstanceExtensionProperties.html"><code>vkEnumerateInstanceExtensionProperties</code></a></td>
+</tr>
+<tr>
+<td><a href="https://registry.khronos.org/vulkan/specs/1.3-extensions/man/html/vkEnumerateInstanceLayerProperties.html"><code>vkEnumerateInstanceLayerProperties</code></a></td>
+</tr>
+<tr>
+<td><a href="https://registry.khronos.org/vulkan/specs/1.3-extensions/man/html/vkCreateInstance.html"><code>vkCreateInstance</code></a></td>
+</tr>
+</tbody>
+</table>
+<p>To load further entry-points a Vulkan instance needs to be created and provided to <a class="xref" href="../../api/OpenTK.Graphics.VKLoader.html"><code>VKLoader</code></a> through <a class="xref" href="../../api/OpenTK.Graphics.VKLoader.html#OpenTK_Graphics_VKLoader_SetInstance_OpenTK_Graphics_Vulkan_VkInstance_"><code>VKLoader.SetInstance(VkInstance)</code></a>. This will enable loading of further function entry-points of the Vulkan API.</p>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>Currently OpenTKs Vulkan bindings do not have built-in support for loading through <code>vkGetDeviceProcAddr</code> or having multiple sets of entry-points for different devices. For now <code>vkGetInstanceProcAddr</code> is the only option. Enabling <code>vkGetDeviceProcAddr</code> loading is planned functionality.</p>
+</div>
+<h2 id="using-the-pal2-vulkan-component">Using the PAL2 Vulkan component</h2>
+<p>The PAL2 Vulkan component is accesible through <a class="xref" href="../../api/OpenTK.Platform.Toolkit.html#OpenTK_Platform_Toolkit_Vulkan"><code>Toolkit.Vulkan</code></a> and contains convenience features for easily creating cross-platform Vulkan instances and devices.</p>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a class="xref" href="../../api/OpenTK.Platform.IVulkanComponent.html#OpenTK_Platform_IVulkanComponent_GetRequiredInstanceExtensions"><code>Toolkit.Vulkan.GetRequiredInstanceExtensions()</code></a></td>
+<td>This function returns a list of required Vulkan instance extensions required to be able to create a window surface on the current platform.</td>
+</tr>
+<tr>
+<td><a class="xref" href="../../api/OpenTK.Platform.IVulkanComponent.html#OpenTK_Platform_IVulkanComponent_GetPhysicalDevicePresentationSupport_OpenTK_Graphics_Vulkan_VkInstance_OpenTK_Graphics_Vulkan_VkPhysicalDevice_System_UInt32_"><code>Toolkit.Vulkan.GetPhysicalDevicePresentationSupport(...)</code></a></td>
+<td>Queries if the specified device queue supports presentation. Only queues which support presentation can be passed to <a href="https://registry.khronos.org/vulkan/specs/1.3-extensions/man/html/vkQueuePresentKHR.html"><code>vkQueuePresentKHR</code></a> and therefore only these queues can be displayed to the user.</td>
+</tr>
+<tr>
+<td><a class="xref" href="../../api/OpenTK.Platform.IVulkanComponent.html#OpenTK_Platform_IVulkanComponent_CreateWindowSurface_OpenTK_Graphics_Vulkan_VkInstance_OpenTK_Platform_WindowHandle_OpenTK_Graphics_Vulkan_VkAllocationCallbacks__OpenTK_Graphics_Vulkan_VkSurfaceKHR__"><code>Toolkit.Vulkan.CreateWindowSurface(...)</code></a></td>
+<td>This is used to create a <code>VkSurfaceKHR</code> from a <code>WindowHandle</code> on the current platform. This function calls the instance extensions enabled by <code>GetRequiredInstanceExtensions()</code> to create the surface.</td>
+</tr>
+</tbody>
+</table>
+<p>With these functions in-hand, following any Vulkan tutorial (written for c/c++) using OpenTK should be pretty easy to adapt to be able to use these functions. For a complete working example, please see the <a href="https://github.com/opentk/opentk/blob/opentk5.0/tests/VulkanTestProject/Program.cs">VulkanTestProject</a> in the OpenTK repo.</p>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>
