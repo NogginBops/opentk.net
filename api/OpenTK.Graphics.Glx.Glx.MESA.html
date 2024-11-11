@@ -374,7 +374,7 @@
     </tbody>
   </table>
   <a id="OpenTK_Graphics_Glx_Glx_MESA_GetAGPOffsetMESA_" data-uid="OpenTK.Graphics.Glx.Glx.MESA.GetAGPOffsetMESA*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_MESA_GetAGPOffsetMESA__1___0__" data-uid="OpenTK.Graphics.Glx.Glx.MESA.GetAGPOffsetMESA``1(``0@)">GetAGPOffsetMESA&lt;T1&gt;(in T1)</h4>
+  <h4 id="OpenTK_Graphics_Glx_Glx_MESA_GetAGPOffsetMESA__1___0__" data-uid="OpenTK.Graphics.Glx.Glx.MESA.GetAGPOffsetMESA``1(``0@)">GetAGPOffsetMESA&lt;T1&gt;(ref readonly T1)</h4>
   <div class="markdown level1 summary"><p><b>[requires: GLX_MESA_agp_offset]</b>
 <b>[entry point: <code>glXGetAGPOffsetMESA</code>]</b>
 <br></p>
@@ -382,7 +382,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static uint GetAGPOffsetMESA&lt;T1&gt;(in T1 pointer) where T1 : unmanaged</code></pre>
+    <pre><code class="lang-csharp hljs">public static uint GetAGPOffsetMESA&lt;T1&gt;(ref readonly T1 pointer) where T1 : unmanaged</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -709,7 +709,10 @@
   </table>
   <a id="OpenTK_Graphics_Glx_Glx_MESA_QueryCurrentRendererStringMESA_" data-uid="OpenTK.Graphics.Glx.Glx.MESA.QueryCurrentRendererStringMESA*"></a>
   <h4 id="OpenTK_Graphics_Glx_Glx_MESA_QueryCurrentRendererStringMESA_System_Int32_" data-uid="OpenTK.Graphics.Glx.Glx.MESA.QueryCurrentRendererStringMESA(System.Int32)">QueryCurrentRendererStringMESA(int)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p><b>[requires: GLX_MESA_query_renderer]</b>
+<b>[entry point: <code>glXQueryCurrentRendererStringMESA</code>]</b>
+<br></p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -1044,7 +1047,10 @@
   </table>
   <a id="OpenTK_Graphics_Glx_Glx_MESA_QueryRendererStringMESA_" data-uid="OpenTK.Graphics.Glx.Glx.MESA.QueryRendererStringMESA*"></a>
   <h4 id="OpenTK_Graphics_Glx_Glx_MESA_QueryRendererStringMESA_OpenTK_Graphics_Glx_DisplayPtr_System_Int32_System_Int32_System_Int32_" data-uid="OpenTK.Graphics.Glx.Glx.MESA.QueryRendererStringMESA(OpenTK.Graphics.Glx.DisplayPtr,System.Int32,System.Int32,System.Int32)">QueryRendererStringMESA(DisplayPtr, int, int, int)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p><b>[requires: GLX_MESA_query_renderer]</b>
+<b>[entry point: <code>glXQueryRendererStringMESA</code>]</b>
+<br></p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">

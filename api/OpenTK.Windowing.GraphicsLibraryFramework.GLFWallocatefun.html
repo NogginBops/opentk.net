@@ -4,39 +4,35 @@
 
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Delegate GLFWallocatefun  - OpenTK</title>
-    <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Delegate GLFWallocatefun ">
-    <meta name="generator" content="docfx ">
-  
-    <link rel="shortcut icon" href="../favicon.ico">
-    <link rel="stylesheet" href="../styles/docfx.vendor.css">
-    <link rel="stylesheet" href="../styles/docfx.css">
-    <link rel="stylesheet" href="../styles/main.css">
-    <meta property="docfx:navrel" content="../toc.html">
-    <meta property="docfx:tocrel" content="toc.html">
-  
-  
-  
-
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Delegate GLFWallocatefun | OpenTK </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Delegate GLFWallocatefun | OpenTK ">
+    
+    <meta name="description" content="The function pointer type for memory allocation callbacks. This is the function pointer type for memory allocation callbacks. A memory allocation callback function has the following signature: void* function_name(size_t size, void* user) This function must return either a memory block at least size bytes long, or NULL if allocation failed.Note that not all parts of GLFW handle allocation failures gracefully yet. This function must support being called during  glfwInit but before the library is flagged as initialized, as well as during  glfwTerminate after the library is no longer flagged as initialized. Any memory allocated via this function will be deallocated via the same allocator during library termination or earlier. Any memory allocated via this function must be suitably aligned for any object type. If you are using C99 or earlier, this alignment is platform-dependent but will be the same as what malloc provides.If you are using C11 or later, this is the value of alignof(max_align_t). The size will always be greater than zero.  Allocations of size zero are filtered out before reaching the custom allocator. If this function returns NULL, GLFW will emit . This function must not call any GLFW function. Added in version 3.4.">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
     <meta name="author" content="The Open Toolkit Project">
     <meta property="og:image" content="https://opentk.net/otkBig.png">
     <meta property="og:image:width" content="142">
     <meta property="og:image:height" content="50">
     <meta property="og:site_name" content="OpenTK">
-    <meta property="og:title" content="Delegate GLFWallocatefun  - OpenTK">
+    <meta property="og:title" content="Delegate GLFWallocatefun | OpenTK  - OpenTK">
     <meta name="theme-color" content="#ffffff">
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
 
-        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation" style="background: #0052cc;">
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
           <div class="container">
-            <a class="navbar-brand" href="../index.html">
-          <img id="logo" src="../otkBig.png" alt="">
-        </a>
             <div class="navbar-header">
               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
                 <span class="sr-only">Toggle navigation</span>
@@ -44,6 +40,10 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" src="../otkBig.png" alt="">
+              </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
               <form class="navbar-form navbar-right" role="search" id="search">
@@ -54,7 +54,6 @@
             </div>
           </div>
         </nav>
-
         <div class="subnav navbar navbar-default">
           <div class="container hide-when-search" id="breadcrumb">
             <ul class="breadcrumb">

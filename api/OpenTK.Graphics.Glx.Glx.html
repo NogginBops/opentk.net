@@ -176,7 +176,7 @@
     </tbody>
   </table>
   <a id="OpenTK_Graphics_Glx_Glx_ChooseFBConfig_" data-uid="OpenTK.Graphics.Glx.Glx.ChooseFBConfig*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_ChooseFBConfig_OpenTK_Graphics_Glx_DisplayPtr_System_Int32_System_Int32__System_Int32__" data-uid="OpenTK.Graphics.Glx.Glx.ChooseFBConfig(OpenTK.Graphics.Glx.DisplayPtr,System.Int32,System.Int32@,System.Int32@)">ChooseFBConfig(DisplayPtr, int, in int, ref int)</h4>
+  <h4 id="OpenTK_Graphics_Glx_Glx_ChooseFBConfig_OpenTK_Graphics_Glx_DisplayPtr_System_Int32_System_Int32__System_Int32__" data-uid="OpenTK.Graphics.Glx.Glx.ChooseFBConfig(OpenTK.Graphics.Glx.DisplayPtr,System.Int32,System.Int32@,System.Int32@)">ChooseFBConfig(DisplayPtr, int, ref readonly int, ref int)</h4>
   <div class="markdown level1 summary"><p><b>[requires: v1.3]</b>
 <b>[entry point: <code>glXChooseFBConfig</code>]</b>
 <br></p>
@@ -184,7 +184,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static GLXFBConfig* ChooseFBConfig(DisplayPtr dpy, int screen, in int attrib_list, ref int nelements)</code></pre>
+    <pre><code class="lang-csharp hljs">public static GLXFBConfig* ChooseFBConfig(DisplayPtr dpy, int screen, ref readonly int attrib_list, ref int nelements)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -832,7 +832,7 @@
     </tbody>
   </table>
   <a id="OpenTK_Graphics_Glx_Glx_CreatePbuffer_" data-uid="OpenTK.Graphics.Glx.Glx.CreatePbuffer*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_CreatePbuffer_OpenTK_Graphics_Glx_DisplayPtr_OpenTK_Graphics_Glx_GLXFBConfig_System_Int32__" data-uid="OpenTK.Graphics.Glx.Glx.CreatePbuffer(OpenTK.Graphics.Glx.DisplayPtr,OpenTK.Graphics.Glx.GLXFBConfig,System.Int32@)">CreatePbuffer(DisplayPtr, GLXFBConfig, in int)</h4>
+  <h4 id="OpenTK_Graphics_Glx_Glx_CreatePbuffer_OpenTK_Graphics_Glx_DisplayPtr_OpenTK_Graphics_Glx_GLXFBConfig_System_Int32__" data-uid="OpenTK.Graphics.Glx.Glx.CreatePbuffer(OpenTK.Graphics.Glx.DisplayPtr,OpenTK.Graphics.Glx.GLXFBConfig,System.Int32@)">CreatePbuffer(DisplayPtr, GLXFBConfig, ref readonly int)</h4>
   <div class="markdown level1 summary"><p><b>[requires: v1.3]</b>
 <b>[entry point: <code>glXCreatePbuffer</code>]</b>
 <br></p>
@@ -840,7 +840,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static GLXPbuffer CreatePbuffer(DisplayPtr dpy, GLXFBConfig config, in int attrib_list)</code></pre>
+    <pre><code class="lang-csharp hljs">public static GLXPbuffer CreatePbuffer(DisplayPtr dpy, GLXFBConfig config, ref readonly int attrib_list)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -1049,7 +1049,7 @@
     </tbody>
   </table>
   <a id="OpenTK_Graphics_Glx_Glx_CreatePixmap_" data-uid="OpenTK.Graphics.Glx.Glx.CreatePixmap*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_CreatePixmap_OpenTK_Graphics_Glx_DisplayPtr_OpenTK_Graphics_Glx_GLXFBConfig_OpenTK_Graphics_Glx_Pixmap_System_Int32__" data-uid="OpenTK.Graphics.Glx.Glx.CreatePixmap(OpenTK.Graphics.Glx.DisplayPtr,OpenTK.Graphics.Glx.GLXFBConfig,OpenTK.Graphics.Glx.Pixmap,System.Int32@)">CreatePixmap(DisplayPtr, GLXFBConfig, Pixmap, in int)</h4>
+  <h4 id="OpenTK_Graphics_Glx_Glx_CreatePixmap_OpenTK_Graphics_Glx_DisplayPtr_OpenTK_Graphics_Glx_GLXFBConfig_OpenTK_Graphics_Glx_Pixmap_System_Int32__" data-uid="OpenTK.Graphics.Glx.Glx.CreatePixmap(OpenTK.Graphics.Glx.DisplayPtr,OpenTK.Graphics.Glx.GLXFBConfig,OpenTK.Graphics.Glx.Pixmap,System.Int32@)">CreatePixmap(DisplayPtr, GLXFBConfig, Pixmap, ref readonly int)</h4>
   <div class="markdown level1 summary"><p><b>[requires: v1.3]</b>
 <b>[entry point: <code>glXCreatePixmap</code>]</b>
 <br></p>
@@ -1057,7 +1057,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static GLXPixmap CreatePixmap(DisplayPtr dpy, GLXFBConfig config, Pixmap pixmap, in int attrib_list)</code></pre>
+    <pre><code class="lang-csharp hljs">public static GLXPixmap CreatePixmap(DisplayPtr dpy, GLXFBConfig config, Pixmap pixmap, ref readonly int attrib_list)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -1281,7 +1281,7 @@
     </tbody>
   </table>
   <a id="OpenTK_Graphics_Glx_Glx_CreateWindow_" data-uid="OpenTK.Graphics.Glx.Glx.CreateWindow*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_CreateWindow_OpenTK_Graphics_Glx_DisplayPtr_OpenTK_Graphics_Glx_GLXFBConfig_OpenTK_Graphics_Glx_Window_System_Int32__" data-uid="OpenTK.Graphics.Glx.Glx.CreateWindow(OpenTK.Graphics.Glx.DisplayPtr,OpenTK.Graphics.Glx.GLXFBConfig,OpenTK.Graphics.Glx.Window,System.Int32@)">CreateWindow(DisplayPtr, GLXFBConfig, Window, in int)</h4>
+  <h4 id="OpenTK_Graphics_Glx_Glx_CreateWindow_OpenTK_Graphics_Glx_DisplayPtr_OpenTK_Graphics_Glx_GLXFBConfig_OpenTK_Graphics_Glx_Window_System_Int32__" data-uid="OpenTK.Graphics.Glx.Glx.CreateWindow(OpenTK.Graphics.Glx.DisplayPtr,OpenTK.Graphics.Glx.GLXFBConfig,OpenTK.Graphics.Glx.Window,System.Int32@)">CreateWindow(DisplayPtr, GLXFBConfig, Window, ref readonly int)</h4>
   <div class="markdown level1 summary"><p><b>[requires: v1.3]</b>
 <b>[entry point: <code>glXCreateWindow</code>]</b>
 <br></p>
@@ -1289,7 +1289,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static GLXWindow CreateWindow(DisplayPtr dpy, GLXFBConfig config, Window win, in int attrib_list)</code></pre>
+    <pre><code class="lang-csharp hljs">public static GLXWindow CreateWindow(DisplayPtr dpy, GLXFBConfig config, Window win, ref readonly int attrib_list)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -1620,12 +1620,15 @@
     </tbody>
   </table>
   <a id="OpenTK_Graphics_Glx_Glx_GetClientString_" data-uid="OpenTK.Graphics.Glx.Glx.GetClientString*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_GetClientString_OpenTK_Graphics_Glx_DisplayPtr_System_Int32_" data-uid="OpenTK.Graphics.Glx.Glx.GetClientString(OpenTK.Graphics.Glx.DisplayPtr,System.Int32)">GetClientString(DisplayPtr, int)</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="OpenTK_Graphics_Glx_Glx_GetClientString_OpenTK_Graphics_Glx_DisplayPtr_OpenTK_Graphics_Glx_StringName_" data-uid="OpenTK.Graphics.Glx.Glx.GetClientString(OpenTK.Graphics.Glx.DisplayPtr,OpenTK.Graphics.Glx.StringName)">GetClientString(DisplayPtr, StringName)</h4>
+  <div class="markdown level1 summary"><p><b>[requires: v1.1]</b>
+<b>[entry point: <code>glXGetClientString</code>]</b>
+<br></p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string? GetClientString(DisplayPtr dpy, int name)</code></pre>
+    <pre><code class="lang-csharp hljs">public static string? GetClientString(DisplayPtr dpy, StringName name)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -1643,7 +1646,7 @@
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><a class="xref" href="OpenTK.Graphics.Glx.StringName.html">StringName</a></td>
         <td><span class="parametername">name</span></td>
         <td></td>
       </tr>
@@ -1665,7 +1668,7 @@
     </tbody>
   </table>
   <a id="OpenTK_Graphics_Glx_Glx_GetClientString__" data-uid="OpenTK.Graphics.Glx.Glx.GetClientString_*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_GetClientString__OpenTK_Graphics_Glx_DisplayPtr_System_Int32_" data-uid="OpenTK.Graphics.Glx.Glx.GetClientString_(OpenTK.Graphics.Glx.DisplayPtr,System.Int32)">GetClientString_(DisplayPtr, int)</h4>
+  <h4 id="OpenTK_Graphics_Glx_Glx_GetClientString__OpenTK_Graphics_Glx_DisplayPtr_OpenTK_Graphics_Glx_StringName_" data-uid="OpenTK.Graphics.Glx.Glx.GetClientString_(OpenTK.Graphics.Glx.DisplayPtr,OpenTK.Graphics.Glx.StringName)">GetClientString_(DisplayPtr, StringName)</h4>
   <div class="markdown level1 summary"><p><b>[requires: v1.1]</b>
 <b>[entry point: <code>glXGetClientString</code>]</b>
 <br></p>
@@ -1673,7 +1676,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static byte* GetClientString_(DisplayPtr dpy, int name)</code></pre>
+    <pre><code class="lang-csharp hljs">public static byte* GetClientString_(DisplayPtr dpy, StringName name)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -1691,7 +1694,7 @@
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><a class="xref" href="OpenTK.Graphics.Glx.StringName.html">StringName</a></td>
         <td><span class="parametername">name</span></td>
         <td></td>
       </tr>
@@ -2536,7 +2539,7 @@
     </tbody>
   </table>
   <a id="OpenTK_Graphics_Glx_Glx_GetProcAddress_" data-uid="OpenTK.Graphics.Glx.Glx.GetProcAddress*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_GetProcAddress_System_Byte__" data-uid="OpenTK.Graphics.Glx.Glx.GetProcAddress(System.Byte@)">GetProcAddress(in byte)</h4>
+  <h4 id="OpenTK_Graphics_Glx_Glx_GetProcAddress_System_String_" data-uid="OpenTK.Graphics.Glx.Glx.GetProcAddress(System.String)">GetProcAddress(string)</h4>
   <div class="markdown level1 summary"><p><b>[requires: v1.4]</b>
 <b>[entry point: <code>glXGetProcAddress</code>]</b>
 <br></p>
@@ -2544,7 +2547,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static nint GetProcAddress(in byte procName)</code></pre>
+    <pre><code class="lang-csharp hljs">public static nint GetProcAddress(string procName)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -2557,93 +2560,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></td>
-        <td><span class="parametername">procName</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="OpenTK_Graphics_Glx_Glx_GetProcAddress_" data-uid="OpenTK.Graphics.Glx.Glx.GetProcAddress*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_GetProcAddress_System_Byte___" data-uid="OpenTK.Graphics.Glx.Glx.GetProcAddress(System.Byte[])">GetProcAddress(byte[])</h4>
-  <div class="markdown level1 summary"><p><b>[requires: v1.4]</b>
-<b>[entry point: <code>glXGetProcAddress</code>]</b>
-<br></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static nint GetProcAddress(byte[] procName)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</td>
-        <td><span class="parametername">procName</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="OpenTK_Graphics_Glx_Glx_GetProcAddress_" data-uid="OpenTK.Graphics.Glx.Glx.GetProcAddress*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_GetProcAddress_System_ReadOnlySpan_System_Byte__" data-uid="OpenTK.Graphics.Glx.Glx.GetProcAddress(System.ReadOnlySpan{System.Byte})">GetProcAddress(ReadOnlySpan&lt;byte&gt;)</h4>
-  <div class="markdown level1 summary"><p><b>[requires: v1.4]</b>
-<b>[entry point: <code>glXGetProcAddress</code>]</b>
-<br></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static nint GetProcAddress(ReadOnlySpan&lt;byte&gt; procName)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
         <td><span class="parametername">procName</span></td>
         <td></td>
       </tr>
@@ -3256,7 +3173,7 @@
     </tbody>
   </table>
   <a id="OpenTK_Graphics_Glx_Glx_QueryDrawable_" data-uid="OpenTK.Graphics.Glx.Glx.QueryDrawable*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_QueryDrawable_OpenTK_Graphics_Glx_DisplayPtr_OpenTK_Graphics_Glx_GLXDrawable_System_Int32_System_Span_System_UInt32__" data-uid="OpenTK.Graphics.Glx.Glx.QueryDrawable(OpenTK.Graphics.Glx.DisplayPtr,OpenTK.Graphics.Glx.GLXDrawable,System.Int32,System.Span{System.UInt32})">QueryDrawable(DisplayPtr, GLXDrawable, int, Span&lt;uint&gt;)</h4>
+  <h4 id="OpenTK_Graphics_Glx_Glx_QueryDrawable_OpenTK_Graphics_Glx_DisplayPtr_OpenTK_Graphics_Glx_GLXDrawable_OpenTK_Graphics_Glx_DrawableAttrib_" data-uid="OpenTK.Graphics.Glx.Glx.QueryDrawable(OpenTK.Graphics.Glx.DisplayPtr,OpenTK.Graphics.Glx.GLXDrawable,OpenTK.Graphics.Glx.DrawableAttrib)">QueryDrawable(DisplayPtr, GLXDrawable, DrawableAttrib)</h4>
   <div class="markdown level1 summary"><p><b>[requires: v1.3]</b>
 <b>[entry point: <code>glXQueryDrawable</code>]</b>
 <br></p>
@@ -3264,7 +3181,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void QueryDrawable(DisplayPtr dpy, GLXDrawable draw, int attribute, Span&lt;uint&gt; value)</code></pre>
+    <pre><code class="lang-csharp hljs">public static uint QueryDrawable(DisplayPtr dpy, GLXDrawable draw, DrawableAttrib attribute)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -3287,19 +3204,29 @@
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><a class="xref" href="OpenTK.Graphics.Glx.DrawableAttrib.html">DrawableAttrib</a></td>
         <td><span class="parametername">attribute</span></td>
         <td></td>
       </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.span-1">Span</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>&gt;</td>
-        <td><span class="parametername">value</span></td>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <a id="OpenTK_Graphics_Glx_Glx_QueryDrawable_" data-uid="OpenTK.Graphics.Glx.Glx.QueryDrawable*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_QueryDrawable_OpenTK_Graphics_Glx_DisplayPtr_OpenTK_Graphics_Glx_GLXDrawable_System_Int32_System_UInt32__" data-uid="OpenTK.Graphics.Glx.Glx.QueryDrawable(OpenTK.Graphics.Glx.DisplayPtr,OpenTK.Graphics.Glx.GLXDrawable,System.Int32,System.UInt32*)">QueryDrawable(DisplayPtr, GLXDrawable, int, uint*)</h4>
+  <h4 id="OpenTK_Graphics_Glx_Glx_QueryDrawable_OpenTK_Graphics_Glx_DisplayPtr_OpenTK_Graphics_Glx_GLXDrawable_OpenTK_Graphics_Glx_DrawableAttrib_System_UInt32__" data-uid="OpenTK.Graphics.Glx.Glx.QueryDrawable(OpenTK.Graphics.Glx.DisplayPtr,OpenTK.Graphics.Glx.GLXDrawable,OpenTK.Graphics.Glx.DrawableAttrib,System.UInt32*)">QueryDrawable(DisplayPtr, GLXDrawable, DrawableAttrib, uint*)</h4>
   <div class="markdown level1 summary"><p><b>[requires: v1.3]</b>
 <b>[entry point: <code>glXQueryDrawable</code>]</b>
 <br></p>
@@ -3307,7 +3234,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void QueryDrawable(DisplayPtr dpy, GLXDrawable draw, int attribute, uint* value)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void QueryDrawable(DisplayPtr dpy, GLXDrawable draw, DrawableAttrib attribute, uint* value)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -3330,7 +3257,7 @@
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><a class="xref" href="OpenTK.Graphics.Glx.DrawableAttrib.html">DrawableAttrib</a></td>
         <td><span class="parametername">attribute</span></td>
         <td></td>
       </tr>
@@ -3342,7 +3269,7 @@
     </tbody>
   </table>
   <a id="OpenTK_Graphics_Glx_Glx_QueryDrawable_" data-uid="OpenTK.Graphics.Glx.Glx.QueryDrawable*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_QueryDrawable_OpenTK_Graphics_Glx_DisplayPtr_OpenTK_Graphics_Glx_GLXDrawable_System_Int32_System_UInt32__" data-uid="OpenTK.Graphics.Glx.Glx.QueryDrawable(OpenTK.Graphics.Glx.DisplayPtr,OpenTK.Graphics.Glx.GLXDrawable,System.Int32,System.UInt32@)">QueryDrawable(DisplayPtr, GLXDrawable, int, ref uint)</h4>
+  <h4 id="OpenTK_Graphics_Glx_Glx_QueryDrawable_OpenTK_Graphics_Glx_DisplayPtr_OpenTK_Graphics_Glx_GLXDrawable_OpenTK_Graphics_Glx_DrawableAttrib_System_UInt32__" data-uid="OpenTK.Graphics.Glx.Glx.QueryDrawable(OpenTK.Graphics.Glx.DisplayPtr,OpenTK.Graphics.Glx.GLXDrawable,OpenTK.Graphics.Glx.DrawableAttrib,System.UInt32@)">QueryDrawable(DisplayPtr, GLXDrawable, DrawableAttrib, out uint)</h4>
   <div class="markdown level1 summary"><p><b>[requires: v1.3]</b>
 <b>[entry point: <code>glXQueryDrawable</code>]</b>
 <br></p>
@@ -3350,7 +3277,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void QueryDrawable(DisplayPtr dpy, GLXDrawable draw, int attribute, ref uint value)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void QueryDrawable(DisplayPtr dpy, GLXDrawable draw, DrawableAttrib attribute, out uint value)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -3373,55 +3300,12 @@
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><a class="xref" href="OpenTK.Graphics.Glx.DrawableAttrib.html">DrawableAttrib</a></td>
         <td><span class="parametername">attribute</span></td>
         <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
-        <td><span class="parametername">value</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="OpenTK_Graphics_Glx_Glx_QueryDrawable_" data-uid="OpenTK.Graphics.Glx.Glx.QueryDrawable*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_QueryDrawable_OpenTK_Graphics_Glx_DisplayPtr_OpenTK_Graphics_Glx_GLXDrawable_System_Int32_System_UInt32___" data-uid="OpenTK.Graphics.Glx.Glx.QueryDrawable(OpenTK.Graphics.Glx.DisplayPtr,OpenTK.Graphics.Glx.GLXDrawable,System.Int32,System.UInt32[])">QueryDrawable(DisplayPtr, GLXDrawable, int, uint[])</h4>
-  <div class="markdown level1 summary"><p><b>[requires: v1.3]</b>
-<b>[entry point: <code>glXQueryDrawable</code>]</b>
-<br></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void QueryDrawable(DisplayPtr dpy, GLXDrawable draw, int attribute, uint[] value)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.DisplayPtr.html">DisplayPtr</a></td>
-        <td><span class="parametername">dpy</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.GLXDrawable.html">GLXDrawable</a></td>
-        <td><span class="parametername">draw</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
-        <td><span class="parametername">attribute</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>[]</td>
         <td><span class="parametername">value</span></td>
         <td></td>
       </tr>
@@ -3481,7 +3365,7 @@
     </tbody>
   </table>
   <a id="OpenTK_Graphics_Glx_Glx_QueryExtension_" data-uid="OpenTK.Graphics.Glx.Glx.QueryExtension*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_QueryExtension_OpenTK_Graphics_Glx_DisplayPtr_System_Int32__System_Int32__" data-uid="OpenTK.Graphics.Glx.Glx.QueryExtension(OpenTK.Graphics.Glx.DisplayPtr,System.Int32@,System.Int32@)">QueryExtension(DisplayPtr, ref int, ref int)</h4>
+  <h4 id="OpenTK_Graphics_Glx_Glx_QueryExtension_OpenTK_Graphics_Glx_DisplayPtr_System_Int32__System_Int32__" data-uid="OpenTK.Graphics.Glx.Glx.QueryExtension(OpenTK.Graphics.Glx.DisplayPtr,System.Int32@,System.Int32@)">QueryExtension(DisplayPtr, out int, out int)</h4>
   <div class="markdown level1 summary"><p><b>[requires: v1.0]</b>
 <b>[entry point: <code>glXQueryExtension</code>]</b>
 <br></p>
@@ -3489,7 +3373,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool QueryExtension(DisplayPtr dpy, ref int errorb, ref int @event)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool QueryExtension(DisplayPtr dpy, out int errorb, out int @event)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -3513,112 +3397,6 @@
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
-        <td><span class="parametername">event</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="OpenTK_Graphics_Glx_Glx_QueryExtension_" data-uid="OpenTK.Graphics.Glx.Glx.QueryExtension*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_QueryExtension_OpenTK_Graphics_Glx_DisplayPtr_System_Int32___System_Int32___" data-uid="OpenTK.Graphics.Glx.Glx.QueryExtension(OpenTK.Graphics.Glx.DisplayPtr,System.Int32[],System.Int32[])">QueryExtension(DisplayPtr, int[], int[])</h4>
-  <div class="markdown level1 summary"><p><b>[requires: v1.0]</b>
-<b>[entry point: <code>glXQueryExtension</code>]</b>
-<br></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool QueryExtension(DisplayPtr dpy, int[] errorb, int[] @event)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.DisplayPtr.html">DisplayPtr</a></td>
-        <td><span class="parametername">dpy</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</td>
-        <td><span class="parametername">errorb</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</td>
-        <td><span class="parametername">event</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="OpenTK_Graphics_Glx_Glx_QueryExtension_" data-uid="OpenTK.Graphics.Glx.Glx.QueryExtension*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_QueryExtension_OpenTK_Graphics_Glx_DisplayPtr_System_Span_System_Int32__System_Span_System_Int32__" data-uid="OpenTK.Graphics.Glx.Glx.QueryExtension(OpenTK.Graphics.Glx.DisplayPtr,System.Span{System.Int32},System.Span{System.Int32})">QueryExtension(DisplayPtr, Span&lt;int&gt;, Span&lt;int&gt;)</h4>
-  <div class="markdown level1 summary"><p><b>[requires: v1.0]</b>
-<b>[entry point: <code>glXQueryExtension</code>]</b>
-<br></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool QueryExtension(DisplayPtr dpy, Span&lt;int&gt; errorb, Span&lt;int&gt; @event)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.DisplayPtr.html">DisplayPtr</a></td>
-        <td><span class="parametername">dpy</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.span-1">Span</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</td>
-        <td><span class="parametername">errorb</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.span-1">Span</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</td>
         <td><span class="parametername">event</span></td>
         <td></td>
       </tr>
@@ -3641,7 +3419,10 @@
   </table>
   <a id="OpenTK_Graphics_Glx_Glx_QueryExtensionsString_" data-uid="OpenTK.Graphics.Glx.Glx.QueryExtensionsString*"></a>
   <h4 id="OpenTK_Graphics_Glx_Glx_QueryExtensionsString_OpenTK_Graphics_Glx_DisplayPtr_System_Int32_" data-uid="OpenTK.Graphics.Glx.Glx.QueryExtensionsString(OpenTK.Graphics.Glx.DisplayPtr,System.Int32)">QueryExtensionsString(DisplayPtr, int)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p><b>[requires: v1.1]</b>
+<b>[entry point: <code>glXQueryExtensionsString</code>]</b>
+<br></p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -3733,12 +3514,15 @@
     </tbody>
   </table>
   <a id="OpenTK_Graphics_Glx_Glx_QueryServerString_" data-uid="OpenTK.Graphics.Glx.Glx.QueryServerString*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_QueryServerString_OpenTK_Graphics_Glx_DisplayPtr_System_Int32_System_Int32_" data-uid="OpenTK.Graphics.Glx.Glx.QueryServerString(OpenTK.Graphics.Glx.DisplayPtr,System.Int32,System.Int32)">QueryServerString(DisplayPtr, int, int)</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="OpenTK_Graphics_Glx_Glx_QueryServerString_OpenTK_Graphics_Glx_DisplayPtr_System_Int32_OpenTK_Graphics_Glx_StringName_" data-uid="OpenTK.Graphics.Glx.Glx.QueryServerString(OpenTK.Graphics.Glx.DisplayPtr,System.Int32,OpenTK.Graphics.Glx.StringName)">QueryServerString(DisplayPtr, int, StringName)</h4>
+  <div class="markdown level1 summary"><p><b>[requires: v1.1]</b>
+<b>[entry point: <code>glXQueryServerString</code>]</b>
+<br></p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string? QueryServerString(DisplayPtr dpy, int screen, int name)</code></pre>
+    <pre><code class="lang-csharp hljs">public static string? QueryServerString(DisplayPtr dpy, int screen, StringName name)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -3761,7 +3545,7 @@
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><a class="xref" href="OpenTK.Graphics.Glx.StringName.html">StringName</a></td>
         <td><span class="parametername">name</span></td>
         <td></td>
       </tr>
@@ -3783,7 +3567,7 @@
     </tbody>
   </table>
   <a id="OpenTK_Graphics_Glx_Glx_QueryServerString__" data-uid="OpenTK.Graphics.Glx.Glx.QueryServerString_*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_QueryServerString__OpenTK_Graphics_Glx_DisplayPtr_System_Int32_System_Int32_" data-uid="OpenTK.Graphics.Glx.Glx.QueryServerString_(OpenTK.Graphics.Glx.DisplayPtr,System.Int32,System.Int32)">QueryServerString_(DisplayPtr, int, int)</h4>
+  <h4 id="OpenTK_Graphics_Glx_Glx_QueryServerString__OpenTK_Graphics_Glx_DisplayPtr_System_Int32_OpenTK_Graphics_Glx_StringName_" data-uid="OpenTK.Graphics.Glx.Glx.QueryServerString_(OpenTK.Graphics.Glx.DisplayPtr,System.Int32,OpenTK.Graphics.Glx.StringName)">QueryServerString_(DisplayPtr, int, StringName)</h4>
   <div class="markdown level1 summary"><p><b>[requires: v1.1]</b>
 <b>[entry point: <code>glXQueryServerString</code>]</b>
 <br></p>
@@ -3791,7 +3575,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static byte* QueryServerString_(DisplayPtr dpy, int screen, int name)</code></pre>
+    <pre><code class="lang-csharp hljs">public static byte* QueryServerString_(DisplayPtr dpy, int screen, StringName name)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -3814,7 +3598,7 @@
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><a class="xref" href="OpenTK.Graphics.Glx.StringName.html">StringName</a></td>
         <td><span class="parametername">name</span></td>
         <td></td>
       </tr>
@@ -3889,7 +3673,7 @@
     </tbody>
   </table>
   <a id="OpenTK_Graphics_Glx_Glx_QueryVersion_" data-uid="OpenTK.Graphics.Glx.Glx.QueryVersion*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_QueryVersion_OpenTK_Graphics_Glx_DisplayPtr_System_Int32__System_Int32__" data-uid="OpenTK.Graphics.Glx.Glx.QueryVersion(OpenTK.Graphics.Glx.DisplayPtr,System.Int32@,System.Int32@)">QueryVersion(DisplayPtr, ref int, ref int)</h4>
+  <h4 id="OpenTK_Graphics_Glx_Glx_QueryVersion_OpenTK_Graphics_Glx_DisplayPtr_System_Int32__System_Int32__" data-uid="OpenTK.Graphics.Glx.Glx.QueryVersion(OpenTK.Graphics.Glx.DisplayPtr,System.Int32@,System.Int32@)">QueryVersion(DisplayPtr, out int, out int)</h4>
   <div class="markdown level1 summary"><p><b>[requires: v1.0]</b>
 <b>[entry point: <code>glXQueryVersion</code>]</b>
 <br></p>
@@ -3897,7 +3681,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool QueryVersion(DisplayPtr dpy, ref int maj, ref int min)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool QueryVersion(DisplayPtr dpy, out int maj, out int min)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -3921,112 +3705,6 @@
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
-        <td><span class="parametername">min</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="OpenTK_Graphics_Glx_Glx_QueryVersion_" data-uid="OpenTK.Graphics.Glx.Glx.QueryVersion*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_QueryVersion_OpenTK_Graphics_Glx_DisplayPtr_System_Int32___System_Int32___" data-uid="OpenTK.Graphics.Glx.Glx.QueryVersion(OpenTK.Graphics.Glx.DisplayPtr,System.Int32[],System.Int32[])">QueryVersion(DisplayPtr, int[], int[])</h4>
-  <div class="markdown level1 summary"><p><b>[requires: v1.0]</b>
-<b>[entry point: <code>glXQueryVersion</code>]</b>
-<br></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool QueryVersion(DisplayPtr dpy, int[] maj, int[] min)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.DisplayPtr.html">DisplayPtr</a></td>
-        <td><span class="parametername">dpy</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</td>
-        <td><span class="parametername">maj</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</td>
-        <td><span class="parametername">min</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="OpenTK_Graphics_Glx_Glx_QueryVersion_" data-uid="OpenTK.Graphics.Glx.Glx.QueryVersion*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_QueryVersion_OpenTK_Graphics_Glx_DisplayPtr_System_Span_System_Int32__System_Span_System_Int32__" data-uid="OpenTK.Graphics.Glx.Glx.QueryVersion(OpenTK.Graphics.Glx.DisplayPtr,System.Span{System.Int32},System.Span{System.Int32})">QueryVersion(DisplayPtr, Span&lt;int&gt;, Span&lt;int&gt;)</h4>
-  <div class="markdown level1 summary"><p><b>[requires: v1.0]</b>
-<b>[entry point: <code>glXQueryVersion</code>]</b>
-<br></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool QueryVersion(DisplayPtr dpy, Span&lt;int&gt; maj, Span&lt;int&gt; min)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Graphics.Glx.DisplayPtr.html">DisplayPtr</a></td>
-        <td><span class="parametername">dpy</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.span-1">Span</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</td>
-        <td><span class="parametername">maj</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.span-1">Span</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</td>
         <td><span class="parametername">min</span></td>
         <td></td>
       </tr>

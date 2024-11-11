@@ -4,39 +4,35 @@
 
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Interface IIconComponent  - OpenTK</title>
-    <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Interface IIconComponent ">
-    <meta name="generator" content="docfx ">
-  
-    <link rel="shortcut icon" href="../favicon.ico">
-    <link rel="stylesheet" href="../styles/docfx.vendor.css">
-    <link rel="stylesheet" href="../styles/docfx.css">
-    <link rel="stylesheet" href="../styles/main.css">
-    <meta property="docfx:navrel" content="../toc.html">
-    <meta property="docfx:tocrel" content="toc.html">
-  
-  
-  
-
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Interface IIconComponent | OpenTK </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Interface IIconComponent | OpenTK ">
+    
+    <meta name="description" content="Interface creatiing and interacting with window icon images.">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
     <meta name="author" content="The Open Toolkit Project">
     <meta property="og:image" content="https://opentk.net/otkBig.png">
     <meta property="og:image:width" content="142">
     <meta property="og:image:height" content="50">
     <meta property="og:site_name" content="OpenTK">
-    <meta property="og:title" content="Interface IIconComponent  - OpenTK">
+    <meta property="og:title" content="Interface IIconComponent | OpenTK  - OpenTK">
     <meta name="theme-color" content="#ffffff">
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
 
-        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation" style="background: #0052cc;">
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
           <div class="container">
-            <a class="navbar-brand" href="../index.html">
-          <img id="logo" src="../otkBig.png" alt="">
-        </a>
             <div class="navbar-header">
               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
                 <span class="sr-only">Toggle navigation</span>
@@ -44,6 +40,10 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" src="../otkBig.png" alt="">
+              </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
               <form class="navbar-form navbar-right" role="search" id="search">
@@ -54,7 +54,6 @@
             </div>
           </div>
         </nav>
-
         <div class="subnav navbar navbar-default">
           <div class="container hide-when-search" id="breadcrumb">
             <ul class="breadcrumb">
@@ -78,7 +77,7 @@
 
 
   <h1 id="OpenTK_Platform_IIconComponent" data-uid="OpenTK.Platform.IIconComponent" class="text-break">Interface IIconComponent</h1>
-  <div class="markdown level0 summary"><p>Interface for PAL drivers which provide the icon component.</p>
+  <div class="markdown level0 summary"><p>Interface creatiing and interacting with window icon images.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritedMembers">
@@ -95,6 +94,9 @@
     <div>
       <a class="xref" href="OpenTK.Platform.IPalComponent.html#OpenTK_Platform_IPalComponent_Initialize_OpenTK_Platform_ToolkitOptions_">IPalComponent.Initialize(ToolkitOptions)</a>
     </div>
+    <div>
+      <a class="xref" href="OpenTK.Platform.IPalComponent.html#OpenTK_Platform_IPalComponent_Uninitialize">IPalComponent.Uninitialize()</a>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="OpenTK.html">OpenTK</a>.<a class="xref" href="OpenTK.Platform.html">Platform</a></h6>
   <h6><strong>Assembly</strong>: OpenTK.Platform.dll</h6>
@@ -106,8 +108,8 @@
 </h3>
   <a id="OpenTK_Platform_IIconComponent_CanLoadSystemIcons_" data-uid="OpenTK.Platform.IIconComponent.CanLoadSystemIcons*"></a>
   <h4 id="OpenTK_Platform_IIconComponent_CanLoadSystemIcons" data-uid="OpenTK.Platform.IIconComponent.CanLoadSystemIcons">CanLoadSystemIcons</h4>
-  <div class="markdown level1 summary"><p>True if icon objects can be populated from common system icons.
-If this is true, then <a class="xref" href="OpenTK.Platform.IIconComponent.html#OpenTK_Platform_IIconComponent_Create_OpenTK_Platform_SystemIconType_">Create(SystemIconType)</a> will work, otherwise an exception will be thrown.</p>
+  <div class="markdown level1 summary"><p>If common system icons can be created.
+If this is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> then <a class="xref" href="OpenTK.Platform.IIconComponent.html#OpenTK_Platform_IIconComponent_Create_OpenTK_Platform_SystemIconType_">Create(SystemIconType)</a> will work, otherwise an exception will be thrown.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -138,7 +140,7 @@ If this is true, then <a class="xref" href="OpenTK.Platform.IIconComponent.html#
   <a id="OpenTK_Platform_IIconComponent_Create_" data-uid="OpenTK.Platform.IIconComponent.Create*"></a>
   <h4 id="OpenTK_Platform_IIconComponent_Create_OpenTK_Platform_SystemIconType_" data-uid="OpenTK.Platform.IIconComponent.Create(OpenTK.Platform.SystemIconType)">Create(SystemIconType)</h4>
   <div class="markdown level1 summary"><p>Load a system icon.
-Only works if <a class="xref" href="OpenTK.Platform.IIconComponent.html#OpenTK_Platform_IIconComponent_CanLoadSystemIcons">CanLoadSystemIcons</a> is true.</p>
+Only works if <a class="xref" href="OpenTK.Platform.IIconComponent.html#OpenTK_Platform_IIconComponent_CanLoadSystemIcons">CanLoadSystemIcons</a> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -175,6 +177,22 @@ Only works if <a class="xref" href="OpenTK.Platform.IIconComponent.html#OpenTK_P
       <tr>
         <td><a class="xref" href="OpenTK.Platform.IconHandle.html">IconHandle</a></td>
         <td><p>A handle to the created system icon.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.platformnotsupportedexception">PlatformNotSupportedException</a></td>
+        <td><p>Platform does not implement this function. See <a class="xref" href="OpenTK.Platform.IIconComponent.html#OpenTK_Platform_IIconComponent_CanLoadSystemIcons">CanLoadSystemIcons</a>.</p>
 </td>
       </tr>
     </tbody>
@@ -217,7 +235,7 @@ Only works if <a class="xref" href="OpenTK.Platform.IIconComponent.html#OpenTK_P
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</td>
         <td><span class="parametername">data</span></td>
-        <td><p>Image data to load into icon.</p>
+        <td><p>Image data to load into icon in RGBA format.</p>
 </td>
       </tr>
     </tbody>
@@ -234,6 +252,27 @@ Only works if <a class="xref" href="OpenTK.Platform.IIconComponent.html#OpenTK_P
       <tr>
         <td><a class="xref" href="OpenTK.Platform.IconHandle.html">IconHandle</a></td>
         <td><p>A handle to the created icon.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></td>
+        <td><p>If <code class="paramref">width</code>, or <code class="paramref">height</code> are negative.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></td>
+        <td><p><code class="paramref">data</code> is smaller than specified dimensions.</p>
 </td>
       </tr>
     </tbody>
@@ -265,22 +304,11 @@ Only works if <a class="xref" href="OpenTK.Platform.IIconComponent.html#OpenTK_P
       </tr>
     </tbody>
   </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
-        <td><p><code class="paramref">handle</code> is null.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
+  <h5 id="OpenTK_Platform_IIconComponent_Destroy_OpenTK_Platform_IconHandle__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="OpenTK.Platform.IIconComponent.html#OpenTK_Platform_IIconComponent_Create_OpenTK_Platform_SystemIconType_">Create(SystemIconType)</a></div>
+      <div><a class="xref" href="OpenTK.Platform.IIconComponent.html#OpenTK_Platform_IIconComponent_Create_System_Int32_System_Int32_System_ReadOnlySpan_System_Byte__">Create(int, int, ReadOnlySpan&lt;byte&gt;)</a></div>
+  </div>
   <a id="OpenTK_Platform_IIconComponent_GetSize_" data-uid="OpenTK.Platform.IIconComponent.GetSize*"></a>
   <h4 id="OpenTK_Platform_IIconComponent_GetSize_OpenTK_Platform_IconHandle_System_Int32__System_Int32__" data-uid="OpenTK.Platform.IIconComponent.GetSize(OpenTK.Platform.IconHandle,System.Int32@,System.Int32@)">GetSize(IconHandle, out int, out int)</h4>
   <div class="markdown level1 summary"><p>Get the dimensions of a icon object.</p>
@@ -320,22 +348,10 @@ Only works if <a class="xref" href="OpenTK.Platform.IIconComponent.html#OpenTK_P
       </tr>
     </tbody>
   </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
-        <td><p><code class="paramref">handle</code> is null.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
+  <h3 id="seealso">See Also</h3>
+  <div class="seealso">
+      <div><a class="xref" href="OpenTK.Platform.Toolkit.html#OpenTK_Platform_Toolkit_Icon">Icon</a></div>
+  </div>
 
 </article>
           </div>

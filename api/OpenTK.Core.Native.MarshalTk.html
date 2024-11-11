@@ -4,39 +4,35 @@
 
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class MarshalTk  - OpenTK</title>
-    <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class MarshalTk ">
-    <meta name="generator" content="docfx ">
-  
-    <link rel="shortcut icon" href="../favicon.ico">
-    <link rel="stylesheet" href="../styles/docfx.vendor.css">
-    <link rel="stylesheet" href="../styles/docfx.css">
-    <link rel="stylesheet" href="../styles/main.css">
-    <meta property="docfx:navrel" content="../toc.html">
-    <meta property="docfx:tocrel" content="toc.html">
-  
-  
-  
-
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class MarshalTk | OpenTK </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class MarshalTk | OpenTK ">
+    
+    <meta name="description" content="Contains extra marshalling utilities that aren&#39;t available in the normal Marshal class.">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
     <meta name="author" content="The Open Toolkit Project">
     <meta property="og:image" content="https://opentk.net/otkBig.png">
     <meta property="og:image:width" content="142">
     <meta property="og:image:height" content="50">
     <meta property="og:site_name" content="OpenTK">
-    <meta property="og:title" content="Class MarshalTk  - OpenTK">
+    <meta property="og:title" content="Class MarshalTk | OpenTK  - OpenTK">
     <meta name="theme-color" content="#ffffff">
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
 
-        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation" style="background: #0052cc;">
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
           <div class="container">
-            <a class="navbar-brand" href="../index.html">
-          <img id="logo" src="../otkBig.png" alt="">
-        </a>
             <div class="navbar-header">
               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
                 <span class="sr-only">Toggle navigation</span>
@@ -44,6 +40,10 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" src="../otkBig.png" alt="">
+              </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
               <form class="navbar-form navbar-right" role="search" id="search">
@@ -54,7 +54,6 @@
             </div>
           </div>
         </nav>
-
         <div class="subnav navbar navbar-default">
           <div class="container hide-when-search" id="breadcrumb">
             <ul class="breadcrumb">
@@ -120,7 +119,7 @@
 </h3>
   <a id="OpenTK_Core_Native_MarshalTk_FreeAnsiStringArrayPtr_" data-uid="OpenTK.Core.Native.MarshalTk.FreeAnsiStringArrayPtr*"></a>
   <h4 id="OpenTK_Core_Native_MarshalTk_FreeAnsiStringArrayPtr_System_Byte___System_UInt32_" data-uid="OpenTK.Core.Native.MarshalTk.FreeAnsiStringArrayPtr(System.Byte**,System.UInt32)">FreeAnsiStringArrayPtr(byte**, uint)</h4>
-  <div class="markdown level1 summary"><p>Frees unmanaged ansi string arrays allocated by <a class="xref" href="OpenTK.Core.Native.MarshalTk.html#OpenTK_Core_Native_MarshalTk_MarshalStringArrayToAnsiStringArrayPtr_System_Span_System_String__System_UInt32__">MarshalStringArrayToAnsiStringArrayPtr(Span&lt;string&gt;, out uint)</a>.</p>
+  <div class="markdown level1 summary"><p>Frees unmanaged ansi string arrays allocated by <a class="xref" href="OpenTK.Core.Native.MarshalTk.html#OpenTK_Core_Native_MarshalTk_MarshalStringArrayToAnsiStringArrayPtr_System_ReadOnlySpan_System_String__System_UInt32__">MarshalStringArrayToAnsiStringArrayPtr(ReadOnlySpan&lt;string&gt;, out uint)</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -305,14 +304,14 @@ This method supports OpenTK and is not intended to be called by user code.</p>
     </tbody>
   </table>
   <a id="OpenTK_Core_Native_MarshalTk_MarshalStringArrayToAnsiStringArrayPtr_" data-uid="OpenTK.Core.Native.MarshalTk.MarshalStringArrayToAnsiStringArrayPtr*"></a>
-  <h4 id="OpenTK_Core_Native_MarshalTk_MarshalStringArrayToAnsiStringArrayPtr_System_Span_System_String__System_UInt32__" data-uid="OpenTK.Core.Native.MarshalTk.MarshalStringArrayToAnsiStringArrayPtr(System.Span{System.String},System.UInt32@)">MarshalStringArrayToAnsiStringArrayPtr(Span&lt;string&gt;, out uint)</h4>
+  <h4 id="OpenTK_Core_Native_MarshalTk_MarshalStringArrayToAnsiStringArrayPtr_System_ReadOnlySpan_System_String__System_UInt32__" data-uid="OpenTK.Core.Native.MarshalTk.MarshalStringArrayToAnsiStringArrayPtr(System.ReadOnlySpan{System.String},System.UInt32@)">MarshalStringArrayToAnsiStringArrayPtr(ReadOnlySpan&lt;string&gt;, out uint)</h4>
   <div class="markdown level1 summary"><p>Converts a span of strings into an unmanged ansi string array.
 Use <a class="xref" href="OpenTK.Core.Native.MarshalTk.html#OpenTK_Core_Native_MarshalTk_FreeAnsiStringArrayPtr_System_Byte___System_UInt32_">FreeAnsiStringArrayPtr(byte**, uint)</a> to free the array.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static byte** MarshalStringArrayToAnsiStringArrayPtr(Span&lt;string&gt; stringArray, out uint count)</code></pre>
+    <pre><code class="lang-csharp hljs">public static byte** MarshalStringArrayToAnsiStringArrayPtr(ReadOnlySpan&lt;string&gt; stringArray, out uint count)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -325,7 +324,7 @@ Use <a class="xref" href="OpenTK.Core.Native.MarshalTk.html#OpenTK_Core_Native_M
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.span-1">Span</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</td>
         <td><span class="parametername">stringArray</span></td>
         <td><p>The span of strings to marshal.</p>
 </td>

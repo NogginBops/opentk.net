@@ -4,39 +4,35 @@
 
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Interface IShellComponent  - OpenTK</title>
-    <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Interface IShellComponent ">
-    <meta name="generator" content="docfx ">
-  
-    <link rel="shortcut icon" href="../favicon.ico">
-    <link rel="stylesheet" href="../styles/docfx.vendor.css">
-    <link rel="stylesheet" href="../styles/docfx.css">
-    <link rel="stylesheet" href="../styles/main.css">
-    <meta property="docfx:navrel" content="../toc.html">
-    <meta property="docfx:tocrel" content="toc.html">
-  
-  
-  
-
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Interface IShellComponent | OpenTK </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Interface IShellComponent | OpenTK ">
+    
+    <meta name="description" content="Interface for interacting with operating system features.">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
     <meta name="author" content="The Open Toolkit Project">
     <meta property="og:image" content="https://opentk.net/otkBig.png">
     <meta property="og:image:width" content="142">
     <meta property="og:image:height" content="50">
     <meta property="og:site_name" content="OpenTK">
-    <meta property="og:title" content="Interface IShellComponent  - OpenTK">
+    <meta property="og:title" content="Interface IShellComponent | OpenTK  - OpenTK">
     <meta name="theme-color" content="#ffffff">
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
 
-        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation" style="background: #0052cc;">
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
           <div class="container">
-            <a class="navbar-brand" href="../index.html">
-          <img id="logo" src="../otkBig.png" alt="">
-        </a>
             <div class="navbar-header">
               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
                 <span class="sr-only">Toggle navigation</span>
@@ -44,6 +40,10 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" src="../otkBig.png" alt="">
+              </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
               <form class="navbar-form navbar-right" role="search" id="search">
@@ -54,7 +54,6 @@
             </div>
           </div>
         </nav>
-
         <div class="subnav navbar navbar-default">
           <div class="container hide-when-search" id="breadcrumb">
             <ul class="breadcrumb">
@@ -95,6 +94,9 @@
     <div>
       <a class="xref" href="OpenTK.Platform.IPalComponent.html#OpenTK_Platform_IPalComponent_Initialize_OpenTK_Platform_ToolkitOptions_">IPalComponent.Initialize(ToolkitOptions)</a>
     </div>
+    <div>
+      <a class="xref" href="OpenTK.Platform.IPalComponent.html#OpenTK_Platform_IPalComponent_Uninitialize">IPalComponent.Uninitialize()</a>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="OpenTK.html">OpenTK</a>.<a class="xref" href="OpenTK.Platform.html">Platform</a></h6>
   <h6><strong>Assembly</strong>: OpenTK.Platform.dll</h6>
@@ -105,16 +107,16 @@
   <h3 id="methods">Methods
 </h3>
   <a id="OpenTK_Platform_IShellComponent_AllowScreenSaver_" data-uid="OpenTK.Platform.IShellComponent.AllowScreenSaver*"></a>
-  <h4 id="OpenTK_Platform_IShellComponent_AllowScreenSaver_System_Boolean_" data-uid="OpenTK.Platform.IShellComponent.AllowScreenSaver(System.Boolean)">AllowScreenSaver(bool)</h4>
+  <h4 id="OpenTK_Platform_IShellComponent_AllowScreenSaver_System_Boolean_System_String_" data-uid="OpenTK.Platform.IShellComponent.AllowScreenSaver(System.Boolean,System.String)">AllowScreenSaver(bool, string?)</h4>
   <div class="markdown level1 summary"><p>Sets whether or not a screensaver is allowed to draw on top of the window.
-For games with long cutscenes it would be appropriate to set this to <code>false</code>,
-while tools that act like normal applications should set this to <code>true</code>.
+For games with long cutscenes it would be appropriate to set this to <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>,
+while tools that act like normal applications should set this to <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>.
 By default this setting is untouched.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void AllowScreenSaver(bool allow)</code></pre>
+    <pre><code class="lang-csharp hljs">void AllowScreenSaver(bool allow, string? disableReason)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -132,8 +134,22 @@ By default this setting is untouched.</p>
         <td><p>Whether to allow screensavers to appear while the application is running.</p>
 </td>
       </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">disableReason</span></td>
+        <td><p>A reason for why the screen saver is disabled.
+This string should both contain the reason why the screen saver is disabed as well as the name of the
+application so the user knows which application is preventing the screen saver from running.
+If <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> is sent the following default message will be sent:</p>
+<pre><code class="lang-csharp">$"{ApplicationName} is is preventing screen saver."</code></pre>
+</td>
+      </tr>
     </tbody>
   </table>
+  <h5 id="OpenTK_Platform_IShellComponent_AllowScreenSaver_System_Boolean_System_String__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="OpenTK.Platform.IShellComponent.html#OpenTK_Platform_IShellComponent_IsScreenSaverAllowed">IsScreenSaverAllowed()</a></div>
+  </div>
   <a id="OpenTK_Platform_IShellComponent_GetBatteryInfo_" data-uid="OpenTK.Platform.IShellComponent.GetBatteryInfo*"></a>
   <h4 id="OpenTK_Platform_IShellComponent_GetBatteryInfo_OpenTK_Platform_BatteryInfo__" data-uid="OpenTK.Platform.IShellComponent.GetBatteryInfo(OpenTK.Platform.BatteryInfo@)">GetBatteryInfo(out BatteryInfo)</h4>
   <div class="markdown level1 summary"><p>Gets the battery status of the computer.</p>
@@ -203,6 +219,10 @@ this is only filled with values when <a class="xref" href="OpenTK.Platform.Batte
       </tr>
     </tbody>
   </table>
+  <h5 id="OpenTK_Platform_IShellComponent_GetPreferredTheme_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="OpenTK.Platform.ThemeChangeEventArgs.html">ThemeChangeEventArgs</a></div>
+  </div>
   <a id="OpenTK_Platform_IShellComponent_GetSystemMemoryInformation_" data-uid="OpenTK.Platform.IShellComponent.GetSystemMemoryInformation*"></a>
   <h4 id="OpenTK_Platform_IShellComponent_GetSystemMemoryInformation" data-uid="OpenTK.Platform.IShellComponent.GetSystemMemoryInformation">GetSystemMemoryInformation()</h4>
   <div class="markdown level1 summary"><p>Gets information about the memory of the device and the current status.</p>
@@ -228,6 +248,39 @@ this is only filled with values when <a class="xref" href="OpenTK.Platform.Batte
       </tr>
     </tbody>
   </table>
+  <a id="OpenTK_Platform_IShellComponent_IsScreenSaverAllowed_" data-uid="OpenTK.Platform.IShellComponent.IsScreenSaverAllowed*"></a>
+  <h4 id="OpenTK_Platform_IShellComponent_IsScreenSaverAllowed" data-uid="OpenTK.Platform.IShellComponent.IsScreenSaverAllowed">IsScreenSaverAllowed()</h4>
+  <div class="markdown level1 summary"><p>Gets if the screen saver is allowed to run or not.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsScreenSaverAllowed()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p>If the screen saver is allowed to run.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenTK_Platform_IShellComponent_IsScreenSaverAllowed_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="OpenTK.Platform.IShellComponent.html#OpenTK_Platform_IShellComponent_AllowScreenSaver_System_Boolean_System_String_">AllowScreenSaver(bool, string?)</a></div>
+  </div>
+  <h3 id="seealso">See Also</h3>
+  <div class="seealso">
+      <div><a class="xref" href="OpenTK.Platform.Toolkit.html#OpenTK_Platform_Toolkit_Shell">Shell</a></div>
+  </div>
 
 </article>
           </div>

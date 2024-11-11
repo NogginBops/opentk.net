@@ -120,7 +120,10 @@
 </h3>
   <a id="OpenTK_Graphics_Wgl_Wgl_ARB_BindTexImageARB_" data-uid="OpenTK.Graphics.Wgl.Wgl.ARB.BindTexImageARB*"></a>
   <h4 id="OpenTK_Graphics_Wgl_Wgl_ARB_BindTexImageARB_System_IntPtr_OpenTK_Graphics_Wgl_ColorBuffer_" data-uid="OpenTK.Graphics.Wgl.Wgl.ARB.BindTexImageARB(System.IntPtr,OpenTK.Graphics.Wgl.ColorBuffer)">BindTexImageARB(nint, ColorBuffer)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p><b>[requires: WGL_ARB_render_texture]</b>
+<b>[entry point: <code>wglBindTexImageARB</code>]</b>
+<br></p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -280,7 +283,7 @@
     </tbody>
   </table>
   <a id="OpenTK_Graphics_Wgl_Wgl_ARB_ChoosePixelFormatARB_" data-uid="OpenTK.Graphics.Wgl.Wgl.ARB.ChoosePixelFormatARB*"></a>
-  <h4 id="OpenTK_Graphics_Wgl_Wgl_ARB_ChoosePixelFormatARB_System_IntPtr_OpenTK_Graphics_Wgl_PixelFormatAttribute__System_Single__System_UInt32_System_Int32__System_UInt32__" data-uid="OpenTK.Graphics.Wgl.Wgl.ARB.ChoosePixelFormatARB(System.IntPtr,OpenTK.Graphics.Wgl.PixelFormatAttribute@,System.Single@,System.UInt32,System.Int32@,System.UInt32@)">ChoosePixelFormatARB(nint, in PixelFormatAttribute, in float, uint, ref int, out uint)</h4>
+  <h4 id="OpenTK_Graphics_Wgl_Wgl_ARB_ChoosePixelFormatARB_System_IntPtr_OpenTK_Graphics_Wgl_PixelFormatAttribute__System_Single__System_UInt32_System_Int32__System_UInt32__" data-uid="OpenTK.Graphics.Wgl.Wgl.ARB.ChoosePixelFormatARB(System.IntPtr,OpenTK.Graphics.Wgl.PixelFormatAttribute@,System.Single@,System.UInt32,System.Int32@,System.UInt32@)">ChoosePixelFormatARB(nint, ref readonly PixelFormatAttribute, ref readonly float, uint, ref int, out uint)</h4>
   <div class="markdown level1 summary"><p><b>[requires: WGL_ARB_pixel_format]</b>
 <b>[entry point: <code>wglChoosePixelFormatARB</code>]</b>
 <br></p>
@@ -288,7 +291,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool ChoosePixelFormatARB(nint hdc, in PixelFormatAttribute piAttribIList, in float pfAttribFList, uint nMaxFormats, ref int piFormats, out uint nNumFormats)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool ChoosePixelFormatARB(nint hdc, ref readonly PixelFormatAttribute piAttribIList, ref readonly float pfAttribFList, uint nMaxFormats, ref int piFormats, out uint nNumFormats)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -590,7 +593,7 @@
     </tbody>
   </table>
   <a id="OpenTK_Graphics_Wgl_Wgl_ARB_CreateContextAttribsARB_" data-uid="OpenTK.Graphics.Wgl.Wgl.ARB.CreateContextAttribsARB*"></a>
-  <h4 id="OpenTK_Graphics_Wgl_Wgl_ARB_CreateContextAttribsARB_System_IntPtr_System_IntPtr_OpenTK_Graphics_Wgl_ContextAttribs__" data-uid="OpenTK.Graphics.Wgl.Wgl.ARB.CreateContextAttribsARB(System.IntPtr,System.IntPtr,OpenTK.Graphics.Wgl.ContextAttribs@)">CreateContextAttribsARB(nint, nint, in ContextAttribs)</h4>
+  <h4 id="OpenTK_Graphics_Wgl_Wgl_ARB_CreateContextAttribsARB_System_IntPtr_System_IntPtr_OpenTK_Graphics_Wgl_ContextAttribs__" data-uid="OpenTK.Graphics.Wgl.Wgl.ARB.CreateContextAttribsARB(System.IntPtr,System.IntPtr,OpenTK.Graphics.Wgl.ContextAttribs@)">CreateContextAttribsARB(nint, nint, ref readonly ContextAttribs)</h4>
   <div class="markdown level1 summary"><p><b>[requires: WGL_ARB_create_context]</b>
 <b>[entry point: <code>wglCreateContextAttribsARB</code>]</b>
 <br></p>
@@ -598,7 +601,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static nint CreateContextAttribsARB(nint hDC, nint hShareContext, in ContextAttribs attribList)</code></pre>
+    <pre><code class="lang-csharp hljs">public static nint CreateContextAttribsARB(nint hDC, nint hShareContext, ref readonly ContextAttribs attribList)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -812,7 +815,7 @@
     </tbody>
   </table>
   <a id="OpenTK_Graphics_Wgl_Wgl_ARB_CreatePbufferARB_" data-uid="OpenTK.Graphics.Wgl.Wgl.ARB.CreatePbufferARB*"></a>
-  <h4 id="OpenTK_Graphics_Wgl_Wgl_ARB_CreatePbufferARB_System_IntPtr_System_Int32_System_Int32_System_Int32_System_Int32__" data-uid="OpenTK.Graphics.Wgl.Wgl.ARB.CreatePbufferARB(System.IntPtr,System.Int32,System.Int32,System.Int32,System.Int32@)">CreatePbufferARB(nint, int, int, int, in int)</h4>
+  <h4 id="OpenTK_Graphics_Wgl_Wgl_ARB_CreatePbufferARB_System_IntPtr_System_Int32_System_Int32_System_Int32_System_Int32__" data-uid="OpenTK.Graphics.Wgl.Wgl.ARB.CreatePbufferARB(System.IntPtr,System.Int32,System.Int32,System.Int32,System.Int32@)">CreatePbufferARB(nint, int, int, int, ref readonly int)</h4>
   <div class="markdown level1 summary"><p><b>[requires: WGL_ARB_pbuffer]</b>
 <b>[entry point: <code>wglCreatePbufferARB</code>]</b>
 <br></p>
@@ -820,7 +823,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static nint CreatePbufferARB(nint hDC, int iPixelFormat, int iWidth, int iHeight, in int piAttribList)</code></pre>
+    <pre><code class="lang-csharp hljs">public static nint CreatePbufferARB(nint hDC, int iPixelFormat, int iWidth, int iHeight, ref readonly int piAttribList)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -1030,7 +1033,10 @@
   </table>
   <a id="OpenTK_Graphics_Wgl_Wgl_ARB_DestroyPbufferARB_" data-uid="OpenTK.Graphics.Wgl.Wgl.ARB.DestroyPbufferARB*"></a>
   <h4 id="OpenTK_Graphics_Wgl_Wgl_ARB_DestroyPbufferARB_System_IntPtr_" data-uid="OpenTK.Graphics.Wgl.Wgl.ARB.DestroyPbufferARB(System.IntPtr)">DestroyPbufferARB(nint)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p><b>[requires: WGL_ARB_pbuffer]</b>
+<b>[entry point: <code>wglDestroyPbufferARB</code>]</b>
+<br></p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -1139,7 +1145,10 @@
   </table>
   <a id="OpenTK_Graphics_Wgl_Wgl_ARB_GetExtensionsStringARB_" data-uid="OpenTK.Graphics.Wgl.Wgl.ARB.GetExtensionsStringARB*"></a>
   <h4 id="OpenTK_Graphics_Wgl_Wgl_ARB_GetExtensionsStringARB_System_IntPtr_" data-uid="OpenTK.Graphics.Wgl.Wgl.ARB.GetExtensionsStringARB(System.IntPtr)">GetExtensionsStringARB(nint)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p><b>[requires: WGL_ARB_extensions_string]</b>
+<b>[entry point: <code>wglGetExtensionsStringARB</code>]</b>
+<br></p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -1332,7 +1341,7 @@
     </tbody>
   </table>
   <a id="OpenTK_Graphics_Wgl_Wgl_ARB_GetPixelFormatAttribfvARB_" data-uid="OpenTK.Graphics.Wgl.Wgl.ARB.GetPixelFormatAttribfvARB*"></a>
-  <h4 id="OpenTK_Graphics_Wgl_Wgl_ARB_GetPixelFormatAttribfvARB_System_IntPtr_System_Int32_System_Int32_System_UInt32_OpenTK_Graphics_Wgl_PixelFormatAttribute__System_Single__" data-uid="OpenTK.Graphics.Wgl.Wgl.ARB.GetPixelFormatAttribfvARB(System.IntPtr,System.Int32,System.Int32,System.UInt32,OpenTK.Graphics.Wgl.PixelFormatAttribute@,System.Single@)">GetPixelFormatAttribfvARB(nint, int, int, uint, in PixelFormatAttribute, ref float)</h4>
+  <h4 id="OpenTK_Graphics_Wgl_Wgl_ARB_GetPixelFormatAttribfvARB_System_IntPtr_System_Int32_System_Int32_System_UInt32_OpenTK_Graphics_Wgl_PixelFormatAttribute__System_Single__" data-uid="OpenTK.Graphics.Wgl.Wgl.ARB.GetPixelFormatAttribfvARB(System.IntPtr,System.Int32,System.Int32,System.UInt32,OpenTK.Graphics.Wgl.PixelFormatAttribute@,System.Single@)">GetPixelFormatAttribfvARB(nint, int, int, uint, ref readonly PixelFormatAttribute, ref float)</h4>
   <div class="markdown level1 summary"><p><b>[requires: WGL_ARB_pixel_format]</b>
 <b>[entry point: <code>wglGetPixelFormatAttribfvARB</code>]</b>
 <br></p>
@@ -1340,7 +1349,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool GetPixelFormatAttribfvARB(nint hdc, int iPixelFormat, int iLayerPlane, uint nAttributes, in PixelFormatAttribute piAttributes, ref float pfValues)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool GetPixelFormatAttribfvARB(nint hdc, int iPixelFormat, int iLayerPlane, uint nAttributes, ref readonly PixelFormatAttribute piAttributes, ref float pfValues)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -1604,7 +1613,7 @@
     </tbody>
   </table>
   <a id="OpenTK_Graphics_Wgl_Wgl_ARB_GetPixelFormatAttribivARB_" data-uid="OpenTK.Graphics.Wgl.Wgl.ARB.GetPixelFormatAttribivARB*"></a>
-  <h4 id="OpenTK_Graphics_Wgl_Wgl_ARB_GetPixelFormatAttribivARB_System_IntPtr_System_Int32_System_Int32_System_UInt32_OpenTK_Graphics_Wgl_PixelFormatAttribute__System_Int32__" data-uid="OpenTK.Graphics.Wgl.Wgl.ARB.GetPixelFormatAttribivARB(System.IntPtr,System.Int32,System.Int32,System.UInt32,OpenTK.Graphics.Wgl.PixelFormatAttribute@,System.Int32@)">GetPixelFormatAttribivARB(nint, int, int, uint, in PixelFormatAttribute, ref int)</h4>
+  <h4 id="OpenTK_Graphics_Wgl_Wgl_ARB_GetPixelFormatAttribivARB_System_IntPtr_System_Int32_System_Int32_System_UInt32_OpenTK_Graphics_Wgl_PixelFormatAttribute__System_Int32__" data-uid="OpenTK.Graphics.Wgl.Wgl.ARB.GetPixelFormatAttribivARB(System.IntPtr,System.Int32,System.Int32,System.UInt32,OpenTK.Graphics.Wgl.PixelFormatAttribute@,System.Int32@)">GetPixelFormatAttribivARB(nint, int, int, uint, ref readonly PixelFormatAttribute, ref int)</h4>
   <div class="markdown level1 summary"><p><b>[requires: WGL_ARB_pixel_format]</b>
 <b>[entry point: <code>wglGetPixelFormatAttribivARB</code>]</b>
 <br></p>
@@ -1612,7 +1621,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool GetPixelFormatAttribivARB(nint hdc, int iPixelFormat, int iLayerPlane, uint nAttributes, in PixelFormatAttribute piAttributes, ref int piValues)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool GetPixelFormatAttribivARB(nint hdc, int iPixelFormat, int iLayerPlane, uint nAttributes, ref readonly PixelFormatAttribute piAttributes, ref int piValues)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -1809,7 +1818,10 @@
   </table>
   <a id="OpenTK_Graphics_Wgl_Wgl_ARB_MakeContextCurrentARB_" data-uid="OpenTK.Graphics.Wgl.Wgl.ARB.MakeContextCurrentARB*"></a>
   <h4 id="OpenTK_Graphics_Wgl_Wgl_ARB_MakeContextCurrentARB_System_IntPtr_System_IntPtr_System_IntPtr_" data-uid="OpenTK.Graphics.Wgl.Wgl.ARB.MakeContextCurrentARB(System.IntPtr,System.IntPtr,System.IntPtr)">MakeContextCurrentARB(nint, nint, nint)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p><b>[requires: WGL_ARB_make_current_read]</b>
+<b>[entry point: <code>wglMakeContextCurrentARB</code>]</b>
+<br></p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -2066,7 +2078,10 @@
   </table>
   <a id="OpenTK_Graphics_Wgl_Wgl_ARB_ReleaseTexImageARB_" data-uid="OpenTK.Graphics.Wgl.Wgl.ARB.ReleaseTexImageARB*"></a>
   <h4 id="OpenTK_Graphics_Wgl_Wgl_ARB_ReleaseTexImageARB_System_IntPtr_OpenTK_Graphics_Wgl_ColorBuffer_" data-uid="OpenTK.Graphics.Wgl.Wgl.ARB.ReleaseTexImageARB(System.IntPtr,OpenTK.Graphics.Wgl.ColorBuffer)">ReleaseTexImageARB(nint, ColorBuffer)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p><b>[requires: WGL_ARB_render_texture]</b>
+<b>[entry point: <code>wglReleaseTexImageARB</code>]</b>
+<br></p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -2159,7 +2174,10 @@
   </table>
   <a id="OpenTK_Graphics_Wgl_Wgl_ARB_RestoreBufferRegionARB_" data-uid="OpenTK.Graphics.Wgl.Wgl.ARB.RestoreBufferRegionARB*"></a>
   <h4 id="OpenTK_Graphics_Wgl_Wgl_ARB_RestoreBufferRegionARB_System_IntPtr_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="OpenTK.Graphics.Wgl.Wgl.ARB.RestoreBufferRegionARB(System.IntPtr,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">RestoreBufferRegionARB(nint, int, int, int, int, int, int)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p><b>[requires: WGL_ARB_buffer_region]</b>
+<b>[entry point: <code>wglRestoreBufferRegionARB</code>]</b>
+<br></p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -2302,7 +2320,10 @@
   </table>
   <a id="OpenTK_Graphics_Wgl_Wgl_ARB_SaveBufferRegionARB_" data-uid="OpenTK.Graphics.Wgl.Wgl.ARB.SaveBufferRegionARB*"></a>
   <h4 id="OpenTK_Graphics_Wgl_Wgl_ARB_SaveBufferRegionARB_System_IntPtr_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="OpenTK.Graphics.Wgl.Wgl.ARB.SaveBufferRegionARB(System.IntPtr,System.Int32,System.Int32,System.Int32,System.Int32)">SaveBufferRegionARB(nint, int, int, int, int)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p><b>[requires: WGL_ARB_buffer_region]</b>
+<b>[entry point: <code>wglSaveBufferRegionARB</code>]</b>
+<br></p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -2472,7 +2493,7 @@
     </tbody>
   </table>
   <a id="OpenTK_Graphics_Wgl_Wgl_ARB_SetPbufferAttribARB_" data-uid="OpenTK.Graphics.Wgl.Wgl.ARB.SetPbufferAttribARB*"></a>
-  <h4 id="OpenTK_Graphics_Wgl_Wgl_ARB_SetPbufferAttribARB_System_IntPtr_System_Int32__" data-uid="OpenTK.Graphics.Wgl.Wgl.ARB.SetPbufferAttribARB(System.IntPtr,System.Int32@)">SetPbufferAttribARB(nint, in int)</h4>
+  <h4 id="OpenTK_Graphics_Wgl_Wgl_ARB_SetPbufferAttribARB_System_IntPtr_System_Int32__" data-uid="OpenTK.Graphics.Wgl.Wgl.ARB.SetPbufferAttribARB(System.IntPtr,System.Int32@)">SetPbufferAttribARB(nint, ref readonly int)</h4>
   <div class="markdown level1 summary"><p><b>[requires: WGL_ARB_render_texture]</b>
 <b>[entry point: <code>wglSetPbufferAttribARB</code>]</b>
 <br></p>
@@ -2480,7 +2501,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool SetPbufferAttribARB(nint hPbuffer, in int piAttribList)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool SetPbufferAttribARB(nint hPbuffer, ref readonly int piAttribList)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">

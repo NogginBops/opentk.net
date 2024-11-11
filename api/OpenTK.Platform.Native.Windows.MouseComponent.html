@@ -4,39 +4,35 @@
 
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class MouseComponent  - OpenTK</title>
-    <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class MouseComponent ">
-    <meta name="generator" content="docfx ">
-  
-    <link rel="shortcut icon" href="../favicon.ico">
-    <link rel="stylesheet" href="../styles/docfx.vendor.css">
-    <link rel="stylesheet" href="../styles/docfx.css">
-    <link rel="stylesheet" href="../styles/main.css">
-    <meta property="docfx:navrel" content="../toc.html">
-    <meta property="docfx:tocrel" content="toc.html">
-  
-  
-  
-
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class MouseComponent | OpenTK </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class MouseComponent | OpenTK ">
+    
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
     <meta name="author" content="The Open Toolkit Project">
     <meta property="og:image" content="https://opentk.net/otkBig.png">
     <meta property="og:image:width" content="142">
     <meta property="og:image:height" content="50">
     <meta property="og:site_name" content="OpenTK">
-    <meta property="og:title" content="Class MouseComponent  - OpenTK">
+    <meta property="og:title" content="Class MouseComponent | OpenTK  - OpenTK">
     <meta name="theme-color" content="#ffffff">
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
 
-        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation" style="background: #0052cc;">
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
           <div class="container">
-            <a class="navbar-brand" href="../index.html">
-          <img id="logo" src="../otkBig.png" alt="">
-        </a>
             <div class="navbar-header">
               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
                 <span class="sr-only">Toggle navigation</span>
@@ -44,6 +40,10 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" src="../otkBig.png" alt="">
+              </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
               <form class="navbar-form navbar-right" role="search" id="search">
@@ -54,7 +54,6 @@
             </div>
           </div>
         </nav>
-
         <div class="subnav navbar navbar-default">
           <div class="container hide-when-search" id="breadcrumb">
             <ul class="breadcrumb">
@@ -124,7 +123,7 @@
 </h3>
   <a id="OpenTK_Platform_Native_Windows_MouseComponent_CanSetMousePosition_" data-uid="OpenTK.Platform.Native.Windows.MouseComponent.CanSetMousePosition*"></a>
   <h4 id="OpenTK_Platform_Native_Windows_MouseComponent_CanSetMousePosition" data-uid="OpenTK.Platform.Native.Windows.MouseComponent.CanSetMousePosition">CanSetMousePosition</h4>
-  <div class="markdown level1 summary"><p>If it's possible to set the position of the mouse using <a class="xref" href="OpenTK.Platform.IMouseComponent.html#OpenTK_Platform_IMouseComponent_SetPosition_System_Int32_System_Int32_">SetPosition(int, int)</a>.</p>
+  <div class="markdown level1 summary"><p>If it's possible to set the position of the mouse using <a class="xref" href="OpenTK.Platform.IMouseComponent.html#OpenTK_Platform_IMouseComponent_SetGlobalPosition_OpenTK_Mathematics_Vector2_">SetGlobalPosition(Vector2)</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -148,11 +147,11 @@
   </table>
   <h5 id="OpenTK_Platform_Native_Windows_MouseComponent_CanSetMousePosition_seealso">See Also</h5>
   <div class="seealso">
-      <div><a class="xref" href="OpenTK.Platform.IMouseComponent.html#OpenTK_Platform_IMouseComponent_SetPosition_System_Int32_System_Int32_">SetPosition</a>(<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>)</div>
+      <div><a class="xref" href="OpenTK.Platform.IMouseComponent.html#OpenTK_Platform_IMouseComponent_SetGlobalPosition_OpenTK_Mathematics_Vector2_">SetGlobalPosition</a>(<a class="xref" href="OpenTK.Mathematics.Vector2.html">Vector2</a>)</div>
   </div>
   <a id="OpenTK_Platform_Native_Windows_MouseComponent_Logger_" data-uid="OpenTK.Platform.Native.Windows.MouseComponent.Logger*"></a>
   <h4 id="OpenTK_Platform_Native_Windows_MouseComponent_Logger" data-uid="OpenTK.Platform.Native.Windows.MouseComponent.Logger">Logger</h4>
-  <div class="markdown level1 summary"><p>Provides a logger for this component.</p>
+  <div class="markdown level1 summary"><p>The logger that this component uses to log diagnostic messages.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -174,6 +173,11 @@
       </tr>
     </tbody>
   </table>
+  <h5 id="OpenTK_Platform_Native_Windows_MouseComponent_Logger_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="OpenTK.Core.Utility.ILogger.html">ILogger</a></div>
+      <div><a class="xref" href="OpenTK.Platform.ToolkitOptions.html#OpenTK_Platform_ToolkitOptions_Logger">Logger</a></div>
+  </div>
   <a id="OpenTK_Platform_Native_Windows_MouseComponent_Name_" data-uid="OpenTK.Platform.Native.Windows.MouseComponent.Name*"></a>
   <h4 id="OpenTK_Platform_Native_Windows_MouseComponent_Name" data-uid="OpenTK.Platform.Native.Windows.MouseComponent.Name">Name</h4>
   <div class="markdown level1 summary"><p>Name of the abstraction layer component.</p>
@@ -292,14 +296,17 @@ Check that <a class="xref" href="OpenTK.Platform.IMouseComponent.html#OpenTK_Pla
   <div class="seealso">
       <div><a class="xref" href="OpenTK.Platform.IMouseComponent.html#OpenTK_Platform_IMouseComponent_SupportsRawMouseMotion">SupportsRawMouseMotion</a></div>
   </div>
-  <a id="OpenTK_Platform_Native_Windows_MouseComponent_GetMouseState_" data-uid="OpenTK.Platform.Native.Windows.MouseComponent.GetMouseState*"></a>
-  <h4 id="OpenTK_Platform_Native_Windows_MouseComponent_GetMouseState_OpenTK_Platform_MouseState__" data-uid="OpenTK.Platform.Native.Windows.MouseComponent.GetMouseState(OpenTK.Platform.MouseState@)">GetMouseState(out MouseState)</h4>
-  <div class="markdown level1 summary"><p>Fills the <code class="paramref">state</code> struct with the current mouse state.</p>
+  <a id="OpenTK_Platform_Native_Windows_MouseComponent_GetGlobalMouseState_" data-uid="OpenTK.Platform.Native.Windows.MouseComponent.GetGlobalMouseState*"></a>
+  <h4 id="OpenTK_Platform_Native_Windows_MouseComponent_GetGlobalMouseState_OpenTK_Platform_MouseState__" data-uid="OpenTK.Platform.Native.Windows.MouseComponent.GetGlobalMouseState(OpenTK.Platform.MouseState@)">GetGlobalMouseState(out MouseState)</h4>
+  <div class="markdown level1 summary"><p>Fills the <code class="paramref">state</code> struct with the current mouse state.
+This function may query the mouse state outside of event processing to get the position of the mouse at the time this function is called.
+The <a class="xref" href="OpenTK.Platform.MouseState.html#OpenTK_Platform_MouseState_Position">Position</a> will be the screen mouse position and not virtual coordinates described by <a class="xref" href="OpenTK.Platform.CursorCaptureMode.html#OpenTK_Platform_CursorCaptureMode_Locked">Locked</a>.
+The <a class="xref" href="OpenTK.Platform.MouseState.html#OpenTK_Platform_MouseState_Position">Position</a> is in window screen coordinates.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void GetMouseState(out MouseState state)</code></pre>
+    <pre><code class="lang-csharp hljs">public void GetGlobalMouseState(out MouseState state)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -319,14 +326,20 @@ Check that <a class="xref" href="OpenTK.Platform.IMouseComponent.html#OpenTK_Pla
       </tr>
     </tbody>
   </table>
-  <a id="OpenTK_Platform_Native_Windows_MouseComponent_GetPosition_" data-uid="OpenTK.Platform.Native.Windows.MouseComponent.GetPosition*"></a>
-  <h4 id="OpenTK_Platform_Native_Windows_MouseComponent_GetPosition_System_Int32__System_Int32__" data-uid="OpenTK.Platform.Native.Windows.MouseComponent.GetPosition(System.Int32@,System.Int32@)">GetPosition(out int, out int)</h4>
-  <div class="markdown level1 summary"><p>Get the mouse cursor position.</p>
+  <h5 id="OpenTK_Platform_Native_Windows_MouseComponent_GetGlobalMouseState_OpenTK_Platform_MouseState___seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="OpenTK.Platform.IMouseComponent.html#OpenTK_Platform_IMouseComponent_GetMouseState_OpenTK_Platform_WindowHandle_OpenTK_Platform_MouseState__">GetMouseState</a>(<a class="xref" href="OpenTK.Platform.WindowHandle.html">WindowHandle</a>, out <a class="xref" href="OpenTK.Platform.MouseState.html">MouseState</a>)</div>
+  </div>
+  <a id="OpenTK_Platform_Native_Windows_MouseComponent_GetGlobalPosition_" data-uid="OpenTK.Platform.Native.Windows.MouseComponent.GetGlobalPosition*"></a>
+  <h4 id="OpenTK_Platform_Native_Windows_MouseComponent_GetGlobalPosition_OpenTK_Mathematics_Vector2__" data-uid="OpenTK.Platform.Native.Windows.MouseComponent.GetGlobalPosition(OpenTK.Mathematics.Vector2@)">GetGlobalPosition(out Vector2)</h4>
+  <div class="markdown level1 summary"><p>Get the global mouse cursor position.
+This function may query the mouse position outside of event processing to get the position of the mouse at the time this function is called.
+The mouse position returned is the mouse position as it is on screen, it will not return virtual coordinates when using <a class="xref" href="OpenTK.Platform.CursorCaptureMode.html#OpenTK_Platform_CursorCaptureMode_Locked">Locked</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void GetPosition(out int x, out int y)</code></pre>
+    <pre><code class="lang-csharp hljs">public void GetGlobalPosition(out Vector2 globalPosition)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -339,19 +352,97 @@ Check that <a class="xref" href="OpenTK.Platform.IMouseComponent.html#OpenTK_Pla
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
-        <td><span class="parametername">x</span></td>
-        <td><p>X coordinate of the mouse in desktop space.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
-        <td><span class="parametername">y</span></td>
-        <td><p>Y coordinate of the mouse in desktop space.</p>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector2.html">Vector2</a></td>
+        <td><span class="parametername">globalPosition</span></td>
+        <td><p>Coordinate of the mouse in screen coordinates.</p>
 </td>
       </tr>
     </tbody>
   </table>
+  <h5 id="OpenTK_Platform_Native_Windows_MouseComponent_GetGlobalPosition_OpenTK_Mathematics_Vector2___seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="OpenTK.Platform.IMouseComponent.html#OpenTK_Platform_IMouseComponent_GetPosition_OpenTK_Platform_WindowHandle_OpenTK_Mathematics_Vector2__">GetPosition</a>(<a class="xref" href="OpenTK.Platform.WindowHandle.html">WindowHandle</a>, out <a class="xref" href="OpenTK.Mathematics.Vector2.html">Vector2</a>)</div>
+      <div><a class="xref" href="OpenTK.Platform.IMouseComponent.html#OpenTK_Platform_IMouseComponent_SetGlobalPosition_OpenTK_Mathematics_Vector2_">SetGlobalPosition</a>(<a class="xref" href="OpenTK.Mathematics.Vector2.html">Vector2</a>)</div>
+  </div>
+  <a id="OpenTK_Platform_Native_Windows_MouseComponent_GetMouseState_" data-uid="OpenTK.Platform.Native.Windows.MouseComponent.GetMouseState*"></a>
+  <h4 id="OpenTK_Platform_Native_Windows_MouseComponent_GetMouseState_OpenTK_Platform_WindowHandle_OpenTK_Platform_MouseState__" data-uid="OpenTK.Platform.Native.Windows.MouseComponent.GetMouseState(OpenTK.Platform.WindowHandle,OpenTK.Platform.MouseState@)">GetMouseState(WindowHandle, out MouseState)</h4>
+  <div class="markdown level1 summary"><p>Fills the <code class="paramref">state</code> struct with the current mouse state for the specified window.
+This function takes into consideration only the mouse events that the specified window has received and does not represent global state.
+If the window has locked the cursor using <a class="xref" href="OpenTK.Platform.CursorCaptureMode.html#OpenTK_Platform_CursorCaptureMode_Locked">Locked</a>, this function will return virtual coordinates (unlike <a class="xref" href="OpenTK.Platform.IMouseComponent.html#OpenTK_Platform_IMouseComponent_GetGlobalMouseState_OpenTK_Platform_MouseState__">GetGlobalMouseState(out MouseState)</a>).
+The <a class="xref" href="OpenTK.Platform.MouseState.html#OpenTK_Platform_MouseState_Position">Position</a> is in window relative coordinates.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetMouseState(WindowHandle window, out MouseState state)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Platform.WindowHandle.html">WindowHandle</a></td>
+        <td><span class="parametername">window</span></td>
+        <td><p>The window to get the mouse state from.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Platform.MouseState.html">MouseState</a></td>
+        <td><span class="parametername">state</span></td>
+        <td><p>The current mouse state.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenTK_Platform_Native_Windows_MouseComponent_GetMouseState_OpenTK_Platform_WindowHandle_OpenTK_Platform_MouseState___seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="OpenTK.Platform.IMouseComponent.html#OpenTK_Platform_IMouseComponent_GetGlobalMouseState_OpenTK_Platform_MouseState__">GetGlobalMouseState</a>(out <a class="xref" href="OpenTK.Platform.MouseState.html">MouseState</a>)</div>
+  </div>
+  <a id="OpenTK_Platform_Native_Windows_MouseComponent_GetPosition_" data-uid="OpenTK.Platform.Native.Windows.MouseComponent.GetPosition*"></a>
+  <h4 id="OpenTK_Platform_Native_Windows_MouseComponent_GetPosition_OpenTK_Platform_WindowHandle_OpenTK_Mathematics_Vector2__" data-uid="OpenTK.Platform.Native.Windows.MouseComponent.GetPosition(OpenTK.Platform.WindowHandle,OpenTK.Mathematics.Vector2@)">GetPosition(WindowHandle, out Vector2)</h4>
+  <div class="markdown level1 summary"><p>Gets the mouse position as seen from the specified window.
+This function takes into consideration only the mouse events that the specified window has received and does not represent global state.
+If the window has locked the cursor using <a class="xref" href="OpenTK.Platform.CursorCaptureMode.html#OpenTK_Platform_CursorCaptureMode_Locked">Locked</a>, this function will return virtual coordinates (unlike GetGlobalPosition(out Vector2i)).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetPosition(WindowHandle window, out Vector2 position)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Platform.WindowHandle.html">WindowHandle</a></td>
+        <td><span class="parametername">window</span></td>
+        <td><p>The window to get the mouse position for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector2.html">Vector2</a></td>
+        <td><span class="parametername">position</span></td>
+        <td><p>Coordinate of the mouse in client coordinates.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenTK_Platform_Native_Windows_MouseComponent_GetPosition_OpenTK_Platform_WindowHandle_OpenTK_Mathematics_Vector2___seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="OpenTK.Platform.IMouseComponent.html#OpenTK_Platform_IMouseComponent_GetGlobalPosition_OpenTK_Mathematics_Vector2__">GetGlobalPosition</a>(out <a class="xref" href="OpenTK.Mathematics.Vector2.html">Vector2</a>)</div>
+  </div>
   <a id="OpenTK_Platform_Native_Windows_MouseComponent_Initialize_" data-uid="OpenTK.Platform.Native.Windows.MouseComponent.Initialize*"></a>
   <h4 id="OpenTK_Platform_Native_Windows_MouseComponent_Initialize_OpenTK_Platform_ToolkitOptions_" data-uid="OpenTK.Platform.Native.Windows.MouseComponent.Initialize(OpenTK.Platform.ToolkitOptions)">Initialize(ToolkitOptions)</h4>
   <div class="markdown level1 summary"><p>Initialize the component.</p>
@@ -379,6 +470,11 @@ Check that <a class="xref" href="OpenTK.Platform.IMouseComponent.html#OpenTK_Pla
       </tr>
     </tbody>
   </table>
+  <h5 id="OpenTK_Platform_Native_Windows_MouseComponent_Initialize_OpenTK_Platform_ToolkitOptions__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="OpenTK.Platform.ToolkitOptions.html">ToolkitOptions</a></div>
+      <div><a class="xref" href="OpenTK.Platform.Toolkit.html#OpenTK_Platform_Toolkit_Init_OpenTK_Platform_ToolkitOptions_">Init</a>(<a class="xref" href="OpenTK.Platform.ToolkitOptions.html">ToolkitOptions</a>)</div>
+  </div>
   <a id="OpenTK_Platform_Native_Windows_MouseComponent_IsRawMouseMotionEnabled_" data-uid="OpenTK.Platform.Native.Windows.MouseComponent.IsRawMouseMotionEnabled*"></a>
   <h4 id="OpenTK_Platform_Native_Windows_MouseComponent_IsRawMouseMotionEnabled_OpenTK_Platform_WindowHandle_" data-uid="OpenTK.Platform.Native.Windows.MouseComponent.IsRawMouseMotionEnabled(OpenTK.Platform.WindowHandle)">IsRawMouseMotionEnabled(WindowHandle)</h4>
   <div class="markdown level1 summary"><p>Returns whether raw mouse motion is enabled for the given window or not.
@@ -425,16 +521,17 @@ Check that <a class="xref" href="OpenTK.Platform.IMouseComponent.html#OpenTK_Pla
   <h5 id="OpenTK_Platform_Native_Windows_MouseComponent_IsRawMouseMotionEnabled_OpenTK_Platform_WindowHandle__seealso">See Also</h5>
   <div class="seealso">
       <div><a class="xref" href="OpenTK.Platform.IMouseComponent.html#OpenTK_Platform_IMouseComponent_SupportsRawMouseMotion">SupportsRawMouseMotion</a></div>
+      <div><a class="xref" href="OpenTK.Platform.IMouseComponent.html#OpenTK_Platform_IMouseComponent_EnableRawMouseMotion_OpenTK_Platform_WindowHandle_System_Boolean_">EnableRawMouseMotion</a>(<a class="xref" href="OpenTK.Platform.WindowHandle.html">WindowHandle</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>)</div>
   </div>
-  <a id="OpenTK_Platform_Native_Windows_MouseComponent_SetPosition_" data-uid="OpenTK.Platform.Native.Windows.MouseComponent.SetPosition*"></a>
-  <h4 id="OpenTK_Platform_Native_Windows_MouseComponent_SetPosition_System_Int32_System_Int32_" data-uid="OpenTK.Platform.Native.Windows.MouseComponent.SetPosition(System.Int32,System.Int32)">SetPosition(int, int)</h4>
-  <div class="markdown level1 summary"><p>Set the mouse cursor position.
+  <a id="OpenTK_Platform_Native_Windows_MouseComponent_SetGlobalPosition_" data-uid="OpenTK.Platform.Native.Windows.MouseComponent.SetGlobalPosition*"></a>
+  <h4 id="OpenTK_Platform_Native_Windows_MouseComponent_SetGlobalPosition_OpenTK_Mathematics_Vector2_" data-uid="OpenTK.Platform.Native.Windows.MouseComponent.SetGlobalPosition(OpenTK.Mathematics.Vector2)">SetGlobalPosition(Vector2)</h4>
+  <div class="markdown level1 summary"><p>Set the global mouse cursor position.
 Check that <a class="xref" href="OpenTK.Platform.IMouseComponent.html#OpenTK_Platform_IMouseComponent_CanSetMousePosition">CanSetMousePosition</a> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> before using this.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void SetPosition(int x, int y)</code></pre>
+    <pre><code class="lang-csharp hljs">public void SetGlobalPosition(Vector2 newGlobalPosition)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -447,22 +544,30 @@ Check that <a class="xref" href="OpenTK.Platform.IMouseComponent.html#OpenTK_Pla
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
-        <td><span class="parametername">x</span></td>
-        <td><p>X coordinate of the mouse in desktop space.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
-        <td><span class="parametername">y</span></td>
-        <td><p>Y coordinate of the mouse in desktop space.</p>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector2.html">Vector2</a></td>
+        <td><span class="parametername">newGlobalPosition</span></td>
+        <td><p>New coordinate of the mouse in screen space.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <h5 id="OpenTK_Platform_Native_Windows_MouseComponent_SetPosition_System_Int32_System_Int32__seealso">See Also</h5>
+  <h5 id="OpenTK_Platform_Native_Windows_MouseComponent_SetGlobalPosition_OpenTK_Mathematics_Vector2__seealso">See Also</h5>
   <div class="seealso">
+      <div><a class="xref" href="OpenTK.Platform.IMouseComponent.html#OpenTK_Platform_IMouseComponent_GetGlobalPosition_OpenTK_Mathematics_Vector2__">GetGlobalPosition</a>(out <a class="xref" href="OpenTK.Mathematics.Vector2.html">Vector2</a>)</div>
       <div><a class="xref" href="OpenTK.Platform.IMouseComponent.html#OpenTK_Platform_IMouseComponent_CanSetMousePosition">CanSetMousePosition</a></div>
+  </div>
+  <a id="OpenTK_Platform_Native_Windows_MouseComponent_Uninitialize_" data-uid="OpenTK.Platform.Native.Windows.MouseComponent.Uninitialize*"></a>
+  <h4 id="OpenTK_Platform_Native_Windows_MouseComponent_Uninitialize" data-uid="OpenTK.Platform.Native.Windows.MouseComponent.Uninitialize">Uninitialize()</h4>
+  <div class="markdown level1 summary"><p>Uninitialize the component. Frees any native resources used by the component.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Uninitialize()</code></pre>
+  </div>
+  <h5 id="OpenTK_Platform_Native_Windows_MouseComponent_Uninitialize_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="OpenTK.Platform.Toolkit.html#OpenTK_Platform_Toolkit_Uninit">Uninit</a>()</div>
   </div>
   <h3 id="implements">Implements</h3>
   <div>

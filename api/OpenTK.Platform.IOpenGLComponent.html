@@ -4,39 +4,35 @@
 
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Interface IOpenGLComponent  - OpenTK</title>
-    <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Interface IOpenGLComponent ">
-    <meta name="generator" content="docfx ">
-  
-    <link rel="shortcut icon" href="../favicon.ico">
-    <link rel="stylesheet" href="../styles/docfx.vendor.css">
-    <link rel="stylesheet" href="../styles/docfx.css">
-    <link rel="stylesheet" href="../styles/main.css">
-    <meta property="docfx:navrel" content="../toc.html">
-    <meta property="docfx:tocrel" content="toc.html">
-  
-  
-  
-
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Interface IOpenGLComponent | OpenTK </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Interface IOpenGLComponent | OpenTK ">
+    
+    <meta name="description" content="Interface for creating and interacting with OpenGL contexts.">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
     <meta name="author" content="The Open Toolkit Project">
     <meta property="og:image" content="https://opentk.net/otkBig.png">
     <meta property="og:image:width" content="142">
     <meta property="og:image:height" content="50">
     <meta property="og:site_name" content="OpenTK">
-    <meta property="og:title" content="Interface IOpenGLComponent  - OpenTK">
+    <meta property="og:title" content="Interface IOpenGLComponent | OpenTK  - OpenTK">
     <meta name="theme-color" content="#ffffff">
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
 
-        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation" style="background: #0052cc;">
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
           <div class="container">
-            <a class="navbar-brand" href="../index.html">
-          <img id="logo" src="../otkBig.png" alt="">
-        </a>
             <div class="navbar-header">
               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
                 <span class="sr-only">Toggle navigation</span>
@@ -44,6 +40,10 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" src="../otkBig.png" alt="">
+              </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
               <form class="navbar-form navbar-right" role="search" id="search">
@@ -54,7 +54,6 @@
             </div>
           </div>
         </nav>
-
         <div class="subnav navbar navbar-default">
           <div class="container hide-when-search" id="breadcrumb">
             <ul class="breadcrumb">
@@ -78,7 +77,7 @@
 
 
   <h1 id="OpenTK_Platform_IOpenGLComponent" data-uid="OpenTK.Platform.IOpenGLComponent" class="text-break">Interface IOpenGLComponent</h1>
-  <div class="markdown level0 summary"><p>Interface for drivers which provide the PAL OpenGL Component.</p>
+  <div class="markdown level0 summary"><p>Interface for creating and interacting with OpenGL contexts.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritedMembers">
@@ -94,6 +93,9 @@
     </div>
     <div>
       <a class="xref" href="OpenTK.Platform.IPalComponent.html#OpenTK_Platform_IPalComponent_Initialize_OpenTK_Platform_ToolkitOptions_">IPalComponent.Initialize(ToolkitOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenTK.Platform.IPalComponent.html#OpenTK_Platform_IPalComponent_Uninitialize">IPalComponent.Uninitialize()</a>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="OpenTK.html">OpenTK</a>.<a class="xref" href="OpenTK.Platform.html">Platform</a></h6>
@@ -250,6 +252,11 @@
       </tr>
     </tbody>
   </table>
+  <h5 id="OpenTK_Platform_IOpenGLComponent_CreateFromWindow_OpenTK_Platform_WindowHandle__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="OpenTK.Platform.IWindowComponent.html#OpenTK_Platform_IWindowComponent_Create_OpenTK_Platform_GraphicsApiHints_">Create</a>(<a class="xref" href="OpenTK.Platform.GraphicsApiHints.html">GraphicsApiHints</a>)</div>
+      <div><a class="xref" href="OpenTK.Platform.OpenGLGraphicsApiHints.html">OpenGLGraphicsApiHints</a></div>
+  </div>
   <a id="OpenTK_Platform_IOpenGLComponent_DestroyContext_" data-uid="OpenTK.Platform.IOpenGLComponent.DestroyContext*"></a>
   <h4 id="OpenTK_Platform_IOpenGLComponent_DestroyContext_OpenTK_Platform_OpenGLContextHandle_" data-uid="OpenTK.Platform.IOpenGLComponent.DestroyContext(OpenTK.Platform.OpenGLContextHandle)">DestroyContext(OpenGLContextHandle)</h4>
   <div class="markdown level1 summary"><p>Destroy an OpenGL context.</p>
@@ -277,25 +284,14 @@
       </tr>
     </tbody>
   </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
-        <td><p>OpenGL context handle is null.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
+  <h5 id="OpenTK_Platform_IOpenGLComponent_DestroyContext_OpenTK_Platform_OpenGLContextHandle__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="OpenTK.Platform.IOpenGLComponent.html#OpenTK_Platform_IOpenGLComponent_CreateFromWindow_OpenTK_Platform_WindowHandle_">CreateFromWindow(WindowHandle)</a></div>
+  </div>
   <a id="OpenTK_Platform_IOpenGLComponent_GetBindingsContext_" data-uid="OpenTK.Platform.IOpenGLComponent.GetBindingsContext*"></a>
   <h4 id="OpenTK_Platform_IOpenGLComponent_GetBindingsContext_OpenTK_Platform_OpenGLContextHandle_" data-uid="OpenTK.Platform.IOpenGLComponent.GetBindingsContext(OpenTK.Platform.OpenGLContextHandle)">GetBindingsContext(OpenGLContextHandle)</h4>
-  <div class="markdown level1 summary"><p>Gets a <a class="xref" href="OpenTK.IBindingsContext.html">IBindingsContext</a> from an <a class="xref" href="OpenTK.Platform.OpenGLContextHandle.html">OpenGLContextHandle</a>.</p>
+  <div class="markdown level1 summary"><p>Gets a <a class="xref" href="OpenTK.IBindingsContext.html">IBindingsContext</a> from an <a class="xref" href="OpenTK.Platform.OpenGLContextHandle.html">OpenGLContextHandle</a>.
+Pass this to <a class="xref" href="OpenTK.Graphics.GLLoader.html#OpenTK_Graphics_GLLoader_LoadBindings_OpenTK_IBindingsContext_">LoadBindings(IBindingsContext)</a> to load the OpenGL bindings.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -336,6 +332,11 @@
       </tr>
     </tbody>
   </table>
+  <h5 id="OpenTK_Platform_IOpenGLComponent_GetBindingsContext_OpenTK_Platform_OpenGLContextHandle__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="OpenTK.Graphics.GLLoader.html">GLLoader</a></div>
+      <div><a class="xref" href="OpenTK.IBindingsContext.html">IBindingsContext</a></div>
+  </div>
   <a id="OpenTK_Platform_IOpenGLComponent_GetCurrentContext_" data-uid="OpenTK.Platform.IOpenGLComponent.GetCurrentContext*"></a>
   <h4 id="OpenTK_Platform_IOpenGLComponent_GetCurrentContext" data-uid="OpenTK.Platform.IOpenGLComponent.GetCurrentContext">GetCurrentContext()</h4>
   <div class="markdown level1 summary"><p>Get the current OpenGL context for this thread.</p>
@@ -356,11 +357,15 @@
     <tbody>
       <tr>
         <td><a class="xref" href="OpenTK.Platform.OpenGLContextHandle.html">OpenGLContextHandle</a></td>
-        <td><p>Handle to the current OpenGL context, null if none are current.</p>
+        <td><p>Handle to the current OpenGL context, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> if no context is current.</p>
 </td>
       </tr>
     </tbody>
   </table>
+  <h5 id="OpenTK_Platform_IOpenGLComponent_GetCurrentContext_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="OpenTK.Platform.IOpenGLComponent.html#OpenTK_Platform_IOpenGLComponent_SetCurrentContext_OpenTK_Platform_OpenGLContextHandle_">SetCurrentContext(OpenGLContextHandle?)</a></div>
+  </div>
   <a id="OpenTK_Platform_IOpenGLComponent_GetProcedureAddress_" data-uid="OpenTK.Platform.IOpenGLComponent.GetProcedureAddress*"></a>
   <h4 id="OpenTK_Platform_IOpenGLComponent_GetProcedureAddress_OpenTK_Platform_OpenGLContextHandle_System_String_" data-uid="OpenTK.Platform.IOpenGLComponent.GetProcedureAddress(OpenTK.Platform.OpenGLContextHandle,System.String)">GetProcedureAddress(OpenGLContextHandle, string)</h4>
   <div class="markdown level1 summary"><p>Get the procedure address for an OpenGL command.</p>
@@ -410,22 +415,6 @@
       </tr>
     </tbody>
   </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
-        <td><p>OpenGL context handle or procedure name is null.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
   <a id="OpenTK_Platform_IOpenGLComponent_GetSharedContext_" data-uid="OpenTK.Platform.IOpenGLComponent.GetSharedContext*"></a>
   <h4 id="OpenTK_Platform_IOpenGLComponent_GetSharedContext_OpenTK_Platform_OpenGLContextHandle_" data-uid="OpenTK.Platform.IOpenGLComponent.GetSharedContext(OpenTK.Platform.OpenGLContextHandle)">GetSharedContext(OpenGLContextHandle)</h4>
   <div class="markdown level1 summary"><p>Gets the context which the given context shares display lists with.</p>
@@ -469,9 +458,13 @@
       </tr>
     </tbody>
   </table>
+  <h5 id="OpenTK_Platform_IOpenGLComponent_GetSharedContext_OpenTK_Platform_OpenGLContextHandle__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="OpenTK.Platform.OpenGLGraphicsApiHints.html#OpenTK_Platform_OpenGLGraphicsApiHints_SharedContext">SharedContext</a></div>
+  </div>
   <a id="OpenTK_Platform_IOpenGLComponent_GetSwapInterval_" data-uid="OpenTK.Platform.IOpenGLComponent.GetSwapInterval*"></a>
   <h4 id="OpenTK_Platform_IOpenGLComponent_GetSwapInterval" data-uid="OpenTK.Platform.IOpenGLComponent.GetSwapInterval">GetSwapInterval()</h4>
-  <div class="markdown level1 summary"><p>Gets the swap interval of the current OpenGL context.</p>
+  <div class="markdown level1 summary"><p>Gets the swap interval of the current OpenGL context, or <code>-1</code> if no context is current.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -489,7 +482,7 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
-        <td><p>The current swap interval.</p>
+        <td><p>The current swap interval, or <code>-1</code> if no context is current.</p>
 </td>
       </tr>
     </tbody>
@@ -516,7 +509,7 @@
       <tr>
         <td><a class="xref" href="OpenTK.Platform.OpenGLContextHandle.html">OpenGLContextHandle</a></td>
         <td><span class="parametername">handle</span></td>
-        <td><p>Handle to the OpenGL context to make current, or null to make none current.</p>
+        <td><p>Handle to the OpenGL context to make current, or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> to make no context current.</p>
 </td>
       </tr>
     </tbody>
@@ -532,11 +525,15 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
-        <td><p>True when the OpenGL context is successfully made current.</p>
+        <td><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> when the OpenGL context is successfully made current.</p>
 </td>
       </tr>
     </tbody>
   </table>
+  <h5 id="OpenTK_Platform_IOpenGLComponent_SetCurrentContext_OpenTK_Platform_OpenGLContextHandle__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="OpenTK.Platform.IOpenGLComponent.html#OpenTK_Platform_IOpenGLComponent_GetCurrentContext">GetCurrentContext()</a></div>
+  </div>
   <a id="OpenTK_Platform_IOpenGLComponent_SetSwapInterval_" data-uid="OpenTK.Platform.IOpenGLComponent.SetSwapInterval*"></a>
   <h4 id="OpenTK_Platform_IOpenGLComponent_SetSwapInterval_System_Int32_" data-uid="OpenTK.Platform.IOpenGLComponent.SetSwapInterval(System.Int32)">SetSwapInterval(int)</h4>
   <div class="markdown level1 summary"><p>Sets the swap interval of the current OpenGL context.</p>
@@ -591,6 +588,14 @@
       </tr>
     </tbody>
   </table>
+  <h5 id="OpenTK_Platform_IOpenGLComponent_SwapBuffers_OpenTK_Platform_OpenGLContextHandle__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="OpenTK.Platform.OpenGLGraphicsApiHints.html#OpenTK_Platform_OpenGLGraphicsApiHints_SwapMethod">SwapMethod</a></div>
+  </div>
+  <h3 id="seealso">See Also</h3>
+  <div class="seealso">
+      <div><a class="xref" href="OpenTK.Platform.Toolkit.html#OpenTK_Platform_Toolkit_OpenGL">OpenGL</a></div>
+  </div>
 
 </article>
           </div>

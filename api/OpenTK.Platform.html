@@ -4,39 +4,35 @@
 
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Namespace OpenTK.Platform  - OpenTK</title>
-    <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Namespace OpenTK.Platform ">
-    <meta name="generator" content="docfx ">
-  
-    <link rel="shortcut icon" href="../favicon.ico">
-    <link rel="stylesheet" href="../styles/docfx.vendor.css">
-    <link rel="stylesheet" href="../styles/docfx.css">
-    <link rel="stylesheet" href="../styles/main.css">
-    <meta property="docfx:navrel" content="../toc.html">
-    <meta property="docfx:tocrel" content="toc.html">
-  
-  
-  
-
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Namespace OpenTK.Platform | OpenTK </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Namespace OpenTK.Platform | OpenTK ">
+    
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
     <meta name="author" content="The Open Toolkit Project">
     <meta property="og:image" content="https://opentk.net/otkBig.png">
     <meta property="og:image:width" content="142">
     <meta property="og:image:height" content="50">
     <meta property="og:site_name" content="OpenTK">
-    <meta property="og:title" content="Namespace OpenTK.Platform  - OpenTK">
+    <meta property="og:title" content="Namespace OpenTK.Platform | OpenTK  - OpenTK">
     <meta name="theme-color" content="#ffffff">
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
 
-        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation" style="background: #0052cc;">
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
           <div class="container">
-            <a class="navbar-brand" href="../index.html">
-          <img id="logo" src="../otkBig.png" alt="">
-        </a>
             <div class="navbar-header">
               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
                 <span class="sr-only">Toggle navigation</span>
@@ -44,6 +40,10 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" src="../otkBig.png" alt="">
+              </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
               <form class="navbar-form navbar-right" role="search" id="search">
@@ -54,7 +54,6 @@
             </div>
           </div>
         </nav>
-
         <div class="subnav navbar navbar-default">
           <div class="container hide-when-search" id="breadcrumb">
             <ul class="breadcrumb">
@@ -208,6 +207,9 @@ This is the main way to access the OpenTK PAL2 api.</p>
       <h4><a class="xref" href="OpenTK.Platform.ToolkitOptions.X11Options.html">ToolkitOptions.X11Options</a></h4>
       <section><p>X11 backend specific options.</p>
 </section>
+      <h4><a class="xref" href="OpenTK.Platform.VulkanGraphicsApiHints.html">VulkanGraphicsApiHints</a></h4>
+      <section><p>Graphics API hints for the Vulkan API.</p>
+</section>
       <h4><a class="xref" href="OpenTK.Platform.WindowEventArgs.html">WindowEventArgs</a></h4>
       <section><p>Base class for OpenTK window event arguments.</p>
 </section>
@@ -268,7 +270,7 @@ Interfaces
       <section><p>Interface for drivers which provide the clipboard component of the platform abstraction layer.</p>
 </section>
       <h4><a class="xref" href="OpenTK.Platform.ICursorComponent.html">ICursorComponent</a></h4>
-      <section><p>Interface for drivers which provide the cursor component of the platform abstraction layer.</p>
+      <section><p>Interface for creating and interacting with cursor images.</p>
 </section>
       <h4><a class="xref" href="OpenTK.Platform.IDialogComponent.html">IDialogComponent</a></h4>
       <section><p>Interface for creating and interacting with modal dialogs.</p>
@@ -277,19 +279,19 @@ Interfaces
       <section><p>Interface for drivers which provide the display component.</p>
 </section>
       <h4><a class="xref" href="OpenTK.Platform.IIconComponent.html">IIconComponent</a></h4>
-      <section><p>Interface for PAL drivers which provide the icon component.</p>
+      <section><p>Interface creatiing and interacting with window icon images.</p>
 </section>
       <h4><a class="xref" href="OpenTK.Platform.IJoystickComponent.html">IJoystickComponent</a></h4>
       <section><p>Interface for interacting with joysticks.</p>
 </section>
       <h4><a class="xref" href="OpenTK.Platform.IKeyboardComponent.html">IKeyboardComponent</a></h4>
-      <section><p>PAL driver for global keyboard information.</p>
+      <section><p>Interaface for keyboard interaction, keyboard layouts and IME.</p>
 </section>
       <h4><a class="xref" href="OpenTK.Platform.IMouseComponent.html">IMouseComponent</a></h4>
-      <section><p>Base interface for drivers which implement the mouse component.</p>
+      <section><p>Interace for getting mouse input and setting mouse position.</p>
 </section>
       <h4><a class="xref" href="OpenTK.Platform.IOpenGLComponent.html">IOpenGLComponent</a></h4>
-      <section><p>Interface for drivers which provide the PAL OpenGL Component.</p>
+      <section><p>Interface for creating and interacting with OpenGL contexts.</p>
 </section>
       <h4><a class="xref" href="OpenTK.Platform.IPalComponent.html">IPalComponent</a></h4>
       <section><p>Common interface for all platform abstraction layer components.</p>
@@ -298,10 +300,10 @@ Interfaces
       <section><p>Interface for interacting with operating system features.</p>
 </section>
       <h4><a class="xref" href="OpenTK.Platform.ISurfaceComponent.html">ISurfaceComponent</a></h4>
-      <section><p>Interface for drivers which provide the surface component of the platform abstraction layer.</p>
+      <section><p>Interface for creating and interacting with surfaces.</p>
 </section>
       <h4><a class="xref" href="OpenTK.Platform.IVulkanComponent.html">IVulkanComponent</a></h4>
-      <section><p>Interface for creating and interacting with vulkan.</p>
+      <section><p>Interface for interacting with Vulkan in a more convenient way.</p>
 </section>
       <h4><a class="xref" href="OpenTK.Platform.IWindowComponent.html">IWindowComponent</a></h4>
       <section><p>Interface for abstraction layer drivers which implement the window component.</p>
@@ -404,6 +406,9 @@ and floating point HDR formats.</p>
 </section>
       <h4><a class="xref" href="OpenTK.Platform.WindowMode.html">WindowMode</a></h4>
       <section><p>An enumeration of OpenTK window modes.</p>
+</section>
+      <h4><a class="xref" href="OpenTK.Platform.WindowTransparencyMode.html">WindowTransparencyMode</a></h4>
+      <section><p>Represent possible transparency modes.</p>
 </section>
     <h3 id="delegates">
 Delegates

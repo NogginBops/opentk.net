@@ -166,7 +166,7 @@
     </tbody>
   </table>
   <a id="OpenTK_Graphics_Wgl_Wgl_ChoosePixelFormat_" data-uid="OpenTK.Graphics.Wgl.Wgl.ChoosePixelFormat*"></a>
-  <h4 id="OpenTK_Graphics_Wgl_Wgl_ChoosePixelFormat_System_IntPtr_OpenTK_Graphics_Wgl_PixelFormatDescriptor__" data-uid="OpenTK.Graphics.Wgl.Wgl.ChoosePixelFormat(System.IntPtr,OpenTK.Graphics.Wgl.PixelFormatDescriptor@)">ChoosePixelFormat(nint, in PixelFormatDescriptor)</h4>
+  <h4 id="OpenTK_Graphics_Wgl_Wgl_ChoosePixelFormat_System_IntPtr_OpenTK_Graphics_Wgl_PixelFormatDescriptor__" data-uid="OpenTK.Graphics.Wgl.Wgl.ChoosePixelFormat(System.IntPtr,OpenTK.Graphics.Wgl.PixelFormatDescriptor@)">ChoosePixelFormat(nint, ref readonly PixelFormatDescriptor)</h4>
   <div class="markdown level1 summary"><p><b>[requires: v1.0]</b>
 <b>[entry point: <code>ChoosePixelFormat</code>]</b>
 <br></p>
@@ -174,7 +174,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int ChoosePixelFormat(nint hDc, in PixelFormatDescriptor pPfd)</code></pre>
+    <pre><code class="lang-csharp hljs">public static int ChoosePixelFormat(nint hDc, ref readonly PixelFormatDescriptor pPfd)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -215,7 +215,10 @@
   </table>
   <a id="OpenTK_Graphics_Wgl_Wgl_CopyContext_" data-uid="OpenTK.Graphics.Wgl.Wgl.CopyContext*"></a>
   <h4 id="OpenTK_Graphics_Wgl_Wgl_CopyContext_System_IntPtr_System_IntPtr_OpenTK_Graphics_OpenGL_AttribMask_" data-uid="OpenTK.Graphics.Wgl.Wgl.CopyContext(System.IntPtr,System.IntPtr,OpenTK.Graphics.OpenGL.AttribMask)">CopyContext(nint, nint, AttribMask)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p><b>[requires: v1.0]</b>
+<b>[entry point: <code>wglCopyContext</code>]</b>
+<br></p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -409,7 +412,10 @@
   </table>
   <a id="OpenTK_Graphics_Wgl_Wgl_DeleteContext_" data-uid="OpenTK.Graphics.Wgl.Wgl.DeleteContext*"></a>
   <h4 id="OpenTK_Graphics_Wgl_Wgl_DeleteContext_System_IntPtr_" data-uid="OpenTK.Graphics.Wgl.Wgl.DeleteContext(System.IntPtr)">DeleteContext(nint)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p><b>[requires: v1.0]</b>
+<b>[entry point: <code>wglDeleteContext</code>]</b>
+<br></p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -1273,7 +1279,10 @@
   </table>
   <a id="OpenTK_Graphics_Wgl_Wgl_MakeCurrent_" data-uid="OpenTK.Graphics.Wgl.Wgl.MakeCurrent*"></a>
   <h4 id="OpenTK_Graphics_Wgl_Wgl_MakeCurrent_System_IntPtr_System_IntPtr_" data-uid="OpenTK.Graphics.Wgl.Wgl.MakeCurrent(System.IntPtr,System.IntPtr)">MakeCurrent(nint, nint)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p><b>[requires: v1.0]</b>
+<b>[entry point: <code>wglMakeCurrent</code>]</b>
+<br></p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -1366,7 +1375,10 @@
   </table>
   <a id="OpenTK_Graphics_Wgl_Wgl_RealizeLayerPalette_" data-uid="OpenTK.Graphics.Wgl.Wgl.RealizeLayerPalette*"></a>
   <h4 id="OpenTK_Graphics_Wgl_Wgl_RealizeLayerPalette_System_IntPtr_System_Int32_System_Int32_" data-uid="OpenTK.Graphics.Wgl.Wgl.RealizeLayerPalette(System.IntPtr,System.Int32,System.Int32)">RealizeLayerPalette(nint, int, int)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p><b>[requires: v1.0]</b>
+<b>[entry point: <code>wglRealizeLayerPalette</code>]</b>
+<br></p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -1531,7 +1543,7 @@
     </tbody>
   </table>
   <a id="OpenTK_Graphics_Wgl_Wgl_SetLayerPaletteEntries_" data-uid="OpenTK.Graphics.Wgl.Wgl.SetLayerPaletteEntries*"></a>
-  <h4 id="OpenTK_Graphics_Wgl_Wgl_SetLayerPaletteEntries_System_IntPtr_System_Int32_System_Int32_System_Int32_OpenTK_Graphics_Wgl_ColorRef__" data-uid="OpenTK.Graphics.Wgl.Wgl.SetLayerPaletteEntries(System.IntPtr,System.Int32,System.Int32,System.Int32,OpenTK.Graphics.Wgl.ColorRef@)">SetLayerPaletteEntries(nint, int, int, int, in ColorRef)</h4>
+  <h4 id="OpenTK_Graphics_Wgl_Wgl_SetLayerPaletteEntries_System_IntPtr_System_Int32_System_Int32_System_Int32_OpenTK_Graphics_Wgl_ColorRef__" data-uid="OpenTK.Graphics.Wgl.Wgl.SetLayerPaletteEntries(System.IntPtr,System.Int32,System.Int32,System.Int32,OpenTK.Graphics.Wgl.ColorRef@)">SetLayerPaletteEntries(nint, int, int, int, ref readonly ColorRef)</h4>
   <div class="markdown level1 summary"><p><b>[requires: v1.0]</b>
 <b>[entry point: <code>wglSetLayerPaletteEntries</code>]</b>
 <br></p>
@@ -1539,7 +1551,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int SetLayerPaletteEntries(nint hdc, int iLayerPlane, int iStart, int cEntries, in ColorRef pcr)</code></pre>
+    <pre><code class="lang-csharp hljs">public static int SetLayerPaletteEntries(nint hdc, int iLayerPlane, int iStart, int cEntries, ref readonly ColorRef pcr)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -1773,7 +1785,7 @@
     </tbody>
   </table>
   <a id="OpenTK_Graphics_Wgl_Wgl_SetPixelFormat_" data-uid="OpenTK.Graphics.Wgl.Wgl.SetPixelFormat*"></a>
-  <h4 id="OpenTK_Graphics_Wgl_Wgl_SetPixelFormat_System_IntPtr_System_Int32_OpenTK_Graphics_Wgl_PixelFormatDescriptor__" data-uid="OpenTK.Graphics.Wgl.Wgl.SetPixelFormat(System.IntPtr,System.Int32,OpenTK.Graphics.Wgl.PixelFormatDescriptor@)">SetPixelFormat(nint, int, in PixelFormatDescriptor)</h4>
+  <h4 id="OpenTK_Graphics_Wgl_Wgl_SetPixelFormat_System_IntPtr_System_Int32_OpenTK_Graphics_Wgl_PixelFormatDescriptor__" data-uid="OpenTK.Graphics.Wgl.Wgl.SetPixelFormat(System.IntPtr,System.Int32,OpenTK.Graphics.Wgl.PixelFormatDescriptor@)">SetPixelFormat(nint, int, ref readonly PixelFormatDescriptor)</h4>
   <div class="markdown level1 summary"><p><b>[requires: v1.0]</b>
 <b>[entry point: <code>SetPixelFormat</code>]</b>
 <br></p>
@@ -1781,7 +1793,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool SetPixelFormat(nint hdc, int ipfd, in PixelFormatDescriptor ppfd)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool SetPixelFormat(nint hdc, int ipfd, ref readonly PixelFormatDescriptor ppfd)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -1827,7 +1839,10 @@
   </table>
   <a id="OpenTK_Graphics_Wgl_Wgl_ShareLists_" data-uid="OpenTK.Graphics.Wgl.Wgl.ShareLists*"></a>
   <h4 id="OpenTK_Graphics_Wgl_Wgl_ShareLists_System_IntPtr_System_IntPtr_" data-uid="OpenTK.Graphics.Wgl.Wgl.ShareLists(System.IntPtr,System.IntPtr)">ShareLists(nint, nint)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p><b>[requires: v1.0]</b>
+<b>[entry point: <code>wglShareLists</code>]</b>
+<br></p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -1920,7 +1935,10 @@
   </table>
   <a id="OpenTK_Graphics_Wgl_Wgl_SwapBuffers_" data-uid="OpenTK.Graphics.Wgl.Wgl.SwapBuffers*"></a>
   <h4 id="OpenTK_Graphics_Wgl_Wgl_SwapBuffers_System_IntPtr_" data-uid="OpenTK.Graphics.Wgl.Wgl.SwapBuffers(System.IntPtr)">SwapBuffers(nint)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p><b>[requires: v1.0]</b>
+<b>[entry point: <code>SwapBuffers</code>]</b>
+<br></p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -2003,7 +2021,10 @@
   </table>
   <a id="OpenTK_Graphics_Wgl_Wgl_SwapLayerBuffers_" data-uid="OpenTK.Graphics.Wgl.Wgl.SwapLayerBuffers*"></a>
   <h4 id="OpenTK_Graphics_Wgl_Wgl_SwapLayerBuffers_System_IntPtr_OpenTK_Graphics_Wgl_LayerPlaneMask_" data-uid="OpenTK.Graphics.Wgl.Wgl.SwapLayerBuffers(System.IntPtr,OpenTK.Graphics.Wgl.LayerPlaneMask)">SwapLayerBuffers(nint, LayerPlaneMask)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p><b>[requires: v1.0]</b>
+<b>[entry point: <code>wglSwapLayerBuffers</code>]</b>
+<br></p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -2096,7 +2117,10 @@
   </table>
   <a id="OpenTK_Graphics_Wgl_Wgl_UseFontBitmaps_" data-uid="OpenTK.Graphics.Wgl.Wgl.UseFontBitmaps*"></a>
   <h4 id="OpenTK_Graphics_Wgl_Wgl_UseFontBitmaps_System_IntPtr_System_UInt32_System_UInt32_System_UInt32_" data-uid="OpenTK.Graphics.Wgl.Wgl.UseFontBitmaps(System.IntPtr,System.UInt32,System.UInt32,System.UInt32)">UseFontBitmaps(nint, uint, uint, uint)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p><b>[requires: v1.0]</b>
+<b>[entry point: <code>wglUseFontBitmaps</code>]</b>
+<br></p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -2151,7 +2175,10 @@
   </table>
   <a id="OpenTK_Graphics_Wgl_Wgl_UseFontBitmapsA_" data-uid="OpenTK.Graphics.Wgl.Wgl.UseFontBitmapsA*"></a>
   <h4 id="OpenTK_Graphics_Wgl_Wgl_UseFontBitmapsA_System_IntPtr_System_UInt32_System_UInt32_System_UInt32_" data-uid="OpenTK.Graphics.Wgl.Wgl.UseFontBitmapsA(System.IntPtr,System.UInt32,System.UInt32,System.UInt32)">UseFontBitmapsA(nint, uint, uint, uint)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p><b>[requires: v1.0]</b>
+<b>[entry point: <code>wglUseFontBitmapsA</code>]</b>
+<br></p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -2264,7 +2291,10 @@
   </table>
   <a id="OpenTK_Graphics_Wgl_Wgl_UseFontBitmapsW_" data-uid="OpenTK.Graphics.Wgl.Wgl.UseFontBitmapsW*"></a>
   <h4 id="OpenTK_Graphics_Wgl_Wgl_UseFontBitmapsW_System_IntPtr_System_UInt32_System_UInt32_System_UInt32_" data-uid="OpenTK.Graphics.Wgl.Wgl.UseFontBitmapsW(System.IntPtr,System.UInt32,System.UInt32,System.UInt32)">UseFontBitmapsW(nint, uint, uint, uint)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p><b>[requires: v1.0]</b>
+<b>[entry point: <code>wglUseFontBitmapsW</code>]</b>
+<br></p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -2435,7 +2465,10 @@
   </table>
   <a id="OpenTK_Graphics_Wgl_Wgl_UseFontOutlines_" data-uid="OpenTK.Graphics.Wgl.Wgl.UseFontOutlines*"></a>
   <h4 id="OpenTK_Graphics_Wgl_Wgl_UseFontOutlines_System_IntPtr_System_UInt32_System_UInt32_System_UInt32_System_Single_System_Single_OpenTK_Graphics_Wgl_FontFormat_System_IntPtr_" data-uid="OpenTK.Graphics.Wgl.Wgl.UseFontOutlines(System.IntPtr,System.UInt32,System.UInt32,System.UInt32,System.Single,System.Single,OpenTK.Graphics.Wgl.FontFormat,System.IntPtr)">UseFontOutlines(nint, uint, uint, uint, float, float, FontFormat, nint)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p><b>[requires: v1.0]</b>
+<b>[entry point: <code>wglUseFontOutlines</code>]</b>
+<br></p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -2510,7 +2543,10 @@
   </table>
   <a id="OpenTK_Graphics_Wgl_Wgl_UseFontOutlinesA_" data-uid="OpenTK.Graphics.Wgl.Wgl.UseFontOutlinesA*"></a>
   <h4 id="OpenTK_Graphics_Wgl_Wgl_UseFontOutlinesA_System_IntPtr_System_UInt32_System_UInt32_System_UInt32_System_Single_System_Single_OpenTK_Graphics_Wgl_FontFormat_System_IntPtr_" data-uid="OpenTK.Graphics.Wgl.Wgl.UseFontOutlinesA(System.IntPtr,System.UInt32,System.UInt32,System.UInt32,System.Single,System.Single,OpenTK.Graphics.Wgl.FontFormat,System.IntPtr)">UseFontOutlinesA(nint, uint, uint, uint, float, float, FontFormat, nint)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p><b>[requires: v1.0]</b>
+<b>[entry point: <code>wglUseFontOutlinesA</code>]</b>
+<br></p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -2663,7 +2699,10 @@
   </table>
   <a id="OpenTK_Graphics_Wgl_Wgl_UseFontOutlinesW_" data-uid="OpenTK.Graphics.Wgl.Wgl.UseFontOutlinesW*"></a>
   <h4 id="OpenTK_Graphics_Wgl_Wgl_UseFontOutlinesW_System_IntPtr_System_UInt32_System_UInt32_System_UInt32_System_Single_System_Single_OpenTK_Graphics_Wgl_FontFormat_System_IntPtr_" data-uid="OpenTK.Graphics.Wgl.Wgl.UseFontOutlinesW(System.IntPtr,System.UInt32,System.UInt32,System.UInt32,System.Single,System.Single,OpenTK.Graphics.Wgl.FontFormat,System.IntPtr)">UseFontOutlinesW(nint, uint, uint, uint, float, float, FontFormat, nint)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p><b>[requires: v1.0]</b>
+<b>[entry point: <code>wglUseFontOutlinesW</code>]</b>
+<br></p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">

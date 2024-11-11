@@ -182,7 +182,7 @@
     </tbody>
   </table>
   <a id="OpenTK_Graphics_Wgl_Wgl_I3D_AssociateImageBufferEventsI3D_" data-uid="OpenTK.Graphics.Wgl.Wgl.I3D.AssociateImageBufferEventsI3D*"></a>
-  <h4 id="OpenTK_Graphics_Wgl_Wgl_I3D_AssociateImageBufferEventsI3D_System_IntPtr_System_IntPtr__System_IntPtr__System_UInt32__System_UInt32_" data-uid="OpenTK.Graphics.Wgl.Wgl.I3D.AssociateImageBufferEventsI3D(System.IntPtr,System.IntPtr@,System.IntPtr@,System.UInt32@,System.UInt32)">AssociateImageBufferEventsI3D(nint, in nint, in nint, in uint, uint)</h4>
+  <h4 id="OpenTK_Graphics_Wgl_Wgl_I3D_AssociateImageBufferEventsI3D_System_IntPtr_System_IntPtr__System_IntPtr__System_UInt32__System_UInt32_" data-uid="OpenTK.Graphics.Wgl.Wgl.I3D.AssociateImageBufferEventsI3D(System.IntPtr,System.IntPtr@,System.IntPtr@,System.UInt32@,System.UInt32)">AssociateImageBufferEventsI3D(nint, ref readonly nint, ref readonly nint, ref readonly uint, uint)</h4>
   <div class="markdown level1 summary"><p><b>[requires: WGL_I3D_image_buffer]</b>
 <b>[entry point: <code>wglAssociateImageBufferEventsI3D</code>]</b>
 <br></p>
@@ -190,7 +190,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool AssociateImageBufferEventsI3D(nint hDC, in nint pEvent, in nint pAddress, in uint pSize, uint count)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool AssociateImageBufferEventsI3D(nint hDC, ref readonly nint pEvent, ref readonly nint pAddress, ref readonly uint pSize, uint count)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -372,7 +372,10 @@
   </table>
   <a id="OpenTK_Graphics_Wgl_Wgl_I3D_BeginFrameTrackingI3D_" data-uid="OpenTK.Graphics.Wgl.Wgl.I3D.BeginFrameTrackingI3D*"></a>
   <h4 id="OpenTK_Graphics_Wgl_Wgl_I3D_BeginFrameTrackingI3D" data-uid="OpenTK.Graphics.Wgl.Wgl.I3D.BeginFrameTrackingI3D">BeginFrameTrackingI3D()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p><b>[requires: WGL_I3D_swap_frame_usage]</b>
+<b>[entry point: <code>wglBeginFrameTrackingI3D</code>]</b>
+<br></p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -474,7 +477,10 @@
   </table>
   <a id="OpenTK_Graphics_Wgl_Wgl_I3D_DestroyImageBufferI3D_" data-uid="OpenTK.Graphics.Wgl.Wgl.I3D.DestroyImageBufferI3D*"></a>
   <h4 id="OpenTK_Graphics_Wgl_Wgl_I3D_DestroyImageBufferI3D_System_IntPtr_System_IntPtr_" data-uid="OpenTK.Graphics.Wgl.Wgl.I3D.DestroyImageBufferI3D(System.IntPtr,System.IntPtr)">DestroyImageBufferI3D(nint, nint)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p><b>[requires: WGL_I3D_image_buffer]</b>
+<b>[entry point: <code>wglDestroyImageBufferI3D</code>]</b>
+<br></p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -567,7 +573,10 @@
   </table>
   <a id="OpenTK_Graphics_Wgl_Wgl_I3D_DisableFrameLockI3D_" data-uid="OpenTK.Graphics.Wgl.Wgl.I3D.DisableFrameLockI3D*"></a>
   <h4 id="OpenTK_Graphics_Wgl_Wgl_I3D_DisableFrameLockI3D" data-uid="OpenTK.Graphics.Wgl.Wgl.I3D.DisableFrameLockI3D">DisableFrameLockI3D()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p><b>[requires: WGL_I3D_swap_frame_lock]</b>
+<b>[entry point: <code>wglDisableFrameLockI3D</code>]</b>
+<br></p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -616,7 +625,10 @@
   </table>
   <a id="OpenTK_Graphics_Wgl_Wgl_I3D_DisableGenlockI3D_" data-uid="OpenTK.Graphics.Wgl.Wgl.I3D.DisableGenlockI3D*"></a>
   <h4 id="OpenTK_Graphics_Wgl_Wgl_I3D_DisableGenlockI3D_System_IntPtr_" data-uid="OpenTK.Graphics.Wgl.Wgl.I3D.DisableGenlockI3D(System.IntPtr)">DisableGenlockI3D(nint)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p><b>[requires: WGL_I3D_genlock]</b>
+<b>[entry point: <code>wglDisableGenlockI3D</code>]</b>
+<br></p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -699,7 +711,10 @@
   </table>
   <a id="OpenTK_Graphics_Wgl_Wgl_I3D_EnableFrameLockI3D_" data-uid="OpenTK.Graphics.Wgl.Wgl.I3D.EnableFrameLockI3D*"></a>
   <h4 id="OpenTK_Graphics_Wgl_Wgl_I3D_EnableFrameLockI3D" data-uid="OpenTK.Graphics.Wgl.Wgl.I3D.EnableFrameLockI3D">EnableFrameLockI3D()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p><b>[requires: WGL_I3D_swap_frame_lock]</b>
+<b>[entry point: <code>wglEnableFrameLockI3D</code>]</b>
+<br></p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -748,7 +763,10 @@
   </table>
   <a id="OpenTK_Graphics_Wgl_Wgl_I3D_EnableGenlockI3D_" data-uid="OpenTK.Graphics.Wgl.Wgl.I3D.EnableGenlockI3D*"></a>
   <h4 id="OpenTK_Graphics_Wgl_Wgl_I3D_EnableGenlockI3D_System_IntPtr_" data-uid="OpenTK.Graphics.Wgl.Wgl.I3D.EnableGenlockI3D(System.IntPtr)">EnableGenlockI3D(nint)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p><b>[requires: WGL_I3D_genlock]</b>
+<b>[entry point: <code>wglEnableGenlockI3D</code>]</b>
+<br></p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -831,7 +849,10 @@
   </table>
   <a id="OpenTK_Graphics_Wgl_Wgl_I3D_EndFrameTrackingI3D_" data-uid="OpenTK.Graphics.Wgl.Wgl.I3D.EndFrameTrackingI3D*"></a>
   <h4 id="OpenTK_Graphics_Wgl_Wgl_I3D_EndFrameTrackingI3D" data-uid="OpenTK.Graphics.Wgl.Wgl.I3D.EndFrameTrackingI3D">EndFrameTrackingI3D()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p><b>[requires: WGL_I3D_swap_frame_usage]</b>
+<b>[entry point: <code>wglEndFrameTrackingI3D</code>]</b>
+<br></p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -880,7 +901,10 @@
   </table>
   <a id="OpenTK_Graphics_Wgl_Wgl_I3D_GenlockSampleRateI3D_" data-uid="OpenTK.Graphics.Wgl.Wgl.I3D.GenlockSampleRateI3D*"></a>
   <h4 id="OpenTK_Graphics_Wgl_Wgl_I3D_GenlockSampleRateI3D_System_IntPtr_System_UInt32_" data-uid="OpenTK.Graphics.Wgl.Wgl.I3D.GenlockSampleRateI3D(System.IntPtr,System.UInt32)">GenlockSampleRateI3D(nint, uint)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p><b>[requires: WGL_I3D_genlock]</b>
+<b>[entry point: <code>wglGenlockSampleRateI3D</code>]</b>
+<br></p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -973,7 +997,10 @@
   </table>
   <a id="OpenTK_Graphics_Wgl_Wgl_I3D_GenlockSourceDelayI3D_" data-uid="OpenTK.Graphics.Wgl.Wgl.I3D.GenlockSourceDelayI3D*"></a>
   <h4 id="OpenTK_Graphics_Wgl_Wgl_I3D_GenlockSourceDelayI3D_System_IntPtr_System_UInt32_" data-uid="OpenTK.Graphics.Wgl.Wgl.I3D.GenlockSourceDelayI3D(System.IntPtr,System.UInt32)">GenlockSourceDelayI3D(nint, uint)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p><b>[requires: WGL_I3D_genlock]</b>
+<b>[entry point: <code>wglGenlockSourceDelayI3D</code>]</b>
+<br></p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -1066,7 +1093,10 @@
   </table>
   <a id="OpenTK_Graphics_Wgl_Wgl_I3D_GenlockSourceEdgeI3D_" data-uid="OpenTK.Graphics.Wgl.Wgl.I3D.GenlockSourceEdgeI3D*"></a>
   <h4 id="OpenTK_Graphics_Wgl_Wgl_I3D_GenlockSourceEdgeI3D_System_IntPtr_System_UInt32_" data-uid="OpenTK.Graphics.Wgl.Wgl.I3D.GenlockSourceEdgeI3D(System.IntPtr,System.UInt32)">GenlockSourceEdgeI3D(nint, uint)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p><b>[requires: WGL_I3D_genlock]</b>
+<b>[entry point: <code>wglGenlockSourceEdgeI3D</code>]</b>
+<br></p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -1159,7 +1189,10 @@
   </table>
   <a id="OpenTK_Graphics_Wgl_Wgl_I3D_GenlockSourceI3D_" data-uid="OpenTK.Graphics.Wgl.Wgl.I3D.GenlockSourceI3D*"></a>
   <h4 id="OpenTK_Graphics_Wgl_Wgl_I3D_GenlockSourceI3D_System_IntPtr_System_UInt32_" data-uid="OpenTK.Graphics.Wgl.Wgl.I3D.GenlockSourceI3D(System.IntPtr,System.UInt32)">GenlockSourceI3D(nint, uint)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p><b>[requires: WGL_I3D_genlock]</b>
+<b>[entry point: <code>wglGenlockSourceI3D</code>]</b>
+<br></p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -2718,7 +2751,7 @@
     </tbody>
   </table>
   <a id="OpenTK_Graphics_Wgl_Wgl_I3D_ReleaseImageBufferEventsI3D_" data-uid="OpenTK.Graphics.Wgl.Wgl.I3D.ReleaseImageBufferEventsI3D*"></a>
-  <h4 id="OpenTK_Graphics_Wgl_Wgl_I3D_ReleaseImageBufferEventsI3D_System_IntPtr_System_IntPtr__System_UInt32_" data-uid="OpenTK.Graphics.Wgl.Wgl.I3D.ReleaseImageBufferEventsI3D(System.IntPtr,System.IntPtr@,System.UInt32)">ReleaseImageBufferEventsI3D(nint, in nint, uint)</h4>
+  <h4 id="OpenTK_Graphics_Wgl_Wgl_I3D_ReleaseImageBufferEventsI3D_System_IntPtr_System_IntPtr__System_UInt32_" data-uid="OpenTK.Graphics.Wgl.Wgl.I3D.ReleaseImageBufferEventsI3D(System.IntPtr,System.IntPtr@,System.UInt32)">ReleaseImageBufferEventsI3D(nint, ref readonly nint, uint)</h4>
   <div class="markdown level1 summary"><p><b>[requires: WGL_I3D_image_buffer]</b>
 <b>[entry point: <code>wglReleaseImageBufferEventsI3D</code>]</b>
 <br></p>
@@ -2726,7 +2759,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool ReleaseImageBufferEventsI3D(nint hDC, in nint pAddress, uint count)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool ReleaseImageBufferEventsI3D(nint hDC, ref readonly nint pAddress, uint count)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -2930,7 +2963,7 @@
     </tbody>
   </table>
   <a id="OpenTK_Graphics_Wgl_Wgl_I3D_SetDigitalVideoParametersI3D_" data-uid="OpenTK.Graphics.Wgl.Wgl.I3D.SetDigitalVideoParametersI3D*"></a>
-  <h4 id="OpenTK_Graphics_Wgl_Wgl_I3D_SetDigitalVideoParametersI3D_System_IntPtr_OpenTK_Graphics_Wgl_DigitalVideoAttribute_System_Int32__" data-uid="OpenTK.Graphics.Wgl.Wgl.I3D.SetDigitalVideoParametersI3D(System.IntPtr,OpenTK.Graphics.Wgl.DigitalVideoAttribute,System.Int32@)">SetDigitalVideoParametersI3D(nint, DigitalVideoAttribute, in int)</h4>
+  <h4 id="OpenTK_Graphics_Wgl_Wgl_I3D_SetDigitalVideoParametersI3D_System_IntPtr_OpenTK_Graphics_Wgl_DigitalVideoAttribute_System_Int32__" data-uid="OpenTK.Graphics.Wgl.Wgl.I3D.SetDigitalVideoParametersI3D(System.IntPtr,OpenTK.Graphics.Wgl.DigitalVideoAttribute,System.Int32@)">SetDigitalVideoParametersI3D(nint, DigitalVideoAttribute, ref readonly int)</h4>
   <div class="markdown level1 summary"><p><b>[requires: WGL_I3D_digital_video_control]</b>
 <b>[entry point: <code>wglSetDigitalVideoParametersI3D</code>]</b>
 <br></p>
@@ -2938,7 +2971,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool SetDigitalVideoParametersI3D(nint hDC, DigitalVideoAttribute iAttribute, in int piValue)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool SetDigitalVideoParametersI3D(nint hDC, DigitalVideoAttribute iAttribute, ref readonly int piValue)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -3109,7 +3142,7 @@
     </tbody>
   </table>
   <a id="OpenTK_Graphics_Wgl_Wgl_I3D_SetGammaTableI3D_" data-uid="OpenTK.Graphics.Wgl.Wgl.I3D.SetGammaTableI3D*"></a>
-  <h4 id="OpenTK_Graphics_Wgl_Wgl_I3D_SetGammaTableI3D_System_IntPtr_System_Int32_System_UInt16__System_UInt16__System_UInt16__" data-uid="OpenTK.Graphics.Wgl.Wgl.I3D.SetGammaTableI3D(System.IntPtr,System.Int32,System.UInt16@,System.UInt16@,System.UInt16@)">SetGammaTableI3D(nint, int, in ushort, in ushort, in ushort)</h4>
+  <h4 id="OpenTK_Graphics_Wgl_Wgl_I3D_SetGammaTableI3D_System_IntPtr_System_Int32_System_UInt16__System_UInt16__System_UInt16__" data-uid="OpenTK.Graphics.Wgl.Wgl.I3D.SetGammaTableI3D(System.IntPtr,System.Int32,System.UInt16@,System.UInt16@,System.UInt16@)">SetGammaTableI3D(nint, int, ref readonly ushort, ref readonly ushort, ref readonly ushort)</h4>
   <div class="markdown level1 summary"><p><b>[requires: WGL_I3D_gamma]</b>
 <b>[entry point: <code>wglSetGammaTableI3D</code>]</b>
 <br></p>
@@ -3117,7 +3150,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool SetGammaTableI3D(nint hDC, int iEntries, in ushort puRed, in ushort puGreen, in ushort puBlue)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool SetGammaTableI3D(nint hDC, int iEntries, ref readonly ushort puRed, ref readonly ushort puGreen, ref readonly ushort puBlue)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -3288,7 +3321,7 @@
     </tbody>
   </table>
   <a id="OpenTK_Graphics_Wgl_Wgl_I3D_SetGammaTableParametersI3D_" data-uid="OpenTK.Graphics.Wgl.Wgl.I3D.SetGammaTableParametersI3D*"></a>
-  <h4 id="OpenTK_Graphics_Wgl_Wgl_I3D_SetGammaTableParametersI3D_System_IntPtr_OpenTK_Graphics_Wgl_GammaTableAttribute_System_Int32__" data-uid="OpenTK.Graphics.Wgl.Wgl.I3D.SetGammaTableParametersI3D(System.IntPtr,OpenTK.Graphics.Wgl.GammaTableAttribute,System.Int32@)">SetGammaTableParametersI3D(nint, GammaTableAttribute, in int)</h4>
+  <h4 id="OpenTK_Graphics_Wgl_Wgl_I3D_SetGammaTableParametersI3D_System_IntPtr_OpenTK_Graphics_Wgl_GammaTableAttribute_System_Int32__" data-uid="OpenTK.Graphics.Wgl.Wgl.I3D.SetGammaTableParametersI3D(System.IntPtr,OpenTK.Graphics.Wgl.GammaTableAttribute,System.Int32@)">SetGammaTableParametersI3D(nint, GammaTableAttribute, ref readonly int)</h4>
   <div class="markdown level1 summary"><p><b>[requires: WGL_I3D_gamma]</b>
 <b>[entry point: <code>wglSetGammaTableParametersI3D</code>]</b>
 <br></p>
@@ -3296,7 +3329,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool SetGammaTableParametersI3D(nint hDC, GammaTableAttribute iAttribute, in int piValue)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool SetGammaTableParametersI3D(nint hDC, GammaTableAttribute iAttribute, ref readonly int piValue)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">

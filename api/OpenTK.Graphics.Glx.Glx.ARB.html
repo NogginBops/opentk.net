@@ -182,7 +182,7 @@
     </tbody>
   </table>
   <a id="OpenTK_Graphics_Glx_Glx_ARB_CreateContextAttribsARB_" data-uid="OpenTK.Graphics.Glx.Glx.ARB.CreateContextAttribsARB*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_ARB_CreateContextAttribsARB_OpenTK_Graphics_Glx_DisplayPtr_OpenTK_Graphics_Glx_GLXFBConfig_OpenTK_Graphics_Glx_GLXContext_System_Boolean_System_Int32__" data-uid="OpenTK.Graphics.Glx.Glx.ARB.CreateContextAttribsARB(OpenTK.Graphics.Glx.DisplayPtr,OpenTK.Graphics.Glx.GLXFBConfig,OpenTK.Graphics.Glx.GLXContext,System.Boolean,System.Int32@)">CreateContextAttribsARB(DisplayPtr, GLXFBConfig, GLXContext, bool, in int)</h4>
+  <h4 id="OpenTK_Graphics_Glx_Glx_ARB_CreateContextAttribsARB_OpenTK_Graphics_Glx_DisplayPtr_OpenTK_Graphics_Glx_GLXFBConfig_OpenTK_Graphics_Glx_GLXContext_System_Boolean_System_Int32__" data-uid="OpenTK.Graphics.Glx.Glx.ARB.CreateContextAttribsARB(OpenTK.Graphics.Glx.DisplayPtr,OpenTK.Graphics.Glx.GLXFBConfig,OpenTK.Graphics.Glx.GLXContext,System.Boolean,System.Int32@)">CreateContextAttribsARB(DisplayPtr, GLXFBConfig, GLXContext, bool, ref readonly int)</h4>
   <div class="markdown level1 summary"><p><b>[requires: GLX_ARB_create_context]</b>
 <b>[entry point: <code>glXCreateContextAttribsARB</code>]</b>
 <br></p>
@@ -190,7 +190,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static GLXContext CreateContextAttribsARB(DisplayPtr dpy, GLXFBConfig config, GLXContext share_context, bool direct, in int attrib_list)</code></pre>
+    <pre><code class="lang-csharp hljs">public static GLXContext CreateContextAttribsARB(DisplayPtr dpy, GLXFBConfig config, GLXContext share_context, bool direct, ref readonly int attrib_list)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -414,7 +414,7 @@
     </tbody>
   </table>
   <a id="OpenTK_Graphics_Glx_Glx_ARB_GetProcAddressARB_" data-uid="OpenTK.Graphics.Glx.Glx.ARB.GetProcAddressARB*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_ARB_GetProcAddressARB_System_Byte__" data-uid="OpenTK.Graphics.Glx.Glx.ARB.GetProcAddressARB(System.Byte@)">GetProcAddressARB(in byte)</h4>
+  <h4 id="OpenTK_Graphics_Glx_Glx_ARB_GetProcAddressARB_System_String_" data-uid="OpenTK.Graphics.Glx.Glx.ARB.GetProcAddressARB(System.String)">GetProcAddressARB(string)</h4>
   <div class="markdown level1 summary"><p><b>[requires: GLX_ARB_get_proc_address]</b>
 <b>[entry point: <code>glXGetProcAddressARB</code>]</b>
 <br></p>
@@ -422,7 +422,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static nint GetProcAddressARB(in byte procName)</code></pre>
+    <pre><code class="lang-csharp hljs">public static nint GetProcAddressARB(string procName)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -435,93 +435,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></td>
-        <td><span class="parametername">procName</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="OpenTK_Graphics_Glx_Glx_ARB_GetProcAddressARB_" data-uid="OpenTK.Graphics.Glx.Glx.ARB.GetProcAddressARB*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_ARB_GetProcAddressARB_System_Byte___" data-uid="OpenTK.Graphics.Glx.Glx.ARB.GetProcAddressARB(System.Byte[])">GetProcAddressARB(byte[])</h4>
-  <div class="markdown level1 summary"><p><b>[requires: GLX_ARB_get_proc_address]</b>
-<b>[entry point: <code>glXGetProcAddressARB</code>]</b>
-<br></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static nint GetProcAddressARB(byte[] procName)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</td>
-        <td><span class="parametername">procName</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="OpenTK_Graphics_Glx_Glx_ARB_GetProcAddressARB_" data-uid="OpenTK.Graphics.Glx.Glx.ARB.GetProcAddressARB*"></a>
-  <h4 id="OpenTK_Graphics_Glx_Glx_ARB_GetProcAddressARB_System_ReadOnlySpan_System_Byte__" data-uid="OpenTK.Graphics.Glx.Glx.ARB.GetProcAddressARB(System.ReadOnlySpan{System.Byte})">GetProcAddressARB(ReadOnlySpan&lt;byte&gt;)</h4>
-  <div class="markdown level1 summary"><p><b>[requires: GLX_ARB_get_proc_address]</b>
-<b>[entry point: <code>glXGetProcAddressARB</code>]</b>
-<br></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static nint GetProcAddressARB(ReadOnlySpan&lt;byte&gt; procName)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
         <td><span class="parametername">procName</span></td>
         <td></td>
       </tr>
