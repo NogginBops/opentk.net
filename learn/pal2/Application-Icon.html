@@ -76,7 +76,7 @@
 <h1 id="setting-up-your-pal2-application-with-an-application-icon">Setting up your PAL2 application with an application icon</h1>
 
 <p>Every operating system has a different way of handling application icons. This document will guide you through the different icon options available in PAL2 and how to set them up to work.</p>
-<p>The simplest way to set your application icon is through <a class="xref" href="../../api/OpenTK.Platform.IWindowComponent.html#OpenTK_Platform_IWindowComponent_SetIcon_OpenTK_Platform_WindowHandle_OpenTK_Platform_IconHandle_"><code>Toolkit.Window.SetIcon</code></a> which will set the window icon at runtime. But this might be undesirable the desktop icon that the operating system will use to represent your application will still be unset. This is where the operating system specific setup comes into play.</p>
+<p>The simplest way to set your application icon is through <a class="xref" href="../../api/OpenTK.Platform.IWindowComponent.html#OpenTK_Platform_IWindowComponent_SetIcon_OpenTK_Platform_WindowHandle_OpenTK_Platform_IconHandle_"><code>Toolkit.Window.SetIcon</code></a> which will set the window icon at runtime. But this might be undesirable as the desktop icon that the operating system will use to represent your application will still be unset. This is where the operating system specific setup comes into play.</p>
 <p>Here are the guides for the different operating systems.</p>
 <ul>
 <li><a href="#windows">Windows</a></li>
@@ -113,7 +113,8 @@ This requires a little setup when building C# projects, this is because you need
 <h5>Note</h5>
 <p>TODO: Mention <code>MacOSIconComponent.CreateSFSymbol</code>?</p>
 </div>
-<p>On macOS an application is a special folder that contains a bunch of different files and folders. One of these files is called <code>info.plist</code> and contains a bunch of information about your application, including the icon to use.</p>
+<p>On macOS individual windows do not have icons. Instead there is a single application icon for all windows. This is called the dock icon and can be set through <a class="xref" href="../../api/OpenTK.Platform.Native.macOS.MacOSWindowComponent.html#OpenTK_Platform_Native_macOS_MacOSWindowComponent_SetDockIcon_OpenTK_Platform_WindowHandle_OpenTK_Platform_IconHandle_"><code>MacOSWindowComponent.SetDockIcon</code></a>. This only sets the application icon at runtime, so the published application will not have an icon set.</p>
+<p>On macOS an application is a special folder that contains a bunch of different files and folders. One of these files is called <code>info.plist</code> and contains a bunch of information about your application, including the icon to use for the application.</p>
 <p>A simple <code>info.plist</code> could look like this:</p>
 <pre><code class="lang-plist">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE plist PUBLIC &quot;-//Apple//DTD PLIST 1.0//EN&quot; &quot;http://www.apple.com/DTDs/PropertyList-1.0.dtd&quot;&gt;
@@ -133,6 +134,7 @@ This requires a little setup when building C# projects, this is because you need
 &lt;/plist&gt;
 </code></pre>
 <p>You can read more about <code>info.plist</code> and other keys and features related to it here: <a href="https://developer.apple.com/documentation/bundleresources/information_property_list/managing_your_app_s_information_property_list?language=objc">https://developer.apple.com/documentation/bundleresources/information_property_list/managing_your_app_s_information_property_list?language=objc</a></p>
+<p><code>info.plist</code> files are most easily authored using the Xcode tools available through the developer kit on macOS, but can be written by hand with enough attention to detail.</p>
 <p><code>info.plist</code> keys of interest might be <code>CFBundleDisplayName</code> in combination with a <code>InfoPlist.strings</code> file for application name localization, or <code>CFBundleDevelopmentRegion</code> to set the default language for the application.</p>
 <p>To include this in your project we can do the following in the <code>.csproj</code>:</p>
 <pre><code class="lang-xml">&lt;ItemList&gt;
@@ -146,10 +148,9 @@ This requires a little setup when building C# projects, this is because you need
 </code></pre>
 <p>To read more about packaging on macOS, read this article: <a href="">TODO: macOS publishing</a>.</p>
 <h2 id="linux">Linux</h2>
-<div class="NOTE">
-<h5>Note</h5>
-<p>TODO: Mention the PAL2 api for setting multi-resolution icons programatically. The <code>.desktop</code> method is still preferred.</p>
-</div>
+<h3 id="the-simple-way-1">The simple way</h3>
+<p>If you need to create a multi-resoltion icon at runtime you can use the <a class="xref" href="../../api/OpenTK.Platform.Native.X11.X11IconComponent.html#OpenTK_Platform_Native_X11_X11IconComponent_Create_System_Int32_System_Int32_OpenTK_Platform_Native_X11_X11IconComponent_IconImage___"><code>X11IconComponent.Create(int, int, IconImage[])</code></a> api to create the icon, and then use <a class="xref" href="../../api/OpenTK.Platform.IWindowComponent.html#OpenTK_Platform_IWindowComponent_SetIcon_OpenTK_Platform_WindowHandle_OpenTK_Platform_IconHandle_"><code>Toolkit.Window.SetIcon</code></a> like usual. This still has the problem that the file browser will not show the application icon properly.</p>
+<h3 id="the-more-involved-way-1">The more involved way</h3>
 <p>On KDE and GNOME <code>.desktop</code> files are used to specify application metadata similar to <code>info.plist</code>. The specification for how these <code>.desktop</code> files can be found here: <a href="https://specifications.freedesktop.org/desktop-entry-spec/latest/">https://specifications.freedesktop.org/desktop-entry-spec/latest/</a></p>
 <p>Here is a basic <code>my.application.desktop</code> (TODO: Make a note about this matching some OpenTK specified d-bus name... something something):</p>
 <pre><code>[Desktop Entry]

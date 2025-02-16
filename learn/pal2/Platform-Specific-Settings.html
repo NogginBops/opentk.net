@@ -75,14 +75,33 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="introduction">Introduction</h1>
 
-<p>PAL 2 consists of a number of components that allows the user to create windows and interact with the user system. These interfaces are designed to work cross-platform. But sometimes there are functions and settings that are so platform specific that these is no good cross-platform API for them.</p>
+<p>PAL 2 consists of a number of components that allows the user to create windows and interact with the user system. These interfaces are designed to work cross-platform. But sometimes there are functions and settings that are so platform specific that these is no good cross-platform API for them. These settings can either be accessed through the <code>ToolkitOptions</code> class when calling <code>Toolkit.Init()</code>, or they are platform specific APIs that can be accessed through platform specific interfaces.</p>
+<h1 id="platform-specifc-toolkitoptions">Platform specifc <code>ToolkitOptions</code></h1>
+<p>The platform specific settings in <code>TookitOptions</code> can be accessed from the <code>Windows</code>, <code>X11</code>, <code>MacOS</code> members. The settings will only affect the current platform, so writing values for each platform is a convenient way to</p>
+<pre><code class="lang-cs">ToolkitOptions options = new ToolkitOptions();
+// Will only take effect when running on windows.
+options.Windows.EnableVisualStyles = false;
+// Will only take effect when running on macOS.
+options.MacOS.ActiveAppOnStart = false;
+</code></pre>
+<h2 id="windows">Windows</h2>
+<h3 id="toolkitoptionswindowsenablevisualstyles"><code>ToolkitOptions.Windows.EnableVisualStyles</code></h3>
+<p>This setting decides if OpenTK should enable <a href="https://learn.microsoft.com/en-us/windows/win32/controls/themes-overview">Visual Styles</a> on initialization or not. Defaults to <code>true</code>. OpenTK requires Visual Styles to be enabled for the message box API to work. This option exists to allow Visual Styles to be enabled through a manifest file.</p>
+<h3 id="toolkitoptionswindowsisdpiaware"><code>ToolkitOptions.Windows.IsDPIAware</code></h3>
+<p>This setting sets whether OpenTK will mark the process as <a href="https://learn.microsoft.com/en-us/windows/win32/hidpi/high-dpi-desktop-application-development-on-windows">DPI aware</a> or not. Default is <code>true</code>. By setting this to false windows will scale your application up on high DPI monitors with a significant loss in image clarity, as such it is recommended to keep this property set to <code>true</code>.</p>
+<h2 id="linux-x11">Linux X11</h2>
+<p>There are no X11 specific <code>ToolkitOptions</code> at the moment.</p>
+<h2 id="macos">macOS</h2>
+<h3 id="toolkitoptionsmacosactiveapponstart"><code>ToolkitOptions.MacOS.ActiveAppOnStart</code></h3>
+<p>This setting decides if OpenTK should force the OpenTK application to become the currently active window on start. Default is <code>true</code>. Forcing the application to become the active application is not the &quot;normal&quot; application behavior on macOS but many developers expect their application to become the active one on start. Setting this setting depending on debug or release mode could be appropriate.</p>
+<h1 id="platform-specific-apis">Platform specific APIs</h1>
 <p>Platform specific component APIs can be accessed by casting the component interface to it's concrete platform type. For example, <code>Toolkit.Clipboard</code> has windows specific settings related to cloud clipboard syncing and history, which can be accessed like follows:</p>
 <pre><code class="lang-cs">// By using 'as' and ?. we can run this code on all platforms
 // but the effects will only take effect on windows.
 (Toolkit.Clipboard as Native.Windows.WindowComponent)?.CanUploadToCloudClipboard = false;
 (Toolkit.Clipboard as Native.Windows.WindowComponent)?.CanIncludeInClipboardHistory = true;
 </code></pre>
-<h1 id="windows">Windows</h1>
+<h2 id="windows-1">Windows</h2>
 <p>The following is a list of windows specific settings and functions.</p>
 <table>
 <thead>
@@ -210,7 +229,7 @@
 </tr>
 </tbody>
 </table>
-<h1 id="linux-x11">Linux X11</h1>
+<h2 id="linux-x11-1">Linux X11</h2>
 <p>The following is a list of linux x11 specific settings and functions.</p>
 <table>
 <thead>
@@ -282,7 +301,7 @@
 </tr>
 </tbody>
 </table>
-<h1 id="macos">macOS</h1>
+<h2 id="macos-1">macOS</h2>
 <p>The following is a list of macOS specific settings and functions.</p>
 <table>
 <thead>
@@ -366,7 +385,7 @@
 </tr>
 </tbody>
 </table>
-<h1 id="angle">ANGLE</h1>
+<h2 id="angle">ANGLE</h2>
 <p>When using ANGLE to create OpenGL contexts <code>ANGLEOpenGLComponent</code> exposes a few ANGLE specific functions.</p>
 <table>
 <thead>
