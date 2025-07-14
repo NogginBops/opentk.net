@@ -157,6 +157,46 @@ Set on windows using <code>timeBeginPeriod()</code>.</p>
   <div class="markdown level1 remarks"><p>The details of this method is described in detail here:
 <a href="https://blog.bearcats.nl/perfect-sleep-function/">https://blog.bearcats.nl/perfect-sleep-function/</a>.</p>
 </div>
+  <a id="OpenTK_Core_Utils_AsPtr_" data-uid="OpenTK.Core.Utils.AsPtr*"></a>
+  <h4 id="OpenTK_Core_Utils_AsPtr_System_ReadOnlySpan_System_Byte__" data-uid="OpenTK.Core.Utils.AsPtr(System.ReadOnlySpan{System.Byte})">AsPtr(ReadOnlySpan&lt;byte&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static byte* AsPtr(ReadOnlySpan&lt;byte&gt; span)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</td>
+        <td><span class="parametername">span</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>*</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <a id="OpenTK_Core_Utils_FromTszString_" data-uid="OpenTK.Core.Utils.FromTszString*"></a>
   <h4 id="OpenTK_Core_Utils_FromTszString_System_Char__System_Int32_" data-uid="OpenTK.Core.Utils.FromTszString(System.Char*,System.Int32)">FromTszString(char*, int)</h4>
   <div class="markdown level1 summary"></div>
@@ -198,6 +238,46 @@ Set on windows using <code>timeBeginPeriod()</code>.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Core_Utils_ToSpan_" data-uid="OpenTK.Core.Utils.ToSpan*"></a>
+  <h4 id="OpenTK_Core_Utils_ToSpan_System_Byte__" data-uid="OpenTK.Core.Utils.ToSpan(System.Byte*)">ToSpan(byte*)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ReadOnlySpan&lt;byte&gt; ToSpan(byte* str)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>*</td>
+        <td><span class="parametername">str</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>

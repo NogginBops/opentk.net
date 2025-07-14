@@ -253,7 +253,7 @@ public struct Box3 : IEquatable&lt;Box3&gt;, IFormattable</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public float Back { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public float Back { readonly get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -277,7 +277,7 @@ public struct Box3 : IEquatable&lt;Box3&gt;, IFormattable</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public float Bottom { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public float Bottom { readonly get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -301,7 +301,7 @@ public struct Box3 : IEquatable&lt;Box3&gt;, IFormattable</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Vector3 Center { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public Vector3 Center { readonly get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -325,7 +325,7 @@ public struct Box3 : IEquatable&lt;Box3&gt;, IFormattable</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Vector3 CenteredSize { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public Vector3 CenteredSize { readonly get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -349,7 +349,7 @@ public struct Box3 : IEquatable&lt;Box3&gt;, IFormattable</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public float Depth { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public float Depth { readonly get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -373,7 +373,7 @@ public struct Box3 : IEquatable&lt;Box3&gt;, IFormattable</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public float Front { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public float Front { readonly get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -397,7 +397,7 @@ public struct Box3 : IEquatable&lt;Box3&gt;, IFormattable</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Vector3 HalfSize { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public Vector3 HalfSize { readonly get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -421,7 +421,7 @@ public struct Box3 : IEquatable&lt;Box3&gt;, IFormattable</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public float Height { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public float Height { readonly get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -445,7 +445,7 @@ public struct Box3 : IEquatable&lt;Box3&gt;, IFormattable</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool IsZero { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly bool IsZero { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -469,7 +469,7 @@ public struct Box3 : IEquatable&lt;Box3&gt;, IFormattable</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public float Left { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public float Left { readonly get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -493,7 +493,7 @@ public struct Box3 : IEquatable&lt;Box3&gt;, IFormattable</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Vector3 Location { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly Vector3 Location { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -565,7 +565,7 @@ public struct Box3 : IEquatable&lt;Box3&gt;, IFormattable</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public float Right { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public float Right { readonly get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -589,7 +589,7 @@ public struct Box3 : IEquatable&lt;Box3&gt;, IFormattable</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Vector3 Size { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public Vector3 Size { readonly get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -613,7 +613,7 @@ public struct Box3 : IEquatable&lt;Box3&gt;, IFormattable</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public float SizeX { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public float SizeX { readonly get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -637,7 +637,7 @@ public struct Box3 : IEquatable&lt;Box3&gt;, IFormattable</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public float SizeY { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public float SizeY { readonly get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -661,7 +661,7 @@ public struct Box3 : IEquatable&lt;Box3&gt;, IFormattable</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public float SizeZ { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public float SizeZ { readonly get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -685,7 +685,7 @@ public struct Box3 : IEquatable&lt;Box3&gt;, IFormattable</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public float Top { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public float Top { readonly get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -709,7 +709,7 @@ public struct Box3 : IEquatable&lt;Box3&gt;, IFormattable</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public float Width { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public float Width { readonly get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -733,7 +733,7 @@ public struct Box3 : IEquatable&lt;Box3&gt;, IFormattable</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public float X { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public float X { readonly get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -757,7 +757,7 @@ public struct Box3 : IEquatable&lt;Box3&gt;, IFormattable</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public float Y { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public float Y { readonly get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -781,7 +781,7 @@ public struct Box3 : IEquatable&lt;Box3&gt;, IFormattable</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public float Z { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public float Z { readonly get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -940,7 +940,7 @@ public readonly bool Contains(Vector3 point)</code></pre>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Pure]
-public bool Contains(Vector3 point, bool boundaryInclusive)</code></pre>
+public readonly bool Contains(Vector3 point, bool boundaryInclusive)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -1164,7 +1164,7 @@ public readonly float DistanceToNearestEdge(Vector3 point)</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override bool Equals(object obj)</code></pre>
+    <pre><code class="lang-csharp hljs">public override readonly bool Equals(object obj)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -1670,7 +1670,7 @@ public readonly Box3 Inflated(Vector3 size)</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Box3 Intersected(Box3 other)</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly Box3 Intersected(Box3 other)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -1713,7 +1713,7 @@ public readonly Box3 Inflated(Vector3 size)</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool IntersectsWith(Box3 other)</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly bool IntersectsWith(Box3 other)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -1882,7 +1882,7 @@ public readonly Box3 Scaled(Vector3 scale, Vector3 anchor)</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+    <pre><code class="lang-csharp hljs">public override readonly string ToString()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-condensed">
@@ -1909,7 +1909,7 @@ public readonly Box3 Scaled(Vector3 scale, Vector3 anchor)</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string ToString(IFormatProvider formatProvider)</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly string ToString(IFormatProvider formatProvider)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -1954,7 +1954,7 @@ public readonly Box3 Scaled(Vector3 scale, Vector3 anchor)</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string ToString(string format)</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly string ToString(string format)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -1999,7 +1999,7 @@ public readonly Box3 Scaled(Vector3 scale, Vector3 anchor)</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string ToString(string format, IFormatProvider formatProvider)</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly string ToString(string format, IFormatProvider formatProvider)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -2052,7 +2052,7 @@ public readonly Box3 Scaled(Vector3 scale, Vector3 anchor)</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool TouchWith(Box3 other)</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly bool TouchWith(Box3 other)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">

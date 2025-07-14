@@ -149,6 +149,27 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>If GLFW fails to create a window.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.outofmemoryexception">OutOfMemoryException</a></td>
+        <td><p>If GLFW can't create a window because we're out of memory.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="properties">Properties
 </h3>
   <a id="OpenTK_Windowing_Desktop_NativeWindow_API_" data-uid="OpenTK.Windowing.Desktop.NativeWindow.API*"></a>
@@ -195,6 +216,30 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.version">Version</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Windowing_Desktop_NativeWindow_AlwaysOnTop_" data-uid="OpenTK.Windowing.Desktop.NativeWindow.AlwaysOnTop*"></a>
+  <h4 id="OpenTK_Windowing_Desktop_NativeWindow_AlwaysOnTop" data-uid="OpenTK.Windowing.Desktop.NativeWindow.AlwaysOnTop">AlwaysOnTop</h4>
+  <div class="markdown level1 summary"><p>Gets or sets if this window will be displayed on top of all other windows.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AlwaysOnTop { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -403,12 +448,13 @@ The internal bounds include the drawing area of the window, but exclude the titl
   </table>
   <a id="OpenTK_Windowing_Desktop_NativeWindow_CurrentMonitor_" data-uid="OpenTK.Windowing.Desktop.NativeWindow.CurrentMonitor*"></a>
   <h4 id="OpenTK_Windowing_Desktop_NativeWindow_CurrentMonitor" data-uid="OpenTK.Windowing.Desktop.NativeWindow.CurrentMonitor">CurrentMonitor</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the current <a class="xref" href="OpenTK.Windowing.Common.MonitorHandle.html">MonitorHandle</a>.</p>
+  <div class="markdown level1 summary"><p>Gets the current <a class="xref" href="OpenTK.Windowing.Desktop.MonitorInfo.html">MonitorInfo</a> of the monitor that the window is currently on.
+To make the window fullscreen use <a class="xref" href="OpenTK.Windowing.Desktop.NativeWindow.html#OpenTK_Windowing_Desktop_NativeWindow_MakeFullscreen_OpenTK_Windowing_Common_MonitorHandle_System_Nullable_System_Int32__System_Nullable_System_Int32__System_Nullable_System_Int32__">MakeFullscreen(MonitorHandle, int?, int?, int?)</a> or <a class="xref" href="OpenTK.Windowing.Desktop.NativeWindow.html#OpenTK_Windowing_Desktop_NativeWindow_WindowState">WindowState</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public MonitorHandle CurrentMonitor { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public MonitorInfo CurrentMonitor { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -420,11 +466,16 @@ The internal bounds include the drawing area of the window, but exclude the titl
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Windowing.Common.MonitorHandle.html">MonitorHandle</a></td>
+        <td><a class="xref" href="OpenTK.Windowing.Desktop.MonitorInfo.html">MonitorInfo</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
+  <h5 id="OpenTK_Windowing_Desktop_NativeWindow_CurrentMonitor_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="OpenTK.Windowing.Desktop.NativeWindow.html#OpenTK_Windowing_Desktop_NativeWindow_MakeFullscreen_OpenTK_Windowing_Common_MonitorHandle_System_Nullable_System_Int32__System_Nullable_System_Int32__System_Nullable_System_Int32__">MakeFullscreen(MonitorHandle, int?, int?, int?)</a></div>
+      <div><a class="xref" href="OpenTK.Windowing.Desktop.NativeWindow.html#OpenTK_Windowing_Desktop_NativeWindow_WindowState">WindowState</a></div>
+  </div>
   <a id="OpenTK_Windowing_Desktop_NativeWindow_Cursor_" data-uid="OpenTK.Windowing.Desktop.NativeWindow.Cursor*"></a>
   <h4 id="OpenTK_Windowing_Desktop_NativeWindow_Cursor" data-uid="OpenTK.Windowing.Desktop.NativeWindow.Cursor">Cursor</h4>
   <div class="markdown level1 summary"><p>Gets or sets the <a class="xref" href="OpenTK.Windowing.Common.Input.MouseCursor.html">MouseCursor</a> for this window.</p>
@@ -903,6 +954,32 @@ If you set size limits and an aspect ratio that conflict, the results are undefi
   <div class="markdown level1 remarks"><p>Set to <code>null</code> to remove the minimum size constraint.
 If you set size limits and an aspect ratio that conflict, the results are undefined.</p>
 </div>
+  <a id="OpenTK_Windowing_Desktop_NativeWindow_MousePassthrough_" data-uid="OpenTK.Windowing.Desktop.NativeWindow.MousePassthrough*"></a>
+  <h4 id="OpenTK_Windowing_Desktop_NativeWindow_MousePassthrough" data-uid="OpenTK.Windowing.Desktop.NativeWindow.MousePassthrough">MousePassthrough</h4>
+  <div class="markdown level1 summary"><p>Gets or sets if the window should be transparent to mouse input.
+This only works for windows with window border set to <a class="xref" href="OpenTK.Windowing.Common.WindowBorder.html#OpenTK_Windowing_Common_WindowBorder_Hidden">Hidden</a>,
+other borders will behave differently between platforms.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool MousePassthrough { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <a id="OpenTK_Windowing_Desktop_NativeWindow_MousePosition_" data-uid="OpenTK.Windowing.Desktop.NativeWindow.MousePosition*"></a>
   <h4 id="OpenTK_Windowing_Desktop_NativeWindow_MousePosition" data-uid="OpenTK.Windowing.Desktop.NativeWindow.MousePosition">MousePosition</h4>
   <div class="markdown level1 summary"><p>Gets or sets the position of the mouse relative to the content area of this window.
@@ -1550,6 +1627,57 @@ Check <a class="xref" href="OpenTK.Windowing.Desktop.NativeWindow.html#OpenTK_Wi
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void MakeCurrent()</code></pre>
+  </div>
+  <a id="OpenTK_Windowing_Desktop_NativeWindow_MakeFullscreen_" data-uid="OpenTK.Windowing.Desktop.NativeWindow.MakeFullscreen*"></a>
+  <h4 id="OpenTK_Windowing_Desktop_NativeWindow_MakeFullscreen_OpenTK_Windowing_Common_MonitorHandle_System_Nullable_System_Int32__System_Nullable_System_Int32__System_Nullable_System_Int32__" data-uid="OpenTK.Windowing.Desktop.NativeWindow.MakeFullscreen(OpenTK.Windowing.Common.MonitorHandle,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32})">MakeFullscreen(MonitorHandle, int?, int?, int?)</h4>
+  <div class="markdown level1 summary"><p>Make the window fullscreen with the specified resolution and refresh rate.
+This function is meant to provide greater control than <a class="xref" href="OpenTK.Windowing.Desktop.NativeWindow.html#OpenTK_Windowing_Desktop_NativeWindow_WindowState">WindowState</a> and <a class="xref" href="OpenTK.Windowing.Desktop.NativeWindow.html#OpenTK_Windowing_Desktop_NativeWindow_CurrentMonitor">CurrentMonitor</a> when making the window fullscreen.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MakeFullscreen(MonitorHandle monitor, int? horizontalResolution = null, int? verticalResolution = null, int? refreshRate = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Windowing.Common.MonitorHandle.html">MonitorHandle</a></td>
+        <td><span class="parametername">monitor</span></td>
+        <td><p>The monitor on which to make the window fullscreen.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">horizontalResolution</span></td>
+        <td><p>The horizontal resolution to switch the screen to, or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> to use the monitor resolution.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">verticalResolution</span></td>
+        <td><p>The vertical resoltion to switch the screen to, or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> to use the monitor resolution.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">refreshRate</span></td>
+        <td><p>The refresh rate to use, or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> to not change refresh rate.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenTK_Windowing_Desktop_NativeWindow_MakeFullscreen_OpenTK_Windowing_Common_MonitorHandle_System_Nullable_System_Int32__System_Nullable_System_Int32__System_Nullable_System_Int32___seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="OpenTK.Windowing.Desktop.NativeWindow.html#OpenTK_Windowing_Desktop_NativeWindow_CurrentMonitor">CurrentMonitor</a></div>
+      <div><a class="xref" href="OpenTK.Windowing.Desktop.NativeWindow.html#OpenTK_Windowing_Desktop_NativeWindow_WindowState">WindowState</a></div>
   </div>
   <a id="OpenTK_Windowing_Desktop_NativeWindow_NewInputFrame_" data-uid="OpenTK.Windowing.Desktop.NativeWindow.NewInputFrame*"></a>
   <h4 id="OpenTK_Windowing_Desktop_NativeWindow_NewInputFrame" data-uid="OpenTK.Windowing.Desktop.NativeWindow.NewInputFrame">NewInputFrame()</h4>

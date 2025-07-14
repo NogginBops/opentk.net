@@ -84,6 +84,16 @@
     <h5>Implements</h5>
     <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="OpenTK.Mathematics.Matrix4.html">Matrix4</a>&gt;</div>
     <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iformattable">IFormattable</a></div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.imultiplyoperators-3">IMultiplyOperators</a>&lt;<a class="xref" href="OpenTK.Mathematics.Matrix4.html">Matrix4</a>, <a class="xref" href="OpenTK.Mathematics.Matrix4.html">Matrix4</a>, <a class="xref" href="OpenTK.Mathematics.Matrix4.html">Matrix4</a>&gt;</div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.imultiplyoperators-3">IMultiplyOperators</a>&lt;<a class="xref" href="OpenTK.Mathematics.Matrix4.html">Matrix4</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>, <a class="xref" href="OpenTK.Mathematics.Matrix4.html">Matrix4</a>&gt;</div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.imultiplyoperators-3">IMultiplyOperators</a>&lt;<a class="xref" href="OpenTK.Mathematics.Matrix4.html">Matrix4</a>, <a class="xref" href="OpenTK.Mathematics.Vector4.html">Vector4</a>, <a class="xref" href="OpenTK.Mathematics.Vector4.html">Vector4</a>&gt;</div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.imultiplyoperators-3">IMultiplyOperators</a>&lt;<a class="xref" href="OpenTK.Mathematics.Matrix4.html">Matrix4</a>, <a class="xref" href="OpenTK.Mathematics.Matrix4x2.html">Matrix4x2</a>, <a class="xref" href="OpenTK.Mathematics.Matrix4x2.html">Matrix4x2</a>&gt;</div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.imultiplyoperators-3">IMultiplyOperators</a>&lt;<a class="xref" href="OpenTK.Mathematics.Matrix4.html">Matrix4</a>, <a class="xref" href="OpenTK.Mathematics.Matrix4x3.html">Matrix4x3</a>, <a class="xref" href="OpenTK.Mathematics.Matrix4x3.html">Matrix4x3</a>&gt;</div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.iadditionoperators-3">IAdditionOperators</a>&lt;<a class="xref" href="OpenTK.Mathematics.Matrix4.html">Matrix4</a>, <a class="xref" href="OpenTK.Mathematics.Matrix4.html">Matrix4</a>, <a class="xref" href="OpenTK.Mathematics.Matrix4.html">Matrix4</a>&gt;</div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.isubtractionoperators-3">ISubtractionOperators</a>&lt;<a class="xref" href="OpenTK.Mathematics.Matrix4.html">Matrix4</a>, <a class="xref" href="OpenTK.Mathematics.Matrix4.html">Matrix4</a>, <a class="xref" href="OpenTK.Mathematics.Matrix4.html">Matrix4</a>&gt;</div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.iequalityoperators-3">IEqualityOperators</a>&lt;<a class="xref" href="OpenTK.Mathematics.Matrix4.html">Matrix4</a>, <a class="xref" href="OpenTK.Mathematics.Matrix4.html">Matrix4</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.iadditiveidentity-2">IAdditiveIdentity</a>&lt;<a class="xref" href="OpenTK.Mathematics.Matrix4.html">Matrix4</a>, <a class="xref" href="OpenTK.Mathematics.Matrix4.html">Matrix4</a>&gt;</div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.imultiplicativeidentity-2">IMultiplicativeIdentity</a>&lt;<a class="xref" href="OpenTK.Mathematics.Matrix4.html">Matrix4</a>, <a class="xref" href="OpenTK.Mathematics.Matrix4.html">Matrix4</a>&gt;</div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -102,7 +112,7 @@
   <h5 id="OpenTK_Mathematics_Matrix4_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Serializable]
-public struct Matrix4 : IEquatable&lt;Matrix4&gt;, IFormattable</code></pre>
+public struct Matrix4 : IEquatable&lt;Matrix4&gt;, IFormattable, IMultiplyOperators&lt;Matrix4, Matrix4, Matrix4&gt;, IMultiplyOperators&lt;Matrix4, float, Matrix4&gt;, IMultiplyOperators&lt;Matrix4, Vector4, Vector4&gt;, IMultiplyOperators&lt;Matrix4, Matrix4x2, Matrix4x2&gt;, IMultiplyOperators&lt;Matrix4, Matrix4x3, Matrix4x3&gt;, IAdditionOperators&lt;Matrix4, Matrix4, Matrix4&gt;, ISubtractionOperators&lt;Matrix4, Matrix4, Matrix4&gt;, IEqualityOperators&lt;Matrix4, Matrix4, bool&gt;, IAdditiveIdentity&lt;Matrix4, Matrix4&gt;, IMultiplicativeIdentity&lt;Matrix4, Matrix4&gt;</code></pre>
   </div>
   <h3 id="constructors">Constructors
 </h3>
@@ -437,6 +447,30 @@ public struct Matrix4 : IEquatable&lt;Matrix4&gt;, IFormattable</code></pre>
   </table>
   <h3 id="properties">Properties
 </h3>
+  <a id="OpenTK_Mathematics_Matrix4_AdditiveIdentity_" data-uid="OpenTK.Mathematics.Matrix4.AdditiveIdentity*"></a>
+  <h4 id="OpenTK_Mathematics_Matrix4_AdditiveIdentity" data-uid="OpenTK.Mathematics.Matrix4.AdditiveIdentity">AdditiveIdentity</h4>
+  <div class="markdown level1 summary"><p>Gets the additive identity of the matrix, which is the zero matrix.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Matrix4 AdditiveIdentity { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Matrix4.html">Matrix4</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <a id="OpenTK_Mathematics_Matrix4_Column0_" data-uid="OpenTK.Mathematics.Matrix4.Column0*"></a>
   <h4 id="OpenTK_Mathematics_Matrix4_Column0" data-uid="OpenTK.Mathematics.Matrix4.Column0">Column0</h4>
   <div class="markdown level1 summary"><p>Gets or sets the first column of this matrix.</p>
@@ -1014,6 +1048,30 @@ public struct Matrix4 : IEquatable&lt;Matrix4&gt;, IFormattable</code></pre>
       </tr>
     </tbody>
   </table>
+  <a id="OpenTK_Mathematics_Matrix4_MultiplicativeIdentity_" data-uid="OpenTK.Mathematics.Matrix4.MultiplicativeIdentity*"></a>
+  <h4 id="OpenTK_Mathematics_Matrix4_MultiplicativeIdentity" data-uid="OpenTK.Mathematics.Matrix4.MultiplicativeIdentity">MultiplicativeIdentity</h4>
+  <div class="markdown level1 summary"><p>Gets the multiplicative identity of the matrix, which is the identity matrix.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Matrix4 MultiplicativeIdentity { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Matrix4.html">Matrix4</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <a id="OpenTK_Mathematics_Matrix4_Trace_" data-uid="OpenTK.Mathematics.Matrix4.Trace*"></a>
   <h4 id="OpenTK_Mathematics_Matrix4_Trace" data-uid="OpenTK.Mathematics.Matrix4.Trace">Trace</h4>
   <div class="markdown level1 summary"><p>Gets the trace of the matrix, the sum of the values along the diagonal.</p>
@@ -1131,12 +1189,13 @@ public static Matrix4 Add(Matrix4 left, Matrix4 right)</code></pre>
   </table>
   <a id="OpenTK_Mathematics_Matrix4_ClearProjection_" data-uid="OpenTK.Mathematics.Matrix4.ClearProjection*"></a>
   <h4 id="OpenTK_Mathematics_Matrix4_ClearProjection" data-uid="OpenTK.Mathematics.Matrix4.ClearProjection">ClearProjection()</h4>
-  <div class="markdown level1 summary"><p>Returns a copy of this Matrix4 without projection.</p>
+  <div class="markdown level1 summary"><p>Returns a copy of this Matrix4 without projection. (equivalent to setting <a class="xref" href="OpenTK.Mathematics.Matrix4.html#OpenTK_Mathematics_Matrix4_Column3">Column3</a> = (0, 0, 0, 0)).</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public readonly Matrix4 ClearProjection()</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;This function doesn&#39;t actually clear the projection of the matrix. This is equivalent of setting Column3 = (0, 0, 0, 0).&quot;)]
+public readonly Matrix4 ClearProjection()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-condensed">
@@ -2835,14 +2894,223 @@ public override readonly bool Equals(object obj)</code></pre>
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetype.equals">ValueType.Equals(object)</a></div>
-  <a id="OpenTK_Mathematics_Matrix4_ExtractProjection_" data-uid="OpenTK.Mathematics.Matrix4.ExtractProjection*"></a>
-  <h4 id="OpenTK_Mathematics_Matrix4_ExtractProjection" data-uid="OpenTK.Mathematics.Matrix4.ExtractProjection">ExtractProjection()</h4>
-  <div class="markdown level1 summary"><p>Returns the projection component of this instance.</p>
+  <a id="OpenTK_Mathematics_Matrix4_ExtractOrthographic_" data-uid="OpenTK.Mathematics.Matrix4.ExtractOrthographic*"></a>
+  <h4 id="OpenTK_Mathematics_Matrix4_ExtractOrthographic_System_Single__System_Single__System_Single__System_Single__" data-uid="OpenTK.Mathematics.Matrix4.ExtractOrthographic(System.Single@,System.Single@,System.Single@,System.Single@)">ExtractOrthographic(out float, out float, out float, out float)</h4>
+  <div class="markdown level1 summary"><p>Returns the orthographic projection parameters of this instance.
+This only works if the matrix was created using <a class="xref" href="OpenTK.Mathematics.Matrix4.html#OpenTK_Mathematics_Matrix4_CreateOrthographic_System_Single_System_Single_System_Single_System_Single_">CreateOrthographic(float, float, float, float)</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public readonly Vector4 ExtractProjection()</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly void ExtractOrthographic(out float width, out float height, out float depthNear, out float depthFar)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">width</span></td>
+        <td><p>The width of the projection volume.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">height</span></td>
+        <td><p>The height of the projection volume.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">depthNear</span></td>
+        <td><p>The distance to the near clip plane.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">depthFar</span></td>
+        <td><p>The distance to the far clip plane.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Matrix4_ExtractOrthographicOffCenter_" data-uid="OpenTK.Mathematics.Matrix4.ExtractOrthographicOffCenter*"></a>
+  <h4 id="OpenTK_Mathematics_Matrix4_ExtractOrthographicOffCenter_System_Single__System_Single__System_Single__System_Single__System_Single__System_Single__" data-uid="OpenTK.Mathematics.Matrix4.ExtractOrthographicOffCenter(System.Single@,System.Single@,System.Single@,System.Single@,System.Single@,System.Single@)">ExtractOrthographicOffCenter(out float, out float, out float, out float, out float, out float)</h4>
+  <div class="markdown level1 summary"><p>Returns the off-center orthographic projection parameters of this instance.
+This only works if the matrix was created using <a class="xref" href="OpenTK.Mathematics.Matrix4.html#OpenTK_Mathematics_Matrix4_CreateOrthographicOffCenter_System_Single_System_Single_System_Single_System_Single_System_Single_System_Single_">CreateOrthographicOffCenter(float, float, float, float, float, float)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly void ExtractOrthographicOffCenter(out float left, out float right, out float bottom, out float top, out float depthNear, out float depthFar)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">left</span></td>
+        <td><p>The left edge of the projection volume.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">right</span></td>
+        <td><p>The right edge of the projection volume.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">bottom</span></td>
+        <td><p>The bottom edge of the projection volume.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">top</span></td>
+        <td><p>The top edge of the projection volume.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">depthNear</span></td>
+        <td><p>The distance to the near clip plane.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">depthFar</span></td>
+        <td><p>The distance to the far clip plane.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Matrix4_ExtractPerspectiveFieldOfView_" data-uid="OpenTK.Mathematics.Matrix4.ExtractPerspectiveFieldOfView*"></a>
+  <h4 id="OpenTK_Mathematics_Matrix4_ExtractPerspectiveFieldOfView_System_Single__System_Single__System_Single__System_Single__" data-uid="OpenTK.Mathematics.Matrix4.ExtractPerspectiveFieldOfView(System.Single@,System.Single@,System.Single@,System.Single@)">ExtractPerspectiveFieldOfView(out float, out float, out float, out float)</h4>
+  <div class="markdown level1 summary"><p>Returns the field of view projection parameters of this instance.
+This only works if the matrix was created using <a class="xref" href="OpenTK.Mathematics.Matrix4.html#OpenTK_Mathematics_Matrix4_CreatePerspectiveFieldOfView_System_Single_System_Single_System_Single_System_Single_">CreatePerspectiveFieldOfView(float, float, float, float)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly void ExtractPerspectiveFieldOfView(out float fovy, out float aspect, out float depthNear, out float depthFar)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">fovy</span></td>
+        <td><p>Angle of the field of view in the y direction (in radians).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">aspect</span></td>
+        <td><p>Aspect ratio of the view (width / height).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">depthNear</span></td>
+        <td><p>The distance to the near clip plane.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">depthFar</span></td>
+        <td><p>The distance to the far clip plane.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Matrix4_ExtractPerspectiveOffCenter_" data-uid="OpenTK.Mathematics.Matrix4.ExtractPerspectiveOffCenter*"></a>
+  <h4 id="OpenTK_Mathematics_Matrix4_ExtractPerspectiveOffCenter_System_Single__System_Single__System_Single__System_Single__System_Single__System_Single__" data-uid="OpenTK.Mathematics.Matrix4.ExtractPerspectiveOffCenter(System.Single@,System.Single@,System.Single@,System.Single@,System.Single@,System.Single@)">ExtractPerspectiveOffCenter(out float, out float, out float, out float, out float, out float)</h4>
+  <div class="markdown level1 summary"><p>Returns the off-center projection parameters of this instance.
+This only works if the matrix was created using <a class="xref" href="OpenTK.Mathematics.Matrix4.html#OpenTK_Mathematics_Matrix4_CreatePerspectiveOffCenter_System_Single_System_Single_System_Single_System_Single_System_Single_System_Single_">CreatePerspectiveOffCenter(float, float, float, float, float, float)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly void ExtractPerspectiveOffCenter(out float left, out float right, out float bottom, out float top, out float depthNear, out float depthFar)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">left</span></td>
+        <td><p>The left edge of the view frustum.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">right</span></td>
+        <td><p>The right edge of the view frustum.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">bottom</span></td>
+        <td><p>The bottom edge of the view frustum.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">top</span></td>
+        <td><p>The top edge of the view frustum.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">depthNear</span></td>
+        <td><p>The distance to the near clip plane.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">depthFar</span></td>
+        <td><p>The distance to the far clip plane.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Matrix4_ExtractProjection_" data-uid="OpenTK.Mathematics.Matrix4.ExtractProjection*"></a>
+  <h4 id="OpenTK_Mathematics_Matrix4_ExtractProjection" data-uid="OpenTK.Mathematics.Matrix4.ExtractProjection">ExtractProjection()</h4>
+  <div class="markdown level1 summary"><p>Returns the projection component of this instance (equivalent to <a class="xref" href="OpenTK.Mathematics.Matrix4.html#OpenTK_Mathematics_Matrix4_Column3">Column3</a>).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use Column3 if the old behaviour is needed, or use ExtractPerspective*() or ExtractOrthographic* instead.&quot;)]
+public readonly Vector4 ExtractProjection()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-condensed">
@@ -2855,7 +3123,7 @@ public override readonly bool Equals(object obj)</code></pre>
     <tbody>
       <tr>
         <td><a class="xref" href="OpenTK.Mathematics.Vector4.html">Vector4</a></td>
-        <td><p>The projection.</p>
+        <td><p>The projection (<a class="xref" href="OpenTK.Mathematics.Matrix4.html#OpenTK_Mathematics_Matrix4_Column3">Column3</a>).</p>
 </td>
       </tr>
     </tbody>
@@ -3328,6 +3596,106 @@ public static Matrix4 Mult(Matrix4 left, Matrix4 right)</code></pre>
     </tbody>
   </table>
   <a id="OpenTK_Mathematics_Matrix4_Mult_" data-uid="OpenTK.Mathematics.Matrix4.Mult*"></a>
+  <h4 id="OpenTK_Mathematics_Matrix4_Mult_OpenTK_Mathematics_Matrix4_OpenTK_Mathematics_Matrix4x2_" data-uid="OpenTK.Mathematics.Matrix4.Mult(OpenTK.Mathematics.Matrix4,OpenTK.Mathematics.Matrix4x2)">Mult(Matrix4, Matrix4x2)</h4>
+  <div class="markdown level1 summary"><p>Multiplies two instances.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static Matrix4x2 Mult(Matrix4 left, Matrix4x2 right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Matrix4.html">Matrix4</a></td>
+        <td><span class="parametername">left</span></td>
+        <td><p>The left operand of the multiplication.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Matrix4x2.html">Matrix4x2</a></td>
+        <td><span class="parametername">right</span></td>
+        <td><p>The right operand of the multiplication.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Matrix4x2.html">Matrix4x2</a></td>
+        <td><p>A new instance that is the result of the multiplication.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Matrix4_Mult_" data-uid="OpenTK.Mathematics.Matrix4.Mult*"></a>
+  <h4 id="OpenTK_Mathematics_Matrix4_Mult_OpenTK_Mathematics_Matrix4_OpenTK_Mathematics_Matrix4x3_" data-uid="OpenTK.Mathematics.Matrix4.Mult(OpenTK.Mathematics.Matrix4,OpenTK.Mathematics.Matrix4x3)">Mult(Matrix4, Matrix4x3)</h4>
+  <div class="markdown level1 summary"><p>Multiplies two instances.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static Matrix4x3 Mult(Matrix4 left, Matrix4x3 right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Matrix4.html">Matrix4</a></td>
+        <td><span class="parametername">left</span></td>
+        <td><p>The left operand of the multiplication.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Matrix4x3.html">Matrix4x3</a></td>
+        <td><span class="parametername">right</span></td>
+        <td><p>The right operand of the multiplication.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Matrix4x3.html">Matrix4x3</a></td>
+        <td><p>A new instance that is the result of the multiplication.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Matrix4_Mult_" data-uid="OpenTK.Mathematics.Matrix4.Mult*"></a>
   <h4 id="OpenTK_Mathematics_Matrix4_Mult_OpenTK_Mathematics_Matrix4_System_Single_" data-uid="OpenTK.Mathematics.Matrix4.Mult(OpenTK.Mathematics.Matrix4,System.Single)">Mult(Matrix4, float)</h4>
   <div class="markdown level1 summary"><p>Multiplies an instance by a scalar.</p>
 </div>
@@ -3410,6 +3778,84 @@ public static Matrix4 Mult(Matrix4 left, float right)</code></pre>
       </tr>
       <tr>
         <td><a class="xref" href="OpenTK.Mathematics.Matrix4.html">Matrix4</a></td>
+        <td><span class="parametername">result</span></td>
+        <td><p>A new instance that is the result of the multiplication.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Matrix4_Mult_" data-uid="OpenTK.Mathematics.Matrix4.Mult*"></a>
+  <h4 id="OpenTK_Mathematics_Matrix4_Mult_OpenTK_Mathematics_Matrix4__OpenTK_Mathematics_Matrix4x2__OpenTK_Mathematics_Matrix4x2__" data-uid="OpenTK.Mathematics.Matrix4.Mult(OpenTK.Mathematics.Matrix4@,OpenTK.Mathematics.Matrix4x2@,OpenTK.Mathematics.Matrix4x2@)">Mult(in Matrix4, in Matrix4x2, out Matrix4x2)</h4>
+  <div class="markdown level1 summary"><p>Multiplies two instances.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Mult(in Matrix4 left, in Matrix4x2 right, out Matrix4x2 result)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Matrix4.html">Matrix4</a></td>
+        <td><span class="parametername">left</span></td>
+        <td><p>The left operand of the multiplication.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Matrix4x2.html">Matrix4x2</a></td>
+        <td><span class="parametername">right</span></td>
+        <td><p>The right operand of the multiplication.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Matrix4x2.html">Matrix4x2</a></td>
+        <td><span class="parametername">result</span></td>
+        <td><p>A new instance that is the result of the multiplication.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Matrix4_Mult_" data-uid="OpenTK.Mathematics.Matrix4.Mult*"></a>
+  <h4 id="OpenTK_Mathematics_Matrix4_Mult_OpenTK_Mathematics_Matrix4__OpenTK_Mathematics_Matrix4x3__OpenTK_Mathematics_Matrix4x3__" data-uid="OpenTK.Mathematics.Matrix4.Mult(OpenTK.Mathematics.Matrix4@,OpenTK.Mathematics.Matrix4x3@,OpenTK.Mathematics.Matrix4x3@)">Mult(in Matrix4, in Matrix4x3, out Matrix4x3)</h4>
+  <div class="markdown level1 summary"><p>Multiplies two instances.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Mult(in Matrix4 left, in Matrix4x3 right, out Matrix4x3 result)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Matrix4.html">Matrix4</a></td>
+        <td><span class="parametername">left</span></td>
+        <td><p>The left operand of the multiplication.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Matrix4x3.html">Matrix4x3</a></td>
+        <td><span class="parametername">right</span></td>
+        <td><p>The right operand of the multiplication.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Matrix4x3.html">Matrix4x3</a></td>
         <td><span class="parametername">result</span></td>
         <td><p>A new instance that is the result of the multiplication.</p>
 </td>
@@ -4223,6 +4669,92 @@ public static bool operator ==(Matrix4 left, Matrix4 right)</code></pre>
       </tr>
     </tbody>
   </table>
+  <a id="OpenTK_Mathematics_Matrix4_op_Explicit_" data-uid="OpenTK.Mathematics.Matrix4.op_Explicit*"></a>
+  <h4 id="OpenTK_Mathematics_Matrix4_op_Explicit_OpenTK_Mathematics_Matrix4__System_Numerics_Matrix4x4" data-uid="OpenTK.Mathematics.Matrix4.op_Explicit(OpenTK.Mathematics.Matrix4)~System.Numerics.Matrix4x4">explicit operator Matrix4x4(Matrix4)</h4>
+  <div class="markdown level1 summary"><p>Converts <a class="xref" href="OpenTK.Mathematics.Matrix4.html">Matrix4</a> to <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.matrix4x4">Matrix4x4</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static explicit operator Matrix4x4(Matrix4 mat)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Matrix4.html">Matrix4</a></td>
+        <td><span class="parametername">mat</span></td>
+        <td><p>The <a class="xref" href="OpenTK.Mathematics.Matrix4.html">Matrix4</a> to cast.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.matrix4x4">Matrix4x4</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Matrix4_op_Explicit_" data-uid="OpenTK.Mathematics.Matrix4.op_Explicit*"></a>
+  <h4 id="OpenTK_Mathematics_Matrix4_op_Explicit_System_Numerics_Matrix4x4__OpenTK_Mathematics_Matrix4" data-uid="OpenTK.Mathematics.Matrix4.op_Explicit(System.Numerics.Matrix4x4)~OpenTK.Mathematics.Matrix4">explicit operator Matrix4(Matrix4x4)</h4>
+  <div class="markdown level1 summary"><p>Converts <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.matrix4x4">Matrix4x4</a> to <a class="xref" href="OpenTK.Mathematics.Matrix4.html">Matrix4</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static explicit operator Matrix4(Matrix4x4 mat)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.matrix4x4">Matrix4x4</a></td>
+        <td><span class="parametername">mat</span></td>
+        <td><p>The <a class="xref" href="OpenTK.Mathematics.Matrix4.html">Matrix4</a> to cast.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Matrix4.html">Matrix4</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <a id="OpenTK_Mathematics_Matrix4_op_Inequality_" data-uid="OpenTK.Mathematics.Matrix4.op_Inequality*"></a>
   <h4 id="OpenTK_Mathematics_Matrix4_op_Inequality_OpenTK_Mathematics_Matrix4_OpenTK_Mathematics_Matrix4_" data-uid="OpenTK.Mathematics.Matrix4.op_Inequality(OpenTK.Mathematics.Matrix4,OpenTK.Mathematics.Matrix4)">operator !=(Matrix4, Matrix4)</h4>
   <div class="markdown level1 summary"><p>Compares two instances for inequality.</p>
@@ -4319,6 +4851,156 @@ public static Matrix4 operator *(Matrix4 left, Matrix4 right)</code></pre>
       <tr>
         <td><a class="xref" href="OpenTK.Mathematics.Matrix4.html">Matrix4</a></td>
         <td><p>A new Matrix4 which holds the result of the multiplication.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Matrix4_op_Multiply_" data-uid="OpenTK.Mathematics.Matrix4.op_Multiply*"></a>
+  <h4 id="OpenTK_Mathematics_Matrix4_op_Multiply_OpenTK_Mathematics_Matrix4_OpenTK_Mathematics_Matrix4x2_" data-uid="OpenTK.Mathematics.Matrix4.op_Multiply(OpenTK.Mathematics.Matrix4,OpenTK.Mathematics.Matrix4x2)">operator *(Matrix4, Matrix4x2)</h4>
+  <div class="markdown level1 summary"><p>Matrix multiplication.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static Matrix4x2 operator *(Matrix4 left, Matrix4x2 right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Matrix4.html">Matrix4</a></td>
+        <td><span class="parametername">left</span></td>
+        <td><p>left-hand operand.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Matrix4x2.html">Matrix4x2</a></td>
+        <td><span class="parametername">right</span></td>
+        <td><p>right-hand operand.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Matrix4x2.html">Matrix4x2</a></td>
+        <td><p>A new Matrix4x2 which holds the result of the multiplication.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Matrix4_op_Multiply_" data-uid="OpenTK.Mathematics.Matrix4.op_Multiply*"></a>
+  <h4 id="OpenTK_Mathematics_Matrix4_op_Multiply_OpenTK_Mathematics_Matrix4_OpenTK_Mathematics_Matrix4x3_" data-uid="OpenTK.Mathematics.Matrix4.op_Multiply(OpenTK.Mathematics.Matrix4,OpenTK.Mathematics.Matrix4x3)">operator *(Matrix4, Matrix4x3)</h4>
+  <div class="markdown level1 summary"><p>Matrix multiplication.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static Matrix4x3 operator *(Matrix4 left, Matrix4x3 right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Matrix4.html">Matrix4</a></td>
+        <td><span class="parametername">left</span></td>
+        <td><p>left-hand operand.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Matrix4x3.html">Matrix4x3</a></td>
+        <td><span class="parametername">right</span></td>
+        <td><p>right-hand operand.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Matrix4x3.html">Matrix4x3</a></td>
+        <td><p>A new Matrix4x3 which holds the result of the multiplication.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Matrix4_op_Multiply_" data-uid="OpenTK.Mathematics.Matrix4.op_Multiply*"></a>
+  <h4 id="OpenTK_Mathematics_Matrix4_op_Multiply_OpenTK_Mathematics_Matrix4_OpenTK_Mathematics_Vector4_" data-uid="OpenTK.Mathematics.Matrix4.op_Multiply(OpenTK.Mathematics.Matrix4,OpenTK.Mathematics.Vector4)">operator *(Matrix4, Vector4)</h4>
+  <div class="markdown level1 summary"><p>Transform a Vector by the given Matrix using right-handed notation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static Vector4 operator *(Matrix4 mat, Vector4 vec)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Matrix4.html">Matrix4</a></td>
+        <td><span class="parametername">mat</span></td>
+        <td><p>The desired transformation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector4.html">Vector4</a></td>
+        <td><span class="parametername">vec</span></td>
+        <td><p>The vector to transform.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector4.html">Vector4</a></td>
+        <td><p>The transformed vector.</p>
 </td>
       </tr>
     </tbody>
@@ -4429,6 +5111,36 @@ public static Matrix4 operator -(Matrix4 left, Matrix4 right)</code></pre>
   </div>
   <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iformattable">IFormattable</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.imultiplyoperators-3">IMultiplyOperators&lt;TSelf, TOther, TResult&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.imultiplyoperators-3">IMultiplyOperators&lt;TSelf, TOther, TResult&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.imultiplyoperators-3">IMultiplyOperators&lt;TSelf, TOther, TResult&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.imultiplyoperators-3">IMultiplyOperators&lt;TSelf, TOther, TResult&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.imultiplyoperators-3">IMultiplyOperators&lt;TSelf, TOther, TResult&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.iadditionoperators-3">IAdditionOperators&lt;TSelf, TOther, TResult&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.isubtractionoperators-3">ISubtractionOperators&lt;TSelf, TOther, TResult&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.iequalityoperators-3">IEqualityOperators&lt;TSelf, TOther, TResult&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.iadditiveidentity-2">IAdditiveIdentity&lt;TSelf, TResult&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.imultiplicativeidentity-2">IMultiplicativeIdentity&lt;TSelf, TResult&gt;</a>
   </div>
   <h3 id="seealso">See Also</h3>
   <div class="seealso">

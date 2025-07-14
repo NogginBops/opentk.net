@@ -1,0 +1,3043 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Struct Vector4b | OpenTK </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Struct Vector4b | OpenTK ">
+    
+    <meta name="description" content="Represents a 2D boolean vector.">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+    <meta name="author" content="The Open Toolkit Project">
+    <meta property="og:image" content="https://opentk.net/otkBig.png">
+    <meta property="og:image:width" content="142">
+    <meta property="og:image:height" content="50">
+    <meta property="og:site_name" content="OpenTK">
+    <meta property="og:title" content="Struct Vector4b | OpenTK  - OpenTK">
+    <meta name="theme-color" content="#ffffff">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" src="../otkBig.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="OpenTK.Mathematics.Vector4b">
+
+
+
+  <h1 id="OpenTK_Mathematics_Vector4b" data-uid="OpenTK.Mathematics.Vector4b" class="text-break">Struct Vector4b</h1>
+  <div class="markdown level0 summary"><p>Represents a 2D boolean vector.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="OpenTK.Mathematics.Vector4b.html">Vector4b</a>&gt;</div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="OpenTK.html">OpenTK</a>.<a class="xref" href="OpenTK.Mathematics.html">Mathematics</a></h6>
+  <h6><strong>Assembly</strong>: OpenTK.Mathematics.dll</h6>
+  <h5 id="OpenTK_Mathematics_Vector4b_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Serializable]
+public struct Vector4b : IEquatable&lt;Vector4b&gt;</code></pre>
+  </div>
+  <h5 id="OpenTK_Mathematics_Vector4b_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>As bools in C# are not blittable this type is not necessarily suitable for interoperation with unmanaged code.</p>
+</div>
+  <h3 id="constructors">Constructors
+</h3>
+  <a id="OpenTK_Mathematics_Vector4b__ctor_" data-uid="OpenTK.Mathematics.Vector4b.#ctor*"></a>
+  <h4 id="OpenTK_Mathematics_Vector4b__ctor_OpenTK_Mathematics_Vector2b_System_Boolean_System_Boolean_" data-uid="OpenTK.Mathematics.Vector4b.#ctor(OpenTK.Mathematics.Vector2b,System.Boolean,System.Boolean)">Vector4b(Vector2b, bool, bool)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="OpenTK.Mathematics.Vector4b.html">Vector4b</a> struct.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector4b(Vector2b xy, bool z = false, bool w = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector2b.html">Vector2b</a></td>
+        <td><span class="parametername">xy</span></td>
+        <td><p>The x and y components of the <a class="xref" href="OpenTK.Mathematics.Vector4b.html">Vector4b</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">z</span></td>
+        <td><p>The z component of the <a class="xref" href="OpenTK.Mathematics.Vector4b.html">Vector4b</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">w</span></td>
+        <td><p>The w component of the <a class="xref" href="OpenTK.Mathematics.Vector4b.html">Vector4b</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Vector4b__ctor_" data-uid="OpenTK.Mathematics.Vector4b.#ctor*"></a>
+  <h4 id="OpenTK_Mathematics_Vector4b__ctor_OpenTK_Mathematics_Vector3b_System_Boolean_" data-uid="OpenTK.Mathematics.Vector4b.#ctor(OpenTK.Mathematics.Vector3b,System.Boolean)">Vector4b(Vector3b, bool)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="OpenTK.Mathematics.Vector4b.html">Vector4b</a> struct.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector4b(Vector3b xyz, bool w = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector3b.html">Vector3b</a></td>
+        <td><span class="parametername">xyz</span></td>
+        <td><p>The x, y, and z components of the <a class="xref" href="OpenTK.Mathematics.Vector4b.html">Vector4b</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">w</span></td>
+        <td><p>The w component of the <a class="xref" href="OpenTK.Mathematics.Vector4b.html">Vector4b</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Vector4b__ctor_" data-uid="OpenTK.Mathematics.Vector4b.#ctor*"></a>
+  <h4 id="OpenTK_Mathematics_Vector4b__ctor_OpenTK_Mathematics_Vector4b_" data-uid="OpenTK.Mathematics.Vector4b.#ctor(OpenTK.Mathematics.Vector4b)">Vector4b(Vector4b)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="OpenTK.Mathematics.Vector4b.html">Vector4b</a> struct.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector4b(Vector4b xyzw)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector4b.html">Vector4b</a></td>
+        <td><span class="parametername">xyzw</span></td>
+        <td><p>The x, y, z, and w components of the <a class="xref" href="OpenTK.Mathematics.Vector4b.html">Vector4b</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Vector4b__ctor_" data-uid="OpenTK.Mathematics.Vector4b.#ctor*"></a>
+  <h4 id="OpenTK_Mathematics_Vector4b__ctor_System_Boolean_" data-uid="OpenTK.Mathematics.Vector4b.#ctor(System.Boolean)">Vector4b(bool)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="OpenTK.Mathematics.Vector4b.html">Vector4b</a> struct.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector4b(bool value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value that will initialize this instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Vector4b__ctor_" data-uid="OpenTK.Mathematics.Vector4b.#ctor*"></a>
+  <h4 id="OpenTK_Mathematics_Vector4b__ctor_System_Boolean_System_Boolean_System_Boolean_System_Boolean_" data-uid="OpenTK.Mathematics.Vector4b.#ctor(System.Boolean,System.Boolean,System.Boolean,System.Boolean)">Vector4b(bool, bool, bool, bool)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="OpenTK.Mathematics.Vector4b.html">Vector4b</a> struct.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector4b(bool x, bool y, bool z, bool w)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">x</span></td>
+        <td><p>The x component of the <a class="xref" href="OpenTK.Mathematics.Vector4b.html">Vector4b</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">y</span></td>
+        <td><p>The y component of the <a class="xref" href="OpenTK.Mathematics.Vector4b.html">Vector4b</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">z</span></td>
+        <td><p>The z component of the <a class="xref" href="OpenTK.Mathematics.Vector4b.html">Vector4b</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">w</span></td>
+        <td><p>The w component of the <a class="xref" href="OpenTK.Mathematics.Vector4b.html">Vector4b</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+</h3>
+  <h4 id="OpenTK_Mathematics_Vector4b_False" data-uid="OpenTK.Mathematics.Vector4b.False">False</h4>
+  <div class="markdown level1 summary"><p>Defines an instance with all components set to <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Vector4b False</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector4b.html">Vector4b</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Mathematics_Vector4b_True" data-uid="OpenTK.Mathematics.Vector4b.True">True</h4>
+  <div class="markdown level1 summary"><p>Defines an instance with all components set to <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Vector4b True</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector4b.html">Vector4b</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Mathematics_Vector4b_UnitW" data-uid="OpenTK.Mathematics.Vector4b.UnitW">UnitW</h4>
+  <div class="markdown level1 summary"><p>Defines an instance with only the _W components set to <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Vector4b UnitW</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector4b.html">Vector4b</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Mathematics_Vector4b_UnitX" data-uid="OpenTK.Mathematics.Vector4b.UnitX">UnitX</h4>
+  <div class="markdown level1 summary"><p>Defines an instance with only the X components set to <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Vector4b UnitX</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector4b.html">Vector4b</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Mathematics_Vector4b_UnitY" data-uid="OpenTK.Mathematics.Vector4b.UnitY">UnitY</h4>
+  <div class="markdown level1 summary"><p>Defines an instance with only the Y components set to <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Vector4b UnitY</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector4b.html">Vector4b</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Mathematics_Vector4b_UnitZ" data-uid="OpenTK.Mathematics.Vector4b.UnitZ">UnitZ</h4>
+  <div class="markdown level1 summary"><p>Defines an instance with only the Z components set to <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Vector4b UnitZ</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector4b.html">Vector4b</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Mathematics_Vector4b_W" data-uid="OpenTK.Mathematics.Vector4b.W">W</h4>
+  <div class="markdown level1 summary"><p>The W component of the vector.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool W</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Mathematics_Vector4b_X" data-uid="OpenTK.Mathematics.Vector4b.X">X</h4>
+  <div class="markdown level1 summary"><p>The X component of the vector.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool X</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Mathematics_Vector4b_Y" data-uid="OpenTK.Mathematics.Vector4b.Y">Y</h4>
+  <div class="markdown level1 summary"><p>The Y component of the vector.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Y</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="OpenTK_Mathematics_Vector4b_Z" data-uid="OpenTK.Mathematics.Vector4b.Z">Z</h4>
+  <div class="markdown level1 summary"><p>The Z component of the vector.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Z</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+  <a id="OpenTK_Mathematics_Vector4b_Item_" data-uid="OpenTK.Mathematics.Vector4b.Item*"></a>
+  <h4 id="OpenTK_Mathematics_Vector4b_Item_System_Int32_" data-uid="OpenTK.Mathematics.Vector4b.Item(System.Int32)">this[int]</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the value at the index of the vector.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool this[int index] { readonly get; set; }</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>The index of the component from the vector.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.indexoutofrangeexception">IndexOutOfRangeException</a></td>
+        <td><p>Thrown if the index is less than 0 or greater than 3.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Vector4b_Wx_" data-uid="OpenTK.Mathematics.Vector4b.Wx*"></a>
+  <h4 id="OpenTK_Mathematics_Vector4b_Wx" data-uid="OpenTK.Mathematics.Vector4b.Wx">Wx</h4>
+  <div class="markdown level1 summary"><p>Gets or sets an OpenTK.Vector2b with the W and X components of this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2b Wx { readonly get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector2b.html">Vector2b</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Vector4b_Wxy_" data-uid="OpenTK.Mathematics.Vector4b.Wxy*"></a>
+  <h4 id="OpenTK_Mathematics_Vector4b_Wxy" data-uid="OpenTK.Mathematics.Vector4b.Wxy">Wxy</h4>
+  <div class="markdown level1 summary"><p>Gets or sets an OpenTK.Vector3b with the W, X, and Y components of this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3b Wxy { readonly get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector3b.html">Vector3b</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Vector4b_Wxyz_" data-uid="OpenTK.Mathematics.Vector4b.Wxyz*"></a>
+  <h4 id="OpenTK_Mathematics_Vector4b_Wxyz" data-uid="OpenTK.Mathematics.Vector4b.Wxyz">Wxyz</h4>
+  <div class="markdown level1 summary"><p>Gets or sets an OpenTK.Vector4b with the W, X, Y, and Z components of this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector4b Wxyz { readonly get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector4b.html">Vector4b</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Vector4b_Wxz_" data-uid="OpenTK.Mathematics.Vector4b.Wxz*"></a>
+  <h4 id="OpenTK_Mathematics_Vector4b_Wxz" data-uid="OpenTK.Mathematics.Vector4b.Wxz">Wxz</h4>
+  <div class="markdown level1 summary"><p>Gets or sets an OpenTK.Vector3b with the W, X, and Z components of this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3b Wxz { readonly get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector3b.html">Vector3b</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Vector4b_Wxzy_" data-uid="OpenTK.Mathematics.Vector4b.Wxzy*"></a>
+  <h4 id="OpenTK_Mathematics_Vector4b_Wxzy" data-uid="OpenTK.Mathematics.Vector4b.Wxzy">Wxzy</h4>
+  <div class="markdown level1 summary"><p>Gets or sets an OpenTK.Vector4b with the W, X, Z, and Y components of this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector4b Wxzy { readonly get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector4b.html">Vector4b</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Vector4b_Wy_" data-uid="OpenTK.Mathematics.Vector4b.Wy*"></a>
+  <h4 id="OpenTK_Mathematics_Vector4b_Wy" data-uid="OpenTK.Mathematics.Vector4b.Wy">Wy</h4>
+  <div class="markdown level1 summary"><p>Gets or sets an OpenTK.Vector2b with the W and Y components of this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2b Wy { readonly get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector2b.html">Vector2b</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Vector4b_Wyx_" data-uid="OpenTK.Mathematics.Vector4b.Wyx*"></a>
+  <h4 id="OpenTK_Mathematics_Vector4b_Wyx" data-uid="OpenTK.Mathematics.Vector4b.Wyx">Wyx</h4>
+  <div class="markdown level1 summary"><p>Gets or sets an OpenTK.Vector3b with the W, Y, and X components of this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3b Wyx { readonly get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector3b.html">Vector3b</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Vector4b_Wyxz_" data-uid="OpenTK.Mathematics.Vector4b.Wyxz*"></a>
+  <h4 id="OpenTK_Mathematics_Vector4b_Wyxz" data-uid="OpenTK.Mathematics.Vector4b.Wyxz">Wyxz</h4>
+  <div class="markdown level1 summary"><p>Gets or sets an OpenTK.Vector4b with the W, Y, X, and Z components of this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector4b Wyxz { readonly get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector4b.html">Vector4b</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Vector4b_Wyz_" data-uid="OpenTK.Mathematics.Vector4b.Wyz*"></a>
+  <h4 id="OpenTK_Mathematics_Vector4b_Wyz" data-uid="OpenTK.Mathematics.Vector4b.Wyz">Wyz</h4>
+  <div class="markdown level1 summary"><p>Gets or sets an OpenTK.Vector3b with the W, Y, and Z components of this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3b Wyz { readonly get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector3b.html">Vector3b</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Vector4b_Wyzx_" data-uid="OpenTK.Mathematics.Vector4b.Wyzx*"></a>
+  <h4 id="OpenTK_Mathematics_Vector4b_Wyzx" data-uid="OpenTK.Mathematics.Vector4b.Wyzx">Wyzx</h4>
+  <div class="markdown level1 summary"><p>Gets or sets an OpenTK.Vector4b with the W, Y, Z, and X components of this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector4b Wyzx { readonly get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector4b.html">Vector4b</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Vector4b_Wz_" data-uid="OpenTK.Mathematics.Vector4b.Wz*"></a>
+  <h4 id="OpenTK_Mathematics_Vector4b_Wz" data-uid="OpenTK.Mathematics.Vector4b.Wz">Wz</h4>
+  <div class="markdown level1 summary"><p>Gets or sets an OpenTK.Vector2b with the W and Z components of this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2b Wz { readonly get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector2b.html">Vector2b</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Vector4b_Wzx_" data-uid="OpenTK.Mathematics.Vector4b.Wzx*"></a>
+  <h4 id="OpenTK_Mathematics_Vector4b_Wzx" data-uid="OpenTK.Mathematics.Vector4b.Wzx">Wzx</h4>
+  <div class="markdown level1 summary"><p>Gets or sets an OpenTK.Vector3b with the W, Z, and X components of this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3b Wzx { readonly get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector3b.html">Vector3b</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Vector4b_Wzxy_" data-uid="OpenTK.Mathematics.Vector4b.Wzxy*"></a>
+  <h4 id="OpenTK_Mathematics_Vector4b_Wzxy" data-uid="OpenTK.Mathematics.Vector4b.Wzxy">Wzxy</h4>
+  <div class="markdown level1 summary"><p>Gets or sets an OpenTK.Vector4b with the W, Z, X, and Y components of this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector4b Wzxy { readonly get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector4b.html">Vector4b</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Vector4b_Wzy_" data-uid="OpenTK.Mathematics.Vector4b.Wzy*"></a>
+  <h4 id="OpenTK_Mathematics_Vector4b_Wzy" data-uid="OpenTK.Mathematics.Vector4b.Wzy">Wzy</h4>
+  <div class="markdown level1 summary"><p>Gets or sets an OpenTK.Vector3b with the W, Z, and Y components of this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3b Wzy { readonly get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector3b.html">Vector3b</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Vector4b_Wzyw_" data-uid="OpenTK.Mathematics.Vector4b.Wzyw*"></a>
+  <h4 id="OpenTK_Mathematics_Vector4b_Wzyw" data-uid="OpenTK.Mathematics.Vector4b.Wzyw">Wzyw</h4>
+  <div class="markdown level1 summary"><p>Gets or sets an OpenTK.Vector4b with the W, Z, Y, and W components of this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector4b Wzyw { readonly get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector4b.html">Vector4b</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Vector4b_Wzyx_" data-uid="OpenTK.Mathematics.Vector4b.Wzyx*"></a>
+  <h4 id="OpenTK_Mathematics_Vector4b_Wzyx" data-uid="OpenTK.Mathematics.Vector4b.Wzyx">Wzyx</h4>
+  <div class="markdown level1 summary"><p>Gets or sets an OpenTK.Vector4b with the W, Z, Y, and X components of this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector4b Wzyx { readonly get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector4b.html">Vector4b</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Vector4b_Xw_" data-uid="OpenTK.Mathematics.Vector4b.Xw*"></a>
+  <h4 id="OpenTK_Mathematics_Vector4b_Xw" data-uid="OpenTK.Mathematics.Vector4b.Xw">Xw</h4>
+  <div class="markdown level1 summary"><p>Gets or sets an OpenTK.Vector2b with the X and W components of this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2b Xw { readonly get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector2b.html">Vector2b</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Vector4b_Xwy_" data-uid="OpenTK.Mathematics.Vector4b.Xwy*"></a>
+  <h4 id="OpenTK_Mathematics_Vector4b_Xwy" data-uid="OpenTK.Mathematics.Vector4b.Xwy">Xwy</h4>
+  <div class="markdown level1 summary"><p>Gets or sets an OpenTK.Vector3b with the X, W, and Y components of this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3b Xwy { readonly get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector3b.html">Vector3b</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Vector4b_Xwyz_" data-uid="OpenTK.Mathematics.Vector4b.Xwyz*"></a>
+  <h4 id="OpenTK_Mathematics_Vector4b_Xwyz" data-uid="OpenTK.Mathematics.Vector4b.Xwyz">Xwyz</h4>
+  <div class="markdown level1 summary"><p>Gets or sets an OpenTK.Vector4b with the X, W, Y, and Z components of this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector4b Xwyz { readonly get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector4b.html">Vector4b</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Vector4b_Xwz_" data-uid="OpenTK.Mathematics.Vector4b.Xwz*"></a>
+  <h4 id="OpenTK_Mathematics_Vector4b_Xwz" data-uid="OpenTK.Mathematics.Vector4b.Xwz">Xwz</h4>
+  <div class="markdown level1 summary"><p>Gets or sets an OpenTK.Vector3b with the X, W, and Z components of this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3b Xwz { readonly get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector3b.html">Vector3b</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Vector4b_Xwzy_" data-uid="OpenTK.Mathematics.Vector4b.Xwzy*"></a>
+  <h4 id="OpenTK_Mathematics_Vector4b_Xwzy" data-uid="OpenTK.Mathematics.Vector4b.Xwzy">Xwzy</h4>
+  <div class="markdown level1 summary"><p>Gets or sets an OpenTK.Vector4b with the X, W, Z, and Y components of this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector4b Xwzy { readonly get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector4b.html">Vector4b</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Vector4b_Xy_" data-uid="OpenTK.Mathematics.Vector4b.Xy*"></a>
+  <h4 id="OpenTK_Mathematics_Vector4b_Xy" data-uid="OpenTK.Mathematics.Vector4b.Xy">Xy</h4>
+  <div class="markdown level1 summary"><p>Gets or sets an OpenTK.Vector2b with the X and Y components of this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2b Xy { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector2b.html">Vector2b</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Vector4b_Xyw_" data-uid="OpenTK.Mathematics.Vector4b.Xyw*"></a>
+  <h4 id="OpenTK_Mathematics_Vector4b_Xyw" data-uid="OpenTK.Mathematics.Vector4b.Xyw">Xyw</h4>
+  <div class="markdown level1 summary"><p>Gets or sets an OpenTK.Vector3b with the X, Y, and Z components of this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3b Xyw { readonly get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector3b.html">Vector3b</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Vector4b_Xywz_" data-uid="OpenTK.Mathematics.Vector4b.Xywz*"></a>
+  <h4 id="OpenTK_Mathematics_Vector4b_Xywz" data-uid="OpenTK.Mathematics.Vector4b.Xywz">Xywz</h4>
+  <div class="markdown level1 summary"><p>Gets or sets an OpenTK.Vector4b with the X, Y, W, and Z components of this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector4b Xywz { readonly get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector4b.html">Vector4b</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Vector4b_Xyz_" data-uid="OpenTK.Mathematics.Vector4b.Xyz*"></a>
+  <h4 id="OpenTK_Mathematics_Vector4b_Xyz" data-uid="OpenTK.Mathematics.Vector4b.Xyz">Xyz</h4>
+  <div class="markdown level1 summary"><p>Gets or sets an OpenTK.Vector3b with the X, Y, and Z components of this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3b Xyz { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector3b.html">Vector3b</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Vector4b_Xz_" data-uid="OpenTK.Mathematics.Vector4b.Xz*"></a>
+  <h4 id="OpenTK_Mathematics_Vector4b_Xz" data-uid="OpenTK.Mathematics.Vector4b.Xz">Xz</h4>
+  <div class="markdown level1 summary"><p>Gets or sets an OpenTK.Vector2b with the X and Z components of this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2b Xz { readonly get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector2b.html">Vector2b</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Vector4b_Xzw_" data-uid="OpenTK.Mathematics.Vector4b.Xzw*"></a>
+  <h4 id="OpenTK_Mathematics_Vector4b_Xzw" data-uid="OpenTK.Mathematics.Vector4b.Xzw">Xzw</h4>
+  <div class="markdown level1 summary"><p>Gets or sets an OpenTK.Vector3b with the X, Z, and W components of this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3b Xzw { readonly get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector3b.html">Vector3b</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Vector4b_Xzwy_" data-uid="OpenTK.Mathematics.Vector4b.Xzwy*"></a>
+  <h4 id="OpenTK_Mathematics_Vector4b_Xzwy" data-uid="OpenTK.Mathematics.Vector4b.Xzwy">Xzwy</h4>
+  <div class="markdown level1 summary"><p>Gets or sets an OpenTK.Vector4b with the X, Z, W, and Y components of this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector4b Xzwy { readonly get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector4b.html">Vector4b</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Vector4b_Xzy_" data-uid="OpenTK.Mathematics.Vector4b.Xzy*"></a>
+  <h4 id="OpenTK_Mathematics_Vector4b_Xzy" data-uid="OpenTK.Mathematics.Vector4b.Xzy">Xzy</h4>
+  <div class="markdown level1 summary"><p>Gets or sets an OpenTK.Vector3b with the X, Z, and Y components of this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3b Xzy { readonly get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector3b.html">Vector3b</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Vector4b_Xzyw_" data-uid="OpenTK.Mathematics.Vector4b.Xzyw*"></a>
+  <h4 id="OpenTK_Mathematics_Vector4b_Xzyw" data-uid="OpenTK.Mathematics.Vector4b.Xzyw">Xzyw</h4>
+  <div class="markdown level1 summary"><p>Gets or sets an OpenTK.Vector4b with the X, Z, Y, and W components of this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector4b Xzyw { readonly get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector4b.html">Vector4b</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Vector4b_Yw_" data-uid="OpenTK.Mathematics.Vector4b.Yw*"></a>
+  <h4 id="OpenTK_Mathematics_Vector4b_Yw" data-uid="OpenTK.Mathematics.Vector4b.Yw">Yw</h4>
+  <div class="markdown level1 summary"><p>Gets or sets an OpenTK.Vector2b with the Y and W components of this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2b Yw { readonly get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector2b.html">Vector2b</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Vector4b_Ywx_" data-uid="OpenTK.Mathematics.Vector4b.Ywx*"></a>
+  <h4 id="OpenTK_Mathematics_Vector4b_Ywx" data-uid="OpenTK.Mathematics.Vector4b.Ywx">Ywx</h4>
+  <div class="markdown level1 summary"><p>Gets or sets an OpenTK.Vector3b with the Y, W, and X components of this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3b Ywx { readonly get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector3b.html">Vector3b</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Vector4b_Ywxz_" data-uid="OpenTK.Mathematics.Vector4b.Ywxz*"></a>
+  <h4 id="OpenTK_Mathematics_Vector4b_Ywxz" data-uid="OpenTK.Mathematics.Vector4b.Ywxz">Ywxz</h4>
+  <div class="markdown level1 summary"><p>Gets or sets an OpenTK.Vector4b with the Y, W, X, and Z components of this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector4b Ywxz { readonly get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector4b.html">Vector4b</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Vector4b_Ywz_" data-uid="OpenTK.Mathematics.Vector4b.Ywz*"></a>
+  <h4 id="OpenTK_Mathematics_Vector4b_Ywz" data-uid="OpenTK.Mathematics.Vector4b.Ywz">Ywz</h4>
+  <div class="markdown level1 summary"><p>Gets or sets an OpenTK.Vector3b with the Y, W, and Z components of this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3b Ywz { readonly get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector3b.html">Vector3b</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Vector4b_Ywzx_" data-uid="OpenTK.Mathematics.Vector4b.Ywzx*"></a>
+  <h4 id="OpenTK_Mathematics_Vector4b_Ywzx" data-uid="OpenTK.Mathematics.Vector4b.Ywzx">Ywzx</h4>
+  <div class="markdown level1 summary"><p>Gets or sets an OpenTK.Vector4b with the Y, W, Z, and X components of this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector4b Ywzx { readonly get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector4b.html">Vector4b</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Vector4b_Yx_" data-uid="OpenTK.Mathematics.Vector4b.Yx*"></a>
+  <h4 id="OpenTK_Mathematics_Vector4b_Yx" data-uid="OpenTK.Mathematics.Vector4b.Yx">Yx</h4>
+  <div class="markdown level1 summary"><p>Gets or sets an OpenTK.Vector2b with the Y and X components of this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2b Yx { readonly get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector2b.html">Vector2b</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Vector4b_Yxw_" data-uid="OpenTK.Mathematics.Vector4b.Yxw*"></a>
+  <h4 id="OpenTK_Mathematics_Vector4b_Yxw" data-uid="OpenTK.Mathematics.Vector4b.Yxw">Yxw</h4>
+  <div class="markdown level1 summary"><p>Gets or sets an OpenTK.Vector3b with the Y, X, and W components of this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3b Yxw { readonly get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector3b.html">Vector3b</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Vector4b_Yxwz_" data-uid="OpenTK.Mathematics.Vector4b.Yxwz*"></a>
+  <h4 id="OpenTK_Mathematics_Vector4b_Yxwz" data-uid="OpenTK.Mathematics.Vector4b.Yxwz">Yxwz</h4>
+  <div class="markdown level1 summary"><p>Gets or sets an OpenTK.Vector4b with the Y, X, W, and Z components of this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector4b Yxwz { readonly get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector4b.html">Vector4b</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Vector4b_Yxz_" data-uid="OpenTK.Mathematics.Vector4b.Yxz*"></a>
+  <h4 id="OpenTK_Mathematics_Vector4b_Yxz" data-uid="OpenTK.Mathematics.Vector4b.Yxz">Yxz</h4>
+  <div class="markdown level1 summary"><p>Gets or sets an OpenTK.Vector3b with the Y, X, and Z components of this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3b Yxz { readonly get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector3b.html">Vector3b</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Vector4b_Yxzw_" data-uid="OpenTK.Mathematics.Vector4b.Yxzw*"></a>
+  <h4 id="OpenTK_Mathematics_Vector4b_Yxzw" data-uid="OpenTK.Mathematics.Vector4b.Yxzw">Yxzw</h4>
+  <div class="markdown level1 summary"><p>Gets or sets an OpenTK.Vector4b with the Y, X, Z, and W components of this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector4b Yxzw { readonly get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector4b.html">Vector4b</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Vector4b_Yywz_" data-uid="OpenTK.Mathematics.Vector4b.Yywz*"></a>
+  <h4 id="OpenTK_Mathematics_Vector4b_Yywz" data-uid="OpenTK.Mathematics.Vector4b.Yywz">Yywz</h4>
+  <div class="markdown level1 summary"><p>Gets or sets an OpenTK.Vector4b with the Y, Y, W, and Z components of this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector4b Yywz { readonly get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector4b.html">Vector4b</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Vector4b_Yyzw_" data-uid="OpenTK.Mathematics.Vector4b.Yyzw*"></a>
+  <h4 id="OpenTK_Mathematics_Vector4b_Yyzw" data-uid="OpenTK.Mathematics.Vector4b.Yyzw">Yyzw</h4>
+  <div class="markdown level1 summary"><p>Gets or sets an OpenTK.Vector4b with the Y, Y, Z, and W components of this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector4b Yyzw { readonly get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector4b.html">Vector4b</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Vector4b_Yz_" data-uid="OpenTK.Mathematics.Vector4b.Yz*"></a>
+  <h4 id="OpenTK_Mathematics_Vector4b_Yz" data-uid="OpenTK.Mathematics.Vector4b.Yz">Yz</h4>
+  <div class="markdown level1 summary"><p>Gets or sets an OpenTK.Vector2b with the Y and Z components of this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2b Yz { readonly get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector2b.html">Vector2b</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Vector4b_Yzw_" data-uid="OpenTK.Mathematics.Vector4b.Yzw*"></a>
+  <h4 id="OpenTK_Mathematics_Vector4b_Yzw" data-uid="OpenTK.Mathematics.Vector4b.Yzw">Yzw</h4>
+  <div class="markdown level1 summary"><p>Gets or sets an OpenTK.Vector3b with the Y, Z, and W components of this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3b Yzw { readonly get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector3b.html">Vector3b</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Vector4b_Yzwx_" data-uid="OpenTK.Mathematics.Vector4b.Yzwx*"></a>
+  <h4 id="OpenTK_Mathematics_Vector4b_Yzwx" data-uid="OpenTK.Mathematics.Vector4b.Yzwx">Yzwx</h4>
+  <div class="markdown level1 summary"><p>Gets or sets an OpenTK.Vector4b with the Y, Z, W, and X components of this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector4b Yzwx { readonly get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector4b.html">Vector4b</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Vector4b_Yzx_" data-uid="OpenTK.Mathematics.Vector4b.Yzx*"></a>
+  <h4 id="OpenTK_Mathematics_Vector4b_Yzx" data-uid="OpenTK.Mathematics.Vector4b.Yzx">Yzx</h4>
+  <div class="markdown level1 summary"><p>Gets or sets an OpenTK.Vector3b with the Y, Z, and X components of this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3b Yzx { readonly get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector3b.html">Vector3b</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Vector4b_Yzxw_" data-uid="OpenTK.Mathematics.Vector4b.Yzxw*"></a>
+  <h4 id="OpenTK_Mathematics_Vector4b_Yzxw" data-uid="OpenTK.Mathematics.Vector4b.Yzxw">Yzxw</h4>
+  <div class="markdown level1 summary"><p>Gets or sets an OpenTK.Vector4b with the Y, Z, X, and W components of this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector4b Yzxw { readonly get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector4b.html">Vector4b</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Vector4b_Zw_" data-uid="OpenTK.Mathematics.Vector4b.Zw*"></a>
+  <h4 id="OpenTK_Mathematics_Vector4b_Zw" data-uid="OpenTK.Mathematics.Vector4b.Zw">Zw</h4>
+  <div class="markdown level1 summary"><p>Gets or sets an OpenTK.Vector2b with the Z and W components of this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2b Zw { readonly get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector2b.html">Vector2b</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Vector4b_Zwx_" data-uid="OpenTK.Mathematics.Vector4b.Zwx*"></a>
+  <h4 id="OpenTK_Mathematics_Vector4b_Zwx" data-uid="OpenTK.Mathematics.Vector4b.Zwx">Zwx</h4>
+  <div class="markdown level1 summary"><p>Gets or sets an OpenTK.Vector3b with the Z, W, and X components of this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3b Zwx { readonly get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector3b.html">Vector3b</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Vector4b_Zwxy_" data-uid="OpenTK.Mathematics.Vector4b.Zwxy*"></a>
+  <h4 id="OpenTK_Mathematics_Vector4b_Zwxy" data-uid="OpenTK.Mathematics.Vector4b.Zwxy">Zwxy</h4>
+  <div class="markdown level1 summary"><p>Gets or sets an OpenTK.Vector4b with the Z, W, X, and Y components of this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector4b Zwxy { readonly get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector4b.html">Vector4b</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Vector4b_Zwy_" data-uid="OpenTK.Mathematics.Vector4b.Zwy*"></a>
+  <h4 id="OpenTK_Mathematics_Vector4b_Zwy" data-uid="OpenTK.Mathematics.Vector4b.Zwy">Zwy</h4>
+  <div class="markdown level1 summary"><p>Gets or sets an OpenTK.Vector3b with the Z, W, and Y components of this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3b Zwy { readonly get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector3b.html">Vector3b</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Vector4b_Zwyx_" data-uid="OpenTK.Mathematics.Vector4b.Zwyx*"></a>
+  <h4 id="OpenTK_Mathematics_Vector4b_Zwyx" data-uid="OpenTK.Mathematics.Vector4b.Zwyx">Zwyx</h4>
+  <div class="markdown level1 summary"><p>Gets or sets an OpenTK.Vector4b with the Z, W, Y, and X components of this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector4b Zwyx { readonly get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector4b.html">Vector4b</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Vector4b_Zwzy_" data-uid="OpenTK.Mathematics.Vector4b.Zwzy*"></a>
+  <h4 id="OpenTK_Mathematics_Vector4b_Zwzy" data-uid="OpenTK.Mathematics.Vector4b.Zwzy">Zwzy</h4>
+  <div class="markdown level1 summary"><p>Gets or sets an OpenTK.Vector4b with the Z, W, Z, and Y components of this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector4b Zwzy { readonly get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector4b.html">Vector4b</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Vector4b_Zx_" data-uid="OpenTK.Mathematics.Vector4b.Zx*"></a>
+  <h4 id="OpenTK_Mathematics_Vector4b_Zx" data-uid="OpenTK.Mathematics.Vector4b.Zx">Zx</h4>
+  <div class="markdown level1 summary"><p>Gets or sets an OpenTK.Vector2b with the Z and X components of this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2b Zx { readonly get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector2b.html">Vector2b</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Vector4b_Zxw_" data-uid="OpenTK.Mathematics.Vector4b.Zxw*"></a>
+  <h4 id="OpenTK_Mathematics_Vector4b_Zxw" data-uid="OpenTK.Mathematics.Vector4b.Zxw">Zxw</h4>
+  <div class="markdown level1 summary"><p>Gets or sets an OpenTK.Vector3b with the Z, X, and W components of this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3b Zxw { readonly get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector3b.html">Vector3b</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Vector4b_Zxwy_" data-uid="OpenTK.Mathematics.Vector4b.Zxwy*"></a>
+  <h4 id="OpenTK_Mathematics_Vector4b_Zxwy" data-uid="OpenTK.Mathematics.Vector4b.Zxwy">Zxwy</h4>
+  <div class="markdown level1 summary"><p>Gets or sets an OpenTK.Vector4b with the Z, X, W, and Y components of this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector4b Zxwy { readonly get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector4b.html">Vector4b</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Vector4b_Zxy_" data-uid="OpenTK.Mathematics.Vector4b.Zxy*"></a>
+  <h4 id="OpenTK_Mathematics_Vector4b_Zxy" data-uid="OpenTK.Mathematics.Vector4b.Zxy">Zxy</h4>
+  <div class="markdown level1 summary"><p>Gets or sets an OpenTK.Vector3b with the Z, X, and Y components of this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3b Zxy { readonly get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector3b.html">Vector3b</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Vector4b_Zxyw_" data-uid="OpenTK.Mathematics.Vector4b.Zxyw*"></a>
+  <h4 id="OpenTK_Mathematics_Vector4b_Zxyw" data-uid="OpenTK.Mathematics.Vector4b.Zxyw">Zxyw</h4>
+  <div class="markdown level1 summary"><p>Gets or sets an OpenTK.Vector4b with the Z, X, Y, and Z components of this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector4b Zxyw { readonly get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector4b.html">Vector4b</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Vector4b_Zy_" data-uid="OpenTK.Mathematics.Vector4b.Zy*"></a>
+  <h4 id="OpenTK_Mathematics_Vector4b_Zy" data-uid="OpenTK.Mathematics.Vector4b.Zy">Zy</h4>
+  <div class="markdown level1 summary"><p>Gets or sets an OpenTK.Vector2b with the Z and Y components of this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2b Zy { readonly get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector2b.html">Vector2b</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Vector4b_Zyw_" data-uid="OpenTK.Mathematics.Vector4b.Zyw*"></a>
+  <h4 id="OpenTK_Mathematics_Vector4b_Zyw" data-uid="OpenTK.Mathematics.Vector4b.Zyw">Zyw</h4>
+  <div class="markdown level1 summary"><p>Gets or sets an OpenTK.Vector3b with the Z, Y, and W components of this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3b Zyw { readonly get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector3b.html">Vector3b</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Vector4b_Zywx_" data-uid="OpenTK.Mathematics.Vector4b.Zywx*"></a>
+  <h4 id="OpenTK_Mathematics_Vector4b_Zywx" data-uid="OpenTK.Mathematics.Vector4b.Zywx">Zywx</h4>
+  <div class="markdown level1 summary"><p>Gets or sets an OpenTK.Vector4b with the Z, Y, W, and X components of this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector4b Zywx { readonly get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector4b.html">Vector4b</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Vector4b_Zyx_" data-uid="OpenTK.Mathematics.Vector4b.Zyx*"></a>
+  <h4 id="OpenTK_Mathematics_Vector4b_Zyx" data-uid="OpenTK.Mathematics.Vector4b.Zyx">Zyx</h4>
+  <div class="markdown level1 summary"><p>Gets or sets an OpenTK.Vector3b with the Z, Y, and X components of this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3b Zyx { readonly get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector3b.html">Vector3b</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Vector4b_Zyxw_" data-uid="OpenTK.Mathematics.Vector4b.Zyxw*"></a>
+  <h4 id="OpenTK_Mathematics_Vector4b_Zyxw" data-uid="OpenTK.Mathematics.Vector4b.Zyxw">Zyxw</h4>
+  <div class="markdown level1 summary"><p>Gets or sets an OpenTK.Vector4b with the Z, Y, X, and W components of this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector4b Zyxw { readonly get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector4b.html">Vector4b</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+  <a id="OpenTK_Mathematics_Vector4b_All_" data-uid="OpenTK.Mathematics.Vector4b.All*"></a>
+  <h4 id="OpenTK_Mathematics_Vector4b_All" data-uid="OpenTK.Mathematics.Vector4b.All">All()</h4>
+  <div class="markdown level1 summary"><p>Returns <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if all components of the vector are <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a> otherwise.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly bool All()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p>If all of the components of the vector were <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Vector4b_All_" data-uid="OpenTK.Mathematics.Vector4b.All*"></a>
+  <h4 id="OpenTK_Mathematics_Vector4b_All_OpenTK_Mathematics_Vector4b_" data-uid="OpenTK.Mathematics.Vector4b.All(OpenTK.Mathematics.Vector4b)">All(Vector4b)</h4>
+  <div class="markdown level1 summary"><p>Returns <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if all components of the vector are <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a> otherwise.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool All(Vector4b vector)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector4b.html">Vector4b</a></td>
+        <td><span class="parametername">vector</span></td>
+        <td><p>The vector to check if all components are <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p>If all of the components of the vector were <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Vector4b_And_" data-uid="OpenTK.Mathematics.Vector4b.And*"></a>
+  <h4 id="OpenTK_Mathematics_Vector4b_And_OpenTK_Mathematics_Vector4b_OpenTK_Mathematics_Vector4b_" data-uid="OpenTK.Mathematics.Vector4b.And(OpenTK.Mathematics.Vector4b,OpenTK.Mathematics.Vector4b)">And(Vector4b, Vector4b)</h4>
+  <div class="markdown level1 summary"><p>Returns the component-wise logical and of two vectors.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector4b And(Vector4b left, Vector4b right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector4b.html">Vector4b</a></td>
+        <td><span class="parametername">left</span></td>
+        <td><p>The first vector to and.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector4b.html">Vector4b</a></td>
+        <td><span class="parametername">right</span></td>
+        <td><p>The second vector to and.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector4b.html">Vector4b</a></td>
+        <td><p>A vector were each component is the logical and of the input vector components.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Vector4b_Any_" data-uid="OpenTK.Mathematics.Vector4b.Any*"></a>
+  <h4 id="OpenTK_Mathematics_Vector4b_Any" data-uid="OpenTK.Mathematics.Vector4b.Any">Any()</h4>
+  <div class="markdown level1 summary"><p>Returns <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if any component of the vector is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a> otherwise.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly bool Any()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p>If any of the components of the vector were <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Vector4b_Any_" data-uid="OpenTK.Mathematics.Vector4b.Any*"></a>
+  <h4 id="OpenTK_Mathematics_Vector4b_Any_OpenTK_Mathematics_Vector4b_" data-uid="OpenTK.Mathematics.Vector4b.Any(OpenTK.Mathematics.Vector4b)">Any(Vector4b)</h4>
+  <div class="markdown level1 summary"><p>Returns <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if any components of the vector are <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a> otherwise.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool Any(Vector4b vector)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector4b.html">Vector4b</a></td>
+        <td><span class="parametername">vector</span></td>
+        <td><p>The vector to check if any components are <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p>If any of the components of the vector were <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Vector4b_Deconstruct_" data-uid="OpenTK.Mathematics.Vector4b.Deconstruct*"></a>
+  <h4 id="OpenTK_Mathematics_Vector4b_Deconstruct_System_Boolean__System_Boolean__System_Boolean__System_Boolean__" data-uid="OpenTK.Mathematics.Vector4b.Deconstruct(System.Boolean@,System.Boolean@,System.Boolean@,System.Boolean@)">Deconstruct(out bool, out bool, out bool, out bool)</h4>
+  <div class="markdown level1 summary"><p>Deconstructs the vector into it's individual components.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public readonly void Deconstruct(out bool x, out bool y, out bool z, out bool w)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">x</span></td>
+        <td><p>The X component of the vector.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">y</span></td>
+        <td><p>The Y component of the vector.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">z</span></td>
+        <td><p>The Z component of the vector.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">w</span></td>
+        <td><p>The W component of the vector.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Vector4b_Equals_" data-uid="OpenTK.Mathematics.Vector4b.Equals*"></a>
+  <h4 id="OpenTK_Mathematics_Vector4b_Equals_OpenTK_Mathematics_Vector4b_" data-uid="OpenTK.Mathematics.Vector4b.Equals(OpenTK.Mathematics.Vector4b)">Equals(Vector4b)</h4>
+  <div class="markdown level1 summary"><p>Indicates whether the current object is equal to another object of the same type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly bool Equals(Vector4b other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector4b.html">Vector4b</a></td>
+        <td><span class="parametername">other</span></td>
+        <td><p>An object to compare with this object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Vector4b_Equals_" data-uid="OpenTK.Mathematics.Vector4b.Equals*"></a>
+  <h4 id="OpenTK_Mathematics_Vector4b_Equals_System_Object_" data-uid="OpenTK.Mathematics.Vector4b.Equals(System.Object)">Equals(object)</h4>
+  <div class="markdown level1 summary"><p>Indicates whether this instance and a specified object are equal.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override readonly bool Equals(object obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></td>
+        <td><span class="parametername">obj</span></td>
+        <td><p>The object to compare with the current instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if <code class="paramref">obj</code> and this instance are the same type and represent the same value; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetype.equals">ValueType.Equals(object)</a></div>
+  <a id="OpenTK_Mathematics_Vector4b_GetHashCode_" data-uid="OpenTK.Mathematics.Vector4b.GetHashCode*"></a>
+  <h4 id="OpenTK_Mathematics_Vector4b_GetHashCode" data-uid="OpenTK.Mathematics.Vector4b.GetHashCode">GetHashCode()</h4>
+  <div class="markdown level1 summary"><p>Returns the hash code for this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override readonly int GetHashCode()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><p>A 32-bit signed integer that is the hash code for this instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode">ValueType.GetHashCode()</a></div>
+  <a id="OpenTK_Mathematics_Vector4b_Not_" data-uid="OpenTK.Mathematics.Vector4b.Not*"></a>
+  <h4 id="OpenTK_Mathematics_Vector4b_Not" data-uid="OpenTK.Mathematics.Vector4b.Not">Not()</h4>
+  <div class="markdown level1 summary"><p>Returns the logical negation of this vector.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly Vector4b Not()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector4b.html">Vector4b</a></td>
+        <td><p>A vector with each component negated.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Vector4b_Not_" data-uid="OpenTK.Mathematics.Vector4b.Not*"></a>
+  <h4 id="OpenTK_Mathematics_Vector4b_Not_OpenTK_Mathematics_Vector4b_" data-uid="OpenTK.Mathematics.Vector4b.Not(OpenTK.Mathematics.Vector4b)">Not(Vector4b)</h4>
+  <div class="markdown level1 summary"><p>Returns the logical negation of a vector.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector4b Not(Vector4b vec)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector4b.html">Vector4b</a></td>
+        <td><span class="parametername">vec</span></td>
+        <td><p>The vector to logically negate.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector4b.html">Vector4b</a></td>
+        <td><p>A vector with each component negated.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Vector4b_Or_" data-uid="OpenTK.Mathematics.Vector4b.Or*"></a>
+  <h4 id="OpenTK_Mathematics_Vector4b_Or_OpenTK_Mathematics_Vector4b_OpenTK_Mathematics_Vector4b_" data-uid="OpenTK.Mathematics.Vector4b.Or(OpenTK.Mathematics.Vector4b,OpenTK.Mathematics.Vector4b)">Or(Vector4b, Vector4b)</h4>
+  <div class="markdown level1 summary"><p>Returns the component-wise logical or of two vectors.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector4b Or(Vector4b left, Vector4b right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector4b.html">Vector4b</a></td>
+        <td><span class="parametername">left</span></td>
+        <td><p>The first vector to or.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector4b.html">Vector4b</a></td>
+        <td><span class="parametername">right</span></td>
+        <td><p>The second vector to or.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector4b.html">Vector4b</a></td>
+        <td><p>A vector were each component is the logical or of the input vector components.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Vector4b_ToString_" data-uid="OpenTK.Mathematics.Vector4b.ToString*"></a>
+  <h4 id="OpenTK_Mathematics_Vector4b_ToString" data-uid="OpenTK.Mathematics.Vector4b.ToString">ToString()</h4>
+  <div class="markdown level1 summary"><p>Returns the fully qualified type name of this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override readonly string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>The fully qualified type name.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetype.tostring">ValueType.ToString()</a></div>
+  <a id="OpenTK_Mathematics_Vector4b_ToString_" data-uid="OpenTK.Mathematics.Vector4b.ToString*"></a>
+  <h4 id="OpenTK_Mathematics_Vector4b_ToString_System_IFormatProvider_" data-uid="OpenTK.Mathematics.Vector4b.ToString(System.IFormatProvider)">ToString(IFormatProvider)</h4>
+  <div class="markdown level1 summary"><p>Formats the value of the current instance using the specified format.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly string ToString(IFormatProvider formatProvider)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iformatprovider">IFormatProvider</a></td>
+        <td><span class="parametername">formatProvider</span></td>
+        <td><p>The provider to use to format the value.</p>
+<p>-or-</p>
+<p>A null reference (<code>Nothing</code> in Visual Basic) to obtain the numeric format information from the current locale setting of the operating system.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>The value of the current instance in the specified format.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Vector4b_Xor_" data-uid="OpenTK.Mathematics.Vector4b.Xor*"></a>
+  <h4 id="OpenTK_Mathematics_Vector4b_Xor_OpenTK_Mathematics_Vector4b_OpenTK_Mathematics_Vector4b_" data-uid="OpenTK.Mathematics.Vector4b.Xor(OpenTK.Mathematics.Vector4b,OpenTK.Mathematics.Vector4b)">Xor(Vector4b, Vector4b)</h4>
+  <div class="markdown level1 summary"><p>Returns the component-wise logical xor of two vectors.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector4b Xor(Vector4b left, Vector4b right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector4b.html">Vector4b</a></td>
+        <td><span class="parametername">left</span></td>
+        <td><p>The first vector to xor.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector4b.html">Vector4b</a></td>
+        <td><span class="parametername">right</span></td>
+        <td><p>The second vector to xor.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector4b.html">Vector4b</a></td>
+        <td><p>A vector were each component is the logical xor of the input vector components.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="operators">Operators
+</h3>
+  <a id="OpenTK_Mathematics_Vector4b_op_BitwiseAnd_" data-uid="OpenTK.Mathematics.Vector4b.op_BitwiseAnd*"></a>
+  <h4 id="OpenTK_Mathematics_Vector4b_op_BitwiseAnd_OpenTK_Mathematics_Vector4b_OpenTK_Mathematics_Vector4b_" data-uid="OpenTK.Mathematics.Vector4b.op_BitwiseAnd(OpenTK.Mathematics.Vector4b,OpenTK.Mathematics.Vector4b)">operator &amp;(Vector4b, Vector4b)</h4>
+  <div class="markdown level1 summary"><p>ANDs the specified instances.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector4b operator &amp;(Vector4b left, Vector4b right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector4b.html">Vector4b</a></td>
+        <td><span class="parametername">left</span></td>
+        <td><p>Left operand.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector4b.html">Vector4b</a></td>
+        <td><span class="parametername">right</span></td>
+        <td><p>Right operand.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector4b.html">Vector4b</a></td>
+        <td><p>Result of the logical AND operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Vector4b_op_BitwiseOr_" data-uid="OpenTK.Mathematics.Vector4b.op_BitwiseOr*"></a>
+  <h4 id="OpenTK_Mathematics_Vector4b_op_BitwiseOr_OpenTK_Mathematics_Vector4b_OpenTK_Mathematics_Vector4b_" data-uid="OpenTK.Mathematics.Vector4b.op_BitwiseOr(OpenTK.Mathematics.Vector4b,OpenTK.Mathematics.Vector4b)">operator |(Vector4b, Vector4b)</h4>
+  <div class="markdown level1 summary"><p>ORs the specified instances.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector4b operator |(Vector4b left, Vector4b right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector4b.html">Vector4b</a></td>
+        <td><span class="parametername">left</span></td>
+        <td><p>Left operand.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector4b.html">Vector4b</a></td>
+        <td><span class="parametername">right</span></td>
+        <td><p>Right operand.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector4b.html">Vector4b</a></td>
+        <td><p>Result of the logical OR operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Vector4b_op_Equality_" data-uid="OpenTK.Mathematics.Vector4b.op_Equality*"></a>
+  <h4 id="OpenTK_Mathematics_Vector4b_op_Equality_OpenTK_Mathematics_Vector4b_OpenTK_Mathematics_Vector4b_" data-uid="OpenTK.Mathematics.Vector4b.op_Equality(OpenTK.Mathematics.Vector4b,OpenTK.Mathematics.Vector4b)">operator ==(Vector4b, Vector4b)</h4>
+  <div class="markdown level1 summary"><p>Compares the specified instances for equality.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(Vector4b left, Vector4b right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector4b.html">Vector4b</a></td>
+        <td><span class="parametername">left</span></td>
+        <td><p>Left operand.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector4b.html">Vector4b</a></td>
+        <td><span class="parametername">right</span></td>
+        <td><p>Right operand.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p>True if both instances are equal; false otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Vector4b_op_ExclusiveOr_" data-uid="OpenTK.Mathematics.Vector4b.op_ExclusiveOr*"></a>
+  <h4 id="OpenTK_Mathematics_Vector4b_op_ExclusiveOr_OpenTK_Mathematics_Vector4b_OpenTK_Mathematics_Vector4b_" data-uid="OpenTK.Mathematics.Vector4b.op_ExclusiveOr(OpenTK.Mathematics.Vector4b,OpenTK.Mathematics.Vector4b)">operator ^(Vector4b, Vector4b)</h4>
+  <div class="markdown level1 summary"><p>XORs the specified instances.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector4b operator ^(Vector4b left, Vector4b right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector4b.html">Vector4b</a></td>
+        <td><span class="parametername">left</span></td>
+        <td><p>Left operand.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector4b.html">Vector4b</a></td>
+        <td><span class="parametername">right</span></td>
+        <td><p>Right operand.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector4b.html">Vector4b</a></td>
+        <td><p>Result of the logical XOR operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Vector4b_op_Implicit_" data-uid="OpenTK.Mathematics.Vector4b.op_Implicit*"></a>
+  <h4 id="OpenTK_Mathematics_Vector4b_op_Implicit_System_ValueTuple_System_Boolean_System_Boolean_System_Boolean_System_Boolean___OpenTK_Mathematics_Vector4b" data-uid="OpenTK.Mathematics.Vector4b.op_Implicit(System.ValueTuple{System.Boolean,System.Boolean,System.Boolean,System.Boolean})~OpenTK.Mathematics.Vector4b">implicit operator Vector4b((bool X, bool Y, bool Z, bool W))</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="OpenTK.Mathematics.Vector4b.html">Vector4b</a> struct using a tuple containing the component values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static implicit operator Vector4b((bool X, bool Y, bool Z, bool W) values)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>(<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.boolean,system.boolean,system.boolean,system.boolean-.x">X</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.boolean,system.boolean,system.boolean,system.boolean-.y">Y</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.boolean,system.boolean,system.boolean,system.boolean-.z">Z</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.boolean,system.boolean,system.boolean,system.boolean-.w">W</a>)</td>
+        <td><span class="parametername">values</span></td>
+        <td><p>A tuple containing the component values.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector4b.html">Vector4b</a></td>
+        <td><p>A new instance of the <a class="xref" href="OpenTK.Mathematics.Vector4b.html">Vector4b</a> struct with the given component values.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Vector4b_op_Inequality_" data-uid="OpenTK.Mathematics.Vector4b.op_Inequality*"></a>
+  <h4 id="OpenTK_Mathematics_Vector4b_op_Inequality_OpenTK_Mathematics_Vector4b_OpenTK_Mathematics_Vector4b_" data-uid="OpenTK.Mathematics.Vector4b.op_Inequality(OpenTK.Mathematics.Vector4b,OpenTK.Mathematics.Vector4b)">operator !=(Vector4b, Vector4b)</h4>
+  <div class="markdown level1 summary"><p>Compares the specified instances for inequality.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(Vector4b left, Vector4b right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector4b.html">Vector4b</a></td>
+        <td><span class="parametername">left</span></td>
+        <td><p>Left operand.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector4b.html">Vector4b</a></td>
+        <td><span class="parametername">right</span></td>
+        <td><p>Right operand.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p>True if both instances are not equal; false otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Vector4b_op_LogicalNot_" data-uid="OpenTK.Mathematics.Vector4b.op_LogicalNot*"></a>
+  <h4 id="OpenTK_Mathematics_Vector4b_op_LogicalNot_OpenTK_Mathematics_Vector4b_" data-uid="OpenTK.Mathematics.Vector4b.op_LogicalNot(OpenTK.Mathematics.Vector4b)">operator !(Vector4b)</h4>
+  <div class="markdown level1 summary"><p>Negates the specified instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector4b operator !(Vector4b vector)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector4b.html">Vector4b</a></td>
+        <td><span class="parametername">vector</span></td>
+        <td><p>Operand.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector4b.html">Vector4b</a></td>
+        <td><p>Result of negation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable&lt;T&gt;</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

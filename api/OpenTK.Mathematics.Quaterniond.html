@@ -84,6 +84,16 @@
     <h5>Implements</h5>
     <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="OpenTK.Mathematics.Quaterniond.html">Quaterniond</a>&gt;</div>
     <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iformattable">IFormattable</a></div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.iadditionoperators-3">IAdditionOperators</a>&lt;<a class="xref" href="OpenTK.Mathematics.Quaterniond.html">Quaterniond</a>, <a class="xref" href="OpenTK.Mathematics.Quaterniond.html">Quaterniond</a>, <a class="xref" href="OpenTK.Mathematics.Quaterniond.html">Quaterniond</a>&gt;</div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.isubtractionoperators-3">ISubtractionOperators</a>&lt;<a class="xref" href="OpenTK.Mathematics.Quaterniond.html">Quaterniond</a>, <a class="xref" href="OpenTK.Mathematics.Quaterniond.html">Quaterniond</a>, <a class="xref" href="OpenTK.Mathematics.Quaterniond.html">Quaterniond</a>&gt;</div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.imultiplyoperators-3">IMultiplyOperators</a>&lt;<a class="xref" href="OpenTK.Mathematics.Quaterniond.html">Quaterniond</a>, <a class="xref" href="OpenTK.Mathematics.Quaterniond.html">Quaterniond</a>, <a class="xref" href="OpenTK.Mathematics.Quaterniond.html">Quaterniond</a>&gt;</div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.imultiplyoperators-3">IMultiplyOperators</a>&lt;<a class="xref" href="OpenTK.Mathematics.Quaterniond.html">Quaterniond</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>, <a class="xref" href="OpenTK.Mathematics.Quaterniond.html">Quaterniond</a>&gt;</div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.imultiplyoperators-3">IMultiplyOperators</a>&lt;<a class="xref" href="OpenTK.Mathematics.Quaterniond.html">Quaterniond</a>, <a class="xref" href="OpenTK.Mathematics.Vector2d.html">Vector2d</a>, <a class="xref" href="OpenTK.Mathematics.Vector2d.html">Vector2d</a>&gt;</div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.imultiplyoperators-3">IMultiplyOperators</a>&lt;<a class="xref" href="OpenTK.Mathematics.Quaterniond.html">Quaterniond</a>, <a class="xref" href="OpenTK.Mathematics.Vector3d.html">Vector3d</a>, <a class="xref" href="OpenTK.Mathematics.Vector3d.html">Vector3d</a>&gt;</div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.imultiplyoperators-3">IMultiplyOperators</a>&lt;<a class="xref" href="OpenTK.Mathematics.Quaterniond.html">Quaterniond</a>, <a class="xref" href="OpenTK.Mathematics.Vector4d.html">Vector4d</a>, <a class="xref" href="OpenTK.Mathematics.Vector4d.html">Vector4d</a>&gt;</div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.iequalityoperators-3">IEqualityOperators</a>&lt;<a class="xref" href="OpenTK.Mathematics.Quaterniond.html">Quaterniond</a>, <a class="xref" href="OpenTK.Mathematics.Quaterniond.html">Quaterniond</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.iadditiveidentity-2">IAdditiveIdentity</a>&lt;<a class="xref" href="OpenTK.Mathematics.Quaterniond.html">Quaterniond</a>, <a class="xref" href="OpenTK.Mathematics.Quaterniond.html">Quaterniond</a>&gt;</div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.imultiplicativeidentity-2">IMultiplicativeIdentity</a>&lt;<a class="xref" href="OpenTK.Mathematics.Quaterniond.html">Quaterniond</a>, <a class="xref" href="OpenTK.Mathematics.Quaterniond.html">Quaterniond</a>&gt;</div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -102,7 +112,7 @@
   <h5 id="OpenTK_Mathematics_Quaterniond_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Serializable]
-public struct Quaterniond : IEquatable&lt;Quaterniond&gt;, IFormattable</code></pre>
+public struct Quaterniond : IEquatable&lt;Quaterniond&gt;, IFormattable, IAdditionOperators&lt;Quaterniond, Quaterniond, Quaterniond&gt;, ISubtractionOperators&lt;Quaterniond, Quaterniond, Quaterniond&gt;, IMultiplyOperators&lt;Quaterniond, Quaterniond, Quaterniond&gt;, IMultiplyOperators&lt;Quaterniond, double, Quaterniond&gt;, IMultiplyOperators&lt;Quaterniond, Vector2d, Vector2d&gt;, IMultiplyOperators&lt;Quaterniond, Vector3d, Vector3d&gt;, IMultiplyOperators&lt;Quaterniond, Vector4d, Vector4d&gt;, IEqualityOperators&lt;Quaterniond, Quaterniond, bool&gt;, IAdditiveIdentity&lt;Quaterniond, Quaterniond&gt;, IMultiplicativeIdentity&lt;Quaterniond, Quaterniond&gt;</code></pre>
   </div>
   <h3 id="constructors">Constructors
 </h3>
@@ -321,8 +331,55 @@ public struct Quaterniond : IEquatable&lt;Quaterniond&gt;, IFormattable</code></
       </tr>
     </tbody>
   </table>
+  <h4 id="OpenTK_Mathematics_Quaterniond_Zero" data-uid="OpenTK.Mathematics.Quaterniond.Zero">Zero</h4>
+  <div class="markdown level1 summary"><p>Defines the zero quaternion.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Quaterniond Zero</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Quaterniond.html">Quaterniond</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="properties">Properties
 </h3>
+  <a id="OpenTK_Mathematics_Quaterniond_AdditiveIdentity_" data-uid="OpenTK.Mathematics.Quaterniond.AdditiveIdentity*"></a>
+  <h4 id="OpenTK_Mathematics_Quaterniond_AdditiveIdentity" data-uid="OpenTK.Mathematics.Quaterniond.AdditiveIdentity">AdditiveIdentity</h4>
+  <div class="markdown level1 summary"><p>Gets the additive identity of the quaternion, which is the zero quaternion.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Quaterniond AdditiveIdentity { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Quaterniond.html">Quaterniond</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <a id="OpenTK_Mathematics_Quaterniond_Length_" data-uid="OpenTK.Mathematics.Quaterniond.Length*"></a>
   <h4 id="OpenTK_Mathematics_Quaterniond_Length" data-uid="OpenTK.Mathematics.Quaterniond.Length">Length</h4>
   <div class="markdown level1 summary"><p>Gets the length (magnitude) of the Quaterniond.</p>
@@ -371,6 +428,30 @@ public struct Quaterniond : IEquatable&lt;Quaterniond&gt;, IFormattable</code></
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Quaterniond_MultiplicativeIdentity_" data-uid="OpenTK.Mathematics.Quaterniond.MultiplicativeIdentity*"></a>
+  <h4 id="OpenTK_Mathematics_Quaterniond_MultiplicativeIdentity" data-uid="OpenTK.Mathematics.Quaterniond.MultiplicativeIdentity">MultiplicativeIdentity</h4>
+  <div class="markdown level1 summary"><p>Gets the multiplicative identity of the quaternion, which is the identity quaternion.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Quaterniond MultiplicativeIdentity { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Quaterniond.html">Quaterniond</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -2058,6 +2139,156 @@ public static Quaterniond operator *(Quaterniond left, Quaterniond right)</code>
     </tbody>
   </table>
   <a id="OpenTK_Mathematics_Quaterniond_op_Multiply_" data-uid="OpenTK.Mathematics.Quaterniond.op_Multiply*"></a>
+  <h4 id="OpenTK_Mathematics_Quaterniond_op_Multiply_OpenTK_Mathematics_Quaterniond_OpenTK_Mathematics_Vector2d_" data-uid="OpenTK.Mathematics.Quaterniond.op_Multiply(OpenTK.Mathematics.Quaterniond,OpenTK.Mathematics.Vector2d)">operator *(Quaterniond, Vector2d)</h4>
+  <div class="markdown level1 summary"><p>Transforms a vector by a quaternion rotation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static Vector2d operator *(Quaterniond quat, Vector2d vec)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Quaterniond.html">Quaterniond</a></td>
+        <td><span class="parametername">quat</span></td>
+        <td><p>The quaternion to rotate the vector by.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector2d.html">Vector2d</a></td>
+        <td><span class="parametername">vec</span></td>
+        <td><p>The vector to transform.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector2d.html">Vector2d</a></td>
+        <td><p>The transformed vector.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Quaterniond_op_Multiply_" data-uid="OpenTK.Mathematics.Quaterniond.op_Multiply*"></a>
+  <h4 id="OpenTK_Mathematics_Quaterniond_op_Multiply_OpenTK_Mathematics_Quaterniond_OpenTK_Mathematics_Vector3d_" data-uid="OpenTK.Mathematics.Quaterniond.op_Multiply(OpenTK.Mathematics.Quaterniond,OpenTK.Mathematics.Vector3d)">operator *(Quaterniond, Vector3d)</h4>
+  <div class="markdown level1 summary"><p>Transforms a vector by a quaternion rotation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static Vector3d operator *(Quaterniond quat, Vector3d vec)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Quaterniond.html">Quaterniond</a></td>
+        <td><span class="parametername">quat</span></td>
+        <td><p>The quaternion to rotate the vector by.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector3d.html">Vector3d</a></td>
+        <td><span class="parametername">vec</span></td>
+        <td><p>The vector to transform.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector3d.html">Vector3d</a></td>
+        <td><p>The transformed vector.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Quaterniond_op_Multiply_" data-uid="OpenTK.Mathematics.Quaterniond.op_Multiply*"></a>
+  <h4 id="OpenTK_Mathematics_Quaterniond_op_Multiply_OpenTK_Mathematics_Quaterniond_OpenTK_Mathematics_Vector4d_" data-uid="OpenTK.Mathematics.Quaterniond.op_Multiply(OpenTK.Mathematics.Quaterniond,OpenTK.Mathematics.Vector4d)">operator *(Quaterniond, Vector4d)</h4>
+  <div class="markdown level1 summary"><p>Transforms a vector by a quaternion rotation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static Vector4d operator *(Quaterniond quat, Vector4d vec)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Quaterniond.html">Quaterniond</a></td>
+        <td><span class="parametername">quat</span></td>
+        <td><p>The quaternion to rotate the vector by.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector4d.html">Vector4d</a></td>
+        <td><span class="parametername">vec</span></td>
+        <td><p>The vector to transform.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector4d.html">Vector4d</a></td>
+        <td><p>The transformed vector.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Quaterniond_op_Multiply_" data-uid="OpenTK.Mathematics.Quaterniond.op_Multiply*"></a>
   <h4 id="OpenTK_Mathematics_Quaterniond_op_Multiply_OpenTK_Mathematics_Quaterniond_System_Double_" data-uid="OpenTK.Mathematics.Quaterniond.op_Multiply(OpenTK.Mathematics.Quaterniond,System.Double)">operator *(Quaterniond, double)</h4>
   <div class="markdown level1 summary"><p>Multiplies an instance by a scalar.</p>
 </div>
@@ -2213,6 +2444,36 @@ public static Quaterniond operator -(Quaterniond left, Quaterniond right)</code>
   </div>
   <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iformattable">IFormattable</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.iadditionoperators-3">IAdditionOperators&lt;TSelf, TOther, TResult&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.isubtractionoperators-3">ISubtractionOperators&lt;TSelf, TOther, TResult&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.imultiplyoperators-3">IMultiplyOperators&lt;TSelf, TOther, TResult&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.imultiplyoperators-3">IMultiplyOperators&lt;TSelf, TOther, TResult&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.imultiplyoperators-3">IMultiplyOperators&lt;TSelf, TOther, TResult&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.imultiplyoperators-3">IMultiplyOperators&lt;TSelf, TOther, TResult&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.imultiplyoperators-3">IMultiplyOperators&lt;TSelf, TOther, TResult&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.iequalityoperators-3">IEqualityOperators&lt;TSelf, TOther, TResult&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.iadditiveidentity-2">IAdditiveIdentity&lt;TSelf, TResult&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.imultiplicativeidentity-2">IMultiplicativeIdentity&lt;TSelf, TResult&gt;</a>
   </div>
 
 </article>

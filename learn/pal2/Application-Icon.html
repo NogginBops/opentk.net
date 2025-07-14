@@ -113,7 +113,7 @@ This requires a little setup when building C# projects, this is because you need
 <h5>Note</h5>
 <p>TODO: Mention <code>MacOSIconComponent.CreateSFSymbol</code>?</p>
 </div>
-<p>On macOS individual windows do not have icons. Instead there is a single application icon for all windows. This is called the dock icon and can be set through <a class="xref" href="../../api/OpenTK.Platform.Native.macOS.MacOSWindowComponent.html#OpenTK_Platform_Native_macOS_MacOSWindowComponent_SetDockIcon_OpenTK_Platform_WindowHandle_OpenTK_Platform_IconHandle_"><code>MacOSWindowComponent.SetDockIcon</code></a>. This only sets the application icon at runtime, so the published application will not have an icon set.</p>
+<p>On macOS individual windows do not have icons. Instead there is a single application icon for all windows. This is called the dock icon and can be set through <a class="xref" href="../../api/OpenTK.Platform.Native.macOS.MacOSShellComponent.html#OpenTK_Platform_Native_macOS_MacOSShellComponent_SetDockIcon_OpenTK_Platform_IconHandle_"><code>MacOSShellComponent.SetDockIcon</code></a>. This only sets the application icon at runtime, so the published application will not have an icon set.</p>
 <p>On macOS an application is a special folder that contains a bunch of different files and folders. One of these files is called <code>info.plist</code> and contains a bunch of information about your application, including the icon to use for the application.</p>
 <p>A simple <code>info.plist</code> could look like this:</p>
 <pre><code class="lang-plist">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;

@@ -1825,6 +1825,38 @@ We could add a delay where we wait for the server to change the window, but for 
       <div><a class="xref" href="OpenTK.Platform.IWindowComponent.html#OpenTK_Platform_IWindowComponent_Create_OpenTK_Platform_GraphicsApiHints_">Create</a>(<a class="xref" href="OpenTK.Platform.GraphicsApiHints.html">GraphicsApiHints</a>)</div>
       <div><a class="xref" href="OpenTK.Platform.IWindowComponent.html#OpenTK_Platform_IWindowComponent_Destroy_OpenTK_Platform_WindowHandle_">Destroy</a>(<a class="xref" href="OpenTK.Platform.WindowHandle.html">WindowHandle</a>)</div>
   </div>
+  <a id="OpenTK_Platform_Native_X11_X11WindowComponent_PostUserEvent_" data-uid="OpenTK.Platform.Native.X11.X11WindowComponent.PostUserEvent*"></a>
+  <h4 id="OpenTK_Platform_Native_X11_X11WindowComponent_PostUserEvent_System_EventArgs_" data-uid="OpenTK.Platform.Native.X11.X11WindowComponent.PostUserEvent(System.EventArgs)">PostUserEvent(EventArgs)</h4>
+  <div class="markdown level1 summary"><p>Posts a user defined event to the event queue.
+This is useful when using the <a class="xref" href="OpenTK.Platform.IWindowComponent.html#OpenTK_Platform_IWindowComponent_ProcessEvents_System_Boolean_">ProcessEvents(bool)</a> with <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> to wait for events.
+Then this method can be used to manually post an event and wake up the main thread.
+Sending events through this function has overhead so unnecessary calls to this function should be avoided.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PostUserEvent(EventArgs @event)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.eventargs">EventArgs</a></td>
+        <td><span class="parametername">event</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenTK_Platform_Native_X11_X11WindowComponent_PostUserEvent_System_EventArgs__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This function is allowed to be called from any thread.</p>
+</div>
   <a id="OpenTK_Platform_Native_X11_X11WindowComponent_ProcessEvents_" data-uid="OpenTK.Platform.Native.X11.X11WindowComponent.ProcessEvents*"></a>
   <h4 id="OpenTK_Platform_Native_X11_X11WindowComponent_ProcessEvents_System_Boolean_" data-uid="OpenTK.Platform.Native.X11.X11WindowComponent.ProcessEvents(System.Boolean)">ProcessEvents(bool)</h4>
   <div class="markdown level1 summary"><p>Processes platform events and sends them to the <a class="xref" href="OpenTK.Platform.EventQueue.html">EventQueue</a>.</p>
@@ -2448,6 +2480,11 @@ It is recommended to keep this code efficient as it will be called often.</p>
       </tr>
     </tbody>
   </table>
+  <h5 id="OpenTK_Platform_Native_X11_X11WindowComponent_SetIcon_OpenTK_Platform_WindowHandle_OpenTK_Platform_IconHandle__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>On macOS windows do not have thier own individual icons, instead the whole app is represented by a single icon.
+To set this icon use <a class="xref" href="OpenTK.Platform.Native.macOS.MacOSShellComponent.html#OpenTK_Platform_Native_macOS_MacOSShellComponent_SetDockIcon_OpenTK_Platform_IconHandle_">SetDockIcon(IconHandle)</a>.
+Calling <a class="xref" href="OpenTK.Platform.IWindowComponent.html#OpenTK_Platform_IWindowComponent_SetIcon_OpenTK_Platform_WindowHandle_OpenTK_Platform_IconHandle_">SetIcon(WindowHandle, IconHandle)</a> and <a class="xref" href="OpenTK.Platform.IWindowComponent.html#OpenTK_Platform_IWindowComponent_GetIcon_OpenTK_Platform_WindowHandle_">GetIcon(WindowHandle)</a> on macOS works but will not have any visual results.</p>
+</div>
   <h5 class="exceptions">Exceptions</h5>
   <table class="table table-bordered table-condensed">
     <thead>
@@ -2468,6 +2505,7 @@ It is recommended to keep this code efficient as it will be called often.</p>
   <div class="seealso">
       <div><a class="xref" href="OpenTK.Platform.IWindowComponent.html#OpenTK_Platform_IWindowComponent_CanSetIcon">CanSetIcon</a></div>
       <div><a class="xref" href="OpenTK.Platform.IWindowComponent.html#OpenTK_Platform_IWindowComponent_GetIcon_OpenTK_Platform_WindowHandle_">GetIcon</a>(<a class="xref" href="OpenTK.Platform.WindowHandle.html">WindowHandle</a>)</div>
+      <div><a class="xref" href="OpenTK.Platform.Native.macOS.MacOSShellComponent.html#OpenTK_Platform_Native_macOS_MacOSShellComponent_SetDockIcon_OpenTK_Platform_IconHandle_">SetDockIcon</a>(<a class="xref" href="OpenTK.Platform.IconHandle.html">IconHandle</a>)</div>
   </div>
   <a id="OpenTK_Platform_Native_X11_X11WindowComponent_SetIconifiedTitle_" data-uid="OpenTK.Platform.Native.X11.X11WindowComponent.SetIconifiedTitle*"></a>
   <h4 id="OpenTK_Platform_Native_X11_X11WindowComponent_SetIconifiedTitle_OpenTK_Platform_WindowHandle_System_String_" data-uid="OpenTK.Platform.Native.X11.X11WindowComponent.SetIconifiedTitle(OpenTK.Platform.WindowHandle,System.String)">SetIconifiedTitle(WindowHandle, string)</h4>

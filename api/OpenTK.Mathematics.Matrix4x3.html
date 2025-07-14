@@ -84,6 +84,16 @@
     <h5>Implements</h5>
     <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="OpenTK.Mathematics.Matrix4x3.html">Matrix4x3</a>&gt;</div>
     <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iformattable">IFormattable</a></div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.imultiplyoperators-3">IMultiplyOperators</a>&lt;<a class="xref" href="OpenTK.Mathematics.Matrix4x3.html">Matrix4x3</a>, <a class="xref" href="OpenTK.Mathematics.Vector3.html">Vector3</a>, <a class="xref" href="OpenTK.Mathematics.Vector4.html">Vector4</a>&gt;</div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.imultiplyoperators-3">IMultiplyOperators</a>&lt;<a class="xref" href="OpenTK.Mathematics.Matrix4x3.html">Matrix4x3</a>, <a class="xref" href="OpenTK.Mathematics.Matrix3x2.html">Matrix3x2</a>, <a class="xref" href="OpenTK.Mathematics.Matrix4x2.html">Matrix4x2</a>&gt;</div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.imultiplyoperators-3">IMultiplyOperators</a>&lt;<a class="xref" href="OpenTK.Mathematics.Matrix4x3.html">Matrix4x3</a>, <a class="xref" href="OpenTK.Mathematics.Matrix3.html">Matrix3</a>, <a class="xref" href="OpenTK.Mathematics.Matrix4x3.html">Matrix4x3</a>&gt;</div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.imultiplyoperators-3">IMultiplyOperators</a>&lt;<a class="xref" href="OpenTK.Mathematics.Matrix4x3.html">Matrix4x3</a>, <a class="xref" href="OpenTK.Mathematics.Matrix3x4.html">Matrix3x4</a>, <a class="xref" href="OpenTK.Mathematics.Matrix4.html">Matrix4</a>&gt;</div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.imultiplyoperators-3">IMultiplyOperators</a>&lt;<a class="xref" href="OpenTK.Mathematics.Matrix4x3.html">Matrix4x3</a>, <a class="xref" href="OpenTK.Mathematics.Matrix4x3.html">Matrix4x3</a>, <a class="xref" href="OpenTK.Mathematics.Matrix4x3.html">Matrix4x3</a>&gt;</div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.imultiplyoperators-3">IMultiplyOperators</a>&lt;<a class="xref" href="OpenTK.Mathematics.Matrix4x3.html">Matrix4x3</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>, <a class="xref" href="OpenTK.Mathematics.Matrix4x3.html">Matrix4x3</a>&gt;</div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.iadditionoperators-3">IAdditionOperators</a>&lt;<a class="xref" href="OpenTK.Mathematics.Matrix4x3.html">Matrix4x3</a>, <a class="xref" href="OpenTK.Mathematics.Matrix4x3.html">Matrix4x3</a>, <a class="xref" href="OpenTK.Mathematics.Matrix4x3.html">Matrix4x3</a>&gt;</div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.isubtractionoperators-3">ISubtractionOperators</a>&lt;<a class="xref" href="OpenTK.Mathematics.Matrix4x3.html">Matrix4x3</a>, <a class="xref" href="OpenTK.Mathematics.Matrix4x3.html">Matrix4x3</a>, <a class="xref" href="OpenTK.Mathematics.Matrix4x3.html">Matrix4x3</a>&gt;</div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.iequalityoperators-3">IEqualityOperators</a>&lt;<a class="xref" href="OpenTK.Mathematics.Matrix4x3.html">Matrix4x3</a>, <a class="xref" href="OpenTK.Mathematics.Matrix4x3.html">Matrix4x3</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.iadditiveidentity-2">IAdditiveIdentity</a>&lt;<a class="xref" href="OpenTK.Mathematics.Matrix4x3.html">Matrix4x3</a>, <a class="xref" href="OpenTK.Mathematics.Matrix4x3.html">Matrix4x3</a>&gt;</div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -102,7 +112,7 @@
   <h5 id="OpenTK_Mathematics_Matrix4x3_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Serializable]
-public struct Matrix4x3 : IEquatable&lt;Matrix4x3&gt;, IFormattable</code></pre>
+public struct Matrix4x3 : IEquatable&lt;Matrix4x3&gt;, IFormattable, IMultiplyOperators&lt;Matrix4x3, Vector3, Vector4&gt;, IMultiplyOperators&lt;Matrix4x3, Matrix3x2, Matrix4x2&gt;, IMultiplyOperators&lt;Matrix4x3, Matrix3, Matrix4x3&gt;, IMultiplyOperators&lt;Matrix4x3, Matrix3x4, Matrix4&gt;, IMultiplyOperators&lt;Matrix4x3, Matrix4x3, Matrix4x3&gt;, IMultiplyOperators&lt;Matrix4x3, float, Matrix4x3&gt;, IAdditionOperators&lt;Matrix4x3, Matrix4x3, Matrix4x3&gt;, ISubtractionOperators&lt;Matrix4x3, Matrix4x3, Matrix4x3&gt;, IEqualityOperators&lt;Matrix4x3, Matrix4x3, bool&gt;, IAdditiveIdentity&lt;Matrix4x3, Matrix4x3&gt;</code></pre>
   </div>
   <h3 id="constructors">Constructors
 </h3>
@@ -363,6 +373,30 @@ public struct Matrix4x3 : IEquatable&lt;Matrix4x3&gt;, IFormattable</code></pre>
   </table>
   <h3 id="properties">Properties
 </h3>
+  <a id="OpenTK_Mathematics_Matrix4x3_AdditiveIdentity_" data-uid="OpenTK.Mathematics.Matrix4x3.AdditiveIdentity*"></a>
+  <h4 id="OpenTK_Mathematics_Matrix4x3_AdditiveIdentity" data-uid="OpenTK.Mathematics.Matrix4x3.AdditiveIdentity">AdditiveIdentity</h4>
+  <div class="markdown level1 summary"><p>Gets the additive identity of the matrix, which is the zero matrix.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Matrix4x3 AdditiveIdentity { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Matrix4x3.html">Matrix4x3</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <a id="OpenTK_Mathematics_Matrix4x3_Column0_" data-uid="OpenTK.Mathematics.Matrix4x3.Column0*"></a>
   <h4 id="OpenTK_Mathematics_Matrix4x3_Column0" data-uid="OpenTK.Mathematics.Matrix4x3.Column0">Column0</h4>
   <div class="markdown level1 summary"><p>Gets the first column of this matrix.</p>
@@ -1891,9 +1925,108 @@ public static Matrix4x3 Invert(Matrix4x3 mat)</code></pre>
     </tbody>
   </table>
   <a id="OpenTK_Mathematics_Matrix4x3_Mult_" data-uid="OpenTK.Mathematics.Matrix4x3.Mult*"></a>
+  <h4 id="OpenTK_Mathematics_Matrix4x3_Mult_OpenTK_Mathematics_Matrix4x3_OpenTK_Mathematics_Matrix3_" data-uid="OpenTK.Mathematics.Matrix4x3.Mult(OpenTK.Mathematics.Matrix4x3,OpenTK.Mathematics.Matrix3)">Mult(Matrix4x3, Matrix3)</h4>
+  <div class="markdown level1 summary"><p>Multiplies two instances.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static Matrix4x3 Mult(Matrix4x3 left, Matrix3 right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Matrix4x3.html">Matrix4x3</a></td>
+        <td><span class="parametername">left</span></td>
+        <td><p>The left operand of the multiplication.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Matrix3.html">Matrix3</a></td>
+        <td><span class="parametername">right</span></td>
+        <td><p>The right operand of the multiplication.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Matrix4x3.html">Matrix4x3</a></td>
+        <td><p>A new instance that is the result of the multiplication.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Matrix4x3_Mult_" data-uid="OpenTK.Mathematics.Matrix4x3.Mult*"></a>
+  <h4 id="OpenTK_Mathematics_Matrix4x3_Mult_OpenTK_Mathematics_Matrix4x3_OpenTK_Mathematics_Matrix3x2_" data-uid="OpenTK.Mathematics.Matrix4x3.Mult(OpenTK.Mathematics.Matrix4x3,OpenTK.Mathematics.Matrix3x2)">Mult(Matrix4x3, Matrix3x2)</h4>
+  <div class="markdown level1 summary"><p>Multiplies two instances.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static Matrix4x2 Mult(Matrix4x3 left, Matrix3x2 right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Matrix4x3.html">Matrix4x3</a></td>
+        <td><span class="parametername">left</span></td>
+        <td><p>The left operand of the multiplication.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Matrix3x2.html">Matrix3x2</a></td>
+        <td><span class="parametername">right</span></td>
+        <td><p>The right operand of the multiplication.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Matrix4x2.html">Matrix4x2</a></td>
+        <td><p>A new instance that is the result of the multiplication.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Matrix4x3_Mult_" data-uid="OpenTK.Mathematics.Matrix4x3.Mult*"></a>
   <h4 id="OpenTK_Mathematics_Matrix4x3_Mult_OpenTK_Mathematics_Matrix4x3_OpenTK_Mathematics_Matrix3x4_" data-uid="OpenTK.Mathematics.Matrix4x3.Mult(OpenTK.Mathematics.Matrix4x3,OpenTK.Mathematics.Matrix3x4)">Mult(Matrix4x3, Matrix3x4)</h4>
-  <div class="markdown level1 summary"><p>This isn't quite a multiply, but the result may be useful in some situations.
-Multiplies two instances.</p>
+  <div class="markdown level1 summary"><p>Multiplies two instances.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -1943,7 +2076,8 @@ public static Matrix4 Mult(Matrix4x3 left, Matrix3x4 right)</code></pre>
   </table>
   <a id="OpenTK_Mathematics_Matrix4x3_Mult_" data-uid="OpenTK.Mathematics.Matrix4x3.Mult*"></a>
   <h4 id="OpenTK_Mathematics_Matrix4x3_Mult_OpenTK_Mathematics_Matrix4x3_OpenTK_Mathematics_Matrix4x3_" data-uid="OpenTK.Mathematics.Matrix4x3.Mult(OpenTK.Mathematics.Matrix4x3,OpenTK.Mathematics.Matrix4x3)">Mult(Matrix4x3, Matrix4x3)</h4>
-  <div class="markdown level1 summary"><p>Multiplies two instances.</p>
+  <div class="markdown level1 summary"><p>Multiplies two instances.
+This is done by extending the matrices with a last row of (0, 0, 0, 1), and discarding the last row of the result.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -2042,9 +2176,86 @@ public static Matrix4x3 Mult(Matrix4x3 left, float right)</code></pre>
     </tbody>
   </table>
   <a id="OpenTK_Mathematics_Matrix4x3_Mult_" data-uid="OpenTK.Mathematics.Matrix4x3.Mult*"></a>
+  <h4 id="OpenTK_Mathematics_Matrix4x3_Mult_OpenTK_Mathematics_Matrix4x3__OpenTK_Mathematics_Matrix3__OpenTK_Mathematics_Matrix4x3__" data-uid="OpenTK.Mathematics.Matrix4x3.Mult(OpenTK.Mathematics.Matrix4x3@,OpenTK.Mathematics.Matrix3@,OpenTK.Mathematics.Matrix4x3@)">Mult(in Matrix4x3, in Matrix3, out Matrix4x3)</h4>
+  <div class="markdown level1 summary"><p>Multiplies two instances.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Mult(in Matrix4x3 left, in Matrix3 right, out Matrix4x3 result)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Matrix4x3.html">Matrix4x3</a></td>
+        <td><span class="parametername">left</span></td>
+        <td><p>The left operand of the multiplication.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Matrix3.html">Matrix3</a></td>
+        <td><span class="parametername">right</span></td>
+        <td><p>The right operand of the multiplication.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Matrix4x3.html">Matrix4x3</a></td>
+        <td><span class="parametername">result</span></td>
+        <td><p>A new instance that is the result of the multiplication.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Matrix4x3_Mult_" data-uid="OpenTK.Mathematics.Matrix4x3.Mult*"></a>
+  <h4 id="OpenTK_Mathematics_Matrix4x3_Mult_OpenTK_Mathematics_Matrix4x3__OpenTK_Mathematics_Matrix3x2__OpenTK_Mathematics_Matrix4x2__" data-uid="OpenTK.Mathematics.Matrix4x3.Mult(OpenTK.Mathematics.Matrix4x3@,OpenTK.Mathematics.Matrix3x2@,OpenTK.Mathematics.Matrix4x2@)">Mult(in Matrix4x3, in Matrix3x2, out Matrix4x2)</h4>
+  <div class="markdown level1 summary"><p>Multiplies two instances.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Mult(in Matrix4x3 left, in Matrix3x2 right, out Matrix4x2 result)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Matrix4x3.html">Matrix4x3</a></td>
+        <td><span class="parametername">left</span></td>
+        <td><p>The left operand of the multiplication.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Matrix3x2.html">Matrix3x2</a></td>
+        <td><span class="parametername">right</span></td>
+        <td><p>The right operand of the multiplication.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Matrix4x2.html">Matrix4x2</a></td>
+        <td><span class="parametername">result</span></td>
+        <td><p>A new instance that is the result of the multiplication.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Matrix4x3_Mult_" data-uid="OpenTK.Mathematics.Matrix4x3.Mult*"></a>
   <h4 id="OpenTK_Mathematics_Matrix4x3_Mult_OpenTK_Mathematics_Matrix4x3__OpenTK_Mathematics_Matrix3x4__OpenTK_Mathematics_Matrix4__" data-uid="OpenTK.Mathematics.Matrix4x3.Mult(OpenTK.Mathematics.Matrix4x3@,OpenTK.Mathematics.Matrix3x4@,OpenTK.Mathematics.Matrix4@)">Mult(in Matrix4x3, in Matrix3x4, out Matrix4)</h4>
-  <div class="markdown level1 summary"><p>This isn't quite a multiply, but the result may be useful in some situations.
-Multiplies two instances.</p>
+  <div class="markdown level1 summary"><p>Multiplies two instances.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -2083,8 +2294,8 @@ Multiplies two instances.</p>
   </table>
   <a id="OpenTK_Mathematics_Matrix4x3_Mult_" data-uid="OpenTK.Mathematics.Matrix4x3.Mult*"></a>
   <h4 id="OpenTK_Mathematics_Matrix4x3_Mult_OpenTK_Mathematics_Matrix4x3__OpenTK_Mathematics_Matrix4x3__OpenTK_Mathematics_Matrix4x3__" data-uid="OpenTK.Mathematics.Matrix4x3.Mult(OpenTK.Mathematics.Matrix4x3@,OpenTK.Mathematics.Matrix4x3@,OpenTK.Mathematics.Matrix4x3@)">Mult(in Matrix4x3, in Matrix4x3, out Matrix4x3)</h4>
-  <div class="markdown level1 summary"><p>This isn't quite a multiply, but the result may be useful in some situations.
-Multiplies two instances.</p>
+  <div class="markdown level1 summary"><p>Multiplies two instances.
+This is done by extending the matrices with a last row of (0, 0, 0, 1), and discarding the last row of the result.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -2936,6 +3147,104 @@ public static bool operator !=(Matrix4x3 left, Matrix4x3 right)</code></pre>
     </tbody>
   </table>
   <a id="OpenTK_Mathematics_Matrix4x3_op_Multiply_" data-uid="OpenTK.Mathematics.Matrix4x3.op_Multiply*"></a>
+  <h4 id="OpenTK_Mathematics_Matrix4x3_op_Multiply_OpenTK_Mathematics_Matrix4x3_OpenTK_Mathematics_Matrix3_" data-uid="OpenTK.Mathematics.Matrix4x3.op_Multiply(OpenTK.Mathematics.Matrix4x3,OpenTK.Mathematics.Matrix3)">operator *(Matrix4x3, Matrix3)</h4>
+  <div class="markdown level1 summary"><p>Matrix multiplication.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Matrix4x3 operator *(Matrix4x3 left, Matrix3 right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Matrix4x3.html">Matrix4x3</a></td>
+        <td><span class="parametername">left</span></td>
+        <td><p>left-hand operand.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Matrix3.html">Matrix3</a></td>
+        <td><span class="parametername">right</span></td>
+        <td><p>right-hand operand.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Matrix4x3.html">Matrix4x3</a></td>
+        <td><p>A new Matrix4x3 which holds the result of the multiplication.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Matrix4x3_op_Multiply_" data-uid="OpenTK.Mathematics.Matrix4x3.op_Multiply*"></a>
+  <h4 id="OpenTK_Mathematics_Matrix4x3_op_Multiply_OpenTK_Mathematics_Matrix4x3_OpenTK_Mathematics_Matrix3x2_" data-uid="OpenTK.Mathematics.Matrix4x3.op_Multiply(OpenTK.Mathematics.Matrix4x3,OpenTK.Mathematics.Matrix3x2)">operator *(Matrix4x3, Matrix3x2)</h4>
+  <div class="markdown level1 summary"><p>Matrix multiplication.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Matrix4x2 operator *(Matrix4x3 left, Matrix3x2 right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Matrix4x3.html">Matrix4x3</a></td>
+        <td><span class="parametername">left</span></td>
+        <td><p>left-hand operand.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Matrix3x2.html">Matrix3x2</a></td>
+        <td><span class="parametername">right</span></td>
+        <td><p>right-hand operand.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Matrix4x2.html">Matrix4x2</a></td>
+        <td><p>A new Matrix4x2 which holds the result of the multiplication.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Matrix4x3_op_Multiply_" data-uid="OpenTK.Mathematics.Matrix4x3.op_Multiply*"></a>
   <h4 id="OpenTK_Mathematics_Matrix4x3_op_Multiply_OpenTK_Mathematics_Matrix4x3_OpenTK_Mathematics_Matrix3x4_" data-uid="OpenTK.Mathematics.Matrix4x3.op_Multiply(OpenTK.Mathematics.Matrix4x3,OpenTK.Mathematics.Matrix3x4)">operator *(Matrix4x3, Matrix3x4)</h4>
   <div class="markdown level1 summary"><p>Matrix multiplication.</p>
 </div>
@@ -3031,6 +3340,56 @@ public static Matrix4x3 operator *(Matrix4x3 left, Matrix4x3 right)</code></pre>
       <tr>
         <td><a class="xref" href="OpenTK.Mathematics.Matrix4x3.html">Matrix4x3</a></td>
         <td><p>A new Matrix4x3 which holds the result of the multiplication.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Matrix4x3_op_Multiply_" data-uid="OpenTK.Mathematics.Matrix4x3.op_Multiply*"></a>
+  <h4 id="OpenTK_Mathematics_Matrix4x3_op_Multiply_OpenTK_Mathematics_Matrix4x3_OpenTK_Mathematics_Vector3_" data-uid="OpenTK.Mathematics.Matrix4x3.op_Multiply(OpenTK.Mathematics.Matrix4x3,OpenTK.Mathematics.Vector3)">operator *(Matrix4x3, Vector3)</h4>
+  <div class="markdown level1 summary"><p>Transform a 3-dimensional vector into a 4-dimensional vector using the given 4x3 Matrix.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static Vector4 operator *(Matrix4x3 mat, Vector3 vec)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Matrix4x3.html">Matrix4x3</a></td>
+        <td><span class="parametername">mat</span></td>
+        <td><p>The desired transformation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector3.html">Vector3</a></td>
+        <td><span class="parametername">vec</span></td>
+        <td><p>The vector to transform.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector4.html">Vector4</a></td>
+        <td><p>The transformed vector.</p>
 </td>
       </tr>
     </tbody>
@@ -3141,6 +3500,36 @@ public static Matrix4x3 operator -(Matrix4x3 left, Matrix4x3 right)</code></pre>
   </div>
   <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iformattable">IFormattable</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.imultiplyoperators-3">IMultiplyOperators&lt;TSelf, TOther, TResult&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.imultiplyoperators-3">IMultiplyOperators&lt;TSelf, TOther, TResult&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.imultiplyoperators-3">IMultiplyOperators&lt;TSelf, TOther, TResult&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.imultiplyoperators-3">IMultiplyOperators&lt;TSelf, TOther, TResult&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.imultiplyoperators-3">IMultiplyOperators&lt;TSelf, TOther, TResult&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.imultiplyoperators-3">IMultiplyOperators&lt;TSelf, TOther, TResult&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.iadditionoperators-3">IAdditionOperators&lt;TSelf, TOther, TResult&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.isubtractionoperators-3">ISubtractionOperators&lt;TSelf, TOther, TResult&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.iequalityoperators-3">IEqualityOperators&lt;TSelf, TOther, TResult&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.iadditiveidentity-2">IAdditiveIdentity&lt;TSelf, TResult&gt;</a>
   </div>
 
 </article>

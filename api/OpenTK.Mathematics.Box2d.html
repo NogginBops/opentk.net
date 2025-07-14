@@ -241,7 +241,7 @@ public struct Box2d : IEquatable&lt;Box2d&gt;, IFormattable</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public double Bottom { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public double Bottom { readonly get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -265,7 +265,7 @@ public struct Box2d : IEquatable&lt;Box2d&gt;, IFormattable</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Vector2d Center { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public Vector2d Center { readonly get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -289,7 +289,7 @@ public struct Box2d : IEquatable&lt;Box2d&gt;, IFormattable</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Vector2d CenteredSize { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public Vector2d CenteredSize { readonly get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -313,7 +313,7 @@ public struct Box2d : IEquatable&lt;Box2d&gt;, IFormattable</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Vector2d HalfSize { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public Vector2d HalfSize { readonly get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -337,7 +337,7 @@ public struct Box2d : IEquatable&lt;Box2d&gt;, IFormattable</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public double Height { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public double Height { readonly get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -361,7 +361,7 @@ public struct Box2d : IEquatable&lt;Box2d&gt;, IFormattable</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool IsZero { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly bool IsZero { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -385,7 +385,7 @@ public struct Box2d : IEquatable&lt;Box2d&gt;, IFormattable</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public double Left { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public double Left { readonly get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -409,7 +409,7 @@ public struct Box2d : IEquatable&lt;Box2d&gt;, IFormattable</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Vector2d Location { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly Vector2d Location { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -481,7 +481,7 @@ public struct Box2d : IEquatable&lt;Box2d&gt;, IFormattable</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public double Right { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public double Right { readonly get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -505,7 +505,7 @@ public struct Box2d : IEquatable&lt;Box2d&gt;, IFormattable</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Vector2d Size { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public Vector2d Size { readonly get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -529,7 +529,7 @@ public struct Box2d : IEquatable&lt;Box2d&gt;, IFormattable</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public double SizeX { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public double SizeX { readonly get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -553,7 +553,7 @@ public struct Box2d : IEquatable&lt;Box2d&gt;, IFormattable</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public double SizeY { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public double SizeY { readonly get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -577,7 +577,7 @@ public struct Box2d : IEquatable&lt;Box2d&gt;, IFormattable</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public double Top { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public double Top { readonly get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -601,7 +601,7 @@ public struct Box2d : IEquatable&lt;Box2d&gt;, IFormattable</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public double Width { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public double Width { readonly get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -625,7 +625,7 @@ public struct Box2d : IEquatable&lt;Box2d&gt;, IFormattable</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public double X { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public double X { readonly get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -649,7 +649,7 @@ public struct Box2d : IEquatable&lt;Box2d&gt;, IFormattable</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public double Y { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public double Y { readonly get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -808,7 +808,7 @@ public readonly bool Contains(Vector2d point)</code></pre>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Pure]
-public bool Contains(Vector2d point, bool boundaryInclusive)</code></pre>
+public readonly bool Contains(Vector2d point, bool boundaryInclusive)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -989,7 +989,7 @@ public readonly double DistanceToNearestEdge(Vector2d point)</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool Equals(Box2d other)</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly bool Equals(Box2d other)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -1032,7 +1032,7 @@ public readonly double DistanceToNearestEdge(Vector2d point)</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override bool Equals(object obj)</code></pre>
+    <pre><code class="lang-csharp hljs">public override readonly bool Equals(object obj)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -1526,7 +1526,7 @@ public readonly Box2d Inflated(Vector2d size)</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Box2d Intersected(Box2d other)</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly Box2d Intersected(Box2d other)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -1569,7 +1569,7 @@ public readonly Box2d Inflated(Vector2d size)</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool IntersectsWith(Box2d other)</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly bool IntersectsWith(Box2d other)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -1738,7 +1738,7 @@ public readonly Box2d Scaled(Vector2d scale, Vector2d anchor)</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+    <pre><code class="lang-csharp hljs">public override readonly string ToString()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-condensed">
@@ -1765,7 +1765,7 @@ public readonly Box2d Scaled(Vector2d scale, Vector2d anchor)</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string ToString(IFormatProvider formatProvider)</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly string ToString(IFormatProvider formatProvider)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -1810,7 +1810,7 @@ public readonly Box2d Scaled(Vector2d scale, Vector2d anchor)</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string ToString(string format)</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly string ToString(string format)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -1855,7 +1855,7 @@ public readonly Box2d Scaled(Vector2d scale, Vector2d anchor)</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string ToString(string format, IFormatProvider formatProvider)</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly string ToString(string format, IFormatProvider formatProvider)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -1908,7 +1908,7 @@ public readonly Box2d Scaled(Vector2d scale, Vector2d anchor)</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool TouchWith(Box2d other)</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly bool TouchWith(Box2d other)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">

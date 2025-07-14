@@ -84,6 +84,18 @@
     <h5>Implements</h5>
     <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="OpenTK.Mathematics.Vector3i.html">Vector3i</a>&gt;</div>
     <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iformattable">IFormattable</a></div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.iadditionoperators-3">IAdditionOperators</a>&lt;<a class="xref" href="OpenTK.Mathematics.Vector3i.html">Vector3i</a>, <a class="xref" href="OpenTK.Mathematics.Vector3i.html">Vector3i</a>, <a class="xref" href="OpenTK.Mathematics.Vector3i.html">Vector3i</a>&gt;</div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.isubtractionoperators-3">ISubtractionOperators</a>&lt;<a class="xref" href="OpenTK.Mathematics.Vector3i.html">Vector3i</a>, <a class="xref" href="OpenTK.Mathematics.Vector3i.html">Vector3i</a>, <a class="xref" href="OpenTK.Mathematics.Vector3i.html">Vector3i</a>&gt;</div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.iunarynegationoperators-2">IUnaryNegationOperators</a>&lt;<a class="xref" href="OpenTK.Mathematics.Vector3i.html">Vector3i</a>, <a class="xref" href="OpenTK.Mathematics.Vector3i.html">Vector3i</a>&gt;</div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.iunaryplusoperators-2">IUnaryPlusOperators</a>&lt;<a class="xref" href="OpenTK.Mathematics.Vector3i.html">Vector3i</a>, <a class="xref" href="OpenTK.Mathematics.Vector3i.html">Vector3i</a>&gt;</div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.imultiplyoperators-3">IMultiplyOperators</a>&lt;<a class="xref" href="OpenTK.Mathematics.Vector3i.html">Vector3i</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="OpenTK.Mathematics.Vector3i.html">Vector3i</a>&gt;</div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.imultiplyoperators-3">IMultiplyOperators</a>&lt;<a class="xref" href="OpenTK.Mathematics.Vector3i.html">Vector3i</a>, <a class="xref" href="OpenTK.Mathematics.Vector3i.html">Vector3i</a>, <a class="xref" href="OpenTK.Mathematics.Vector3i.html">Vector3i</a>&gt;</div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.idivisionoperators-3">IDivisionOperators</a>&lt;<a class="xref" href="OpenTK.Mathematics.Vector3i.html">Vector3i</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="OpenTK.Mathematics.Vector3i.html">Vector3i</a>&gt;</div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.idivisionoperators-3">IDivisionOperators</a>&lt;<a class="xref" href="OpenTK.Mathematics.Vector3i.html">Vector3i</a>, <a class="xref" href="OpenTK.Mathematics.Vector3i.html">Vector3i</a>, <a class="xref" href="OpenTK.Mathematics.Vector3i.html">Vector3i</a>&gt;</div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.iequalityoperators-3">IEqualityOperators</a>&lt;<a class="xref" href="OpenTK.Mathematics.Vector3i.html">Vector3i</a>, <a class="xref" href="OpenTK.Mathematics.Vector3i.html">Vector3i</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.iadditiveidentity-2">IAdditiveIdentity</a>&lt;<a class="xref" href="OpenTK.Mathematics.Vector3i.html">Vector3i</a>, <a class="xref" href="OpenTK.Mathematics.Vector3i.html">Vector3i</a>&gt;</div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.imultiplicativeidentity-2">IMultiplicativeIdentity</a>&lt;<a class="xref" href="OpenTK.Mathematics.Vector3i.html">Vector3i</a>, <a class="xref" href="OpenTK.Mathematics.Vector3i.html">Vector3i</a>&gt;</div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.iminmaxvalue-1">IMinMaxValue</a>&lt;<a class="xref" href="OpenTK.Mathematics.Vector3i.html">Vector3i</a>&gt;</div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -102,7 +114,7 @@
   <h5 id="OpenTK_Mathematics_Vector3i_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Serializable]
-public struct Vector3i : IEquatable&lt;Vector3i&gt;, IFormattable</code></pre>
+public struct Vector3i : IEquatable&lt;Vector3i&gt;, IFormattable, IAdditionOperators&lt;Vector3i, Vector3i, Vector3i&gt;, ISubtractionOperators&lt;Vector3i, Vector3i, Vector3i&gt;, IUnaryNegationOperators&lt;Vector3i, Vector3i&gt;, IUnaryPlusOperators&lt;Vector3i, Vector3i&gt;, IMultiplyOperators&lt;Vector3i, int, Vector3i&gt;, IMultiplyOperators&lt;Vector3i, Vector3i, Vector3i&gt;, IDivisionOperators&lt;Vector3i, int, Vector3i&gt;, IDivisionOperators&lt;Vector3i, Vector3i, Vector3i&gt;, IEqualityOperators&lt;Vector3i, Vector3i, bool&gt;, IAdditiveIdentity&lt;Vector3i, Vector3i&gt;, IMultiplicativeIdentity&lt;Vector3i, Vector3i&gt;, IMinMaxValue&lt;Vector3i&gt;</code></pre>
   </div>
   <h5 id="OpenTK_Mathematics_Vector3i_remarks"><strong>Remarks</strong></h5>
   <div class="markdown level0 remarks"><p>The Vector3i structure is suitable for interoperation with unmanaged code requiring three consecutive integers.</p>
@@ -419,6 +431,30 @@ public struct Vector3i : IEquatable&lt;Vector3i&gt;, IFormattable</code></pre>
   </table>
   <h3 id="properties">Properties
 </h3>
+  <a id="OpenTK_Mathematics_Vector3i_AdditiveIdentity_" data-uid="OpenTK.Mathematics.Vector3i.AdditiveIdentity*"></a>
+  <h4 id="OpenTK_Mathematics_Vector3i_AdditiveIdentity" data-uid="OpenTK.Mathematics.Vector3i.AdditiveIdentity">AdditiveIdentity</h4>
+  <div class="markdown level1 summary"><p>Gets the additive identity of Vector3i. Equivalent to Vector3i.Zero.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector3i AdditiveIdentity { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector3i.html">Vector3i</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <a id="OpenTK_Mathematics_Vector3i_EuclideanLength_" data-uid="OpenTK.Mathematics.Vector3i.EuclideanLength*"></a>
   <h4 id="OpenTK_Mathematics_Vector3i_EuclideanLength" data-uid="OpenTK.Mathematics.Vector3i.EuclideanLength">EuclideanLength</h4>
   <div class="markdown level1 summary"><p>Gets the euclidean length of the vector.</p>
@@ -549,6 +585,80 @@ public struct Vector3i : IEquatable&lt;Vector3i&gt;, IFormattable</code></pre>
       </tr>
     </tbody>
   </table>
+  <a id="OpenTK_Mathematics_Vector3i_MaxValue_" data-uid="OpenTK.Mathematics.Vector3i.MaxValue*"></a>
+  <h4 id="OpenTK_Mathematics_Vector3i_MaxValue" data-uid="OpenTK.Mathematics.Vector3i.MaxValue">MaxValue</h4>
+  <div class="markdown level1 summary"><p>Gets the maximum value for Vector3i.
+Sets X, Y, and Z components to the largest value for a signed 32-bit integer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector3i MaxValue { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector3i.html">Vector3i</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Vector3i_MinValue_" data-uid="OpenTK.Mathematics.Vector3i.MinValue*"></a>
+  <h4 id="OpenTK_Mathematics_Vector3i_MinValue" data-uid="OpenTK.Mathematics.Vector3i.MinValue">MinValue</h4>
+  <div class="markdown level1 summary"><p>Gets the minimum value for Vector3i.
+Sets X, Y, and Z components to the smallest value for a signed 32-bit integer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector3i MinValue { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector3i.html">Vector3i</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Vector3i_MultiplicativeIdentity_" data-uid="OpenTK.Mathematics.Vector3i.MultiplicativeIdentity*"></a>
+  <h4 id="OpenTK_Mathematics_Vector3i_MultiplicativeIdentity" data-uid="OpenTK.Mathematics.Vector3i.MultiplicativeIdentity">MultiplicativeIdentity</h4>
+  <div class="markdown level1 summary"><p>Gets the multiplicative identity of Vector3i. Equivalent to Vector3i.One.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector3i MultiplicativeIdentity { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector3i.html">Vector3i</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <a id="OpenTK_Mathematics_Vector3i_Xy_" data-uid="OpenTK.Mathematics.Vector3i.Xy*"></a>
   <h4 id="OpenTK_Mathematics_Vector3i_Xy" data-uid="OpenTK.Mathematics.Vector3i.Xy">Xy</h4>
   <div class="markdown level1 summary"><p>Gets or sets a <a class="xref" href="OpenTK.Mathematics.Vector2i.html">Vector2i</a> with the X and Y components of this instance.</p>
@@ -556,7 +666,7 @@ public struct Vector3i : IEquatable&lt;Vector3i&gt;, IFormattable</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Vector2i Xy { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public Vector2i Xy { readonly get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -1106,6 +1216,55 @@ public static Vector3i Clamp(Vector3i vec, Vector3i min, Vector3i max)</code></p
       </tr>
     </tbody>
   </table>
+  <a id="OpenTK_Mathematics_Vector3i_ComponentEqual_" data-uid="OpenTK.Mathematics.Vector3i.ComponentEqual*"></a>
+  <h4 id="OpenTK_Mathematics_Vector3i_ComponentEqual_OpenTK_Mathematics_Vector3i__OpenTK_Mathematics_Vector3i__" data-uid="OpenTK.Mathematics.Vector3i.ComponentEqual(OpenTK.Mathematics.Vector3i@,OpenTK.Mathematics.Vector3i@)">ComponentEqual(in Vector3i, in Vector3i)</h4>
+  <div class="markdown level1 summary"><p>Component wise equal comparision of two vectors.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector3b ComponentEqual(in Vector3i left, in Vector3i right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector3i.html">Vector3i</a></td>
+        <td><span class="parametername">left</span></td>
+        <td><p>The left vector.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector3i.html">Vector3i</a></td>
+        <td><span class="parametername">right</span></td>
+        <td><p>The right vector.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector3b.html">Vector3b</a></td>
+        <td><p>A component wise boolean vector whose compoennts are true when the corresponding left component is equal to the right component.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="OpenTK_Mathematics_Vector3i_ComponentMax_" data-uid="OpenTK.Mathematics.Vector3i.ComponentMax*"></a>
   <h4 id="OpenTK_Mathematics_Vector3i_ComponentMax_OpenTK_Mathematics_Vector3i_OpenTK_Mathematics_Vector3i_" data-uid="OpenTK.Mathematics.Vector3i.ComponentMax(OpenTK.Mathematics.Vector3i,OpenTK.Mathematics.Vector3i)">ComponentMax(Vector3i, Vector3i)</h4>
   <div class="markdown level1 summary"><p>Returns a vector created from the largest of the corresponding components of the given vectors.</p>
@@ -1280,6 +1439,55 @@ public static Vector3i ComponentMin(Vector3i a, Vector3i b)</code></pre>
         <td><a class="xref" href="OpenTK.Mathematics.Vector3i.html">Vector3i</a></td>
         <td><span class="parametername">result</span></td>
         <td><p>The component-wise minimum.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Vector3i_ComponentNotEqual_" data-uid="OpenTK.Mathematics.Vector3i.ComponentNotEqual*"></a>
+  <h4 id="OpenTK_Mathematics_Vector3i_ComponentNotEqual_OpenTK_Mathematics_Vector3i__OpenTK_Mathematics_Vector3i__" data-uid="OpenTK.Mathematics.Vector3i.ComponentNotEqual(OpenTK.Mathematics.Vector3i@,OpenTK.Mathematics.Vector3i@)">ComponentNotEqual(in Vector3i, in Vector3i)</h4>
+  <div class="markdown level1 summary"><p>Component wise not equal comparision of two vectors.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector3b ComponentNotEqual(in Vector3i left, in Vector3i right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector3i.html">Vector3i</a></td>
+        <td><span class="parametername">left</span></td>
+        <td><p>The left vector.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector3i.html">Vector3i</a></td>
+        <td><span class="parametername">right</span></td>
+        <td><p>The right vector.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector3b.html">Vector3b</a></td>
+        <td><p>A component wise boolean vector whose compoennts are true when the corresponding left component is not equal to the right component.</p>
 </td>
       </tr>
     </tbody>
@@ -1552,7 +1760,7 @@ public static Vector3i Divide(Vector3i vector, int scale)</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override bool Equals(object obj)</code></pre>
+    <pre><code class="lang-csharp hljs">public override readonly bool Equals(object obj)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -1617,6 +1825,202 @@ public static Vector3i Divide(Vector3i vector, int scale)</code></pre>
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode">ValueType.GetHashCode()</a></div>
+  <a id="OpenTK_Mathematics_Vector3i_GreaterThan_" data-uid="OpenTK.Mathematics.Vector3i.GreaterThan*"></a>
+  <h4 id="OpenTK_Mathematics_Vector3i_GreaterThan_OpenTK_Mathematics_Vector3i__OpenTK_Mathematics_Vector3i__" data-uid="OpenTK.Mathematics.Vector3i.GreaterThan(OpenTK.Mathematics.Vector3i@,OpenTK.Mathematics.Vector3i@)">GreaterThan(in Vector3i, in Vector3i)</h4>
+  <div class="markdown level1 summary"><p>Component wise greater than comparision of two vectors.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector3b GreaterThan(in Vector3i left, in Vector3i right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector3i.html">Vector3i</a></td>
+        <td><span class="parametername">left</span></td>
+        <td><p>The left vector.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector3i.html">Vector3i</a></td>
+        <td><span class="parametername">right</span></td>
+        <td><p>The right vector.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector3b.html">Vector3b</a></td>
+        <td><p>A component wise boolean vector whose compoennts are true when the corresponding left component is greater than the right component.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Vector3i_GreaterThanOrEqual_" data-uid="OpenTK.Mathematics.Vector3i.GreaterThanOrEqual*"></a>
+  <h4 id="OpenTK_Mathematics_Vector3i_GreaterThanOrEqual_OpenTK_Mathematics_Vector3i__OpenTK_Mathematics_Vector3i__" data-uid="OpenTK.Mathematics.Vector3i.GreaterThanOrEqual(OpenTK.Mathematics.Vector3i@,OpenTK.Mathematics.Vector3i@)">GreaterThanOrEqual(in Vector3i, in Vector3i)</h4>
+  <div class="markdown level1 summary"><p>Component wise greater than or equal comparision of two vectors.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector3b GreaterThanOrEqual(in Vector3i left, in Vector3i right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector3i.html">Vector3i</a></td>
+        <td><span class="parametername">left</span></td>
+        <td><p>The left vector.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector3i.html">Vector3i</a></td>
+        <td><span class="parametername">right</span></td>
+        <td><p>The right vector.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector3b.html">Vector3b</a></td>
+        <td><p>A component wise boolean vector whose compoennts are true when the corresponding left component is greater than or equal to the right component.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Vector3i_LessThan_" data-uid="OpenTK.Mathematics.Vector3i.LessThan*"></a>
+  <h4 id="OpenTK_Mathematics_Vector3i_LessThan_OpenTK_Mathematics_Vector3i__OpenTK_Mathematics_Vector3i__" data-uid="OpenTK.Mathematics.Vector3i.LessThan(OpenTK.Mathematics.Vector3i@,OpenTK.Mathematics.Vector3i@)">LessThan(in Vector3i, in Vector3i)</h4>
+  <div class="markdown level1 summary"><p>Component wise less than comparision of two vectors.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector3b LessThan(in Vector3i left, in Vector3i right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector3i.html">Vector3i</a></td>
+        <td><span class="parametername">left</span></td>
+        <td><p>The left vector.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector3i.html">Vector3i</a></td>
+        <td><span class="parametername">right</span></td>
+        <td><p>The right vector.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector3b.html">Vector3b</a></td>
+        <td><p>A component wise boolean vector whose compoennts are true when the corresponding left component is less than the right component.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Vector3i_LessThanOrEqual_" data-uid="OpenTK.Mathematics.Vector3i.LessThanOrEqual*"></a>
+  <h4 id="OpenTK_Mathematics_Vector3i_LessThanOrEqual_OpenTK_Mathematics_Vector3i__OpenTK_Mathematics_Vector3i__" data-uid="OpenTK.Mathematics.Vector3i.LessThanOrEqual(OpenTK.Mathematics.Vector3i@,OpenTK.Mathematics.Vector3i@)">LessThanOrEqual(in Vector3i, in Vector3i)</h4>
+  <div class="markdown level1 summary"><p>Component wise less than or equal comparision of two vectors.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector3b LessThanOrEqual(in Vector3i left, in Vector3i right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector3i.html">Vector3i</a></td>
+        <td><span class="parametername">left</span></td>
+        <td><p>The left vector.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector3i.html">Vector3i</a></td>
+        <td><span class="parametername">right</span></td>
+        <td><p>The right vector.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector3b.html">Vector3b</a></td>
+        <td><p>A component wise boolean vector whose compoennts are true when the corresponding left component is less than or equal to the right component.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="OpenTK_Mathematics_Vector3i_Multiply_" data-uid="OpenTK.Mathematics.Vector3i.Multiply*"></a>
   <h4 id="OpenTK_Mathematics_Vector3i_Multiply_OpenTK_Mathematics_Vector3i_OpenTK_Mathematics_Vector3i_" data-uid="OpenTK.Mathematics.Vector3i.Multiply(OpenTK.Mathematics.Vector3i,OpenTK.Mathematics.Vector3i)">Multiply(Vector3i, Vector3i)</h4>
   <div class="markdown level1 summary"><p>Multiplies a vector by the components a vector (scale).</p>
@@ -1840,7 +2244,7 @@ public static Vector3i Subtract(Vector3i a, Vector3i b)</code></pre>
     <tbody>
       <tr>
         <td><a class="xref" href="OpenTK.Mathematics.Vector3i.html">Vector3i</a></td>
-        <td><p>Result of subtraction.</p>
+        <td><p>Result of the subtraction.</p>
 </td>
       </tr>
     </tbody>
@@ -1891,7 +2295,7 @@ public static Vector3i Subtract(Vector3i a, Vector3i b)</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+    <pre><code class="lang-csharp hljs">public override readonly string ToString()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-condensed">
@@ -1918,7 +2322,7 @@ public static Vector3i Subtract(Vector3i a, Vector3i b)</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string ToString(IFormatProvider formatProvider)</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly string ToString(IFormatProvider formatProvider)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -1963,7 +2367,7 @@ public static Vector3i Subtract(Vector3i a, Vector3i b)</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string ToString(string format)</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly string ToString(string format)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -2164,6 +2568,106 @@ public static Vector3i operator +(Vector3i left, Vector3i right)</code></pre>
       </tr>
     </tbody>
   </table>
+  <a id="OpenTK_Mathematics_Vector3i_op_Addition_" data-uid="OpenTK.Mathematics.Vector3i.op_Addition*"></a>
+  <h4 id="OpenTK_Mathematics_Vector3i_op_Addition_OpenTK_Mathematics_Vector3i_System_Int32_" data-uid="OpenTK.Mathematics.Vector3i.op_Addition(OpenTK.Mathematics.Vector3i,System.Int32)">operator +(Vector3i, int)</h4>
+  <div class="markdown level1 summary"><p>Adds a scalar to an instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static Vector3i operator +(Vector3i left, int right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector3i.html">Vector3i</a></td>
+        <td><span class="parametername">left</span></td>
+        <td><p>The instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">right</span></td>
+        <td><p>The scalar.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector3i.html">Vector3i</a></td>
+        <td><p>The result of the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Vector3i_op_Addition_" data-uid="OpenTK.Mathematics.Vector3i.op_Addition*"></a>
+  <h4 id="OpenTK_Mathematics_Vector3i_op_Addition_System_Int32_OpenTK_Mathematics_Vector3i_" data-uid="OpenTK.Mathematics.Vector3i.op_Addition(System.Int32,OpenTK.Mathematics.Vector3i)">operator +(int, Vector3i)</h4>
+  <div class="markdown level1 summary"><p>Adds a scalar to an instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static Vector3i operator +(int left, Vector3i right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">left</span></td>
+        <td><p>The scalar.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector3i.html">Vector3i</a></td>
+        <td><span class="parametername">right</span></td>
+        <td><p>The instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector3i.html">Vector3i</a></td>
+        <td><p>The result of the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="OpenTK_Mathematics_Vector3i_op_Division_" data-uid="OpenTK.Mathematics.Vector3i.op_Division*"></a>
   <h4 id="OpenTK_Mathematics_Vector3i_op_Division_OpenTK_Mathematics_Vector3i_OpenTK_Mathematics_Vector3i_" data-uid="OpenTK.Mathematics.Vector3i.op_Division(OpenTK.Mathematics.Vector3i,OpenTK.Mathematics.Vector3i)">operator /(Vector3i, Vector3i)</h4>
   <div class="markdown level1 summary"><p>Component-wise division between the specified instance by a scale vector.</p>
@@ -2259,7 +2763,57 @@ public static Vector3i operator /(Vector3i vec, int scale)</code></pre>
     <tbody>
       <tr>
         <td><a class="xref" href="OpenTK.Mathematics.Vector3i.html">Vector3i</a></td>
-        <td><p>The result of the calculation.</p>
+        <td><p>Result of the division.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Vector3i_op_Division_" data-uid="OpenTK.Mathematics.Vector3i.op_Division*"></a>
+  <h4 id="OpenTK_Mathematics_Vector3i_op_Division_System_Int32_OpenTK_Mathematics_Vector3i_" data-uid="OpenTK.Mathematics.Vector3i.op_Division(System.Int32,OpenTK.Mathematics.Vector3i)">operator /(int, Vector3i)</h4>
+  <div class="markdown level1 summary"><p>Divides a scalar by the instance using integer division, floor(a/b).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static Vector3i operator /(int left, Vector3i right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">left</span></td>
+        <td><p>The scalar.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector3i.html">Vector3i</a></td>
+        <td><span class="parametername">right</span></td>
+        <td><p>The instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector3i.html">Vector3i</a></td>
+        <td><p>Result of the division.</p>
 </td>
       </tr>
     </tbody>
@@ -2353,6 +2907,106 @@ public static explicit operator Vector3h(Vector3i vec)</code></pre>
       <tr>
         <td><a class="xref" href="OpenTK.Mathematics.Vector3h.html">Vector3h</a></td>
         <td><p>The resulting Vector3h.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Vector3i_op_GreaterThan_" data-uid="OpenTK.Mathematics.Vector3i.op_GreaterThan*"></a>
+  <h4 id="OpenTK_Mathematics_Vector3i_op_GreaterThan_OpenTK_Mathematics_Vector3i_OpenTK_Mathematics_Vector3i_" data-uid="OpenTK.Mathematics.Vector3i.op_GreaterThan(OpenTK.Mathematics.Vector3i,OpenTK.Mathematics.Vector3i)">operator &gt;(Vector3i, Vector3i)</h4>
+  <div class="markdown level1 summary"><p>Component wise greater than comparision between the specified instances.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static Vector3b operator &gt;(Vector3i left, Vector3i right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector3i.html">Vector3i</a></td>
+        <td><span class="parametername">left</span></td>
+        <td><p>The left instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector3i.html">Vector3i</a></td>
+        <td><span class="parametername">right</span></td>
+        <td><p>The right instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector3b.html">Vector3b</a></td>
+        <td><p>A component wise boolean vector whose compoennts are true when the corresponding greater component is greater than the right component.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Vector3i_op_GreaterThanOrEqual_" data-uid="OpenTK.Mathematics.Vector3i.op_GreaterThanOrEqual*"></a>
+  <h4 id="OpenTK_Mathematics_Vector3i_op_GreaterThanOrEqual_OpenTK_Mathematics_Vector3i_OpenTK_Mathematics_Vector3i_" data-uid="OpenTK.Mathematics.Vector3i.op_GreaterThanOrEqual(OpenTK.Mathematics.Vector3i,OpenTK.Mathematics.Vector3i)">operator &gt;=(Vector3i, Vector3i)</h4>
+  <div class="markdown level1 summary"><p>Component wise greater than or equal comparision between the specified instances.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static Vector3b operator &gt;=(Vector3i left, Vector3i right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector3i.html">Vector3i</a></td>
+        <td><span class="parametername">left</span></td>
+        <td><p>The left instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector3i.html">Vector3i</a></td>
+        <td><span class="parametername">right</span></td>
+        <td><p>The right instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector3b.html">Vector3b</a></td>
+        <td><p>A component wise boolean vector whose compoennts are true when the corresponding left component is greater than or equal the right component.</p>
 </td>
       </tr>
     </tbody>
@@ -2539,6 +3193,106 @@ public static implicit operator Vector3i((int X, int Y, int Z) values)</code></p
       </tr>
     </tbody>
   </table>
+  <a id="OpenTK_Mathematics_Vector3i_op_LessThan_" data-uid="OpenTK.Mathematics.Vector3i.op_LessThan*"></a>
+  <h4 id="OpenTK_Mathematics_Vector3i_op_LessThan_OpenTK_Mathematics_Vector3i_OpenTK_Mathematics_Vector3i_" data-uid="OpenTK.Mathematics.Vector3i.op_LessThan(OpenTK.Mathematics.Vector3i,OpenTK.Mathematics.Vector3i)">operator &lt;(Vector3i, Vector3i)</h4>
+  <div class="markdown level1 summary"><p>Component wise less than comparision between the specified instances.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static Vector3b operator &lt;(Vector3i left, Vector3i right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector3i.html">Vector3i</a></td>
+        <td><span class="parametername">left</span></td>
+        <td><p>The left instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector3i.html">Vector3i</a></td>
+        <td><span class="parametername">right</span></td>
+        <td><p>The right instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector3b.html">Vector3b</a></td>
+        <td><p>A component wise boolean vector whose compoennts are true when the corresponding left component is less than the right component.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Vector3i_op_LessThanOrEqual_" data-uid="OpenTK.Mathematics.Vector3i.op_LessThanOrEqual*"></a>
+  <h4 id="OpenTK_Mathematics_Vector3i_op_LessThanOrEqual_OpenTK_Mathematics_Vector3i_OpenTK_Mathematics_Vector3i_" data-uid="OpenTK.Mathematics.Vector3i.op_LessThanOrEqual(OpenTK.Mathematics.Vector3i,OpenTK.Mathematics.Vector3i)">operator &lt;=(Vector3i, Vector3i)</h4>
+  <div class="markdown level1 summary"><p>Component wise less than or equal comparision between the specified instances.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static Vector3b operator &lt;=(Vector3i left, Vector3i right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector3i.html">Vector3i</a></td>
+        <td><span class="parametername">left</span></td>
+        <td><p>The left instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector3i.html">Vector3i</a></td>
+        <td><span class="parametername">right</span></td>
+        <td><p>The right instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector3b.html">Vector3b</a></td>
+        <td><p>A component wise boolean vector whose compoennts are true when the corresponding left component is less than or equal the right component.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="OpenTK_Mathematics_Vector3i_op_Multiply_" data-uid="OpenTK.Mathematics.Vector3i.op_Multiply*"></a>
   <h4 id="OpenTK_Mathematics_Vector3i_op_Multiply_OpenTK_Mathematics_Vector3i_OpenTK_Mathematics_Vector3i_" data-uid="OpenTK.Mathematics.Vector3i.op_Multiply(OpenTK.Mathematics.Vector3i,OpenTK.Mathematics.Vector3i)">operator *(Vector3i, Vector3i)</h4>
   <div class="markdown level1 summary"><p>Component-wise multiplication between the specified instance by a scale vector.</p>
@@ -2584,7 +3338,7 @@ public static Vector3i operator *(Vector3i vec, Vector3i scale)</code></pre>
     <tbody>
       <tr>
         <td><a class="xref" href="OpenTK.Mathematics.Vector3i.html">Vector3i</a></td>
-        <td><p>Result of multiplication.</p>
+        <td><p>Result of the multiplication.</p>
 </td>
       </tr>
     </tbody>
@@ -2739,6 +3493,106 @@ public static Vector3i operator -(Vector3i left, Vector3i right)</code></pre>
       </tr>
     </tbody>
   </table>
+  <a id="OpenTK_Mathematics_Vector3i_op_Subtraction_" data-uid="OpenTK.Mathematics.Vector3i.op_Subtraction*"></a>
+  <h4 id="OpenTK_Mathematics_Vector3i_op_Subtraction_OpenTK_Mathematics_Vector3i_System_Int32_" data-uid="OpenTK.Mathematics.Vector3i.op_Subtraction(OpenTK.Mathematics.Vector3i,System.Int32)">operator -(Vector3i, int)</h4>
+  <div class="markdown level1 summary"><p>Subtracts an instance by a scalar.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static Vector3i operator -(Vector3i left, int right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector3i.html">Vector3i</a></td>
+        <td><span class="parametername">left</span></td>
+        <td><p>The instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">right</span></td>
+        <td><p>The scalar.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector3i.html">Vector3i</a></td>
+        <td><p>The result of the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Vector3i_op_Subtraction_" data-uid="OpenTK.Mathematics.Vector3i.op_Subtraction*"></a>
+  <h4 id="OpenTK_Mathematics_Vector3i_op_Subtraction_System_Int32_OpenTK_Mathematics_Vector3i_" data-uid="OpenTK.Mathematics.Vector3i.op_Subtraction(System.Int32,OpenTK.Mathematics.Vector3i)">operator -(int, Vector3i)</h4>
+  <div class="markdown level1 summary"><p>Subtracts a scalar by an instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static Vector3i operator -(int left, Vector3i right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">left</span></td>
+        <td><p>The scalar.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector3i.html">Vector3i</a></td>
+        <td><span class="parametername">right</span></td>
+        <td><p>The instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector3i.html">Vector3i</a></td>
+        <td><p>The result of the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="OpenTK_Mathematics_Vector3i_op_UnaryNegation_" data-uid="OpenTK.Mathematics.Vector3i.op_UnaryNegation*"></a>
   <h4 id="OpenTK_Mathematics_Vector3i_op_UnaryNegation_OpenTK_Mathematics_Vector3i_" data-uid="OpenTK.Mathematics.Vector3i.op_UnaryNegation(OpenTK.Mathematics.Vector3i)">operator -(Vector3i)</h4>
   <div class="markdown level1 summary"><p>Negates an instance.</p>
@@ -2783,12 +3637,92 @@ public static Vector3i operator -(Vector3i vec)</code></pre>
       </tr>
     </tbody>
   </table>
+  <a id="OpenTK_Mathematics_Vector3i_op_UnaryPlus_" data-uid="OpenTK.Mathematics.Vector3i.op_UnaryPlus*"></a>
+  <h4 id="OpenTK_Mathematics_Vector3i_op_UnaryPlus_OpenTK_Mathematics_Vector3i_" data-uid="OpenTK.Mathematics.Vector3i.op_UnaryPlus(OpenTK.Mathematics.Vector3i)">operator +(Vector3i)</h4>
+  <div class="markdown level1 summary"><p>Computes the unary plus of the vector.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static Vector3i operator +(Vector3i vec)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector3i.html">Vector3i</a></td>
+        <td><span class="parametername">vec</span></td>
+        <td><p>The instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector3i.html">Vector3i</a></td>
+        <td><p>The result of the calculation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="implements">Implements</h3>
   <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable&lt;T&gt;</a>
   </div>
   <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iformattable">IFormattable</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.iadditionoperators-3">IAdditionOperators&lt;TSelf, TOther, TResult&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.isubtractionoperators-3">ISubtractionOperators&lt;TSelf, TOther, TResult&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.iunarynegationoperators-2">IUnaryNegationOperators&lt;TSelf, TResult&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.iunaryplusoperators-2">IUnaryPlusOperators&lt;TSelf, TResult&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.imultiplyoperators-3">IMultiplyOperators&lt;TSelf, TOther, TResult&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.imultiplyoperators-3">IMultiplyOperators&lt;TSelf, TOther, TResult&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.idivisionoperators-3">IDivisionOperators&lt;TSelf, TOther, TResult&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.idivisionoperators-3">IDivisionOperators&lt;TSelf, TOther, TResult&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.iequalityoperators-3">IEqualityOperators&lt;TSelf, TOther, TResult&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.iadditiveidentity-2">IAdditiveIdentity&lt;TSelf, TResult&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.imultiplicativeidentity-2">IMultiplicativeIdentity&lt;TSelf, TResult&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.iminmaxvalue-1">IMinMaxValue&lt;TSelf&gt;</a>
   </div>
 
 </article>

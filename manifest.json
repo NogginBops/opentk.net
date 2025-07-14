@@ -114,6 +114,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Audio.OpenAL.ALC.Loopback.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Audio.OpenAL.ALC.Loopback.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/OpenTK.Audio.OpenAL.ALC.yml",
       "output": {
         ".html": {
@@ -414,6 +424,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Audio.OpenAL.Channels.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Audio.OpenAL.Channels.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/OpenTK.Audio.OpenAL.DoubleBufferFormat.yml",
       "output": {
         ".html": {
@@ -508,6 +528,16 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenTK.Audio.OpenAL.EffectInteger.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Audio.OpenAL.EffectSlotBoolean.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Audio.OpenAL.EffectSlotBoolean.html"
         }
       },
       "version": ""
@@ -668,6 +698,16 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenTK.Audio.OpenAL.OpenALLibraryNameContainer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Audio.OpenAL.RenderFormat.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Audio.OpenAL.RenderFormat.html"
         }
       },
       "version": ""
@@ -2244,6 +2284,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Mathematics.Vector2b.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Mathematics.Vector2b.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/OpenTK.Mathematics.Vector2d.yml",
       "output": {
         ".html": {
@@ -2284,6 +2334,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Mathematics.Vector3b.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Mathematics.Vector3b.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/OpenTK.Mathematics.Vector3d.yml",
       "output": {
         ".html": {
@@ -2318,6 +2378,16 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenTK.Mathematics.Vector4.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Mathematics.Vector4b.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Mathematics.Vector4b.html"
         }
       },
       "version": ""
@@ -3254,6 +3324,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.Native.Windows.ShellComponent.ProgressMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.Native.Windows.ShellComponent.ProgressMode.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/OpenTK.Platform.Native.Windows.ShellComponent.yml",
       "output": {
         ".html": {
@@ -3288,6 +3368,16 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenTK.Platform.Native.X11.LibXcb.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.Native.X11.Libc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.Native.X11.Libc.html"
         }
       },
       "version": ""
@@ -3518,6 +3608,16 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenTK.Platform.Native.macOS.MacOSOpenGLComponent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.Native.macOS.MacOSShellComponent.ProgressMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.Native.macOS.MacOSShellComponent.ProgressMode.html"
         }
       },
       "version": ""
@@ -3838,6 +3938,16 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenTK.Platform.Toolkit.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.ToolkitFlags.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.ToolkitFlags.html"
         }
       },
       "version": ""
@@ -6994,6 +7104,16 @@
       "output": {
         "resource": {
           "relative_path": "opentk/tests/Bejeweled/Assets/Icon/ruby_icon.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "opentk/tests/Bejeweled/Assets/Textures/particle.png",
+      "output": {
+        "resource": {
+          "relative_path": "opentk/tests/Bejeweled/Assets/Textures/particle.png"
         }
       },
       "version": ""

@@ -164,6 +164,10 @@ options.MacOS.ActiveAppOnStart = false;
 <td>Used to set the rounded corner preference on Windows 11.</td>
 </tr>
 <tr>
+<td><a class="xref" href="../../api/OpenTK.Platform.Native.Windows.ShellComponent.html#OpenTK_Platform_Native_Windows_ShellComponent_SetProgressStatus_OpenTK_Platform_WindowHandle_OpenTK_Platform_Native_Windows_ShellComponent_ProgressMode_System_Single_"><code>ShellComponent.SetProgressStatus</code></a></td>
+<td>Set the window progress status, shown on the taskbar.</td>
+</tr>
+<tr>
 <td><code>IconComponent</code></td>
 <td></td>
 </tr>
@@ -316,10 +320,6 @@ options.MacOS.ActiveAppOnStart = false;
 <td></td>
 </tr>
 <tr>
-<td><a class="xref" href="../../api/OpenTK.Platform.Native.macOS.MacOSWindowComponent.html#OpenTK_Platform_Native_macOS_MacOSWindowComponent_SetDockIcon_OpenTK_Platform_WindowHandle_OpenTK_Platform_IconHandle_"><code>MacOSWindowComponent.SetDockIcon</code></a></td>
-<td>Sets the dock icon of the application</td>
-</tr>
-<tr>
 <td><a class="xref" href="../../api/OpenTK.Platform.Native.macOS.MacOSWindowComponent.html#OpenTK_Platform_Native_macOS_MacOSWindowComponent_SetFullscreenDisplayNoSpace_OpenTK_Platform_WindowHandle_OpenTK_Platform_DisplayHandle_"><code>MacOSWindowComponent.SetFullscreenDisplayNoSpace</code></a></td>
 <td>Make the window fullscreen without creating a new space for the window.</td>
 </tr>
@@ -376,12 +376,20 @@ options.MacOS.ActiveAppOnStart = false;
 <td>Used to create an animated cursor.</td>
 </tr>
 <tr>
-<td><a class="xref" href="../../api/OpenTK.Platform.Native.macOS.MacOSCursorComponent.html#OpenTK_Platform_Native_macOS_MacOSCursorComponent_IsAnimatedCursor_OpenTK_Platform_CursorHandle_"><code>MacOSCursorComponent.IsAnimatedCursor</code></a></td>
-<td>Used to check if a given cursor is animated.</td>
+<td><code>MacOSShellComponent</code></td>
+<td></td>
 </tr>
 <tr>
-<td><a class="xref" href="../../api/OpenTK.Platform.Native.macOS.MacOSCursorComponent.html#OpenTK_Platform_Native_macOS_MacOSCursorComponent_UpdateAnimation_OpenTK_Platform_CursorHandle_System_Double_"><code>MacOSCursorComponent.UpdateAnimation</code></a></td>
-<td>Used to update the animation of a given cursor.</td>
+<td><a class="xref" href="../../api/OpenTK.Platform.Native.macOS.MacOSShellComponent.html#OpenTK_Platform_Native_macOS_MacOSShellComponent_NSLog_System_String_"><code>MacOSShellComponent.NSLog</code></a></td>
+<td>Send a message to the system log. This is useful for application bundles where console output is not accessible.</td>
+</tr>
+<tr>
+<td><a class="xref" href="../../api/OpenTK.Platform.Native.macOS.MacOSShellComponent.html#OpenTK_Platform_Native_macOS_MacOSShellComponent_SetDockIcon_OpenTK_Platform_IconHandle_"><code>MacOSShellComponent.SetDockIcon</code></a></td>
+<td>Sets the dock icon of the application.</td>
+</tr>
+<tr>
+<td><a class="xref" href="../../api/OpenTK.Platform.Native.Windows.ShellComponent.html#OpenTK_Platform_Native_Windows_ShellComponent_SetProgressStatus_OpenTK_Platform_WindowHandle_OpenTK_Platform_Native_Windows_ShellComponent_ProgressMode_System_Single_"><code>MacOSShellComponent.SetProgressStatus</code></a></td>
+<td>Set the window progress status, shown on the taskbar.</td>
 </tr>
 </tbody>
 </table>

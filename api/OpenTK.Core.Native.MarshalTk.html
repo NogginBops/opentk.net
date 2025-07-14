@@ -117,47 +117,14 @@
   </div>
   <h3 id="methods">Methods
 </h3>
-  <a id="OpenTK_Core_Native_MarshalTk_FreeAnsiStringArrayPtr_" data-uid="OpenTK.Core.Native.MarshalTk.FreeAnsiStringArrayPtr*"></a>
-  <h4 id="OpenTK_Core_Native_MarshalTk_FreeAnsiStringArrayPtr_System_Byte___System_UInt32_" data-uid="OpenTK.Core.Native.MarshalTk.FreeAnsiStringArrayPtr(System.Byte**,System.UInt32)">FreeAnsiStringArrayPtr(byte**, uint)</h4>
-  <div class="markdown level1 summary"><p>Frees unmanaged ansi string arrays allocated by <a class="xref" href="OpenTK.Core.Native.MarshalTk.html#OpenTK_Core_Native_MarshalTk_MarshalStringArrayToAnsiStringArrayPtr_System_ReadOnlySpan_System_String__System_UInt32__">MarshalStringArrayToAnsiStringArrayPtr(ReadOnlySpan&lt;string&gt;, out uint)</a>.</p>
+  <a id="OpenTK_Core_Native_MarshalTk_FreeStringArrayCoTaskMem_" data-uid="OpenTK.Core.Native.MarshalTk.FreeStringArrayCoTaskMem*"></a>
+  <h4 id="OpenTK_Core_Native_MarshalTk_FreeStringArrayCoTaskMem_System_IntPtr_System_Int32_" data-uid="OpenTK.Core.Native.MarshalTk.FreeStringArrayCoTaskMem(System.IntPtr,System.Int32)">FreeStringArrayCoTaskMem(nint, int)</h4>
+  <div class="markdown level1 summary"><p>Frees an allocated string array using the StringArrayToCoTaskMem* functions.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void FreeAnsiStringArrayPtr(byte** strArrayPtr, uint count)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>**</td>
-        <td><span class="parametername">strArrayPtr</span></td>
-        <td><p>The unmanaged ansi string array.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
-        <td><span class="parametername">count</span></td>
-        <td><p>The number of strings in the array.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="OpenTK_Core_Native_MarshalTk_FreeStringArrayPtr_" data-uid="OpenTK.Core.Native.MarshalTk.FreeStringArrayPtr*"></a>
-  <h4 id="OpenTK_Core_Native_MarshalTk_FreeStringArrayPtr_System_IntPtr_System_Int32_" data-uid="OpenTK.Core.Native.MarshalTk.FreeStringArrayPtr(System.IntPtr,System.Int32)">FreeStringArrayPtr(nint, int)</h4>
-  <div class="markdown level1 summary"><p>Frees a marshaled string that allocated by <code>MarshalStringArrayToPtr</code>.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void FreeStringArrayPtr(nint ptr, int length)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void FreeStringArrayCoTaskMem(nint stringArray, int length)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -171,26 +138,26 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
-        <td><span class="parametername">ptr</span></td>
-        <td><p>An unmanaged pointer allocated with <code>MarshalStringArrayToPtr</code>.</p>
+        <td><span class="parametername">stringArray</span></td>
+        <td><p>The address of the string array to free.</p>
 </td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td><span class="parametername">length</span></td>
-        <td><p>The length of the string array.</p>
+        <td><p>The number of strings in the array.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <a id="OpenTK_Core_Native_MarshalTk_FreeStringPtr_" data-uid="OpenTK.Core.Native.MarshalTk.FreeStringPtr*"></a>
-  <h4 id="OpenTK_Core_Native_MarshalTk_FreeStringPtr_System_IntPtr_" data-uid="OpenTK.Core.Native.MarshalTk.FreeStringPtr(System.IntPtr)">FreeStringPtr(nint)</h4>
-  <div class="markdown level1 summary"><p>Frees a marshaled string that allocated by <code>MarshalStringToPtr</code>.</p>
+  <a id="OpenTK_Core_Native_MarshalTk_StringArrayPtrToStringArrayAnsi_" data-uid="OpenTK.Core.Native.MarshalTk.StringArrayPtrToStringArrayAnsi*"></a>
+  <h4 id="OpenTK_Core_Native_MarshalTk_StringArrayPtrToStringArrayAnsi_System_IntPtr_System_UInt32_" data-uid="OpenTK.Core.Native.MarshalTk.StringArrayPtrToStringArrayAnsi(System.IntPtr,System.UInt32)">StringArrayPtrToStringArrayAnsi(nint, uint)</h4>
+  <div class="markdown level1 summary"><p>Marshals a <span class="xref">byte**</span> ansi string array into a <span class="xref">string[]</span>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void FreeStringPtr(nint ptr)</code></pre>
+    <pre><code class="lang-csharp hljs">public static string[] StringArrayPtrToStringArrayAnsi(nint strArrayPtr, uint length)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -204,33 +171,6 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
-        <td><span class="parametername">ptr</span></td>
-        <td><p>An unmanaged pointer allocated with <code>MarshalStringToPtr</code>.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="OpenTK_Core_Native_MarshalTk_MarshalAnsiStringArrayPtrToStringArray_" data-uid="OpenTK.Core.Native.MarshalTk.MarshalAnsiStringArrayPtrToStringArray*"></a>
-  <h4 id="OpenTK_Core_Native_MarshalTk_MarshalAnsiStringArrayPtrToStringArray_System_Byte___System_UInt32_" data-uid="OpenTK.Core.Native.MarshalTk.MarshalAnsiStringArrayPtrToStringArray(System.Byte**,System.UInt32)">MarshalAnsiStringArrayPtrToStringArray(byte**, uint)</h4>
-  <div class="markdown level1 summary"><p>Marshals a <span class="xref">byte**</span> ansi string array into a <span class="xref">string[]</span>.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string[] MarshalAnsiStringArrayPtrToStringArray(byte** strArrayPtr, uint length)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>**</td>
         <td><span class="parametername">strArrayPtr</span></td>
         <td><p>The ansi string array pointer.</p>
 </td>
@@ -259,15 +199,14 @@
       </tr>
     </tbody>
   </table>
-  <a id="OpenTK_Core_Native_MarshalTk_MarshalPtrToString_" data-uid="OpenTK.Core.Native.MarshalTk.MarshalPtrToString*"></a>
-  <h4 id="OpenTK_Core_Native_MarshalTk_MarshalPtrToString_System_IntPtr_" data-uid="OpenTK.Core.Native.MarshalTk.MarshalPtrToString(System.IntPtr)">MarshalPtrToString(nint)</h4>
-  <div class="markdown level1 summary"><p>Marshals a pointer to a null-terminated byte array to a new <code>System.String</code>.
-This method supports OpenTK and is not intended to be called by user code.</p>
+  <a id="OpenTK_Core_Native_MarshalTk_StringArrayPtrToStringArrayAuto_" data-uid="OpenTK.Core.Native.MarshalTk.StringArrayPtrToStringArrayAuto*"></a>
+  <h4 id="OpenTK_Core_Native_MarshalTk_StringArrayPtrToStringArrayAuto_System_IntPtr_System_UInt32_" data-uid="OpenTK.Core.Native.MarshalTk.StringArrayPtrToStringArrayAuto(System.IntPtr,System.UInt32)">StringArrayPtrToStringArrayAuto(nint, uint)</h4>
+  <div class="markdown level1 summary"><p>Marshals a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a> ansi string array into a <span class="xref">string[]</span>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string MarshalPtrToString(nint ptr)</code></pre>
+    <pre><code class="lang-csharp hljs">public static string[] StringArrayPtrToStringArrayAuto(nint strArrayPtr, uint length)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -281,8 +220,14 @@ This method supports OpenTK and is not intended to be called by user code.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
-        <td><span class="parametername">ptr</span></td>
-        <td><p>A pointer to a null-terminated byte array.</p>
+        <td><span class="parametername">strArrayPtr</span></td>
+        <td><p>The string array pointer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
+        <td><span class="parametername">length</span></td>
+        <td><p>The number of strings in the array.</p>
 </td>
       </tr>
     </tbody>
@@ -297,21 +242,119 @@ This method supports OpenTK and is not intended to be called by user code.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
-        <td><p>A <code>System.String</code> with the data from <code class="paramref">ptr</code>.</p>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</td>
+        <td><p>The managed string array.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <a id="OpenTK_Core_Native_MarshalTk_MarshalStringArrayToAnsiStringArrayPtr_" data-uid="OpenTK.Core.Native.MarshalTk.MarshalStringArrayToAnsiStringArrayPtr*"></a>
-  <h4 id="OpenTK_Core_Native_MarshalTk_MarshalStringArrayToAnsiStringArrayPtr_System_ReadOnlySpan_System_String__System_UInt32__" data-uid="OpenTK.Core.Native.MarshalTk.MarshalStringArrayToAnsiStringArrayPtr(System.ReadOnlySpan{System.String},System.UInt32@)">MarshalStringArrayToAnsiStringArrayPtr(ReadOnlySpan&lt;string&gt;, out uint)</h4>
-  <div class="markdown level1 summary"><p>Converts a span of strings into an unmanged ansi string array.
-Use <a class="xref" href="OpenTK.Core.Native.MarshalTk.html#OpenTK_Core_Native_MarshalTk_FreeAnsiStringArrayPtr_System_Byte___System_UInt32_">FreeAnsiStringArrayPtr(byte**, uint)</a> to free the array.</p>
+  <a id="OpenTK_Core_Native_MarshalTk_StringArrayPtrToStringArrayUTF8_" data-uid="OpenTK.Core.Native.MarshalTk.StringArrayPtrToStringArrayUTF8*"></a>
+  <h4 id="OpenTK_Core_Native_MarshalTk_StringArrayPtrToStringArrayUTF8_System_IntPtr_System_UInt32_" data-uid="OpenTK.Core.Native.MarshalTk.StringArrayPtrToStringArrayUTF8(System.IntPtr,System.UInt32)">StringArrayPtrToStringArrayUTF8(nint, uint)</h4>
+  <div class="markdown level1 summary"><p>Marshals a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a> ansi string array into a <span class="xref">string[]</span>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static byte** MarshalStringArrayToAnsiStringArrayPtr(ReadOnlySpan&lt;string&gt; stringArray, out uint count)</code></pre>
+    <pre><code class="lang-csharp hljs">public static string[] StringArrayPtrToStringArrayUTF8(nint strArrayPtr, uint length)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
+        <td><span class="parametername">strArrayPtr</span></td>
+        <td><p>The string array pointer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
+        <td><span class="parametername">length</span></td>
+        <td><p>The number of strings in the array.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</td>
+        <td><p>The managed string array.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Core_Native_MarshalTk_StringArrayPtrToStringArrayUni_" data-uid="OpenTK.Core.Native.MarshalTk.StringArrayPtrToStringArrayUni*"></a>
+  <h4 id="OpenTK_Core_Native_MarshalTk_StringArrayPtrToStringArrayUni_System_IntPtr_System_UInt32_" data-uid="OpenTK.Core.Native.MarshalTk.StringArrayPtrToStringArrayUni(System.IntPtr,System.UInt32)">StringArrayPtrToStringArrayUni(nint, uint)</h4>
+  <div class="markdown level1 summary"><p>Marshals a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a> ansi string array into a <span class="xref">string[]</span>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string[] StringArrayPtrToStringArrayUni(nint strArrayPtr, uint length)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
+        <td><span class="parametername">strArrayPtr</span></td>
+        <td><p>The string array pointer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
+        <td><span class="parametername">length</span></td>
+        <td><p>The number of strings in the array.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</td>
+        <td><p>The managed string array.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Core_Native_MarshalTk_StringArrayToCoTaskMemAnsi_" data-uid="OpenTK.Core.Native.MarshalTk.StringArrayToCoTaskMemAnsi*"></a>
+  <h4 id="OpenTK_Core_Native_MarshalTk_StringArrayToCoTaskMemAnsi_System_ReadOnlySpan_System_String__" data-uid="OpenTK.Core.Native.MarshalTk.StringArrayToCoTaskMemAnsi(System.ReadOnlySpan{System.String})">StringArrayToCoTaskMemAnsi(ReadOnlySpan&lt;string&gt;)</h4>
+  <div class="markdown level1 summary"><p>Copies the contents of a managed <span class="xref">string[]</span> to a block of memory allocated from the unmanaged COM task allocator.
+This function allocates multiple pieces of memory and needs to be freed with <a class="xref" href="OpenTK.Core.Native.MarshalTk.html#OpenTK_Core_Native_MarshalTk_FreeStringArrayCoTaskMem_System_IntPtr_System_Int32_">FreeStringArrayCoTaskMem(nint, int)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static nint StringArrayToCoTaskMemAnsi(ReadOnlySpan&lt;string&gt; stringArray)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -326,56 +369,6 @@ Use <a class="xref" href="OpenTK.Core.Native.MarshalTk.html#OpenTK_Core_Native_M
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</td>
         <td><span class="parametername">stringArray</span></td>
-        <td><p>The span of strings to marshal.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
-        <td><span class="parametername">count</span></td>
-        <td><p>The number of strings in the unmanged array. The same as the length of the array.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>**</td>
-        <td><p>The unmanaged ansi string array.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="OpenTK_Core_Native_MarshalTk_MarshalStringArrayToPtr_" data-uid="OpenTK.Core.Native.MarshalTk.MarshalStringArrayToPtr*"></a>
-  <h4 id="OpenTK_Core_Native_MarshalTk_MarshalStringArrayToPtr_System_String___" data-uid="OpenTK.Core.Native.MarshalTk.MarshalStringArrayToPtr(System.String[])">MarshalStringArrayToPtr(string[])</h4>
-  <div class="markdown level1 summary"><p>Marshals a <code>System.String</code> array to unmanaged memory by calling
-Marshal.AllocHGlobal for each element.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static nint MarshalStringArrayToPtr(string[] strArray)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</td>
-        <td><span class="parametername">strArray</span></td>
         <td><p>The string array to marshal.</p>
 </td>
       </tr>
@@ -392,21 +385,20 @@ Marshal.AllocHGlobal for each element.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
-        <td><p>An unmanaged pointer to an array of null-terminated strings.</p>
+        <td><p>An integer representing a pointer to the block of memory allocated for the string array.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <a id="OpenTK_Core_Native_MarshalTk_MarshalStringToPtr_" data-uid="OpenTK.Core.Native.MarshalTk.MarshalStringToPtr*"></a>
-  <h4 id="OpenTK_Core_Native_MarshalTk_MarshalStringToPtr_System_String_" data-uid="OpenTK.Core.Native.MarshalTk.MarshalStringToPtr(System.String)">MarshalStringToPtr(string)</h4>
-  <div class="markdown level1 summary"><p>Marshal a <code>System.String</code> to unmanaged memory.
-The resulting string is encoded in UTF8 and must be freed
-with <code>FreeStringPtr</code>.</p>
+  <a id="OpenTK_Core_Native_MarshalTk_StringArrayToCoTaskMemAuto_" data-uid="OpenTK.Core.Native.MarshalTk.StringArrayToCoTaskMemAuto*"></a>
+  <h4 id="OpenTK_Core_Native_MarshalTk_StringArrayToCoTaskMemAuto_System_ReadOnlySpan_System_String__" data-uid="OpenTK.Core.Native.MarshalTk.StringArrayToCoTaskMemAuto(System.ReadOnlySpan{System.String})">StringArrayToCoTaskMemAuto(ReadOnlySpan&lt;string&gt;)</h4>
+  <div class="markdown level1 summary"><p>Copies the contents of a managed <span class="xref">string[]</span> to a block of memory allocated from the unmanaged COM task allocator.
+This function allocates multiple pieces of memory and needs to be freed with <a class="xref" href="OpenTK.Core.Native.MarshalTk.html#OpenTK_Core_Native_MarshalTk_FreeStringArrayCoTaskMem_System_IntPtr_System_Int32_">FreeStringArrayCoTaskMem(nint, int)</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static nint MarshalStringToPtr(string str)</code></pre>
+    <pre><code class="lang-csharp hljs">public static nint StringArrayToCoTaskMemAuto(ReadOnlySpan&lt;string&gt; stringArray)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -419,9 +411,9 @@ with <code>FreeStringPtr</code>.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
-        <td><span class="parametername">str</span></td>
-        <td><p>The <code>System.String</code> to marshal.</p>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</td>
+        <td><span class="parametername">stringArray</span></td>
+        <td><p>The string array to marshal.</p>
 </td>
       </tr>
     </tbody>
@@ -437,8 +429,95 @@ with <code>FreeStringPtr</code>.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
-        <td><p>An unmanaged pointer containing the marshaled string.
-This pointer must be freed with <code>FreeStringPtr</code>.</p>
+        <td><p>An integer representing a pointer to the block of memory allocated for the string array.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Core_Native_MarshalTk_StringArrayToCoTaskMemUTF8_" data-uid="OpenTK.Core.Native.MarshalTk.StringArrayToCoTaskMemUTF8*"></a>
+  <h4 id="OpenTK_Core_Native_MarshalTk_StringArrayToCoTaskMemUTF8_System_ReadOnlySpan_System_String__" data-uid="OpenTK.Core.Native.MarshalTk.StringArrayToCoTaskMemUTF8(System.ReadOnlySpan{System.String})">StringArrayToCoTaskMemUTF8(ReadOnlySpan&lt;string&gt;)</h4>
+  <div class="markdown level1 summary"><p>Copies the contents of a managed <span class="xref">string[]</span> to a block of memory allocated from the unmanaged COM task allocator.
+This function allocates multiple pieces of memory and needs to be freed with <a class="xref" href="OpenTK.Core.Native.MarshalTk.html#OpenTK_Core_Native_MarshalTk_FreeStringArrayCoTaskMem_System_IntPtr_System_Int32_">FreeStringArrayCoTaskMem(nint, int)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static nint StringArrayToCoTaskMemUTF8(ReadOnlySpan&lt;string&gt; stringArray)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</td>
+        <td><span class="parametername">stringArray</span></td>
+        <td><p>The string array to marshal.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
+        <td><p>An integer representing a pointer to the block of memory allocated for the string array.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Core_Native_MarshalTk_StringArrayToCoTaskMemUni_" data-uid="OpenTK.Core.Native.MarshalTk.StringArrayToCoTaskMemUni*"></a>
+  <h4 id="OpenTK_Core_Native_MarshalTk_StringArrayToCoTaskMemUni_System_ReadOnlySpan_System_String__" data-uid="OpenTK.Core.Native.MarshalTk.StringArrayToCoTaskMemUni(System.ReadOnlySpan{System.String})">StringArrayToCoTaskMemUni(ReadOnlySpan&lt;string&gt;)</h4>
+  <div class="markdown level1 summary"><p>Copies the contents of a managed <span class="xref">string[]</span> to a block of memory allocated from the unmanaged COM task allocator.
+This function allocates multiple pieces of memory and needs to be freed with <a class="xref" href="OpenTK.Core.Native.MarshalTk.html#OpenTK_Core_Native_MarshalTk_FreeStringArrayCoTaskMem_System_IntPtr_System_Int32_">FreeStringArrayCoTaskMem(nint, int)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static nint StringArrayToCoTaskMemUni(ReadOnlySpan&lt;string&gt; stringArray)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</td>
+        <td><span class="parametername">stringArray</span></td>
+        <td><p>The string array to marshal.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
+        <td><p>An integer representing a pointer to the block of memory allocated for the string array.</p>
 </td>
       </tr>
     </tbody>

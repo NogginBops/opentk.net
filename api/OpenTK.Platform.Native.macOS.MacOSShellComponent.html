@@ -123,7 +123,8 @@
 </h3>
   <a id="OpenTK_Platform_Native_macOS_MacOSShellComponent_Logger_" data-uid="OpenTK.Platform.Native.macOS.MacOSShellComponent.Logger*"></a>
   <h4 id="OpenTK_Platform_Native_macOS_MacOSShellComponent_Logger" data-uid="OpenTK.Platform.Native.macOS.MacOSShellComponent.Logger">Logger</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The logger that this component uses to log diagnostic messages.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -144,9 +145,15 @@
       </tr>
     </tbody>
   </table>
+  <h5 id="OpenTK_Platform_Native_macOS_MacOSShellComponent_Logger_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="OpenTK.Core.Utility.ILogger.html">ILogger</a></div>
+      <div><a class="xref" href="OpenTK.Platform.ToolkitOptions.html#OpenTK_Platform_ToolkitOptions_Logger">Logger</a></div>
+  </div>
   <a id="OpenTK_Platform_Native_macOS_MacOSShellComponent_Name_" data-uid="OpenTK.Platform.Native.macOS.MacOSShellComponent.Name*"></a>
   <h4 id="OpenTK_Platform_Native_macOS_MacOSShellComponent_Name" data-uid="OpenTK.Platform.Native.macOS.MacOSShellComponent.Name">Name</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Name of the abstraction layer component.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -169,7 +176,8 @@
   </table>
   <a id="OpenTK_Platform_Native_macOS_MacOSShellComponent_Provides_" data-uid="OpenTK.Platform.Native.macOS.MacOSShellComponent.Provides*"></a>
   <h4 id="OpenTK_Platform_Native_macOS_MacOSShellComponent_Provides" data-uid="OpenTK.Platform.Native.macOS.MacOSShellComponent.Provides">Provides</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Specifies which PAL components this object provides.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -194,7 +202,11 @@
 </h3>
   <a id="OpenTK_Platform_Native_macOS_MacOSShellComponent_AllowScreenSaver_" data-uid="OpenTK.Platform.Native.macOS.MacOSShellComponent.AllowScreenSaver*"></a>
   <h4 id="OpenTK_Platform_Native_macOS_MacOSShellComponent_AllowScreenSaver_System_Boolean_System_String_" data-uid="OpenTK.Platform.Native.macOS.MacOSShellComponent.AllowScreenSaver(System.Boolean,System.String)">AllowScreenSaver(bool, string?)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Sets whether or not a screensaver is allowed to draw on top of the window.
+For games with long cutscenes it would be appropriate to set this to <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>,
+while tools that act like normal applications should set this to <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>.
+By default this setting is untouched.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -213,18 +225,29 @@
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><span class="parametername">allow</span></td>
-        <td></td>
+        <td><p>Whether to allow screensavers to appear while the application is running.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
         <td><span class="parametername">disableReason</span></td>
-        <td></td>
+        <td><p>A reason for why the screen saver is disabled.
+This string should both contain the reason why the screen saver is disabed as well as the name of the
+application so the user knows which application is preventing the screen saver from running.
+If <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> is sent the following default message will be sent:</p>
+<pre><code class="lang-csharp">$"{ApplicationName} is is preventing screen saver."</code></pre>
+</td>
       </tr>
     </tbody>
   </table>
+  <h5 id="OpenTK_Platform_Native_macOS_MacOSShellComponent_AllowScreenSaver_System_Boolean_System_String__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="OpenTK.Platform.IShellComponent.html#OpenTK_Platform_IShellComponent_IsScreenSaverAllowed">IsScreenSaverAllowed</a>()</div>
+  </div>
   <a id="OpenTK_Platform_Native_macOS_MacOSShellComponent_GetBatteryInfo_" data-uid="OpenTK.Platform.Native.macOS.MacOSShellComponent.GetBatteryInfo*"></a>
   <h4 id="OpenTK_Platform_Native_macOS_MacOSShellComponent_GetBatteryInfo_OpenTK_Platform_BatteryInfo__" data-uid="OpenTK.Platform.Native.macOS.MacOSShellComponent.GetBatteryInfo(OpenTK.Platform.BatteryInfo@)">GetBatteryInfo(out BatteryInfo)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the battery status of the computer.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -243,7 +266,9 @@
       <tr>
         <td><a class="xref" href="OpenTK.Platform.BatteryInfo.html">BatteryInfo</a></td>
         <td><span class="parametername">batteryInfo</span></td>
-        <td></td>
+        <td><p>The battery status of the computer,
+this is only filled with values when <a class="xref" href="OpenTK.Platform.BatteryStatus.html#OpenTK_Platform_BatteryStatus_HasSystemBattery">HasSystemBattery</a> is returned.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -258,13 +283,15 @@
     <tbody>
       <tr>
         <td><a class="xref" href="OpenTK.Platform.BatteryStatus.html">BatteryStatus</a></td>
-        <td></td>
+        <td><p>Whether the computer has a battery or not, or if this function failed.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <a id="OpenTK_Platform_Native_macOS_MacOSShellComponent_GetPreferredTheme_" data-uid="OpenTK.Platform.Native.macOS.MacOSShellComponent.GetPreferredTheme*"></a>
   <h4 id="OpenTK_Platform_Native_macOS_MacOSShellComponent_GetPreferredTheme" data-uid="OpenTK.Platform.Native.macOS.MacOSShellComponent.GetPreferredTheme">GetPreferredTheme()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the user preference for application theme.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -281,13 +308,19 @@
     <tbody>
       <tr>
         <td><a class="xref" href="OpenTK.Platform.ThemeInfo.html">ThemeInfo</a></td>
-        <td></td>
+        <td><p>The user set preferred theme.</p>
+</td>
       </tr>
     </tbody>
   </table>
+  <h5 id="OpenTK_Platform_Native_macOS_MacOSShellComponent_GetPreferredTheme_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="OpenTK.Platform.ThemeChangeEventArgs.html">ThemeChangeEventArgs</a></div>
+  </div>
   <a id="OpenTK_Platform_Native_macOS_MacOSShellComponent_GetSystemMemoryInformation_" data-uid="OpenTK.Platform.Native.macOS.MacOSShellComponent.GetSystemMemoryInformation*"></a>
   <h4 id="OpenTK_Platform_Native_macOS_MacOSShellComponent_GetSystemMemoryInformation" data-uid="OpenTK.Platform.Native.macOS.MacOSShellComponent.GetSystemMemoryInformation">GetSystemMemoryInformation()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets information about the memory of the device and the current status.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -304,13 +337,15 @@
     <tbody>
       <tr>
         <td><a class="xref" href="OpenTK.Platform.SystemMemoryInfo.html">SystemMemoryInfo</a></td>
-        <td></td>
+        <td><p>The memory info.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <a id="OpenTK_Platform_Native_macOS_MacOSShellComponent_Initialize_" data-uid="OpenTK.Platform.Native.macOS.MacOSShellComponent.Initialize*"></a>
   <h4 id="OpenTK_Platform_Native_macOS_MacOSShellComponent_Initialize_OpenTK_Platform_ToolkitOptions_" data-uid="OpenTK.Platform.Native.macOS.MacOSShellComponent.Initialize(OpenTK.Platform.ToolkitOptions)">Initialize(ToolkitOptions)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initialize the component.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -329,13 +364,20 @@
       <tr>
         <td><a class="xref" href="OpenTK.Platform.ToolkitOptions.html">ToolkitOptions</a></td>
         <td><span class="parametername">options</span></td>
-        <td></td>
+        <td><p>The options to initialize the component with.</p>
+</td>
       </tr>
     </tbody>
   </table>
+  <h5 id="OpenTK_Platform_Native_macOS_MacOSShellComponent_Initialize_OpenTK_Platform_ToolkitOptions__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="OpenTK.Platform.ToolkitOptions.html">ToolkitOptions</a></div>
+      <div><a class="xref" href="OpenTK.Platform.Toolkit.html#OpenTK_Platform_Toolkit_Init_OpenTK_Platform_ToolkitOptions_">Init</a>(<a class="xref" href="OpenTK.Platform.ToolkitOptions.html">ToolkitOptions</a>)</div>
+  </div>
   <a id="OpenTK_Platform_Native_macOS_MacOSShellComponent_IsScreenSaverAllowed_" data-uid="OpenTK.Platform.Native.macOS.MacOSShellComponent.IsScreenSaverAllowed*"></a>
   <h4 id="OpenTK_Platform_Native_macOS_MacOSShellComponent_IsScreenSaverAllowed" data-uid="OpenTK.Platform.Native.macOS.MacOSShellComponent.IsScreenSaverAllowed">IsScreenSaverAllowed()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets if the screen saver is allowed to run or not.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -352,10 +394,15 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
-        <td></td>
+        <td><p>If the screen saver is allowed to run.</p>
+</td>
       </tr>
     </tbody>
   </table>
+  <h5 id="OpenTK_Platform_Native_macOS_MacOSShellComponent_IsScreenSaverAllowed_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="OpenTK.Platform.IShellComponent.html#OpenTK_Platform_IShellComponent_AllowScreenSaver_System_Boolean_System_String_">AllowScreenSaver</a>(<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>)</div>
+  </div>
   <a id="OpenTK_Platform_Native_macOS_MacOSShellComponent_NSLog_" data-uid="OpenTK.Platform.Native.macOS.MacOSShellComponent.NSLog*"></a>
   <h4 id="OpenTK_Platform_Native_macOS_MacOSShellComponent_NSLog_System_String_" data-uid="OpenTK.Platform.Native.macOS.MacOSShellComponent.NSLog(System.String)">NSLog(string)</h4>
   <div class="markdown level1 summary"><p>Calls <a href="https://developer.apple.com/documentation/foundation/1395275-nslog">NSLog</a> to log a message to the Apple System Log facility.
@@ -385,6 +432,81 @@ This function is static so that it can be used before <a class="xref" href="Open
       </tr>
     </tbody>
   </table>
+  <a id="OpenTK_Platform_Native_macOS_MacOSShellComponent_SetDockIcon_" data-uid="OpenTK.Platform.Native.macOS.MacOSShellComponent.SetDockIcon*"></a>
+  <h4 id="OpenTK_Platform_Native_macOS_MacOSShellComponent_SetDockIcon_OpenTK_Platform_IconHandle_" data-uid="OpenTK.Platform.Native.macOS.MacOSShellComponent.SetDockIcon(OpenTK.Platform.IconHandle)">SetDockIcon(IconHandle)</h4>
+  <div class="markdown level1 summary"><p>Sets the icon to use to represent the application in the dock.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetDockIcon(IconHandle icon)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Platform.IconHandle.html">IconHandle</a></td>
+        <td><span class="parametername">icon</span></td>
+        <td><p>The icon to use.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenTK_Platform_Native_macOS_MacOSShellComponent_SetDockIcon_OpenTK_Platform_IconHandle__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="OpenTK.Platform.IWindowComponent.html#OpenTK_Platform_IWindowComponent_SetIcon_OpenTK_Platform_WindowHandle_OpenTK_Platform_IconHandle_">SetIcon</a>(<a class="xref" href="OpenTK.Platform.WindowHandle.html">WindowHandle</a>, <a class="xref" href="OpenTK.Platform.IconHandle.html">IconHandle</a>)</div>
+  </div>
+  <a id="OpenTK_Platform_Native_macOS_MacOSShellComponent_SetProgressStatus_" data-uid="OpenTK.Platform.Native.macOS.MacOSShellComponent.SetProgressStatus*"></a>
+  <h4 id="OpenTK_Platform_Native_macOS_MacOSShellComponent_SetProgressStatus_OpenTK_Platform_WindowHandle_OpenTK_Platform_Native_macOS_MacOSShellComponent_ProgressMode_System_Single_" data-uid="OpenTK.Platform.Native.macOS.MacOSShellComponent.SetProgressStatus(OpenTK.Platform.WindowHandle,OpenTK.Platform.Native.macOS.MacOSShellComponent.ProgressMode,System.Single)">SetProgressStatus(WindowHandle, ProgressMode, float)</h4>
+  <div class="markdown level1 summary"><p>Sets the current progress status for a window.
+The progress status is used to display a progress bar in the taskbar.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetProgressStatus(WindowHandle handle, MacOSShellComponent.ProgressMode mode, float completion)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Platform.WindowHandle.html">WindowHandle</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>The window to set the progress status for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Platform.Native.macOS.MacOSShellComponent.html">MacOSShellComponent</a>.<a class="xref" href="OpenTK.Platform.Native.macOS.MacOSShellComponent.ProgressMode.html">ProgressMode</a></td>
+        <td><span class="parametername">mode</span></td>
+        <td><p>The progress mode to us efor the window.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">completion</span></td>
+        <td><p>A number in the range [0, 1] indicating progress. 0 being no progress and 1 meaning finished. Ignored if <code class="paramref">mode</code> is <a class="xref" href="OpenTK.Platform.Native.macOS.MacOSShellComponent.ProgressMode.html#OpenTK_Platform_Native_macOS_MacOSShellComponent_ProgressMode_NoProgress">NoProgress</a> or <a class="xref" href="OpenTK.Platform.Native.macOS.MacOSShellComponent.ProgressMode.html#OpenTK_Platform_Native_macOS_MacOSShellComponent_ProgressMode_Indeterminate">Indeterminate</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenTK_Platform_Native_macOS_MacOSShellComponent_SetProgressStatus_OpenTK_Platform_WindowHandle_OpenTK_Platform_Native_macOS_MacOSShellComponent_ProgressMode_System_Single__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="OpenTK.Platform.Native.Windows.ShellComponent.html#OpenTK_Platform_Native_Windows_ShellComponent_SetProgressStatus_OpenTK_Platform_WindowHandle_OpenTK_Platform_Native_Windows_ShellComponent_ProgressMode_System_Single_">SetProgressStatus</a>(<a class="xref" href="OpenTK.Platform.WindowHandle.html">WindowHandle</a>, <a class="xref" href="OpenTK.Platform.Native.Windows.ShellComponent.ProgressMode.html">ProgressMode</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>)</div>
+  </div>
   <a id="OpenTK_Platform_Native_macOS_MacOSShellComponent_Uninitialize_" data-uid="OpenTK.Platform.Native.macOS.MacOSShellComponent.Uninitialize*"></a>
   <h4 id="OpenTK_Platform_Native_macOS_MacOSShellComponent_Uninitialize" data-uid="OpenTK.Platform.Native.macOS.MacOSShellComponent.Uninitialize">Uninitialize()</h4>
   <div class="markdown level1 summary"><p>Uninitialize the component. Frees any native resources used by the component.</p>

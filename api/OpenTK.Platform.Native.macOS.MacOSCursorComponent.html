@@ -737,49 +737,6 @@ If <code>fals</code>, these functions will fail.</p>
       <div><a class="xref" href="OpenTK.Platform.ToolkitOptions.html">ToolkitOptions</a></div>
       <div><a class="xref" href="OpenTK.Platform.Toolkit.html#OpenTK_Platform_Toolkit_Init_OpenTK_Platform_ToolkitOptions_">Init</a>(<a class="xref" href="OpenTK.Platform.ToolkitOptions.html">ToolkitOptions</a>)</div>
   </div>
-  <a id="OpenTK_Platform_Native_macOS_MacOSCursorComponent_IsAnimatedCursor_" data-uid="OpenTK.Platform.Native.macOS.MacOSCursorComponent.IsAnimatedCursor*"></a>
-  <h4 id="OpenTK_Platform_Native_macOS_MacOSCursorComponent_IsAnimatedCursor_OpenTK_Platform_CursorHandle_" data-uid="OpenTK.Platform.Native.macOS.MacOSCursorComponent.IsAnimatedCursor(OpenTK.Platform.CursorHandle)">IsAnimatedCursor(CursorHandle)</h4>
-  <div class="markdown level1 summary"><p>Returns true if the cursor is an animated cursor.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool IsAnimatedCursor(CursorHandle handle)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Platform.CursorHandle.html">CursorHandle</a></td>
-        <td><span class="parametername">handle</span></td>
-        <td><p>The cursor to check if it is an animated</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
-        <td><p>True if the cursor is animated, false otherwise.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
   <a id="OpenTK_Platform_Native_macOS_MacOSCursorComponent_IsSystemCursor_" data-uid="OpenTK.Platform.Native.macOS.MacOSCursorComponent.IsSystemCursor*"></a>
   <h4 id="OpenTK_Platform_Native_macOS_MacOSCursorComponent_IsSystemCursor_OpenTK_Platform_CursorHandle_" data-uid="OpenTK.Platform.Native.macOS.MacOSCursorComponent.IsSystemCursor(OpenTK.Platform.CursorHandle)">IsSystemCursor(CursorHandle)</h4>
   <div class="markdown level1 summary"><p>Returns <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if this cursor is a system cursor.</p>
@@ -841,57 +798,6 @@ If <code>fals</code>, these functions will fail.</p>
   <div class="seealso">
       <div><a class="xref" href="OpenTK.Platform.Toolkit.html#OpenTK_Platform_Toolkit_Uninit">Uninit</a>()</div>
   </div>
-  <a id="OpenTK_Platform_Native_macOS_MacOSCursorComponent_UpdateAnimation_" data-uid="OpenTK.Platform.Native.macOS.MacOSCursorComponent.UpdateAnimation*"></a>
-  <h4 id="OpenTK_Platform_Native_macOS_MacOSCursorComponent_UpdateAnimation_OpenTK_Platform_CursorHandle_System_Double_" data-uid="OpenTK.Platform.Native.macOS.MacOSCursorComponent.UpdateAnimation(OpenTK.Platform.CursorHandle,System.Double)">UpdateAnimation(CursorHandle, double)</h4>
-  <div class="markdown level1 summary"><p>Updates the animation of an animated cursor.
-When animated cursors change frame <a class="xref" href="OpenTK.Platform.IWindowComponent.html#OpenTK_Platform_IWindowComponent_SetCursor_OpenTK_Platform_WindowHandle_OpenTK_Platform_CursorHandle_">SetCursor(WindowHandle, CursorHandle?)</a> needs to be called to properly animate.
-This function returns true if the cursor needs to be set again.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool UpdateAnimation(CursorHandle handle, double deltaTime)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Platform.CursorHandle.html">CursorHandle</a></td>
-        <td><span class="parametername">handle</span></td>
-        <td><p>An animated cursor to update.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
-        <td><span class="parametername">deltaTime</span></td>
-        <td><p>The amount of time to advance the cursor animation.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
-        <td><p>True if the cursor frame has changed and <a class="xref" href="OpenTK.Platform.IWindowComponent.html#OpenTK_Platform_IWindowComponent_SetCursor_OpenTK_Platform_WindowHandle_OpenTK_Platform_CursorHandle_">SetCursor(WindowHandle, CursorHandle?)</a> needs to be called for the cursor to update, false otherwise.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
   <h3 id="implements">Implements</h3>
   <div>
       <a class="xref" href="OpenTK.Platform.ICursorComponent.html">ICursorComponent</a>

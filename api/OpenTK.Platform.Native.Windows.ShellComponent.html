@@ -499,6 +499,51 @@ Sets the color of the windows caption bar text.</p>
       </tr>
     </tbody>
   </table>
+  <a id="OpenTK_Platform_Native_Windows_ShellComponent_SetProgressStatus_" data-uid="OpenTK.Platform.Native.Windows.ShellComponent.SetProgressStatus*"></a>
+  <h4 id="OpenTK_Platform_Native_Windows_ShellComponent_SetProgressStatus_OpenTK_Platform_WindowHandle_OpenTK_Platform_Native_Windows_ShellComponent_ProgressMode_System_Single_" data-uid="OpenTK.Platform.Native.Windows.ShellComponent.SetProgressStatus(OpenTK.Platform.WindowHandle,OpenTK.Platform.Native.Windows.ShellComponent.ProgressMode,System.Single)">SetProgressStatus(WindowHandle, ProgressMode, float)</h4>
+  <div class="markdown level1 summary"><p>Sets the current progress status for a window.
+The progress status is used to display a progress bar in the taskbar.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetProgressStatus(WindowHandle handle, ShellComponent.ProgressMode mode, float completion)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Platform.WindowHandle.html">WindowHandle</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>The window to set the progress status for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Platform.Native.Windows.ShellComponent.html">ShellComponent</a>.<a class="xref" href="OpenTK.Platform.Native.Windows.ShellComponent.ProgressMode.html">ProgressMode</a></td>
+        <td><span class="parametername">mode</span></td>
+        <td><p>The progress mode to use for the window.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">completion</span></td>
+        <td><p>A number in the range [0, 1] indicating progress. 0 being no progress and 1 meaning finished. Ignored if <code class="paramref">mode</code> is <a class="xref" href="OpenTK.Platform.Native.Windows.ShellComponent.ProgressMode.html#OpenTK_Platform_Native_Windows_ShellComponent_ProgressMode_NoProgress">NoProgress</a> or <a class="xref" href="OpenTK.Platform.Native.Windows.ShellComponent.ProgressMode.html#OpenTK_Platform_Native_Windows_ShellComponent_ProgressMode_Indeterminate">Indeterminate</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenTK_Platform_Native_Windows_ShellComponent_SetProgressStatus_OpenTK_Platform_WindowHandle_OpenTK_Platform_Native_Windows_ShellComponent_ProgressMode_System_Single__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="OpenTK.Platform.Native.Windows.ShellComponent.html">ShellComponent</a>.<a class="xref" href="OpenTK.Platform.Native.Windows.ShellComponent.ProgressMode.html">ProgressMode</a></div>
+      <div><a class="xref" href="OpenTK.Platform.Native.macOS.MacOSShellComponent.html#OpenTK_Platform_Native_macOS_MacOSShellComponent_SetProgressStatus_OpenTK_Platform_WindowHandle_OpenTK_Platform_Native_macOS_MacOSShellComponent_ProgressMode_System_Single_">SetProgressStatus</a>(<a class="xref" href="OpenTK.Platform.WindowHandle.html">WindowHandle</a>, <a class="xref" href="OpenTK.Platform.Native.macOS.MacOSShellComponent.ProgressMode.html">ProgressMode</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>)</div>
+  </div>
   <a id="OpenTK_Platform_Native_Windows_ShellComponent_SetWindowCornerPreference_" data-uid="OpenTK.Platform.Native.Windows.ShellComponent.SetWindowCornerPreference*"></a>
   <h4 id="OpenTK_Platform_Native_Windows_ShellComponent_SetWindowCornerPreference_OpenTK_Platform_WindowHandle_OpenTK_Platform_Native_Windows_ShellComponent_CornerPreference_" data-uid="OpenTK.Platform.Native.Windows.ShellComponent.SetWindowCornerPreference(OpenTK.Platform.WindowHandle,OpenTK.Platform.Native.Windows.ShellComponent.CornerPreference)">SetWindowCornerPreference(WindowHandle, CornerPreference)</h4>
   <div class="markdown level1 summary"><p>Works on Windows 11 only.
