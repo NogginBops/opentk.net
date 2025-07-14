@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <!--[if IE]><![endif]-->
 <html>
 
@@ -2607,15 +2607,7 @@ This function returns the address of the specified Vulkan core or extension func
 the specified instance. If instance is set to <code>null</code> it can return any function exported
 from the Vulkan loader, including at least the following functions:
 </p>
-<ul><li>
-      <code>vkEnumerateInstanceExtensionProperties</code>
-<pre><code>  &lt;code&gt;vkEnumerateInstanceLayerProperties&lt;/code&gt;
-
-  &lt;code&gt;vkCreateInstance&lt;/code&gt;
-
-  &lt;code&gt;vkGetInstanceProcAddr&lt;/code&gt;
-&lt;/li&gt;&lt;/ul&gt;
-</code></pre>
+<ul><li><code>vkEnumerateInstanceExtensionProperties</code><code>vkEnumerateInstanceLayerProperties</code><code>vkCreateInstance</code><code>vkGetInstanceProcAddr</code></li></ul>
 <p>
 If Vulkan is not available on the machine, this function returns <code>null</code> and generates
 a <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.ErrorCode.html#OpenTK_Windowing_GraphicsLibraryFramework_ErrorCode_NotInitialized">NotInitialized</a> error. Call <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.html#OpenTK_Windowing_GraphicsLibraryFramework_GLFW_VulkanSupported">VulkanSupported()</a> to check
@@ -2631,7 +2623,7 @@ Possible errors include <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFr
 <p>
 The returned function pointer is valid until the library is terminated.
 </p>
-</li></ul></div>
+</div>
   <a id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetInstanceProcAddressRaw_" data-uid="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.GetInstanceProcAddressRaw*"></a>
   <h4 id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetInstanceProcAddressRaw_OpenTK_Windowing_GraphicsLibraryFramework_VkHandle_System_Byte__" data-uid="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.GetInstanceProcAddressRaw(OpenTK.Windowing.GraphicsLibraryFramework.VkHandle,System.Byte*)">GetInstanceProcAddressRaw(VkHandle, byte*)</h4>
   <div class="markdown level1 summary"><p>Returns the address of the specified Vulkan instance function.</p>
@@ -2687,15 +2679,7 @@ This function returns the address of the specified Vulkan core or extension func
 the specified instance. If instance is set to <code>null</code> it can return any function exported
 from the Vulkan loader, including at least the following functions:
 </p>
-<ul><li>
-      <code>vkEnumerateInstanceExtensionProperties</code>
-<pre><code>  &lt;code&gt;vkEnumerateInstanceLayerProperties&lt;/code&gt;
-
-  &lt;code&gt;vkCreateInstance&lt;/code&gt;
-
-  &lt;code&gt;vkGetInstanceProcAddr&lt;/code&gt;
-&lt;/li&gt;&lt;/ul&gt;
-</code></pre>
+<ul><li><code>vkEnumerateInstanceExtensionProperties</code><code>vkEnumerateInstanceLayerProperties</code><code>vkCreateInstance</code><code>vkGetInstanceProcAddr</code></li></ul>
 <p>
 If Vulkan is not available on the machine, this function returns <code>null</code> and generates
 a <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.ErrorCode.html#OpenTK_Windowing_GraphicsLibraryFramework_ErrorCode_NotInitialized">NotInitialized</a> error. Call <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.html#OpenTK_Windowing_GraphicsLibraryFramework_GLFW_VulkanSupported">VulkanSupported()</a> to check
@@ -2711,7 +2695,7 @@ Possible errors include <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFr
 <p>
 The returned function pointer is valid until the library is terminated.
 </p>
-</li></ul></div>
+</div>
   <a id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetJoystickAxes_" data-uid="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.GetJoystickAxes*"></a>
   <h4 id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetJoystickAxes_System_Int32_" data-uid="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.GetJoystickAxes(System.Int32)">GetJoystickAxes(int)</h4>
   <div class="markdown level1 summary"><p>
@@ -3315,6 +3299,7 @@ and you can test for these individually by ANDing it with the corresponding dire
 {
    // State of hat 2 could be right-up, right or right-down
 }</code></pre>
+
 <p>
 If the specified joystick is not present, this function will return NULL but will not generate an error.
 This can be used instead of first calling <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.html#OpenTK_Windowing_GraphicsLibraryFramework_GLFW_JoystickPresent_System_Int32_">JoystickPresent(int)</a>.
@@ -3385,6 +3370,7 @@ and you can test for these individually by ANDing it with the corresponding dire
 {
    // State of hat 2 could be right-up, right or right-down
 }</code></pre>
+
 <p>
 If the specified joystick is not present, this function will return NULL but will not generate an error.
 This can be used instead of first calling <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.html#OpenTK_Windowing_GraphicsLibraryFramework_GLFW_JoystickPresent_System_Int32_">JoystickPresent(int)</a>.
@@ -3462,6 +3448,7 @@ and you can test for these individually by ANDing it with the corresponding dire
 {
    // State of hat 2 could be right-up, right or right-down
 }</code></pre>
+
 <p>
 If the specified joystick is not present, this function will return NULL but will not generate an error.
 This can be used instead of first calling <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.html#OpenTK_Windowing_GraphicsLibraryFramework_GLFW_JoystickPresent_System_Int32_">JoystickPresent(int)</a>.
@@ -4017,19 +4004,19 @@ Possible errors include <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFr
   <a id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetMonitorContentScale_" data-uid="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.GetMonitorContentScale*"></a>
   <h4 id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetMonitorContentScale_OpenTK_Windowing_GraphicsLibraryFramework_Monitor__System_Single__System_Single__" data-uid="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.GetMonitorContentScale(OpenTK.Windowing.GraphicsLibraryFramework.Monitor*,System.Single@,System.Single@)">GetMonitorContentScale(Monitor*, out float, out float)</h4>
   <div class="markdown level1 summary"><p>
- This function retrieves the content scale for the specified monitor.
- </p>
+This function retrieves the content scale for the specified monitor.
+</p>
 <p>
- The content scale is the ratio between the current DPI and the platform's default DPI.
- </p>
+The content scale is the ratio between the current DPI and the platform's default DPI.
+</p>
 <p>
- If you scale all pixel dimensions by this scale then your content should appear at an appropriate size.
- This is especially important for text and any UI elements.
- </p>
+If you scale all pixel dimensions by this scale then your content should appear at an appropriate size.
+This is especially important for text and any UI elements.
+</p>
 <p>
- The content scale may depend on both the monitor resolution and pixel density and on user settings.
- It may be very different from the raw DPI calculated from the physical size and current resolution.
- </p>
+The content scale may depend on both the monitor resolution and pixel density and on user settings.
+It may be very different from the raw DPI calculated from the physical size and current resolution.
+</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -4069,19 +4056,19 @@ Possible errors include <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFr
   <a id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetMonitorContentScaleRaw_" data-uid="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.GetMonitorContentScaleRaw*"></a>
   <h4 id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetMonitorContentScaleRaw_OpenTK_Windowing_GraphicsLibraryFramework_Monitor__System_Single__System_Single__" data-uid="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.GetMonitorContentScaleRaw(OpenTK.Windowing.GraphicsLibraryFramework.Monitor*,System.Single*,System.Single*)">GetMonitorContentScaleRaw(Monitor*, float*, float*)</h4>
   <div class="markdown level1 summary"><p>
- This function retrieves the content scale for the specified monitor.
- </p>
+This function retrieves the content scale for the specified monitor.
+</p>
 <p>
- The content scale is the ratio between the current DPI and the platform's default DPI.
- </p>
+The content scale is the ratio between the current DPI and the platform's default DPI.
+</p>
 <p>
- If you scale all pixel dimensions by this scale then your content should appear at an appropriate size.
- This is especially important for text and any UI elements.
- </p>
+If you scale all pixel dimensions by this scale then your content should appear at an appropriate size.
+This is especially important for text and any UI elements.
+</p>
 <p>
- The content scale may depend on both the monitor resolution and pixel density and on user settings.
- It may be very different from the raw DPI calculated from the physical size and current resolution.
- </p>
+The content scale may depend on both the monitor resolution and pixel density and on user settings.
+It may be very different from the raw DPI calculated from the physical size and current resolution.
+</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -5552,16 +5539,16 @@ This function may be called from any thread.
   <a id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetTime_" data-uid="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.GetTime*"></a>
   <h4 id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetTime" data-uid="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.GetTime">GetTime()</h4>
   <div class="markdown level1 summary"><p>
- This function returns the value of the GLFW timer.
- </p>
+This function returns the value of the GLFW timer.
+</p>
 <p>
- Unless the timer has been set using <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.html#OpenTK_Windowing_GraphicsLibraryFramework_GLFW_SetTime_System_Double_">SetTime(double)</a>,
- the timer measures time elapsed since GLFW was initialized.
- </p>
+Unless the timer has been set using <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.html#OpenTK_Windowing_GraphicsLibraryFramework_GLFW_SetTime_System_Double_">SetTime(double)</a>,
+the timer measures time elapsed since GLFW was initialized.
+</p>
 <p>
- The resolution of the timer is system dependent, but is usually on the order of a few micro- or nanoseconds.
- It uses the highest-resolution monotonic time source on each supported platform.
- </p>
+The resolution of the timer is system dependent, but is usually on the order of a few micro- or nanoseconds.
+It uses the highest-resolution monotonic time source on each supported platform.
+</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -5586,15 +5573,15 @@ This function may be called from any thread.
   </table>
   <h5 id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetTime_remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>
- This function may be called from any thread.
- </p>
+This function may be called from any thread.
+</p>
 <p>
- Reading and writing of the internal timer offset is not atomic,
- so it needs to be externally synchronized with calls to <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.html#OpenTK_Windowing_GraphicsLibraryFramework_GLFW_SetTime_System_Double_">SetTime(double)</a>.
- </p>
+Reading and writing of the internal timer offset is not atomic,
+so it needs to be externally synchronized with calls to <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.html#OpenTK_Windowing_GraphicsLibraryFramework_GLFW_SetTime_System_Double_">SetTime(double)</a>.
+</p>
 <p>
- Possible errors include <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.ErrorCode.html#OpenTK_Windowing_GraphicsLibraryFramework_ErrorCode_NotInitialized">NotInitialized</a>.
- </p>
+Possible errors include <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.ErrorCode.html#OpenTK_Windowing_GraphicsLibraryFramework_ErrorCode_NotInitialized">NotInitialized</a>.
+</p>
 </div>
   <a id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetTimerFrequency_" data-uid="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.GetTimerFrequency*"></a>
   <h4 id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetTimerFrequency" data-uid="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.GetTimerFrequency">GetTimerFrequency()</h4>
@@ -6837,19 +6824,19 @@ Possible errors include <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFr
   <a id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetWindowContentScale_" data-uid="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.GetWindowContentScale*"></a>
   <h4 id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetWindowContentScale_OpenTK_Windowing_GraphicsLibraryFramework_Window__System_Single__System_Single__" data-uid="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.GetWindowContentScale(OpenTK.Windowing.GraphicsLibraryFramework.Window*,System.Single@,System.Single@)">GetWindowContentScale(Window*, out float, out float)</h4>
   <div class="markdown level1 summary"><p>
- This function retrieves the content scale for the specified window.
- </p>
+This function retrieves the content scale for the specified window.
+</p>
 <p>
- The content scale is the ratio between the current DPI and the platform's default DPI.
- This is especially important for text and any UI elements.
- If the pixel dimensions of your UI scaled by this look appropriate on your machine then it should
- appear at a reasonable size on other machines regardless of their DPI and scaling settings.
- This relies on the system DPI and scaling settings being somewhat correct.
- </p>
+The content scale is the ratio between the current DPI and the platform's default DPI.
+This is especially important for text and any UI elements.
+If the pixel dimensions of your UI scaled by this look appropriate on your machine then it should
+appear at a reasonable size on other machines regardless of their DPI and scaling settings.
+This relies on the system DPI and scaling settings being somewhat correct.
+</p>
 <p>
- On systems where each monitors can have its own content scale,
- the window content scale will depend on which monitor the system considers the window to be on.
- </p>
+On systems where each monitors can have its own content scale,
+the window content scale will depend on which monitor the system considers the window to be on.
+</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -6888,29 +6875,29 @@ Possible errors include <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFr
   </table>
   <h5 id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetWindowContentScale_OpenTK_Windowing_GraphicsLibraryFramework_Window__System_Single__System_Single___remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>
- This function must only be called from the main thread.
- </p>
+This function must only be called from the main thread.
+</p>
 <p>
- Possible errors include <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.ErrorCode.html#OpenTK_Windowing_GraphicsLibraryFramework_ErrorCode_NotInitialized">NotInitialized</a> and <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.ErrorCode.html#OpenTK_Windowing_GraphicsLibraryFramework_ErrorCode_PlatformError">PlatformError</a>.
- </p>
+Possible errors include <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.ErrorCode.html#OpenTK_Windowing_GraphicsLibraryFramework_ErrorCode_NotInitialized">NotInitialized</a> and <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.ErrorCode.html#OpenTK_Windowing_GraphicsLibraryFramework_ErrorCode_PlatformError">PlatformError</a>.
+</p>
 </div>
   <a id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetWindowFrameSize_" data-uid="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.GetWindowFrameSize*"></a>
   <h4 id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetWindowFrameSize_OpenTK_Windowing_GraphicsLibraryFramework_Window__System_Int32__System_Int32__System_Int32__System_Int32__" data-uid="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.GetWindowFrameSize(OpenTK.Windowing.GraphicsLibraryFramework.Window*,System.Int32@,System.Int32@,System.Int32@,System.Int32@)">GetWindowFrameSize(Window*, out int, out int, out int, out int)</h4>
   <div class="markdown level1 summary"><p>
- This function retrieves the size, in screen coordinates, of each edge of the frame of the specified window.
- </p>
+This function retrieves the size, in screen coordinates, of each edge of the frame of the specified window.
+</p>
 <p>
- This size includes the title bar, if the window has one.
- The size of the frame may vary depending on the window-related hints used to create it.
- </p>
+This size includes the title bar, if the window has one.
+The size of the frame may vary depending on the window-related hints used to create it.
+</p>
 <p>
- Because this function retrieves the size of each window frame edge
- and not the offset along a particular coordinate axis, the retrieved values will always be zero or positive.
- </p>
+Because this function retrieves the size of each window frame edge
+and not the offset along a particular coordinate axis, the retrieved values will always be zero or positive.
+</p>
 <p>
- Any or all of the size arguments may be <code>out _</code>.
- If an error occurs, all non-<code>out _</code> size arguments will be set to zero.
- </p>
+Any or all of the size arguments may be <code>out _</code>.
+If an error occurs, all non-<code>out _</code> size arguments will be set to zero.
+</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -6961,11 +6948,11 @@ Possible errors include <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFr
   </table>
   <h5 id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetWindowFrameSize_OpenTK_Windowing_GraphicsLibraryFramework_Window__System_Int32__System_Int32__System_Int32__System_Int32___remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>
- This function must only be called from the main thread.
- </p>
+This function must only be called from the main thread.
+</p>
 <p>
- Possible errors include <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.ErrorCode.html#OpenTK_Windowing_GraphicsLibraryFramework_ErrorCode_NotInitialized">NotInitialized</a> and <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.ErrorCode.html#OpenTK_Windowing_GraphicsLibraryFramework_ErrorCode_PlatformError">PlatformError</a>.
- </p>
+Possible errors include <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.ErrorCode.html#OpenTK_Windowing_GraphicsLibraryFramework_ErrorCode_NotInitialized">NotInitialized</a> and <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.ErrorCode.html#OpenTK_Windowing_GraphicsLibraryFramework_ErrorCode_PlatformError">PlatformError</a>.
+</p>
 </div>
   <a id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetWindowMonitor_" data-uid="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.GetWindowMonitor*"></a>
   <h4 id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetWindowMonitor_OpenTK_Windowing_GraphicsLibraryFramework_Window__" data-uid="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.GetWindowMonitor(OpenTK.Windowing.GraphicsLibraryFramework.Window*)">GetWindowMonitor(Window*)</h4>
@@ -7326,10 +7313,10 @@ Possible errors include <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFr
   <a id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetWindowTitle_" data-uid="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.GetWindowTitle*"></a>
   <h4 id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetWindowTitle_OpenTK_Windowing_GraphicsLibraryFramework_Window__" data-uid="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.GetWindowTitle(OpenTK.Windowing.GraphicsLibraryFramework.Window*)">GetWindowTitle(Window*)</h4>
   <div class="markdown level1 summary"><p>This function returns the window title, of the specified
-window. This is the title set previously by <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.GLFWNative.html#OpenTK_Windowing_GraphicsLibraryFramework_GLFWNative_glfwCreateWindow_System_Int32_System_Int32_System_Byte__OpenTK_Windowing_GraphicsLibraryFramework_Monitor__OpenTK_Windowing_GraphicsLibraryFramework_Window__">glfwCreateWindow(int, int, byte*, Monitor*, Window*)</a>
-or <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.GLFWNative.html#OpenTK_Windowing_GraphicsLibraryFramework_GLFWNative_glfwSetWindowTitle_OpenTK_Windowing_GraphicsLibraryFramework_Window__System_Byte__">glfwSetWindowTitle(Window*, byte*)</a>.</p>
-<p>The returned title is currently a copy of the title last set by <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.GLFWNative.html#OpenTK_Windowing_GraphicsLibraryFramework_GLFWNative_glfwCreateWindow_System_Int32_System_Int32_System_Byte__OpenTK_Windowing_GraphicsLibraryFramework_Monitor__OpenTK_Windowing_GraphicsLibraryFramework_Window__">glfwCreateWindow(int, int, byte*, Monitor*, Window*)</a>
-or <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.GLFWNative.html#OpenTK_Windowing_GraphicsLibraryFramework_GLFWNative_glfwSetWindowTitle_OpenTK_Windowing_GraphicsLibraryFramework_Window__System_Byte__">glfwSetWindowTitle(Window*, byte*)</a>.
+window. This is the title set previously by <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">glfwCreateWindow(int, int, byte*, Monitor*, Window*)</a>
+or <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.Window.html">glfwSetWindowTitle(Window*, byte*)</a>.</p>
+<p>The returned title is currently a copy of the title last set by <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">glfwCreateWindow(int, int, byte*, Monitor*, Window*)</a>
+or <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.Window.html">glfwSetWindowTitle(Window*, byte*)</a>.
 It does not include any additional text which may be appended by the platform or another program.</p>
 <p>This function must only be called from the main thread.</p>
 <p>Added in version 3.4.</p>
@@ -7376,15 +7363,15 @@ It does not include any additional text which may be appended by the platform or
   <a id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetWindowTitleRaw_" data-uid="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.GetWindowTitleRaw*"></a>
   <h4 id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_GetWindowTitleRaw_OpenTK_Windowing_GraphicsLibraryFramework_Window__" data-uid="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.GetWindowTitleRaw(OpenTK.Windowing.GraphicsLibraryFramework.Window*)">GetWindowTitleRaw(Window*)</h4>
   <div class="markdown level1 summary"><p>This function returns the window title, encoded as UTF-8, of the specified
-window. This is the title set previously by <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.GLFWNative.html#OpenTK_Windowing_GraphicsLibraryFramework_GLFWNative_glfwCreateWindow_System_Int32_System_Int32_System_Byte__OpenTK_Windowing_GraphicsLibraryFramework_Monitor__OpenTK_Windowing_GraphicsLibraryFramework_Window__">glfwCreateWindow(int, int, byte*, Monitor*, Window*)</a>
-or <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.GLFWNative.html#OpenTK_Windowing_GraphicsLibraryFramework_GLFWNative_glfwSetWindowTitle_OpenTK_Windowing_GraphicsLibraryFramework_Window__System_Byte__">glfwSetWindowTitle(Window*, byte*)</a>.</p>
-<p>The returned title is currently a copy of the title last set by <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.GLFWNative.html#OpenTK_Windowing_GraphicsLibraryFramework_GLFWNative_glfwCreateWindow_System_Int32_System_Int32_System_Byte__OpenTK_Windowing_GraphicsLibraryFramework_Monitor__OpenTK_Windowing_GraphicsLibraryFramework_Window__">glfwCreateWindow(int, int, byte*, Monitor*, Window*)</a>
-or <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.GLFWNative.html#OpenTK_Windowing_GraphicsLibraryFramework_GLFWNative_glfwSetWindowTitle_OpenTK_Windowing_GraphicsLibraryFramework_Window__System_Byte__">glfwSetWindowTitle(Window*, byte*)</a>.
+window. This is the title set previously by <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">glfwCreateWindow(int, int, byte*, Monitor*, Window*)</a>
+or <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.Window.html">glfwSetWindowTitle(Window*, byte*)</a>.</p>
+<p>The returned title is currently a copy of the title last set by <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">glfwCreateWindow(int, int, byte*, Monitor*, Window*)</a>
+or <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.Window.html">glfwSetWindowTitle(Window*, byte*)</a>.
 It does not include any additional text which may be appended by the platform or another program.</p>
 <p>The returned string is allocated and freed by GLFW.
 You should not free it yourself.
-It is valid until the next call to <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.GLFWNative.html#OpenTK_Windowing_GraphicsLibraryFramework_GLFWNative_glfwCreateWindow_System_Int32_System_Int32_System_Byte__OpenTK_Windowing_GraphicsLibraryFramework_Monitor__OpenTK_Windowing_GraphicsLibraryFramework_Window__">glfwCreateWindow(int, int, byte*, Monitor*, Window*)</a>
-or <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.GLFWNative.html#OpenTK_Windowing_GraphicsLibraryFramework_GLFWNative_glfwSetWindowTitle_OpenTK_Windowing_GraphicsLibraryFramework_Window__System_Byte__">glfwSetWindowTitle(Window*, byte*)</a>, or until the library is terminated.</p>
+It is valid until the next call to <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">glfwCreateWindow(int, int, byte*, Monitor*, Window*)</a>
+or <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.Window.html">glfwSetWindowTitle(Window*, byte*)</a>, or until the library is terminated.</p>
 <p>This function must only be called from the main thread.</p>
 <p>Added in version 3.4.</p>
 </div>
@@ -8095,12 +8082,12 @@ Once GLFW has been initialized, any updates will be ignored until the library is
   <a id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_JoystickIsGamepad_" data-uid="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.JoystickIsGamepad*"></a>
   <h4 id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_JoystickIsGamepad_System_Int32_" data-uid="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.JoystickIsGamepad(System.Int32)">JoystickIsGamepad(int)</h4>
   <div class="markdown level1 summary"><p>
- This function returns whether the specified joystick is both present and has a gamepad mapping.
- </p>
+This function returns whether the specified joystick is both present and has a gamepad mapping.
+</p>
 <p>
- If the specified joystick is present but does not have a gamepad mapping
- this function will return <code>false</code> but will not generate an error.
- </p>
+If the specified joystick is present but does not have a gamepad mapping
+this function will return <code>false</code> but will not generate an error.
+</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -8143,14 +8130,14 @@ Once GLFW has been initialized, any updates will be ignored until the library is
   </table>
   <h5 id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_JoystickIsGamepad_System_Int32__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>
- Call <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.html#OpenTK_Windowing_GraphicsLibraryFramework_GLFW_JoystickPresent_System_Int32_">JoystickPresent(int)</a> to check if a joystick is present regardless of whether it has a mapping.
- </p>
+Call <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.html#OpenTK_Windowing_GraphicsLibraryFramework_GLFW_JoystickPresent_System_Int32_">JoystickPresent(int)</a> to check if a joystick is present regardless of whether it has a mapping.
+</p>
 <p>
- This function must only be called from the main thread.
- </p>
+This function must only be called from the main thread.
+</p>
 <p>
- Possible errors include <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.ErrorCode.html#OpenTK_Windowing_GraphicsLibraryFramework_ErrorCode_NotInitialized">NotInitialized</a> and <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.ErrorCode.html#OpenTK_Windowing_GraphicsLibraryFramework_ErrorCode_InvalidEnum">InvalidEnum</a>.
- </p>
+Possible errors include <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.ErrorCode.html#OpenTK_Windowing_GraphicsLibraryFramework_ErrorCode_NotInitialized">NotInitialized</a> and <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.ErrorCode.html#OpenTK_Windowing_GraphicsLibraryFramework_ErrorCode_InvalidEnum">InvalidEnum</a>.
+</p>
 </div>
   <h5 id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_JoystickIsGamepad_System_Int32__seealso">See Also</h5>
   <div class="seealso">
@@ -11755,37 +11742,37 @@ This function may be called from any thread.
   <a id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_WaitEvents_" data-uid="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.WaitEvents*"></a>
   <h4 id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_WaitEvents" data-uid="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.WaitEvents">WaitEvents()</h4>
   <div class="markdown level1 summary"><p>
- This function puts the calling thread to sleep until at least one event is available in the event queue.
- </p>
+This function puts the calling thread to sleep until at least one event is available in the event queue.
+</p>
 <p>
- Once one or more events are available, it behaves exactly like <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.html#OpenTK_Windowing_GraphicsLibraryFramework_GLFW_PollEvents">PollEvents()</a>,
- i.e. the events in the queue are processed and the function then returns immediately.
- </p>
+Once one or more events are available, it behaves exactly like <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.html#OpenTK_Windowing_GraphicsLibraryFramework_GLFW_PollEvents">PollEvents()</a>,
+i.e. the events in the queue are processed and the function then returns immediately.
+</p>
 <p>
- Processing events will cause the window and input callbacks associated with those events to be called.
- </p>
+Processing events will cause the window and input callbacks associated with those events to be called.
+</p>
 <p>
- Since not all events are associated with callbacks,
- this function may return without a callback having been called even if you are monitoring all callbacks.
- </p>
+Since not all events are associated with callbacks,
+this function may return without a callback having been called even if you are monitoring all callbacks.
+</p>
 <p>
- On some platforms, a window move, resize or menu operation will cause event processing to block.
- This is due to how event processing is designed on those platforms.
- You can use the window refresh callback (<a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.html#OpenTK_Windowing_GraphicsLibraryFramework_GLFW_SetWindowRefreshCallback_OpenTK_Windowing_GraphicsLibraryFramework_Window__OpenTK_Windowing_GraphicsLibraryFramework_GLFWCallbacks_WindowRefreshCallback_">SetWindowRefreshCallback(Window*, WindowRefreshCallback)</a>)
- to redraw the contents of your window when necessary during such operations.
- </p>
+On some platforms, a window move, resize or menu operation will cause event processing to block.
+This is due to how event processing is designed on those platforms.
+You can use the window refresh callback (<a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.GLFW.html#OpenTK_Windowing_GraphicsLibraryFramework_GLFW_SetWindowRefreshCallback_OpenTK_Windowing_GraphicsLibraryFramework_Window__OpenTK_Windowing_GraphicsLibraryFramework_GLFWCallbacks_WindowRefreshCallback_">SetWindowRefreshCallback(Window*, WindowRefreshCallback)</a>)
+to redraw the contents of your window when necessary during such operations.
+</p>
 <p>
- On some platforms,
- certain callbacks may be called outside of a call to one of the event processing functions.
- </p>
+On some platforms,
+certain callbacks may be called outside of a call to one of the event processing functions.
+</p>
 <p>
- If no windows exist, this function returns immediately.
- For synchronization of threads in applications that do not create windows,
- use your threading library of choice.
- </p>
+If no windows exist, this function returns immediately.
+For synchronization of threads in applications that do not create windows,
+use your threading library of choice.
+</p>
 <p>
- Event processing is not required for joystick input to work.
- </p>
+Event processing is not required for joystick input to work.
+</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -12318,7 +12305,7 @@ Setting these hints requires no platform specific headers or functions.
   </table>
   <h5 id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_WindowHint_OpenTK_Windowing_GraphicsLibraryFramework_WindowHintString_System_String__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>
-Possible errors include <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.ErrorCode.html#OpenTK_Windowing_GraphicsLibraryFramework_ErrorCode_NotInitialized">NotInitialized</a><a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.ErrorCode.html#OpenTK_Windowing_GraphicsLibraryFramework_ErrorCode_InvalidEnum">InvalidEnum</a>.
+Possible errors include <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.ErrorCode.html#OpenTK_Windowing_GraphicsLibraryFramework_ErrorCode_NotInitialized">NotInitialized</a> <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.ErrorCode.html#OpenTK_Windowing_GraphicsLibraryFramework_ErrorCode_InvalidEnum">InvalidEnum</a>.
 </p>
 <p>
 The string is copied before this function returns.
@@ -12379,7 +12366,7 @@ Setting these hints requires no platform specific headers or functions.
   </table>
   <h5 id="OpenTK_Windowing_GraphicsLibraryFramework_GLFW_WindowHintRaw_OpenTK_Windowing_GraphicsLibraryFramework_WindowHintString_System_Byte___remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>
-Possible errors include <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.ErrorCode.html#OpenTK_Windowing_GraphicsLibraryFramework_ErrorCode_NotInitialized">NotInitialized</a><a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.ErrorCode.html#OpenTK_Windowing_GraphicsLibraryFramework_ErrorCode_InvalidEnum">InvalidEnum</a>.
+Possible errors include <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.ErrorCode.html#OpenTK_Windowing_GraphicsLibraryFramework_ErrorCode_NotInitialized">NotInitialized</a> <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.ErrorCode.html#OpenTK_Windowing_GraphicsLibraryFramework_ErrorCode_InvalidEnum">InvalidEnum</a>.
 </p>
 <p>
 The string is copied before this function returns.

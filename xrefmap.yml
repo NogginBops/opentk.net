@@ -77769,6 +77769,122 @@ references:
   isSpec: "True"
   fullName: OpenTK.Platform.Native.Windows.ShellComponent.Uninitialize
   nameWithType: ShellComponent.Uninitialize
+- uid: OpenTK.Platform.Native.Windows.VulkanComponent
+  name: VulkanComponent
+  href: api/OpenTK.Platform.Native.Windows.VulkanComponent.html
+  commentId: T:OpenTK.Platform.Native.Windows.VulkanComponent
+  fullName: OpenTK.Platform.Native.Windows.VulkanComponent
+  nameWithType: VulkanComponent
+- uid: OpenTK.Platform.Native.Windows.VulkanComponent.CreateWindowSurface(OpenTK.Graphics.Vulkan.VkInstance,OpenTK.Platform.WindowHandle,OpenTK.Graphics.Vulkan.VkAllocationCallbacks*,OpenTK.Graphics.Vulkan.VkSurfaceKHR@)
+  name: CreateWindowSurface(VkInstance, WindowHandle, VkAllocationCallbacks*, out VkSurfaceKHR)
+  href: api/OpenTK.Platform.Native.Windows.VulkanComponent.html#OpenTK_Platform_Native_Windows_VulkanComponent_CreateWindowSurface_OpenTK_Graphics_Vulkan_VkInstance_OpenTK_Platform_WindowHandle_OpenTK_Graphics_Vulkan_VkAllocationCallbacks__OpenTK_Graphics_Vulkan_VkSurfaceKHR__
+  commentId: M:OpenTK.Platform.Native.Windows.VulkanComponent.CreateWindowSurface(OpenTK.Graphics.Vulkan.VkInstance,OpenTK.Platform.WindowHandle,OpenTK.Graphics.Vulkan.VkAllocationCallbacks*,OpenTK.Graphics.Vulkan.VkSurfaceKHR@)
+  name.vb: CreateWindowSurface(VkInstance, WindowHandle, VkAllocationCallbacks*, VkSurfaceKHR)
+  fullName: OpenTK.Platform.Native.Windows.VulkanComponent.CreateWindowSurface(OpenTK.Graphics.Vulkan.VkInstance, OpenTK.Platform.WindowHandle, OpenTK.Graphics.Vulkan.VkAllocationCallbacks*, out OpenTK.Graphics.Vulkan.VkSurfaceKHR)
+  fullName.vb: OpenTK.Platform.Native.Windows.VulkanComponent.CreateWindowSurface(OpenTK.Graphics.Vulkan.VkInstance, OpenTK.Platform.WindowHandle, OpenTK.Graphics.Vulkan.VkAllocationCallbacks*, OpenTK.Graphics.Vulkan.VkSurfaceKHR)
+  nameWithType: VulkanComponent.CreateWindowSurface(VkInstance, WindowHandle, VkAllocationCallbacks*, out VkSurfaceKHR)
+  nameWithType.vb: VulkanComponent.CreateWindowSurface(VkInstance, WindowHandle, VkAllocationCallbacks*, VkSurfaceKHR)
+- uid: OpenTK.Platform.Native.Windows.VulkanComponent.CreateWindowSurface*
+  name: CreateWindowSurface
+  href: api/OpenTK.Platform.Native.Windows.VulkanComponent.html#OpenTK_Platform_Native_Windows_VulkanComponent_CreateWindowSurface_
+  commentId: Overload:OpenTK.Platform.Native.Windows.VulkanComponent.CreateWindowSurface
+  isSpec: "True"
+  fullName: OpenTK.Platform.Native.Windows.VulkanComponent.CreateWindowSurface
+  nameWithType: VulkanComponent.CreateWindowSurface
+- uid: OpenTK.Platform.Native.Windows.VulkanComponent.GetPhysicalDevicePresentationSupport(OpenTK.Graphics.Vulkan.VkInstance,OpenTK.Graphics.Vulkan.VkPhysicalDevice,System.UInt32)
+  name: GetPhysicalDevicePresentationSupport(VkInstance, VkPhysicalDevice, uint)
+  href: api/OpenTK.Platform.Native.Windows.VulkanComponent.html#OpenTK_Platform_Native_Windows_VulkanComponent_GetPhysicalDevicePresentationSupport_OpenTK_Graphics_Vulkan_VkInstance_OpenTK_Graphics_Vulkan_VkPhysicalDevice_System_UInt32_
+  commentId: M:OpenTK.Platform.Native.Windows.VulkanComponent.GetPhysicalDevicePresentationSupport(OpenTK.Graphics.Vulkan.VkInstance,OpenTK.Graphics.Vulkan.VkPhysicalDevice,System.UInt32)
+  name.vb: GetPhysicalDevicePresentationSupport(VkInstance, VkPhysicalDevice, UInteger)
+  fullName: OpenTK.Platform.Native.Windows.VulkanComponent.GetPhysicalDevicePresentationSupport(OpenTK.Graphics.Vulkan.VkInstance, OpenTK.Graphics.Vulkan.VkPhysicalDevice, uint)
+  fullName.vb: OpenTK.Platform.Native.Windows.VulkanComponent.GetPhysicalDevicePresentationSupport(OpenTK.Graphics.Vulkan.VkInstance, OpenTK.Graphics.Vulkan.VkPhysicalDevice, UInteger)
+  nameWithType: VulkanComponent.GetPhysicalDevicePresentationSupport(VkInstance, VkPhysicalDevice, uint)
+  nameWithType.vb: VulkanComponent.GetPhysicalDevicePresentationSupport(VkInstance, VkPhysicalDevice, UInteger)
+- uid: OpenTK.Platform.Native.Windows.VulkanComponent.GetPhysicalDevicePresentationSupport*
+  name: GetPhysicalDevicePresentationSupport
+  href: api/OpenTK.Platform.Native.Windows.VulkanComponent.html#OpenTK_Platform_Native_Windows_VulkanComponent_GetPhysicalDevicePresentationSupport_
+  commentId: Overload:OpenTK.Platform.Native.Windows.VulkanComponent.GetPhysicalDevicePresentationSupport
+  isSpec: "True"
+  fullName: OpenTK.Platform.Native.Windows.VulkanComponent.GetPhysicalDevicePresentationSupport
+  nameWithType: VulkanComponent.GetPhysicalDevicePresentationSupport
+- uid: OpenTK.Platform.Native.Windows.VulkanComponent.GetRequiredInstanceExtensions
+  name: GetRequiredInstanceExtensions()
+  href: api/OpenTK.Platform.Native.Windows.VulkanComponent.html#OpenTK_Platform_Native_Windows_VulkanComponent_GetRequiredInstanceExtensions
+  commentId: M:OpenTK.Platform.Native.Windows.VulkanComponent.GetRequiredInstanceExtensions
+  fullName: OpenTK.Platform.Native.Windows.VulkanComponent.GetRequiredInstanceExtensions()
+  nameWithType: VulkanComponent.GetRequiredInstanceExtensions()
+- uid: OpenTK.Platform.Native.Windows.VulkanComponent.GetRequiredInstanceExtensions*
+  name: GetRequiredInstanceExtensions
+  href: api/OpenTK.Platform.Native.Windows.VulkanComponent.html#OpenTK_Platform_Native_Windows_VulkanComponent_GetRequiredInstanceExtensions_
+  commentId: Overload:OpenTK.Platform.Native.Windows.VulkanComponent.GetRequiredInstanceExtensions
+  isSpec: "True"
+  fullName: OpenTK.Platform.Native.Windows.VulkanComponent.GetRequiredInstanceExtensions
+  nameWithType: VulkanComponent.GetRequiredInstanceExtensions
+- uid: OpenTK.Platform.Native.Windows.VulkanComponent.Initialize(OpenTK.Platform.ToolkitOptions)
+  name: Initialize(ToolkitOptions)
+  href: api/OpenTK.Platform.Native.Windows.VulkanComponent.html#OpenTK_Platform_Native_Windows_VulkanComponent_Initialize_OpenTK_Platform_ToolkitOptions_
+  commentId: M:OpenTK.Platform.Native.Windows.VulkanComponent.Initialize(OpenTK.Platform.ToolkitOptions)
+  fullName: OpenTK.Platform.Native.Windows.VulkanComponent.Initialize(OpenTK.Platform.ToolkitOptions)
+  nameWithType: VulkanComponent.Initialize(ToolkitOptions)
+- uid: OpenTK.Platform.Native.Windows.VulkanComponent.Initialize*
+  name: Initialize
+  href: api/OpenTK.Platform.Native.Windows.VulkanComponent.html#OpenTK_Platform_Native_Windows_VulkanComponent_Initialize_
+  commentId: Overload:OpenTK.Platform.Native.Windows.VulkanComponent.Initialize
+  isSpec: "True"
+  fullName: OpenTK.Platform.Native.Windows.VulkanComponent.Initialize
+  nameWithType: VulkanComponent.Initialize
+- uid: OpenTK.Platform.Native.Windows.VulkanComponent.Logger
+  name: Logger
+  href: api/OpenTK.Platform.Native.Windows.VulkanComponent.html#OpenTK_Platform_Native_Windows_VulkanComponent_Logger
+  commentId: P:OpenTK.Platform.Native.Windows.VulkanComponent.Logger
+  fullName: OpenTK.Platform.Native.Windows.VulkanComponent.Logger
+  nameWithType: VulkanComponent.Logger
+- uid: OpenTK.Platform.Native.Windows.VulkanComponent.Logger*
+  name: Logger
+  href: api/OpenTK.Platform.Native.Windows.VulkanComponent.html#OpenTK_Platform_Native_Windows_VulkanComponent_Logger_
+  commentId: Overload:OpenTK.Platform.Native.Windows.VulkanComponent.Logger
+  isSpec: "True"
+  fullName: OpenTK.Platform.Native.Windows.VulkanComponent.Logger
+  nameWithType: VulkanComponent.Logger
+- uid: OpenTK.Platform.Native.Windows.VulkanComponent.Name
+  name: Name
+  href: api/OpenTK.Platform.Native.Windows.VulkanComponent.html#OpenTK_Platform_Native_Windows_VulkanComponent_Name
+  commentId: P:OpenTK.Platform.Native.Windows.VulkanComponent.Name
+  fullName: OpenTK.Platform.Native.Windows.VulkanComponent.Name
+  nameWithType: VulkanComponent.Name
+- uid: OpenTK.Platform.Native.Windows.VulkanComponent.Name*
+  name: Name
+  href: api/OpenTK.Platform.Native.Windows.VulkanComponent.html#OpenTK_Platform_Native_Windows_VulkanComponent_Name_
+  commentId: Overload:OpenTK.Platform.Native.Windows.VulkanComponent.Name
+  isSpec: "True"
+  fullName: OpenTK.Platform.Native.Windows.VulkanComponent.Name
+  nameWithType: VulkanComponent.Name
+- uid: OpenTK.Platform.Native.Windows.VulkanComponent.Provides
+  name: Provides
+  href: api/OpenTK.Platform.Native.Windows.VulkanComponent.html#OpenTK_Platform_Native_Windows_VulkanComponent_Provides
+  commentId: P:OpenTK.Platform.Native.Windows.VulkanComponent.Provides
+  fullName: OpenTK.Platform.Native.Windows.VulkanComponent.Provides
+  nameWithType: VulkanComponent.Provides
+- uid: OpenTK.Platform.Native.Windows.VulkanComponent.Provides*
+  name: Provides
+  href: api/OpenTK.Platform.Native.Windows.VulkanComponent.html#OpenTK_Platform_Native_Windows_VulkanComponent_Provides_
+  commentId: Overload:OpenTK.Platform.Native.Windows.VulkanComponent.Provides
+  isSpec: "True"
+  fullName: OpenTK.Platform.Native.Windows.VulkanComponent.Provides
+  nameWithType: VulkanComponent.Provides
+- uid: OpenTK.Platform.Native.Windows.VulkanComponent.Uninitialize
+  name: Uninitialize()
+  href: api/OpenTK.Platform.Native.Windows.VulkanComponent.html#OpenTK_Platform_Native_Windows_VulkanComponent_Uninitialize
+  commentId: M:OpenTK.Platform.Native.Windows.VulkanComponent.Uninitialize
+  fullName: OpenTK.Platform.Native.Windows.VulkanComponent.Uninitialize()
+  nameWithType: VulkanComponent.Uninitialize()
+- uid: OpenTK.Platform.Native.Windows.VulkanComponent.Uninitialize*
+  name: Uninitialize
+  href: api/OpenTK.Platform.Native.Windows.VulkanComponent.html#OpenTK_Platform_Native_Windows_VulkanComponent_Uninitialize_
+  commentId: Overload:OpenTK.Platform.Native.Windows.VulkanComponent.Uninitialize
+  isSpec: "True"
+  fullName: OpenTK.Platform.Native.Windows.VulkanComponent.Uninitialize
+  nameWithType: VulkanComponent.Uninitialize
 - uid: OpenTK.Platform.Native.Windows.WindowComponent
   name: WindowComponent
   href: api/OpenTK.Platform.Native.Windows.WindowComponent.html

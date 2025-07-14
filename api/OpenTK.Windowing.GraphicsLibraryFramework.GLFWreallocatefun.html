@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <!--[if IE]><![endif]-->
 <html>
 
@@ -84,8 +84,8 @@ A memory reallocation callback function has the following signature:</p>
 <p>This function must return a memory block at least <code>size</code> bytes long, or
 <code>null</code> if allocation failed. Note that not all parts of GLFW handle allocation
 failures gracefully yet.</p>
-<p>This function must support being called during <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.GLFWNative.html#OpenTK_Windowing_GraphicsLibraryFramework_GLFWNative_glfwInit">glfwInit()</a> but before the library is
-flagged as initialized, as well as during <a class="xref" href="OpenTK.Windowing.GraphicsLibraryFramework.GLFWNative.html#OpenTK_Windowing_GraphicsLibraryFramework_GLFWNative_glfwTerminate">glfwTerminate()</a> after the library is no
+<p>This function must support being called during <span class="xref">OpenTK.Windowing.GraphicsLibraryFramework.GLFWNative.glfwInit()</span> but before the library is
+flagged as initialized, as well as during <span class="xref">OpenTK.Windowing.GraphicsLibraryFramework.GLFWNative.glfwTerminate()</span> after the library is no
 longer flagged as initialized.</p>
 <p>Any memory allocated via this function will be deallocated via the same allocator
 during library termination or earlier.</p>
