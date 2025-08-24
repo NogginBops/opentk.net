@@ -337,6 +337,60 @@ Pass this to <a class="xref" href="OpenTK.Graphics.GLLoader.html#OpenTK_Graphics
       <div><a class="xref" href="OpenTK.Graphics.GLLoader.html">GLLoader</a></div>
       <div><a class="xref" href="OpenTK.IBindingsContext.html">IBindingsContext</a></div>
   </div>
+  <a id="OpenTK_Platform_IOpenGLComponent_GetContextValues_" data-uid="OpenTK.Platform.IOpenGLComponent.GetContextValues*"></a>
+  <h4 id="OpenTK_Platform_IOpenGLComponent_GetContextValues_OpenTK_Platform_OpenGLContextHandle_" data-uid="OpenTK.Platform.IOpenGLComponent.GetContextValues(OpenTK.Platform.OpenGLContextHandle)">GetContextValues(OpenGLContextHandle)</h4>
+  <div class="markdown level1 summary"><p>Gets the context values of the OpenGL context.
+This can be used to query the actually selected context values initially requested in <a class="xref" href="OpenTK.Platform.OpenGLGraphicsApiHints.html">OpenGLGraphicsApiHints</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ContextValues GetContextValues(OpenGLContextHandle handle)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Platform.OpenGLContextHandle.html">OpenGLContextHandle</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>The OpenGL context to get the context values from.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Platform.ContextValues.html">ContextValues</a></td>
+        <td><p>The context values for the OpenGL context.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenTK_Platform_IOpenGLComponent_GetContextValues_OpenTK_Platform_OpenGLContextHandle__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>During context creation all possible context values are enumerated and sent to <a class="xref" href="OpenTK.Platform.OpenGLGraphicsApiHints.html#OpenTK_Platform_OpenGLGraphicsApiHints_Selector">Selector</a>
+(by default set to <a class="xref" href="OpenTK.Platform.ContextValues.html#OpenTK_Platform_ContextValues_DefaultValuesSelector_System_Collections_Generic_IReadOnlyList_OpenTK_Platform_ContextValues__OpenTK_Platform_ContextValues_OpenTK_Core_Utility_ILogger_">DefaultValuesSelector(IReadOnlyList&lt;ContextValues&gt;, ContextValues, ILogger?)</a>)
+which can choose the an appropriate format. This function returns these selected values.</p>
+</div>
+  <h5 id="OpenTK_Platform_IOpenGLComponent_GetContextValues_OpenTK_Platform_OpenGLContextHandle__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="OpenTK.Platform.OpenGLGraphicsApiHints.html">OpenGLGraphicsApiHints</a></div>
+      <div><a class="xref" href="OpenTK.Platform.OpenGLGraphicsApiHints.html#OpenTK_Platform_OpenGLGraphicsApiHints_Selector">Selector</a></div>
+  </div>
   <a id="OpenTK_Platform_IOpenGLComponent_GetCurrentContext_" data-uid="OpenTK.Platform.IOpenGLComponent.GetCurrentContext*"></a>
   <h4 id="OpenTK_Platform_IOpenGLComponent_GetCurrentContext" data-uid="OpenTK.Platform.IOpenGLComponent.GetCurrentContext">GetCurrentContext()</h4>
   <div class="markdown level1 summary"><p>Get the current OpenGL context for this thread.</p>
