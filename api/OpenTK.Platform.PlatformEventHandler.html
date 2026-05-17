@@ -84,7 +84,7 @@
   <h6><strong>Assembly</strong>: OpenTK.Platform.dll</h6>
   <h5 id="OpenTK_Platform_PlatformEventHandler_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public delegate void PlatformEventHandler(PalHandle? handle, PlatformEventType type, EventArgs args)</code></pre>
+    <pre><code class="lang-csharp hljs">public delegate void PlatformEventHandler(EventArgs args)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -96,18 +96,6 @@
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Platform.PalHandle.html">PalHandle</a></td>
-        <td><span class="parametername">handle</span></td>
-        <td><p>Handle creating the event, if available.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="OpenTK.Platform.PlatformEventType.html">PlatformEventType</a></td>
-        <td><span class="parametername">type</span></td>
-        <td><p>Event type.</p>
-</td>
-      </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.eventargs">EventArgs</a></td>
         <td><span class="parametername">args</span></td>

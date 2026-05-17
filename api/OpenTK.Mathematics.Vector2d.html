@@ -1304,7 +1304,8 @@ public static Vector2d Clamp(Vector2d vec, Vector2d min, Vector2d max)</code></p
   </table>
   <a id="OpenTK_Mathematics_Vector2d_ComponentMax_" data-uid="OpenTK.Mathematics.Vector2d.ComponentMax*"></a>
   <h4 id="OpenTK_Mathematics_Vector2d_ComponentMax_OpenTK_Mathematics_Vector2d_OpenTK_Mathematics_Vector2d_" data-uid="OpenTK.Mathematics.Vector2d.ComponentMax(OpenTK.Mathematics.Vector2d,OpenTK.Mathematics.Vector2d)">ComponentMax(Vector2d, Vector2d)</h4>
-  <div class="markdown level1 summary"><p>Returns a vector created from the largest of the corresponding components of the given vectors.</p>
+  <div class="markdown level1 summary"><p>Returns a vector created from the largest of the corresponding components of the given vectors.
+Any NaN inputs are propagated.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -1347,14 +1348,15 @@ public static Vector2d ComponentMax(Vector2d a, Vector2d b)</code></pre>
     <tbody>
       <tr>
         <td><a class="xref" href="OpenTK.Mathematics.Vector2d.html">Vector2d</a></td>
-        <td><p>The component-wise maximum.</p>
+        <td><p>The component-wise minimum.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="OpenTK_Mathematics_Vector2d_ComponentMax_" data-uid="OpenTK.Mathematics.Vector2d.ComponentMax*"></a>
   <h4 id="OpenTK_Mathematics_Vector2d_ComponentMax_OpenTK_Mathematics_Vector2d__OpenTK_Mathematics_Vector2d__OpenTK_Mathematics_Vector2d__" data-uid="OpenTK.Mathematics.Vector2d.ComponentMax(OpenTK.Mathematics.Vector2d@,OpenTK.Mathematics.Vector2d@,OpenTK.Mathematics.Vector2d@)">ComponentMax(in Vector2d, in Vector2d, out Vector2d)</h4>
-  <div class="markdown level1 summary"><p>Returns a vector created from the largest of the corresponding components of the given vectors.</p>
+  <div class="markdown level1 summary"><p>Returns a vector created from the largest of the corresponding components of the given vectors.
+Any NaN inputs are propagated.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -1386,14 +1388,197 @@ public static Vector2d ComponentMax(Vector2d a, Vector2d b)</code></pre>
       <tr>
         <td><a class="xref" href="OpenTK.Mathematics.Vector2d.html">Vector2d</a></td>
         <td><span class="parametername">result</span></td>
-        <td><p>The component-wise maximum.</p>
+        <td><p>The component-wise minimum.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Vector2d_ComponentMaxNative_" data-uid="OpenTK.Mathematics.Vector2d.ComponentMaxNative*"></a>
+  <h4 id="OpenTK_Mathematics_Vector2d_ComponentMaxNative_OpenTK_Mathematics_Vector2d_OpenTK_Mathematics_Vector2d_" data-uid="OpenTK.Mathematics.Vector2d.ComponentMaxNative(OpenTK.Mathematics.Vector2d,OpenTK.Mathematics.Vector2d)">ComponentMaxNative(Vector2d, Vector2d)</h4>
+  <div class="markdown level1 summary"><p>Returns a vector created from the largest of the corresponding components of the given vectors.
+What happens when the input component is NaN or -0 is platform dependent.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static Vector2d ComponentMaxNative(Vector2d a, Vector2d b)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector2d.html">Vector2d</a></td>
+        <td><span class="parametername">a</span></td>
+        <td><p>First operand.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector2d.html">Vector2d</a></td>
+        <td><span class="parametername">b</span></td>
+        <td><p>Second operand.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector2d.html">Vector2d</a></td>
+        <td><p>The component-wise minimum.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Vector2d_ComponentMaxNative_" data-uid="OpenTK.Mathematics.Vector2d.ComponentMaxNative*"></a>
+  <h4 id="OpenTK_Mathematics_Vector2d_ComponentMaxNative_OpenTK_Mathematics_Vector2d__OpenTK_Mathematics_Vector2d__OpenTK_Mathematics_Vector2d__" data-uid="OpenTK.Mathematics.Vector2d.ComponentMaxNative(OpenTK.Mathematics.Vector2d@,OpenTK.Mathematics.Vector2d@,OpenTK.Mathematics.Vector2d@)">ComponentMaxNative(in Vector2d, in Vector2d, out Vector2d)</h4>
+  <div class="markdown level1 summary"><p>Returns a vector created from the largest of the corresponding components of the given vectors.
+What happens when the input component is NaN or -0 is platform dependent.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ComponentMaxNative(in Vector2d a, in Vector2d b, out Vector2d result)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector2d.html">Vector2d</a></td>
+        <td><span class="parametername">a</span></td>
+        <td><p>First operand.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector2d.html">Vector2d</a></td>
+        <td><span class="parametername">b</span></td>
+        <td><p>Second operand.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector2d.html">Vector2d</a></td>
+        <td><span class="parametername">result</span></td>
+        <td><p>The component-wise minimum.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Vector2d_ComponentMaxNumber_" data-uid="OpenTK.Mathematics.Vector2d.ComponentMaxNumber*"></a>
+  <h4 id="OpenTK_Mathematics_Vector2d_ComponentMaxNumber_OpenTK_Mathematics_Vector2d_OpenTK_Mathematics_Vector2d_" data-uid="OpenTK.Mathematics.Vector2d.ComponentMaxNumber(OpenTK.Mathematics.Vector2d,OpenTK.Mathematics.Vector2d)">ComponentMaxNumber(Vector2d, Vector2d)</h4>
+  <div class="markdown level1 summary"><p>Returns a vector created from the largest of the corresponding components of the given vectors.
+If one of the two components are NaN the other component is returned.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static Vector2d ComponentMaxNumber(Vector2d a, Vector2d b)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector2d.html">Vector2d</a></td>
+        <td><span class="parametername">a</span></td>
+        <td><p>First operand.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector2d.html">Vector2d</a></td>
+        <td><span class="parametername">b</span></td>
+        <td><p>Second operand.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector2d.html">Vector2d</a></td>
+        <td><p>The component-wise minimum.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Vector2d_ComponentMaxNumber_" data-uid="OpenTK.Mathematics.Vector2d.ComponentMaxNumber*"></a>
+  <h4 id="OpenTK_Mathematics_Vector2d_ComponentMaxNumber_OpenTK_Mathematics_Vector2d__OpenTK_Mathematics_Vector2d__OpenTK_Mathematics_Vector2d__" data-uid="OpenTK.Mathematics.Vector2d.ComponentMaxNumber(OpenTK.Mathematics.Vector2d@,OpenTK.Mathematics.Vector2d@,OpenTK.Mathematics.Vector2d@)">ComponentMaxNumber(in Vector2d, in Vector2d, out Vector2d)</h4>
+  <div class="markdown level1 summary"><p>Returns a vector created from the largest of the corresponding components of the given vectors.
+If one of the two components are NaN the other component is returned.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ComponentMaxNumber(in Vector2d a, in Vector2d b, out Vector2d result)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector2d.html">Vector2d</a></td>
+        <td><span class="parametername">a</span></td>
+        <td><p>First operand.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector2d.html">Vector2d</a></td>
+        <td><span class="parametername">b</span></td>
+        <td><p>Second operand.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector2d.html">Vector2d</a></td>
+        <td><span class="parametername">result</span></td>
+        <td><p>The component-wise minimum.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="OpenTK_Mathematics_Vector2d_ComponentMin_" data-uid="OpenTK.Mathematics.Vector2d.ComponentMin*"></a>
   <h4 id="OpenTK_Mathematics_Vector2d_ComponentMin_OpenTK_Mathematics_Vector2d_OpenTK_Mathematics_Vector2d_" data-uid="OpenTK.Mathematics.Vector2d.ComponentMin(OpenTK.Mathematics.Vector2d,OpenTK.Mathematics.Vector2d)">ComponentMin(Vector2d, Vector2d)</h4>
-  <div class="markdown level1 summary"><p>Returns a vector created from the smallest of the corresponding components of the given vectors.</p>
+  <div class="markdown level1 summary"><p>Returns a vector created from the smallest of the corresponding components of the given vectors.
+Any NaN inputs are propagated.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -1443,12 +1628,195 @@ public static Vector2d ComponentMin(Vector2d a, Vector2d b)</code></pre>
   </table>
   <a id="OpenTK_Mathematics_Vector2d_ComponentMin_" data-uid="OpenTK.Mathematics.Vector2d.ComponentMin*"></a>
   <h4 id="OpenTK_Mathematics_Vector2d_ComponentMin_OpenTK_Mathematics_Vector2d__OpenTK_Mathematics_Vector2d__OpenTK_Mathematics_Vector2d__" data-uid="OpenTK.Mathematics.Vector2d.ComponentMin(OpenTK.Mathematics.Vector2d@,OpenTK.Mathematics.Vector2d@,OpenTK.Mathematics.Vector2d@)">ComponentMin(in Vector2d, in Vector2d, out Vector2d)</h4>
-  <div class="markdown level1 summary"><p>Returns a vector created from the smallest of the corresponding components of the given vectors.</p>
+  <div class="markdown level1 summary"><p>Returns a vector created from the smallest of the corresponding components of the given vectors.
+Any NaN inputs are propagated.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static void ComponentMin(in Vector2d a, in Vector2d b, out Vector2d result)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector2d.html">Vector2d</a></td>
+        <td><span class="parametername">a</span></td>
+        <td><p>First operand.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector2d.html">Vector2d</a></td>
+        <td><span class="parametername">b</span></td>
+        <td><p>Second operand.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector2d.html">Vector2d</a></td>
+        <td><span class="parametername">result</span></td>
+        <td><p>The component-wise minimum.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Vector2d_ComponentMinNative_" data-uid="OpenTK.Mathematics.Vector2d.ComponentMinNative*"></a>
+  <h4 id="OpenTK_Mathematics_Vector2d_ComponentMinNative_OpenTK_Mathematics_Vector2d_OpenTK_Mathematics_Vector2d_" data-uid="OpenTK.Mathematics.Vector2d.ComponentMinNative(OpenTK.Mathematics.Vector2d,OpenTK.Mathematics.Vector2d)">ComponentMinNative(Vector2d, Vector2d)</h4>
+  <div class="markdown level1 summary"><p>Returns a vector created from the smallest of the corresponding components of the given vectors.
+What happens when the input component is NaN or -0 is platform dependent.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static Vector2d ComponentMinNative(Vector2d a, Vector2d b)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector2d.html">Vector2d</a></td>
+        <td><span class="parametername">a</span></td>
+        <td><p>First operand.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector2d.html">Vector2d</a></td>
+        <td><span class="parametername">b</span></td>
+        <td><p>Second operand.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector2d.html">Vector2d</a></td>
+        <td><p>The component-wise minimum.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Vector2d_ComponentMinNative_" data-uid="OpenTK.Mathematics.Vector2d.ComponentMinNative*"></a>
+  <h4 id="OpenTK_Mathematics_Vector2d_ComponentMinNative_OpenTK_Mathematics_Vector2d__OpenTK_Mathematics_Vector2d__OpenTK_Mathematics_Vector2d__" data-uid="OpenTK.Mathematics.Vector2d.ComponentMinNative(OpenTK.Mathematics.Vector2d@,OpenTK.Mathematics.Vector2d@,OpenTK.Mathematics.Vector2d@)">ComponentMinNative(in Vector2d, in Vector2d, out Vector2d)</h4>
+  <div class="markdown level1 summary"><p>Returns a vector created from the smallest of the corresponding components of the given vectors.
+What happens when the input component is NaN or -0 is platform dependent.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ComponentMinNative(in Vector2d a, in Vector2d b, out Vector2d result)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector2d.html">Vector2d</a></td>
+        <td><span class="parametername">a</span></td>
+        <td><p>First operand.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector2d.html">Vector2d</a></td>
+        <td><span class="parametername">b</span></td>
+        <td><p>Second operand.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector2d.html">Vector2d</a></td>
+        <td><span class="parametername">result</span></td>
+        <td><p>The component-wise minimum.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Vector2d_ComponentMinNumber_" data-uid="OpenTK.Mathematics.Vector2d.ComponentMinNumber*"></a>
+  <h4 id="OpenTK_Mathematics_Vector2d_ComponentMinNumber_OpenTK_Mathematics_Vector2d_OpenTK_Mathematics_Vector2d_" data-uid="OpenTK.Mathematics.Vector2d.ComponentMinNumber(OpenTK.Mathematics.Vector2d,OpenTK.Mathematics.Vector2d)">ComponentMinNumber(Vector2d, Vector2d)</h4>
+  <div class="markdown level1 summary"><p>Returns a vector created from the smallest of the corresponding components of the given vectors.
+If one of the two components are NaN the other component is returned.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static Vector2d ComponentMinNumber(Vector2d a, Vector2d b)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector2d.html">Vector2d</a></td>
+        <td><span class="parametername">a</span></td>
+        <td><p>First operand.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector2d.html">Vector2d</a></td>
+        <td><span class="parametername">b</span></td>
+        <td><p>Second operand.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector2d.html">Vector2d</a></td>
+        <td><p>The component-wise minimum.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Vector2d_ComponentMinNumber_" data-uid="OpenTK.Mathematics.Vector2d.ComponentMinNumber*"></a>
+  <h4 id="OpenTK_Mathematics_Vector2d_ComponentMinNumber_OpenTK_Mathematics_Vector2d__OpenTK_Mathematics_Vector2d__OpenTK_Mathematics_Vector2d__" data-uid="OpenTK.Mathematics.Vector2d.ComponentMinNumber(OpenTK.Mathematics.Vector2d@,OpenTK.Mathematics.Vector2d@,OpenTK.Mathematics.Vector2d@)">ComponentMinNumber(in Vector2d, in Vector2d, out Vector2d)</h4>
+  <div class="markdown level1 summary"><p>Returns a vector created from the smallest of the corresponding components of the given vectors.
+If one of the two components are NaN the other component is returned.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ComponentMinNumber(in Vector2d a, in Vector2d b, out Vector2d result)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">

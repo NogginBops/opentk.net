@@ -1116,7 +1116,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "OpenTK.Graphics.EGLLoader.BindingsContext",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/OpenTK.Graphics.EGLLoader.BindingsContext.yml\" sourcestartlinenumber=\"1\">The bindings context for EGL.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1130,7 +1130,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "OpenTK.Graphics.EGLLoader",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/OpenTK.Graphics.EGLLoader.yml\" sourcestartlinenumber=\"1\">Used to load the EGL bindings.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1200,7 +1200,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "OpenTK.Graphics.GLXLoader.BindingsContext",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/OpenTK.Graphics.GLXLoader.BindingsContext.yml\" sourcestartlinenumber=\"1\">The bindings context for GLX.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1214,7 +1214,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "OpenTK.Graphics.GLXLoader",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/OpenTK.Graphics.GLXLoader.yml\" sourcestartlinenumber=\"1\">Used to load the GLX bindings.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1368,7 +1368,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "OpenTK.Graphics.VKLoader",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/OpenTK.Graphics.VKLoader.yml\" sourcestartlinenumber=\"1\">Used to load the Vulkan bindings.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1396,7 +1396,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "OpenTK.Graphics.WGLLoader.BindingsContext",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/OpenTK.Graphics.WGLLoader.BindingsContext.yml\" sourcestartlinenumber=\"1\">The bindings context for WGL.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1410,7 +1410,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "OpenTK.Graphics.WGLLoader",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/OpenTK.Graphics.WGLLoader.yml\" sourcestartlinenumber=\"1\">Used to load the WGL bindings.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1439,90 +1439,6 @@
       "IsMRef": true,
       "Title": "OpenTK.IBindingsContext",
       "Summary": "<p sourcefile=\"api/OpenTK.IBindingsContext.yml\" sourcestartlinenumber=\"1\">Provides methods for querying available functions in a bindings context.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Input.Hid.HidConsumerUsage.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Input.Hid.HidConsumerUsage.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "OpenTK.Input.Hid.HidConsumerUsage",
-      "Summary": "<p sourcefile=\"api/OpenTK.Input.Hid.HidConsumerUsage.yml\" sourcestartlinenumber=\"1\">Describes usages for the <xref href=\"OpenTK.Input.Hid.HidPage.Consumer\" data-throw-if-not-resolved=\"false\"></xref> page.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Input.Hid.HidGenericDesktopUsage.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Input.Hid.HidGenericDesktopUsage.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "OpenTK.Input.Hid.HidGenericDesktopUsage",
-      "Summary": "<p sourcefile=\"api/OpenTK.Input.Hid.HidGenericDesktopUsage.yml\" sourcestartlinenumber=\"1\">Describes usages for the <xref href=\"OpenTK.Input.Hid.HidPage.GenericDesktop\" data-throw-if-not-resolved=\"false\"></xref> page.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Input.Hid.HidHelper.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Input.Hid.HidHelper.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "OpenTK.Input.Hid.HidHelper",
-      "Summary": "<p sourcefile=\"api/OpenTK.Input.Hid.HidHelper.yml\" sourcestartlinenumber=\"1\">Static class that provides helper functions for consuming HID input.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Input.Hid.HidPage.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Input.Hid.HidPage.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "OpenTK.Input.Hid.HidPage",
-      "Summary": "<p sourcefile=\"api/OpenTK.Input.Hid.HidPage.yml\" sourcestartlinenumber=\"1\">The usage page identifies both the intended usage and the measured values of a human interface device.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Input.Hid.HidSimulationUsage.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Input.Hid.HidSimulationUsage.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "OpenTK.Input.Hid.HidSimulationUsage",
-      "Summary": "<p sourcefile=\"api/OpenTK.Input.Hid.HidSimulationUsage.yml\" sourcestartlinenumber=\"1\">Describes usages for the <xref href=\"OpenTK.Input.Hid.HidPage.Simulation\" data-throw-if-not-resolved=\"false\"></xref> page.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Input.Hid.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenTK.Input.Hid.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "OpenTK.Input.Hid",
-      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -1634,7 +1550,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "OpenTK.Mathematics.Box3",
-      "Summary": "<p sourcefile=\"api/OpenTK.Mathematics.Box3.yml\" sourcestartlinenumber=\"1\">Defines an axis-aligned 3d box (rectangular prism).</p>\n"
+      "Summary": "<p sourcefile=\"api/OpenTK.Mathematics.Box3.yml\" sourcestartlinenumber=\"1\">Defines an axis-aligned 3d box (cube).</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1648,7 +1564,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "OpenTK.Mathematics.Box3d",
-      "Summary": "<p sourcefile=\"api/OpenTK.Mathematics.Box3d.yml\" sourcestartlinenumber=\"1\">Defines an axis-aligned 3d box (rectangular prism).</p>\n"
+      "Summary": "<p sourcefile=\"api/OpenTK.Mathematics.Box3d.yml\" sourcestartlinenumber=\"1\">Defines an axis-aligned 3d box (cube).</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1662,7 +1578,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "OpenTK.Mathematics.Box3i",
-      "Summary": "<p sourcefile=\"api/OpenTK.Mathematics.Box3i.yml\" sourcestartlinenumber=\"1\">Defines an axis-aligned 3d box (rectangular prism).</p>\n"
+      "Summary": "<p sourcefile=\"api/OpenTK.Mathematics.Box3i.yml\" sourcestartlinenumber=\"1\">Defines an axis-aligned 2d box (cube).</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -2660,17 +2576,31 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/OpenTK.Platform.EventQueue.yml",
+      "source_relative_path": "api/OpenTK.Platform.DisplayValuesChangedEventArgs.yml",
       "output": {
         ".html": {
-          "relative_path": "api/OpenTK.Platform.EventQueue.html"
+          "relative_path": "api/OpenTK.Platform.DisplayValuesChangedEventArgs.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "OpenTK.Platform.EventQueue",
-      "Summary": "<p sourcefile=\"api/OpenTK.Platform.EventQueue.yml\" sourcestartlinenumber=\"1\">Event queue for interacting with platform events.</p>\n"
+      "Title": "OpenTK.Platform.DisplayValuesChangedEventArgs",
+      "Summary": "<p sourcefile=\"api/OpenTK.Platform.DisplayValuesChangedEventArgs.yml\" sourcestartlinenumber=\"1\">This event is triggered when any property of a display changes.\nVideo mode, position, resolution, etc.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.DoubleClickInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.DoubleClickInfo.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "OpenTK.Platform.DoubleClickInfo",
+      "Summary": "<p sourcefile=\"api/OpenTK.Platform.DoubleClickInfo.yml\" sourcestartlinenumber=\"1\">A struct describing the time and spatial conditions for double-clicks.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -2758,6 +2688,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.HatState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.HatState.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "OpenTK.Platform.HatState",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/OpenTK.Platform.HitTest.yml",
       "output": {
         ".html": {
@@ -2839,6 +2783,20 @@
       "IsMRef": true,
       "Title": "OpenTK.Platform.IDisplayComponent",
       "Summary": "<p sourcefile=\"api/OpenTK.Platform.IDisplayComponent.yml\" sourcestartlinenumber=\"1\">Interface for drivers which provide the display component.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.IGamepadComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.IGamepadComponent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "OpenTK.Platform.IGamepadComponent",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -2996,6 +2954,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.InputLanguage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.InputLanguage.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "OpenTK.Platform.InputLanguage",
+      "Summary": "<p sourcefile=\"api/OpenTK.Platform.InputLanguage.yml\" sourcestartlinenumber=\"1\">Represents a input language + keyboard layout name combination.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/OpenTK.Platform.InputLanguageChangedEventArgs.yml",
       "output": {
         ".html": {
@@ -3038,6 +3010,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.JoystickCapabilities.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.JoystickCapabilities.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "OpenTK.Platform.JoystickCapabilities",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/OpenTK.Platform.JoystickHandle.yml",
       "output": {
         ".html": {
@@ -3049,6 +3035,20 @@
       "IsMRef": true,
       "Title": "OpenTK.Platform.JoystickHandle",
       "Summary": "<p sourcefile=\"api/OpenTK.Platform.JoystickHandle.yml\" sourcestartlinenumber=\"1\">Handle to a joystick.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.JoystickType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.JoystickType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "OpenTK.Platform.JoystickType",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -3556,6 +3556,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.Native.Windows.GamepadComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.Native.Windows.GamepadComponent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "OpenTK.Platform.Native.Windows.GamepadComponent",
+      "Summary": "<p sourcefile=\"api/OpenTK.Platform.Native.Windows.GamepadComponent.yml\" sourcestartlinenumber=\"1\">Win32 implementation of <xref href=\"OpenTK.Platform.IJoystickComponent\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/OpenTK.Platform.Native.Windows.IconComponent.yml",
       "output": {
         ".html": {
@@ -3580,7 +3594,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "OpenTK.Platform.Native.Windows.JoystickComponent",
-      "Summary": "<p sourcefile=\"api/OpenTK.Platform.Native.Windows.JoystickComponent.yml\" sourcestartlinenumber=\"1\">Win32 implementation of <xref href=\"OpenTK.Platform.IJoystickComponent\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -3734,6 +3748,20 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "OpenTK.Platform.Native.X11.LibXcb",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.Native.X11.LibXkbRegistry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.Native.X11.LibXkbRegistry.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "OpenTK.Platform.Native.X11.LibXkbRegistry",
       "Summary": null
     },
     {
@@ -4519,6 +4547,20 @@
       "IsMRef": true,
       "Title": "OpenTK.Platform.ThemeInfo",
       "Summary": "<p sourcefile=\"api/OpenTK.Platform.ThemeInfo.yml\" sourcestartlinenumber=\"1\">Represents theme info.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenTK.Platform.Toolkit.Event.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenTK.Platform.Toolkit.Event.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "OpenTK.Platform.Toolkit.Event",
+      "Summary": "<p sourcefile=\"api/OpenTK.Platform.Toolkit.Event.yml\" sourcestartlinenumber=\"1\">Event component for interacting with platform events.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -5848,7 +5890,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "OpenTK.Windowing.GraphicsLibraryFramework.GLFWallocatefun",
-      "Summary": "<p sourcefile=\"api/OpenTK.Windowing.GraphicsLibraryFramework.GLFWallocatefun.yml\" sourcestartlinenumber=\"1\">The function pointer type for memory allocation callbacks.</p>\n<p sourcefile=\"api/OpenTK.Windowing.GraphicsLibraryFramework.GLFWallocatefun.yml\" sourcestartlinenumber=\"3\">This is the function pointer type for memory allocation callbacks. A memory\nallocation callback function has the following signature:</p>\n<pre><code class=\"lang-csharp\">void* function_name(size_t size, void* user)</code></pre>\n<p sourcefile=\"api/OpenTK.Windowing.GraphicsLibraryFramework.GLFWallocatefun.yml\" sourcestartlinenumber=\"7\">This function must return either a memory block at least <code sourcefile=\"api/OpenTK.Windowing.GraphicsLibraryFramework.GLFWallocatefun.yml\" sourcestartlinenumber=\"7\">size</code> bytes long,\nor <code sourcefile=\"api/OpenTK.Windowing.GraphicsLibraryFramework.GLFWallocatefun.yml\" sourcestartlinenumber=\"8\">NULL</code> if allocation failed.Note that not all parts of GLFW handle allocation\nfailures gracefully yet.</p>\n<p sourcefile=\"api/OpenTK.Windowing.GraphicsLibraryFramework.GLFWallocatefun.yml\" sourcestartlinenumber=\"11\">This function must support being called during <xref href=\"ref\" data-throw-if-not-resolved=\"False\" data-raw-source=\"@ref\" sourcefile=\"api/OpenTK.Windowing.GraphicsLibraryFramework.GLFWallocatefun.yml\" sourcestartlinenumber=\"11\"></xref> glfwInit but before the library is\nflagged as initialized, as well as during <xref href=\"ref\" data-throw-if-not-resolved=\"False\" data-raw-source=\"@ref\" sourcefile=\"api/OpenTK.Windowing.GraphicsLibraryFramework.GLFWallocatefun.yml\" sourcestartlinenumber=\"12\"></xref> glfwTerminate after the library is no\nlonger flagged as initialized.</p>\n<p sourcefile=\"api/OpenTK.Windowing.GraphicsLibraryFramework.GLFWallocatefun.yml\" sourcestartlinenumber=\"15\">Any memory allocated via this function will be deallocated via the same allocator\nduring library termination or earlier.</p>\n<p sourcefile=\"api/OpenTK.Windowing.GraphicsLibraryFramework.GLFWallocatefun.yml\" sourcestartlinenumber=\"18\">Any memory allocated via this function must be suitably aligned for any object type.\nIf you are using C99 or earlier, this alignment is platform-dependent but will be the\nsame as what <code sourcefile=\"api/OpenTK.Windowing.GraphicsLibraryFramework.GLFWallocatefun.yml\" sourcestartlinenumber=\"20\">malloc</code> provides.If you are using C11 or later, this is the value of\n<code sourcefile=\"api/OpenTK.Windowing.GraphicsLibraryFramework.GLFWallocatefun.yml\" sourcestartlinenumber=\"21\">alignof(max_align_t)</code>.</p>\n<p sourcefile=\"api/OpenTK.Windowing.GraphicsLibraryFramework.GLFWallocatefun.yml\" sourcestartlinenumber=\"23\">The size will always be greater than zero.  Allocations of size zero are filtered out\nbefore reaching the custom allocator.</p>\n<p sourcefile=\"api/OpenTK.Windowing.GraphicsLibraryFramework.GLFWallocatefun.yml\" sourcestartlinenumber=\"26\">If this function returns <code sourcefile=\"api/OpenTK.Windowing.GraphicsLibraryFramework.GLFWallocatefun.yml\" sourcestartlinenumber=\"26\">NULL</code>, GLFW will emit <xref href=\"OpenTK.Windowing.GraphicsLibraryFramework.ErrorCode.OutOfMemory\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n<p sourcefile=\"api/OpenTK.Windowing.GraphicsLibraryFramework.GLFWallocatefun.yml\" sourcestartlinenumber=\"28\">This function must not call any GLFW function.</p>\n<p sourcefile=\"api/OpenTK.Windowing.GraphicsLibraryFramework.GLFWallocatefun.yml\" sourcestartlinenumber=\"30\">Added in version 3.4.</p>\n"
+      "Summary": "<p sourcefile=\"api/OpenTK.Windowing.GraphicsLibraryFramework.GLFWallocatefun.yml\" sourcestartlinenumber=\"1\">The function pointer type for memory allocation callbacks.</p>\n<p sourcefile=\"api/OpenTK.Windowing.GraphicsLibraryFramework.GLFWallocatefun.yml\" sourcestartlinenumber=\"3\">This is the function pointer type for memory allocation callbacks. A memory\nallocation callback function has the following signature:</p>\n<pre><code class=\"lang-csharp\">void* function_name(size_t size, void* user)</code></pre>\n<p sourcefile=\"api/OpenTK.Windowing.GraphicsLibraryFramework.GLFWallocatefun.yml\" sourcestartlinenumber=\"8\">This function must return either a memory block at least <code sourcefile=\"api/OpenTK.Windowing.GraphicsLibraryFramework.GLFWallocatefun.yml\" sourcestartlinenumber=\"8\">size</code> bytes long,\nor <code sourcefile=\"api/OpenTK.Windowing.GraphicsLibraryFramework.GLFWallocatefun.yml\" sourcestartlinenumber=\"9\">NULL</code> if allocation failed.Note that not all parts of GLFW handle allocation\nfailures gracefully yet.</p>\n<p sourcefile=\"api/OpenTK.Windowing.GraphicsLibraryFramework.GLFWallocatefun.yml\" sourcestartlinenumber=\"12\">This function must support being called during <xref href=\"ref\" data-throw-if-not-resolved=\"False\" data-raw-source=\"@ref\" sourcefile=\"api/OpenTK.Windowing.GraphicsLibraryFramework.GLFWallocatefun.yml\" sourcestartlinenumber=\"12\"></xref> glfwInit but before the library is\nflagged as initialized, as well as during <xref href=\"ref\" data-throw-if-not-resolved=\"False\" data-raw-source=\"@ref\" sourcefile=\"api/OpenTK.Windowing.GraphicsLibraryFramework.GLFWallocatefun.yml\" sourcestartlinenumber=\"13\"></xref> glfwTerminate after the library is no\nlonger flagged as initialized.</p>\n<p sourcefile=\"api/OpenTK.Windowing.GraphicsLibraryFramework.GLFWallocatefun.yml\" sourcestartlinenumber=\"16\">Any memory allocated via this function will be deallocated via the same allocator\nduring library termination or earlier.</p>\n<p sourcefile=\"api/OpenTK.Windowing.GraphicsLibraryFramework.GLFWallocatefun.yml\" sourcestartlinenumber=\"19\">Any memory allocated via this function must be suitably aligned for any object type.\nIf you are using C99 or earlier, this alignment is platform-dependent but will be the\nsame as what <code sourcefile=\"api/OpenTK.Windowing.GraphicsLibraryFramework.GLFWallocatefun.yml\" sourcestartlinenumber=\"21\">malloc</code> provides.If you are using C11 or later, this is the value of\n<code sourcefile=\"api/OpenTK.Windowing.GraphicsLibraryFramework.GLFWallocatefun.yml\" sourcestartlinenumber=\"22\">alignof(max_align_t)</code>.</p>\n<p sourcefile=\"api/OpenTK.Windowing.GraphicsLibraryFramework.GLFWallocatefun.yml\" sourcestartlinenumber=\"24\">The size will always be greater than zero.  Allocations of size zero are filtered out\nbefore reaching the custom allocator.</p>\n<p sourcefile=\"api/OpenTK.Windowing.GraphicsLibraryFramework.GLFWallocatefun.yml\" sourcestartlinenumber=\"27\">If this function returns <code sourcefile=\"api/OpenTK.Windowing.GraphicsLibraryFramework.GLFWallocatefun.yml\" sourcestartlinenumber=\"27\">NULL</code>, GLFW will emit <xref href=\"OpenTK.Windowing.GraphicsLibraryFramework.ErrorCode.OutOfMemory\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n<p sourcefile=\"api/OpenTK.Windowing.GraphicsLibraryFramework.GLFWallocatefun.yml\" sourcestartlinenumber=\"29\">This function must not call any GLFW function.</p>\n<p sourcefile=\"api/OpenTK.Windowing.GraphicsLibraryFramework.GLFWallocatefun.yml\" sourcestartlinenumber=\"31\">Added in version 3.4.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -5890,7 +5932,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "OpenTK.Windowing.GraphicsLibraryFramework.GLFWreallocatefun",
-      "Summary": "<p sourcefile=\"api/OpenTK.Windowing.GraphicsLibraryFramework.GLFWreallocatefun.yml\" sourcestartlinenumber=\"1\">The function pointer type for memory reallocation callbacks.</p>\n<p sourcefile=\"api/OpenTK.Windowing.GraphicsLibraryFramework.GLFWreallocatefun.yml\" sourcestartlinenumber=\"3\">This is the function pointer type for memory reallocation callbacks.\nA memory reallocation callback function has the following signature:</p>\n<pre><code class=\"lang-csharp\">void* function_name(void* block, size_t size, void* user)</code></pre>\n<p sourcefile=\"api/OpenTK.Windowing.GraphicsLibraryFramework.GLFWreallocatefun.yml\" sourcestartlinenumber=\"7\">This function must return a memory block at least <code>size</code> bytes long, or\n<code>null</code> if allocation failed. Note that not all parts of GLFW handle allocation\nfailures gracefully yet.</p>\n<p sourcefile=\"api/OpenTK.Windowing.GraphicsLibraryFramework.GLFWreallocatefun.yml\" sourcestartlinenumber=\"11\">This function must support being called during <xref href=\"OpenTK.Windowing.GraphicsLibraryFramework.GLFWNative.glfwInit\" data-throw-if-not-resolved=\"false\"></xref> but before the library is\nflagged as initialized, as well as during <xref href=\"OpenTK.Windowing.GraphicsLibraryFramework.GLFWNative.glfwTerminate\" data-throw-if-not-resolved=\"false\"></xref> after the library is no\nlonger flagged as initialized.</p>\n<p sourcefile=\"api/OpenTK.Windowing.GraphicsLibraryFramework.GLFWreallocatefun.yml\" sourcestartlinenumber=\"15\">Any memory allocated via this function will be deallocated via the same allocator\nduring library termination or earlier.</p>\n<p sourcefile=\"api/OpenTK.Windowing.GraphicsLibraryFramework.GLFWreallocatefun.yml\" sourcestartlinenumber=\"18\">Any memory allocated via this function must be suitably aligned for any object type.\nIf you are using C99 or earlier, this alignment is platform-dependent but will be the\nsame as what <code>realloc</code> provides.If you are using C11 or later, this is the value of\n<code>alignof(max_align_t)</code>.</p>\n<p sourcefile=\"api/OpenTK.Windowing.GraphicsLibraryFramework.GLFWreallocatefun.yml\" sourcestartlinenumber=\"23\">The block address will never be <code>null</code> and the size will always be greater than zero.\nReallocations of a block to size zero are converted into deallocations before reaching\nthe custom allocator.Reallocations of <code>null</code> to a non-zero size are converted into\nregular allocations before reaching the custom allocator.</p>\n<p sourcefile=\"api/OpenTK.Windowing.GraphicsLibraryFramework.GLFWreallocatefun.yml\" sourcestartlinenumber=\"28\">If this function returns <code>null</code>, GLFW will emit <xref href=\"OpenTK.Windowing.GraphicsLibraryFramework.ErrorCode.OutOfMemory\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n<p sourcefile=\"api/OpenTK.Windowing.GraphicsLibraryFramework.GLFWreallocatefun.yml\" sourcestartlinenumber=\"30\">This function must not call any GLFW function.</p>\n"
+      "Summary": "<p sourcefile=\"api/OpenTK.Windowing.GraphicsLibraryFramework.GLFWreallocatefun.yml\" sourcestartlinenumber=\"1\">The function pointer type for memory reallocation callbacks.</p>\n<p sourcefile=\"api/OpenTK.Windowing.GraphicsLibraryFramework.GLFWreallocatefun.yml\" sourcestartlinenumber=\"3\">This is the function pointer type for memory reallocation callbacks.\nA memory reallocation callback function has the following signature:</p>\n<pre><code class=\"lang-csharp\">void* function_name(void* block, size_t size, void* user)</code></pre>\n<p sourcefile=\"api/OpenTK.Windowing.GraphicsLibraryFramework.GLFWreallocatefun.yml\" sourcestartlinenumber=\"8\">This function must return a memory block at least <code>size</code> bytes long, or\n<code>null</code> if allocation failed. Note that not all parts of GLFW handle allocation\nfailures gracefully yet.</p>\n<p sourcefile=\"api/OpenTK.Windowing.GraphicsLibraryFramework.GLFWreallocatefun.yml\" sourcestartlinenumber=\"12\">This function must support being called during <xref href=\"OpenTK.Windowing.GraphicsLibraryFramework.GLFWNative.glfwInit\" data-throw-if-not-resolved=\"false\"></xref> but before the library is\nflagged as initialized, as well as during <xref href=\"OpenTK.Windowing.GraphicsLibraryFramework.GLFWNative.glfwTerminate\" data-throw-if-not-resolved=\"false\"></xref> after the library is no\nlonger flagged as initialized.</p>\n<p sourcefile=\"api/OpenTK.Windowing.GraphicsLibraryFramework.GLFWreallocatefun.yml\" sourcestartlinenumber=\"16\">Any memory allocated via this function will be deallocated via the same allocator\nduring library termination or earlier.</p>\n<p sourcefile=\"api/OpenTK.Windowing.GraphicsLibraryFramework.GLFWreallocatefun.yml\" sourcestartlinenumber=\"19\">Any memory allocated via this function must be suitably aligned for any object type.\nIf you are using C99 or earlier, this alignment is platform-dependent but will be the\nsame as what <code>realloc</code> provides.If you are using C11 or later, this is the value of\n<code>alignof(max_align_t)</code>.</p>\n<p sourcefile=\"api/OpenTK.Windowing.GraphicsLibraryFramework.GLFWreallocatefun.yml\" sourcestartlinenumber=\"24\">The block address will never be <code>null</code> and the size will always be greater than zero.\nReallocations of a block to size zero are converted into deallocations before reaching\nthe custom allocator.Reallocations of <code>null</code> to a non-zero size are converted into\nregular allocations before reaching the custom allocator.</p>\n<p sourcefile=\"api/OpenTK.Windowing.GraphicsLibraryFramework.GLFWreallocatefun.yml\" sourcestartlinenumber=\"29\">If this function returns <code>null</code>, GLFW will emit <xref href=\"OpenTK.Windowing.GraphicsLibraryFramework.ErrorCode.OutOfMemory\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n<p sourcefile=\"api/OpenTK.Windowing.GraphicsLibraryFramework.GLFWreallocatefun.yml\" sourcestartlinenumber=\"31\">This function must not call any GLFW function.</p>\n"
     },
     {
       "type": "ManagedReference",

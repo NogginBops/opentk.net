@@ -302,10 +302,52 @@
       </tr>
     </tbody>
   </table>
+  <a id="OpenTK_Platform_Native_X11_X11KeyboardComponent_GetActiveInputLanguage_" data-uid="OpenTK.Platform.Native.X11.X11KeyboardComponent.GetActiveInputLanguage*"></a>
+  <h4 id="OpenTK_Platform_Native_X11_X11KeyboardComponent_GetActiveInputLanguage_OpenTK_Platform_WindowHandle_" data-uid="OpenTK.Platform.Native.X11.X11KeyboardComponent.GetActiveInputLanguage(OpenTK.Platform.WindowHandle)">GetActiveInputLanguage(WindowHandle?)</h4>
+  <div class="markdown level1 summary"><p>Get the active input language + keyboard layout.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public InputLanguage GetActiveInputLanguage(WindowHandle? handle)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Platform.WindowHandle.html">WindowHandle</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>Handle to a window to query the layout for. Ignored on systems where keyboard layout is global.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Platform.InputLanguage.html">InputLanguage</a></td>
+        <td><p>The currently active input language and keyboard layout.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="OpenTK_Platform_Native_X11_X11KeyboardComponent_GetActiveKeyboardLayout_" data-uid="OpenTK.Platform.Native.X11.X11KeyboardComponent.GetActiveKeyboardLayout*"></a>
   <h4 id="OpenTK_Platform_Native_X11_X11KeyboardComponent_GetActiveKeyboardLayout_OpenTK_Platform_WindowHandle_" data-uid="OpenTK.Platform.Native.X11.X11KeyboardComponent.GetActiveKeyboardLayout(OpenTK.Platform.WindowHandle)">GetActiveKeyboardLayout(WindowHandle?)</h4>
-  <div class="markdown level1 summary"><p>Get the active keyboard layout.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -324,8 +366,7 @@
       <tr>
         <td><a class="xref" href="OpenTK.Platform.WindowHandle.html">WindowHandle</a></td>
         <td><span class="parametername">handle</span></td>
-        <td><p>(optional) Handle to a window to query the layout for. Ignored on systems where keyboard layout is global.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -340,31 +381,13 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
-        <td><p>A string which describes the active keyboard layout.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Platform.PalNotImplementedException.html">PalNotImplementedException</a></td>
-        <td><p>Driver cannot query active keyboard layout.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
   <a id="OpenTK_Platform_Native_X11_X11KeyboardComponent_GetAvailableKeyboardLayouts_" data-uid="OpenTK.Platform.Native.X11.X11KeyboardComponent.GetAvailableKeyboardLayouts*"></a>
   <h4 id="OpenTK_Platform_Native_X11_X11KeyboardComponent_GetAvailableKeyboardLayouts" data-uid="OpenTK.Platform.Native.X11.X11KeyboardComponent.GetAvailableKeyboardLayouts">GetAvailableKeyboardLayouts()</h4>
-  <div class="markdown level1 summary"><p>See list of possible keyboard layouts for this system.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -381,7 +404,31 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</td>
-        <td><p>Array containing possible keyboard layouts.</p>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Platform_Native_X11_X11KeyboardComponent_GetInstalledInputLanguages_" data-uid="OpenTK.Platform.Native.X11.X11KeyboardComponent.GetInstalledInputLanguages*"></a>
+  <h4 id="OpenTK_Platform_Native_X11_X11KeyboardComponent_GetInstalledInputLanguages" data-uid="OpenTK.Platform.Native.X11.X11KeyboardComponent.GetInstalledInputLanguages">GetInstalledInputLanguages()</h4>
+  <div class="markdown level1 summary"><p>See list of installed input language + keyboard layout combinations for this system.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public InputLanguage[] GetInstalledInputLanguages()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Platform.InputLanguage.html">InputLanguage</a>[]</td>
+        <td><p>Array containing installed input language + keyboard layout combinations.</p>
 </td>
       </tr>
     </tbody>

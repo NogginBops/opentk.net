@@ -5,11 +5,11 @@
   <head>
     <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-      <title>Struct DialogFileFilter | OpenTK </title>
+      <title>Struct InputLanguage | OpenTK </title>
       <meta name="viewport" content="width=device-width">
-      <meta name="title" content="Struct DialogFileFilter | OpenTK ">
+      <meta name="title" content="Struct InputLanguage | OpenTK ">
     
-    <meta name="description" content="Describes a file filter used to filter visible files/folders in a file dialog.">
+    <meta name="description" content="Represents a input language + keyboard layout name combination.">
       <link rel="shortcut icon" href="../favicon.ico">
       <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
       <link rel="stylesheet" href="../styles/docfx.css">
@@ -24,7 +24,7 @@
     <meta property="og:image:width" content="142">
     <meta property="og:image:height" content="50">
     <meta property="og:site_name" content="OpenTK">
-    <meta property="og:title" content="Struct DialogFileFilter | OpenTK  - OpenTK">
+    <meta property="og:title" content="Struct InputLanguage | OpenTK  - OpenTK">
     <meta name="theme-color" content="#ffffff">
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
@@ -72,17 +72,17 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="OpenTK.Platform.DialogFileFilter">
+            <article class="content wrap" id="_content" data-uid="OpenTK.Platform.InputLanguage">
 
 
 
-  <h1 id="OpenTK_Platform_DialogFileFilter" data-uid="OpenTK.Platform.DialogFileFilter" class="text-break">Struct DialogFileFilter</h1>
-  <div class="markdown level0 summary"><p>Describes a file filter used to filter visible files/folders in a file dialog.</p>
+  <h1 id="OpenTK_Platform_InputLanguage" data-uid="OpenTK.Platform.InputLanguage" class="text-break">Struct InputLanguage</h1>
+  <div class="markdown level0 summary"><p>Represents a input language + keyboard layout name combination.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="implements">
     <h5>Implements</h5>
-    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="OpenTK.Platform.DialogFileFilter.html">DialogFileFilter</a>&gt;</div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="OpenTK.Platform.InputLanguage.html">InputLanguage</a>&gt;</div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -98,20 +98,19 @@
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="OpenTK.html">OpenTK</a>.<a class="xref" href="OpenTK.Platform.html">Platform</a></h6>
   <h6><strong>Assembly</strong>: OpenTK.Platform.dll</h6>
-  <h5 id="OpenTK_Platform_DialogFileFilter_syntax">Syntax</h5>
+  <h5 id="OpenTK_Platform_InputLanguage_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public struct DialogFileFilter : IEquatable&lt;DialogFileFilter&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly struct InputLanguage : IEquatable&lt;InputLanguage&gt;</code></pre>
   </div>
   <h3 id="constructors">Constructors
 </h3>
-  <a id="OpenTK_Platform_DialogFileFilter__ctor_" data-uid="OpenTK.Platform.DialogFileFilter.#ctor*"></a>
-  <h4 id="OpenTK_Platform_DialogFileFilter__ctor_System_String_System_String_" data-uid="OpenTK.Platform.DialogFileFilter.#ctor(System.String,System.String)">DialogFileFilter(string, string)</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="OpenTK.Platform.DialogFileFilter.html">DialogFileFilter</a> struct.</p>
-</div>
+  <a id="OpenTK_Platform_InputLanguage__ctor_" data-uid="OpenTK.Platform.InputLanguage.#ctor*"></a>
+  <h4 id="OpenTK_Platform_InputLanguage__ctor_System_Globalization_CultureInfo_System_String_" data-uid="OpenTK.Platform.InputLanguage.#ctor(System.Globalization.CultureInfo,System.String)">InputLanguage(CultureInfo, string)</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DialogFileFilter(string name, string filter)</code></pre>
+    <pre><code class="lang-csharp hljs">public InputLanguage(CultureInfo culture, string layoutName)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -124,41 +123,29 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
-        <td><span class="parametername">name</span></td>
-        <td><p>The display name of the filter.</p>
-</td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.globalization.cultureinfo">CultureInfo</a></td>
+        <td><span class="parametername">culture</span></td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
-        <td><span class="parametername">filter</span></td>
-        <td><p>The filter string. <a class="xref" href="OpenTK.Platform.DialogFileFilter.html#OpenTK_Platform_DialogFileFilter_Filter">Filter</a> for format details.</p>
-</td>
+        <td><span class="parametername">layoutName</span></td>
+        <td></td>
       </tr>
     </tbody>
   </table>
-  <h5 id="OpenTK_Platform_DialogFileFilter__ctor_System_String_System_String__examples">Examples</h5>
-  <pre><code class="lang-csharp">new DialogFileFilter(){ Name="Images", Filter="png;jpg;jpeg" };</code></pre>
-<p>This creates a file filter that will match any files ending in png, jpg, or jpeg.</p>
-
-  <h5 id="OpenTK_Platform_DialogFileFilter__ctor_System_String_System_String__seealso">See Also</h5>
-  <div class="seealso">
-      <div><a class="xref" href="OpenTK.Platform.DialogFileFilter.html#OpenTK_Platform_DialogFileFilter_Name">Name</a></div>
-      <div><a class="xref" href="OpenTK.Platform.DialogFileFilter.html#OpenTK_Platform_DialogFileFilter_Filter">Filter</a></div>
-      <div><a class="xref" href="OpenTK.Platform.IDialogComponent.html#OpenTK_Platform_IDialogComponent_ShowOpenDialog_OpenTK_Platform_WindowHandle_System_String_System_String_OpenTK_Platform_DialogFileFilter___OpenTK_Platform_OpenDialogOptions_">ShowOpenDialog</a>(<a class="xref" href="OpenTK.Platform.WindowHandle.html">WindowHandle</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="OpenTK.Platform.DialogFileFilter.html">DialogFileFilter</a>[], <a class="xref" href="OpenTK.Platform.OpenDialogOptions.html">OpenDialogOptions</a>)</div>
-      <div><a class="xref" href="OpenTK.Platform.IDialogComponent.html#OpenTK_Platform_IDialogComponent_ShowSaveDialog_OpenTK_Platform_WindowHandle_System_String_System_String_System_String_OpenTK_Platform_DialogFileFilter___OpenTK_Platform_SaveDialogOptions_">ShowSaveDialog</a>(<a class="xref" href="OpenTK.Platform.WindowHandle.html">WindowHandle</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="OpenTK.Platform.DialogFileFilter.html">DialogFileFilter</a>[], <a class="xref" href="OpenTK.Platform.SaveDialogOptions.html">SaveDialogOptions</a>)</div>
-  </div>
-  <h3 id="fields">Fields
+  <h3 id="properties">Properties
 </h3>
-  <h4 id="OpenTK_Platform_DialogFileFilter_Filter" data-uid="OpenTK.Platform.DialogFileFilter.Filter">Filter</h4>
-  <div class="markdown level1 summary"><p>The file extension filter. The format of this string is &quot;ext1;ext2;ext3&quot;. Use <code>*</code> to match any files.</p>
+  <a id="OpenTK_Platform_InputLanguage_Culture_" data-uid="OpenTK.Platform.InputLanguage.Culture*"></a>
+  <h4 id="OpenTK_Platform_InputLanguage_Culture" data-uid="OpenTK.Platform.InputLanguage.Culture">Culture</h4>
+  <div class="markdown level1 summary"><p>The current culture/language used for input. The input language.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string Filter</code></pre>
+    <pre><code class="lang-csharp hljs">public CultureInfo Culture { get; }</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
+  <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
     <thead>
       <tr>
@@ -168,24 +155,21 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.globalization.cultureinfo">CultureInfo</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <h5 id="OpenTK_Platform_DialogFileFilter_Filter_examples">Examples</h5>
-  <pre><code class="lang-csharp">new DialogFileFilter(){ Name="Images", Filter="png;jpg;jpeg" };</code></pre>
-<p>This creates a file filter that will match any files ending in png, jpg, or jpeg.</p>
-
-  <h4 id="OpenTK_Platform_DialogFileFilter_Name" data-uid="OpenTK.Platform.DialogFileFilter.Name">Name</h4>
-  <div class="markdown level1 summary"><p>The display name of the filter. Prohibited characters are <code>|</code> and <code>\0</code>.</p>
+  <a id="OpenTK_Platform_InputLanguage_LayoutName_" data-uid="OpenTK.Platform.InputLanguage.LayoutName*"></a>
+  <h4 id="OpenTK_Platform_InputLanguage_LayoutName" data-uid="OpenTK.Platform.InputLanguage.LayoutName">LayoutName</h4>
+  <div class="markdown level1 summary"><p>A display string representing the keyboard layout name.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string Name</code></pre>
+    <pre><code class="lang-csharp hljs">public string LayoutName { get; }</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
+  <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
     <thead>
       <tr>
@@ -202,14 +186,14 @@
   </table>
   <h3 id="methods">Methods
 </h3>
-  <a id="OpenTK_Platform_DialogFileFilter_Equals_" data-uid="OpenTK.Platform.DialogFileFilter.Equals*"></a>
-  <h4 id="OpenTK_Platform_DialogFileFilter_Equals_OpenTK_Platform_DialogFileFilter_" data-uid="OpenTK.Platform.DialogFileFilter.Equals(OpenTK.Platform.DialogFileFilter)">Equals(DialogFileFilter)</h4>
+  <a id="OpenTK_Platform_InputLanguage_Equals_" data-uid="OpenTK.Platform.InputLanguage.Equals*"></a>
+  <h4 id="OpenTK_Platform_InputLanguage_Equals_OpenTK_Platform_InputLanguage_" data-uid="OpenTK.Platform.InputLanguage.Equals(OpenTK.Platform.InputLanguage)">Equals(InputLanguage)</h4>
   <div class="markdown level1 summary"><p>Indicates whether the current object is equal to another object of the same type.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public readonly bool Equals(DialogFileFilter other)</code></pre>
+    <pre><code class="lang-csharp hljs">public bool Equals(InputLanguage other)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -222,7 +206,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Platform.DialogFileFilter.html">DialogFileFilter</a></td>
+        <td><a class="xref" href="OpenTK.Platform.InputLanguage.html">InputLanguage</a></td>
         <td><span class="parametername">other</span></td>
         <td><p>An object to compare with this object.</p>
 </td>
@@ -245,14 +229,14 @@
       </tr>
     </tbody>
   </table>
-  <a id="OpenTK_Platform_DialogFileFilter_Equals_" data-uid="OpenTK.Platform.DialogFileFilter.Equals*"></a>
-  <h4 id="OpenTK_Platform_DialogFileFilter_Equals_System_Object_" data-uid="OpenTK.Platform.DialogFileFilter.Equals(System.Object)">Equals(object?)</h4>
+  <a id="OpenTK_Platform_InputLanguage_Equals_" data-uid="OpenTK.Platform.InputLanguage.Equals*"></a>
+  <h4 id="OpenTK_Platform_InputLanguage_Equals_System_Object_" data-uid="OpenTK.Platform.InputLanguage.Equals(System.Object)">Equals(object?)</h4>
   <div class="markdown level1 summary"><p>Indicates whether this instance and a specified object are equal.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override readonly bool Equals(object? obj)</code></pre>
+    <pre><code class="lang-csharp hljs">public override bool Equals(object? obj)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -290,14 +274,14 @@
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetype.equals">ValueType.Equals(object)</a></div>
-  <a id="OpenTK_Platform_DialogFileFilter_GetHashCode_" data-uid="OpenTK.Platform.DialogFileFilter.GetHashCode*"></a>
-  <h4 id="OpenTK_Platform_DialogFileFilter_GetHashCode" data-uid="OpenTK.Platform.DialogFileFilter.GetHashCode">GetHashCode()</h4>
+  <a id="OpenTK_Platform_InputLanguage_GetHashCode_" data-uid="OpenTK.Platform.InputLanguage.GetHashCode*"></a>
+  <h4 id="OpenTK_Platform_InputLanguage_GetHashCode" data-uid="OpenTK.Platform.InputLanguage.GetHashCode">GetHashCode()</h4>
   <div class="markdown level1 summary"><p>Returns the hash code for this instance.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override readonly int GetHashCode()</code></pre>
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-condensed">
@@ -317,14 +301,14 @@
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode">ValueType.GetHashCode()</a></div>
-  <a id="OpenTK_Platform_DialogFileFilter_ToString_" data-uid="OpenTK.Platform.DialogFileFilter.ToString*"></a>
-  <h4 id="OpenTK_Platform_DialogFileFilter_ToString" data-uid="OpenTK.Platform.DialogFileFilter.ToString">ToString()</h4>
-  <div class="markdown level1 summary"><p>Returns a string in the form &quot;{Name} - {Filter}&quot;.</p>
+  <a id="OpenTK_Platform_InputLanguage_ToString_" data-uid="OpenTK.Platform.InputLanguage.ToString*"></a>
+  <h4 id="OpenTK_Platform_InputLanguage_ToString" data-uid="OpenTK.Platform.InputLanguage.ToString">ToString()</h4>
+  <div class="markdown level1 summary"><p>Returns the fully qualified type name of this instance.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override readonly string ToString()</code></pre>
+    <pre><code class="lang-csharp hljs">public override string? ToString()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-condensed">
@@ -337,7 +321,7 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
-        <td><p>The string representation.</p>
+        <td><p>The fully qualified type name.</p>
 </td>
       </tr>
     </tbody>
@@ -346,14 +330,13 @@
   <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetype.tostring">ValueType.ToString()</a></div>
   <h3 id="operators">Operators
 </h3>
-  <a id="OpenTK_Platform_DialogFileFilter_op_Equality_" data-uid="OpenTK.Platform.DialogFileFilter.op_Equality*"></a>
-  <h4 id="OpenTK_Platform_DialogFileFilter_op_Equality_OpenTK_Platform_DialogFileFilter_OpenTK_Platform_DialogFileFilter_" data-uid="OpenTK.Platform.DialogFileFilter.op_Equality(OpenTK.Platform.DialogFileFilter,OpenTK.Platform.DialogFileFilter)">operator ==(DialogFileFilter, DialogFileFilter)</h4>
-  <div class="markdown level1 summary"><p>Determines whether two specified instances of DialogFileFilter are equal.</p>
-</div>
+  <a id="OpenTK_Platform_InputLanguage_op_Equality_" data-uid="OpenTK.Platform.InputLanguage.op_Equality*"></a>
+  <h4 id="OpenTK_Platform_InputLanguage_op_Equality_OpenTK_Platform_InputLanguage_OpenTK_Platform_InputLanguage_" data-uid="OpenTK.Platform.InputLanguage.op_Equality(OpenTK.Platform.InputLanguage,OpenTK.Platform.InputLanguage)">operator ==(InputLanguage, InputLanguage)</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool operator ==(DialogFileFilter left, DialogFileFilter right)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool operator ==(InputLanguage left, InputLanguage right)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -366,16 +349,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Platform.DialogFileFilter.html">DialogFileFilter</a></td>
+        <td><a class="xref" href="OpenTK.Platform.InputLanguage.html">InputLanguage</a></td>
         <td><span class="parametername">left</span></td>
-        <td><p>The first dialog file filter to compare.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="OpenTK.Platform.DialogFileFilter.html">DialogFileFilter</a></td>
+        <td><a class="xref" href="OpenTK.Platform.InputLanguage.html">InputLanguage</a></td>
         <td><span class="parametername">right</span></td>
-        <td><p>The second dialog file filter to compare.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -390,19 +371,17 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
-        <td><p><code>true</code> if <code class="paramref">left</code> equals <code class="paramref">right</code>; otherwise, <code>false</code>.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
-  <a id="OpenTK_Platform_DialogFileFilter_op_Inequality_" data-uid="OpenTK.Platform.DialogFileFilter.op_Inequality*"></a>
-  <h4 id="OpenTK_Platform_DialogFileFilter_op_Inequality_OpenTK_Platform_DialogFileFilter_OpenTK_Platform_DialogFileFilter_" data-uid="OpenTK.Platform.DialogFileFilter.op_Inequality(OpenTK.Platform.DialogFileFilter,OpenTK.Platform.DialogFileFilter)">operator !=(DialogFileFilter, DialogFileFilter)</h4>
-  <div class="markdown level1 summary"><p>Determines whether two specified instances of DialogFileFilter are not equal.</p>
-</div>
+  <a id="OpenTK_Platform_InputLanguage_op_Inequality_" data-uid="OpenTK.Platform.InputLanguage.op_Inequality*"></a>
+  <h4 id="OpenTK_Platform_InputLanguage_op_Inequality_OpenTK_Platform_InputLanguage_OpenTK_Platform_InputLanguage_" data-uid="OpenTK.Platform.InputLanguage.op_Inequality(OpenTK.Platform.InputLanguage,OpenTK.Platform.InputLanguage)">operator !=(InputLanguage, InputLanguage)</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool operator !=(DialogFileFilter left, DialogFileFilter right)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool operator !=(InputLanguage left, InputLanguage right)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -415,16 +394,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Platform.DialogFileFilter.html">DialogFileFilter</a></td>
+        <td><a class="xref" href="OpenTK.Platform.InputLanguage.html">InputLanguage</a></td>
         <td><span class="parametername">left</span></td>
-        <td><p>The first dialog file filter to compare.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="OpenTK.Platform.DialogFileFilter.html">DialogFileFilter</a></td>
+        <td><a class="xref" href="OpenTK.Platform.InputLanguage.html">InputLanguage</a></td>
         <td><span class="parametername">right</span></td>
-        <td><p>The second dialog file filter to compare.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -439,8 +416,7 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
-        <td><p><code>true</code> if <code class="paramref">left</code> does not equal <code class="paramref">right</code>; otherwise, <code>false</code>.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>

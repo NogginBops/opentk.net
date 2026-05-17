@@ -5,11 +5,11 @@
   <head>
     <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-      <title>Interface IJoystickComponent | OpenTK </title>
+      <title>Interface IGamepadComponent | OpenTK </title>
       <meta name="viewport" content="width=device-width">
-      <meta name="title" content="Interface IJoystickComponent | OpenTK ">
+      <meta name="title" content="Interface IGamepadComponent | OpenTK ">
     
-    <meta name="description" content="Interface for interacting with joysticks.">
+    
       <link rel="shortcut icon" href="../favicon.ico">
       <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
       <link rel="stylesheet" href="../styles/docfx.css">
@@ -24,7 +24,7 @@
     <meta property="og:image:width" content="142">
     <meta property="og:image:height" content="50">
     <meta property="og:site_name" content="OpenTK">
-    <meta property="og:title" content="Interface IJoystickComponent | OpenTK  - OpenTK">
+    <meta property="og:title" content="Interface IGamepadComponent | OpenTK  - OpenTK">
     <meta name="theme-color" content="#ffffff">
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
@@ -72,13 +72,12 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="OpenTK.Platform.IJoystickComponent">
+            <article class="content wrap" id="_content" data-uid="OpenTK.Platform.IGamepadComponent">
 
 
 
-  <h1 id="OpenTK_Platform_IJoystickComponent" data-uid="OpenTK.Platform.IJoystickComponent" class="text-break">Interface IJoystickComponent</h1>
-  <div class="markdown level0 summary"><p>Interface for interacting with joysticks.</p>
-</div>
+  <h1 id="OpenTK_Platform_IGamepadComponent" data-uid="OpenTK.Platform.IGamepadComponent" class="text-break">Interface IGamepadComponent</h1>
+  <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -100,68 +99,22 @@
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="OpenTK.html">OpenTK</a>.<a class="xref" href="OpenTK.Platform.html">Platform</a></h6>
   <h6><strong>Assembly</strong>: OpenTK.Platform.dll</h6>
-  <h5 id="OpenTK_Platform_IJoystickComponent_syntax">Syntax</h5>
+  <h5 id="OpenTK_Platform_IGamepadComponent_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public interface IJoystickComponent : IPalComponent</code></pre>
+    <pre><code class="lang-csharp hljs">public interface IGamepadComponent : IPalComponent</code></pre>
   </div>
-  <h3 id="methods">Methods
+  <h3 id="properties">Properties
 </h3>
-  <a id="OpenTK_Platform_IJoystickComponent_Close_" data-uid="OpenTK.Platform.IJoystickComponent.Close*"></a>
-  <h4 id="OpenTK_Platform_IJoystickComponent_Close_OpenTK_Platform_JoystickHandle_" data-uid="OpenTK.Platform.IJoystickComponent.Close(OpenTK.Platform.JoystickHandle)">Close(JoystickHandle)</h4>
-  <div class="markdown level1 summary"></div>
+  <a id="OpenTK_Platform_IGamepadComponent_LeftDeadzone_" data-uid="OpenTK.Platform.IGamepadComponent.LeftDeadzone*"></a>
+  <h4 id="OpenTK_Platform_IGamepadComponent_LeftDeadzone" data-uid="OpenTK.Platform.IGamepadComponent.LeftDeadzone">LeftDeadzone</h4>
+  <div class="markdown level1 summary"><p>The recommended deadzone value for the left analog stick.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void Close(JoystickHandle joystick)</code></pre>
+    <pre><code class="lang-csharp hljs">float LeftDeadzone { get; }</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Platform.JoystickHandle.html">JoystickHandle</a></td>
-        <td><span class="parametername">joystick</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="OpenTK_Platform_IJoystickComponent_GetAxis_" data-uid="OpenTK.Platform.IJoystickComponent.GetAxis*"></a>
-  <h4 id="OpenTK_Platform_IJoystickComponent_GetAxis_OpenTK_Platform_JoystickHandle_System_Int32_" data-uid="OpenTK.Platform.IJoystickComponent.GetAxis(OpenTK.Platform.JoystickHandle,System.Int32)">GetAxis(JoystickHandle, int)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">float GetAxis(JoystickHandle joystick, int axis)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Platform.JoystickHandle.html">JoystickHandle</a></td>
-        <td><span class="parametername">joystick</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
-        <td><span class="parametername">axis</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
+  <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
     <thead>
       <tr>
@@ -176,13 +129,64 @@
       </tr>
     </tbody>
   </table>
-  <a id="OpenTK_Platform_IJoystickComponent_GetButton_" data-uid="OpenTK.Platform.IJoystickComponent.GetButton*"></a>
-  <h4 id="OpenTK_Platform_IJoystickComponent_GetButton_OpenTK_Platform_JoystickHandle_System_Int32_" data-uid="OpenTK.Platform.IJoystickComponent.GetButton(OpenTK.Platform.JoystickHandle,System.Int32)">GetButton(JoystickHandle, int)</h4>
-  <div class="markdown level1 summary"></div>
+  <a id="OpenTK_Platform_IGamepadComponent_RightDeadzone_" data-uid="OpenTK.Platform.IGamepadComponent.RightDeadzone*"></a>
+  <h4 id="OpenTK_Platform_IGamepadComponent_RightDeadzone" data-uid="OpenTK.Platform.IGamepadComponent.RightDeadzone">RightDeadzone</h4>
+  <div class="markdown level1 summary"><p>The recommended deadzone value for the right analog stick.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">bool GetButton(JoystickHandle joystick, int button)</code></pre>
+    <pre><code class="lang-csharp hljs">float RightDeadzone { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Platform_IGamepadComponent_TriggerThreshold_" data-uid="OpenTK.Platform.IGamepadComponent.TriggerThreshold*"></a>
+  <h4 id="OpenTK_Platform_IGamepadComponent_TriggerThreshold" data-uid="OpenTK.Platform.IGamepadComponent.TriggerThreshold">TriggerThreshold</h4>
+  <div class="markdown level1 summary"><p>The recommended threshold for considering the left or right trigger pressed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">float TriggerThreshold { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+  <a id="OpenTK_Platform_IGamepadComponent_Close_" data-uid="OpenTK.Platform.IGamepadComponent.Close*"></a>
+  <h4 id="OpenTK_Platform_IGamepadComponent_Close_OpenTK_Platform_JoystickHandle_" data-uid="OpenTK.Platform.IGamepadComponent.Close(OpenTK.Platform.JoystickHandle)">Close(JoystickHandle)</h4>
+  <div class="markdown level1 summary"><p>Closes a handle to a joystick.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Close(JoystickHandle handle)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -196,13 +200,92 @@
     <tbody>
       <tr>
         <td><a class="xref" href="OpenTK.Platform.JoystickHandle.html">JoystickHandle</a></td>
-        <td><span class="parametername">joystick</span></td>
-        <td></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>The joystick handle.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Platform_IGamepadComponent_GetAxis_" data-uid="OpenTK.Platform.IGamepadComponent.GetAxis*"></a>
+  <h4 id="OpenTK_Platform_IGamepadComponent_GetAxis_OpenTK_Platform_JoystickHandle_OpenTK_Platform_JoystickAxis_" data-uid="OpenTK.Platform.IGamepadComponent.GetAxis(OpenTK.Platform.JoystickHandle,OpenTK.Platform.JoystickAxis)">GetAxis(JoystickHandle, JoystickAxis)</h4>
+  <div class="markdown level1 summary"><p>Gets the value of a specific joystick axis.
+This value is in the range [-1, 1] for analog sticks, and [0, 1] for triggers.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">float GetAxis(JoystickHandle handle, JoystickAxis axis)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Platform.JoystickHandle.html">JoystickHandle</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>A handle to a joystick.</p>
+</td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><a class="xref" href="OpenTK.Platform.JoystickAxis.html">JoystickAxis</a></td>
+        <td><span class="parametername">axis</span></td>
+        <td><p>The joystick axis to get.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><p>The joystick axis value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Platform_IGamepadComponent_GetButton_" data-uid="OpenTK.Platform.IGamepadComponent.GetButton*"></a>
+  <h4 id="OpenTK_Platform_IGamepadComponent_GetButton_OpenTK_Platform_JoystickHandle_OpenTK_Platform_JoystickButton_" data-uid="OpenTK.Platform.IGamepadComponent.GetButton(OpenTK.Platform.JoystickHandle,OpenTK.Platform.JoystickButton)">GetButton(JoystickHandle, JoystickButton)</h4>
+  <div class="markdown level1 summary"><p>Get the pressed state of a specific joystick button.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool GetButton(JoystickHandle handle, JoystickButton button)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Platform.JoystickHandle.html">JoystickHandle</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td><p>A handle to a joystick.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Platform.JoystickButton.html">JoystickButton</a></td>
         <td><span class="parametername">button</span></td>
-        <td></td>
+        <td><p>The joystick button to get.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -217,17 +300,18 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
-        <td></td>
+        <td><p>True if the specified button is pressed or false if the button is released.</p>
+</td>
       </tr>
     </tbody>
   </table>
-  <a id="OpenTK_Platform_IJoystickComponent_GetCapabilities_" data-uid="OpenTK.Platform.IJoystickComponent.GetCapabilities*"></a>
-  <h4 id="OpenTK_Platform_IJoystickComponent_GetCapabilities_OpenTK_Platform_JoystickHandle_" data-uid="OpenTK.Platform.IJoystickComponent.GetCapabilities(OpenTK.Platform.JoystickHandle)">GetCapabilities(JoystickHandle)</h4>
+  <a id="OpenTK_Platform_IGamepadComponent_GetGuid_" data-uid="OpenTK.Platform.IGamepadComponent.GetGuid*"></a>
+  <h4 id="OpenTK_Platform_IGamepadComponent_GetGuid_OpenTK_Platform_JoystickHandle_" data-uid="OpenTK.Platform.IGamepadComponent.GetGuid(OpenTK.Platform.JoystickHandle)">GetGuid(JoystickHandle)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">JoystickCapabilities GetCapabilities(JoystickHandle joystick)</code></pre>
+    <pre><code class="lang-csharp hljs">Guid GetGuid(JoystickHandle handle)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -241,47 +325,7 @@
     <tbody>
       <tr>
         <td><a class="xref" href="OpenTK.Platform.JoystickHandle.html">JoystickHandle</a></td>
-        <td><span class="parametername">joystick</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Platform.JoystickCapabilities.html">JoystickCapabilities</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="OpenTK_Platform_IJoystickComponent_GetGuid_" data-uid="OpenTK.Platform.IJoystickComponent.GetGuid*"></a>
-  <h4 id="OpenTK_Platform_IJoystickComponent_GetGuid_OpenTK_Platform_JoystickHandle_" data-uid="OpenTK.Platform.IJoystickComponent.GetGuid(OpenTK.Platform.JoystickHandle)">GetGuid(JoystickHandle)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Guid GetGuid(JoystickHandle joystick)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Platform.JoystickHandle.html">JoystickHandle</a></td>
-        <td><span class="parametername">joystick</span></td>
+        <td><span class="parametername">handle</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -301,13 +345,13 @@
       </tr>
     </tbody>
   </table>
-  <a id="OpenTK_Platform_IJoystickComponent_GetHat_" data-uid="OpenTK.Platform.IJoystickComponent.GetHat*"></a>
-  <h4 id="OpenTK_Platform_IJoystickComponent_GetHat_OpenTK_Platform_JoystickHandle_System_Int32_" data-uid="OpenTK.Platform.IJoystickComponent.GetHat(OpenTK.Platform.JoystickHandle,System.Int32)">GetHat(JoystickHandle, int)</h4>
+  <a id="OpenTK_Platform_IGamepadComponent_GetName_" data-uid="OpenTK.Platform.IGamepadComponent.GetName*"></a>
+  <h4 id="OpenTK_Platform_IGamepadComponent_GetName_OpenTK_Platform_JoystickHandle_" data-uid="OpenTK.Platform.IGamepadComponent.GetName(OpenTK.Platform.JoystickHandle)">GetName(JoystickHandle)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">HatState GetHat(JoystickHandle joystick, int hat)</code></pre>
+    <pre><code class="lang-csharp hljs">string GetName(JoystickHandle handle)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -321,75 +365,7 @@
     <tbody>
       <tr>
         <td><a class="xref" href="OpenTK.Platform.JoystickHandle.html">JoystickHandle</a></td>
-        <td><span class="parametername">joystick</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
-        <td><span class="parametername">hat</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Platform.HatState.html">HatState</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="OpenTK_Platform_IJoystickComponent_GetJoystickCount_" data-uid="OpenTK.Platform.IJoystickComponent.GetJoystickCount*"></a>
-  <h4 id="OpenTK_Platform_IJoystickComponent_GetJoystickCount" data-uid="OpenTK.Platform.IJoystickComponent.GetJoystickCount">GetJoystickCount()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">int GetJoystickCount()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="OpenTK_Platform_IJoystickComponent_GetName_" data-uid="OpenTK.Platform.IJoystickComponent.GetName*"></a>
-  <h4 id="OpenTK_Platform_IJoystickComponent_GetName_OpenTK_Platform_JoystickHandle_" data-uid="OpenTK.Platform.IJoystickComponent.GetName(OpenTK.Platform.JoystickHandle)">GetName(JoystickHandle)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">string GetName(JoystickHandle joystick)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Platform.JoystickHandle.html">JoystickHandle</a></td>
-        <td><span class="parametername">joystick</span></td>
+        <td><span class="parametername">handle</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -409,13 +385,14 @@
       </tr>
     </tbody>
   </table>
-  <a id="OpenTK_Platform_IJoystickComponent_GetNumberOfAxes_" data-uid="OpenTK.Platform.IJoystickComponent.GetNumberOfAxes*"></a>
-  <h4 id="OpenTK_Platform_IJoystickComponent_GetNumberOfAxes_OpenTK_Platform_JoystickHandle_" data-uid="OpenTK.Platform.IJoystickComponent.GetNumberOfAxes(OpenTK.Platform.JoystickHandle)">GetNumberOfAxes(JoystickHandle)</h4>
-  <div class="markdown level1 summary"></div>
+  <a id="OpenTK_Platform_IGamepadComponent_IsConnected_" data-uid="OpenTK.Platform.IGamepadComponent.IsConnected*"></a>
+  <h4 id="OpenTK_Platform_IGamepadComponent_IsConnected_System_Int32_" data-uid="OpenTK.Platform.IGamepadComponent.IsConnected(System.Int32)">IsConnected(int)</h4>
+  <div class="markdown level1 summary"><p>Checks wether a joystick with the specific index is present on the system or not.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">int GetNumberOfAxes(JoystickHandle joystick)</code></pre>
+    <pre><code class="lang-csharp hljs">bool IsConnected(int index)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -428,9 +405,10 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Platform.JoystickHandle.html">JoystickHandle</a></td>
-        <td><span class="parametername">joystick</span></td>
-        <td></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>The index of the joystick.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -444,94 +422,16 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
-        <td></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p>If a joystick with the specified index is connected.</p>
+</td>
       </tr>
     </tbody>
   </table>
-  <a id="OpenTK_Platform_IJoystickComponent_GetNumberOfButtons_" data-uid="OpenTK.Platform.IJoystickComponent.GetNumberOfButtons*"></a>
-  <h4 id="OpenTK_Platform_IJoystickComponent_GetNumberOfButtons_OpenTK_Platform_JoystickHandle_" data-uid="OpenTK.Platform.IJoystickComponent.GetNumberOfButtons(OpenTK.Platform.JoystickHandle)">GetNumberOfButtons(JoystickHandle)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">int GetNumberOfButtons(JoystickHandle joystick)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Platform.JoystickHandle.html">JoystickHandle</a></td>
-        <td><span class="parametername">joystick</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="OpenTK_Platform_IJoystickComponent_GetNumberOfHats_" data-uid="OpenTK.Platform.IJoystickComponent.GetNumberOfHats*"></a>
-  <h4 id="OpenTK_Platform_IJoystickComponent_GetNumberOfHats_OpenTK_Platform_JoystickHandle_" data-uid="OpenTK.Platform.IJoystickComponent.GetNumberOfHats(OpenTK.Platform.JoystickHandle)">GetNumberOfHats(JoystickHandle)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">int GetNumberOfHats(JoystickHandle joystick)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Platform.JoystickHandle.html">JoystickHandle</a></td>
-        <td><span class="parametername">joystick</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="OpenTK_Platform_IJoystickComponent_Open_" data-uid="OpenTK.Platform.IJoystickComponent.Open*"></a>
-  <h4 id="OpenTK_Platform_IJoystickComponent_Open_System_Int32_" data-uid="OpenTK.Platform.IJoystickComponent.Open(System.Int32)">Open(int)</h4>
-  <div class="markdown level1 summary"></div>
+  <a id="OpenTK_Platform_IGamepadComponent_Open_" data-uid="OpenTK.Platform.IGamepadComponent.Open*"></a>
+  <h4 id="OpenTK_Platform_IGamepadComponent_Open_System_Int32_" data-uid="OpenTK.Platform.IGamepadComponent.Open(System.Int32)">Open(int)</h4>
+  <div class="markdown level1 summary"><p>Opens a handle to a specific joystick.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -550,7 +450,8 @@
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td><span class="parametername">index</span></td>
-        <td></td>
+        <td><p>The player index of the joystick to open.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -565,17 +466,18 @@
     <tbody>
       <tr>
         <td><a class="xref" href="OpenTK.Platform.JoystickHandle.html">JoystickHandle</a></td>
-        <td></td>
+        <td><p>The opened joystick handle.</p>
+</td>
       </tr>
     </tbody>
   </table>
-  <a id="OpenTK_Platform_IJoystickComponent_SetRumble_" data-uid="OpenTK.Platform.IJoystickComponent.SetRumble*"></a>
-  <h4 id="OpenTK_Platform_IJoystickComponent_SetRumble_OpenTK_Platform_JoystickHandle_System_Single_System_Single_" data-uid="OpenTK.Platform.IJoystickComponent.SetRumble(OpenTK.Platform.JoystickHandle,System.Single,System.Single)">SetRumble(JoystickHandle, float, float)</h4>
+  <a id="OpenTK_Platform_IGamepadComponent_SetVibration_" data-uid="OpenTK.Platform.IGamepadComponent.SetVibration*"></a>
+  <h4 id="OpenTK_Platform_IGamepadComponent_SetVibration_OpenTK_Platform_JoystickHandle_System_Single_System_Single_" data-uid="OpenTK.Platform.IGamepadComponent.SetVibration(OpenTK.Platform.JoystickHandle,System.Single,System.Single)">SetVibration(JoystickHandle, float, float)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">bool SetRumble(JoystickHandle joystick, float lowFrequencyIntensity, float highFrequencyIntensity)</code></pre>
+    <pre><code class="lang-csharp hljs">bool SetVibration(JoystickHandle handle, float lowFreqIntensity, float highFreqIntensity)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -589,17 +491,17 @@
     <tbody>
       <tr>
         <td><a class="xref" href="OpenTK.Platform.JoystickHandle.html">JoystickHandle</a></td>
-        <td><span class="parametername">joystick</span></td>
+        <td><span class="parametername">handle</span></td>
         <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
-        <td><span class="parametername">lowFrequencyIntensity</span></td>
+        <td><span class="parametername">lowFreqIntensity</span></td>
         <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
-        <td><span class="parametername">highFrequencyIntensity</span></td>
+        <td><span class="parametername">highFreqIntensity</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -619,13 +521,13 @@
       </tr>
     </tbody>
   </table>
-  <a id="OpenTK_Platform_IJoystickComponent_TryGetBatteryInfo_" data-uid="OpenTK.Platform.IJoystickComponent.TryGetBatteryInfo*"></a>
-  <h4 id="OpenTK_Platform_IJoystickComponent_TryGetBatteryInfo_OpenTK_Platform_JoystickHandle_OpenTK_Platform_GamepadBatteryInfo__" data-uid="OpenTK.Platform.IJoystickComponent.TryGetBatteryInfo(OpenTK.Platform.JoystickHandle,OpenTK.Platform.GamepadBatteryInfo@)">TryGetBatteryInfo(JoystickHandle, out GamepadBatteryInfo)</h4>
+  <a id="OpenTK_Platform_IGamepadComponent_TryGetBatteryInfo_" data-uid="OpenTK.Platform.IGamepadComponent.TryGetBatteryInfo*"></a>
+  <h4 id="OpenTK_Platform_IGamepadComponent_TryGetBatteryInfo_OpenTK_Platform_JoystickHandle_OpenTK_Platform_GamepadBatteryInfo__" data-uid="OpenTK.Platform.IGamepadComponent.TryGetBatteryInfo(OpenTK.Platform.JoystickHandle,OpenTK.Platform.GamepadBatteryInfo@)">TryGetBatteryInfo(JoystickHandle, out GamepadBatteryInfo)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">bool TryGetBatteryInfo(JoystickHandle joystick, out GamepadBatteryInfo batteryInfo)</code></pre>
+    <pre><code class="lang-csharp hljs">bool TryGetBatteryInfo(JoystickHandle handle, out GamepadBatteryInfo batteryInfo)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -639,7 +541,7 @@
     <tbody>
       <tr>
         <td><a class="xref" href="OpenTK.Platform.JoystickHandle.html">JoystickHandle</a></td>
-        <td><span class="parametername">joystick</span></td>
+        <td><span class="parametername">handle</span></td>
         <td></td>
       </tr>
       <tr>
@@ -664,10 +566,6 @@
       </tr>
     </tbody>
   </table>
-  <h3 id="seealso">See Also</h3>
-  <div class="seealso">
-      <div><a class="xref" href="OpenTK.Platform.Toolkit.html#OpenTK_Platform_Toolkit_Joystick">Joystick</a></div>
-  </div>
 
 </article>
           </div>

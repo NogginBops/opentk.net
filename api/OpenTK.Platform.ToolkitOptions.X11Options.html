@@ -112,6 +112,72 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public sealed class ToolkitOptions.X11Options</code></pre>
   </div>
+  <h3 id="properties">Properties
+</h3>
+  <a id="OpenTK_Platform_ToolkitOptions_X11Options_DealWithVSCodeEnvironmentVariablePollution_" data-uid="OpenTK.Platform.ToolkitOptions.X11Options.DealWithVSCodeEnvironmentVariablePollution*"></a>
+  <h4 id="OpenTK_Platform_ToolkitOptions_X11Options_DealWithVSCodeEnvironmentVariablePollution" data-uid="OpenTK.Platform.ToolkitOptions.X11Options.DealWithVSCodeEnvironmentVariablePollution">DealWithVSCodeEnvironmentVariablePollution</h4>
+  <div class="markdown level1 summary"><p>VSCode leaks a bunch of envrionment variables that mess with dynamic library resolution.
+If the environment variable <code>SNAP_NAME</code> is set to <code>code</code> and this variable is set to true,
+we will remove a bunch of environment variables that vscode leaks into the C# process.
+This means that if you want to set these variables yourself while running in VSCode
+for whatever reason then you need to disable this.
+Defaults to <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool DealWithVSCodeEnvironmentVariablePollution { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenTK_Platform_ToolkitOptions_X11Options_DealWithVSCodeEnvironmentVariablePollution_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Specifically all variables that have a <code>_VSCODE_SNAP_ORIG</code> version will be reset to their original values.
+But additionally the following environment variables will be removed:</p>
+<ul><li><code>GTK_PATH</code></li><li><code>GIO_MODULE_DIR</code></li><li><code>GTK_EXE_PREFIX</code></li><li><code>GIO_LAUNCHED_DESKTOP_FILE</code></li><li><code>GIO_LAUNCHED_DESKTOP_FILE_PID</code></li><li><code>GTK_IM_MODULE_FILE</code></li><li><code>GDK_PIXBUF_MODULEDIR</code></li><li><code>GDK_PIXBUF_MODULE_FILE</code></li><li><code>GSETTINGS_SCHEMA_DIR</code></li><li><code>XDG_DATA_HOME</code></li></ul>
+<p>After <a class="xref" href="OpenTK.Platform.Toolkit.html#OpenTK_Platform_Toolkit_Uninit">Uninit()</a> these environment variables will be reset to their original values.</p>
+<p>
+If this setting ever bites you, I'm sorry.
+</p>
+</div>
+  <a id="OpenTK_Platform_ToolkitOptions_X11Options_PrintLibraryPathResolutionDebug_" data-uid="OpenTK.Platform.ToolkitOptions.X11Options.PrintLibraryPathResolutionDebug*"></a>
+  <h4 id="OpenTK_Platform_ToolkitOptions_X11Options_PrintLibraryPathResolutionDebug" data-uid="OpenTK.Platform.ToolkitOptions.X11Options.PrintLibraryPathResolutionDebug">PrintLibraryPathResolutionDebug</h4>
+  <div class="markdown level1 summary"><p>If this option is set to true, the custom dll resolver used to load native dependencies
+will print out to the <a class="xref" href="OpenTK.Platform.ToolkitOptions.html#OpenTK_Platform_ToolkitOptions_Logger">Logger</a> debug information about exact
+paths for loaded <code>.so</code> files. Can be useful when debugging library resolution issues.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool PrintLibraryPathResolutionDebug { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
 </article>
           </div>

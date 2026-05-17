@@ -123,7 +123,7 @@
 </h3>
   <a id="OpenTK_Platform_Native_SDL_SDLDisplayComponent_CanGetVirtualPosition_" data-uid="OpenTK.Platform.Native.SDL.SDLDisplayComponent.CanGetVirtualPosition*"></a>
   <h4 id="OpenTK_Platform_Native_SDL_SDLDisplayComponent_CanGetVirtualPosition" data-uid="OpenTK.Platform.Native.SDL.SDLDisplayComponent.CanGetVirtualPosition">CanGetVirtualPosition</h4>
-  <div class="markdown level1 summary"><p>True if the driver can get the virtual position of the display using <a class="xref" href="OpenTK.Platform.IDisplayComponent.html#OpenTK_Platform_IDisplayComponent_GetVirtualPosition_OpenTK_Platform_DisplayHandle_System_Int32__System_Int32__">GetVirtualPosition(DisplayHandle, out int, out int)</a>.</p>
+  <div class="markdown level1 summary"><p>True if the driver can get the virtual position of the display using <a class="xref" href="OpenTK.Platform.IDisplayComponent.html#OpenTK_Platform_IDisplayComponent_GetVirtualPosition_OpenTK_Platform_DisplayHandle_">GetVirtualPosition(DisplayHandle)</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -316,13 +316,13 @@
     </tbody>
   </table>
   <a id="OpenTK_Platform_Native_SDL_SDLDisplayComponent_GetDisplayScale_" data-uid="OpenTK.Platform.Native.SDL.SDLDisplayComponent.GetDisplayScale*"></a>
-  <h4 id="OpenTK_Platform_Native_SDL_SDLDisplayComponent_GetDisplayScale_OpenTK_Platform_DisplayHandle_System_Single__System_Single__" data-uid="OpenTK.Platform.Native.SDL.SDLDisplayComponent.GetDisplayScale(OpenTK.Platform.DisplayHandle,System.Single@,System.Single@)">GetDisplayScale(DisplayHandle, out float, out float)</h4>
+  <h4 id="OpenTK_Platform_Native_SDL_SDLDisplayComponent_GetDisplayScale_OpenTK_Platform_DisplayHandle_" data-uid="OpenTK.Platform.Native.SDL.SDLDisplayComponent.GetDisplayScale(OpenTK.Platform.DisplayHandle)">GetDisplayScale(DisplayHandle)</h4>
   <div class="markdown level1 summary"><p>Get the scale of the display.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void GetDisplayScale(DisplayHandle handle, out float scaleX, out float scaleY)</code></pre>
+    <pre><code class="lang-csharp hljs">public Vector2 GetDisplayScale(DisplayHandle handle)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -340,16 +340,20 @@
         <td><p>Handle to a display.</p>
 </td>
       </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
-        <td><span class="parametername">scaleX</span></td>
-        <td><p>The X-axis scale of the monitor.</p>
-</td>
+        <th>Type</th>
+        <th>Description</th>
       </tr>
+    </thead>
+    <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
-        <td><span class="parametername">scaleY</span></td>
-        <td><p>The Y-axis scale of the monitor.</p>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector2.html">Vector2</a></td>
+        <td><p>The X-axis and Y-axis scale of the monitor.</p>
 </td>
       </tr>
     </tbody>
@@ -414,13 +418,13 @@
     </tbody>
   </table>
   <a id="OpenTK_Platform_Native_SDL_SDLDisplayComponent_GetRefreshRate_" data-uid="OpenTK.Platform.Native.SDL.SDLDisplayComponent.GetRefreshRate*"></a>
-  <h4 id="OpenTK_Platform_Native_SDL_SDLDisplayComponent_GetRefreshRate_OpenTK_Platform_DisplayHandle_System_Single__" data-uid="OpenTK.Platform.Native.SDL.SDLDisplayComponent.GetRefreshRate(OpenTK.Platform.DisplayHandle,System.Single@)">GetRefreshRate(DisplayHandle, out float)</h4>
+  <h4 id="OpenTK_Platform_Native_SDL_SDLDisplayComponent_GetRefreshRate_OpenTK_Platform_DisplayHandle_" data-uid="OpenTK.Platform.Native.SDL.SDLDisplayComponent.GetRefreshRate(OpenTK.Platform.DisplayHandle)">GetRefreshRate(DisplayHandle)</h4>
   <div class="markdown level1 summary"><p>Get the refresh rate if the specified display.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void GetRefreshRate(DisplayHandle handle, out float refreshRate)</code></pre>
+    <pre><code class="lang-csharp hljs">public float GetRefreshRate(DisplayHandle handle)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -438,22 +442,32 @@
         <td><p>Handle to a display.</p>
 </td>
       </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
-        <td><span class="parametername">refreshRate</span></td>
-        <td><p>The refresh rate of the display.</p>
+        <td><p>The refresh rate of the display in Hz.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="OpenTK_Platform_Native_SDL_SDLDisplayComponent_GetResolution_" data-uid="OpenTK.Platform.Native.SDL.SDLDisplayComponent.GetResolution*"></a>
-  <h4 id="OpenTK_Platform_Native_SDL_SDLDisplayComponent_GetResolution_OpenTK_Platform_DisplayHandle_System_Int32__System_Int32__" data-uid="OpenTK.Platform.Native.SDL.SDLDisplayComponent.GetResolution(OpenTK.Platform.DisplayHandle,System.Int32@,System.Int32@)">GetResolution(DisplayHandle, out int, out int)</h4>
+  <h4 id="OpenTK_Platform_Native_SDL_SDLDisplayComponent_GetResolution_OpenTK_Platform_DisplayHandle_" data-uid="OpenTK.Platform.Native.SDL.SDLDisplayComponent.GetResolution(OpenTK.Platform.DisplayHandle)">GetResolution(DisplayHandle)</h4>
   <div class="markdown level1 summary"><p>Get the resolution of the specified display.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void GetResolution(DisplayHandle handle, out int width, out int height)</code></pre>
+    <pre><code class="lang-csharp hljs">public Vector2i GetResolution(DisplayHandle handle)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -471,16 +485,20 @@
         <td><p>Handle to a display.</p>
 </td>
       </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
-        <td><span class="parametername">width</span></td>
-        <td><p>The horizontal resolution of the display.</p>
-</td>
+        <th>Type</th>
+        <th>Description</th>
       </tr>
+    </thead>
+    <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
-        <td><span class="parametername">height</span></td>
-        <td><p>The vertical resolution of the display.</p>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector2i.html">Vector2i</a></td>
+        <td><p>The horizontal and vertical resolution of the display.</p>
 </td>
       </tr>
     </tbody>
@@ -561,13 +579,13 @@
     </tbody>
   </table>
   <a id="OpenTK_Platform_Native_SDL_SDLDisplayComponent_GetVideoMode_" data-uid="OpenTK.Platform.Native.SDL.SDLDisplayComponent.GetVideoMode*"></a>
-  <h4 id="OpenTK_Platform_Native_SDL_SDLDisplayComponent_GetVideoMode_OpenTK_Platform_DisplayHandle_OpenTK_Platform_VideoMode__" data-uid="OpenTK.Platform.Native.SDL.SDLDisplayComponent.GetVideoMode(OpenTK.Platform.DisplayHandle,OpenTK.Platform.VideoMode@)">GetVideoMode(DisplayHandle, out VideoMode)</h4>
+  <h4 id="OpenTK_Platform_Native_SDL_SDLDisplayComponent_GetVideoMode_OpenTK_Platform_DisplayHandle_" data-uid="OpenTK.Platform.Native.SDL.SDLDisplayComponent.GetVideoMode(OpenTK.Platform.DisplayHandle)">GetVideoMode(DisplayHandle)</h4>
   <div class="markdown level1 summary"><p>Get the active video mode of a display.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void GetVideoMode(DisplayHandle handle, out VideoMode mode)</code></pre>
+    <pre><code class="lang-csharp hljs">public VideoMode GetVideoMode(DisplayHandle handle)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -585,10 +603,20 @@
         <td><p>Handle to a display.</p>
 </td>
       </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
       <tr>
         <td><a class="xref" href="OpenTK.Platform.VideoMode.html">VideoMode</a></td>
-        <td><span class="parametername">mode</span></td>
-        <td><p>Active video mode of display.</p>
+        <td><p>The active video mode of display.</p>
 </td>
       </tr>
     </tbody>
@@ -610,13 +638,13 @@
     </tbody>
   </table>
   <a id="OpenTK_Platform_Native_SDL_SDLDisplayComponent_GetVirtualPosition_" data-uid="OpenTK.Platform.Native.SDL.SDLDisplayComponent.GetVirtualPosition*"></a>
-  <h4 id="OpenTK_Platform_Native_SDL_SDLDisplayComponent_GetVirtualPosition_OpenTK_Platform_DisplayHandle_System_Int32__System_Int32__" data-uid="OpenTK.Platform.Native.SDL.SDLDisplayComponent.GetVirtualPosition(OpenTK.Platform.DisplayHandle,System.Int32@,System.Int32@)">GetVirtualPosition(DisplayHandle, out int, out int)</h4>
+  <h4 id="OpenTK_Platform_Native_SDL_SDLDisplayComponent_GetVirtualPosition_OpenTK_Platform_DisplayHandle_" data-uid="OpenTK.Platform.Native.SDL.SDLDisplayComponent.GetVirtualPosition(OpenTK.Platform.DisplayHandle)">GetVirtualPosition(DisplayHandle)</h4>
   <div class="markdown level1 summary"><p>Get the position of the display in the virtual desktop.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void GetVirtualPosition(DisplayHandle handle, out int x, out int y)</code></pre>
+    <pre><code class="lang-csharp hljs">public Vector2i GetVirtualPosition(DisplayHandle handle)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -634,16 +662,20 @@
         <td><p>Handle to a display.</p>
 </td>
       </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
-        <td><span class="parametername">x</span></td>
-        <td><p>Virtual X coordinate of the display.</p>
-</td>
+        <th>Type</th>
+        <th>Description</th>
       </tr>
+    </thead>
+    <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
-        <td><span class="parametername">y</span></td>
-        <td><p>Virtual Y coordinate of the display.</p>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector2i.html">Vector2i</a></td>
+        <td><p>The virtual positition of the display.</p>
 </td>
       </tr>
     </tbody>
@@ -670,14 +702,14 @@
     </tbody>
   </table>
   <a id="OpenTK_Platform_Native_SDL_SDLDisplayComponent_GetWorkArea_" data-uid="OpenTK.Platform.Native.SDL.SDLDisplayComponent.GetWorkArea*"></a>
-  <h4 id="OpenTK_Platform_Native_SDL_SDLDisplayComponent_GetWorkArea_OpenTK_Platform_DisplayHandle_OpenTK_Mathematics_Box2i__" data-uid="OpenTK.Platform.Native.SDL.SDLDisplayComponent.GetWorkArea(OpenTK.Platform.DisplayHandle,OpenTK.Mathematics.Box2i@)">GetWorkArea(DisplayHandle, out Box2i)</h4>
+  <h4 id="OpenTK_Platform_Native_SDL_SDLDisplayComponent_GetWorkArea_OpenTK_Platform_DisplayHandle_" data-uid="OpenTK.Platform.Native.SDL.SDLDisplayComponent.GetWorkArea(OpenTK.Platform.DisplayHandle)">GetWorkArea(DisplayHandle)</h4>
   <div class="markdown level1 summary"><p>Get the work area of this display.
 The work area is the area of the display that is not covered by task bars or menu bars.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void GetWorkArea(DisplayHandle handle, out Box2i area)</code></pre>
+    <pre><code class="lang-csharp hljs">public Box2i GetWorkArea(DisplayHandle handle)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -695,9 +727,19 @@ The work area is the area of the display that is not covered by task bars or men
         <td><p>Handle to a display.</p>
 </td>
       </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
       <tr>
         <td><a class="xref" href="OpenTK.Mathematics.Box2i.html">Box2i</a></td>
-        <td><span class="parametername">area</span></td>
         <td><p>The work area of the display.</p>
 </td>
       </tr>

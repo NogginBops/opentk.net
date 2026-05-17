@@ -128,13 +128,13 @@ public struct Box2 : IEquatable&lt;Box2&gt;, IFormattable</code></pre>
       <tr>
         <td><a class="xref" href="OpenTK.Mathematics.Vector2.html">Vector2</a></td>
         <td><span class="parametername">min</span></td>
-        <td><p>The minimum point on the XY plane this box encloses.</p>
+        <td><p>The minimum point this box encloses.</p>
 </td>
       </tr>
       <tr>
         <td><a class="xref" href="OpenTK.Mathematics.Vector2.html">Vector2</a></td>
         <td><span class="parametername">max</span></td>
-        <td><p>The maximum point on the XY plane this box encloses.</p>
+        <td><p>The maximum point this box encloses.</p>
 </td>
       </tr>
     </tbody>
@@ -187,7 +187,8 @@ public struct Box2 : IEquatable&lt;Box2&gt;, IFormattable</code></pre>
   <h3 id="fields">Fields
 </h3>
   <h4 id="OpenTK_Mathematics_Box2_Empty" data-uid="OpenTK.Mathematics.Box2.Empty">Empty</h4>
-  <div class="markdown level1 summary"><p>Gets a box with all components zero.</p>
+  <div class="markdown level1 summary"><p>An empty box with <code>Min = Vector2.PositiveInfinity</code> and <code>Max = Vector2.NegativeInfinity</code>.
+This box can be used with <a class="xref" href="OpenTK.Mathematics.Box2.html#OpenTK_Mathematics_Box2_Extend_OpenTK_Mathematics_Vector2_">Extend(Vector2)</a> to create a bounding box without a special case for the first point.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -209,8 +210,79 @@ public struct Box2 : IEquatable&lt;Box2&gt;, IFormattable</code></pre>
       </tr>
     </tbody>
   </table>
+  <h5 id="OpenTK_Mathematics_Box2_Empty_examples">Examples</h5>
+  <p>For example:</p>
+<pre><code class="lang-csharp">Vector2[] points = GetPoints();
+Box2 aabb = Box2.Empty;
+for (int i = 0; i &lt; points.Length; i++)
+{
+    aabb.Extend(points[i]):
+}</code></pre>
+<p>Will calculate the bounding box of all the points in the array without needing a special case for the first point.</p>
+
+  <h4 id="OpenTK_Mathematics_Box2_Max" data-uid="OpenTK.Mathematics.Box2.Max">Max</h4>
+  <div class="markdown level1 summary"><p>The maximum boundary of the box.
+This field is not guaranteed to be greater than <a class="xref" href="OpenTK.Mathematics.Box2.html#OpenTK_Mathematics_Box2_Max">Max</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 Max</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector2.html">Vector2</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenTK_Mathematics_Box2_Max_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>A box with a minimum point greater than the maximum is not considered valid
+except for a single configuration where <code>Min = Vector2.PositiveInfinity</code> and <code>Max = Vector2.NegativeInfinity</code> as is the case with <a class="xref" href="OpenTK.Mathematics.Box2.html#OpenTK_Mathematics_Box2_Empty">Empty</a>.</p>
+</div>
+  <h4 id="OpenTK_Mathematics_Box2_Min" data-uid="OpenTK.Mathematics.Box2.Min">Min</h4>
+  <div class="markdown level1 summary"><p>The minimum boundary of the box.
+This field is not guaranteed to be less than <a class="xref" href="OpenTK.Mathematics.Box2.html#OpenTK_Mathematics_Box2_Max">Max</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 Min</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector2.html">Vector2</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenTK_Mathematics_Box2_Min_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>A box with a minimum point greater than the maximum is not considered valid
+except for a single configuration where <code>Min = Vector2.PositiveInfinity</code> and <code>Max = Vector2.NegativeInfinity</code> as is the case with <a class="xref" href="OpenTK.Mathematics.Box2.html#OpenTK_Mathematics_Box2_Empty">Empty</a>.</p>
+</div>
+  <h5 id="OpenTK_Mathematics_Box2_Min_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="OpenTK.Mathematics.Box2.html#OpenTK_Mathematics_Box2_Empty">Empty</a></div>
+      <div><a class="xref" href="OpenTK.Mathematics.Box2.html#OpenTK_Mathematics_Box2_IsEmpty">IsEmpty</a></div>
+  </div>
   <h4 id="OpenTK_Mathematics_Box2_UnitSquare" data-uid="OpenTK.Mathematics.Box2.UnitSquare">UnitSquare</h4>
-  <div class="markdown level1 summary"><p>Gets a box with a location 0,0 with the a size of 1.</p>
+  <div class="markdown level1 summary"><p>A box with a <code>Min = (0, 0)</code> and <code>Max = (1, 1)</code>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -232,16 +304,42 @@ public struct Box2 : IEquatable&lt;Box2&gt;, IFormattable</code></pre>
       </tr>
     </tbody>
   </table>
-  <h3 id="properties">Properties
-</h3>
-  <a id="OpenTK_Mathematics_Box2_Bottom_" data-uid="OpenTK.Mathematics.Box2.Bottom*"></a>
-  <h4 id="OpenTK_Mathematics_Box2_Bottom" data-uid="OpenTK.Mathematics.Box2.Bottom">Bottom</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the bottom location of the box.</p>
+  <h4 id="OpenTK_Mathematics_Box2_Zero" data-uid="OpenTK.Mathematics.Box2.Zero">Zero</h4>
+  <div class="markdown level1 summary"><p>A box with <code>Min = Vector2.Zero</code> and <code>Min = Vector2.Zero</code>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public float Bottom { readonly get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static readonly Box2 Zero</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Box2.html">Box2</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenTK_Mathematics_Box2_Zero_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If you want an empty box, consider using <a class="xref" href="OpenTK.Mathematics.Box2.html#OpenTK_Mathematics_Box2_Empty">Empty</a>.</p>
+</div>
+  <h3 id="properties">Properties
+</h3>
+  <a id="OpenTK_Mathematics_Box2_Area_" data-uid="OpenTK.Mathematics.Box2.Area*"></a>
+  <h4 id="OpenTK_Mathematics_Box2_Area" data-uid="OpenTK.Mathematics.Box2.Area">Area</h4>
+  <div class="markdown level1 summary"><p>The area of the box.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly float Area { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -282,38 +380,15 @@ public struct Box2 : IEquatable&lt;Box2&gt;, IFormattable</code></pre>
       </tr>
     </tbody>
   </table>
-  <a id="OpenTK_Mathematics_Box2_CenteredSize_" data-uid="OpenTK.Mathematics.Box2.CenteredSize*"></a>
-  <h4 id="OpenTK_Mathematics_Box2_CenteredSize" data-uid="OpenTK.Mathematics.Box2.CenteredSize">CenteredSize</h4>
-  <div class="markdown level1 summary"><p>Gets or sets a vector describing the size of the Box2 structure.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Vector2 CenteredSize { readonly get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Mathematics.Vector2.html">Vector2</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   <a id="OpenTK_Mathematics_Box2_HalfSize_" data-uid="OpenTK.Mathematics.Box2.HalfSize*"></a>
   <h4 id="OpenTK_Mathematics_Box2_HalfSize" data-uid="OpenTK.Mathematics.Box2.HalfSize">HalfSize</h4>
-  <div class="markdown level1 summary"><p>Gets or sets a vector describing half the size of the box.</p>
+  <div class="markdown level1 summary"><p>Gets half the size of the box.
+The distance from the center of the box to the edge of the box in X and Y.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Vector2 HalfSize { readonly get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly Vector2 HalfSize { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -330,38 +405,17 @@ public struct Box2 : IEquatable&lt;Box2&gt;, IFormattable</code></pre>
       </tr>
     </tbody>
   </table>
-  <a id="OpenTK_Mathematics_Box2_Height_" data-uid="OpenTK.Mathematics.Box2.Height*"></a>
-  <h4 id="OpenTK_Mathematics_Box2_Height" data-uid="OpenTK.Mathematics.Box2.Height">Height</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the height of the box.</p>
+  <h5 id="OpenTK_Mathematics_Box2_HalfSize_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This function never returns negative values, so <a class="xref" href="OpenTK.Mathematics.Box2.html#OpenTK_Mathematics_Box2_Empty">Empty</a> will have a size of (0, 0).</p>
+</div>
+  <a id="OpenTK_Mathematics_Box2_HasZeroArea_" data-uid="OpenTK.Mathematics.Box2.HasZeroArea*"></a>
+  <h4 id="OpenTK_Mathematics_Box2_HasZeroArea" data-uid="OpenTK.Mathematics.Box2.HasZeroArea">HasZeroArea</h4>
+  <div class="markdown level1 summary"><p>If this box has zero area.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public float Height { readonly get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="OpenTK_Mathematics_Box2_IsZero_" data-uid="OpenTK.Mathematics.Box2.IsZero*"></a>
-  <h4 id="OpenTK_Mathematics_Box2_IsZero" data-uid="OpenTK.Mathematics.Box2.IsZero">IsZero</h4>
-  <div class="markdown level1 summary"><p>Gets a value indicating whether all values are zero.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public readonly bool IsZero { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly bool HasZeroArea { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -378,14 +432,14 @@ public struct Box2 : IEquatable&lt;Box2&gt;, IFormattable</code></pre>
       </tr>
     </tbody>
   </table>
-  <a id="OpenTK_Mathematics_Box2_Left_" data-uid="OpenTK.Mathematics.Box2.Left*"></a>
-  <h4 id="OpenTK_Mathematics_Box2_Left" data-uid="OpenTK.Mathematics.Box2.Left">Left</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the left location of the box.</p>
+  <a id="OpenTK_Mathematics_Box2_Height_" data-uid="OpenTK.Mathematics.Box2.Height*"></a>
+  <h4 id="OpenTK_Mathematics_Box2_Height" data-uid="OpenTK.Mathematics.Box2.Height">Height</h4>
+  <div class="markdown level1 summary"><p>The height of the box.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public float Left { readonly get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly float Height { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -402,9 +456,57 @@ public struct Box2 : IEquatable&lt;Box2&gt;, IFormattable</code></pre>
       </tr>
     </tbody>
   </table>
+  <a id="OpenTK_Mathematics_Box2_IsEmpty_" data-uid="OpenTK.Mathematics.Box2.IsEmpty*"></a>
+  <h4 id="OpenTK_Mathematics_Box2_IsEmpty" data-uid="OpenTK.Mathematics.Box2.IsEmpty">IsEmpty</h4>
+  <div class="markdown level1 summary"><p>If this box is equal to <a class="xref" href="OpenTK.Mathematics.Box2.html#OpenTK_Mathematics_Box2_Empty">Empty</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly bool IsEmpty { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Box2_IsPoint_" data-uid="OpenTK.Mathematics.Box2.IsPoint*"></a>
+  <h4 id="OpenTK_Mathematics_Box2_IsPoint" data-uid="OpenTK.Mathematics.Box2.IsPoint">IsPoint</h4>
+  <div class="markdown level1 summary"><p>If this box is a point, i.e. its minimum point is equal to its maximum point.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly bool IsPoint { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <a id="OpenTK_Mathematics_Box2_Location_" data-uid="OpenTK.Mathematics.Box2.Location*"></a>
   <h4 id="OpenTK_Mathematics_Box2_Location" data-uid="OpenTK.Mathematics.Box2.Location">Location</h4>
-  <div class="markdown level1 summary"><p>Gets the location of the box.</p>
+  <div class="markdown level1 summary"><p>Gets the location of the box from a Location + Size perspective. Basically an alias for <a class="xref" href="OpenTK.Mathematics.Box2.html#OpenTK_Mathematics_Box2_Min">Min</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -426,86 +528,14 @@ public struct Box2 : IEquatable&lt;Box2&gt;, IFormattable</code></pre>
       </tr>
     </tbody>
   </table>
-  <a id="OpenTK_Mathematics_Box2_Max_" data-uid="OpenTK.Mathematics.Box2.Max*"></a>
-  <h4 id="OpenTK_Mathematics_Box2_Max" data-uid="OpenTK.Mathematics.Box2.Max">Max</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the maximum boundary of the structure.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Vector2 Max { readonly get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Mathematics.Vector2.html">Vector2</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="OpenTK_Mathematics_Box2_Min_" data-uid="OpenTK.Mathematics.Box2.Min*"></a>
-  <h4 id="OpenTK_Mathematics_Box2_Min" data-uid="OpenTK.Mathematics.Box2.Min">Min</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the minimum boundary of the structure.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Vector2 Min { readonly get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Mathematics.Vector2.html">Vector2</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="OpenTK_Mathematics_Box2_Right_" data-uid="OpenTK.Mathematics.Box2.Right*"></a>
-  <h4 id="OpenTK_Mathematics_Box2_Right" data-uid="OpenTK.Mathematics.Box2.Right">Right</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the right location of the box.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public float Right { readonly get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   <a id="OpenTK_Mathematics_Box2_Size_" data-uid="OpenTK.Mathematics.Box2.Size*"></a>
   <h4 id="OpenTK_Mathematics_Box2_Size" data-uid="OpenTK.Mathematics.Box2.Size">Size</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the size of the box.</p>
+  <div class="markdown level1 summary"><p>Gets the size of the box.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Vector2 Size { readonly get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly Vector2 Size { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -522,134 +552,17 @@ public struct Box2 : IEquatable&lt;Box2&gt;, IFormattable</code></pre>
       </tr>
     </tbody>
   </table>
-  <a id="OpenTK_Mathematics_Box2_SizeX_" data-uid="OpenTK.Mathematics.Box2.SizeX*"></a>
-  <h4 id="OpenTK_Mathematics_Box2_SizeX" data-uid="OpenTK.Mathematics.Box2.SizeX">SizeX</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the horizontal size.</p>
+  <h5 id="OpenTK_Mathematics_Box2_Size_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This function never returns negative values, so <a class="xref" href="OpenTK.Mathematics.Box2.html#OpenTK_Mathematics_Box2_Empty">Empty</a> will have a size of (0, 0).</p>
 </div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public float SizeX { readonly get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="OpenTK_Mathematics_Box2_SizeY_" data-uid="OpenTK.Mathematics.Box2.SizeY*"></a>
-  <h4 id="OpenTK_Mathematics_Box2_SizeY" data-uid="OpenTK.Mathematics.Box2.SizeY">SizeY</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the vertical size.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public float SizeY { readonly get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="OpenTK_Mathematics_Box2_Top_" data-uid="OpenTK.Mathematics.Box2.Top*"></a>
-  <h4 id="OpenTK_Mathematics_Box2_Top" data-uid="OpenTK.Mathematics.Box2.Top">Top</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the top location of the box.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public float Top { readonly get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   <a id="OpenTK_Mathematics_Box2_Width_" data-uid="OpenTK.Mathematics.Box2.Width*"></a>
   <h4 id="OpenTK_Mathematics_Box2_Width" data-uid="OpenTK.Mathematics.Box2.Width">Width</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the width of the box.</p>
+  <div class="markdown level1 summary"><p>The width of the box.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public float Width { readonly get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="OpenTK_Mathematics_Box2_X_" data-uid="OpenTK.Mathematics.Box2.X*"></a>
-  <h4 id="OpenTK_Mathematics_Box2_X" data-uid="OpenTK.Mathematics.Box2.X">X</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the X location of the box.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public float X { readonly get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="OpenTK_Mathematics_Box2_Y_" data-uid="OpenTK.Mathematics.Box2.Y*"></a>
-  <h4 id="OpenTK_Mathematics_Box2_Y" data-uid="OpenTK.Mathematics.Box2.Y">Y</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the Y location of the box.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public float Y { readonly get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly float Width { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -670,12 +583,12 @@ public struct Box2 : IEquatable&lt;Box2&gt;, IFormattable</code></pre>
 </h3>
   <a id="OpenTK_Mathematics_Box2_Ceiling_" data-uid="OpenTK.Mathematics.Box2.Ceiling*"></a>
   <h4 id="OpenTK_Mathematics_Box2_Ceiling_OpenTK_Mathematics_Box2_" data-uid="OpenTK.Mathematics.Box2.Ceiling(OpenTK.Mathematics.Box2)">Ceiling(Box2)</h4>
-  <div class="markdown level1 summary"><p>Gets a Box structure that contains rounded up integers.</p>
+  <div class="markdown level1 summary"><p>Returns a box that contains rounded up integers.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Box2i Ceiling(Box2 value)</code></pre>
+    <pre><code class="lang-csharp hljs">public static Box2 Ceiling(Box2 box)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -689,8 +602,8 @@ public struct Box2 : IEquatable&lt;Box2&gt;, IFormattable</code></pre>
     <tbody>
       <tr>
         <td><a class="xref" href="OpenTK.Mathematics.Box2.html">Box2</a></td>
-        <td><span class="parametername">value</span></td>
-        <td><p>A Box to round.</p>
+        <td><span class="parametername">box</span></td>
+        <td><p>The box to round.</p>
 </td>
       </tr>
     </tbody>
@@ -705,21 +618,21 @@ public struct Box2 : IEquatable&lt;Box2&gt;, IFormattable</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Mathematics.Box2i.html">Box2i</a></td>
-        <td><p>A Box structure that contains rounded up integers.</p>
+        <td><a class="xref" href="OpenTK.Mathematics.Box2.html">Box2</a></td>
+        <td><p>The box that contains rounded up integers.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="OpenTK_Mathematics_Box2_Contains_" data-uid="OpenTK.Mathematics.Box2.Contains*"></a>
   <h4 id="OpenTK_Mathematics_Box2_Contains_OpenTK_Mathematics_Box2_" data-uid="OpenTK.Mathematics.Box2.Contains(OpenTK.Mathematics.Box2)">Contains(Box2)</h4>
-  <div class="markdown level1 summary"><p>Returns whether the box contains the specified box (borders inclusive).</p>
+  <div class="markdown level1 summary"><p>Returns whether the box <code class="paramref">other</code> is entirely contained within this box.
+A box is considered to be able to contain itself.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Pure]
-public readonly bool Contains(Box2 other)</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly bool Contains(Box2 other)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -734,7 +647,7 @@ public readonly bool Contains(Box2 other)</code></pre>
       <tr>
         <td><a class="xref" href="OpenTK.Mathematics.Box2.html">Box2</a></td>
         <td><span class="parametername">other</span></td>
-        <td><p>The box to query.</p>
+        <td><p>The box to check.</p>
 </td>
       </tr>
     </tbody>
@@ -750,102 +663,7 @@ public readonly bool Contains(Box2 other)</code></pre>
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
-        <td><p>Whether this box contains the other box.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="OpenTK_Mathematics_Box2_Contains_" data-uid="OpenTK.Mathematics.Box2.Contains*"></a>
-  <h4 id="OpenTK_Mathematics_Box2_Contains_OpenTK_Mathematics_Vector2_" data-uid="OpenTK.Mathematics.Box2.Contains(OpenTK.Mathematics.Vector2)">Contains(Vector2)</h4>
-  <div class="markdown level1 summary"><p>Returns whether the box contains the specified point (borders exclusive).</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Pure]
-[Obsolete(&quot;This function used to exclude borders, but to follow changes from the other Box structs it&#39;s deprecated. Use ContainsInclusive and ContainsExclusive for the desired behaviour.&quot;)]
-public readonly bool Contains(Vector2 point)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Mathematics.Vector2.html">Vector2</a></td>
-        <td><span class="parametername">point</span></td>
-        <td><p>The point to query.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
-        <td><p>Whether this box contains the point.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="OpenTK_Mathematics_Box2_Contains_" data-uid="OpenTK.Mathematics.Box2.Contains*"></a>
-  <h4 id="OpenTK_Mathematics_Box2_Contains_OpenTK_Mathematics_Vector2_System_Boolean_" data-uid="OpenTK.Mathematics.Box2.Contains(OpenTK.Mathematics.Vector2,System.Boolean)">Contains(Vector2, bool)</h4>
-  <div class="markdown level1 summary"><p>Returns whether the box contains the specified point.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Pure]
-public readonly bool Contains(Vector2 point, bool boundaryInclusive)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Mathematics.Vector2.html">Vector2</a></td>
-        <td><span class="parametername">point</span></td>
-        <td><p>The point to query.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
-        <td><span class="parametername">boundaryInclusive</span></td>
-        <td><p>Whether points on the box boundary should be recognised as contained as well.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
-        <td><p>Whether this box contains the point.</p>
+        <td><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the box <code class="paramref">other</code> is entirely contained within the this box; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
 </td>
       </tr>
     </tbody>
@@ -857,8 +675,7 @@ public readonly bool Contains(Vector2 point, bool boundaryInclusive)</code></pre
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Pure]
-public readonly bool ContainsExclusive(Vector2 point)</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly bool ContainsExclusive(Vector2 point)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -894,6 +711,10 @@ public readonly bool ContainsExclusive(Vector2 point)</code></pre>
       </tr>
     </tbody>
   </table>
+  <h5 id="OpenTK_Mathematics_Box2_ContainsExclusive_OpenTK_Mathematics_Vector2__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="OpenTK.Mathematics.Box2.html#OpenTK_Mathematics_Box2_ContainsInclusive_OpenTK_Mathematics_Vector2_">ContainsInclusive(Vector2)</a></div>
+  </div>
   <a id="OpenTK_Mathematics_Box2_ContainsInclusive_" data-uid="OpenTK.Mathematics.Box2.ContainsInclusive*"></a>
   <h4 id="OpenTK_Mathematics_Box2_ContainsInclusive_OpenTK_Mathematics_Vector2_" data-uid="OpenTK.Mathematics.Box2.ContainsInclusive(OpenTK.Mathematics.Vector2)">ContainsInclusive(Vector2)</h4>
   <div class="markdown level1 summary"><p>Returns whether the box contains the specified point (borders inclusive).</p>
@@ -901,8 +722,7 @@ public readonly bool ContainsExclusive(Vector2 point)</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Pure]
-public readonly bool ContainsInclusive(Vector2 point)</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly bool ContainsInclusive(Vector2 point)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -938,6 +758,10 @@ public readonly bool ContainsInclusive(Vector2 point)</code></pre>
       </tr>
     </tbody>
   </table>
+  <h5 id="OpenTK_Mathematics_Box2_ContainsInclusive_OpenTK_Mathematics_Vector2__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="OpenTK.Mathematics.Box2.html#OpenTK_Mathematics_Box2_ContainsExclusive_OpenTK_Mathematics_Vector2_">ContainsExclusive(Vector2)</a></div>
+  </div>
   <a id="OpenTK_Mathematics_Box2_DistanceToNearestEdge_" data-uid="OpenTK.Mathematics.Box2.DistanceToNearestEdge*"></a>
   <h4 id="OpenTK_Mathematics_Box2_DistanceToNearestEdge_OpenTK_Mathematics_Vector2_" data-uid="OpenTK.Mathematics.Box2.DistanceToNearestEdge(OpenTK.Mathematics.Vector2)">DistanceToNearestEdge(Vector2)</h4>
   <div class="markdown level1 summary"><p>Returns the distance between the nearest edge and the specified point.</p>
@@ -945,8 +769,7 @@ public readonly bool ContainsInclusive(Vector2 point)</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Pure]
-public readonly float DistanceToNearestEdge(Vector2 point)</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly float DistanceToNearestEdge(Vector2 point)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -982,6 +805,52 @@ public readonly float DistanceToNearestEdge(Vector2 point)</code></pre>
       </tr>
     </tbody>
   </table>
+  <a id="OpenTK_Mathematics_Box2_DistanceToNearestPointInBox_" data-uid="OpenTK.Mathematics.Box2.DistanceToNearestPointInBox*"></a>
+  <h4 id="OpenTK_Mathematics_Box2_DistanceToNearestPointInBox_OpenTK_Mathematics_Vector2_" data-uid="OpenTK.Mathematics.Box2.DistanceToNearestPointInBox(OpenTK.Mathematics.Vector2)">DistanceToNearestPointInBox(Vector2)</h4>
+  <div class="markdown level1 summary"><p>Returns the distance between the nearest point inside the box and the specified point.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly float DistanceToNearestPointInBox(Vector2 point)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector2.html">Vector2</a></td>
+        <td><span class="parametername">point</span></td>
+        <td><p>The point to find distance for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><p>The distance between the specified point and the nearest edge.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenTK_Mathematics_Box2_DistanceToNearestPointInBox_OpenTK_Mathematics_Vector2__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The distance to points inside the box is zero.</p>
+</div>
   <a id="OpenTK_Mathematics_Box2_Equals_" data-uid="OpenTK.Mathematics.Box2.Equals*"></a>
   <h4 id="OpenTK_Mathematics_Box2_Equals_OpenTK_Mathematics_Box2_" data-uid="OpenTK.Mathematics.Box2.Equals(OpenTK.Mathematics.Box2)">Equals(Box2)</h4>
   <div class="markdown level1 summary"><p>Indicates whether the current object is equal to another object of the same type.</p>
@@ -1072,7 +941,7 @@ public readonly float DistanceToNearestEdge(Vector2 point)</code></pre>
   <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetype.equals">ValueType.Equals(object)</a></div>
   <a id="OpenTK_Mathematics_Box2_Extend_" data-uid="OpenTK.Mathematics.Box2.Extend*"></a>
   <h4 id="OpenTK_Mathematics_Box2_Extend_OpenTK_Mathematics_Vector2_" data-uid="OpenTK.Mathematics.Box2.Extend(OpenTK.Mathematics.Vector2)">Extend(Vector2)</h4>
-  <div class="markdown level1 summary"><p>Extend this Box2 to encapsulate a given point.</p>
+  <div class="markdown level1 summary"><p>Extends this box to encapsulate a given point.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -1097,15 +966,68 @@ public readonly float DistanceToNearestEdge(Vector2 point)</code></pre>
       </tr>
     </tbody>
   </table>
-  <a id="OpenTK_Mathematics_Box2_Extended_" data-uid="OpenTK.Mathematics.Box2.Extended*"></a>
-  <h4 id="OpenTK_Mathematics_Box2_Extended_OpenTK_Mathematics_Vector2_" data-uid="OpenTK.Mathematics.Box2.Extended(OpenTK.Mathematics.Vector2)">Extended(Vector2)</h4>
-  <div class="markdown level1 summary"><p>Extend this Box2 to encapsulate a given point.</p>
+  <h5 id="OpenTK_Mathematics_Box2_Extend_OpenTK_Mathematics_Vector2__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This can be used in combination with <a class="xref" href="OpenTK.Mathematics.Box2.html#OpenTK_Mathematics_Box2_Empty">Empty</a> to make an efficient bounding box calculation.</p>
+</div>
+  <h5 id="OpenTK_Mathematics_Box2_Extend_OpenTK_Mathematics_Vector2__examples">Examples</h5>
+  <p>For example:</p>
+<pre><code class="lang-csharp">Vector2[] points = GetPoints();
+Box2 aabb = Box2.Empty;
+for (int i = 0; i &lt; points.Length; i++)
+{
+    aabb.Extend(points[i]):
+}</code></pre>
+<p>Will calculate the bounding box of all the points in the array without needing a special case for the first point.</p>
+
+  <a id="OpenTK_Mathematics_Box2_ExtendNative_" data-uid="OpenTK.Mathematics.Box2.ExtendNative*"></a>
+  <h4 id="OpenTK_Mathematics_Box2_ExtendNative_OpenTK_Mathematics_Vector2_" data-uid="OpenTK.Mathematics.Box2.ExtendNative(OpenTK.Mathematics.Vector2)">ExtendNative(Vector2)</h4>
+  <div class="markdown level1 summary"><p>Extends this box to encapsulate a given point.
+With NaN propagation and -0 behaviour being platform dependent.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Pure]
-public readonly Box2 Extended(Vector2 point)</code></pre>
+    <pre><code class="lang-csharp hljs">public void ExtendNative(Vector2 point)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector2.html">Vector2</a></td>
+        <td><span class="parametername">point</span></td>
+        <td><p>The point to contain.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenTK_Mathematics_Box2_ExtendNative_OpenTK_Mathematics_Vector2__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This can be used in combination with <a class="xref" href="OpenTK.Mathematics.Box2.html#OpenTK_Mathematics_Box2_Empty">Empty</a> to make an efficient bounding box calculation.</p>
+</div>
+  <h5 id="OpenTK_Mathematics_Box2_ExtendNative_OpenTK_Mathematics_Vector2__examples">Examples</h5>
+  <p>For example:</p>
+<pre><code class="lang-csharp">Vector2[] points = GetPoints();
+Box2 aabb = Box2.Empty;
+for (int i = 0; i &lt; points.Length; i++)
+{
+    aabb.Extend(points[i]):
+}</code></pre>
+<p>Will calculate the bounding box of all the points in the array without needing a special case for the first point.</p>
+
+  <a id="OpenTK_Mathematics_Box2_Extended_" data-uid="OpenTK.Mathematics.Box2.Extended*"></a>
+  <h4 id="OpenTK_Mathematics_Box2_Extended_OpenTK_Mathematics_Vector2_" data-uid="OpenTK.Mathematics.Box2.Extended(OpenTK.Mathematics.Vector2)">Extended(Vector2)</h4>
+  <div class="markdown level1 summary"><p>Returns a box that is extended to encapsulate a given point.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly Box2 Extended(Vector2 point)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -1136,19 +1058,33 @@ public readonly Box2 Extended(Vector2 point)</code></pre>
     <tbody>
       <tr>
         <td><a class="xref" href="OpenTK.Mathematics.Box2.html">Box2</a></td>
-        <td><p>The inflated box.</p>
+        <td><p>The extended box.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <a id="OpenTK_Mathematics_Box2_Floor_" data-uid="OpenTK.Mathematics.Box2.Floor*"></a>
-  <h4 id="OpenTK_Mathematics_Box2_Floor_OpenTK_Mathematics_Box2_" data-uid="OpenTK.Mathematics.Box2.Floor(OpenTK.Mathematics.Box2)">Floor(Box2)</h4>
-  <div class="markdown level1 summary"><p>Gets a Box structure that contains rounded down integers.</p>
+  <h5 id="OpenTK_Mathematics_Box2_Extended_OpenTK_Mathematics_Vector2__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This can be used in combination with <a class="xref" href="OpenTK.Mathematics.Box2.html#OpenTK_Mathematics_Box2_Empty">Empty</a> to make an efficient bounding box calculation.</p>
+</div>
+  <h5 id="OpenTK_Mathematics_Box2_Extended_OpenTK_Mathematics_Vector2__examples">Examples</h5>
+  <p>For example:</p>
+<pre><code class="lang-csharp">Vector2[] points = GetPoints();
+Box2 aabb = Box2.Empty;
+for (int i = 0; i &lt; points.Length; i++)
+{
+    aabb = aabb.Extended(points[i]):
+}</code></pre>
+<p>Will calculate the bounding box of all the points in the array without needing a special case for the first point.</p>
+
+  <a id="OpenTK_Mathematics_Box2_ExtendedNative_" data-uid="OpenTK.Mathematics.Box2.ExtendedNative*"></a>
+  <h4 id="OpenTK_Mathematics_Box2_ExtendedNative_OpenTK_Mathematics_Vector2_" data-uid="OpenTK.Mathematics.Box2.ExtendedNative(OpenTK.Mathematics.Vector2)">ExtendedNative(Vector2)</h4>
+  <div class="markdown level1 summary"><p>Returns a box that is extended to encapsulate a given point.
+With NaN propagation and -0 behaviour being platform dependent.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Box2i Floor(Box2 value)</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly Box2 ExtendedNative(Vector2 point)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -1161,9 +1097,9 @@ public readonly Box2 Extended(Vector2 point)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Mathematics.Box2.html">Box2</a></td>
-        <td><span class="parametername">value</span></td>
-        <td><p>A Box to round.</p>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector2.html">Vector2</a></td>
+        <td><span class="parametername">point</span></td>
+        <td><p>The point to contain.</p>
 </td>
       </tr>
     </tbody>
@@ -1178,20 +1114,168 @@ public readonly Box2 Extended(Vector2 point)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Mathematics.Box2i.html">Box2i</a></td>
-        <td><p>A Box structure that contains rounded down integers.</p>
+        <td><a class="xref" href="OpenTK.Mathematics.Box2.html">Box2</a></td>
+        <td><p>The extended box.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <a id="OpenTK_Mathematics_Box2_FromPositions_" data-uid="OpenTK.Mathematics.Box2.FromPositions*"></a>
-  <h4 id="OpenTK_Mathematics_Box2_FromPositions_OpenTK_Mathematics_Vector2_OpenTK_Mathematics_Vector2_" data-uid="OpenTK.Mathematics.Box2.FromPositions(OpenTK.Mathematics.Vector2,OpenTK.Mathematics.Vector2)">FromPositions(Vector2, Vector2)</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="OpenTK.Mathematics.Box2.html">Box2</a> struct.</p>
+  <h5 id="OpenTK_Mathematics_Box2_ExtendedNative_OpenTK_Mathematics_Vector2__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This can be used in combination with <a class="xref" href="OpenTK.Mathematics.Box2.html#OpenTK_Mathematics_Box2_Empty">Empty</a> to make an efficient bounding box calculation.</p>
+</div>
+  <h5 id="OpenTK_Mathematics_Box2_ExtendedNative_OpenTK_Mathematics_Vector2__examples">Examples</h5>
+  <p>For example:</p>
+<pre><code class="lang-csharp">Vector2[] points = GetPoints();
+Box2 aabb = Box2.Empty;
+for (int i = 0; i &lt; points.Length; i++)
+{
+    aabb = aabb.Extended(points[i]):
+}</code></pre>
+<p>Will calculate the bounding box of all the points in the array without needing a special case for the first point.</p>
+
+  <a id="OpenTK_Mathematics_Box2_Floor_" data-uid="OpenTK.Mathematics.Box2.Floor*"></a>
+  <h4 id="OpenTK_Mathematics_Box2_Floor_OpenTK_Mathematics_Box2_" data-uid="OpenTK.Mathematics.Box2.Floor(OpenTK.Mathematics.Box2)">Floor(Box2)</h4>
+  <div class="markdown level1 summary"><p>Returns a box that contains rounded down integers.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Box2 FromPositions(Vector2 min, Vector2 max)</code></pre>
+    <pre><code class="lang-csharp hljs">public static Box2 Floor(Box2 box)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Box2.html">Box2</a></td>
+        <td><span class="parametername">box</span></td>
+        <td><p>The box to round.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Box2.html">Box2</a></td>
+        <td><p>The box that contains rounded down integers.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Box2_FloorCeiling_" data-uid="OpenTK.Mathematics.Box2.FloorCeiling*"></a>
+  <h4 id="OpenTK_Mathematics_Box2_FloorCeiling_OpenTK_Mathematics_Box2_" data-uid="OpenTK.Mathematics.Box2.FloorCeiling(OpenTK.Mathematics.Box2)">FloorCeiling(Box2)</h4>
+  <div class="markdown level1 summary"><p>Returns a box where <a class="xref" href="OpenTK.Mathematics.Box2.html#OpenTK_Mathematics_Box2_Min">Min</a> has been rounded down and <a class="xref" href="OpenTK.Mathematics.Box2.html#OpenTK_Mathematics_Box2_Max">Max</a> has been rounded up.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Box2 FloorCeiling(Box2 box)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Box2.html">Box2</a></td>
+        <td><span class="parametername">box</span></td>
+        <td><p>The box to round.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Box2.html">Box2</a></td>
+        <td><p>The box that contains rounded down integers.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Box2_FromCenterAndHalfSize_" data-uid="OpenTK.Mathematics.Box2.FromCenterAndHalfSize*"></a>
+  <h4 id="OpenTK_Mathematics_Box2_FromCenterAndHalfSize_OpenTK_Mathematics_Vector2_OpenTK_Mathematics_Vector2_" data-uid="OpenTK.Mathematics.Box2.FromCenterAndHalfSize(OpenTK.Mathematics.Vector2,OpenTK.Mathematics.Vector2)">FromCenterAndHalfSize(Vector2, Vector2)</h4>
+  <div class="markdown level1 summary"><p>Creates a box from a center point and a half size.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Box2 FromCenterAndHalfSize(Vector2 center, Vector2 halfSize)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector2.html">Vector2</a></td>
+        <td><span class="parametername">center</span></td>
+        <td><p>The center of the box.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector2.html">Vector2</a></td>
+        <td><span class="parametername">halfSize</span></td>
+        <td><p>The half size of the box.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Box2.html">Box2</a></td>
+        <td><p>The created box.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Box2_FromMinMax_" data-uid="OpenTK.Mathematics.Box2.FromMinMax*"></a>
+  <h4 id="OpenTK_Mathematics_Box2_FromMinMax_OpenTK_Mathematics_Vector2_OpenTK_Mathematics_Vector2_" data-uid="OpenTK.Mathematics.Box2.FromMinMax(OpenTK.Mathematics.Vector2,OpenTK.Mathematics.Vector2)">FromMinMax(Vector2, Vector2)</h4>
+  <div class="markdown level1 summary"><p>Creates a box from a minimum and maximum point.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Box2 FromMinMax(Vector2 min, Vector2 max)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -1228,80 +1312,19 @@ public readonly Box2 Extended(Vector2 point)</code></pre>
     <tbody>
       <tr>
         <td><a class="xref" href="OpenTK.Mathematics.Box2.html">Box2</a></td>
-        <td><p>A box.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="OpenTK_Mathematics_Box2_FromPositions_" data-uid="OpenTK.Mathematics.Box2.FromPositions*"></a>
-  <h4 id="OpenTK_Mathematics_Box2_FromPositions_System_Single_System_Single_System_Single_System_Single_" data-uid="OpenTK.Mathematics.Box2.FromPositions(System.Single,System.Single,System.Single,System.Single)">FromPositions(float, float, float, float)</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="OpenTK.Mathematics.Box2.html">Box2</a> struct.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Box2 FromPositions(float minX, float minY, float maxX, float maxY)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
-        <td><span class="parametername">minX</span></td>
-        <td><p>The minimum X value to be enclosed.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
-        <td><span class="parametername">minY</span></td>
-        <td><p>The minimum Y value to be enclosed.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
-        <td><span class="parametername">maxX</span></td>
-        <td><p>The maximum X value to be enclosed.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
-        <td><span class="parametername">maxY</span></td>
-        <td><p>The maximum Y value to be enclosed.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Mathematics.Box2.html">Box2</a></td>
-        <td><p>A box.</p>
+        <td><p>The created box.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="OpenTK_Mathematics_Box2_FromSize_" data-uid="OpenTK.Mathematics.Box2.FromSize*"></a>
   <h4 id="OpenTK_Mathematics_Box2_FromSize_OpenTK_Mathematics_Vector2_OpenTK_Mathematics_Vector2_" data-uid="OpenTK.Mathematics.Box2.FromSize(OpenTK.Mathematics.Vector2,OpenTK.Mathematics.Vector2)">FromSize(Vector2, Vector2)</h4>
-  <div class="markdown level1 summary"><p>Creates a box.</p>
+  <div class="markdown level1 summary"><p>Creates a box from a point and size.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Box2 FromSize(Vector2 location, Vector2 size)</code></pre>
+    <pre><code class="lang-csharp hljs">public static Box2 FromSize(Vector2 point, Vector2 size)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -1315,8 +1338,8 @@ public readonly Box2 Extended(Vector2 point)</code></pre>
     <tbody>
       <tr>
         <td><a class="xref" href="OpenTK.Mathematics.Vector2.html">Vector2</a></td>
-        <td><span class="parametername">location</span></td>
-        <td><p>The location of the box.</p>
+        <td><span class="parametername">point</span></td>
+        <td><p>The minimum point of the box.</p>
 </td>
       </tr>
       <tr>
@@ -1338,7 +1361,56 @@ public readonly Box2 Extended(Vector2 point)</code></pre>
     <tbody>
       <tr>
         <td><a class="xref" href="OpenTK.Mathematics.Box2.html">Box2</a></td>
-        <td><p>A box.</p>
+        <td><p>The created box.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Box2_FromTwoPoints_" data-uid="OpenTK.Mathematics.Box2.FromTwoPoints*"></a>
+  <h4 id="OpenTK_Mathematics_Box2_FromTwoPoints_OpenTK_Mathematics_Vector2_OpenTK_Mathematics_Vector2_" data-uid="OpenTK.Mathematics.Box2.FromTwoPoints(OpenTK.Mathematics.Vector2,OpenTK.Mathematics.Vector2)">FromTwoPoints(Vector2, Vector2)</h4>
+  <div class="markdown level1 summary"><p>Create a box from two unordered points, i.e. creates a box that contains two points.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Box2 FromTwoPoints(Vector2 p1, Vector2 p2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector2.html">Vector2</a></td>
+        <td><span class="parametername">p1</span></td>
+        <td><p>The first point to contain.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector2.html">Vector2</a></td>
+        <td><span class="parametername">p2</span></td>
+        <td><p>The second point to contain.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Box2.html">Box2</a></td>
+        <td><p>The created box.</p>
 </td>
       </tr>
     </tbody>
@@ -1372,8 +1444,8 @@ public readonly Box2 Extended(Vector2 point)</code></pre>
   <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode">ValueType.GetHashCode()</a></div>
   <a id="OpenTK_Mathematics_Box2_Inflate_" data-uid="OpenTK.Mathematics.Box2.Inflate*"></a>
   <h4 id="OpenTK_Mathematics_Box2_Inflate_OpenTK_Mathematics_Vector2_" data-uid="OpenTK.Mathematics.Box2.Inflate(OpenTK.Mathematics.Vector2)">Inflate(Vector2)</h4>
-  <div class="markdown level1 summary"><p>Inflates this Box2 by the given size in all directions. A negative size will shrink the box to a maximum of -HalfSize.
-Use the <a class="xref" href="OpenTK.Mathematics.Box2.html#OpenTK_Mathematics_Box2_Extend_OpenTK_Mathematics_Vector2_">Extend(Vector2)</a> method for the point-encapsulation functionality in OpenTK version 4.8.1 and earlier.</p>
+  <div class="markdown level1 summary"><p>Inflates this box by the given size in all directions.
+A negative size will shrink the box to a maximum of -<a class="xref" href="OpenTK.Mathematics.Box2.html#OpenTK_Mathematics_Box2_HalfSize">HalfSize</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -1400,14 +1472,13 @@ Use the <a class="xref" href="OpenTK.Mathematics.Box2.html#OpenTK_Mathematics_Bo
   </table>
   <a id="OpenTK_Mathematics_Box2_Inflated_" data-uid="OpenTK.Mathematics.Box2.Inflated*"></a>
   <h4 id="OpenTK_Mathematics_Box2_Inflated_OpenTK_Mathematics_Vector2_" data-uid="OpenTK.Mathematics.Box2.Inflated(OpenTK.Mathematics.Vector2)">Inflated(Vector2)</h4>
-  <div class="markdown level1 summary"><p>Inflates this Box2 by the given size in all directions. A negative size will shrink the box to a maximum of -HalfSize.
-Use the <a class="xref" href="OpenTK.Mathematics.Box2.html#OpenTK_Mathematics_Box2_Extended_OpenTK_Mathematics_Vector2_">Extended(Vector2)</a> method for the point-encapsulation functionality in OpenTK version 4.8.1 and earlier.</p>
+  <div class="markdown level1 summary"><p>Returns a box inflated by the given size in all directions.
+A negative size will shrink the box to a maximum of -<a class="xref" href="OpenTK.Mathematics.Box2.html#OpenTK_Mathematics_Box2_HalfSize">HalfSize</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Pure]
-public readonly Box2 Inflated(Vector2 size)</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly Box2 Inflated(Vector2 size)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -1445,7 +1516,7 @@ public readonly Box2 Inflated(Vector2 size)</code></pre>
   </table>
   <a id="OpenTK_Mathematics_Box2_Intersect_" data-uid="OpenTK.Mathematics.Box2.Intersect*"></a>
   <h4 id="OpenTK_Mathematics_Box2_Intersect_OpenTK_Mathematics_Box2_" data-uid="OpenTK.Mathematics.Box2.Intersect(OpenTK.Mathematics.Box2)">Intersect(Box2)</h4>
-  <div class="markdown level1 summary"><p>Replaces this Box with the intersection of itself and the specified Box.</p>
+  <div class="markdown level1 summary"><p>Replaces this box with the intersection of itself and the specified box.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -1472,7 +1543,7 @@ public readonly Box2 Inflated(Vector2 size)</code></pre>
   </table>
   <a id="OpenTK_Mathematics_Box2_Intersect_" data-uid="OpenTK.Mathematics.Box2.Intersect*"></a>
   <h4 id="OpenTK_Mathematics_Box2_Intersect_OpenTK_Mathematics_Box2_OpenTK_Mathematics_Box2_" data-uid="OpenTK.Mathematics.Box2.Intersect(OpenTK.Mathematics.Box2,OpenTK.Mathematics.Box2)">Intersect(Box2, Box2)</h4>
-  <div class="markdown level1 summary"><p>Returns the intersection of two Boxes.</p>
+  <div class="markdown level1 summary"><p>Returns the intersection of two boxes, or <a class="xref" href="OpenTK.Mathematics.Box2.html#OpenTK_Mathematics_Box2_Empty">Empty</a> if there is no intersection.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -1514,14 +1585,64 @@ public readonly Box2 Inflated(Vector2 size)</code></pre>
     <tbody>
       <tr>
         <td><a class="xref" href="OpenTK.Mathematics.Box2.html">Box2</a></td>
-        <td><p>The intersection of two Boxes.</p>
+        <td><p>The intersection of the two boxes.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Box2_IntersectNative_" data-uid="OpenTK.Mathematics.Box2.IntersectNative*"></a>
+  <h4 id="OpenTK_Mathematics_Box2_IntersectNative_OpenTK_Mathematics_Box2__OpenTK_Mathematics_Box2__" data-uid="OpenTK.Mathematics.Box2.IntersectNative(OpenTK.Mathematics.Box2@,OpenTK.Mathematics.Box2@)">IntersectNative(in Box2, in Box2)</h4>
+  <div class="markdown level1 summary"><p>Returns the intersection of two boxes, or <a class="xref" href="OpenTK.Mathematics.Box2.html#OpenTK_Mathematics_Box2_Empty">Empty</a> if there is no intersection.
+With NaN propagation and -0 behaviour being platform depedent.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Box2 IntersectNative(in Box2 a, in Box2 b)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Box2.html">Box2</a></td>
+        <td><span class="parametername">a</span></td>
+        <td><p>The first box.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Box2.html">Box2</a></td>
+        <td><span class="parametername">b</span></td>
+        <td><p>The second box.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Box2.html">Box2</a></td>
+        <td><p>The intersection of the two boxes.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="OpenTK_Mathematics_Box2_Intersected_" data-uid="OpenTK.Mathematics.Box2.Intersected*"></a>
   <h4 id="OpenTK_Mathematics_Box2_Intersected_OpenTK_Mathematics_Box2_" data-uid="OpenTK.Mathematics.Box2.Intersected(OpenTK.Mathematics.Box2)">Intersected(Box2)</h4>
-  <div class="markdown level1 summary"><p>Returns the intersection of itself and the specified Box.</p>
+  <div class="markdown level1 summary"><p>Returns the intersection of itself and the specified box.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -1557,14 +1678,14 @@ public readonly Box2 Inflated(Vector2 size)</code></pre>
     <tbody>
       <tr>
         <td><a class="xref" href="OpenTK.Mathematics.Box2.html">Box2</a></td>
-        <td><p>The intersection of itself and the specified Box.</p>
+        <td><p>The intersection of itself and the specified box.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="OpenTK_Mathematics_Box2_IntersectsWith_" data-uid="OpenTK.Mathematics.Box2.IntersectsWith*"></a>
   <h4 id="OpenTK_Mathematics_Box2_IntersectsWith_OpenTK_Mathematics_Box2_" data-uid="OpenTK.Mathematics.Box2.IntersectsWith(OpenTK.Mathematics.Box2)">IntersectsWith(Box2)</h4>
-  <div class="markdown level1 summary"><p>Determines if this Box intersects with another Box.</p>
+  <div class="markdown level1 summary"><p>Determines if this box intersects with another box.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -1584,7 +1705,7 @@ public readonly Box2 Inflated(Vector2 size)</code></pre>
       <tr>
         <td><a class="xref" href="OpenTK.Mathematics.Box2.html">Box2</a></td>
         <td><span class="parametername">other</span></td>
-        <td><p>The Box to test.</p>
+        <td><p>The box to test.</p>
 </td>
       </tr>
     </tbody>
@@ -1600,19 +1721,22 @@ public readonly Box2 Inflated(Vector2 size)</code></pre>
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
-        <td><p>This method returns true if there is any intersection, otherwise false.</p>
+        <td><p>This method returns <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if there is any intersection, otherwise <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <a id="OpenTK_Mathematics_Box2_Round_" data-uid="OpenTK.Mathematics.Box2.Round*"></a>
-  <h4 id="OpenTK_Mathematics_Box2_Round_OpenTK_Mathematics_Box2_" data-uid="OpenTK.Mathematics.Box2.Round(OpenTK.Mathematics.Box2)">Round(Box2)</h4>
-  <div class="markdown level1 summary"><p>Gets a Box structure that contains rounded integers.</p>
+  <h5 id="OpenTK_Mathematics_Box2_IntersectsWith_OpenTK_Mathematics_Box2__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Two boxes next to each other do not intersect, for detecting that case use <a class="xref" href="OpenTK.Mathematics.Box2.html#OpenTK_Mathematics_Box2_Touches_OpenTK_Mathematics_Box2_">Touches(Box2)</a>.</p>
+</div>
+  <a id="OpenTK_Mathematics_Box2_NearestPointInBox_" data-uid="OpenTK.Mathematics.Box2.NearestPointInBox*"></a>
+  <h4 id="OpenTK_Mathematics_Box2_NearestPointInBox_OpenTK_Mathematics_Vector2_" data-uid="OpenTK.Mathematics.Box2.NearestPointInBox(OpenTK.Mathematics.Vector2)">NearestPointInBox(Vector2)</h4>
+  <div class="markdown level1 summary"><p>Returns the nearest point in or on the edge of the box to the given point, <code class="paramref">point</code>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Box2i Round(Box2 value)</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly Vector2 NearestPointInBox(Vector2 point)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -1625,9 +1749,9 @@ public readonly Box2 Inflated(Vector2 size)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Mathematics.Box2.html">Box2</a></td>
-        <td><span class="parametername">value</span></td>
-        <td><p>A Box to round.</p>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector2.html">Vector2</a></td>
+        <td><span class="parametername">point</span></td>
+        <td><p>The point for which the nearest point in the box should be found.</p>
 </td>
       </tr>
     </tbody>
@@ -1642,15 +1766,101 @@ public readonly Box2 Inflated(Vector2 size)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Mathematics.Box2i.html">Box2i</a></td>
-        <td><p>A Box structure that contains rounded integers.</p>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector2.html">Vector2</a></td>
+        <td><p>The nearest point on or on the edge of the box to the point, <code class="paramref">point</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Box2_NearestPointOnEdge_" data-uid="OpenTK.Mathematics.Box2.NearestPointOnEdge*"></a>
+  <h4 id="OpenTK_Mathematics_Box2_NearestPointOnEdge_OpenTK_Mathematics_Vector2_" data-uid="OpenTK.Mathematics.Box2.NearestPointOnEdge(OpenTK.Mathematics.Vector2)">NearestPointOnEdge(Vector2)</h4>
+  <div class="markdown level1 summary"><p>Returns the nearest point that is on the edge of the box.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly Vector2 NearestPointOnEdge(Vector2 point)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector2.html">Vector2</a></td>
+        <td><span class="parametername">point</span></td>
+        <td><p>The point for which the nearest point on the edge of the box should be found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector2.html">Vector2</a></td>
+        <td><p>The nearest point on the edge of the box to the point, <code class="paramref">point</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Box2_Round_" data-uid="OpenTK.Mathematics.Box2.Round*"></a>
+  <h4 id="OpenTK_Mathematics_Box2_Round_OpenTK_Mathematics_Box2_" data-uid="OpenTK.Mathematics.Box2.Round(OpenTK.Mathematics.Box2)">Round(Box2)</h4>
+  <div class="markdown level1 summary"><p>Returns a box that contains rounded integers.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Box2 Round(Box2 box)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Box2.html">Box2</a></td>
+        <td><span class="parametername">box</span></td>
+        <td><p>The box to round.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Box2.html">Box2</a></td>
+        <td><p>The box that contains rounded integers.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="OpenTK_Mathematics_Box2_Scale_" data-uid="OpenTK.Mathematics.Box2.Scale*"></a>
   <h4 id="OpenTK_Mathematics_Box2_Scale_OpenTK_Mathematics_Vector2_OpenTK_Mathematics_Vector2_" data-uid="OpenTK.Mathematics.Box2.Scale(OpenTK.Mathematics.Vector2,OpenTK.Mathematics.Vector2)">Scale(Vector2, Vector2)</h4>
-  <div class="markdown level1 summary"><p>Scales this Box2 by the given amount.</p>
+  <div class="markdown level1 summary"><p>Scales this box by the given scale, <code class="paramref">scale</code>, and from the given anchor point, <code class="paramref">anchor</code>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -1683,13 +1893,12 @@ public readonly Box2 Inflated(Vector2 size)</code></pre>
   </table>
   <a id="OpenTK_Mathematics_Box2_Scaled_" data-uid="OpenTK.Mathematics.Box2.Scaled*"></a>
   <h4 id="OpenTK_Mathematics_Box2_Scaled_OpenTK_Mathematics_Vector2_OpenTK_Mathematics_Vector2_" data-uid="OpenTK.Mathematics.Box2.Scaled(OpenTK.Mathematics.Vector2,OpenTK.Mathematics.Vector2)">Scaled(Vector2, Vector2)</h4>
-  <div class="markdown level1 summary"><p>Returns a Box2 scaled by a given amount from an anchor point.</p>
+  <div class="markdown level1 summary"><p>Returns a box scaled by the given scale, <code class="paramref">scale</code>, and from the given anchor point, <code class="paramref">anchor</code>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Pure]
-public readonly Box2 Scaled(Vector2 scale, Vector2 anchor)</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly Box2 Scaled(Vector2 scale, Vector2 anchor)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -1727,6 +1936,49 @@ public readonly Box2 Scaled(Vector2 scale, Vector2 anchor)</code></pre>
       <tr>
         <td><a class="xref" href="OpenTK.Mathematics.Box2.html">Box2</a></td>
         <td><p>The scaled box.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Box2_SignedDistanceToNearestEdge_" data-uid="OpenTK.Mathematics.Box2.SignedDistanceToNearestEdge*"></a>
+  <h4 id="OpenTK_Mathematics_Box2_SignedDistanceToNearestEdge_OpenTK_Mathematics_Vector2_" data-uid="OpenTK.Mathematics.Box2.SignedDistanceToNearestEdge(OpenTK.Mathematics.Vector2)">SignedDistanceToNearestEdge(Vector2)</h4>
+  <div class="markdown level1 summary"><p>Returns the signed distance between the nearest edge and the specified point.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly float SignedDistanceToNearestEdge(Vector2 point)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector2.html">Vector2</a></td>
+        <td><span class="parametername">point</span></td>
+        <td><p>The point to find distance for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><p>The distance between the specified point and the nearest edge.</p>
 </td>
       </tr>
     </tbody>
@@ -1901,14 +2153,14 @@ public readonly Box2 Scaled(Vector2 scale, Vector2 anchor)</code></pre>
       </tr>
     </tbody>
   </table>
-  <a id="OpenTK_Mathematics_Box2_TouchWith_" data-uid="OpenTK.Mathematics.Box2.TouchWith*"></a>
-  <h4 id="OpenTK_Mathematics_Box2_TouchWith_OpenTK_Mathematics_Box2_" data-uid="OpenTK.Mathematics.Box2.TouchWith(OpenTK.Mathematics.Box2)">TouchWith(Box2)</h4>
-  <div class="markdown level1 summary"><p>Determines if this Box intersects or touches with another Box.</p>
+  <a id="OpenTK_Mathematics_Box2_Touches_" data-uid="OpenTK.Mathematics.Box2.Touches*"></a>
+  <h4 id="OpenTK_Mathematics_Box2_Touches_OpenTK_Mathematics_Box2_" data-uid="OpenTK.Mathematics.Box2.Touches(OpenTK.Mathematics.Box2)">Touches(Box2)</h4>
+  <div class="markdown level1 summary"><p>Determines if this box intersects or touches with another box.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public readonly bool TouchWith(Box2 other)</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly bool Touches(Box2 other)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -1923,7 +2175,7 @@ public readonly Box2 Scaled(Vector2 scale, Vector2 anchor)</code></pre>
       <tr>
         <td><a class="xref" href="OpenTK.Mathematics.Box2.html">Box2</a></td>
         <td><span class="parametername">other</span></td>
-        <td><p>The Box to test.</p>
+        <td><p>The box to test.</p>
 </td>
       </tr>
     </tbody>
@@ -1939,14 +2191,14 @@ public readonly Box2 Scaled(Vector2 scale, Vector2 anchor)</code></pre>
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
-        <td><p>This method returns true if there is any intersection or touches, otherwise false.</p>
+        <td><p>This method returns <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if there is any intersection or touches, otherwise <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="OpenTK_Mathematics_Box2_Translate_" data-uid="OpenTK.Mathematics.Box2.Translate*"></a>
   <h4 id="OpenTK_Mathematics_Box2_Translate_OpenTK_Mathematics_Vector2_" data-uid="OpenTK.Mathematics.Box2.Translate(OpenTK.Mathematics.Vector2)">Translate(Vector2)</h4>
-  <div class="markdown level1 summary"><p>Translates this Box2 by the given amount.</p>
+  <div class="markdown level1 summary"><p>Translates this box by the given distance.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -1973,13 +2225,12 @@ public readonly Box2 Scaled(Vector2 scale, Vector2 anchor)</code></pre>
   </table>
   <a id="OpenTK_Mathematics_Box2_Translated_" data-uid="OpenTK.Mathematics.Box2.Translated*"></a>
   <h4 id="OpenTK_Mathematics_Box2_Translated_OpenTK_Mathematics_Vector2_" data-uid="OpenTK.Mathematics.Box2.Translated(OpenTK.Mathematics.Vector2)">Translated(Vector2)</h4>
-  <div class="markdown level1 summary"><p>Returns a Box2 translated by the given amount.</p>
+  <div class="markdown level1 summary"><p>Returns a box translated by the given distance.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Pure]
-public readonly Box2 Translated(Vector2 distance)</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly Box2 Translated(Vector2 distance)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -2015,60 +2266,12 @@ public readonly Box2 Translated(Vector2 distance)</code></pre>
       </tr>
     </tbody>
   </table>
-  <a id="OpenTK_Mathematics_Box2_Union_" data-uid="OpenTK.Mathematics.Box2.Union*"></a>
-  <h4 id="OpenTK_Mathematics_Box2_Union_OpenTK_Mathematics_Box2_OpenTK_Mathematics_Box2_" data-uid="OpenTK.Mathematics.Box2.Union(OpenTK.Mathematics.Box2,OpenTK.Mathematics.Box2)">Union(Box2, Box2)</h4>
-  <div class="markdown level1 summary"><p>Gets a Box structure that contains the union of two Box structures.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Box2 Union(Box2 a, Box2 b)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Mathematics.Box2.html">Box2</a></td>
-        <td><span class="parametername">a</span></td>
-        <td><p>A Box to union.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="OpenTK.Mathematics.Box2.html">Box2</a></td>
-        <td><span class="parametername">b</span></td>
-        <td><p>a box to union.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Mathematics.Box2.html">Box2</a></td>
-        <td><p>A Box structure that bounds the union of the two Box structures.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
   <h3 id="operators">Operators
 </h3>
   <a id="OpenTK_Mathematics_Box2_op_Equality_" data-uid="OpenTK.Mathematics.Box2.op_Equality*"></a>
   <h4 id="OpenTK_Mathematics_Box2_op_Equality_OpenTK_Mathematics_Box2_OpenTK_Mathematics_Box2_" data-uid="OpenTK.Mathematics.Box2.op_Equality(OpenTK.Mathematics.Box2,OpenTK.Mathematics.Box2)">operator ==(Box2, Box2)</h4>
-  <div class="markdown level1 summary"><p>Equality comparator.</p>
+  <div class="markdown level1 summary"><p>Equality comparator.
+Two boxes are considered equal if both the <a class="xref" href="OpenTK.Mathematics.Box2.html#OpenTK_Mathematics_Box2_Min">Min</a> and <a class="xref" href="OpenTK.Mathematics.Box2.html#OpenTK_Mathematics_Box2_Max">Max</a> fields are equal.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -2115,14 +2318,97 @@ public readonly Box2 Translated(Vector2 distance)</code></pre>
     </tbody>
   </table>
   <a id="OpenTK_Mathematics_Box2_op_Explicit_" data-uid="OpenTK.Mathematics.Box2.op_Explicit*"></a>
-  <h4 id="OpenTK_Mathematics_Box2_op_Explicit_OpenTK_Mathematics_Box2__System_Drawing_RectangleF" data-uid="OpenTK.Mathematics.Box2.op_Explicit(OpenTK.Mathematics.Box2)~System.Drawing.RectangleF">explicit operator RectangleF(Box2)</h4>
-  <div class="markdown level1 summary"><p>Converts this <a class="xref" href="OpenTK.Mathematics.Box2i.html">Box2i</a> to a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.rectangle">Rectangle</a> using <a class="xref" href="OpenTK.Mathematics.Box2.html#OpenTK_Mathematics_Box2_Min">Min</a> as the position and <a class="xref" href="OpenTK.Mathematics.Box2.html#OpenTK_Mathematics_Box2_Size">Size</a> as the size.</p>
+  <h4 id="OpenTK_Mathematics_Box2_op_Explicit_OpenTK_Mathematics_Box2__OpenTK_Mathematics_Box2d" data-uid="OpenTK.Mathematics.Box2.op_Explicit(OpenTK.Mathematics.Box2)~OpenTK.Mathematics.Box2d">explicit operator Box2d(Box2)</h4>
+  <div class="markdown level1 summary"><p>Converts this <a class="xref" href="OpenTK.Mathematics.Box2.html">Box2</a> to a <a class="xref" href="OpenTK.Mathematics.Box2d.html">Box2d</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Pure]
-public static explicit operator RectangleF(Box2 box)</code></pre>
+    <pre><code class="lang-csharp hljs">public static explicit operator Box2d(Box2 box)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Box2.html">Box2</a></td>
+        <td><span class="parametername">box</span></td>
+        <td><p>The box to cast.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Box2d.html">Box2d</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Box2_op_Explicit_" data-uid="OpenTK.Mathematics.Box2.op_Explicit*"></a>
+  <h4 id="OpenTK_Mathematics_Box2_op_Explicit_OpenTK_Mathematics_Box2__OpenTK_Mathematics_Box2i" data-uid="OpenTK.Mathematics.Box2.op_Explicit(OpenTK.Mathematics.Box2)~OpenTK.Mathematics.Box2i">explicit operator Box2i(Box2)</h4>
+  <div class="markdown level1 summary"><p>Converts this <a class="xref" href="OpenTK.Mathematics.Box2.html">Box2</a> to a <a class="xref" href="OpenTK.Mathematics.Box2i.html">Box2i</a> using truncation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static explicit operator Box2i(Box2 box)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Box2.html">Box2</a></td>
+        <td><span class="parametername">box</span></td>
+        <td><p>The box to cast.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Box2i.html">Box2i</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Box2_op_Explicit_" data-uid="OpenTK.Mathematics.Box2.op_Explicit*"></a>
+  <h4 id="OpenTK_Mathematics_Box2_op_Explicit_OpenTK_Mathematics_Box2__System_Drawing_RectangleF" data-uid="OpenTK.Mathematics.Box2.op_Explicit(OpenTK.Mathematics.Box2)~System.Drawing.RectangleF">explicit operator RectangleF(Box2)</h4>
+  <div class="markdown level1 summary"><p>Converts this <a class="xref" href="OpenTK.Mathematics.Box2.html">Box2</a> to a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.rectangle">Rectangle</a> using <a class="xref" href="OpenTK.Mathematics.Box2.html#OpenTK_Mathematics_Box2_Min">Min</a> as the position and <a class="xref" href="OpenTK.Mathematics.Box2.html#OpenTK_Mathematics_Box2_Size">Size</a> as the size.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static explicit operator RectangleF(Box2 box)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">

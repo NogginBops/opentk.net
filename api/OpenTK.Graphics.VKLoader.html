@@ -9,7 +9,7 @@
       <meta name="viewport" content="width=device-width">
       <meta name="title" content="Class VKLoader | OpenTK ">
     
-    
+    <meta name="description" content="Used to load the Vulkan bindings.">
       <link rel="shortcut icon" href="../favicon.ico">
       <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
       <link rel="stylesheet" href="../styles/docfx.css">
@@ -77,7 +77,8 @@
 
 
   <h1 id="OpenTK_Graphics_VKLoader" data-uid="OpenTK.Graphics.VKLoader" class="text-break">Class VKLoader</h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Used to load the Vulkan bindings.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -114,57 +115,12 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static class VKLoader</code></pre>
   </div>
-  <h3 id="fields">Fields
-</h3>
-  <h4 id="OpenTK_Graphics_VKLoader_Instance" data-uid="OpenTK.Graphics.VKLoader.Instance">Instance</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static VkInstance Instance</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">VkInstance</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h4 id="OpenTK_Graphics_VKLoader_VulkanHandle" data-uid="OpenTK.Graphics.VKLoader.VulkanHandle">VulkanHandle</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static nint VulkanHandle</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   <h3 id="methods">Methods
 </h3>
   <a id="OpenTK_Graphics_VKLoader_GetDeviceProcAddr_" data-uid="OpenTK.Graphics.VKLoader.GetDeviceProcAddr*"></a>
   <h4 id="OpenTK_Graphics_VKLoader_GetDeviceProcAddr_OpenTK_Graphics_Vulkan_VkDevice_System_String_" data-uid="OpenTK.Graphics.VKLoader.GetDeviceProcAddr(OpenTK.Graphics.Vulkan.VkDevice,System.String)">GetDeviceProcAddr(VkDevice, string)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Calls <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">GetDeviceProcAddr(VkDevice, byte*)</a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -183,12 +139,14 @@
       <tr>
         <td><span class="xref">VkDevice</span></td>
         <td><span class="parametername">device</span></td>
-        <td></td>
+        <td><p>The device load a function pointer from.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
         <td><span class="parametername">name</span></td>
-        <td></td>
+        <td><p>The name of the function to load.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -203,13 +161,15 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
-        <td></td>
+        <td><p>The function pointer, or null.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <a id="OpenTK_Graphics_VKLoader_GetInstanceProcAddress_" data-uid="OpenTK.Graphics.VKLoader.GetInstanceProcAddress*"></a>
   <h4 id="OpenTK_Graphics_VKLoader_GetInstanceProcAddress_OpenTK_Graphics_Vulkan_VkInstance_System_String_" data-uid="OpenTK.Graphics.VKLoader.GetInstanceProcAddress(OpenTK.Graphics.Vulkan.VkInstance,System.String)">GetInstanceProcAddress(VkInstance, string)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets a function pointer to an instance function using the <span class="xref">OpenTK.Graphics.Vulkan.VkInstance</span> provided in <code class="paramref">instance</code> to load the function.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -228,12 +188,14 @@
       <tr>
         <td><span class="xref">VkInstance</span></td>
         <td><span class="parametername">instance</span></td>
-        <td></td>
+        <td><p>The instance to use when loading function pointers.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
         <td><span class="parametername">name</span></td>
-        <td></td>
+        <td><p>The name of the function to load.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -248,13 +210,15 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
-        <td></td>
+        <td><p>The loaded function pointer, or null.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <a id="OpenTK_Graphics_VKLoader_GetInstanceProcAddress_" data-uid="OpenTK.Graphics.VKLoader.GetInstanceProcAddress*"></a>
   <h4 id="OpenTK_Graphics_VKLoader_GetInstanceProcAddress_System_String_" data-uid="OpenTK.Graphics.VKLoader.GetInstanceProcAddress(System.String)">GetInstanceProcAddress(string)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets a function pointer to an instance function using the <span class="xref">OpenTK.Graphics.Vulkan.VkInstance</span> set in <a class="xref" href="OpenTK.Graphics.VKLoader.html#OpenTK_Graphics_VKLoader_SetInstance_OpenTK_Graphics_Vulkan_VkInstance_">SetInstance(VkInstance)</a> to load the function.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -273,7 +237,8 @@
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
         <td><span class="parametername">name</span></td>
-        <td></td>
+        <td><p>The name of the instance function to load.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -288,21 +253,45 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
-        <td></td>
+        <td><p>The loaded function pointer, or null.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <a id="OpenTK_Graphics_VKLoader_Init_" data-uid="OpenTK.Graphics.VKLoader.Init*"></a>
   <h4 id="OpenTK_Graphics_VKLoader_Init" data-uid="OpenTK.Graphics.VKLoader.Init">Init()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Loads the vulkan native libraries and initializes the vulkan loader.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static void Init()</code></pre>
   </div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.platformnotsupportedexception">PlatformNotSupportedException</a></td>
+        <td><p>We don't know the path to the vulkan binaries on this platform.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.entrypointnotfoundexception">EntryPointNotFoundException</a></td>
+        <td><p>Couldn't load <code>vkGetInstanceProcAddr</code> from the loaded vulkan library.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="OpenTK_Graphics_VKLoader_SetInstance_" data-uid="OpenTK.Graphics.VKLoader.SetInstance*"></a>
   <h4 id="OpenTK_Graphics_VKLoader_SetInstance_OpenTK_Graphics_Vulkan_VkInstance_" data-uid="OpenTK.Graphics.VKLoader.SetInstance(OpenTK.Graphics.Vulkan.VkInstance)">SetInstance(VkInstance)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Set the <span class="xref">OpenTK.Graphics.Vulkan.VkInstance</span> to use to load functions when calling functions directly on <span class="xref">OpenTK.Graphics.Vulkan.Vk</span>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -321,10 +310,16 @@
       <tr>
         <td><span class="xref">VkInstance</span></td>
         <td><span class="parametername">instance</span></td>
-        <td></td>
+        <td><p>The <span class="xref">OpenTK.Graphics.Vulkan.VkInstance</span> to use to load functions.</p>
+</td>
       </tr>
     </tbody>
   </table>
+  <h5 id="OpenTK_Graphics_VKLoader_SetInstance_OpenTK_Graphics_Vulkan_VkInstance__seealso">See Also</h5>
+  <div class="seealso">
+      <div><span class="xref">InstanceDispatchTable</span></div>
+      <div><span class="xref">DeviceDispatchTable</span></div>
+  </div>
 
 </article>
           </div>

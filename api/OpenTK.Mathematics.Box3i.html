@@ -9,7 +9,7 @@
       <meta name="viewport" content="width=device-width">
       <meta name="title" content="Struct Box3i | OpenTK ">
     
-    <meta name="description" content="Defines an axis-aligned 3d box (rectangular prism).">
+    <meta name="description" content="Defines an axis-aligned 2d box (cube).">
       <link rel="shortcut icon" href="../favicon.ico">
       <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
       <link rel="stylesheet" href="../styles/docfx.css">
@@ -77,7 +77,7 @@
 
 
   <h1 id="OpenTK_Mathematics_Box3i" data-uid="OpenTK.Mathematics.Box3i" class="text-break">Struct Box3i</h1>
-  <div class="markdown level0 summary"><p>Defines an axis-aligned 3d box (rectangular prism).</p>
+  <div class="markdown level0 summary"><p>Defines an axis-aligned 2d box (cube).</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="implements">
@@ -128,13 +128,13 @@ public struct Box3i : IEquatable&lt;Box3i&gt;, IFormattable</code></pre>
       <tr>
         <td><a class="xref" href="OpenTK.Mathematics.Vector3i.html">Vector3i</a></td>
         <td><span class="parametername">min</span></td>
-        <td><p>The minimum point in 3D space this box encloses.</p>
+        <td><p>The minimum point this box encloses.</p>
 </td>
       </tr>
       <tr>
         <td><a class="xref" href="OpenTK.Mathematics.Vector3i.html">Vector3i</a></td>
         <td><span class="parametername">max</span></td>
-        <td><p>The maximum point in 3D space this box encloses.</p>
+        <td><p>The maximum point this box encloses.</p>
 </td>
       </tr>
     </tbody>
@@ -199,7 +199,8 @@ public struct Box3i : IEquatable&lt;Box3i&gt;, IFormattable</code></pre>
   <h3 id="fields">Fields
 </h3>
   <h4 id="OpenTK_Mathematics_Box3i_Empty" data-uid="OpenTK.Mathematics.Box3i.Empty">Empty</h4>
-  <div class="markdown level1 summary"><p>An empty box with Min (0, 0, 0) and Max (0, 0, 0).</p>
+  <div class="markdown level1 summary"><p>An empty box with <code>Min = Vector3i.MaxValue</code> and <code>Max = Vector3i.MinValue</code>.
+This box can be used with <a class="xref" href="OpenTK.Mathematics.Box3i.html#OpenTK_Mathematics_Box3i_Extend_OpenTK_Mathematics_Vector3i_">Extend(Vector3i)</a> to create a bounding box without a special case for the first point.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -221,13 +222,84 @@ public struct Box3i : IEquatable&lt;Box3i&gt;, IFormattable</code></pre>
       </tr>
     </tbody>
   </table>
-  <h4 id="OpenTK_Mathematics_Box3i_UnitSquare" data-uid="OpenTK.Mathematics.Box3i.UnitSquare">UnitSquare</h4>
-  <div class="markdown level1 summary"><p>Gets a box with a location 0,0,9 with the a size of 1.</p>
+  <h5 id="OpenTK_Mathematics_Box3i_Empty_examples">Examples</h5>
+  <p>For example:</p>
+<pre><code class="lang-csharp">Vector3i[] points = GetPoints();
+Box3i aabb = Box3i.Empty;
+for (int i = 0; i &lt; points.Length; i++)
+{
+    aabb.Extend(points[i]):
+}</code></pre>
+<p>Will calculate the bounding box of all the points in the array without needing a special case for the first point.</p>
+
+  <h4 id="OpenTK_Mathematics_Box3i_Max" data-uid="OpenTK.Mathematics.Box3i.Max">Max</h4>
+  <div class="markdown level1 summary"><p>The maximum boundary of the box.
+This field is not guaranteed to be greater than <a class="xref" href="OpenTK.Mathematics.Box3i.html#OpenTK_Mathematics_Box3i_Max">Max</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static readonly Box3i UnitSquare</code></pre>
+    <pre><code class="lang-csharp hljs">public Vector3i Max</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector3i.html">Vector3i</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenTK_Mathematics_Box3i_Max_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>A box with a minimum point greater than the maximum is not considered valid
+except for a single configuration where <code>Min = Vector3i.PositiveInfinity</code> and <code>Max = Vector3i.NegativeInfinity</code> as is the case with <a class="xref" href="OpenTK.Mathematics.Box3i.html#OpenTK_Mathematics_Box3i_Empty">Empty</a>.</p>
+</div>
+  <h4 id="OpenTK_Mathematics_Box3i_Min" data-uid="OpenTK.Mathematics.Box3i.Min">Min</h4>
+  <div class="markdown level1 summary"><p>The minimum boundary of the box.
+This field is not guaranteed to be less than <a class="xref" href="OpenTK.Mathematics.Box3i.html#OpenTK_Mathematics_Box3i_Max">Max</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3i Min</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector3i.html">Vector3i</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenTK_Mathematics_Box3i_Min_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>A box with a minimum point greater than the maximum is not considered valid
+except for a single configuration where <code>Min = Vector3i.PositiveInfinity</code> and <code>Max = Vector3i.NegativeInfinity</code> as is the case with <a class="xref" href="OpenTK.Mathematics.Box3i.html#OpenTK_Mathematics_Box3i_Empty">Empty</a>.</p>
+</div>
+  <h5 id="OpenTK_Mathematics_Box3i_Min_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="OpenTK.Mathematics.Box3i.html#OpenTK_Mathematics_Box3i_Empty">Empty</a></div>
+      <div><a class="xref" href="OpenTK.Mathematics.Box3i.html#OpenTK_Mathematics_Box3i_IsEmpty">IsEmpty</a></div>
+  </div>
+  <h4 id="OpenTK_Mathematics_Box3i_UnitCube" data-uid="OpenTK.Mathematics.Box3i.UnitCube">UnitCube</h4>
+  <div class="markdown level1 summary"><p>A box with a <code>Min = (0, 0, 0)</code> and <code>Max = (1, 1, 1)</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Box3i UnitCube</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-condensed">
@@ -244,56 +316,34 @@ public struct Box3i : IEquatable&lt;Box3i&gt;, IFormattable</code></pre>
       </tr>
     </tbody>
   </table>
+  <h4 id="OpenTK_Mathematics_Box3i_Zero" data-uid="OpenTK.Mathematics.Box3i.Zero">Zero</h4>
+  <div class="markdown level1 summary"><p>A box with <code>Min = Vector3i.Zero</code> and <code>Min = Vector3i.Zero</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Box3i Zero</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Box3i.html">Box3i</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenTK_Mathematics_Box3i_Zero_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If you want an empty box, consider using <a class="xref" href="OpenTK.Mathematics.Box3i.html#OpenTK_Mathematics_Box3i_Empty">Empty</a>.</p>
+</div>
   <h3 id="properties">Properties
 </h3>
-  <a id="OpenTK_Mathematics_Box3i_Back_" data-uid="OpenTK.Mathematics.Box3i.Back*"></a>
-  <h4 id="OpenTK_Mathematics_Box3i_Back" data-uid="OpenTK.Mathematics.Box3i.Back">Back</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the back location of the box.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int Back { readonly get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="OpenTK_Mathematics_Box3i_Bottom_" data-uid="OpenTK.Mathematics.Box3i.Bottom*"></a>
-  <h4 id="OpenTK_Mathematics_Box3i_Bottom" data-uid="OpenTK.Mathematics.Box3i.Bottom">Bottom</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the bottom location of the box.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int Bottom { readonly get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   <a id="OpenTK_Mathematics_Box3i_Center_" data-uid="OpenTK.Mathematics.Box3i.Center*"></a>
   <h4 id="OpenTK_Mathematics_Box3i_Center" data-uid="OpenTK.Mathematics.Box3i.Center">Center</h4>
   <div class="markdown level1 summary"><p>Gets a vector describing the center of the box.</p>
@@ -318,62 +368,14 @@ public struct Box3i : IEquatable&lt;Box3i&gt;, IFormattable</code></pre>
       </tr>
     </tbody>
   </table>
-  <a id="OpenTK_Mathematics_Box3i_CenteredSize_" data-uid="OpenTK.Mathematics.Box3i.CenteredSize*"></a>
-  <h4 id="OpenTK_Mathematics_Box3i_CenteredSize" data-uid="OpenTK.Mathematics.Box3i.CenteredSize">CenteredSize</h4>
-  <div class="markdown level1 summary"><p>Gets a vector describing the size of the Box3i structure.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public readonly Vector3i CenteredSize { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Mathematics.Vector3i.html">Vector3i</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   <a id="OpenTK_Mathematics_Box3i_Depth_" data-uid="OpenTK.Mathematics.Box3i.Depth*"></a>
   <h4 id="OpenTK_Mathematics_Box3i_Depth" data-uid="OpenTK.Mathematics.Box3i.Depth">Depth</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the depth of the box.</p>
+  <div class="markdown level1 summary"><p>The depth of the box.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int Depth { readonly get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="OpenTK_Mathematics_Box3i_Front_" data-uid="OpenTK.Mathematics.Box3i.Front*"></a>
-  <h4 id="OpenTK_Mathematics_Box3i_Front" data-uid="OpenTK.Mathematics.Box3i.Front">Front</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the front location of the box.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int Front { readonly get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly int Depth { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -392,12 +394,13 @@ public struct Box3i : IEquatable&lt;Box3i&gt;, IFormattable</code></pre>
   </table>
   <a id="OpenTK_Mathematics_Box3i_HalfSize_" data-uid="OpenTK.Mathematics.Box3i.HalfSize*"></a>
   <h4 id="OpenTK_Mathematics_Box3i_HalfSize" data-uid="OpenTK.Mathematics.Box3i.HalfSize">HalfSize</h4>
-  <div class="markdown level1 summary"><p>Gets or sets a vector describing half the size of the box.</p>
+  <div class="markdown level1 summary"><p>Gets half the size of the box.
+The distance from the center of the box to the edge of the box in X and Y.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Vector3i HalfSize { readonly get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly Vector3 HalfSize { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -409,43 +412,22 @@ public struct Box3i : IEquatable&lt;Box3i&gt;, IFormattable</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Mathematics.Vector3i.html">Vector3i</a></td>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector3.html">Vector3</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <a id="OpenTK_Mathematics_Box3i_Height_" data-uid="OpenTK.Mathematics.Box3i.Height*"></a>
-  <h4 id="OpenTK_Mathematics_Box3i_Height" data-uid="OpenTK.Mathematics.Box3i.Height">Height</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the height of the box.</p>
+  <h5 id="OpenTK_Mathematics_Box3i_HalfSize_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This function never returns negative values, so <a class="xref" href="OpenTK.Mathematics.Box3i.html#OpenTK_Mathematics_Box3i_Empty">Empty</a> will have a size of (0, 0).</p>
+</div>
+  <a id="OpenTK_Mathematics_Box3i_HasZeroArea_" data-uid="OpenTK.Mathematics.Box3i.HasZeroArea*"></a>
+  <h4 id="OpenTK_Mathematics_Box3i_HasZeroArea" data-uid="OpenTK.Mathematics.Box3i.HasZeroArea">HasZeroArea</h4>
+  <div class="markdown level1 summary"><p>If this box has zero area.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int Height { readonly get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="OpenTK_Mathematics_Box3i_IsZero_" data-uid="OpenTK.Mathematics.Box3i.IsZero*"></a>
-  <h4 id="OpenTK_Mathematics_Box3i_IsZero" data-uid="OpenTK.Mathematics.Box3i.IsZero">IsZero</h4>
-  <div class="markdown level1 summary"><p>Gets a value indicating whether all values are zero.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public readonly bool IsZero { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly bool HasZeroArea { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -462,14 +444,14 @@ public struct Box3i : IEquatable&lt;Box3i&gt;, IFormattable</code></pre>
       </tr>
     </tbody>
   </table>
-  <a id="OpenTK_Mathematics_Box3i_Left_" data-uid="OpenTK.Mathematics.Box3i.Left*"></a>
-  <h4 id="OpenTK_Mathematics_Box3i_Left" data-uid="OpenTK.Mathematics.Box3i.Left">Left</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the left location of the box.</p>
+  <a id="OpenTK_Mathematics_Box3i_Height_" data-uid="OpenTK.Mathematics.Box3i.Height*"></a>
+  <h4 id="OpenTK_Mathematics_Box3i_Height" data-uid="OpenTK.Mathematics.Box3i.Height">Height</h4>
+  <div class="markdown level1 summary"><p>The height of the box.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int Left { readonly get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly int Height { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -486,9 +468,57 @@ public struct Box3i : IEquatable&lt;Box3i&gt;, IFormattable</code></pre>
       </tr>
     </tbody>
   </table>
+  <a id="OpenTK_Mathematics_Box3i_IsEmpty_" data-uid="OpenTK.Mathematics.Box3i.IsEmpty*"></a>
+  <h4 id="OpenTK_Mathematics_Box3i_IsEmpty" data-uid="OpenTK.Mathematics.Box3i.IsEmpty">IsEmpty</h4>
+  <div class="markdown level1 summary"><p>If this box is equal to <a class="xref" href="OpenTK.Mathematics.Box3i.html#OpenTK_Mathematics_Box3i_Empty">Empty</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly bool IsEmpty { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Box3i_IsPoint_" data-uid="OpenTK.Mathematics.Box3i.IsPoint*"></a>
+  <h4 id="OpenTK_Mathematics_Box3i_IsPoint" data-uid="OpenTK.Mathematics.Box3i.IsPoint">IsPoint</h4>
+  <div class="markdown level1 summary"><p>If this box is a point, i.e. its minimum point is equal to its maximum point.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly bool IsPoint { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <a id="OpenTK_Mathematics_Box3i_Location_" data-uid="OpenTK.Mathematics.Box3i.Location*"></a>
   <h4 id="OpenTK_Mathematics_Box3i_Location" data-uid="OpenTK.Mathematics.Box3i.Location">Location</h4>
-  <div class="markdown level1 summary"><p>Gets the location of the box.</p>
+  <div class="markdown level1 summary"><p>Gets the location of the box from a Location + Size perspective. Basically an alias for <a class="xref" href="OpenTK.Mathematics.Box3i.html#OpenTK_Mathematics_Box3i_Min">Min</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -510,14 +540,14 @@ public struct Box3i : IEquatable&lt;Box3i&gt;, IFormattable</code></pre>
       </tr>
     </tbody>
   </table>
-  <a id="OpenTK_Mathematics_Box3i_Max_" data-uid="OpenTK.Mathematics.Box3i.Max*"></a>
-  <h4 id="OpenTK_Mathematics_Box3i_Max" data-uid="OpenTK.Mathematics.Box3i.Max">Max</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the maximum boundary of the structure.</p>
+  <a id="OpenTK_Mathematics_Box3i_LongVolume_" data-uid="OpenTK.Mathematics.Box3i.LongVolume*"></a>
+  <h4 id="OpenTK_Mathematics_Box3i_LongVolume" data-uid="OpenTK.Mathematics.Box3i.LongVolume">LongVolume</h4>
+  <div class="markdown level1 summary"><p>The area of the box as a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Vector3i Max { readonly get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly long LongVolume { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -529,67 +559,19 @@ public struct Box3i : IEquatable&lt;Box3i&gt;, IFormattable</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenTK.Mathematics.Vector3i.html">Vector3i</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="OpenTK_Mathematics_Box3i_Min_" data-uid="OpenTK.Mathematics.Box3i.Min*"></a>
-  <h4 id="OpenTK_Mathematics_Box3i_Min" data-uid="OpenTK.Mathematics.Box3i.Min">Min</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the minimum boundary of the structure.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Vector3i Min { readonly get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Mathematics.Vector3i.html">Vector3i</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="OpenTK_Mathematics_Box3i_Right_" data-uid="OpenTK.Mathematics.Box3i.Right*"></a>
-  <h4 id="OpenTK_Mathematics_Box3i_Right" data-uid="OpenTK.Mathematics.Box3i.Right">Right</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the right location of the box.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int Right { readonly get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <a id="OpenTK_Mathematics_Box3i_Size_" data-uid="OpenTK.Mathematics.Box3i.Size*"></a>
   <h4 id="OpenTK_Mathematics_Box3i_Size" data-uid="OpenTK.Mathematics.Box3i.Size">Size</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the size of the box.</p>
+  <div class="markdown level1 summary"><p>Gets the size of the box.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Vector3i Size { readonly get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly Vector3i Size { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -606,86 +588,17 @@ public struct Box3i : IEquatable&lt;Box3i&gt;, IFormattable</code></pre>
       </tr>
     </tbody>
   </table>
-  <a id="OpenTK_Mathematics_Box3i_SizeX_" data-uid="OpenTK.Mathematics.Box3i.SizeX*"></a>
-  <h4 id="OpenTK_Mathematics_Box3i_SizeX" data-uid="OpenTK.Mathematics.Box3i.SizeX">SizeX</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the horizontal size.</p>
+  <h5 id="OpenTK_Mathematics_Box3i_Size_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This function never returns negative values, so <a class="xref" href="OpenTK.Mathematics.Box3i.html#OpenTK_Mathematics_Box3i_Empty">Empty</a> will have a size of (0, 0).</p>
+</div>
+  <a id="OpenTK_Mathematics_Box3i_Volume_" data-uid="OpenTK.Mathematics.Box3i.Volume*"></a>
+  <h4 id="OpenTK_Mathematics_Box3i_Volume" data-uid="OpenTK.Mathematics.Box3i.Volume">Volume</h4>
+  <div class="markdown level1 summary"><p>The area of the box.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int SizeX { readonly get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="OpenTK_Mathematics_Box3i_SizeY_" data-uid="OpenTK.Mathematics.Box3i.SizeY*"></a>
-  <h4 id="OpenTK_Mathematics_Box3i_SizeY" data-uid="OpenTK.Mathematics.Box3i.SizeY">SizeY</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the vertical size.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int SizeY { readonly get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="OpenTK_Mathematics_Box3i_SizeZ_" data-uid="OpenTK.Mathematics.Box3i.SizeZ*"></a>
-  <h4 id="OpenTK_Mathematics_Box3i_SizeZ" data-uid="OpenTK.Mathematics.Box3i.SizeZ">SizeZ</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the vertical size.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int SizeZ { readonly get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="OpenTK_Mathematics_Box3i_Top_" data-uid="OpenTK.Mathematics.Box3i.Top*"></a>
-  <h4 id="OpenTK_Mathematics_Box3i_Top" data-uid="OpenTK.Mathematics.Box3i.Top">Top</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the top location of the box.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int Top { readonly get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly int Volume { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -704,84 +617,12 @@ public struct Box3i : IEquatable&lt;Box3i&gt;, IFormattable</code></pre>
   </table>
   <a id="OpenTK_Mathematics_Box3i_Width_" data-uid="OpenTK.Mathematics.Box3i.Width*"></a>
   <h4 id="OpenTK_Mathematics_Box3i_Width" data-uid="OpenTK.Mathematics.Box3i.Width">Width</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the width of the box.</p>
+  <div class="markdown level1 summary"><p>The width of the box.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int Width { readonly get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="OpenTK_Mathematics_Box3i_X_" data-uid="OpenTK.Mathematics.Box3i.X*"></a>
-  <h4 id="OpenTK_Mathematics_Box3i_X" data-uid="OpenTK.Mathematics.Box3i.X">X</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the X location of the box.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int X { readonly get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="OpenTK_Mathematics_Box3i_Y_" data-uid="OpenTK.Mathematics.Box3i.Y*"></a>
-  <h4 id="OpenTK_Mathematics_Box3i_Y" data-uid="OpenTK.Mathematics.Box3i.Y">Y</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the Y location of the box.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int Y { readonly get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="OpenTK_Mathematics_Box3i_Z_" data-uid="OpenTK.Mathematics.Box3i.Z*"></a>
-  <h4 id="OpenTK_Mathematics_Box3i_Z" data-uid="OpenTK.Mathematics.Box3i.Z">Z</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the Z location of the box.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int Z { readonly get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly int Width { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -802,13 +643,13 @@ public struct Box3i : IEquatable&lt;Box3i&gt;, IFormattable</code></pre>
 </h3>
   <a id="OpenTK_Mathematics_Box3i_Contains_" data-uid="OpenTK.Mathematics.Box3i.Contains*"></a>
   <h4 id="OpenTK_Mathematics_Box3i_Contains_OpenTK_Mathematics_Box3i_" data-uid="OpenTK.Mathematics.Box3i.Contains(OpenTK.Mathematics.Box3i)">Contains(Box3i)</h4>
-  <div class="markdown level1 summary"><p>Returns whether the box contains the specified box (borders inclusive).</p>
+  <div class="markdown level1 summary"><p>Returns whether the box <code class="paramref">other</code> is entirely contained within this box.
+A box is considered to be able to contain itself.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Pure]
-public readonly bool Contains(Box3i other)</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly bool Contains(Box3i other)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -823,7 +664,7 @@ public readonly bool Contains(Box3i other)</code></pre>
       <tr>
         <td><a class="xref" href="OpenTK.Mathematics.Box3i.html">Box3i</a></td>
         <td><span class="parametername">other</span></td>
-        <td><p>The box to query.</p>
+        <td><p>The box to check.</p>
 </td>
       </tr>
     </tbody>
@@ -839,102 +680,7 @@ public readonly bool Contains(Box3i other)</code></pre>
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
-        <td><p>Whether this box contains the other box.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="OpenTK_Mathematics_Box3i_Contains_" data-uid="OpenTK.Mathematics.Box3i.Contains*"></a>
-  <h4 id="OpenTK_Mathematics_Box3i_Contains_OpenTK_Mathematics_Vector3i_" data-uid="OpenTK.Mathematics.Box3i.Contains(OpenTK.Mathematics.Vector3i)">Contains(Vector3i)</h4>
-  <div class="markdown level1 summary"><p>Returns whether the box contains the specified point (borders inclusive).</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Pure]
-[Obsolete(&quot;This function excludes borders even though it&#39;s documentation says otherwise. Use ContainsInclusive and ContainsExclusive for the desired behaviour.&quot;)]
-public readonly bool Contains(Vector3i point)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Mathematics.Vector3i.html">Vector3i</a></td>
-        <td><span class="parametername">point</span></td>
-        <td><p>The point to query.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
-        <td><p>Whether this box contains the point.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="OpenTK_Mathematics_Box3i_Contains_" data-uid="OpenTK.Mathematics.Box3i.Contains*"></a>
-  <h4 id="OpenTK_Mathematics_Box3i_Contains_OpenTK_Mathematics_Vector3i_System_Boolean_" data-uid="OpenTK.Mathematics.Box3i.Contains(OpenTK.Mathematics.Vector3i,System.Boolean)">Contains(Vector3i, bool)</h4>
-  <div class="markdown level1 summary"><p>Returns whether the box contains the specified point.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Pure]
-public readonly bool Contains(Vector3i point, bool boundaryInclusive)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Mathematics.Vector3i.html">Vector3i</a></td>
-        <td><span class="parametername">point</span></td>
-        <td><p>The point to query.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
-        <td><span class="parametername">boundaryInclusive</span></td>
-        <td><p>Whether points on the box boundary should be recognised as contained as well.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
-        <td><p>Whether this box contains the point.</p>
+        <td><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the box <code class="paramref">other</code> is entirely contained within the this box; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
 </td>
       </tr>
     </tbody>
@@ -946,8 +692,7 @@ public readonly bool Contains(Vector3i point, bool boundaryInclusive)</code></pr
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Pure]
-public readonly bool ContainsExclusive(Vector3i point)</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly bool ContainsExclusive(Vector3i point)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -990,8 +735,7 @@ public readonly bool ContainsExclusive(Vector3i point)</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Pure]
-public readonly bool ContainsInclusive(Vector3i point)</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly bool ContainsInclusive(Vector3i point)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -1023,50 +767,6 @@ public readonly bool ContainsInclusive(Vector3i point)</code></pre>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><p>Whether this box contains the point.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="OpenTK_Mathematics_Box3i_DistanceToNearestEdge_" data-uid="OpenTK.Mathematics.Box3i.DistanceToNearestEdge*"></a>
-  <h4 id="OpenTK_Mathematics_Box3i_DistanceToNearestEdge_OpenTK_Mathematics_Vector3i_" data-uid="OpenTK.Mathematics.Box3i.DistanceToNearestEdge(OpenTK.Mathematics.Vector3i)">DistanceToNearestEdge(Vector3i)</h4>
-  <div class="markdown level1 summary"><p>Returns the distance between the nearest edge and the specified point.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Pure]
-public readonly float DistanceToNearestEdge(Vector3i point)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Mathematics.Vector3i.html">Vector3i</a></td>
-        <td><span class="parametername">point</span></td>
-        <td><p>The point to find distance for.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
-        <td><p>The distance between the specified point and the nearest edge.</p>
 </td>
       </tr>
     </tbody>
@@ -1159,9 +859,98 @@ public readonly float DistanceToNearestEdge(Vector3i point)</code></pre>
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetype.equals">ValueType.Equals(object)</a></div>
+  <a id="OpenTK_Mathematics_Box3i_EuclidianDistanceToNearestEdge_" data-uid="OpenTK.Mathematics.Box3i.EuclidianDistanceToNearestEdge*"></a>
+  <h4 id="OpenTK_Mathematics_Box3i_EuclidianDistanceToNearestEdge_OpenTK_Mathematics_Vector3i_" data-uid="OpenTK.Mathematics.Box3i.EuclidianDistanceToNearestEdge(OpenTK.Mathematics.Vector3i)">EuclidianDistanceToNearestEdge(Vector3i)</h4>
+  <div class="markdown level1 summary"><p>Returns the euclidian distance between the nearest point on an edge and the specified point.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly float EuclidianDistanceToNearestEdge(Vector3i point)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector3i.html">Vector3i</a></td>
+        <td><span class="parametername">point</span></td>
+        <td><p>The point to find distance for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><p>The distance between the specified point and the nearest edge.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Box3i_EuclidianDistanceToNearestPointInBox_" data-uid="OpenTK.Mathematics.Box3i.EuclidianDistanceToNearestPointInBox*"></a>
+  <h4 id="OpenTK_Mathematics_Box3i_EuclidianDistanceToNearestPointInBox_OpenTK_Mathematics_Vector3i_" data-uid="OpenTK.Mathematics.Box3i.EuclidianDistanceToNearestPointInBox(OpenTK.Mathematics.Vector3i)">EuclidianDistanceToNearestPointInBox(Vector3i)</h4>
+  <div class="markdown level1 summary"><p>Returns the euclidian distance between the nearest point inside the box and the specified point.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly float EuclidianDistanceToNearestPointInBox(Vector3i point)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector3i.html">Vector3i</a></td>
+        <td><span class="parametername">point</span></td>
+        <td><p>The point to find distance for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><p>The distance between the specified point and the nearest edge.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenTK_Mathematics_Box3i_EuclidianDistanceToNearestPointInBox_OpenTK_Mathematics_Vector3i__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The distance to points inside the box is zero.</p>
+</div>
   <a id="OpenTK_Mathematics_Box3i_Extend_" data-uid="OpenTK.Mathematics.Box3i.Extend*"></a>
   <h4 id="OpenTK_Mathematics_Box3i_Extend_OpenTK_Mathematics_Vector3i_" data-uid="OpenTK.Mathematics.Box3i.Extend(OpenTK.Mathematics.Vector3i)">Extend(Vector3i)</h4>
-  <div class="markdown level1 summary"><p>Extend this Box3i to encapsulate a given point.</p>
+  <div class="markdown level1 summary"><p>Extends this box to encapsulate a given point.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -1186,15 +975,27 @@ public readonly float DistanceToNearestEdge(Vector3i point)</code></pre>
       </tr>
     </tbody>
   </table>
+  <h5 id="OpenTK_Mathematics_Box3i_Extend_OpenTK_Mathematics_Vector3i__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This can be used in combination with <a class="xref" href="OpenTK.Mathematics.Box3i.html#OpenTK_Mathematics_Box3i_Empty">Empty</a> to make an efficient bounding box calculation.</p>
+</div>
+  <h5 id="OpenTK_Mathematics_Box3i_Extend_OpenTK_Mathematics_Vector3i__examples">Examples</h5>
+  <p>For example:</p>
+<pre><code class="lang-csharp">Vector3i[] points = GetPoints();
+Box3i aabb = Box3i.Empty;
+for (int i = 0; i &lt; points.Length; i++)
+{
+    aabb.Extend(points[i]):
+}</code></pre>
+<p>Will calculate the bounding box of all the points in the array without needing a special case for the first point.</p>
+
   <a id="OpenTK_Mathematics_Box3i_Extended_" data-uid="OpenTK.Mathematics.Box3i.Extended*"></a>
   <h4 id="OpenTK_Mathematics_Box3i_Extended_OpenTK_Mathematics_Vector3i_" data-uid="OpenTK.Mathematics.Box3i.Extended(OpenTK.Mathematics.Vector3i)">Extended(Vector3i)</h4>
-  <div class="markdown level1 summary"><p>Extend this Box3i to encapsulate a given point.</p>
+  <div class="markdown level1 summary"><p>Returns a box that is extended to encapsulate a given point.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Pure]
-public readonly Box3i Extended(Vector3i point)</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly Box3i Extended(Vector3i point)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -1225,14 +1026,76 @@ public readonly Box3i Extended(Vector3i point)</code></pre>
     <tbody>
       <tr>
         <td><a class="xref" href="OpenTK.Mathematics.Box3i.html">Box3i</a></td>
-        <td><p>The inflated box.</p>
+        <td><p>The extended box.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenTK_Mathematics_Box3i_Extended_OpenTK_Mathematics_Vector3i__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This can be used in combination with <a class="xref" href="OpenTK.Mathematics.Box3i.html#OpenTK_Mathematics_Box3i_Empty">Empty</a> to make an efficient bounding box calculation.</p>
+</div>
+  <h5 id="OpenTK_Mathematics_Box3i_Extended_OpenTK_Mathematics_Vector3i__examples">Examples</h5>
+  <p>For example:</p>
+<pre><code class="lang-csharp">Vector3i[] points = GetPoints();
+Box3i aabb = Box3i.Empty;
+for (int i = 0; i &lt; points.Length; i++)
+{
+    aabb = aabb.Extended(points[i]):
+}</code></pre>
+<p>Will calculate the bounding box of all the points in the array without needing a special case for the first point.</p>
+
+  <a id="OpenTK_Mathematics_Box3i_FromPositionAndHalfSize_" data-uid="OpenTK.Mathematics.Box3i.FromPositionAndHalfSize*"></a>
+  <h4 id="OpenTK_Mathematics_Box3i_FromPositionAndHalfSize_OpenTK_Mathematics_Vector3i_OpenTK_Mathematics_Vector3i_" data-uid="OpenTK.Mathematics.Box3i.FromPositionAndHalfSize(OpenTK.Mathematics.Vector3i,OpenTK.Mathematics.Vector3i)">FromPositionAndHalfSize(Vector3i, Vector3i)</h4>
+  <div class="markdown level1 summary"><p>Creates a box from a center point and a half size.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Box3i FromPositionAndHalfSize(Vector3i center, Vector3i halfSize)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector3i.html">Vector3i</a></td>
+        <td><span class="parametername">center</span></td>
+        <td><p>The center of the box.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector3i.html">Vector3i</a></td>
+        <td><span class="parametername">halfSize</span></td>
+        <td><p>The half size of the box.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Box3i.html">Box3i</a></td>
+        <td><p>The created box.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="OpenTK_Mathematics_Box3i_FromPositions_" data-uid="OpenTK.Mathematics.Box3i.FromPositions*"></a>
   <h4 id="OpenTK_Mathematics_Box3i_FromPositions_OpenTK_Mathematics_Vector3i_OpenTK_Mathematics_Vector3i_" data-uid="OpenTK.Mathematics.Box3i.FromPositions(OpenTK.Mathematics.Vector3i,OpenTK.Mathematics.Vector3i)">FromPositions(Vector3i, Vector3i)</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="OpenTK.Mathematics.Box3.html">Box3</a> struct.</p>
+  <div class="markdown level1 summary"><p>Creates a box from a minimum and maximum point.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -1274,92 +1137,19 @@ public readonly Box3i Extended(Vector3i point)</code></pre>
     <tbody>
       <tr>
         <td><a class="xref" href="OpenTK.Mathematics.Box3i.html">Box3i</a></td>
-        <td><p>A box.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="OpenTK_Mathematics_Box3i_FromPositions_" data-uid="OpenTK.Mathematics.Box3i.FromPositions*"></a>
-  <h4 id="OpenTK_Mathematics_Box3i_FromPositions_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="OpenTK.Mathematics.Box3i.FromPositions(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">FromPositions(int, int, int, int, int, int)</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="OpenTK.Mathematics.Box3i.html">Box3i</a> struct.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Box3i FromPositions(int minX, int minY, int minZ, int maxX, int maxY, int maxZ)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
-        <td><span class="parametername">minX</span></td>
-        <td><p>The minimum X value to be enclosed.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
-        <td><span class="parametername">minY</span></td>
-        <td><p>The minimum Y value to be enclosed.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
-        <td><span class="parametername">minZ</span></td>
-        <td><p>The minimum Z value to be enclosed.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
-        <td><span class="parametername">maxX</span></td>
-        <td><p>The maximum X value to be enclosed.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
-        <td><span class="parametername">maxY</span></td>
-        <td><p>The maximum Y value to be enclosed.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
-        <td><span class="parametername">maxZ</span></td>
-        <td><p>The maximum Z value to be enclosed.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Mathematics.Box3i.html">Box3i</a></td>
-        <td><p>A box.</p>
+        <td><p>The created box.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="OpenTK_Mathematics_Box3i_FromSize_" data-uid="OpenTK.Mathematics.Box3i.FromSize*"></a>
   <h4 id="OpenTK_Mathematics_Box3i_FromSize_OpenTK_Mathematics_Vector3i_OpenTK_Mathematics_Vector3i_" data-uid="OpenTK.Mathematics.Box3i.FromSize(OpenTK.Mathematics.Vector3i,OpenTK.Mathematics.Vector3i)">FromSize(Vector3i, Vector3i)</h4>
-  <div class="markdown level1 summary"><p>Creates a box.</p>
+  <div class="markdown level1 summary"><p>Creates a box from a point and size.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Box3i FromSize(Vector3i location, Vector3i size)</code></pre>
+    <pre><code class="lang-csharp hljs">public static Box3i FromSize(Vector3i point, Vector3i size)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -1373,8 +1163,8 @@ public readonly Box3i Extended(Vector3i point)</code></pre>
     <tbody>
       <tr>
         <td><a class="xref" href="OpenTK.Mathematics.Vector3i.html">Vector3i</a></td>
-        <td><span class="parametername">location</span></td>
-        <td><p>The location of the box.</p>
+        <td><span class="parametername">point</span></td>
+        <td><p>The minimum point of the box.</p>
 </td>
       </tr>
       <tr>
@@ -1396,7 +1186,7 @@ public readonly Box3i Extended(Vector3i point)</code></pre>
     <tbody>
       <tr>
         <td><a class="xref" href="OpenTK.Mathematics.Box3i.html">Box3i</a></td>
-        <td><p>A box.</p>
+        <td><p>The created box.</p>
 </td>
       </tr>
     </tbody>
@@ -1430,8 +1220,8 @@ public readonly Box3i Extended(Vector3i point)</code></pre>
   <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode">ValueType.GetHashCode()</a></div>
   <a id="OpenTK_Mathematics_Box3i_Inflate_" data-uid="OpenTK.Mathematics.Box3i.Inflate*"></a>
   <h4 id="OpenTK_Mathematics_Box3i_Inflate_OpenTK_Mathematics_Vector3i_" data-uid="OpenTK.Mathematics.Box3i.Inflate(OpenTK.Mathematics.Vector3i)">Inflate(Vector3i)</h4>
-  <div class="markdown level1 summary"><p>Inflates this Box3i by the given size in all directions. A negative size will shrink the box to a maximum of -HalfSize.
-Use the <a class="xref" href="OpenTK.Mathematics.Box3i.html#OpenTK_Mathematics_Box3i_Extend_OpenTK_Mathematics_Vector3i_">Extend(Vector3i)</a> method for the point-encapsulation functionality in OpenTK version 4.8.1 and earlier.</p>
+  <div class="markdown level1 summary"><p>Inflates this box by the given size in all directions.
+A negative size will shrink the box to a maximum of -<a class="xref" href="OpenTK.Mathematics.Box3i.html#OpenTK_Mathematics_Box3i_HalfSize">HalfSize</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -1458,14 +1248,13 @@ Use the <a class="xref" href="OpenTK.Mathematics.Box3i.html#OpenTK_Mathematics_B
   </table>
   <a id="OpenTK_Mathematics_Box3i_Inflated_" data-uid="OpenTK.Mathematics.Box3i.Inflated*"></a>
   <h4 id="OpenTK_Mathematics_Box3i_Inflated_OpenTK_Mathematics_Vector3i_" data-uid="OpenTK.Mathematics.Box3i.Inflated(OpenTK.Mathematics.Vector3i)">Inflated(Vector3i)</h4>
-  <div class="markdown level1 summary"><p>Inflates this Box3i by the given size in all directions. A negative size will shrink the box to a maximum of -HalfSize.
-Use the <a class="xref" href="OpenTK.Mathematics.Box3i.html#OpenTK_Mathematics_Box3i_Extended_OpenTK_Mathematics_Vector3i_">Extended(Vector3i)</a> method for the point-encapsulation functionality in eOpenTK version 4.8.1 and earlier.</p>
+  <div class="markdown level1 summary"><p>Returns a box inflated by the given size in all directions.
+A negative size will shrink the box to a maximum of -<a class="xref" href="OpenTK.Mathematics.Box3i.html#OpenTK_Mathematics_Box3i_HalfSize">HalfSize</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Pure]
-public readonly Box3i Inflated(Vector3i size)</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly Box3i Inflated(Vector3i size)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -1503,7 +1292,7 @@ public readonly Box3i Inflated(Vector3i size)</code></pre>
   </table>
   <a id="OpenTK_Mathematics_Box3i_Intersect_" data-uid="OpenTK.Mathematics.Box3i.Intersect*"></a>
   <h4 id="OpenTK_Mathematics_Box3i_Intersect_OpenTK_Mathematics_Box3i_" data-uid="OpenTK.Mathematics.Box3i.Intersect(OpenTK.Mathematics.Box3i)">Intersect(Box3i)</h4>
-  <div class="markdown level1 summary"><p>Replaces this Box with the intersection of itself and the specified Box.</p>
+  <div class="markdown level1 summary"><p>Replaces this box with the intersection of itself and the specified box.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -1530,7 +1319,7 @@ public readonly Box3i Inflated(Vector3i size)</code></pre>
   </table>
   <a id="OpenTK_Mathematics_Box3i_Intersect_" data-uid="OpenTK.Mathematics.Box3i.Intersect*"></a>
   <h4 id="OpenTK_Mathematics_Box3i_Intersect_OpenTK_Mathematics_Box3i_OpenTK_Mathematics_Box3i_" data-uid="OpenTK.Mathematics.Box3i.Intersect(OpenTK.Mathematics.Box3i,OpenTK.Mathematics.Box3i)">Intersect(Box3i, Box3i)</h4>
-  <div class="markdown level1 summary"><p>Returns the intersection of two Boxes.</p>
+  <div class="markdown level1 summary"><p>Returns the intersection of two boxes.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -1572,14 +1361,63 @@ public readonly Box3i Inflated(Vector3i size)</code></pre>
     <tbody>
       <tr>
         <td><a class="xref" href="OpenTK.Mathematics.Box3i.html">Box3i</a></td>
-        <td><p>The intersection of two Boxes.</p>
+        <td><p>The intersection of the two boxes.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Box3i_Intersect_" data-uid="OpenTK.Mathematics.Box3i.Intersect*"></a>
+  <h4 id="OpenTK_Mathematics_Box3i_Intersect_OpenTK_Mathematics_Box3i__OpenTK_Mathematics_Box3i__" data-uid="OpenTK.Mathematics.Box3i.Intersect(OpenTK.Mathematics.Box3i@,OpenTK.Mathematics.Box3i@)">Intersect(in Box3i, in Box3i)</h4>
+  <div class="markdown level1 summary"><p>Returns the intersection of two boxes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Box3i Intersect(in Box3i a, in Box3i b)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Box3i.html">Box3i</a></td>
+        <td><span class="parametername">a</span></td>
+        <td><p>The first box.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Box3i.html">Box3i</a></td>
+        <td><span class="parametername">b</span></td>
+        <td><p>The second box.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Box3i.html">Box3i</a></td>
+        <td><p>The intersection of the two boxes.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="OpenTK_Mathematics_Box3i_Intersected_" data-uid="OpenTK.Mathematics.Box3i.Intersected*"></a>
   <h4 id="OpenTK_Mathematics_Box3i_Intersected_OpenTK_Mathematics_Box3i_" data-uid="OpenTK.Mathematics.Box3i.Intersected(OpenTK.Mathematics.Box3i)">Intersected(Box3i)</h4>
-  <div class="markdown level1 summary"><p>Returns the intersection of itself and the specified Box.</p>
+  <div class="markdown level1 summary"><p>Returns the intersection of itself and the specified box.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -1615,14 +1453,14 @@ public readonly Box3i Inflated(Vector3i size)</code></pre>
     <tbody>
       <tr>
         <td><a class="xref" href="OpenTK.Mathematics.Box3i.html">Box3i</a></td>
-        <td><p>The intersection of itself and the specified Box.</p>
+        <td><p>The intersection of itself and the specified box.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="OpenTK_Mathematics_Box3i_IntersectsWith_" data-uid="OpenTK.Mathematics.Box3i.IntersectsWith*"></a>
   <h4 id="OpenTK_Mathematics_Box3i_IntersectsWith_OpenTK_Mathematics_Box3i_" data-uid="OpenTK.Mathematics.Box3i.IntersectsWith(OpenTK.Mathematics.Box3i)">IntersectsWith(Box3i)</h4>
-  <div class="markdown level1 summary"><p>Determines if this Box intersects with another Box.</p>
+  <div class="markdown level1 summary"><p>Determines if this box intersects with another box.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -1642,7 +1480,7 @@ public readonly Box3i Inflated(Vector3i size)</code></pre>
       <tr>
         <td><a class="xref" href="OpenTK.Mathematics.Box3i.html">Box3i</a></td>
         <td><span class="parametername">other</span></td>
-        <td><p>The Box to test.</p>
+        <td><p>The box to test.</p>
 </td>
       </tr>
     </tbody>
@@ -1658,14 +1496,235 @@ public readonly Box3i Inflated(Vector3i size)</code></pre>
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
-        <td><p>This method returns true if there is any intersection, otherwise false.</p>
+        <td><p>This method returns <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if there is any intersection, otherwise <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenTK_Mathematics_Box3i_IntersectsWith_OpenTK_Mathematics_Box3i__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Two boxes next to each other do not intersect, for detecting that case use <a class="xref" href="OpenTK.Mathematics.Box3i.html#OpenTK_Mathematics_Box3i_Touches_OpenTK_Mathematics_Box3i_">Touches(Box3i)</a>.</p>
+</div>
+  <a id="OpenTK_Mathematics_Box3i_ManhattanDistanceToNearestEdge_" data-uid="OpenTK.Mathematics.Box3i.ManhattanDistanceToNearestEdge*"></a>
+  <h4 id="OpenTK_Mathematics_Box3i_ManhattanDistanceToNearestEdge_OpenTK_Mathematics_Vector3_" data-uid="OpenTK.Mathematics.Box3i.ManhattanDistanceToNearestEdge(OpenTK.Mathematics.Vector3)">ManhattanDistanceToNearestEdge(Vector3)</h4>
+  <div class="markdown level1 summary"><p>Returns the manhattan distance between the nearest point on an edge and the specified point.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly float ManhattanDistanceToNearestEdge(Vector3 point)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector3.html">Vector3</a></td>
+        <td><span class="parametername">point</span></td>
+        <td><p>The point to find distance for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><p>The distance between the specified point and the nearest edge.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Box3i_ManhattanDistanceToNearestEdge_" data-uid="OpenTK.Mathematics.Box3i.ManhattanDistanceToNearestEdge*"></a>
+  <h4 id="OpenTK_Mathematics_Box3i_ManhattanDistanceToNearestEdge_OpenTK_Mathematics_Vector3i_" data-uid="OpenTK.Mathematics.Box3i.ManhattanDistanceToNearestEdge(OpenTK.Mathematics.Vector3i)">ManhattanDistanceToNearestEdge(Vector3i)</h4>
+  <div class="markdown level1 summary"><p>Returns the manhattan distance between the nearest point on an edge and the specified point.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly int ManhattanDistanceToNearestEdge(Vector3i point)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector3i.html">Vector3i</a></td>
+        <td><span class="parametername">point</span></td>
+        <td><p>The point to find distance for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><p>The distance between the specified point and the nearest edge.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Box3i_ManhattanDistanceToNearestPointInBox_" data-uid="OpenTK.Mathematics.Box3i.ManhattanDistanceToNearestPointInBox*"></a>
+  <h4 id="OpenTK_Mathematics_Box3i_ManhattanDistanceToNearestPointInBox_OpenTK_Mathematics_Vector3i_" data-uid="OpenTK.Mathematics.Box3i.ManhattanDistanceToNearestPointInBox(OpenTK.Mathematics.Vector3i)">ManhattanDistanceToNearestPointInBox(Vector3i)</h4>
+  <div class="markdown level1 summary"><p>Returns the manhattan distance between the nearest point in the box and the specified point.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly int ManhattanDistanceToNearestPointInBox(Vector3i point)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector3i.html">Vector3i</a></td>
+        <td><span class="parametername">point</span></td>
+        <td><p>The point to find distance for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><p>The distance between the specified point and the nearest edge.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenTK_Mathematics_Box3i_ManhattanDistanceToNearestPointInBox_OpenTK_Mathematics_Vector3i__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The distance to points inside the box is zero.</p>
+</div>
+  <a id="OpenTK_Mathematics_Box3i_NearestPointInBox_" data-uid="OpenTK.Mathematics.Box3i.NearestPointInBox*"></a>
+  <h4 id="OpenTK_Mathematics_Box3i_NearestPointInBox_OpenTK_Mathematics_Vector3i_" data-uid="OpenTK.Mathematics.Box3i.NearestPointInBox(OpenTK.Mathematics.Vector3i)">NearestPointInBox(Vector3i)</h4>
+  <div class="markdown level1 summary"><p>Returns the nearest point in or on the edge of the box to the given point, <code class="paramref">point</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly Vector3i NearestPointInBox(Vector3i point)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector3i.html">Vector3i</a></td>
+        <td><span class="parametername">point</span></td>
+        <td><p>The point for which the nearest point in the box should be found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector3i.html">Vector3i</a></td>
+        <td><p>The nearest point on or on the edge of the box to the point, <code class="paramref">point</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Box3i_NearestPointOnEdge_" data-uid="OpenTK.Mathematics.Box3i.NearestPointOnEdge*"></a>
+  <h4 id="OpenTK_Mathematics_Box3i_NearestPointOnEdge_OpenTK_Mathematics_Vector3i_" data-uid="OpenTK.Mathematics.Box3i.NearestPointOnEdge(OpenTK.Mathematics.Vector3i)">NearestPointOnEdge(Vector3i)</h4>
+  <div class="markdown level1 summary"><p>Returns the nearest point that is on the edge of the box.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly Vector3i NearestPointOnEdge(Vector3i point)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector3i.html">Vector3i</a></td>
+        <td><span class="parametername">point</span></td>
+        <td><p>The point for which the nearest point on the edge of the box should be found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector3i.html">Vector3i</a></td>
+        <td><p>The nearest point on the edge of the box to the point, <code class="paramref">point</code>.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="OpenTK_Mathematics_Box3i_Scale_" data-uid="OpenTK.Mathematics.Box3i.Scale*"></a>
   <h4 id="OpenTK_Mathematics_Box3i_Scale_OpenTK_Mathematics_Vector3i_OpenTK_Mathematics_Vector3i_" data-uid="OpenTK.Mathematics.Box3i.Scale(OpenTK.Mathematics.Vector3i,OpenTK.Mathematics.Vector3i)">Scale(Vector3i, Vector3i)</h4>
-  <div class="markdown level1 summary"><p>Scales this Box3i by the given amount.</p>
+  <div class="markdown level1 summary"><p>Scales this box by the given scale, <code class="paramref">scale</code>, and from the given anchor point, <code class="paramref">anchor</code>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -1698,13 +1757,12 @@ public readonly Box3i Inflated(Vector3i size)</code></pre>
   </table>
   <a id="OpenTK_Mathematics_Box3i_Scaled_" data-uid="OpenTK.Mathematics.Box3i.Scaled*"></a>
   <h4 id="OpenTK_Mathematics_Box3i_Scaled_OpenTK_Mathematics_Vector3i_OpenTK_Mathematics_Vector3i_" data-uid="OpenTK.Mathematics.Box3i.Scaled(OpenTK.Mathematics.Vector3i,OpenTK.Mathematics.Vector3i)">Scaled(Vector3i, Vector3i)</h4>
-  <div class="markdown level1 summary"><p>Returns a Box3i scaled by a given amount from an anchor point.</p>
+  <div class="markdown level1 summary"><p>Returns a box scaled by the given scale, <code class="paramref">scale</code>, and from the given anchor point, <code class="paramref">anchor</code>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Pure]
-public readonly Box3i Scaled(Vector3i scale, Vector3i anchor)</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly Box3i Scaled(Vector3i scale, Vector3i anchor)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -1742,6 +1800,135 @@ public readonly Box3i Scaled(Vector3i scale, Vector3i anchor)</code></pre>
       <tr>
         <td><a class="xref" href="OpenTK.Mathematics.Box3i.html">Box3i</a></td>
         <td><p>The scaled box.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Box3i_SignedEuclidianDistanceToNearestEdge_" data-uid="OpenTK.Mathematics.Box3i.SignedEuclidianDistanceToNearestEdge*"></a>
+  <h4 id="OpenTK_Mathematics_Box3i_SignedEuclidianDistanceToNearestEdge_OpenTK_Mathematics_Vector3i_" data-uid="OpenTK.Mathematics.Box3i.SignedEuclidianDistanceToNearestEdge(OpenTK.Mathematics.Vector3i)">SignedEuclidianDistanceToNearestEdge(Vector3i)</h4>
+  <div class="markdown level1 summary"><p>Returns the signed distance between the nearest edge and the specified point.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly float SignedEuclidianDistanceToNearestEdge(Vector3i point)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector3i.html">Vector3i</a></td>
+        <td><span class="parametername">point</span></td>
+        <td><p>The point to find distance for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><p>The distance between the specified point and the nearest edge.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Box3i_SignedManhattanDistanceToNearestEdge_" data-uid="OpenTK.Mathematics.Box3i.SignedManhattanDistanceToNearestEdge*"></a>
+  <h4 id="OpenTK_Mathematics_Box3i_SignedManhattanDistanceToNearestEdge_OpenTK_Mathematics_Vector3_" data-uid="OpenTK.Mathematics.Box3i.SignedManhattanDistanceToNearestEdge(OpenTK.Mathematics.Vector3)">SignedManhattanDistanceToNearestEdge(Vector3)</h4>
+  <div class="markdown level1 summary"><p>Returns the signed manhattan distance between the nearest edge and the specified point.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly float SignedManhattanDistanceToNearestEdge(Vector3 point)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector3.html">Vector3</a></td>
+        <td><span class="parametername">point</span></td>
+        <td><p>The point to find distance for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><p>The distance between the specified point and the nearest edge.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Box3i_SignedManhattanDistanceToNearestEdge_" data-uid="OpenTK.Mathematics.Box3i.SignedManhattanDistanceToNearestEdge*"></a>
+  <h4 id="OpenTK_Mathematics_Box3i_SignedManhattanDistanceToNearestEdge_OpenTK_Mathematics_Vector3i_" data-uid="OpenTK.Mathematics.Box3i.SignedManhattanDistanceToNearestEdge(OpenTK.Mathematics.Vector3i)">SignedManhattanDistanceToNearestEdge(Vector3i)</h4>
+  <div class="markdown level1 summary"><p>Returns the signed manhattan distance between the nearest edge and the specified point.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly int SignedManhattanDistanceToNearestEdge(Vector3i point)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector3i.html">Vector3i</a></td>
+        <td><span class="parametername">point</span></td>
+        <td><p>The point to find distance for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><p>The distance between the specified point and the nearest edge.</p>
 </td>
       </tr>
     </tbody>
@@ -1916,14 +2103,14 @@ public readonly Box3i Scaled(Vector3i scale, Vector3i anchor)</code></pre>
       </tr>
     </tbody>
   </table>
-  <a id="OpenTK_Mathematics_Box3i_TouchWith_" data-uid="OpenTK.Mathematics.Box3i.TouchWith*"></a>
-  <h4 id="OpenTK_Mathematics_Box3i_TouchWith_OpenTK_Mathematics_Box3i_" data-uid="OpenTK.Mathematics.Box3i.TouchWith(OpenTK.Mathematics.Box3i)">TouchWith(Box3i)</h4>
-  <div class="markdown level1 summary"><p>Determines if this Box intersects or touches with another Box.</p>
+  <a id="OpenTK_Mathematics_Box3i_Touches_" data-uid="OpenTK.Mathematics.Box3i.Touches*"></a>
+  <h4 id="OpenTK_Mathematics_Box3i_Touches_OpenTK_Mathematics_Box3i_" data-uid="OpenTK.Mathematics.Box3i.Touches(OpenTK.Mathematics.Box3i)">Touches(Box3i)</h4>
+  <div class="markdown level1 summary"><p>Determines if this box intersects or touches with another box.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public readonly bool TouchWith(Box3i other)</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly bool Touches(Box3i other)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -1938,7 +2125,7 @@ public readonly Box3i Scaled(Vector3i scale, Vector3i anchor)</code></pre>
       <tr>
         <td><a class="xref" href="OpenTK.Mathematics.Box3i.html">Box3i</a></td>
         <td><span class="parametername">other</span></td>
-        <td><p>The Box to test.</p>
+        <td><p>The box to test.</p>
 </td>
       </tr>
     </tbody>
@@ -1954,14 +2141,14 @@ public readonly Box3i Scaled(Vector3i scale, Vector3i anchor)</code></pre>
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
-        <td><p>This method returns true if there is any intersection or touches, otherwise false.</p>
+        <td><p>This method returns <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if there is any intersection or touches, otherwise <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="OpenTK_Mathematics_Box3i_Translate_" data-uid="OpenTK.Mathematics.Box3i.Translate*"></a>
   <h4 id="OpenTK_Mathematics_Box3i_Translate_OpenTK_Mathematics_Vector3i_" data-uid="OpenTK.Mathematics.Box3i.Translate(OpenTK.Mathematics.Vector3i)">Translate(Vector3i)</h4>
-  <div class="markdown level1 summary"><p>Translates this Box3i by the given amount.</p>
+  <div class="markdown level1 summary"><p>Translates this box by the given distance.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -1988,13 +2175,12 @@ public readonly Box3i Scaled(Vector3i scale, Vector3i anchor)</code></pre>
   </table>
   <a id="OpenTK_Mathematics_Box3i_Translated_" data-uid="OpenTK.Mathematics.Box3i.Translated*"></a>
   <h4 id="OpenTK_Mathematics_Box3i_Translated_OpenTK_Mathematics_Vector3i_" data-uid="OpenTK.Mathematics.Box3i.Translated(OpenTK.Mathematics.Vector3i)">Translated(Vector3i)</h4>
-  <div class="markdown level1 summary"><p>Returns a Box3i translated by the given amount.</p>
+  <div class="markdown level1 summary"><p>Returns a box translated by the given distance.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Pure]
-public readonly Box3i Translated(Vector3i distance)</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly Box3i Translated(Vector3i distance)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -2030,60 +2216,12 @@ public readonly Box3i Translated(Vector3i distance)</code></pre>
       </tr>
     </tbody>
   </table>
-  <a id="OpenTK_Mathematics_Box3i_Union_" data-uid="OpenTK.Mathematics.Box3i.Union*"></a>
-  <h4 id="OpenTK_Mathematics_Box3i_Union_OpenTK_Mathematics_Box3i_OpenTK_Mathematics_Box3i_" data-uid="OpenTK.Mathematics.Box3i.Union(OpenTK.Mathematics.Box3i,OpenTK.Mathematics.Box3i)">Union(Box3i, Box3i)</h4>
-  <div class="markdown level1 summary"><p>Gets a Box structure that contains the union of two Box structures.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Box3i Union(Box3i a, Box3i b)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Mathematics.Box3i.html">Box3i</a></td>
-        <td><span class="parametername">a</span></td>
-        <td><p>A Box to union.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="OpenTK.Mathematics.Box3i.html">Box3i</a></td>
-        <td><span class="parametername">b</span></td>
-        <td><p>a box to union.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="OpenTK.Mathematics.Box3i.html">Box3i</a></td>
-        <td><p>A Box structure that bounds the union of the two Box structures.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
   <h3 id="operators">Operators
 </h3>
   <a id="OpenTK_Mathematics_Box3i_op_Equality_" data-uid="OpenTK.Mathematics.Box3i.op_Equality*"></a>
   <h4 id="OpenTK_Mathematics_Box3i_op_Equality_OpenTK_Mathematics_Box3i_OpenTK_Mathematics_Box3i_" data-uid="OpenTK.Mathematics.Box3i.op_Equality(OpenTK.Mathematics.Box3i,OpenTK.Mathematics.Box3i)">operator ==(Box3i, Box3i)</h4>
-  <div class="markdown level1 summary"><p>Equality comparator.</p>
+  <div class="markdown level1 summary"><p>Equality comparator.
+Two boxes are considered equal if both the <a class="xref" href="OpenTK.Mathematics.Box3i.html#OpenTK_Mathematics_Box3i_Min">Min</a> and <a class="xref" href="OpenTK.Mathematics.Box3i.html#OpenTK_Mathematics_Box3i_Max">Max</a> fields are equal.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -2125,6 +2263,90 @@ public readonly Box3i Translated(Vector3i distance)</code></pre>
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Box3i_op_Explicit_" data-uid="OpenTK.Mathematics.Box3i.op_Explicit*"></a>
+  <h4 id="OpenTK_Mathematics_Box3i_op_Explicit_OpenTK_Mathematics_Box3i__OpenTK_Mathematics_Box3" data-uid="OpenTK.Mathematics.Box3i.op_Explicit(OpenTK.Mathematics.Box3i)~OpenTK.Mathematics.Box3">explicit operator Box3(Box3i)</h4>
+  <div class="markdown level1 summary"><p>Converts this <a class="xref" href="OpenTK.Mathematics.Box3i.html">Box3i</a> to a <a class="xref" href="OpenTK.Mathematics.Box3.html">Box3</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static explicit operator Box3(Box3i box)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Box3i.html">Box3i</a></td>
+        <td><span class="parametername">box</span></td>
+        <td><p>The box to cast.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Box3.html">Box3</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Mathematics_Box3i_op_Explicit_" data-uid="OpenTK.Mathematics.Box3i.op_Explicit*"></a>
+  <h4 id="OpenTK_Mathematics_Box3i_op_Explicit_OpenTK_Mathematics_Box3i__OpenTK_Mathematics_Box3d" data-uid="OpenTK.Mathematics.Box3i.op_Explicit(OpenTK.Mathematics.Box3i)~OpenTK.Mathematics.Box3d">explicit operator Box3d(Box3i)</h4>
+  <div class="markdown level1 summary"><p>Converts this <a class="xref" href="OpenTK.Mathematics.Box3i.html">Box3i</a> to a <a class="xref" href="OpenTK.Mathematics.Box3d.html">Box3d</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static explicit operator Box3d(Box3i box)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Box3i.html">Box3i</a></td>
+        <td><span class="parametername">box</span></td>
+        <td><p>The box to cast.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Box3d.html">Box3d</a></td>
         <td></td>
       </tr>
     </tbody>

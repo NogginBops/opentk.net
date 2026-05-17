@@ -173,11 +173,11 @@ Toolkit.OpenGL.SwapBuffers(glContext);
 </code></pre>
 <p>The code shown so far will create a window and then process events while rendering to the window, but running the code there is one crucial flaw to the program. Closing the window doesn't work.</p>
 <p>This is becase closing the window is an event that needs to be responeded to, and as we are not handling any events no action is taken when the user wants to quit the application. So lets fix that!</p>
-<p>First step of handling events is to register a callback to the <code>EventQueue.EventRaised</code> event. Do this before creating the window like follows:</p>
-<pre><code class="lang-cs">EventQueue.EventRaised += EventRaised;
+<p>First step of handling events is to register a callback to the <code>Toolkit.Event.EventRaised</code> event. Do this before creating the window like follows:</p>
+<pre><code class="lang-cs">Toolkit.Event.EventRaised += EventRaised;
 </code></pre>
 <p>Now we need to define the <code>EventRaised</code> function.</p>
-<pre><code class="lang-cs">void EventRaised(PalHandle? handle, PlatformEventType type, EventArgs args)
+<pre><code class="lang-cs">void EventRaised(EventArgs args)
 {
 
 }
@@ -186,10 +186,9 @@ Toolkit.OpenGL.SwapBuffers(glContext);
 <h5>Warning</h5>
 <p>The arguments of the event callback are likely to change.</p>
 </div>
-<p>This callback gets a few arguments, the one we are interested in right now is <code>args</code>.
-<code>args</code> contains data specific to the type of event and we can pattern match on a specific args type to respond to a specific event.</p>
+<p>This callback gets a single argument, <code>args</code>, which contains data specific to the type of event and we can pattern match on a specific args type to respond to a specific event.</p>
 <p>To handle the quit message we will do the following:</p>
-<pre><code class="lang-cs">void EventRaised(PalHandle? handle, PlatformEventType type, EventArgs args)
+<pre><code class="lang-cs">void EventRaised(EventArgs args)
 {
     if (args is CloseEventArgs closeArgs)
     {
@@ -215,7 +214,7 @@ class Sample
 {
     public static void Main(string[] args)
     {
-        EventQueue.EventRaised += EventRaised;
+        Toolkit.Event.EventRaised += EventRaised;
 
         ToolkitOptions options = new ToolkitOptions();
 
@@ -264,7 +263,7 @@ class Sample
         }
     }
 
-    static void EventRaised(PalHandle? handle, PlatformEventType type, EventArgs args)
+    static void EventRaised(EventArgs args)
     {
         if (args is CloseEventArgs closeArgs)
         {

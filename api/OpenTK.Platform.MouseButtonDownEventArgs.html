@@ -126,13 +126,13 @@
   <h3 id="constructors">Constructors
 </h3>
   <a id="OpenTK_Platform_MouseButtonDownEventArgs__ctor_" data-uid="OpenTK.Platform.MouseButtonDownEventArgs.#ctor*"></a>
-  <h4 id="OpenTK_Platform_MouseButtonDownEventArgs__ctor_OpenTK_Platform_WindowHandle_OpenTK_Platform_MouseButton_OpenTK_Platform_KeyModifier_" data-uid="OpenTK.Platform.MouseButtonDownEventArgs.#ctor(OpenTK.Platform.WindowHandle,OpenTK.Platform.MouseButton,OpenTK.Platform.KeyModifier)">MouseButtonDownEventArgs(WindowHandle, MouseButton, KeyModifier)</h4>
+  <h4 id="OpenTK_Platform_MouseButtonDownEventArgs__ctor_OpenTK_Platform_WindowHandle_OpenTK_Mathematics_Vector2_OpenTK_Platform_MouseButton_OpenTK_Platform_KeyModifier_System_Int32_" data-uid="OpenTK.Platform.MouseButtonDownEventArgs.#ctor(OpenTK.Platform.WindowHandle,OpenTK.Mathematics.Vector2,OpenTK.Platform.MouseButton,OpenTK.Platform.KeyModifier,System.Int32)">MouseButtonDownEventArgs(WindowHandle, Vector2, MouseButton, KeyModifier, int)</h4>
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="OpenTK.Platform.MouseButtonDownEventArgs.html">MouseButtonDownEventArgs</a> class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public MouseButtonDownEventArgs(WindowHandle window, MouseButton button, KeyModifier modifiers)</code></pre>
+    <pre><code class="lang-csharp hljs">public MouseButtonDownEventArgs(WindowHandle window, Vector2 clientPosition, MouseButton button, KeyModifier modifiers, int clicks)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -151,6 +151,12 @@
 </td>
       </tr>
       <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector2.html">Vector2</a></td>
+        <td><span class="parametername">clientPosition</span></td>
+        <td><p>The coordinate in client coordinates where the mouse was pressed.</p>
+</td>
+      </tr>
+      <tr>
         <td><a class="xref" href="OpenTK.Platform.MouseButton.html">MouseButton</a></td>
         <td><span class="parametername">button</span></td>
         <td><p>The mouse button that was pressed.</p>
@@ -160,6 +166,12 @@
         <td><a class="xref" href="OpenTK.Platform.KeyModifier.html">KeyModifier</a></td>
         <td><span class="parametername">modifiers</span></td>
         <td><p>The modifiers that where active when the mouse button was pressed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">clicks</span></td>
+        <td><p>The click count for this event, single-click, double-click, etc.</p>
 </td>
       </tr>
     </tbody>
@@ -186,6 +198,58 @@
     <tbody>
       <tr>
         <td><a class="xref" href="OpenTK.Platform.MouseButton.html">MouseButton</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="OpenTK_Platform_MouseButtonDownEventArgs_Clicks_" data-uid="OpenTK.Platform.MouseButtonDownEventArgs.Clicks*"></a>
+  <h4 id="OpenTK_Platform_MouseButtonDownEventArgs_Clicks" data-uid="OpenTK.Platform.MouseButtonDownEventArgs.Clicks">Clicks</h4>
+  <div class="markdown level1 summary"><p>The number of times this button has been clicked in a row in a small area and time limit.
+1 for single-click, 2 for double-click, etc.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Clicks { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenTK_Platform_MouseButtonDownEventArgs_Clicks_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The details of counting multi-clicks follows the platform conventions.</p>
+</div>
+  <a id="OpenTK_Platform_MouseButtonDownEventArgs_ClientPosition_" data-uid="OpenTK.Platform.MouseButtonDownEventArgs.ClientPosition*"></a>
+  <h4 id="OpenTK_Platform_MouseButtonDownEventArgs_ClientPosition" data-uid="OpenTK.Platform.MouseButtonDownEventArgs.ClientPosition">ClientPosition</h4>
+  <div class="markdown level1 summary"><p>The position where the mouse was pressed, in client coordinates.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 ClientPosition { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenTK.Mathematics.Vector2.html">Vector2</a></td>
         <td></td>
       </tr>
     </tbody>
